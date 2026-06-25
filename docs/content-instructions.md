@@ -407,9 +407,6 @@ The story should be engaging without becoming inaccurate.
 FINAL PRINCIPLE
 
 Do not summarize the transcript.
-
-Do not create a shortened version of the video.
-
+Do not create a shortened version of the transcript.
 Create the best possible learning experience from the source material.
-
 Build understanding.
