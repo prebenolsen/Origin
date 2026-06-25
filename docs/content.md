@@ -112,3 +112,9 @@
 | Psychology | Mental Health     | Stress and Coping                      | How humans respond to pressure and challenges                  |
 | Psychology | Mental Health     | Anxiety and Fear                       | How threat systems affect thoughts and behavior                |
 | Psychology | Mental Health     | Depression and Mood                    | Understanding motivation, emotion, and mood changes            |
+| Psychology | Communication | How Human Communication Works                 | Verbal and nonverbal communication basics                          | ------ |
+| Psychology | Communication | Understanding Other People                    | Empathy, perspective-taking, and social awareness                 | DONE |
+| Psychology | Communication | Becoming a Better Conversationalist           | Curiosity, active listening, and better questions                 | DONE |
+| Psychology | Communication | Helping People Through Difficult Situations   | Emotional support, validation, and guided problem-solving         | ------ |
+| Psychology | Communication | Handling Conflict and Difficult Conversations | Conflict resolution, boundaries, and calm dialogue                | ------ |
+| Psychology | Communication | Persuasion and Influence                      | Trust, credibility, storytelling, negotiation, and ethics         | ------ |

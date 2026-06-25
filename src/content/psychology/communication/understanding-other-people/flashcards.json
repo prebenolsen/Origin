@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "front": "What is the core model in this module?",
+        "back": "Look past surface behavior and identify possible emotions, needs, and context before judging character."
+    },
+    {
+        "id": 2,
+        "front": "Fundamental attribution error",
+        "back": "A bias where we explain others by personality but explain ourselves by circumstances."
+    },
+    {
+        "id": 3,
+        "front": "Cognitive empathy",
+        "back": "Perspective-taking: mentally modeling how a situation looks from another person's viewpoint."
+    },
+    {
+        "id": 4,
+        "front": "Emotional empathy",
+        "back": "Affective resonance: feeling some version of what another person feels."
+    },
+    {
+        "id": 5,
+        "front": "Empathy vs agreement",
+        "back": "Empathy means understanding another person's inner experience; it does not require approving their actions."
+    },
+    {
+        "id": 6,
+        "front": "Five shared motives highlighted in the module",
+        "back": "Respect/status, belonging, safety/control, purpose/meaning, and fairness/dignity."
+    },
+    {
+        "id": 7,
+        "front": "Need-behind-behavior question",
+        "back": "What need might this behavior be trying to protect right now?"
+    },
+    {
+        "id": 8,
+        "front": "Validation in communication",
+        "back": "Acknowledging another person's emotion as real without endorsing harmful behavior."
+    },
+    {
+        "id": 9,
+        "front": "Four dialogue mistakes",
+        "back": "Fact-only interrogation, rushing to advice, debating before understanding, and treating your interpretation as certainty."
+    },
+    {
+        "id": 10,
+        "front": "Why perspective-taking matters today",
+        "back": "It counters dehumanizing snap judgments and improves conflict handling in polarized, fast-moving communication environments."
+    }
+]

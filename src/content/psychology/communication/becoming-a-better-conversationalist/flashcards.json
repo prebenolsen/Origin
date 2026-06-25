@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "front": "Small talk trap",
+        "back": "When conversation stays in safe fact exchange too long, emotional engagement stays low and connection fades."
+    },
+    {
+        "id": 2,
+        "front": "Open-ended depth question",
+        "back": "A question that invites motives, feelings, and meaning rather than short factual answers."
+    },
+    {
+        "id": 3,
+        "front": "Emotional cue",
+        "back": "A sign like brighter expression, faster speech, or more detail that reveals a topic with personal significance."
+    },
+    {
+        "id": 4,
+        "front": "Talk like a friend",
+        "back": "Adopt a warmer, less rigid style that explores naturally and follows curiosity while keeping social respect."
+    },
+    {
+        "id": 5,
+        "front": "Story-first connection",
+        "back": "Stories create vivid shared experience in imagination, which often builds stronger closeness than abstract summaries."
+    },
+    {
+        "id": 6,
+        "front": "Engaged listening",
+        "back": "Active, responsive listening that shows the speaker they are understood, not merely heard."
+    },
+    {
+        "id": 7,
+        "front": "Psychological safety",
+        "back": "A sense that you will not be judged or attacked, making deeper sharing more likely."
+    },
+    {
+        "id": 8,
+        "front": "Shared reality",
+        "back": "Overlap in perspectives, emotions, or experiences that makes two people feel genuinely connected."
+    }
+]

@@ -1,0 +1,88 @@
+{
+    "title": "Understanding Other People",
+    "period": "Everyday social life, relationships, and conflict",
+    "category": "psychology",
+    "subcategory": "communication",
+    "summary": "How to understand people more accurately by looking past surface behavior to motives, context, emotions, and needs.",
+    "accent": "#2f7a8a",
+    "context": {
+        "type": "schematic",
+        "headline": "Different behaviors, shared human needs",
+        "description": "People can look opposite on the surface yet be driven by similar needs like respect, belonging, safety, and meaning. This module builds a practical model for understanding others without becoming naive: reduce snap judgments, read context, and combine empathy with boundaries.",
+        "when": "Daily life, teams, family, and online conflict",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                {
+                    "id": "behavior",
+                    "label": "Visible behavior",
+                    "x": 18,
+                    "y": 30,
+                    "role": "secondary"
+                },
+                {
+                    "id": "emotion",
+                    "label": "Emotion signal",
+                    "x": 40,
+                    "y": 24,
+                    "role": "primary"
+                },
+                {
+                    "id": "needs",
+                    "label": "Core needs",
+                    "x": 64,
+                    "y": 28,
+                    "role": "primary"
+                },
+                {
+                    "id": "context",
+                    "label": "Situation and constraints",
+                    "x": 24,
+                    "y": 66,
+                    "role": "primary"
+                },
+                {
+                    "id": "empathy",
+                    "label": "Perspective-taking",
+                    "x": 52,
+                    "y": 66,
+                    "role": "secondary"
+                },
+                {
+                    "id": "response",
+                    "label": "Boundaried response",
+                    "x": 80,
+                    "y": 62,
+                    "role": "primary"
+                }
+            ],
+            "connections": [
+                {
+                    "from": "behavior",
+                    "to": "emotion",
+                    "label": "what is showing"
+                },
+                {
+                    "from": "emotion",
+                    "to": "needs",
+                    "label": "what is being protected"
+                },
+                {
+                    "from": "context",
+                    "to": "emotion",
+                    "label": "what shaped it"
+                },
+                {
+                    "from": "needs",
+                    "to": "empathy",
+                    "label": "understand accurately"
+                },
+                {
+                    "from": "empathy",
+                    "to": "response",
+                    "label": "care plus limits"
+                }
+            ]
+        }
+    }
+}

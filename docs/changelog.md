@@ -4,6 +4,64 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.18.0] - 2026-06-25
+
+### Added - authored Psychology Communication module from raw source
+- Completed `src/content/psychology/communication/becoming-a-better-conversationalist/` by replacing placeholders in all five content files:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Built a complete learning flow from `raw.md` focused on moving from small talk to deep connection through open-ended questions, emotional cue tracking, story-based dialogue, engaged listening, psychological safety, and shared reality.
+- Updated `docs/content.md` and marked `Psychology | Communication | Becoming a Better Conversationalist` as `DONE`.
+- Updated `docs/architecture.md` with a latest completion note for this authored module.
+
+## [1.17.0] - 2026-06-25
+
+### Added - authored Psychology Communication module from raw source
+- Completed `src/content/psychology/communication/understanding-other-people/` by replacing placeholders in all five content files:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Generated a full understanding-first learning flow from `raw.md`, including context model, multi-card narrative, major milestones, mixed quiz types, and retention-focused flashcards.
+- Updated `docs/content.md` and marked `Psychology | Communication | Understanding Other People` as `DONE`.
+- Updated `docs/architecture.md` with a module-completion workflow note for setting tracker status after full authoring.
+
+## [1.16.0] - 2026-06-25
+
+### Added - authored source draft for Psychology Communication module
+- Replaced `src/content/psychology/communication/understanding-other-people/raw.md` with a complete, structured source draft for module authoring.
+- Organized the material around shared human motives, empathy boundaries, attribution bias, practical listening tools, and modern relevance.
+- Added a suggested chapter arc and key terms to support follow-up generation of `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json`.
+
+## [1.15.2] - 2026-06-25
+
+### Changed - concise communication tracker context text
+- Shortened the `Era/Context` (4th column) text for the six `Psychology | Communication` rows in `docs/content.md`.
+- Kept table structure and status values unchanged while making the section more compact and readable.
+
+## [1.15.1] - 2026-06-25
+
+### Changed - content tracker table normalization
+- Fixed malformed bottom rows in `docs/content.md` under `Psychology | Communication`.
+- Removed keyword-list values from the final table column and restored the tracker's expected `Status` format (`------`) so the section conforms to the 5-column table structure.
+
+## [1.15.0] - 2026-06-25
+
+### Added - Psychology Communication placeholder scaffolding
+- Added a new subcategory scaffold under `src/content/psychology/communication/` to match the tracker rows from line 115 downward in `docs/content.md`.
+- Created 6 module folders with full placeholder file sets (`module.json`, `story.json`, `timeline.json`, `quiz.json`, `flashcards.json`):
+  - `how-human-communication-works`
+  - `understanding-other-people`
+  - `becoming-a-better-conversationalist`
+  - `helping-people-through-difficult-situations`
+  - `handling-conflict-and-difficult-conversations`
+  - `persuasion-and-influence`
+- Preserved existing content modules and only added missing scaffolds.
+
 ## [1.14.0] - 2026-06-25
 
 ### Added - authored Social Psychology modules from source transcripts

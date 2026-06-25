@@ -1,0 +1,88 @@
+{
+    "title": "Becoming a Better Conversationalist",
+    "period": "Everyday conversations in social, work, and dating settings",
+    "category": "psychology",
+    "subcategory": "communication",
+    "summary": "How to move from stale small talk to meaningful connection through better questions, engaged listening, and shared emotional experience.",
+    "accent": "#2d7c6f",
+    "context": {
+        "type": "schematic",
+        "headline": "From information exchange to emotional connection",
+        "description": "Most conversations stall when people trade surface facts for too long. Deeper connection grows when you quickly shift to open questions, follow emotional cues, and help people tell meaningful stories. This module gives a practical model for creating conversations that feel natural, safe, and memorable.",
+        "when": "Daily life: new people, first dates, friendships, and teamwork",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                {
+                    "id": "small-talk",
+                    "label": "Small talk",
+                    "x": 15,
+                    "y": 35,
+                    "role": "secondary"
+                },
+                {
+                    "id": "open-questions",
+                    "label": "Open questions",
+                    "x": 34,
+                    "y": 24,
+                    "role": "primary"
+                },
+                {
+                    "id": "emotional-cues",
+                    "label": "Emotional cues",
+                    "x": 52,
+                    "y": 42,
+                    "role": "primary"
+                },
+                {
+                    "id": "storytelling",
+                    "label": "Stories and memories",
+                    "x": 68,
+                    "y": 28,
+                    "role": "primary"
+                },
+                {
+                    "id": "engaged-listening",
+                    "label": "Engaged listening",
+                    "x": 45,
+                    "y": 68,
+                    "role": "secondary"
+                },
+                {
+                    "id": "shared-reality",
+                    "label": "Shared reality",
+                    "x": 80,
+                    "y": 62,
+                    "role": "primary"
+                }
+            ],
+            "connections": [
+                {
+                    "from": "small-talk",
+                    "to": "open-questions",
+                    "label": "go beyond facts"
+                },
+                {
+                    "from": "open-questions",
+                    "to": "emotional-cues",
+                    "label": "notice what lights up"
+                },
+                {
+                    "from": "emotional-cues",
+                    "to": "storytelling",
+                    "label": "dig deeper with stories"
+                },
+                {
+                    "from": "storytelling",
+                    "to": "engaged-listening",
+                    "label": "co-create the moment"
+                },
+                {
+                    "from": "engaged-listening",
+                    "to": "shared-reality",
+                    "label": "build overlap"
+                }
+            ]
+        }
+    }
+}

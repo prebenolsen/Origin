@@ -25,3 +25,14 @@ src/content/
 - Data: **static JSON** under `src/content/` (no backend)
 
 No animation library — motion is done with CSS (scroll-snap, 3D flip, fade-in).
+
+## Module completion workflow note
+
+When a placeholder module is fully authored from raw.md into module.json, story.json,
+timeline.json, quiz.json, and flashcards.json, update docs/content.md and set that
+module row status to DONE.
+
+## Latest completion note
+
+- 2026-06-25: Completed `psychology/communication/becoming-a-better-conversationalist`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.

@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is the main idea behind understanding-other-people in this module?",
+        "options": [
+            "Behavior is mostly random and cannot be interpreted",
+            "People are either good or bad, so motives are not useful",
+            "Surface behavior should be judged immediately to avoid being naive",
+            "Different behaviors can express shared human needs"
+        ],
+        "answer": 3,
+        "explanation": "The module's core claim is that many behaviors are strategies to meet common needs such as respect, belonging, safety, purpose, and dignity."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "Empathy means you must approve of another person's actions.",
+        "answer": false,
+        "explanation": "Empathy is accurate understanding of inner experience, not moral agreement or removal of boundaries."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "Which statement best describes the fundamental attribution error?",
+        "options": [
+            "Assuming all behavior is caused by social media",
+            "Over-explaining your own behavior with personality traits",
+            "Explaining others by character while explaining yourself by circumstances",
+            "Believing emotions are stronger than logic in every case"
+        ],
+        "answer": 2,
+        "explanation": "This bias makes us over-attribute others' behavior to personality and underweight context."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Put the need-behind-behavior method in the best sequence.",
+        "items": [
+            "Choose a response that preserves dignity and boundaries",
+            "Identify the visible behavior",
+            "Infer possible emotions and needs",
+            "Consider context and constraints"
+        ],
+        "correctOrder": [1, 3, 2, 0],
+        "explanation": "Start with what happened, then situational context, then likely inner state, and finally an appropriate response."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each communication move to its main function.",
+        "pairs": [
+            {
+                "left": "Open questions",
+                "right": "Reveal what matters to the other person"
+            },
+            {
+                "left": "Reflect and check",
+                "right": "Test whether your interpretation is accurate"
+            },
+            {
+                "left": "Validation",
+                "right": "Acknowledge emotion without endorsing behavior"
+            },
+            {
+                "left": "Boundary-setting",
+                "right": "Protect values while staying respectful"
+            }
+        ],
+        "explanation": "Each move supports understanding while preventing either passivity or unnecessary escalation."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "Why is perspective-taking especially important in today's communication climate?",
+        "options": [
+            "It helps people avoid all disagreement",
+            "It reduces dehumanizing snap judgments amplified by fast online discourse",
+            "It guarantees that everyone will share the same values",
+            "It removes the need for accountability"
+        ],
+        "answer": 1,
+        "explanation": "Rapid, polarized environments reward labels and certainty. Perspective-taking improves accuracy and lowers avoidable hostility."
+    }
+]

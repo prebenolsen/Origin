@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is the main reason conversations often feel boring?",
+        "options": [
+            "People ask too many questions too quickly",
+            "People avoid emotional meaning and stay with surface facts",
+            "People switch topics too often",
+            "People talk too much about childhood"
+        ],
+        "answer": 1,
+        "explanation": "The module argues that flat conversations usually remain in information exchange and fail to activate emotionally meaningful content."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "A better conversational strategy is to skip all small talk and immediately ask highly personal questions.",
+        "answer": false,
+        "explanation": "The recommended approach is organic: start with safe openers, then transition quickly to open-ended depth when it feels natural."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "Which question best shifts from surface facts to emotional meaning?",
+        "options": [
+            "What is your exact job title?",
+            "How long have you lived here?",
+            "What was it like when you first started doing that?",
+            "What is your schedule this week?"
+        ],
+        "answer": 2,
+        "explanation": "'What was it like' invites lived experience and emotion, not just factual details."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Put this conversational progression in the strongest order.",
+        "items": [
+            "Notice emotional cues and dig deeper",
+            "Ask a safe starter question",
+            "Move to an open-ended meaning question",
+            "Invite a story or memory"
+        ],
+        "correctOrder": [1, 2, 0, 3],
+        "explanation": "Start safely, shift to open depth, track what emotionally resonates, then move into story-level sharing."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each conversational move with its main purpose.",
+        "pairs": [
+            {
+                "left": "Open-ended question",
+                "right": "Invites motives and values"
+            },
+            {
+                "left": "Back-channeling",
+                "right": "Signals active engagement in real time"
+            },
+            {
+                "left": "Story prompt",
+                "right": "Creates a vivid shared mental experience"
+            },
+            {
+                "left": "Finding common ground",
+                "right": "Builds shared reality and closeness"
+            }
+        ],
+        "explanation": "Each move helps conversations progress from safe contact toward deeper connection."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "What does 'talk like a friend, not a stranger' mean in this module?",
+        "options": [
+            "Ignore boundaries and share everything immediately",
+            "Stay formal and avoid emotional topics",
+            "Use warmth, flexibility, and curiosity while respecting comfort",
+            "Keep every topic tightly structured until completion"
+        ],
+        "answer": 2,
+        "explanation": "Friend-like conversation is looser and warmer, but still respectful. It increases connection without forcing intimacy."
+    }
+]

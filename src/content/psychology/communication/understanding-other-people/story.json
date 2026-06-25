@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "timeline": "Starting Point",
+        "title": "Why people feel impossible to understand",
+        "content": "People differ by culture, age, personality, and life history, so behavior can look chaotic. This creates a common belief that there is no reliable way to understand others. The module challenges that myth by separating surface behavior from deeper human motives.",
+        "next": "If people are so different, what do they still share?"
+    },
+    {
+        "id": 2,
+        "timeline": "Shared Motives",
+        "title": "Different paths can serve the same needs",
+        "content": "Two people can choose opposite lifestyles yet chase similar goals. Under the surface, many choices aim at respect, belonging, safety, purpose, and dignity. Understanding improves when we ask what need a behavior is trying to protect.",
+        "next": "What core motives appear across most social settings?"
+    },
+    {
+        "id": 3,
+        "timeline": "Shared Motives",
+        "title": "Respect and status are powerful drivers",
+        "content": "People want to feel that they matter and are seen as valuable. When someone feels disrespected, their behavior can become defensive or aggressive. Recognizing status concerns helps explain reactions that otherwise seem irrational.",
+        "next": "Beyond status, what keeps people tied to groups?"
+    },
+    {
+        "id": 4,
+        "timeline": "Shared Motives",
+        "title": "Belonging can shape identity and behavior",
+        "content": "Humans are deeply social, and group membership gives identity, protection, and meaning. People often align their words and actions with group norms to avoid exclusion. To understand behavior, we need to see which group loyalties are active.",
+        "next": "How do safety and control affect interpretation?"
+    },
+    {
+        "id": 5,
+        "timeline": "Shared Motives",
+        "title": "Safety and control influence quick reactions",
+        "content": "When people sense threat or uncertainty, they prioritize control and predictability. That can look like rigidity, suspicion, or overconfidence. What looks like stubbornness may be a strategy for psychological safety.",
+        "next": "So why do we still misread each other so often?"
+    },
+    {
+        "id": 6,
+        "timeline": "Bias Barrier",
+        "title": "The attribution trap",
+        "content": "A major bias is the fundamental attribution error: we explain others by personality and ourselves by circumstance. We say, 'They are rude,' but 'I was stressed.' This asymmetry makes social judgment fast but often inaccurate.",
+        "next": "How can we correct this bias in real time?"
+    },
+    {
+        "id": 7,
+        "timeline": "Bias Barrier",
+        "title": "Read context before character",
+        "content": "A better sequence is: behavior first, context second, character last. Ask what pressures, losses, incentives, or misunderstandings shaped what you observed. This does not remove responsibility, but it improves accuracy.",
+        "next": "Where does empathy fit into this model?"
+    },
+    {
+        "id": 8,
+        "timeline": "Empathy Skills",
+        "title": "Empathy is understanding, not agreement",
+        "content": "Empathy means accurately grasping another person's inner experience. It does not require approving harmful actions or abandoning your values. You can understand motives while still setting firm boundaries.",
+        "next": "What kinds of empathy are most useful?"
+    },
+    {
+        "id": 9,
+        "timeline": "Empathy Skills",
+        "title": "Cognitive empathy and emotional empathy",
+        "content": "Cognitive empathy is perspective-taking: mentally modeling how life looks from their side. Emotional empathy is resonance: feeling some version of what they feel. Together they improve both connection and judgment when balanced with self-regulation.",
+        "next": "How do we turn this into a practical communication method?"
+    },
+    {
+        "id": 10,
+        "timeline": "Practical Framework",
+        "title": "Use the need-behind-behavior checklist",
+        "content": "When behavior is confusing, ask: what happened, what emotion is present, what need is being defended, and what story they may believe. Then choose a response that protects dignity while keeping limits clear. This prevents both naive trust and harsh overreaction.",
+        "next": "What listening habits make this work in conversations?"
+    },
+    {
+        "id": 11,
+        "timeline": "Practical Framework",
+        "title": "Listen for meaning, not just facts",
+        "content": "Open questions, reflective summaries, and validation reveal emotional meaning quickly. 'What mattered most to you?' often teaches more than fact-checking alone. People become more cooperative when they feel accurately heard.",
+        "next": "What mistakes usually break understanding?"
+    },
+    {
+        "id": 12,
+        "timeline": "Common Mistakes",
+        "title": "Four errors that collapse dialogue",
+        "content": "Conversations fail when we interrogate for facts only, rush into advice, debate before understanding, or treat our interpretation as certainty. Each error increases defensiveness and reduces trust. Better conversations start with curiosity before correction.",
+        "next": "Why is this especially important today?"
+    },
+    {
+        "id": 13,
+        "timeline": "Modern Relevance",
+        "title": "Fast judgments in a polarized world",
+        "content": "Online platforms reward speed, certainty, and labels, which can dehumanize people we disagree with. Without perspective-taking, conflict escalates and cooperation falls. Understanding others becomes a practical civic skill, not just a personal virtue.",
+        "next": "What changes when we apply this consistently?"
+    },
+    {
+        "id": 14,
+        "timeline": "Outcomes",
+        "title": "Accuracy, compassion, and boundaries together",
+        "content": "The goal is not to excuse everything, but to understand enough to respond wisely. Reading motives and context reduces avoidable conflict while preserving accountability. That combination creates stronger relationships, better teamwork, and better decisions.",
+        "next": "Where in your life could one perspective-taking question change the entire conversation?"
+    }
+]
