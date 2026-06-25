@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "timeline": "509 BCE",
+    "title": "A republic is born",
+    "content": "Rome began as one city among many in Italy. After casting out its kings, it built a republic — a system of elected officials and shared power that would last for centuries.",
+    "next": "How did one city grow so powerful?",
+    "visual": "map"
+  },
+  {
+    "id": 2,
+    "timeline": "264 BCE",
+    "title": "Clash with Carthage",
+    "content": "Across the sea, the wealthy city of Carthage controlled trade and territory. A series of wars between the two powers would decide who ruled the western Mediterranean.",
+    "next": "Who won?"
+  },
+  {
+    "id": 3,
+    "timeline": "146 BCE",
+    "title": "Master of the Mediterranean",
+    "content": "Victory over Carthage and expansion into the Greek world left Rome without a serious rival. The sea the Romans called 'our sea' was now ringed by Roman power.",
+    "next": "What happened to the republic?"
+  },
+  {
+    "id": 4,
+    "timeline": "27 BCE",
+    "title": "From republic to empire",
+    "content": "Decades of internal conflict ended when a single ruler took control. Rome was no longer a republic — it had become an empire.",
+    "next": "Test what you remember."
+  }
+]

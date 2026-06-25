@@ -1,0 +1,27 @@
+{
+  "title": "Transatlantic Slave Trade",
+  "period": "1500s–1800s",
+  "category": "history",
+  "subcategory": "atlantic-world",
+  "summary": "How three continents became bound together by trade, colonization, and forced migration.",
+  "accent": "#e8a94b",
+  "context": {
+    "type": "map",
+    "headline": "A triangle across the Atlantic",
+    "description": "This system connected three continents through trade, colonization, and forced migration. Goods flowed one way, enslaved people another, and raw materials a third — forming a single, brutal economic loop.",
+    "when": "1500s – 1800s",
+    "map": {
+      "backdrop": "world",
+      "markers": [
+        { "id": "europe", "label": "Europe", "x": 60, "y": 26, "role": "primary" },
+        { "id": "wafrica", "label": "West Africa", "x": 55, "y": 60, "role": "primary" },
+        { "id": "americas", "label": "The Americas", "x": 22, "y": 52, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "europe", "to": "wafrica", "label": "goods" },
+        { "from": "wafrica", "to": "americas", "label": "Middle Passage" },
+        { "from": "americas", "to": "europe", "label": "raw materials" }
+      ]
+    }
+  }
+}

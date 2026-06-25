@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What most directly caused plantation slavery to expand?",
+    "options": [
+      "Demand for labor on profitable cash crops like sugar",
+      "A shortage of ships in Europe",
+      "The closing of Atlantic trade routes",
+      "A decline in European colonies"
+    ],
+    "answer": 0,
+    "explanation": "Highly profitable, labor-intensive plantation crops such as sugar drove the demand for forced labor."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "The Middle Passage refers to the forced Atlantic crossing of enslaved Africans.",
+    "answer": true,
+    "explanation": "The Middle Passage was the brutal sea voyage from Africa to the Americas — the middle leg of the triangular trade."
+  },
+  {
+    "id": 3,
+    "type": "ordering",
+    "question": "Put these stages of the trade in chronological order.",
+    "items": [
+      "Atlantic trade routes open",
+      "First transatlantic crossings",
+      "Plantation boom",
+      "Britain bans the trade"
+    ],
+    "correctOrder": [0, 1, 2, 3],
+    "explanation": "Routes opened first, crossings followed, plantations boomed, and abolition came last."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each region to its role in the triangle.",
+    "pairs": [
+      { "left": "Europe", "right": "Supplied ships and manufactured goods" },
+      { "left": "West Africa", "right": "Targeted for captive labor" },
+      { "left": "The Americas", "right": "Plantations producing raw materials" }
+    ],
+    "explanation": "Each corner of the triangle played a distinct role in the loop."
+  }
+]

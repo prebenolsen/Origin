@@ -1,0 +1,23 @@
+{
+  "title": "Rise of the Roman Empire",
+  "period": "509 BCE – 27 BCE",
+  "category": "history",
+  "subcategory": "the-roman-empire",
+  "summary": "From a small city on the Tiber to the dominant power of the Mediterranean world.",
+  "accent": "#d98a5a",
+  "context": {
+    "type": "map",
+    "headline": "A city that swallowed a sea",
+    "description": "Rome grew from a single city into the power that ringed the entire Mediterranean. Conquest, alliances, and rivalry with neighbors like Carthage and the Greek world drove its expansion.",
+    "when": "509 BCE – 27 BCE",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "rome", "label": "Rome", "x": 49, "y": 36, "role": "primary" },
+        { "id": "carthage", "label": "Carthage", "x": 43, "y": 62, "role": "secondary" },
+        { "id": "greece", "label": "Greek world", "x": 64, "y": 46, "role": "secondary" }
+      ],
+      "connections": [{ "from": "rome", "to": "carthage", "label": "Punic Wars" }]
+    }
+  }
+}

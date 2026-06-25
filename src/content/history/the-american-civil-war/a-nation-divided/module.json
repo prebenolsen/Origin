@@ -1,0 +1,22 @@
+{
+  "title": "A Nation Divided",
+  "period": "1861–1865",
+  "category": "history",
+  "subcategory": "the-american-civil-war",
+  "summary": "How the United States split into Union and Confederacy — and what held it apart.",
+  "accent": "#7c9cff",
+  "context": {
+    "type": "map",
+    "headline": "One country, two governments",
+    "description": "This conflict divided the United States between the Union and the Confederacy from 1861 to 1865. The split ran along deep disagreements over slavery, states' rights, and the country's future.",
+    "when": "1861 – 1865",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "union", "label": "Union (North)", "x": 52, "y": 30, "role": "primary" },
+        { "id": "border", "label": "Border states", "x": 50, "y": 47, "role": "secondary" },
+        { "id": "confederacy", "label": "Confederacy (South)", "x": 46, "y": 66, "role": "primary" }
+      ]
+    }
+  }
+}

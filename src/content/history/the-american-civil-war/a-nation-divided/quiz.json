@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Which two sides fought the American Civil War?",
+    "options": [
+      "The Union and the Confederacy",
+      "England and France",
+      "The North and Mexico",
+      "The colonies and Britain"
+    ],
+    "answer": 0,
+    "explanation": "The Union (northern states) fought the breakaway Confederacy (southern states)."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "The war ended in 1865 with the Union preserved.",
+    "answer": true,
+    "explanation": "By 1865 the Confederacy could no longer continue, and the Union was preserved."
+  },
+  {
+    "id": 3,
+    "type": "ordering",
+    "question": "Order these moments of the war.",
+    "items": ["War begins", "Turning point", "War ends"],
+    "correctOrder": [0, 1, 2],
+    "explanation": "1861 → 1863 → 1865."
+  }
+]

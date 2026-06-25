@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "timeline": "1861",
+    "title": "A nation divides",
+    "content": "In 1861, a group of southern states broke away to form the Confederacy. The remaining states — the Union — refused to let the country split apart.",
+    "next": "Why did the country split?",
+    "visual": "map"
+  },
+  {
+    "id": 2,
+    "timeline": "1861",
+    "title": "The fault line",
+    "content": "At the heart of the divide was slavery and the question of whether it would expand. Economic and political differences between North and South deepened the rift.",
+    "next": "How did the fighting begin?"
+  },
+  {
+    "id": 3,
+    "timeline": "1863",
+    "title": "A turning point",
+    "content": "After two years of war, key battles in 1863 shifted momentum toward the Union and reshaped the conflict's purpose.",
+    "next": "How did it end?"
+  },
+  {
+    "id": 4,
+    "timeline": "1865",
+    "title": "The war ends",
+    "content": "By 1865 the Confederacy could no longer continue. The Union was preserved, and slavery was abolished — but rebuilding the nation would take generations.",
+    "next": "Test what you remember."
+  }
+]

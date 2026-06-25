@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What kind of government did early Rome become after casting out its kings?",
+    "options": ["A republic", "A democracy", "A monarchy", "An empire"],
+    "answer": 0,
+    "explanation": "Rome became a republic — a system of elected officials and shared power."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Rome's rivalry with Carthage was decided through the Punic Wars.",
+    "answer": true,
+    "explanation": "The Punic Wars between Rome and Carthage decided control of the western Mediterranean."
+  },
+  {
+    "id": 3,
+    "type": "matching",
+    "question": "Match each place to its role in Rome's rise.",
+    "pairs": [
+      { "left": "Rome", "right": "The rising city on the Tiber" },
+      { "left": "Carthage", "right": "Rival trading power" },
+      { "left": "Greek world", "right": "Absorbed during expansion" }
+    ],
+    "explanation": "Each played a part in Rome's path to dominance."
+  }
+]

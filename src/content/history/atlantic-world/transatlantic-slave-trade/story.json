@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "timeline": "1500",
+    "title": "The Atlantic became a highway",
+    "content": "Before the 1500s, the Atlantic Ocean separated continents. European ships changed that by opening new trade routes — and these routes would soon connect to one of history's largest forced migrations.",
+    "next": "How did this system begin?",
+    "visual": "map"
+  },
+  {
+    "id": 2,
+    "timeline": "1500",
+    "title": "Three continents, one system",
+    "content": "Europe supplied ships and manufactured goods. West Africa was targeted for captive labor. The Americas held vast land but few workers. Together they formed a single loop of exchange.",
+    "next": "Who was forced into it?"
+  },
+  {
+    "id": 3,
+    "timeline": "1525",
+    "title": "The first crossings",
+    "content": "The earliest transatlantic voyages carrying enslaved Africans set the pattern. What began as a trickle would grow into a system spanning centuries.",
+    "next": "Why did demand explode?"
+  },
+  {
+    "id": 4,
+    "timeline": "1600s",
+    "title": "Sugar changed everything",
+    "content": "Plantation crops like sugar were enormously profitable — and enormously labor-intensive. The hunger for forced labor on these plantations drove the trade's rapid expansion.",
+    "next": "What was the journey like?"
+  },
+  {
+    "id": 5,
+    "timeline": "1600s",
+    "title": "The Middle Passage",
+    "content": "The forced Atlantic crossing was the system's cruelest leg. Packed below decks for weeks, many did not survive the voyage from Africa to the Americas.",
+    "next": "How large did it grow?"
+  },
+  {
+    "id": 6,
+    "timeline": "1700s",
+    "title": "A trade at its peak",
+    "content": "By the 1700s the trade reached its height, moving more people across the Atlantic than in any prior century and reshaping societies on every shore it touched.",
+    "next": "What finally slowed it?"
+  },
+  {
+    "id": 7,
+    "timeline": "1807",
+    "title": "The beginning of the end",
+    "content": "Growing abolition movements and new laws began to ban the trade in the early 1800s. Ending it took decades — and its consequences are still felt today.",
+    "next": "Test what you remember."
+  }
+]
