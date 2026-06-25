@@ -1,8 +1,192 @@
-{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+    {
+        "id": 1,
+        "timeline": "Chapter 1: Framing",
+        "title": "Why this conflict is hard to learn",
+        "content": "Israel-Palestine is both a territorial conflict and a conflict of narratives. Many events are factual and well documented, but their meaning is interpreted differently by different communities. This module separates facts, interpretations, and political claims so you can build a clearer mental model.",
+        "next": "What is the first distinction we need before discussing modern politics?"
+    },
+    {
+        "id": 2,
+        "timeline": "Chapter 1: Framing",
+        "title": "Fact, interpretation, and claim",
+        "content": "A historical fact is something broadly evidenced, like a war date or signed agreement. An interpretation is how groups explain causes and moral meaning. A political claim is what groups say should happen now, for example on borders, refugees, or sovereignty.",
+        "next": "How far back do competing histories usually begin?"
+    },
+    {
+        "id": 3,
+        "timeline": "Chapter 2: Background",
+        "title": "Ancient history and modern identity",
+        "content": "Jewish historical memory emphasizes ancient kingdoms, temples in Jerusalem, and long periods of exile and persecution. Historians also document deep regional continuity, migrations, and changing imperial rule over centuries. In modern politics, both heritage and archaeology are frequently used to support present-day national arguments.",
+        "next": "What did the region look like before modern nationalism emerged?"
+    },
+    {
+        "id": 4,
+        "timeline": "Late Ottoman era",
+        "title": "Palestine under Ottoman rule",
+        "content": "In the late Ottoman period, Arabic-speaking Muslim and Christian communities formed most of the local population, with longstanding Jewish communities also present in key towns. Social life was local, religious, and imperial rather than organized around modern nation-states. This context changed as new national movements developed in the 19th and 20th centuries.",
+        "next": "How did Jewish and Arab national movements develop in parallel?"
+    },
+    {
+        "id": 5,
+        "timeline": "1880s-1910s",
+        "title": "Zionism, persecution, and migration",
+        "content": "Modern Zionism emerged in Europe as both a national movement and a response to antisemitic violence, including pogroms. Jewish immigration to Ottoman Palestine increased in several waves. Most Jews fleeing Europe still went elsewhere, but migration to Palestine became politically significant.",
+        "next": "How did local Arab communities interpret these changes?"
+    },
+    {
+        "id": 6,
+        "timeline": "1880s-1910s",
+        "title": "Early Palestinian Arab concerns",
+        "content": "Many local Arabs saw growing immigration and land transfer as a threat to political self-determination in their homeland. Some viewed Zionism as a colonial project tied to European power, while Zionists viewed it as national return and self-liberation. These conflicting frames became a core structure of the conflict.",
+        "next": "What changed when the Ottoman Empire collapsed?"
+    },
+    {
+        "id": 7,
+        "timeline": "1917-1922",
+        "title": "British rule and contradictory commitments",
+        "content": "After World War I, Britain took control under the Mandate system. British policy included support for a Jewish national home while also managing an Arab majority demanding self-rule. The result was a governance framework both sides increasingly distrusted.",
+        "next": "How did this tension develop during the Mandate years?"
+    },
+    {
+        "id": 8,
+        "timeline": "1920s-1930s",
+        "title": "Institutions, resistance, and rising violence",
+        "content": "Jewish communities built political, labor, and defense institutions under Mandate conditions. Palestinian Arabs organized protest, strikes, and armed resistance, especially during the 1936-1939 revolt. Britain suppressed revolt militarily while struggling to reconcile incompatible national demands.",
+        "next": "How did World War II reshape the stakes?"
+    },
+    {
+        "id": 9,
+        "timeline": "1940s",
+        "title": "Holocaust, displacement, and urgency",
+        "content": "The Holocaust transformed Jewish politics globally and intensified support for statehood and refuge in Palestine. Britain restricted immigration, creating confrontation with Zionist armed groups. Pressure from violence, displacement, and diplomacy pushed the issue to the newly formed United Nations.",
+        "next": "What did the UN propose, and why was it accepted by some and rejected by others?"
+    },
+    {
+        "id": 10,
+        "timeline": "1947",
+        "title": "UN partition plan",
+        "content": "The UN proposed partition into separate Jewish and Arab states with special status for Jerusalem. Zionist leadership accepted partition as international recognition, though not all were satisfied with borders. Palestinian Arab leadership and neighboring Arab states rejected the plan as unjust to the Arab majority and dispossession in progress.",
+        "next": "What happened on the ground before neighboring armies entered?"
+    },
+    {
+        "id": 11,
+        "timeline": "1947-1948",
+        "title": "Civil war before statehood",
+        "content": "Violence escalated between Jewish and Arab communities after the UN vote. Roads, mixed cities, and villages became battle zones, and civilian fear spread rapidly. Historians still debate intentions behind some operations, especially regarding expulsion versus military necessity in specific cases.",
+        "next": "How did the war change after Israel declared independence?"
+    },
+    {
+        "id": 12,
+        "timeline": "1948-1949",
+        "title": "Statehood, regional war, and mass displacement",
+        "content": "Israel declared independence in May 1948, and neighboring Arab armies intervened. Israel survived and expanded beyond UN partition lines, while Gaza came under Egyptian control and the West Bank under Jordanian control. Around 700,000 Palestinians became refugees in what Palestinians call the Nakba, while Israelis frame the period as a war of independence and survival.",
+        "next": "How did this new map shape the next decades?"
+    },
+    {
+        "id": 13,
+        "timeline": "1950s",
+        "title": "Borders, infiltration, and retaliation",
+        "content": "Armistice lines did not produce stable peace. Cross-border raids, infiltration, and retaliatory operations caused civilian harm and hardened security doctrines. Refugee return became a core unresolved issue, with Palestinians demanding rights of return and Israel rejecting mass return on security and demographic grounds.",
+        "next": "How did regional geopolitics intensify conflict?"
+    },
+    {
+        "id": 14,
+        "timeline": "1956",
+        "title": "Suez crisis and great-power limits",
+        "content": "Israel joined Britain and France in a military operation after Egypt nationalized the Suez Canal. Military gains were short-lived because U.S. and Soviet pressure forced withdrawal. The crisis showed that regional wars were increasingly constrained by Cold War power politics.",
+        "next": "What changed after 1967?"
+    },
+    {
+        "id": 15,
+        "timeline": "1967",
+        "title": "Six-Day War and occupation",
+        "content": "In June 1967, Israel captured the West Bank, East Jerusalem, Gaza, Sinai, and Golan Heights. This transformed the conflict from a dispute over partition to a long-term issue of occupation, borders, and sovereignty. UN diplomacy called for withdrawal and secure boundaries, but implementation remained contested.",
+        "next": "Why are settlements central to present-day disputes?"
+    },
+    {
+        "id": 16,
+        "timeline": "1967-present",
+        "title": "Settlements and legal-political disagreement",
+        "content": "Israeli settlements expanded in territories captured in 1967, especially in the West Bank and East Jerusalem. Most of the international community considers these settlements illegal under international law, while Israeli governments and legal arguments vary in justification and status claims. On the ground, settlements, roads, and checkpoints affect territorial continuity and everyday Palestinian life.",
+        "next": "How did Palestinian national organization evolve?"
+    },
+    {
+        "id": 17,
+        "timeline": "1960s-1980s",
+        "title": "PLO strategy, regional bases, and Lebanon",
+        "content": "The PLO became the main Palestinian national actor and used armed struggle, diplomacy, and international recognition efforts. Operations from Jordan and later Lebanon drew regional states into repeated confrontation. Israeli invasions of Lebanon, including the 1982 war, aimed to weaken armed groups threatening its border.",
+        "next": "Did diplomacy ever break through the war cycle?"
+    },
+    {
+        "id": 18,
+        "timeline": "1973-1979",
+        "title": "War then peace with Egypt",
+        "content": "The 1973 Arab-Israeli war reshaped regional calculations even though Israel ultimately held militarily. Egypt and Israel later signed peace, and Sinai was returned to Egypt. This proved negotiated territorial compromise was possible between states, but it did not resolve Palestinian statehood.",
+        "next": "What did popular uprising change inside occupied territories?"
+    },
+    {
+        "id": 19,
+        "timeline": "1987-1993",
+        "title": "First Intifada and political shift",
+        "content": "The First Intifada began as a mass Palestinian uprising in occupied territories and changed global perceptions of the conflict. During this period, Islamist movements including Hamas gained ground, while the PLO moved toward diplomatic recognition formulas. The stage was set for direct negotiations.",
+        "next": "What did Oslo achieve, and what did it leave unresolved?"
+    },
+    {
+        "id": 20,
+        "timeline": "1993-1995",
+        "title": "Oslo: mutual recognition without final peace",
+        "content": "Israel and the PLO mutually recognized each other and created a phased process of Palestinian self-rule in parts of the West Bank and Gaza. Oslo raised hopes but postponed core issues: refugees, settlements, borders, Jerusalem, and security architecture. Opponents on both sides used violence to undermine trust.",
+        "next": "Why did the process break down in the 2000s?"
+    },
+    {
+        "id": 21,
+        "timeline": "2000-2005",
+        "title": "Second Intifada, terrorism, and military response",
+        "content": "Failed talks and mutual distrust were followed by the Second Intifada, with suicide bombings and Israeli military operations causing large civilian casualties on both sides. Israel expanded closures and built a separation barrier, arguing security necessity. Palestinians and many international bodies criticized route choices and humanitarian impact.",
+        "next": "What changed after Israel withdrew settlements from Gaza?"
+    },
+    {
+        "id": 22,
+        "timeline": "2005-2007",
+        "title": "Gaza disengagement and Palestinian split",
+        "content": "Israel removed settlements and permanent military presence from inside Gaza in 2005. After Hamas won elections and fighting with Fatah escalated, Hamas took control of Gaza and Fatah dominated the Palestinian Authority in the West Bank. Israel and Egypt imposed restrictions and blockade measures on Gaza citing security threats.",
+        "next": "How did this shape the repeated Gaza wars?"
+    },
+    {
+        "id": 23,
+        "timeline": "2008-2022",
+        "title": "Blockade, rockets, and repeated escalation",
+        "content": "Cycles of rocket fire from Gaza and Israeli air and ground campaigns produced repeated humanitarian crises and infrastructure destruction. Israel frames operations as defense against armed groups targeting civilians. Palestinians and many human rights organizations highlight collective harm to Gaza's civilian population under prolonged blockade and war.",
+        "next": "Did diplomacy make progress during this period?"
+    },
+    {
+        "id": 24,
+        "timeline": "2012-2020",
+        "title": "Diplomatic shifts without final-status agreement",
+        "content": "Palestine gained non-member observer state status at the UN in 2012. U.S.-led bilateral talks repeatedly failed, while settlement expansion and Palestinian political fragmentation deepened distrust. Separate Arab-Israeli normalization deals moved forward, but Palestinians saw little improvement on core national demands.",
+        "next": "What changed after October 7, 2023?"
+    },
+    {
+        "id": 25,
+        "timeline": "2023-present",
+        "title": "October 7 attack and Gaza war",
+        "content": "On October 7, 2023, Hamas attacked southern Israel, killing civilians and taking hostages. Israel responded with large-scale bombardment and ground invasion of Gaza. The war produced severe civilian casualties, mass displacement, hostage crises, and global legal and moral disputes over proportionality, protection, and accountability.",
+        "next": "What major issues remain unresolved despite decades of diplomacy?"
+    },
+    {
+        "id": 26,
+        "timeline": "Unresolved core issues",
+        "title": "Refugees, Jerusalem, borders, security, sovereignty",
+        "content": "Final-status disputes remain unresolved: refugee return and compensation, sovereignty in Jerusalem and holy sites, borders and settlements, Israeli security guarantees, Palestinian statehood, and governance of Gaza. These issues are interlinked, which makes partial deals fragile. Any long-term framework must address rights, security, legitimacy, and implementation mechanisms at the same time.",
+        "next": "How do different groups interpret the same timeline so differently?"
+    },
+    {
+        "id": 27,
+        "timeline": "Chapter 6: Perspectives",
+        "title": "Competing narratives over the same events",
+        "content": "Many Israelis interpret key wars primarily through security and survival after historical persecution, while many Palestinians interpret the same sequence through dispossession, occupation, and denied self-determination. Neither perspective alone captures all facts or all harms. Understanding the conflict requires holding multiple truths about fear, loss, agency, and power at once.",
+        "next": "Test what you remember."
+    }
+]
 

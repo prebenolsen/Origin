@@ -4,6 +4,42 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.10.2] - 2026-06-25
+
+### Changed - category-first Home navigation
+- Restructured the Home screen into a two-step flow: the user now first picks a category,
+  then sees that category's modules. Previously every category, subcategory, and module
+  was flattened into one long scroll.
+- `/` (`HomeScreen`) is now a category picker (`CategoryCard` grid); a new `/c/:cat`
+  route (`CategoryScreen`) lists one category's modules grouped by subcategory, with an
+  "← All categories" back link.
+- Added `getCategory(slug)` to the content registry (`src/lib/content.ts`).
+- Leaving a module now returns to its category (`/c/:cat`) instead of the Home picker,
+  keeping the browsing context.
+
+## [1.10.1] - 2026-06-25
+
+### Changed - hide unfinished placeholder modules from the user
+- The content registry (`src/lib/content.ts`) now skips any module whose `module.json`
+  title is prefixed with `PLACEHOLDER:` (the scaffolding marker). Placeholder modules no
+  longer appear in the Home listings, the module count, or via a direct URL — only
+  authored modules are visible.
+- Data-driven and zero-touch: authoring a placeholder (replacing its title with a real
+  one) publishes the module automatically, with no code change — consistent with the
+  "drop a folder, no code changes" workflow.
+- Currently surfaces the 12 authored modules and hides the 79 placeholder scaffolds.
+
+## [1.10.0] - 2026-06-25
+
+### Added - authored The Modern World global-conflicts module
+- Replaced placeholder files in `src/content/the-modern-world/global-conflicts/israel-and-palestine/` with complete authored content generated from `raw.md`.
+- Added a balanced `module.json` context map and framing that distinguishes historical facts, interpretations, and political claims.
+- Wrote a 27-card `story.json` in chaptered progression from late Ottoman background to contemporary war and unresolved final-status issues.
+- Rebuilt `timeline.json` with major milestones and aligned story `timeline` values to those milestone labels.
+- Replaced `quiz.json` with understanding-focused questions across multiple-choice, true-false, ordering, and matching.
+- Replaced `flashcards.json` with neutral key concept cards focused on causation, terminology, and unresolved issues.
+- Updated `docs/content.md` to mark `Israel and Palestine` as `DONE`.
+
 ## [1.9.0] - 2026-06-25
 
 ### Added - The Modern World placeholder scaffolding

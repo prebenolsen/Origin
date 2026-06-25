@@ -1,7 +1,7 @@
 {
   "name": "origin",
   "private": true,
-  "version": "1.9.0",
+  "version": "1.10.2",
   "type": "module",
   "description": "Origin — a mobile-first interactive learning engine.",
   "scripts": {

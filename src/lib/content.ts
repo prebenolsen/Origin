@@ -83,13 +83,25 @@ function categoryName(slug: string): string {
   return CATEGORY_DISPLAY[slug] ?? humanize(slug);
 }
 
+/**
+ * Unfinished modules ship as scaffolding with a `PLACEHOLDER:`-prefixed title
+ * (see the placeholder scaffolds in `docs/content.md`). They are excluded from
+ * the registry so they never reach the user — not in listings, counts, or via a
+ * direct URL. Authoring a module (replacing the placeholder title with a real
+ * one) publishes it automatically; no code change is needed.
+ */
+function isPlaceholder(meta: ModuleMeta | undefined): boolean {
+  return (meta?.title ?? '').trimStart().toUpperCase().startsWith('PLACEHOLDER');
+}
+
 function buildBundles(): Map<string, ModuleBundle> {
   const bundles = new Map<string, ModuleBundle>();
   for (const key of Object.keys(metaFiles)) {
     const parts = parseKey(key);
     if (!parts) continue;
-    const path = `${parts.cat}/${parts.sub}/${parts.mod}`;
     const meta = metaFiles[key] as ModuleMeta;
+    if (isPlaceholder(meta)) continue; // hide unfinished placeholder modules
+    const path = `${parts.cat}/${parts.sub}/${parts.mod}`;
     bundles.set(path, {
       path,
       categorySlug: parts.cat,
@@ -167,6 +179,11 @@ export function getCategoryGroups(): CategoryGroup[] {
     }
   }
   return groups;
+}
+
+/** A single category group (with its published modules) by slug, or undefined. */
+export function getCategory(slug: string): CategoryGroup | undefined {
+  return getCategoryGroups().find((group) => group.slug === slug);
 }
 
 /** Total number of discovered modules (used in the Home hero). */

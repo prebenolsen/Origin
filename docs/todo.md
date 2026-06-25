@@ -9,3 +9,6 @@
 - Timeline sorted?
 - Choose to sort by timeline vs location? Needs geo-tag? 
 - Other tags that can be useful? 
+
+# Israel-Palestine
+- Use maps for helping the user understand

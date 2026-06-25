@@ -10,7 +10,7 @@ export interface ModuleContext {
   base: string;
   /** Navigate to a stage within this module. */
   go: (stage: StageSlug) => void;
-  /** Leave the module (back to Home). */
+  /** Leave the module (back to its category). */
   exit: () => void;
 }
 
@@ -46,7 +46,7 @@ export default function ModuleExperience() {
     bundle,
     base,
     go: (stage) => navigate(stage ? `${base}/${stage}` : base),
-    exit: () => navigate('/'),
+    exit: () => navigate(`/c/${bundle.categorySlug}`),
   };
 
   return <Outlet context={ctx} />;

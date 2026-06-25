@@ -1,6 +1,63 @@
-{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+    {
+        "id": 1,
+        "front": "Why separate fact, interpretation, and claim?",
+        "back": "Facts describe what happened, interpretations explain meaning, and claims argue what should happen politically."
+    },
+    {
+        "id": 2,
+        "front": "Zionism (modern political sense)",
+        "back": "A Jewish national movement that sought self-determination in the historic land, especially after persecution in Europe."
+    },
+    {
+        "id": 3,
+        "front": "Palestinian nationalism",
+        "back": "A national movement for political self-determination in Palestine, developed under late Ottoman and Mandate rule."
+    },
+    {
+        "id": 4,
+        "front": "1947 UN partition",
+        "back": "A UN proposal for separate Jewish and Arab states with special status for Jerusalem; accepted by Zionist leadership, rejected by Arab leadership."
+    },
+    {
+        "id": 5,
+        "front": "Nakba",
+        "back": "The Palestinian term for the 1948 catastrophe, referring to mass displacement and loss of homes and communities."
+    },
+    {
+        "id": 6,
+        "front": "1948 Israeli framing",
+        "back": "Often described in Israel as the War of Independence and a struggle for survival after statehood declaration."
+    },
+    {
+        "id": 7,
+        "front": "1967 as turning point",
+        "back": "The war placed the West Bank, East Jerusalem, and Gaza under Israeli control, centralizing occupation and settlement disputes."
+    },
+    {
+        "id": 8,
+        "front": "Oslo Accords",
+        "back": "1990s agreements with mutual recognition between Israel and the PLO, but without final resolution of core issues."
+    },
+    {
+        "id": 9,
+        "front": "Gaza-West Bank political split",
+        "back": "Since 2007, Hamas has governed Gaza while Fatah-led Palestinian Authority has governed parts of the West Bank."
+    },
+    {
+        "id": 10,
+        "front": "Core unresolved issues",
+        "back": "Refugees, Jerusalem, borders, settlements, security guarantees, sovereignty, and governance arrangements."
+    },
+    {
+        "id": 11,
+        "front": "Competing narrative risk",
+        "back": "Treating one narrative as the only truth can hide other documented harms, fears, and political realities."
+    },
+    {
+        "id": 12,
+        "front": "Balanced analysis goal",
+        "back": "Explain causes, events, and consequences without turning the topic into a loyalty test or opinion contest."
+    }
+]
 

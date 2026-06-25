@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import AppShell from './components/AppShell';
 import HomeScreen from './components/home/HomeScreen';
+import CategoryScreen from './components/home/CategoryScreen';
 import ModuleExperience from './components/module/ModuleExperience';
 import ContextIntro from './components/module/ContextIntro';
 import StoryFeed from './components/module/StoryFeed';
@@ -13,6 +14,7 @@ export default function App() {
     <AppShell>
       <Routes>
         <Route path="/" element={<HomeScreen />} />
+        <Route path="/c/:cat" element={<CategoryScreen />} />
         <Route path="/m/:cat/:sub/:mod" element={<ModuleExperience />}>
           <Route index element={<ContextIntro />} />
           <Route path="story" element={<StoryFeed />} />

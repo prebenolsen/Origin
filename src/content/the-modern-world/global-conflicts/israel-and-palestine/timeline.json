@@ -1,5 +1,51 @@
-{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+[
+    {
+        "year": "Late Ottoman era",
+        "title": "Local communities under imperial rule before modern partition politics"
+    },
+    {
+        "year": "1880s-1910s",
+        "title": "Zionist migration waves and rising Palestinian Arab political concern"
+    },
+    {
+        "year": "1917-1939",
+        "title": "British Mandate, competing national projects, and recurring revolt"
+    },
+    {
+        "year": "1947-1949",
+        "title": "UN partition, war, Israel's creation, and Palestinian mass displacement"
+    },
+    {
+        "year": "1950s",
+        "title": "Armistice instability, refugee crisis, and cross-border violence"
+    },
+    {
+        "year": "1967",
+        "title": "War transforms conflict into long-term occupation and settlement era"
+    },
+    {
+        "year": "1973-1979",
+        "title": "Regional war followed by Egypt-Israel peace"
+    },
+    {
+        "year": "1987-1995",
+        "title": "First Intifada and Oslo mutual recognition"
+    },
+    {
+        "year": "2000-2007",
+        "title": "Second Intifada, barrier expansion, Gaza disengagement, and Palestinian split"
+    },
+    {
+        "year": "2008-2022",
+        "title": "Repeated Gaza wars and stalled final-status diplomacy"
+    },
+    {
+        "year": "2023-present",
+        "title": "October 7 attack, Gaza war, hostages, and severe humanitarian crisis"
+    },
+    {
+        "year": "Unresolved core issues",
+        "title": "Refugees, Jerusalem, borders, settlements, security, and sovereignty"
+    }
+]
 

@@ -1,40 +1,95 @@
 {
-    "title":  "PLACEHOLDER: Israel and Palestine",
-    "period":  "19th century-present: nationalism, conflict, and diplomacy",
-    "category":  "the-modern-world",
-    "subcategory":  "global-conflicts",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "19th century-present: nationalism, conflict, and diplomacy",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
+    "title": "Israel and Palestine",
+    "period": "19th century to present",
+    "category": "the-modern-world",
+    "subcategory": "global-conflicts",
+    "summary": "A multi-perspective foundation on how competing national movements, wars, occupation, displacement, and diplomacy shaped one of the world's most contested conflicts.",
+    "accent": "#8b6b47",
+    "context": {
+        "type": "map",
+        "headline": "One land, overlapping histories, unresolved claims",
+        "description": "This module separates broadly accepted historical facts from interpretations and political claims. It follows key turning points from late Ottoman rule to the present, showing how Israelis, Palestinians, and regional actors often understand the same events differently.",
+        "when": "19th century to present",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                {
+                    "id": "jerusalem",
+                    "label": "Jerusalem",
+                    "x": 49,
+                    "y": 45,
+                    "role": "primary"
+                },
+                {
+                    "id": "telaviv",
+                    "label": "Tel Aviv",
+                    "x": 42,
+                    "y": 44,
+                    "role": "secondary"
+                },
+                {
+                    "id": "gaza",
+                    "label": "Gaza Strip",
+                    "x": 38,
+                    "y": 52,
+                    "role": "primary"
+                },
+                {
+                    "id": "westbank",
+                    "label": "West Bank",
+                    "x": 52,
+                    "y": 47,
+                    "role": "primary"
+                },
+                {
+                    "id": "sinai",
+                    "label": "Sinai",
+                    "x": 30,
+                    "y": 57,
+                    "role": "secondary"
+                },
+                {
+                    "id": "lebanon",
+                    "label": "Lebanon",
+                    "x": 48,
+                    "y": 32,
+                    "role": "secondary"
+                },
+                {
+                    "id": "amman",
+                    "label": "Jordan",
+                    "x": 61,
+                    "y": 48,
+                    "role": "secondary"
                 }
+            ],
+            "connections": [
+                {
+                    "from": "gaza",
+                    "to": "westbank",
+                    "label": "Palestinian territories"
+                },
+                {
+                    "from": "westbank",
+                    "to": "jerusalem",
+                    "label": "governance and holy sites"
+                },
+                {
+                    "from": "lebanon",
+                    "to": "jerusalem",
+                    "label": "regional conflict spillover"
+                },
+                {
+                    "from": "sinai",
+                    "to": "gaza",
+                    "label": "Egypt-Israel security history"
+                },
+                {
+                    "from": "amman",
+                    "to": "westbank",
+                    "label": "1948 and 1967 legacies"
+                }
+            ]
+        }
+    }
 }

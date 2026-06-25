@@ -1,14 +1,106 @@
-{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "Why does this module separate facts, interpretations, and political claims?",
+        "options": [
+            "Because historical evidence does not exist for this conflict",
+            "Because all narratives are identical",
+            "Because the same event can be documented similarly but interpreted differently by different groups",
+            "Because diplomacy is no longer relevant"
+        ],
+        "answer": 2,
+        "explanation": "The conflict includes well-evidenced events, but communities often attach different causes, moral meanings, and policy conclusions to them."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "The 1947 UN partition proposal was accepted by Zionist leadership and rejected by Palestinian Arab leadership and neighboring Arab states.",
+        "answer": true,
+        "explanation": "This difference in response is a central turning point in how the conflict moved from diplomacy into war."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What made 1967 a structural turning point?",
+        "options": [
+            "It ended all armed conflict in the region",
+            "It shifted the conflict toward occupation, settlements, and sovereignty disputes in captured territories",
+            "It created an immediate Palestinian state",
+            "It removed Jerusalem from political and religious debate"
+        ],
+        "answer": 1,
+        "explanation": "The territorial outcomes of 1967 reshaped the long-term agenda: borders, control, settlements, security, and self-determination."
+    },
+    {
+        "id": 4,
+        "type": "matching",
+        "question": "Match each issue to why it remains unresolved.",
+        "pairs": [
+            {
+                "left": "Refugees",
+                "right": "Disagreement over return, compensation, and demographic-security implications"
+            },
+            {
+                "left": "Jerusalem and holy sites",
+                "right": "Overlapping national capitals and religious claims"
+            },
+            {
+                "left": "Settlements",
+                "right": "Competing legal frameworks and territorial fragmentation"
+            },
+            {
+                "left": "Security arrangements",
+                "right": "Mutual distrust over armed threats, control, and enforcement"
+            }
+        ],
+        "explanation": "These are linked issues, so compromise in one area is difficult without movement in others."
+    },
+    {
+        "id": 5,
+        "type": "ordering",
+        "question": "Put these milestones in chronological order.",
+        "items": [
+            "Oslo mutual recognition",
+            "UN partition proposal",
+            "Six-Day War",
+            "October 7 attack and Gaza war"
+        ],
+        "correctOrder": [1, 2, 0, 3],
+        "explanation": "1947 partition came first, then 1967 war, then Oslo in 1993, then the 2023 escalation."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "Which statement best captures why single-axis explanations often fail?",
+        "options": [
+            "The conflict is only about religion",
+            "The conflict is only about security",
+            "The conflict combines nationalism, territory, governance, rights, identity, and regional geopolitics",
+            "The conflict has no historical roots"
+        ],
+        "answer": 2,
+        "explanation": "Multiple layers interact: statehood, occupation, displacement, armed groups, regional powers, and international diplomacy."
+    },
+    {
+        "id": 7,
+        "type": "true-false",
+        "question": "A balanced analysis can recognize Israeli security fears and Palestinian experiences of dispossession and occupation at the same time.",
+        "answer": true,
+        "explanation": "Understanding improves when multiple lived realities and harms are examined together rather than treated as mutually exclusive."
+    },
+    {
+        "id": 8,
+        "type": "multiple-choice",
+        "question": "Why have many diplomatic rounds failed to produce a final settlement?",
+        "options": [
+            "Because core issues were simple and quickly solved",
+            "Because key final-status issues were postponed while trust deteriorated and realities on the ground changed",
+            "Because international actors never engaged",
+            "Because both societies had no internal political disagreement"
+        ],
+        "answer": 1,
+        "explanation": "Deferring core disputes while violence, settlement growth, political fragmentation, and mistrust continued made final agreement harder."
+    }
+]
 
