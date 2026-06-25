@@ -4,6 +4,41 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.12.0] - 2026-06-25
+
+### Changed - Psychology scaffold synced to updated module list
+- Synchronized `src/content/psychology/` folders and placeholder files with the revised Psychology rows in `docs/content.md`.
+- Added missing module scaffolds to match newly introduced/renamed modules, including:
+  - `personality-traits-and-models`
+  - `understanding-emotions`
+  - `emotional-regulation`
+  - `memory-and-learning`
+  - `self-control-and-procrastination`
+  - `problem-solving-and-creativity`
+  - `confidence-identity-and-self-image`
+  - `personal-growth-and-change`
+  - `stress-and-coping`
+  - `anxiety-and-fear`
+  - `depression-and-mood`
+- Removed obsolete Psychology placeholder module folders that were no longer present in the updated tracker list.
+- Final Psychology structure now contains 21 module folders, each with `module.json`, `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json` placeholders.
+
+## [1.11.0] - 2026-06-25
+
+### Added - Psychology placeholder scaffolding
+- Added a new category scaffold under `src/content/psychology/` with subcategories:
+  - `foundations`
+  - `personality`
+  - `social-psychology`
+  - `emotions`
+  - `learning`
+  - `motivation`
+  - `self-development`
+  - `human-behavior`
+  - `mental-health`
+- Created 17 module folders with full placeholder file sets (`module.json`, `story.json`, `timeline.json`, `quiz.json`, `flashcards.json`) following the existing project schema.
+- Added/normalized Psychology rows in `docs/content.md` to include explicit `Status` placeholders (`------`) so all rows match the tracker table format.
+
 ## [1.10.2] - 2026-06-25
 
 ### Changed - category-first Home navigation

@@ -91,3 +91,24 @@
 | The Modern World | Environment | Climate Change | Causes, consequences, and global responses | ------ |
 | The Modern World | International Relations | United States and China | Great power competition | ------ |
 | The Modern World | International Relations | NATO and Global Security | Alliances and international security | ------ |
+| Psychology | Foundations       | What is Psychology?                    | The study of the mind, behavior, and human experience          |
+| Psychology | Foundations       | Nature, Nurture, and Human Development | How biology and environment shape people                       |
+| Psychology | Foundations       | The Human Brain and Behavior           | How the brain creates thoughts, emotions, and actions          |
+| Psychology | Personality       | Personality and Individual Differences | Why people think and behave differently                        |
+| Psychology | Personality       | Personality Traits and Models          | The Big Five and ways psychologists understand personality     |
+| Psychology | Social Psychology | How People Influence Each Other        | Groups, conformity, authority, persuasion, and social pressure |
+| Psychology | Social Psychology | How Humans Understand Other People     | First impressions, empathy, judgments, and assumptions         |
+| Psychology | Social Psychology | Human Relationships and Social Bonds   | Attraction, friendship, trust, conflict, and cooperation       |
+| Psychology | Emotions          | Understanding Emotions                 | Why humans feel emotions and how emotions guide behavior       |
+| Psychology | Emotions          | Emotional Regulation                   | How people manage feelings, reactions, and impulses            |
+| Psychology | Learning          | Memory and Learning                    | How humans learn, remember, and adapt                          |
+| Psychology | Learning          | Habits and Behavior Change             | How behaviors form and how they can be changed                 |
+| Psychology | Motivation        | Motivation and Goal Achievement        | Why people pursue goals and what drives action                 |
+| Psychology | Motivation        | Self-Control and Procrastination       | Why people delay actions and how behavior changes              |
+| Psychology | Human Behavior    | Decision Making and Cognitive Biases   | How humans think, decide, and make mistakes                    |
+| Psychology | Human Behavior    | Problem Solving and Creativity         | How humans generate ideas and solve challenges                 |
+| Psychology | Self Development  | Confidence, Identity, and Self-Image   | How people see themselves and build confidence                 |
+| Psychology | Self Development  | Personal Growth and Change             | How people improve and develop throughout life                 |
+| Psychology | Mental Health     | Stress and Coping                      | How humans respond to pressure and challenges                  |
+| Psychology | Mental Health     | Anxiety and Fear                       | How threat systems affect thoughts and behavior                |
+| Psychology | Mental Health     | Depression and Mood                    | Understanding motivation, emotion, and mood changes            |

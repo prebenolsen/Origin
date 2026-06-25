@@ -1,0 +1,40 @@
+{
+    "title":  "PLACEHOLDER: Decision Making and Cognitive Biases",
+    "period":  "How humans think, decide, and make mistakes",
+    "category":  "psychology",
+    "subcategory":  "human-behavior",
+    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
+    "accent":  "#9a9a9a",
+    "context":  {
+                    "type":  "map",
+                    "headline":  "PLACEHOLDER: Context headline",
+                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
+                    "when":  "How humans think, decide, and make mistakes",
+                    "map":  {
+                                "backdrop":  "world",
+                                "markers":  [
+                                                {
+                                                    "id":  "placeholder-a",
+                                                    "label":  "PLACEHOLDER A",
+                                                    "x":  30,
+                                                    "y":  30,
+                                                    "role":  "primary"
+                                                },
+                                                {
+                                                    "id":  "placeholder-b",
+                                                    "label":  "PLACEHOLDER B",
+                                                    "x":  65,
+                                                    "y":  55,
+                                                    "role":  "secondary"
+                                                }
+                                            ],
+                                "connections":  [
+                                                    {
+                                                        "from":  "placeholder-a",
+                                                        "to":  "placeholder-b",
+                                                        "label":  "PLACEHOLDER LINK"
+                                                    }
+                                                ]
+                            }
+                }
+}
