@@ -1,6 +1,43 @@
-{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+    {
+        "id": 1,
+        "front": "What is the first objective in persuasive conversation?",
+        "back": "Lower defensiveness before presenting your main point."
+    },
+    {
+        "id": 2,
+        "front": "Why is sincere appreciation influential?",
+        "back": "It meets the need for recognition and increases openness to collaboration."
+    },
+    {
+        "id": 3,
+        "front": "How does active listening change disagreement?",
+        "back": "People who feel heard become less rigid and more willing to consider alternatives."
+    },
+    {
+        "id": 4,
+        "front": "What is a common cost of trying to 'win' arguments?",
+        "back": "You may win the point but lose trust and long-term influence."
+    },
+    {
+        "id": 5,
+        "front": "Why ask questions instead of giving blunt orders?",
+        "back": "Questions create ownership, reduce resistance, and invite better ideas."
+    },
+    {
+        "id": 6,
+        "front": "What does 'saving face' protect?",
+        "back": "A person's dignity, which helps preserve cooperation after mistakes."
+    },
+    {
+        "id": 7,
+        "front": "How can identity be used to support behavior change?",
+        "back": "Give people a positive reputation to live up to, then reinforce progress."
+    },
+    {
+        "id": 8,
+        "front": "How does this module define ethical influence?",
+        "back": "Align interests, respect people, and guide change without humiliation."
+    }
+]
 

@@ -1,5 +1,31 @@
-{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+[
+    {
+        "year": "Social Need",
+        "title": "Bonding as a core human requirement"
+    },
+    {
+        "year": "Homeostasis Circuit",
+        "title": "Social craving and regulation systems"
+    },
+    {
+        "year": "Shared Drives",
+        "title": "Overlap with broader reward-motivation pathways"
+    },
+    {
+        "year": "Bond Formation",
+        "title": "Physiological synchrony and felt closeness"
+    },
+    {
+        "year": "Developmental Roots",
+        "title": "Early attachment and empathy architecture"
+    },
+    {
+        "year": "Hormonal Glue",
+        "title": "Oxytocin-linked reinforcement and variability"
+    },
+    {
+        "year": "Loss and Recovery",
+        "title": "Breakup impact and bond rebuilding"
+    }
+]
 

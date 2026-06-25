@@ -1,8 +1,101 @@
-{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+    {
+        "id": 1,
+        "timeline": "Social Need",
+        "title": "Relationships are a biological requirement",
+        "content": "The source frames social bonds as central to quality of life from birth to death. Bonding is not only a cultural preference or personality trait. Much of the nervous system is organized to create and maintain social connection.",
+        "next": "What happens when this need is blocked?"
+    },
+    {
+        "id": 2,
+        "timeline": "Social Need",
+        "title": "Social isolation is a stress state",
+        "content": "When people are deprived of desired social contact, stress chemistry rises and behavior can shift toward irritability. Isolation can make later connection harder, not easier. That is one reason loneliness often becomes self-reinforcing.",
+        "next": "Is there a dedicated circuit for social craving?"
+    },
+    {
+        "id": 3,
+        "timeline": "Homeostasis Circuit",
+        "title": "The brain tracks social balance like hunger",
+        "content": "A key idea is social homeostasis: the brain monitors whether your level of connection is below, at, or above your set point. If connection drops below expected levels, motivation to seek others increases. This resembles hunger signaling after missing meals.",
+        "next": "Which parts of the system do this job?"
+    },
+    {
+        "id": 4,
+        "timeline": "Homeostasis Circuit",
+        "title": "Detector, controller, and effector work together",
+        "content": "The source describes a multi-part circuit: detection of social conditions, control adjustments, and behavioral output. Dopamine-linked output drives approach behavior when social need is unmet. Prefrontal systems add flexibility by considering context and hierarchy.",
+        "next": "How does this explain introversion and extroversion?"
+    },
+    {
+        "id": 5,
+        "timeline": "Homeostasis Circuit",
+        "title": "Introversion and extroversion are set-point differences",
+        "content": "In this model, introversion is not social dislike and extroversion is not just talkativeness. The difference is how much interaction is needed to feel socially 'filled up.' People vary in the amount of social input needed to reach satisfaction.",
+        "next": "What changes during short vs long isolation?"
+    },
+    {
+        "id": 6,
+        "timeline": "Homeostasis Circuit",
+        "title": "Short isolation can increase seeking; long isolation can blunt it",
+        "content": "Acute deprivation often increases social craving. But chronic deprivation can reduce active seeking and shift people toward withdrawal. This helps explain why reconnecting can feel hardest after long periods alone.",
+        "next": "How are social and other drives connected?"
+    },
+    {
+        "id": 7,
+        "timeline": "Shared Drives",
+        "title": "Social and hunger drives overlap biologically",
+        "content": "The source points to shared motivational pathways across social contact and food-seeking. When one homeostatic need is deprived, behavior can shift toward other reward routes. That is why social deprivation and comfort-seeking habits can co-occur.",
+        "next": "What creates felt closeness between people?"
+    },
+    {
+        "id": 8,
+        "timeline": "Bond Formation",
+        "title": "Synchrony creates social closeness",
+        "content": "A major finding is that shared narratives and experiences can synchronize physiology, such as heart-rate patterns. This synchrony is strongly linked to perceived bond depth. Often, people connect through shared external experiences, not only direct conversation.",
+        "next": "How does development shape later relationships?"
+    },
+    {
+        "id": 9,
+        "timeline": "Developmental Roots",
+        "title": "Early attachment systems are reused in adult bonds",
+        "content": "Infant-caregiver interactions tune bonding circuits that later support friendship and romantic attachment. Early patterns are influential but not destiny. Plasticity means these systems can be reshaped by later experiences and intentional practice.",
+        "next": "What two empathy systems strengthen trust?"
+    },
+    {
+        "id": 10,
+        "timeline": "Developmental Roots",
+        "title": "Strong bonds combine emotional and cognitive empathy",
+        "content": "Emotional empathy aligns felt bodily states, while cognitive empathy tracks another person's perspective and meaning. Trust tends to deepen when both systems are active. Agreement on every topic is not required; reciprocal understanding is.",
+        "next": "Which hormone is most associated with bond reinforcement?"
+    },
+    {
+        "id": 11,
+        "timeline": "Hormonal Glue",
+        "title": "Oxytocin reinforces social attachment",
+        "content": "Oxytocin is associated with touch, caregiving, pair bonding, and aspects of trust signaling. It supports coordination across nervous systems and can strengthen perceived connection. Variation in oxytocin pathways may partly explain social-bonding differences.",
+        "next": "Do these mechanisms apply only to in-person interaction?"
+    },
+    {
+        "id": 12,
+        "timeline": "Hormonal Glue",
+        "title": "Online interaction can still engage bonding systems",
+        "content": "The source argues that social media contexts can activate real social-bonding pathways, though not always in the same way as in-person contact. Shared narratives and repeated interaction still shape synchrony and attachment behavior. Digital does not automatically mean unreal.",
+        "next": "Why do breakups feel physically painful?"
+    },
+    {
+        "id": 13,
+        "timeline": "Loss and Recovery",
+        "title": "Breakups are neurobiological disruptions",
+        "content": "Losing a major bond removes important sources of dopamine and oxytocin-linked regulation. The nervous system experiences this as a real deficit, not only a story in the mind. That is why friendship, family, and romantic losses can feel deeply destabilizing.",
+        "next": "How can people use this model in everyday life?"
+    },
+    {
+        "id": 14,
+        "timeline": "Loss and Recovery",
+        "title": "Social skills become more actionable with the model",
+        "content": "When you understand social homeostasis, synchrony, empathy, and bonding chemistry, relationships become more navigable. You can better identify what to strengthen, what to repair, and what to leave. The goal is not manipulation, but healthier and more satisfying bonds.",
+        "next": "Which of your current relationships needs more synchrony, empathy, or structure?"
+    }
+]
 

@@ -1,6 +1,43 @@
-{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+    {
+        "id": 1,
+        "front": "What does emotional valence describe?",
+        "back": "How pleasant or unpleasant an emotional state feels."
+    },
+    {
+        "id": 2,
+        "front": "What is interoception?",
+        "back": "Attention to internal bodily signals such as heart rate, breathing, gut sensations, and tension."
+    },
+    {
+        "id": 3,
+        "front": "What is exteroception?",
+        "back": "Attention to outside signals like people, sound, visual input, and environmental changes."
+    },
+    {
+        "id": 4,
+        "front": "Why do early caregiver responses matter for emotion?",
+        "back": "They help build predictions about safety, reliability, and whether distress will be met with soothing support."
+    },
+    {
+        "id": 5,
+        "front": "Name the four social channels highlighted in attachment calibration.",
+        "back": "Gaze, vocalization, affect expression, and touch."
+    },
+    {
+        "id": 6,
+        "front": "Which puberty-linked hormone signal starts the cascade toward reproductive maturation?",
+        "back": "Kisspeptin helps trigger GnRH release, which drives downstream hormonal changes."
+    },
+    {
+        "id": 7,
+        "front": "How is oxytocin framed in this module?",
+        "back": "As a bonding-related signal linked to touch, lactation, pair dynamics, and greater social-state synchrony."
+    },
+    {
+        "id": 8,
+        "front": "What is a core regulation move when overwhelmed?",
+        "back": "Deliberately shift attention direction: from intense interoception toward structured exteroceptive focus, or vice versa."
+    }
+]
 

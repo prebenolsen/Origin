@@ -96,11 +96,11 @@
 | Psychology | Foundations       | The Human Brain and Behavior           | How the brain creates thoughts, emotions, and actions          |
 | Psychology | Personality       | Personality and Individual Differences | Why people think and behave differently                        |
 | Psychology | Personality       | Personality Traits and Models          | The Big Five and ways psychologists understand personality     |
-| Psychology | Social Psychology | How People Influence Each Other        | Groups, conformity, authority, persuasion, and social pressure |
+| Psychology | Social Psychology | How People Influence Each Other        | Groups, conformity, authority, persuasion, and social pressure | DONE |
 | Psychology | Social Psychology | How Humans Understand Other People     | First impressions, empathy, judgments, and assumptions         |
-| Psychology | Social Psychology | Human Relationships and Social Bonds   | Attraction, friendship, trust, conflict, and cooperation       |
+| Psychology | Social Psychology | Human Relationships and Social Bonds   | Attraction, friendship, trust, conflict, and cooperation       | DONE |
 | Psychology | Emotions          | Understanding Emotions                 | Why humans feel emotions and how emotions guide behavior       |
-| Psychology | Emotions          | Emotional Regulation                   | How people manage feelings, reactions, and impulses            |
+| Psychology | Emotions          | Emotional Regulation                   | How people manage feelings, reactions, and impulses            | DONE |
 | Psychology | Learning          | Memory and Learning                    | How humans learn, remember, and adapt                          |
 | Psychology | Learning          | Habits and Behavior Change             | How behaviors form and how they can be changed                 |
 | Psychology | Motivation        | Motivation and Goal Achievement        | Why people pursue goals and what drives action                 |

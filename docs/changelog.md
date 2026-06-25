@@ -4,6 +4,25 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.14.0] - 2026-06-25
+
+### Added - authored Social Psychology modules from source transcripts
+- Completed `src/content/psychology/social-psychology/how-people-influence-each-other/` by replacing remaining placeholders in `timeline.json`, `quiz.json`, and `flashcards.json` to match the already-authored `module.json` and `story.json`.
+- Completed `src/content/psychology/social-psychology/human-relationships-and-social-bonds/` by replacing placeholders in all five content files: `module.json`, `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json`.
+- Structured both modules around understanding-focused progression, major conceptual milestones, mixed quiz types (multiple-choice, true-false, ordering, matching), and retention-focused flashcards.
+- Updated `docs/content.md` to mark both modules as `DONE`.
+
+## [1.13.0] - 2026-06-25
+
+### Added - authored Psychology Emotions module
+- Replaced placeholder files in `src/content/psychology/emotions/emotional-regulation/` with complete authored content generated from `raw.md`.
+- Added a full `module.json` context model centered on arousal, valence, and interoception-exteroception balance, with development and neurobiology links.
+- Wrote a 13-card `story.json` that progresses from emotional-state fundamentals to early attachment, puberty rewiring, bond chemistry, and practical regulation tools.
+- Rebuilt `timeline.json` with conceptual milestones and aligned all story-card `timeline` values to those milestones.
+- Replaced `quiz.json` with understanding-focused questions across multiple-choice, true-false, ordering, and matching.
+- Replaced `flashcards.json` with key concept recall cards on emotional mapping, attachment, hormonal signaling, and regulation tactics.
+- Updated `docs/content.md` to mark `Emotional Regulation` as `DONE`.
+
 ## [1.12.0] - 2026-06-25
 
 ### Changed - Psychology scaffold synced to updated module list

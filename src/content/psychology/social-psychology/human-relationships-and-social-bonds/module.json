@@ -1,40 +1,32 @@
 {
-    "title":  "PLACEHOLDER: Human Relationships and Social Bonds",
-    "period":  "Attraction, friendship, trust, conflict, and cooperation",
-    "category":  "psychology",
-    "subcategory":  "social-psychology",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "Attraction, friendship, trust, conflict, and cooperation",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
-                }
+    "title": "Human Relationships and Social Bonds",
+    "period": "Lifespan social bonding: from infancy to adulthood",
+    "category": "psychology",
+    "subcategory": "social-psychology",
+    "summary": "How the brain's social homeostasis circuits, empathy systems, and hormones shape friendship, romance, attachment, and recovery from social loss.",
+    "accent": "#4a6a9a",
+    "context": {
+        "type": "schematic",
+        "headline": "Social bonds are biological needs, not optional extras",
+        "description": "The source presents social bonding as a homeostatic system, similar to hunger. We are pushed to seek connection through specific circuits and neurochemicals, then stabilized through shared physiology, empathy, and long-term attachment mechanisms. This framework helps explain friendship, love, loneliness, and breakup pain.",
+        "when": "Across daily life: family, friendship, romance, and online networks",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                { "id": "homeostasis", "label": "Social homeostasis", "x": 20, "y": 28, "role": "primary" },
+                { "id": "dopamine", "label": "Dopamine-driven social seeking", "x": 46, "y": 24, "role": "primary" },
+                { "id": "attachment", "label": "Early attachment templates", "x": 74, "y": 30, "role": "secondary" },
+                { "id": "empathy", "label": "Emotional and cognitive empathy", "x": 28, "y": 68, "role": "primary" },
+                { "id": "synchrony", "label": "Shared physiological synchrony", "x": 54, "y": 72, "role": "secondary" },
+                { "id": "oxytocin", "label": "Oxytocin bonding pathways", "x": 80, "y": 66, "role": "primary" }
+            ],
+            "connections": [
+                { "from": "homeostasis", "to": "dopamine", "label": "craving signal" },
+                { "from": "attachment", "to": "empathy", "label": "developmental carryover" },
+                { "from": "dopamine", "to": "synchrony", "label": "approach behavior" },
+                { "from": "empathy", "to": "synchrony", "label": "state matching" },
+                { "from": "synchrony", "to": "oxytocin", "label": "bond reinforcement" }
+            ]
+        }
+    }
 }

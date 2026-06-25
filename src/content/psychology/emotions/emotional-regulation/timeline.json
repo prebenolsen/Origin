@@ -1,5 +1,27 @@
-{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+[
+    {
+        "year": "Core Model",
+        "title": "Three-axis framework for emotions"
+    },
+    {
+        "year": "Early Attachment",
+        "title": "Infancy and attachment calibration"
+    },
+    {
+        "year": "Regulation Practice",
+        "title": "Training interoception-exteroception control"
+    },
+    {
+        "year": "Puberty Rewiring",
+        "title": "Hormonal and social-system reorganization"
+    },
+    {
+        "year": "Social Bond Chemistry",
+        "title": "Oxytocin, vasopressin, and vagus mechanisms"
+    },
+    {
+        "year": "Applied Regulation",
+        "title": "State mapping and targeted emotional action"
+    }
+]
 

@@ -1,40 +1,32 @@
 {
-    "title":  "PLACEHOLDER: Emotional Regulation",
-    "period":  "How people manage feelings, reactions, and impulses",
-    "category":  "psychology",
-    "subcategory":  "emotions",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "How people manage feelings, reactions, and impulses",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
-                }
+    "title": "Emotional Regulation",
+    "period": "Development to adulthood: how humans shape emotional states",
+    "category": "psychology",
+    "subcategory": "emotions",
+    "summary": "A practical model of emotions built on arousal, valence, and attention direction, plus the developmental and biological systems that make regulation possible.",
+    "accent": "#2f6e8c",
+    "context": {
+        "type": "schematic",
+        "headline": "Emotions are subjective, but they follow patterns",
+        "description": "This module frames emotional regulation as a skill, not a personality trait. Emotions differ from person to person, yet they can be mapped through three dimensions: alert-calm arousal, pleasant-unpleasant valence, and inward-outward attention. Development, hormones, social bonds, and body-brain circuits all shape how well we regulate.",
+        "when": "Infancy, puberty, and everyday adult life",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                { "id": "arousal", "label": "Arousal: alert-calm", "x": 20, "y": 30, "role": "primary" },
+                { "id": "valence", "label": "Valence: bad-good", "x": 45, "y": 24, "role": "primary" },
+                { "id": "attention", "label": "Interoception vs exteroception", "x": 72, "y": 32, "role": "primary" },
+                { "id": "attachment", "label": "Early attachment patterns", "x": 24, "y": 66, "role": "secondary" },
+                { "id": "puberty", "label": "Puberty rewiring", "x": 49, "y": 71, "role": "secondary" },
+                { "id": "bondchem", "label": "Bond chemistry and vagus", "x": 77, "y": 67, "role": "secondary" }
+            ],
+            "connections": [
+                { "from": "arousal", "to": "attention", "label": "state shifts" },
+                { "from": "valence", "to": "attention", "label": "meaning assignment" },
+                { "from": "attachment", "to": "attention", "label": "early calibration" },
+                { "from": "puberty", "to": "bondchem", "label": "social testing" },
+                { "from": "bondchem", "to": "arousal", "label": "regulation leverage" }
+            ]
+        }
+    }
 }

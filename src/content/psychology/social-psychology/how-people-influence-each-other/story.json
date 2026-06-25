@@ -1,8 +1,101 @@
-{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+    {
+        "id": 1,
+        "timeline": "Core Principle",
+        "title": "Influence fails when people feel attacked",
+        "content": "The source emphasizes a hard truth: people rarely change because they were criticized. Most people defend their identity first and logic second. If influence is your goal, your first task is reducing defensiveness, not proving that you are right.",
+        "next": "So what should replace criticism?"
+    },
+    {
+        "id": 2,
+        "timeline": "Core Principle",
+        "title": "Do not criticize, condemn, or complain",
+        "content": "Criticism often wounds pride and triggers rationalization. Even obvious mistakes can become harder to fix when someone feels humiliated. The transcript's examples show that calm understanding creates better correction than anger.",
+        "next": "If criticism closes minds, what opens them?"
+    },
+    {
+        "id": 3,
+        "timeline": "Core Principle",
+        "title": "Recognition is a deep human need",
+        "content": "People want to feel important and appreciated. Sincere appreciation can change behavior because it feeds that need in a healthy way. Flattery fails, but specific and honest praise builds trust.",
+        "next": "How do we make appreciation practical in daily interactions?"
+    },
+    {
+        "id": 4,
+        "timeline": "Connection Skills",
+        "title": "Lead with genuine interest in others",
+        "content": "The source repeatedly says influence starts with curiosity about the other person, not self-focus. Ask about their goals, pressures, and perspective. People cooperate more when they feel seen, not used.",
+        "next": "What simple social signals strengthen this quickly?"
+    },
+    {
+        "id": 5,
+        "timeline": "Connection Skills",
+        "title": "Small signals matter: smile and remember names",
+        "content": "A warm smile signals safety and goodwill. Remembering and using someone's name signals attention and respect. These small behaviors create emotional openness before any persuasion attempt begins.",
+        "next": "After first contact, how do you keep people engaged?"
+    },
+    {
+        "id": 6,
+        "timeline": "Connection Skills",
+        "title": "Listening is influence in disguise",
+        "content": "People who feel heard become less defensive and more flexible. Good listening is not waiting to speak; it is helping the other person express what matters to them. Once their concerns are acknowledged, they are far more willing to consider yours.",
+        "next": "How should you frame your message after listening?"
+    },
+    {
+        "id": 7,
+        "timeline": "Connection Skills",
+        "title": "Speak in terms of their interests",
+        "content": "A recurring source idea is simple: people move toward outcomes they value. Instead of saying what you want, explain how your proposal helps them solve a problem or reach a goal. Shared benefit persuades better than pressure.",
+        "next": "What happens when disagreement appears anyway?"
+    },
+    {
+        "id": 8,
+        "timeline": "Handling Disagreement",
+        "title": "Winning arguments often loses people",
+        "content": "The material warns that arguments often strengthen opposition. Even when one side is factually correct, public defeat can create private resentment. In influence terms, preserving relationship is often more valuable than scoring points.",
+        "next": "If direct confrontation backfires, what is the alternative?"
+    },
+    {
+        "id": 9,
+        "timeline": "Handling Disagreement",
+        "title": "Start friendly and respect opinions",
+        "content": "Hostility tends to reproduce hostility. A friendlier opening lowers psychological threat and makes dialogue possible. Respecting another person's opinion, even when you disagree, keeps their dignity intact and their mind open.",
+        "next": "What if you are the one who made the mistake?"
+    },
+    {
+        "id": 10,
+        "timeline": "Handling Disagreement",
+        "title": "Admit your own mistakes quickly",
+        "content": "Rapidly acknowledging your own error can de-escalate conflict. It shifts the other person from attack mode to cooperation mode. The source frames this as both ethical and strategic: honesty reduces resistance.",
+        "next": "How can you guide someone without sounding controlling?"
+    },
+    {
+        "id": 11,
+        "timeline": "Guiding Change",
+        "title": "Ask questions instead of giving blunt orders",
+        "content": "Questions invite participation, while commands trigger resistance. When people help generate the solution, they feel ownership and commitment. Influence becomes collaboration rather than compliance.",
+        "next": "How do you correct behavior without humiliating someone?"
+    },
+    {
+        "id": 12,
+        "timeline": "Guiding Change",
+        "title": "Protect face and praise progress",
+        "content": "People improve faster when correction preserves dignity. Indirect feedback, realistic encouragement, and praise for small improvements create momentum. Shame can freeze growth, but respected people often rise to expectations.",
+        "next": "Can identity itself be used to support change?"
+    },
+    {
+        "id": 13,
+        "timeline": "Guiding Change",
+        "title": "Give people a reputation to live up to",
+        "content": "The transcript highlights identity-based influence: if you treat someone as trustworthy, capable, or disciplined, they often try to act accordingly. This works because behavior follows self-image. Social expectations can pull people upward.",
+        "next": "What is the final mindset tying all principles together?"
+    },
+    {
+        "id": 14,
+        "timeline": "Long-Term Application",
+        "title": "Influence is long-term relationship management",
+        "content": "Across all chapters, the pattern is consistent: reduce ego-threat, increase respect, align interests, and make change feel possible. Influence is not manipulation through tricks; it is disciplined empathy plus clear communication. That is why these principles still apply in leadership, teamwork, and everyday life.",
+        "next": "Can you spot where your own conversations trigger defensiveness, and redesign them?"
+    }
+]
 

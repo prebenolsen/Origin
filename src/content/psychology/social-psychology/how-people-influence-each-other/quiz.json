@@ -1,14 +1,80 @@
-{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "Why does direct criticism often fail as an influence strategy?",
+        "options": [
+            "It usually increases confidence and openness",
+            "It threatens pride, which triggers defensiveness and rationalization",
+            "It works only in written communication",
+            "It is too slow for decision-making"
+        ],
+        "answer": 1,
+        "explanation": "The module's core idea is that ego-threat blocks learning and cooperation, even when the criticism is factually correct."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "The module recommends argument-winning as the best path to long-term persuasion.",
+        "answer": false,
+        "explanation": "It emphasizes that winning arguments often loses people and damages future influence."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "Which behavior best builds early rapport in this module's framework?",
+        "options": [
+            "Start by explaining why your plan is superior",
+            "Challenge the other person's logic immediately",
+            "Use social warmth, remember names, and show genuine interest",
+            "Avoid asking questions to stay in control"
+        ],
+        "answer": 2,
+        "explanation": "Connection signals reduce threat and create openness before persuasion attempts."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Put these influence steps in the most effective order.",
+        "items": [
+            "Guide with questions and shared goals",
+            "Build rapport and show respect",
+            "Lower defensiveness",
+            "Support behavior change with dignity"
+        ],
+        "correctOrder": [2, 1, 0, 3],
+        "explanation": "The sequence follows the module logic: threat reduction, connection, collaborative reasoning, and then sustainable change."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each method to its primary effect.",
+        "pairs": [
+            {
+                "left": "Admit your own mistake",
+                "right": "Reduces the other's need to attack"
+            },
+            {
+                "left": "Ask questions instead of commands",
+                "right": "Creates ownership and cooperation"
+            },
+            {
+                "left": "Let people save face",
+                "right": "Protects dignity and lowers resentment"
+            },
+            {
+                "left": "Praise specific improvement",
+                "right": "Reinforces momentum and identity"
+            }
+        ],
+        "explanation": "Each technique changes motivation by protecting self-respect while guiding behavior."
+    },
+    {
+        "id": 6,
+        "type": "true-false",
+        "question": "According to this module, influence is mainly manipulation through clever tricks.",
+        "answer": false,
+        "explanation": "The module frames influence as disciplined empathy, clarity, and long-term relationship management."
+    }
+]
 

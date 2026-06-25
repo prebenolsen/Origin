@@ -1,14 +1,93 @@
-{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "Which combination best matches the module's core emotion model?",
+        "options": [
+            "Memory strength, social status, and intelligence",
+            "Arousal level, valence, and interoception-exteroception balance",
+            "Left-brain dominance, right-brain dominance, and reaction speed",
+            "Sleep stage, blood pressure, and body temperature"
+        ],
+        "answer": 1,
+        "explanation": "The source describes three practical axes: alert-calm arousal, pleasant-unpleasant valence, and inward-outward attention direction."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "The module argues that emotions are too subjective to be trained or regulated.",
+        "answer": false,
+        "explanation": "It says emotions are subjective but tractable, meaning they can be mapped and trained with the right framework."
+    },
+    {
+        "id": 3,
+        "type": "ordering",
+        "question": "Put this developmental sequence in order.",
+        "items": [
+            "Adolescence tests social predictions and peer bonds",
+            "Infant distress signaling and caregiver response loops",
+            "Adult emotion regulation through state mapping",
+            "Attachment-style patterns become visible in caregiver reunion studies"
+        ],
+        "correctOrder": [1, 3, 0, 2],
+        "explanation": "Early distress-response loops come first, then observable attachment patterns, then puberty/adolescent testing, then mature regulation tools."
+    },
+    {
+        "id": 4,
+        "type": "matching",
+        "question": "Match each concept to its role.",
+        "pairs": [
+            {
+                "left": "Interoception",
+                "right": "Attention to internal bodily signals"
+            },
+            {
+                "left": "Exteroception",
+                "right": "Attention to external environment signals"
+            },
+            {
+                "left": "Valence",
+                "right": "How pleasant or unpleasant a state feels"
+            },
+            {
+                "left": "Arousal",
+                "right": "How calm or alert the nervous system is"
+            }
+        ],
+        "explanation": "These terms form the module's emotional mapping framework."
+    },
+    {
+        "id": 5,
+        "type": "multiple-choice",
+        "question": "Why is puberty treated as a major emotional-regulation turning point?",
+        "options": [
+            "It permanently removes early attachment influence",
+            "It only changes physical appearance, not social behavior",
+            "It reorganizes hormone-brain systems that affect social testing, autonomy, and reward seeking",
+            "It ends sensitivity to caregiver relationships"
+        ],
+        "answer": 2,
+        "explanation": "The source links puberty to major neuroendocrine changes and shifts in social exploration and prediction learning."
+    },
+    {
+        "id": 6,
+        "type": "true-false",
+        "question": "Vagus nerve effects should be viewed as a simple 'always calming' mechanism.",
+        "answer": false,
+        "explanation": "The module explicitly challenges that myth and frames vagus influence as broader state modulation, including arousal shifts."
+    },
+    {
+        "id": 7,
+        "type": "multiple-choice",
+        "question": "Which strategy best reflects the module's approach to emotional regulation in real time?",
+        "options": [
+            "Ignore body signals and wait for emotions to pass",
+            "Label yourself as one personality type and stay consistent",
+            "Map your state across arousal, valence, and attention direction, then choose a targeted adjustment",
+            "Focus only on changing thoughts and never behavior"
+        ],
+        "answer": 2,
+        "explanation": "The module emphasizes structured state mapping followed by deliberate regulation choices."
+    }
+]
 

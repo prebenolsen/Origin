@@ -1,14 +1,93 @@
-{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does the social homeostasis idea claim?",
+        "options": [
+            "People either need relationships or food, but not both",
+            "Social need is regulated like other biological needs such as hunger",
+            "Social behavior is mostly random and purely cultural",
+            "Only romantic relationships matter for mental health"
+        ],
+        "answer": 1,
+        "explanation": "The module presents social connection as a regulated biological need with craving and satiation dynamics."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "In this module, introversion means disliking all social interaction.",
+        "answer": false,
+        "explanation": "The framework says introversion-extroversion reflects how much interaction is needed to feel socially satisfied, not whether someone can enjoy connection."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "Why can chronic isolation make reconnection harder?",
+        "options": [
+            "It always increases communication skills",
+            "It can blunt social seeking and reinforce withdrawal patterns",
+            "It removes all stress hormones permanently",
+            "It makes empathy impossible for life"
+        ],
+        "answer": 1,
+        "explanation": "The source contrasts acute craving increases with longer-term withdrawal tendencies under chronic isolation."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Arrange this bond-formation progression in logical order.",
+        "items": [
+            "Shared experiences produce physiological synchrony",
+            "Early attachment calibrates basic bonding circuits",
+            "Bond depth and trust increase",
+            "Emotional and cognitive empathy align"
+        ],
+        "correctOrder": [1, 0, 3, 2],
+        "explanation": "Development creates the base, shared experience builds synchrony, empathy alignment strengthens, and trust deepens."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each concept with its best description.",
+        "pairs": [
+            {
+                "left": "Emotional empathy",
+                "right": "Alignment of felt bodily-affective states"
+            },
+            {
+                "left": "Cognitive empathy",
+                "right": "Understanding another person's perspective and mental model"
+            },
+            {
+                "left": "Physiological synchrony",
+                "right": "Shared body-state patterns linked to closeness"
+            },
+            {
+                "left": "Oxytocin pathway",
+                "right": "Hormonal reinforcement of social attachment"
+            }
+        ],
+        "explanation": "These mechanisms are treated as complementary pieces of robust social bonding."
+    },
+    {
+        "id": 6,
+        "type": "true-false",
+        "question": "The module suggests online social interaction can engage some real bonding mechanisms.",
+        "answer": true,
+        "explanation": "It argues digital interaction can still activate synchrony and attachment-relevant systems, though with differences from in-person contact."
+    },
+    {
+        "id": 7,
+        "type": "multiple-choice",
+        "question": "Why can breakups feel intensely painful according to this framework?",
+        "options": [
+            "Because pain is always purely symbolic",
+            "Because only memories are affected",
+            "Because major regulatory social signals are suddenly removed from the nervous system",
+            "Because personality type permanently changes overnight"
+        ],
+        "answer": 2,
+        "explanation": "Losing a major bond removes important social-regulation inputs, creating a real neurobiological deficit signal."
+    }
+]
 

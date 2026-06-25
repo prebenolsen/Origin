@@ -1,6 +1,43 @@
-{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+    {
+        "id": 1,
+        "front": "What is social homeostasis?",
+        "back": "A regulatory process that tracks social connection levels and motivates seeking when connection is below your set point."
+    },
+    {
+        "id": 2,
+        "front": "How does acute isolation often affect behavior?",
+        "back": "It can increase social craving and approach behavior."
+    },
+    {
+        "id": 3,
+        "front": "How can chronic isolation differ from acute isolation?",
+        "back": "It can blunt social motivation and promote withdrawal, making reconnection harder."
+    },
+    {
+        "id": 4,
+        "front": "What is physiological synchrony in relationships?",
+        "back": "Alignment of bodily states (for example, heart-rate patterns) linked to felt closeness."
+    },
+    {
+        "id": 5,
+        "front": "Why are shared narratives useful for bonding?",
+        "back": "They can synchronize attention and physiology, creating a bridge for connection."
+    },
+    {
+        "id": 6,
+        "front": "Emotional empathy vs cognitive empathy?",
+        "back": "Emotional empathy is felt-state alignment; cognitive empathy is understanding another person's perspective."
+    },
+    {
+        "id": 7,
+        "front": "What role does oxytocin play in this module?",
+        "back": "It is presented as a key hormonal contributor to attachment reinforcement and social-state coordination."
+    },
+    {
+        "id": 8,
+        "front": "Why can breakup recovery feel biologically difficult?",
+        "back": "Major social-regulation signals are lost, and the nervous system experiences this as a real deficit in connection."
+    }
+]
 

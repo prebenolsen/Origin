@@ -1,8 +1,94 @@
-{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+    {
+        "id": 1,
+        "timeline": "Core Model",
+        "title": "Emotions are personal, but not random",
+        "content": "The source starts by noting that emotional experience is subjective: your version of happiness is not identical to someone else's. But subjective does not mean chaotic. Emotional states can still be observed, named, and trained.",
+        "next": "So what is the simplest model for mapping emotion?"
+    },
+    {
+        "id": 2,
+        "timeline": "Core Model",
+        "title": "Three dimensions shape emotional state",
+        "content": "A useful framework is built from three axes. First: arousal, from calm to highly alert. Second: valence, from unpleasant to pleasant. Third: attention direction, from interoception (inside your body) to exteroception (outside world focus).",
+        "next": "Why does this third axis matter so much for regulation?"
+    },
+    {
+        "id": 3,
+        "timeline": "Core Model",
+        "title": "Interoception and exteroception constantly trade control",
+        "content": "When your heartbeat, gut, or tension dominates awareness, interoception is high. When the environment captures you, exteroception is high. Emotional regulation often means shifting this balance deliberately instead of being pushed around by it.",
+        "next": "Where does this balancing skill first develop?"
+    },
+    {
+        "id": 4,
+        "timeline": "Early Attachment",
+        "title": "Infancy builds the first emotion algorithm",
+        "content": "Infants signal distress before they can explain needs. Caregiver responses teach early predictions: Is the world reliable? Will discomfort be met with soothing? These repeated cycles become foundations for later trust and regulation.",
+        "next": "How did researchers study these early bonding patterns?"
+    },
+    {
+        "id": 5,
+        "timeline": "Early Attachment",
+        "title": "Attachment patterns reveal regulation differences",
+        "content": "In classic attachment studies, children responded differently when caregivers returned: secure, avoidant, ambivalent, or disorganized patterns. These are not fixed destinies, but they show how early relationships can bias emotional responses.",
+        "next": "What behaviors carry the most bonding signal?"
+    },
+    {
+        "id": 6,
+        "timeline": "Early Attachment",
+        "title": "Four social channels tune emotional bonds",
+        "content": "The source highlights four core channels: gaze, vocalization, affect expression, and touch. Together, they calibrate safety and synchrony between people. Good regulation is easier when these channels communicate reliability.",
+        "next": "Can adults still train this system?"
+    },
+    {
+        "id": 7,
+        "timeline": "Regulation Practice",
+        "title": "A practical exercise: shift attention on purpose",
+        "content": "One tool is to alternate focus between inner sensations and external objects. This trains flexibility instead of emotional rigidity. The goal is not to suppress feelings, but to gain control over where attention goes during stress.",
+        "next": "What major life stage reconfigures this whole system?"
+    },
+    {
+        "id": 8,
+        "timeline": "Puberty Rewiring",
+        "title": "Puberty is a biological reset point",
+        "content": "Puberty begins through brain-hormone signaling, including kisspeptin, GnRH, and downstream sex hormones. This is not just physical maturation. It also changes social drive, risk testing, and how emotions are explored in real environments.",
+        "next": "Why do social priorities shift so much during adolescence?"
+    },
+    {
+        "id": 9,
+        "timeline": "Puberty Rewiring",
+        "title": "Adolescence tests bonds and predictions",
+        "content": "During puberty and adolescence, people often seek more peer orientation and greater distance from primary caregivers. The source frames this as developmental testing: learning what actions produce safety, reward, status, and connection.",
+        "next": "Which brain-chemistry patterns support healthy bonding?"
+    },
+    {
+        "id": 10,
+        "timeline": "Social Bond Chemistry",
+        "title": "Healthy bonds swing between calm and excitement",
+        "content": "The transcript describes a useful pattern: relationships cycle between soothing states and energized states. In neurochemical terms, this resembles shifts between serotonin-linked calm and dopamine-linked anticipation. Balanced switching supports resilient connection.",
+        "next": "What role does oxytocin play in this process?"
+    },
+    {
+        "id": 11,
+        "timeline": "Social Bond Chemistry",
+        "title": "Oxytocin supports synchrony and trust",
+        "content": "Oxytocin is tied to lactation, touch, social bonding, and pair dynamics. Evidence also suggests it can improve positive communication in conflict contexts. A key idea is synchrony: noticing and aligning internal states across people.",
+        "next": "Are other chemicals involved in relationship behavior?"
+    },
+    {
+        "id": 12,
+        "timeline": "Social Bond Chemistry",
+        "title": "Vasopressin and vagus pathways add complexity",
+        "content": "Vasopressin is linked to social and pair-bond differences in animal models, and possibly in humans. The vagus system also matters, but not as a simple 'always calm' switch. It can alter arousal state, which then changes emotional experience.",
+        "next": "How do we turn all this science into daily regulation?"
+    },
+    {
+        "id": 13,
+        "timeline": "Applied Regulation",
+        "title": "Regulation begins with better emotional mapping",
+        "content": "Instead of using only broad labels like 'good' or 'bad,' map your state by arousal, valence, and attention direction. Then choose interventions that match the state: shift attention, change context, co-regulate with others, or downshift overload. Emotional regulation improves when language, awareness, and action are linked.",
+        "next": "Which part of your current emotional state can you change first: arousal, valence, or attention direction?"
+    }
+]
 
