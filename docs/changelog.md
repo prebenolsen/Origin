@@ -4,6 +4,25 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.23.1] - 2026-06-25
+
+### Added - module search on the Home screen
+- Added a search field to the Home screen. Typing filters across all published modules
+  by title, summary, category, subcategory, and period; matching modules render as
+  cards that deep-link straight into the module (bypassing the category picker).
+- Empty query shows the category picker as before; a clear button and a
+  "browse by category" fallback reset the search.
+- Added `searchModules(query)` to the content registry (src/lib/content.ts), with
+  simple ranking (title matches first, then alphabetical).
+
+## [1.23.0] - 2026-06-25
+
+### Added - Ottoman Empire tracker entries
+- Updated `docs/content.md` with three new History rows:
+  - `Medieval World | Rise of the Ottoman Empire | 1299 CE – 1453 CE`
+  - `Ottoman Empire | The Ottoman Empire at its height | 1453 CE – 1700s`
+  - `Ottoman Empire | Decline and collapse of the Ottoman Empire | 1700s – 1922 CE`
+
 ## [1.22.0] - 2026-06-25
 
 ### Added - authored Psychology Communication module from source transcript

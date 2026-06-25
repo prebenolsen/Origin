@@ -410,3 +410,5 @@ Do not summarize the transcript.
 Do not create a shortened version of the transcript.
 Create the best possible learning experience from the source material.
 Build understanding.
+
+Additional: When you finish a module and mark it as "DONE", check the other modules nearby and see if you covered them as well. If you feel you largely did, remove that module entirely. 

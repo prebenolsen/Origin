@@ -135,6 +135,47 @@ export function allModules(): ModuleBundle[] {
   return [...REGISTRY.values()];
 }
 
+/**
+ * Case-insensitive search across published modules. Every whitespace-separated
+ * term must appear somewhere in a module's title, summary, category,
+ * subcategory, or period. Results are ranked with title matches first, then
+ * alphabetically. An empty query returns no results.
+ */
+export function searchModules(query: string): ModuleBundle[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const terms = q.split(/\s+/);
+
+  const scored: { bundle: ModuleBundle; score: number }[] = [];
+  for (const bundle of REGISTRY.values()) {
+    const title = (bundle.meta.title ?? '').toLowerCase();
+    const haystack = [
+      title,
+      bundle.meta.summary ?? '',
+      bundle.categoryName,
+      bundle.subcategoryName,
+      bundle.meta.period ?? '',
+    ]
+      .join(' ')
+      .toLowerCase();
+
+    if (!terms.every((t) => haystack.includes(t))) continue;
+
+    let score = 0;
+    if (title.startsWith(q)) score += 100;
+    else if (title.includes(q)) score += 40;
+    for (const t of terms) if (title.includes(t)) score += 10;
+    scored.push({ bundle, score });
+  }
+
+  scored.sort(
+    (a, b) =>
+      b.score - a.score ||
+      (a.bundle.meta.title ?? '').localeCompare(b.bundle.meta.title ?? ''),
+  );
+  return scored.map((s) => s.bundle);
+}
+
 const byName = (a: { name?: string }, b: { name?: string }) =>
   (a.name ?? '').localeCompare(b.name ?? '');
 
