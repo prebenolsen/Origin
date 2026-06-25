@@ -1,7 +1,8 @@
 [
-  { "year": "1500", "title": "Atlantic routes open" },
-  { "year": "1525", "title": "First crossings" },
-  { "year": "1600s", "title": "Plantation boom" },
-  { "year": "1700s", "title": "Peak of the trade" },
-  { "year": "1807", "title": "Britain bans the trade" }
+  { "year": "Pre-1500", "title": "Slavery already ancient and global" },
+  { "year": "1526", "title": "First Africans shipped to Brazil" },
+  { "year": "1700s", "title": "Britain and Liverpool dominate" },
+  { "year": "1781", "title": "The Zong massacre" },
+  { "year": "1807", "title": "Britain bans the trade" },
+  { "year": "1833", "title": "Slavery abolished in the colonies" }
 ]

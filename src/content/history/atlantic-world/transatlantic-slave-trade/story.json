@@ -1,52 +1,81 @@
 [
   {
     "id": 1,
-    "timeline": "1500",
-    "title": "The Atlantic became a highway",
-    "content": "Before the 1500s, the Atlantic Ocean separated continents. European ships changed that by opening new trade routes — and these routes would soon connect to one of history's largest forced migrations.",
-    "next": "How did this system begin?",
-    "visual": "map"
+    "timeline": "Pre-1500",
+    "title": "Slavery was nothing new",
+    "content": "Slavery is as old as civilization. Egypt, Rome, China, the great African kingdoms, and even the pre-Columbian Americas all ran on unfree labor. For centuries Arab and Mediterranean merchants bought and sold people across half the world. The Atlantic trade did not invent slavery — it industrialized it.",
+    "next": "If slavery was everywhere, why did it suddenly target Africa?"
   },
   {
     "id": 2,
-    "timeline": "1500",
-    "title": "Three continents, one system",
-    "content": "Europe supplied ships and manufactured goods. West Africa was targeted for captive labor. The Americas held vast land but few workers. Together they formed a single loop of exchange.",
-    "next": "Who was forced into it?"
+    "timeline": "Pre-1500",
+    "title": "A line drawn by religion, not race",
+    "content": "In medieval Europe the rule was simple: Christians didn't enslave Christians, and Muslims didn't enslave Muslims — but both enslaved outsiders. As the Reconquista and the rising Ottoman Empire cut off their usual non-Christian captives, Portugal and Spain ran short of labor and began sailing south along Africa's coast. In 1452 the Pope even granted them the right to enslave non-Christians 'in perpetuity.'",
+    "next": "What turned a trickle of captives into an industry?",
+    "visual": "map"
   },
   {
     "id": 3,
-    "timeline": "1525",
-    "title": "The first crossings",
-    "content": "The earliest transatlantic voyages carrying enslaved Africans set the pattern. What began as a trickle would grow into a system spanning centuries.",
-    "next": "Why did demand explode?"
+    "timeline": "1526",
+    "title": "The Americas create a hunger for labor",
+    "content": "After Columbus reached the Americas in 1492, Europeans built plantation colonies — then watched their forced indigenous workers die in huge numbers from European diseases. Crops like sugar demanded a vast, constant workforce. In 1526 the first recorded shipload of enslaved Africans crossed to Brazil, beginning a system that would last three centuries.",
+    "next": "How did Europeans get hold of so many captives?"
   },
   {
     "id": 4,
-    "timeline": "1600s",
-    "title": "Sugar changed everything",
-    "content": "Plantation crops like sugar were enormously profitable — and enormously labor-intensive. The hunger for forced labor on these plantations drove the trade's rapid expansion.",
-    "next": "What was the journey like?"
+    "timeline": "1526",
+    "title": "Tapping a system that already existed",
+    "content": "Raiding the interior was costly and dangerous, so Europeans plugged into Africa's existing slave networks instead. They built fortified coastal trading posts called 'factories' and bought war captives from local rulers in exchange for cloth, iron, firearms, and alcohol. Millions would pass through these stone enclosures.",
+    "next": "Who turned this into the biggest operation of all?"
   },
   {
     "id": 5,
-    "timeline": "1600s",
-    "title": "The Middle Passage",
-    "content": "The forced Atlantic crossing was the system's cruelest leg. Packed below decks for weeks, many did not survive the voyage from Africa to the Americas.",
-    "next": "How large did it grow?"
+    "timeline": "1700s",
+    "title": "Britain takes over",
+    "content": "The Dutch, French, and Spanish all joined in, but the British scaled it up. After a royal monopoly was thrown open to all merchants in 1698, private traders flooded the market. The port of Liverpool — backed by Britain's textile mills, gunsmiths, and new docks — came to control most of the entire Atlantic trade.",
+    "next": "How did one voyage actually work?"
   },
   {
     "id": 6,
     "timeline": "1700s",
-    "title": "A trade at its peak",
-    "content": "By the 1700s the trade reached its height, moving more people across the Atlantic than in any prior century and reshaping societies on every shore it touched.",
-    "next": "What finally slowed it?"
+    "title": "The triangular trade",
+    "content": "One voyage, three legs, each turning a profit. Ships left Britain loaded with manufactured goods, traded them in Africa for enslaved people, carried those people across the ocean, then returned with sugar, cotton, and tobacco. The cycle then began again.",
+    "next": "What was that ocean crossing like for the people below deck?",
+    "visual": "map"
   },
   {
     "id": 7,
+    "timeline": "1700s",
+    "title": "The Middle Passage",
+    "content": "The crossing from Africa to the Americas took six to eight weeks. Below deck, each enslaved person had a space barely larger than a coffin, men chained in pairs. Disease spread fast and roughly one in seven died. Revolts were constant — yet captains packed ships tight, because crowding meant profit.",
+    "next": "If it was this brutal, how was it all paid for?"
+  },
+  {
+    "id": 8,
+    "timeline": "1700s",
+    "title": "Built like any other business",
+    "content": "This was no chaotic crime — it was sophisticated finance. A single voyage was split into 64 shares owned by syndicates of ordinary investors: lawyers, clergymen, politicians. Lloyd's of London insured enslaved people as 'cargo,' and the Bank of England extended credit. The whole economy profited.",
+    "next": "What finally turned people against it?"
+  },
+  {
+    "id": 9,
+    "timeline": "1781",
+    "title": "The Zong massacre",
+    "content": "In 1781 the crew of the Liverpool ship Zong threw 132 enslaved people into the sea, then tried to claim them on insurance as lost 'cargo.' The court treated it as a question of property, not murder. The public outrage that followed gave the abolitionist movement its rallying cry.",
+    "next": "Could outrage actually change the law?"
+  },
+  {
+    "id": 10,
     "timeline": "1807",
-    "title": "The beginning of the end",
-    "content": "Growing abolition movements and new laws began to ban the trade in the early 1800s. Ending it took decades — and its consequences are still felt today.",
+    "title": "Britain bans the trade",
+    "content": "Campaigners — Quakers, the MP William Wilberforce, and formerly enslaved writers like Olaudah Equiano — built a mass movement and a boycott of slave-grown sugar. In 1807 Parliament banned British ships from carrying enslaved people. The Royal Navy then patrolled Africa's coast, freeing around 150,000 people from slave ships.",
+    "next": "Did banning the trade actually free anyone?"
+  },
+  {
+    "id": 11,
+    "timeline": "1833",
+    "title": "Freedom — and its long shadow",
+    "content": "Banning the trade was not the same as freeing the enslaved. That came in 1833 — but Britain paid compensation to the slave owners, not the people they had enslaved. The debt was so vast it was not fully repaid until 2015. The wealth and inequality the trade built still echo today.",
     "next": "Test what you remember."
   }
 ]

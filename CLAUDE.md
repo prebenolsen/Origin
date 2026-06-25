@@ -9,33 +9,28 @@ scrolling learning experience (context → story cards → timeline → recall �
 
 ---
 
+## When the user refers you to a .txt file containing content 
+1. Refer to [`content-instructions.md`](docs\content-instructions.md)
+2. Distribute the data to src\content\<category>\<subcategory>\<module>\<appropriate .json files>
+
 ## ⚠️ Required on every change (do this, always)
 
 1. **Bump the version** in [`version.js`](version.js) (and keep `package.json` `version`
    in sync).
-2. **Add an entry to [`changelog.md`](changelog.md)** describing what changed.
+2. **Add an entry to [`changelog.md`](docs\changelog.md)** describing what changed.
+3. **Architecture: [`architecture.md`](docs\architecture.md)** 
 
 ### Versioning rules (Semantic-style: `MAJOR.MINOR.PATCH`, starts at `1.0.0`)
 
-| Part      | Bump when…                                                            | Examples |
-|-----------|-----------------------------------------------------------------------|----------|
-| **MAJOR** | A **big feature** / new app capability or a breaking change           | New learning mode, new quiz engine, data-model overhaul |
-| **MINOR** | **Content** is added or changed                                       | New module, new story cards, new quiz/flashcards |
-| **PATCH** | **UX / UI** tweaks and fixes                                          | Styling, animation, copy, layout, bug fixes |
+| Part      | Bump when…                                                            
+|-----------|----------------
+| **MAJOR** | A **big feature** / new app capability or a breaking change
+| **MINOR** | **Content** is added or changed
+| **PATCH** | **UX / UI** tweaks and fixes
 
 Only bump the highest applicable part (a MAJOR bump resets MINOR/PATCH to 0, etc.).
 
 ---
-
-## Tech stack
-
-- **React 19 + TypeScript**
-- **Vite** (dev server + build)
-- **Tailwind CSS v4** (CSS-first config via `@theme` in `src/index.css`)
-- **React Router v7** (routing between home / module stages)
-- Data: **static JSON** under `src/content/` (no backend)
-
-No animation library — motion is done with CSS (scroll-snap, 3D flip, fade-in).
 
 ## Commands
 
@@ -46,25 +41,7 @@ npm run build    # type-check + production build
 npm run preview  # preview the production build
 npm run typecheck
 ```
-
 ---
-
-## Content architecture (how to add a module)
-
-Content is organized strictly as **Category → Subcategory → Module**, one nested folder
-each, under `src/content/`:
-
-```
-src/content/
-  <category>/
-    <subcategory>/
-      <module>/
-        module.json       # required — metadata + context intro
-        story.json        # story feed cards
-        timeline.json     # milestones for the persistent timeline
-        quiz.json         # recall questions
-        flashcards.json   # review cards
-```
 
 The content registry ([`src/lib/content.ts`](src/lib/content.ts)) auto-discovers every
 folder at build time with `import.meta.glob`. **To add a module, just drop a new folder
@@ -118,12 +95,3 @@ src/
       Quiz.tsx             # 4. recall
       Flashcards.tsx       # 5. review
 ```
-
-## Design principles (keep the UI on-brand)
-
-- Modern, clean, **mobile-first**, immersive. One concept per screen.
-- **Avoid**: LMS / dashboard / corporate-training look, number-heavy stats, clutter,
-  walls of text. Never render textbook pages.
-- Each story card leads naturally into the next (curiosity hook).
-- Do **not** author real educational content here — content is provided separately and
-  inserted into the JSON files.

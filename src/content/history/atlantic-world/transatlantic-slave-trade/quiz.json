@@ -2,45 +2,60 @@
   {
     "id": 1,
     "type": "multiple-choice",
-    "question": "What most directly caused plantation slavery to expand?",
+    "question": "Why did Europeans turn to enslaved African labor for their American colonies?",
     "options": [
-      "Demand for labor on profitable cash crops like sugar",
-      "A shortage of ships in Europe",
-      "The closing of Atlantic trade routes",
-      "A decline in European colonies"
+      "European diseases had killed much of the indigenous workforce, while crops like sugar demanded huge numbers of laborers",
+      "Africans volunteered to work the plantations",
+      "There were no available workers anywhere in Europe",
+      "Sugar could only be grown by people from Africa"
     ],
     "answer": 0,
-    "explanation": "Highly profitable, labor-intensive plantation crops such as sugar drove the demand for forced labor."
+    "explanation": "Indigenous peoples died in vast numbers from European diseases, creating a labor shortage. Profitable, labor-intensive crops like sugar then drove demand for forced African labor."
   },
   {
     "id": 2,
     "type": "true-false",
-    "question": "The Middle Passage refers to the forced Atlantic crossing of enslaved Africans.",
-    "answer": true,
-    "explanation": "The Middle Passage was the brutal sea voyage from Africa to the Americas — the middle leg of the triangular trade."
+    "question": "The transatlantic slave trade was the first time in history that slavery existed.",
+    "answer": false,
+    "explanation": "Slavery was ancient and global — practiced across Africa, the Middle East, Asia, Europe, and the pre-Columbian Americas long before the Atlantic trade. What was new was its industrial scale."
   },
   {
     "id": 3,
-    "type": "ordering",
-    "question": "Put these stages of the trade in chronological order.",
-    "items": [
-      "Atlantic trade routes open",
-      "First transatlantic crossings",
-      "Plantation boom",
-      "Britain bans the trade"
+    "type": "multiple-choice",
+    "question": "Why did the Zong massacre become a turning point for abolition?",
+    "options": [
+      "The crew killed 132 enslaved people and treated them as insurable 'cargo,' and the court agreed — sparking public outrage",
+      "It was the first slave ship ever to sink",
+      "The enslaved people on board won their freedom in court",
+      "It was the largest slave ship ever built"
     ],
-    "correctOrder": [0, 1, 2, 3],
-    "explanation": "Routes opened first, crossings followed, plantations boomed, and abolition came last."
+    "answer": 0,
+    "explanation": "The court treated the killings as a property and insurance dispute rather than murder. The outrage that followed galvanized the abolitionist movement."
   },
   {
     "id": 4,
-    "type": "matching",
-    "question": "Match each region to its role in the triangle.",
-    "pairs": [
-      { "left": "Europe", "right": "Supplied ships and manufactured goods" },
-      { "left": "West Africa", "right": "Targeted for captive labor" },
-      { "left": "The Americas", "right": "Plantations producing raw materials" }
+    "type": "ordering",
+    "question": "Put these milestones of the trade in chronological order.",
+    "items": [
+      "First Africans shipped to Brazil",
+      "Liverpool comes to dominate the trade",
+      "The Zong massacre",
+      "Britain bans the slave trade",
+      "Slavery abolished in British colonies"
     ],
-    "explanation": "Each corner of the triangle played a distinct role in the loop."
+    "correctOrder": [0, 1, 2, 3, 4],
+    "explanation": "1526 → the 1700s peak → 1781 → 1807 → 1833. Banning the trade came decades before slavery itself was abolished."
+  },
+  {
+    "id": 5,
+    "type": "matching",
+    "question": "Match each part of the system to its role.",
+    "pairs": [
+      { "left": "Coastal 'factories'", "right": "Held captives bought from local African rulers" },
+      { "left": "The Middle Passage", "right": "The brutal Atlantic crossing" },
+      { "left": "Lloyd's of London", "right": "Insured enslaved people as 'cargo'" },
+      { "left": "Liverpool", "right": "Britain's dominant slaving port" }
+    ],
+    "explanation": "The trade ran like an engineered supply chain, with each part — coast, ocean, finance, and port — playing a specialized role."
   }
 ]

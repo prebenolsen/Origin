@@ -2,26 +2,41 @@
   {
     "id": 1,
     "front": "What was the Middle Passage?",
-    "back": "The forced Atlantic journey of enslaved Africans from Africa to the Americas."
+    "back": "The forced Atlantic crossing of enslaved Africans from Africa to the Americas — the middle leg of the triangular trade, where roughly one in seven died."
   },
   {
     "id": 2,
-    "front": "What were the three corners of the triangular trade?",
-    "back": "Europe, West Africa, and the Americas."
+    "front": "What was the 'triangular trade'?",
+    "back": "A three-leg voyage: European goods to Africa, enslaved Africans to the Americas, and raw materials (sugar, cotton, tobacco) back to Europe — each leg turning a profit."
   },
   {
     "id": 3,
-    "front": "Which crop most fueled demand for plantation labor?",
-    "back": "Sugar — profitable but extremely labor-intensive."
+    "front": "Why did demand for enslaved African labor explode?",
+    "back": "European diseases killed off indigenous workers, while profitable, labor-hungry crops like sugar needed a vast, constant workforce."
   },
   {
     "id": 4,
-    "front": "Roughly when did the trade reach its peak?",
-    "back": "During the 1700s."
+    "front": "What were 'factories' in the slave trade?",
+    "back": "Fortified European trading posts on the African coast where captives — bought from local rulers — were held before being shipped across the Atlantic."
   },
   {
     "id": 5,
-    "front": "What began to end the trade in the early 1800s?",
-    "back": "Abolition movements and new laws banning the trade, starting around 1807."
+    "front": "How was the trade financed?",
+    "back": "Through syndicates owning shares in each voyage, marine insurance from Lloyd's of London (which insured people as 'cargo'), and credit from the Bank of England."
+  },
+  {
+    "id": 6,
+    "front": "What was the Zong massacre (1781)?",
+    "back": "The crew of the Liverpool ship Zong threw 132 enslaved people overboard to claim them on insurance. The court treated it as property, not murder, and the outrage fueled abolition."
+  },
+  {
+    "id": 7,
+    "front": "What did the 1807 Slave Trade Act do — and not do?",
+    "back": "It banned British ships from carrying enslaved people, but it did not free anyone. Slavery itself was only abolished in British colonies in 1833."
+  },
+  {
+    "id": 8,
+    "front": "Why did slavery's end leave a 'long shadow'?",
+    "back": "In 1833 Britain paid compensation to slave owners (not the freed), a debt not repaid until 2015 — and the wealth and inequality the trade built still persist."
   }
 ]
