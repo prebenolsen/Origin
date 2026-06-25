@@ -1,0 +1,31 @@
+{
+  "title": "Slavery in the Americas",
+  "period": "1619-1865",
+  "category": "history",
+  "subcategory": "atlantic-world",
+  "summary": "How slavery shaped U.S. society, economy, politics, and resistance from the colonial era to emancipation.",
+  "accent": "#bf7a3b",
+  "context": {
+    "type": "map",
+    "headline": "One system, many regions",
+    "description": "Slavery in the U.S. was not only a southern plantation story. Cotton tied the Deep South, the Upper South, northern factories, Atlantic ports, and freedom routes to Canada into one system of profit, power, and resistance.",
+    "when": "1619-1865",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "upper-south", "label": "Upper South", "x": 34, "y": 39, "role": "primary" },
+        { "id": "deep-south", "label": "Deep South", "x": 36, "y": 57, "role": "primary" },
+        { "id": "north", "label": "Northern States", "x": 30, "y": 24, "role": "primary" },
+        { "id": "atlantic", "label": "Atlantic Trade", "x": 53, "y": 30, "role": "secondary" },
+        { "id": "canada", "label": "Canada", "x": 28, "y": 12, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "deep-south", "to": "north", "label": "cotton to mills" },
+        { "from": "north", "to": "deep-south", "label": "credit and goods" },
+        { "from": "upper-south", "to": "deep-south", "label": "forced sales" },
+        { "from": "deep-south", "to": "atlantic", "label": "exports" },
+        { "from": "upper-south", "to": "canada", "label": "escape routes" }
+      ]
+    }
+  }
+}

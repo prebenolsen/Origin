@@ -362,7 +362,7 @@ Use:
 
 Every question needs:
 
-- correct answer
+- correct answer (ENSURE RANDOM INDEX FOR CORRECT ANSWER!)
 - explanation
 
 --------------------------------------------------

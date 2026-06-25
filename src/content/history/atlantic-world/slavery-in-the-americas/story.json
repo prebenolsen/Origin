@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "timeline": "1619",
+    "title": "Why this story still matters",
+    "content": "In U.S. history, slavery lasted from 1619 to 1865. It was not a side issue: it shaped the economy, social order, politics, and eventually helped cause the Civil War. Its legacy still affects the United States today.",
+    "next": "Was slavery only a southern institution, or a national system?"
+  },
+  {
+    "id": 2,
+    "timeline": "1800s",
+    "title": "A national economy built on slave cotton",
+    "content": "By the nineteenth century, cotton became the most important commodity in world trade, and most of it came from the American South. Northern merchants shipped it, northern banks financed plantations, and northern insurers treated enslaved people as property. Southern slavery powered northern and Atlantic profits.",
+    "next": "How did this reshape life inside the South?"
+  },
+  {
+    "id": 3,
+    "timeline": "1800s",
+    "title": "The South chooses plantations over industry",
+    "content": "Because plantation slavery was so profitable, money flowed into land and enslaved people rather than factories or railroads. Much of the South remained rural and produced a small share of U.S. manufactured goods. This made slavery the center of southern life and left the region less industrialized.",
+    "next": "Who actually owned enslaved people in this system?"
+  },
+  {
+    "id": 4,
+    "timeline": "1860",
+    "title": "Not every white southerner owned slaves",
+    "content": "By 1860, about four million people were enslaved, and in the South they were roughly one-third of the population. Most slaveholders owned only a few enslaved people, and most white southerners owned none. Yet many non-slaveholding whites still supported slavery because racism offered them social status and hopes of future upward mobility.",
+    "next": "How did leaders defend slavery against growing criticism?"
+  },
+  {
+    "id": 5,
+    "timeline": "1837",
+    "title": "From 'necessary evil' to 'positive good'",
+    "content": "Some founders described slavery as a 'necessary evil,' but proslavery thinkers later claimed it was morally beneficial. In 1837, John C. Calhoun called slavery a 'positive good,' arguing it preserved social order. Religion, classical examples, and racist pseudoscience were used to justify human bondage.",
+    "next": "What did slavery look like in everyday life for enslaved people?"
+  },
+  {
+    "id": 6,
+    "timeline": "1800s",
+    "title": "A legal system of total control",
+    "content": "Enslaved people worked from sunup to sundown without pay under a system backed by law. Slave codes demanded absolute obedience and defined people as property. Violence, threats, and surveillance enforced labor and stripped people of legal rights.",
+    "next": "Were labor conditions the same on every plantation?"
+  },
+  {
+    "id": 7,
+    "timeline": "1800s",
+    "title": "Task labor, gang labor, and constant coercion",
+    "content": "Conditions varied by crop and region. In some rice areas, people worked under a task system; on many cotton plantations, gangs worked under overseers or drivers for the entire day. In both systems, whippings, sexual violence, and family separation were central tools of control.",
+    "next": "Did enslaved people accept this dehumanization?"
+  },
+  {
+    "id": 8,
+    "timeline": "1800s",
+    "title": "Family and faith as resistance",
+    "content": "Enslaved people resisted by building families, marriages, and religious communities that affirmed their humanity. Owners feared these bonds because they encouraged dignity and independence. Even when sale tore families apart, kinship and worship helped people survive a system designed to dehumanize them.",
+    "next": "What other forms of resistance were possible?"
+  },
+  {
+    "id": 9,
+    "timeline": "1800s",
+    "title": "Everyday resistance and escape",
+    "content": "Resistance included work slowdowns, sabotage, feigned misunderstanding, and temporary flight. Some escaped permanently to northern states or Canada, despite fugitive slave laws. Harriet Tubman became the most famous conductor, repeatedly risking capture to guide others to freedom.",
+    "next": "What happened when resistance turned into organized revolt?"
+  },
+  {
+    "id": 10,
+    "timeline": "1800-1831",
+    "title": "Rebellions shook the slave South",
+    "content": "Major uprisings and plots, including Gabriel's Rebellion (1800), the 1811 German Coast revolt, Denmark Vesey's alleged plot (1822), and Nat Turner's rebellion (1831), frightened slaveholding society. Most were suppressed, and many rebels were executed. Armed revolt was courageous but often brought deadly retaliation.",
+    "next": "How did governments respond to that fear?"
+  },
+  {
+    "id": 11,
+    "timeline": "1831",
+    "title": "Backlash made slavery even harsher",
+    "content": "After rebellions, especially Nat Turner's, southern states passed stricter controls on movement, preaching, and literacy. Public fear among white southerners hardened into new laws and stronger policing. By the 1830s, slavery had become, if anything, more repressive.",
+    "next": "If slavery seemed so strong, what eventually broke it?"
+  },
+  {
+    "id": 12,
+    "timeline": "1865",
+    "title": "Resistance, war, and emancipation",
+    "content": "Enslaved people never stopped resisting, whether quietly or openly. Their refusal to accept the identity of property weakened slavery from within while national conflict over slavery deepened. The Civil War ended legal slavery in 1865, but the struggle over its legacy did not end.",
+    "next": "Test what you remember."
+  }
+]

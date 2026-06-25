@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "According to the lesson, why was slavery in the U.S. a national system and not only a southern one?",
+    "options": [
+      "Northern finance, shipping, insurance, and manufacturing profited from slave-grown cotton",
+      "Most northern states relied on plantation labor directly",
+      "The federal government banned northern industry",
+      "Only southern ports traded cotton overseas"
+    ],
+    "answer": 0,
+    "explanation": "The transcript emphasizes that northern merchants, bankers, insurers, and textile mills were deeply tied to the profits of slave-grown cotton."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Most white southerners before the Civil War owned many enslaved people on large plantations.",
+    "answer": false,
+    "explanation": "Most white southerners owned no enslaved people, and many slaveholders owned only a small number."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What was the significance of John C. Calhoun's 1837 argument that slavery was a 'positive good'?",
+    "options": [
+      "It reflected a shift from treating slavery as a temporary evil to defending it as morally and socially beneficial",
+      "It called for immediate abolition in all southern states",
+      "It argued that slavery would soon disappear without conflict",
+      "It rejected racial hierarchy as a basis for slavery"
+    ],
+    "answer": 0,
+    "explanation": "Proslavery ideology hardened over time, moving from reluctant acceptance to active moral defense."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Put these events in chronological order.",
+    "items": [
+      "Nat Turner's rebellion",
+      "John C. Calhoun calls slavery a 'positive good'",
+      "Legal slavery abolished in the United States",
+      "Start of slavery in English North America"
+    ],
+    "correctOrder": [3, 0, 1, 2],
+    "explanation": "1619 came first, then Nat Turner's rebellion (1831), then Calhoun's speech (1837), and finally abolition in 1865."
+  },
+  {
+    "id": 5,
+    "type": "matching",
+    "question": "Match each resistance form to its description.",
+    "pairs": [
+      { "left": "Work slowdowns and sabotage", "right": "Everyday resistance that reduced control and productivity" },
+      { "left": "Family and marriage", "right": "Protected dignity and identity under dehumanizing conditions" },
+      { "left": "Underground Railroad", "right": "Escape network to free states and Canada" },
+      { "left": "Nat Turner's rebellion", "right": "Armed uprising that triggered harsher repression" }
+    ],
+    "explanation": "Resistance included both overt revolt and quieter strategies that defended personhood and community."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "Why did many enslaved people resist through family, faith, and daily actions rather than large armed revolt?",
+    "options": [
+      "Large revolts were rare, often crushed, and could bring severe retaliation on loved ones",
+      "Enslaved people accepted slavery as legitimate",
+      "Southern law allowed peaceful legal challenges for freedom",
+      "Plantation owners encouraged independent communities"
+    ],
+    "answer": 0,
+    "explanation": "The source shows that rebellion was dangerous and often punished collectively, so many resisted in ways that preserved life, family, and humanity."
+  }
+]

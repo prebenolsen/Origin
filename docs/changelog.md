@@ -4,6 +4,17 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.2.0] — 2026-06-25
+
+### Added — Slavery in the Americas module (authored from source transcript)
+- Replaced placeholder files in `src/content/history/atlantic-world/slavery-in-the-americas/` with full authored content generated from `raw.md`.
+- Added a complete context map and metadata in `module.json` focused on regional links between the Deep South, Upper South, North, Atlantic trade, and Canada escape routes.
+- Wrote a 12-card `story.json` covering: national economic integration, social structure, proslavery ideology, legal coercion, lived conditions, everyday resistance, escape networks, rebellions, backlash, and emancipation.
+- Rebuilt `timeline.json` as major mental anchors (`1619`, `1800s`, `1800-1831`, `1831`, `1837`, `1860`, `1865`) and aligned story-card timeline references to those values.
+- Replaced `quiz.json` with understanding-focused questions across multiple-choice, true-false, ordering, and matching.
+- Replaced `flashcards.json` with core concept recall cards on system structure, resistance, ideology, and outcomes.
+- Marked `Slavery in the Americas` as `DONE` in `docs/content.md`.
+
 ## [1.1.1] — 2026-06-25
 
 ### Changed — Copilot workspace instructions
