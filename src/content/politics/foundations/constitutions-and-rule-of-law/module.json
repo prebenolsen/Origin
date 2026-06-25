@@ -1,0 +1,42 @@
+{
+    "title":  "PLACEHOLDER: Constitutions and Rule of Law",
+    "period":  "How societies create rules to control government power",
+    "category":  "politics",
+    "subcategory":  "foundations",
+    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
+    "accent":  "#9a9a9a",
+    "context":  {
+                    "type":  "map",
+                    "headline":  "PLACEHOLDER: Context headline",
+                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
+                    "when":  "How societies create rules to control government power",
+                    "map":  {
+                                "backdrop":  "world",
+                                "markers":  [
+                                                {
+                                                    "id":  "placeholder-a",
+                                                    "label":  "PLACEHOLDER A",
+                                                    "x":  30,
+                                                    "y":  30,
+                                                    "role":  "primary"
+                                                },
+                                                {
+                                                    "id":  "placeholder-b",
+                                                    "label":  "PLACEHOLDER B",
+                                                    "x":  65,
+                                                    "y":  55,
+                                                    "role":  "secondary"
+                                                }
+                                            ],
+                                "connections":  [
+                                                    {
+                                                        "from":  "placeholder-a",
+                                                        "to":  "placeholder-b",
+                                                        "label":  "PLACEHOLDER LINK"
+                                                    }
+                                                ]
+                            }
+                }
+}
+
+

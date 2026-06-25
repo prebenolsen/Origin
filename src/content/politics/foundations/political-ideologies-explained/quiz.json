@@ -1,0 +1,105 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What is the best definition of a political ideology?",
+    "options": [
+      "A campaign slogan used only during elections",
+      "A framework of ideas about power, rights, and social order",
+      "A list of laws currently in force",
+      "A personality type for political leaders"
+    ],
+    "answer": 1,
+    "explanation": "Ideologies are broad frameworks that guide how people interpret justice, authority, freedom, and policy choices."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Conservatism typically prefers incremental reform over abrupt, revolutionary change.",
+    "answer": true,
+    "explanation": "A core conservative argument is that stability and continuity reduce the risk of social breakdown."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "Which pair captures a key difference between classical and modern liberalism?",
+    "options": [
+      "Classical liberalism rejects rights, modern liberalism supports rights",
+      "Classical liberalism is anti-freedom, modern liberalism is pro-freedom",
+      "Classical liberalism emphasizes limited government and markets; modern liberalism adds stronger social welfare commitments",
+      "They are identical in all policy areas"
+    ],
+    "answer": 2,
+    "explanation": "Both value liberty, but modern liberal approaches often place greater emphasis on social programs and equal opportunity."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "Socialist critiques of capitalism usually focus most on what problem?",
+    "options": [
+      "Too many cultural traditions",
+      "Insufficient military spending",
+      "Excessive immigration",
+      "Concentrated ownership and inequality"
+    ],
+    "answer": 3,
+    "explanation": "Socialist thought often argues that concentrated ownership generates structural inequality and weakens democratic fairness."
+  },
+  {
+    "id": 5,
+    "type": "ordering",
+    "question": "Order these learning steps from most basic to most comparative.",
+    "items": [
+      "Identify each ideology's core value priorities",
+      "Define what an ideology is",
+      "Compare ideologies by trade-offs and outcomes",
+      "Recognize recurring tensions in political debate"
+    ],
+    "correctOrder": [1, 3, 0, 2],
+    "explanation": "Start with definition, then tensions, then specific priorities, then higher-level comparison of consequences."
+  },
+  {
+    "id": 6,
+    "type": "matching",
+    "question": "Match each ideology to its most central emphasis.",
+    "pairs": [
+      {
+        "left": "Conservatism",
+        "right": "Stability, tradition, and gradual reform"
+      },
+      {
+        "left": "Liberalism",
+        "right": "Individual rights and constrained authority"
+      },
+      {
+        "left": "Socialism",
+        "right": "Economic equality and shared control"
+      },
+      {
+        "left": "Libertarianism",
+        "right": "Maximum personal liberty and minimal state"
+      }
+    ],
+    "explanation": "Each ideology prioritizes a different political value set, which drives distinct policy preferences."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "Why is populism often described as a political style rather than a full ideology?",
+    "options": [
+      "Because it only appears in one country",
+      "Because it is always socialist",
+      "Because its core frame is people vs elite and it can attach to different left or right programs",
+      "Because it has no voters"
+    ],
+    "answer": 2,
+    "explanation": "Populism's defining feature is anti-elite framing, which can be combined with very different policy agendas."
+  },
+  {
+    "id": 8,
+    "type": "true-false",
+    "question": "The left-right spectrum is useful, but it cannot fully explain every real-world political movement.",
+    "answer": true,
+    "explanation": "Political actors often mix ideas from multiple traditions, so labels are helpful guides, not complete explanations."
+  }
+]

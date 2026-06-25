@@ -1,0 +1,78 @@
+{
+    "title": "Political Spectrum: Left, Right, Libertarian, and Authoritarian",
+    "period": "French Revolution to present (foundations)",
+    "category": "politics",
+    "subcategory": "foundations",
+    "summary": "How left and right labels began, what they usually mean today, and why a second axis is needed to understand real political positions.",
+    "accent": "#7d5f3b",
+    "context": {
+        "type": "schematic",
+        "headline": "One spectrum is useful, two dimensions are better",
+        "description": "The left-right spectrum compares views on equality, markets, and social change. But many disagreements are really about state power too, so the libertarian-authoritarian axis is needed to map modern politics more accurately.",
+        "when": "French Revolution to present",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                {
+                    "id": "left",
+                    "label": "Left",
+                    "x": 22,
+                    "y": 50,
+                    "role": "primary"
+                },
+                {
+                    "id": "right",
+                    "label": "Right",
+                    "x": 78,
+                    "y": 50,
+                    "role": "primary"
+                },
+                {
+                    "id": "authoritarian",
+                    "label": "Authoritarian",
+                    "x": 50,
+                    "y": 18,
+                    "role": "secondary"
+                },
+                {
+                    "id": "libertarian",
+                    "label": "Libertarian",
+                    "x": 50,
+                    "y": 82,
+                    "role": "secondary"
+                },
+                {
+                    "id": "center",
+                    "label": "Center",
+                    "x": 50,
+                    "y": 50,
+                    "role": "secondary"
+                }
+            ],
+            "connections": [
+                {
+                    "from": "left",
+                    "to": "right",
+                    "label": "economic and social priorities"
+                },
+                {
+                    "from": "authoritarian",
+                    "to": "libertarian",
+                    "label": "state control vs personal autonomy"
+                },
+                {
+                    "from": "left",
+                    "to": "center",
+                    "label": "reform range"
+                },
+                {
+                    "from": "right",
+                    "to": "center",
+                    "label": "reform range"
+                }
+            ]
+        }
+    }
+}
+
+

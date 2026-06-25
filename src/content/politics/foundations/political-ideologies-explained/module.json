@@ -1,0 +1,83 @@
+{
+    "title": "Political Ideologies Explained",
+    "period": "Enlightenment to present (foundations)",
+    "category": "politics",
+    "subcategory": "foundations",
+    "summary": "A beginner-friendly foundation for understanding major ideologies, what they prioritize, and how they shape modern political debate.",
+    "accent": "#3f6e8f",
+    "context": {
+        "type": "schematic",
+        "headline": "Competing answers to the same political questions",
+        "description": "Political ideologies are frameworks for deciding what a good society looks like. This module compares major ideologies by how they answer core questions: freedom vs equality, tradition vs reform, and individual choice vs state authority.",
+        "when": "Enlightenment to present",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                {
+                    "id": "freedom",
+                    "label": "Individual Freedom",
+                    "x": 20,
+                    "y": 28,
+                    "role": "primary"
+                },
+                {
+                    "id": "equality",
+                    "label": "Economic and Social Equality",
+                    "x": 76,
+                    "y": 30,
+                    "role": "primary"
+                },
+                {
+                    "id": "tradition",
+                    "label": "Tradition and Order",
+                    "x": 23,
+                    "y": 68,
+                    "role": "secondary"
+                },
+                {
+                    "id": "state",
+                    "label": "State Power",
+                    "x": 76,
+                    "y": 68,
+                    "role": "secondary"
+                },
+                {
+                    "id": "nation",
+                    "label": "Nation and Identity",
+                    "x": 50,
+                    "y": 86,
+                    "role": "secondary"
+                }
+            ],
+            "connections": [
+                {
+                    "from": "freedom",
+                    "to": "equality",
+                    "label": "fairness debates"
+                },
+                {
+                    "from": "tradition",
+                    "to": "freedom",
+                    "label": "social values"
+                },
+                {
+                    "from": "state",
+                    "to": "equality",
+                    "label": "redistribution"
+                },
+                {
+                    "from": "nation",
+                    "to": "tradition",
+                    "label": "identity and belonging"
+                },
+                {
+                    "from": "nation",
+                    "to": "state",
+                    "label": "authority and sovereignty"
+                }
+            ]
+        }
+    }
+}
+
+

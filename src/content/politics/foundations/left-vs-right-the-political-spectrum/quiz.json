@@ -1,0 +1,85 @@
+﻿[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "Where did the political labels left and right first become widely associated with ideology?",
+        "options": [
+            "The U.S. Constitutional Convention",
+            "The French Revolution",
+            "The Industrial Revolution in Britain",
+            "Post-war European Union negotiations"
+        ],
+        "answer": 1,
+        "explanation": "During the French Revolution, supporters of major reform and defenders of monarchy sat on opposite sides of the assembly, shaping the labels."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "Left-wing politics is generally more supportive of state intervention in the economy than right-wing politics.",
+        "answer": true,
+        "explanation": "In broad terms, left traditions favor stronger state roles in redistribution and regulation, though intensity varies across parties."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "Why is a two-axis model often more useful than a simple left-right line?",
+        "options": [
+            "Because left and right no longer exist",
+            "Because it also captures attitudes toward authority and personal freedom",
+            "Because elections are always two-party",
+            "Because economic policy is no longer relevant"
+        ],
+        "answer": 1,
+        "explanation": "The authoritarian-libertarian axis adds information about state control that left-right alone cannot fully represent."
+    },
+    {
+        "id": 4,
+        "type": "matching",
+        "question": "Match each orientation to its typical emphasis.",
+        "pairs": [
+            {
+                "left": "Left",
+                "right": "Greater equality and stronger redistributive policy"
+            },
+            {
+                "left": "Right",
+                "right": "Limited government and market-led solutions"
+            },
+            {
+                "left": "Authoritarian",
+                "right": "Higher tolerance for centralized social control"
+            },
+            {
+                "left": "Libertarian",
+                "right": "Higher priority on personal autonomy"
+            }
+        ],
+        "explanation": "These are common patterns, not rigid laws; real parties can combine features across categories."
+    },
+    {
+        "id": 5,
+        "type": "ordering",
+        "question": "Order the conceptual progression used in this module.",
+        "items": [
+            "Use labels as a starting point and evaluate concrete policy",
+            "Learn the origin of left and right labels",
+            "Add authoritarian-libertarian as a second axis",
+            "Compare core left and right priorities"
+        ],
+        "correctOrder": [1, 3, 2, 0],
+        "explanation": "The module moves from origin, to core differences, to multidimensional mapping, then to practical policy evaluation."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "What is the most accurate takeaway about political labels?",
+        "options": [
+            "Labels are useless and should always be ignored",
+            "Labels fully explain every party's real policy behavior",
+            "Labels are fixed and never change across countries",
+            "Labels are useful shortcuts but must be tested against actual policy positions"
+        ],
+        "answer": 3,
+        "explanation": "Labels provide orientation, but policy details reveal where parties actually stand on real decisions."
+    }
+]

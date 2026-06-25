@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "front": "Political ideology",
+    "back": "A framework of ideas about power, rights, justice, and how society should be organized."
+  },
+  {
+    "id": 2,
+    "front": "Conservatism",
+    "back": "Prioritizes stability, tradition, and cautious reform over rapid systemic change."
+  },
+  {
+    "id": 3,
+    "front": "Liberalism",
+    "back": "Centers individual rights, legal equality, and limits on arbitrary authority."
+  },
+  {
+    "id": 4,
+    "front": "Socialism",
+    "back": "Argues for greater economic equality through broader social or collective control of key resources."
+  },
+  {
+    "id": 5,
+    "front": "Communism",
+    "back": "A classless, commonly owned ideal; in practice, implementation has often produced centralized states."
+  },
+  {
+    "id": 6,
+    "front": "Fascism",
+    "back": "Authoritarian ultranationalism that suppresses pluralism, dissent, and individual rights."
+  },
+  {
+    "id": 7,
+    "front": "Anarchism",
+    "back": "Rejects coercive hierarchies and favors voluntary cooperation and self-management."
+  },
+  {
+    "id": 8,
+    "front": "Libertarianism",
+    "back": "Emphasizes personal liberty, private property, and minimal state intervention."
+  },
+  {
+    "id": 9,
+    "front": "Populism",
+    "back": "A people-versus-elite political style that can appear in both left and right movements."
+  },
+  {
+    "id": 10,
+    "front": "Why left-right-center is limited",
+    "back": "It is a useful map, but real political movements often combine ideas from multiple ideologies."
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "timeline": "Foundations",
+    "title": "Why ideologies matter",
+    "content": "Political ideologies are frameworks for answering big questions: what is freedom, what is fairness, and what should government do. Learning them helps you compare arguments by principles, not just slogans.",
+    "next": "What tensions appear in almost every political debate?"
+  },
+  {
+    "id": 2,
+    "timeline": "Core tensions",
+    "title": "Three tensions that organize politics",
+    "content": "Most ideologies prioritize values differently across three recurring tensions: freedom versus equality, tradition versus reform, and limited state versus strong state. These trade-offs explain why reasonable people can support different systems.",
+    "next": "Which ideology puts tradition and stability first?"
+  },
+  {
+    "id": 3,
+    "timeline": "Conservatism",
+    "title": "Conservatism: preserve and reform carefully",
+    "content": "Conservatism emphasizes continuity, social order, and respect for established institutions. It favors gradual change over abrupt transformation, arguing that sudden redesign can produce instability and unintended harm.",
+    "next": "What if your first priority is individual rights?"
+  },
+  {
+    "id": 4,
+    "timeline": "Liberalism",
+    "title": "Liberalism: rights and constrained power",
+    "content": "Liberalism centers individual rights, legal equality, and limits on arbitrary authority. Classical liberalism stressed civil liberties and markets; modern liberalism also emphasizes social protections that expand real opportunity.",
+    "next": "How does socialism redefine fairness?"
+  },
+  {
+    "id": 5,
+    "timeline": "Socialism",
+    "title": "Socialism: equality and shared control",
+    "content": "Socialism argues that concentrated ownership creates unfair outcomes and power imbalances. It supports broader social or collective control over key resources so prosperity is distributed more evenly across society.",
+    "next": "How is communism related but more radical?"
+  },
+  {
+    "id": 6,
+    "timeline": "Communism",
+    "title": "Communism: classless ideal, difficult transitions",
+    "content": "Communism is often described as a classless system with common ownership and no exploitation. The historical challenge has been implementation: many self-described communist states became highly centralized, creating tension between ideal theory and political reality.",
+    "next": "What happens when nationalism and authoritarianism merge?"
+  },
+  {
+    "id": 7,
+    "timeline": "Fascism",
+    "title": "Fascism: authoritarian ultranationalism",
+    "content": "Fascism elevates nation and leader above pluralism, dissent, and individual rights. It rejects liberal democracy and often uses propaganda, repression, and exclusionary identity politics to enforce unity.",
+    "next": "Are all anti-state ideas authoritarian in a different way?"
+  },
+  {
+    "id": 8,
+    "timeline": "Anarchism",
+    "title": "Anarchism: no coercive hierarchy",
+    "content": "Anarchism rejects coercive authority structures, especially state domination. It proposes voluntary cooperation, mutual aid, and self-management, though anarchist schools disagree on markets and property.",
+    "next": "Which ideology also seeks minimal government but keeps markets central?"
+  },
+  {
+    "id": 9,
+    "timeline": "Libertarianism",
+    "title": "Libertarianism: maximize individual choice",
+    "content": "Libertarianism prioritizes personal liberty, private property, and limited government intervention. Supporters argue this protects autonomy and innovation, while critics argue it can weaken social safety nets and public goods.",
+    "next": "How do nationalism and populism shape modern political energy?"
+  },
+  {
+    "id": 10,
+    "timeline": "Nationalism and Populism",
+    "title": "Identity, sovereignty, and anti-elite politics",
+    "content": "Nationalism prioritizes national identity and self-rule; it can be civic and inclusive, or exclusionary and ethnic. Populism frames politics as ordinary people versus entrenched elites and can appear on both left and right.",
+    "next": "What changed when movements centered gender and climate?"
+  },
+  {
+    "id": 11,
+    "timeline": "Contemporary expansions",
+    "title": "Feminism and environmentalism broaden the agenda",
+    "content": "Feminism analyzes and challenges systems that reproduce gender inequality in law, culture, and economics. Environmentalism treats ecological limits and climate risk as central political responsibilities, reshaping policy across ideological camps.",
+    "next": "How should beginners use the left-right-center spectrum?"
+  },
+  {
+    "id": 12,
+    "timeline": "Political spectrum",
+    "title": "Use labels as tools, not cages",
+    "content": "Left-right-center is a useful orientation map, but real parties and voters mix ideas from multiple traditions. The deeper skill is identifying each ideology's priorities, trade-offs, and likely social outcomes.",
+    "next": "Test your foundations before moving to historical case studies."
+  }
+]

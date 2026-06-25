@@ -1,0 +1,86 @@
+﻿[
+    {
+        "id": 1,
+        "timeline": "Origins",
+        "title": "Why people say left and right",
+        "content": "The labels left and right are shortcuts for clusters of political values. They help people quickly compare positions on change, equality, tradition, and the role of government. But they are maps, not perfect definitions.",
+        "next": "Where did these labels come from in the first place?"
+    },
+    {
+        "id": 2,
+        "timeline": "French Revolution",
+        "title": "From seating arrangement to ideology",
+        "content": "During the French Revolution, supporters of major change sat to the left of the assembly and defenders of monarchy sat to the right. Over time, left became associated with reform and right with preservation of existing order. That origin still shapes political language today.",
+        "next": "How does the modern left usually define its goals?"
+    },
+    {
+        "id": 3,
+        "timeline": "Left",
+        "title": "Left politics: equality and active government",
+        "content": "Left-wing politics generally prioritizes social and economic equality. It often supports stronger state action through regulation, redistribution, and public services. On social issues, left movements are usually more progressive on rights and inclusion.",
+        "next": "What economic logic often appears in center-left policy?"
+    },
+    {
+        "id": 4,
+        "timeline": "Left economics",
+        "title": "Intervention and stabilization",
+        "content": "A common center-left approach is interventionist economics: governments can tax more in strong periods and spend more during downturns to reduce recessions. Different left traditions disagree on scale, ranging from moderate regulation to full state control.",
+        "next": "How does the right define political priorities differently?"
+    },
+    {
+        "id": 5,
+        "timeline": "Right",
+        "title": "Right politics: liberty, order, and limits",
+        "content": "Right-wing politics usually emphasizes personal responsibility, institutional continuity, and limits on government power. It tends to accept greater social and economic hierarchy as unavoidable or even functional. On social questions, right traditions often defend more traditional norms.",
+        "next": "What economic model is often linked to the right?"
+    },
+    {
+        "id": 6,
+        "timeline": "Right economics",
+        "title": "Market-first thinking",
+        "content": "Many right-leaning approaches favor lower taxes, lighter regulation, and less state interference in markets. The argument is that decentralized decisions and competition produce innovation and growth. Critics respond that weak regulation can widen inequality and social risk.",
+        "next": "If left and right are helpful, why do they still fail to explain a lot?"
+    },
+    {
+        "id": 7,
+        "timeline": "Limits of one axis",
+        "title": "One line cannot map all politics",
+        "content": "Real parties mix positions across issues, so a single left-right line can be misleading. A party may be economically interventionist but socially conservative, or market-friendly but civil-libertarian. This is why many analysts use a second axis.",
+        "next": "What is the second axis and what does it measure?"
+    },
+    {
+        "id": 8,
+        "timeline": "Second dimension",
+        "title": "Authoritarian vs libertarian",
+        "content": "The authoritarian-libertarian axis measures tolerance for state and institutional control over personal life. Authoritarian positions favor stronger control and obedience to order. Libertarian positions prioritize personal autonomy and skepticism toward coercive authority.",
+        "next": "Does this mean left is always authoritarian and right always libertarian?"
+    },
+    {
+        "id": 9,
+        "timeline": "Misconceptions",
+        "title": "Common myth: each side has one fixed personality",
+        "content": "Neither left nor right has a single relationship to state power in every area. You can find authoritarian and libertarian currents on both sides depending on the issue and context. That is why labels should start analysis, not end it.",
+        "next": "How should we think about ideological extremes?"
+    },
+    {
+        "id": 10,
+        "timeline": "Extremes",
+        "title": "Extremes are more complex than slogans",
+        "content": "People are often taught simple opposites like communism on one end and fascism on the other. But extreme systems can share authoritarian traits even when their economic ideas differ. Looking only at left and right can hide that overlap.",
+        "next": "Where do centrist parties fit in this framework?"
+    },
+    {
+        "id": 11,
+        "timeline": "Center",
+        "title": "The political center as combination space",
+        "content": "Centrist parties usually blend selected ideas from left and right rather than committing fully to one pole. They may support market economics alongside social protections, or institutional continuity with targeted reform. Center does not mean no values; it means mixed priorities.",
+        "next": "How should citizens use these labels when choosing policies and leaders?"
+    },
+    {
+        "id": 12,
+        "timeline": "Practical use",
+        "title": "Use labels, then verify policy",
+        "content": "Left and right labels are useful starting points, but voting decisions should be based on concrete policies and real outcomes. Platforms, not slogans, reveal how a party balances liberty, equality, and authority. Political literacy means testing labels against evidence.",
+        "next": "Test what you remember."
+    }
+]

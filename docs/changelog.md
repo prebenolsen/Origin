@@ -4,6 +4,43 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.8.0] - 2026-06-25
+
+### Added - authored Politics Foundations spectrum module
+- Replaced placeholder files in `src/content/politics/foundations/left-vs-right-the-political-spectrum/` with complete authored content generated from `raw.md`.
+- Added a foundations-first `module.json` context using a schematic map that combines the left-right axis with the authoritarian-libertarian axis.
+- Wrote a 12-card `story.json` explaining the origin of left/right labels, modern policy differences, the limits of one-dimensional labeling, and practical policy-based evaluation.
+- Rebuilt `timeline.json` with conceptual milestones and aligned all story-card `timeline` values to those milestones.
+- Replaced `quiz.json` with understanding-focused questions across multiple-choice, true-false, ordering, and matching.
+- Replaced `flashcards.json` with key concept recall cards for spectrum literacy and common misconceptions.
+- Updated `docs/content.md` to mark the module as `DONE`.
+
+## [1.7.0] - 2026-06-25
+
+### Added - authored Politics Foundations module
+- Replaced placeholder files in `src/content/politics/foundations/political-ideologies-explained/` with complete authored content generated from `raw.md`.
+- Added a foundations-first `module.json` context using a schematic map of core ideology tensions (freedom, equality, tradition, state power, and national identity).
+- Wrote a 12-card `story.json` focused on conceptual understanding of major ideologies (conservatism, liberalism, socialism, communism, fascism, anarchism, libertarianism, nationalism, populism, feminism, environmentalism) without turning the module into a historical deep dive.
+- Rebuilt `timeline.json` as conceptual milestones and aligned all story-card `timeline` values to those milestones.
+- Replaced `quiz.json` with understanding-focused questions using multiple-choice, true-false, ordering, and matching formats.
+- Replaced `flashcards.json` with key concept recall cards for foundational retention.
+- Updated `docs/content.md` to mark `Political Ideologies Explained` as `DONE`.
+
+## [1.6.0] - 2026-06-25
+
+### Added - Politics module scaffolding
+- Added new placeholder module scaffolds under `src/content/politics/` to match the new rows in `docs/content.md`.
+- Created two subcategories with full module folder structures and placeholder files (`module.json`, `story.json`, `timeline.json`, `quiz.json`, `flashcards.json`):
+  - `foundations`: `political-ideologies-explained`, `left-vs-right-the-political-spectrum`, `democracy-and-dictatorship`, `constitutions-and-rule-of-law`, `states-and-governments`
+  - `global-politics`: `geopolitics-why-geography-matters`, `the-united-nations-and-world-order`
+- Updated `docs/content.md` table rows for Politics to include explicit `Status` values (`------`) so all rows match the tracker schema.
+
+## [1.5.1] - 2026-06-25
+
+### Changed - content tracker readability
+- Reformatted `docs/content.md` for easier scanning by normalizing table spacing and adding a clear section title.
+- Standardized the Markdown table separator row for cleaner rendering in editors and previews.
+
 ## [1.5.0] - 2026-06-25
 
 ### Added - Norway country-history modules (authored from source transcript)
