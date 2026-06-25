@@ -32,7 +32,7 @@
 | History  | Age of Exploration              | European exploration                        | 1400 CE – 1600 CE         | ------ |
 | History  | Age of Exploration              | Colonization of the Americas                | 1500 CE – 1800 CE         | ------ |
 | History  | Age of Exploration              | The Columbian Exchange                      | 1492 CE – 1700 CE         | ------ |
-| History  | Atlantic World                  | Colonial Americas                           | 1500 CE – 1800 CE         | ------ |
+| History  | Atlantic World                  | Colonial Americas                           | 1500 CE – 1800 CE         |  DONE  |
 | History  | Atlantic World                  | Transatlantic Slave Trade                   | 1500 CE – 1800 CE         |  DONE  |
 | History  | Atlantic World                  | Slavery in the Americas                     | 1600 CE – 1800 CE         |  DONE  |
 | History  | Atlantic World                  | Abolition movements                         | 1700 CE – 1900 CE         | ------ |

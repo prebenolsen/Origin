@@ -1,5 +1,42 @@
-﻿{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+﻿[
+    {
+        "id": 1,
+        "front": "Why is 1453 important for understanding Atlantic expansion?",
+        "back": "Ottoman control over Constantinople increased pressure on old trade routes, encouraging Iberian maritime alternatives."
+    },
+    {
+        "id": 2,
+        "front": "What changed between Columbus's first and second voyages?",
+        "back": "The second voyage (1493) was a colonizing mission with settlers, clergy, and soldiers, not just exploration."
+    },
+    {
+        "id": 3,
+        "front": "What did the Treaty of Tordesillas attempt to do?",
+        "back": "It divided claimed Atlantic territories between Spain and Portugal to reduce direct conflict."
+    },
+    {
+        "id": 4,
+        "front": "How was early Portuguese Brazil different from Spanish mainland conquests?",
+        "back": "Brazil initially centered on resource extraction and later plantation settlement, while Spain pursued rapid military conquest of large indigenous states."
+    },
+    {
+        "id": 5,
+        "front": "Why were disease outbreaks so decisive in colonization?",
+        "back": "Indigenous populations lacked immunity to Eurasian diseases like smallpox, causing massive losses that weakened resistance."
+    },
+    {
+        "id": 6,
+        "front": "What does Roanoke represent in this module's story?",
+        "back": "An early English colonial failure that still signaled England's long-term commitment to Atlantic colonization."
+    },
+    {
+        "id": 7,
+        "front": "How did colonizer-indigenous relations vary?",
+        "back": "They ranged from temporary cooperation and trade to coercion, land seizure, forced labor, and violent conflict."
+    },
+    {
+        "id": 8,
+        "front": "What major Atlantic system emerged from this first century?",
+        "back": "A connected imperial world shaped by European rivalry, colonial extraction, and expanding forced labor from West Africa."
+    }
+]

@@ -1,40 +1,34 @@
 ﻿{
-    "title":  "PLACEHOLDER: Colonial Americas",
-    "period":  "1500 CE â€“ 1800 CE",
-    "category":  "history",
-    "subcategory":  "atlantic-world",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "1500 CE â€“ 1800 CE",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
-                }
+    "title": "Colonial Americas",
+    "period": "1453-1600s",
+    "category": "history",
+    "subcategory": "atlantic-world",
+    "summary": "How European powers built colonies in the Americas and reshaped the Atlantic world through conquest, rivalry, and forced labor.",
+    "accent": "#d27b4d",
+    "context": {
+        "type": "map",
+        "headline": "From Atlantic crossing to continental empires",
+        "description": "After old Eurasian trade routes were disrupted, Iberian powers sailed west and turned the Atlantic into a connected imperial zone. Spain and Portugal expanded first, then France and England challenged them, while indigenous societies faced conquest, disease, and displacement.",
+        "when": "1453 - 1600s",
+        "map": {
+            "backdrop": "world",
+            "markers": [
+                { "id": "iberia", "label": "Spain and Portugal", "x": 53, "y": 28, "role": "primary" },
+                { "id": "caribbean", "label": "Caribbean", "x": 24, "y": 45, "role": "primary" },
+                { "id": "mexico", "label": "Mesoamerica", "x": 16, "y": 49, "role": "secondary" },
+                { "id": "andes", "label": "Andean South America", "x": 27, "y": 65, "role": "secondary" },
+                { "id": "brazil", "label": "Brazil", "x": 36, "y": 61, "role": "primary" },
+                { "id": "na-east", "label": "North American Atlantic Coast", "x": 20, "y": 36, "role": "secondary" },
+                { "id": "wafrica", "label": "West Africa", "x": 49, "y": 56, "role": "secondary" }
+            ],
+            "connections": [
+                { "from": "iberia", "to": "caribbean", "label": "Atlantic voyages" },
+                { "from": "iberia", "to": "brazil", "label": "Treaty claims" },
+                { "from": "caribbean", "to": "mexico", "label": "Spanish expansion" },
+                { "from": "mexico", "to": "andes", "label": "Conquest routes" },
+                { "from": "iberia", "to": "na-east", "label": "Rival empires" },
+                { "from": "wafrica", "to": "caribbean", "label": "Forced labor systems" }
+            ]
+        }
+    }
 }

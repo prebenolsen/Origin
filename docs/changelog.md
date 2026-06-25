@@ -4,6 +4,17 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.4.0] - 2026-06-25
+
+### Added - Colonial Americas module (authored from source transcript)
+- Replaced placeholder files in `src/content/history/atlantic-world/colonial-americas/` with full authored content generated from `raw.md`.
+- Added a complete context map and module metadata in `module.json`, focused on Iberian origins, Atlantic routes, major colonial zones, and labor-system links.
+- Wrote a 13-card `story.json` that covers: trade-route pressures after 1453, Columbus and early settlement, Tordesillas, Portugal in Brazil, Spanish conquests, French and English entry, indigenous experiences, and the shift toward Atlantic forced labor.
+- Rebuilt `timeline.json` with major progression anchors (`1453`, `1492`, `1494`, `1500`, `1519-1533`, `1534-1565`, `1585-1600s`) and aligned story-card timeline labels to those values.
+- Replaced `quiz.json` with understanding-focused questions across multiple-choice, true-false, ordering, and matching.
+- Replaced `flashcards.json` with retention-focused cards on causes, turning points, imperial patterns, and consequences.
+- Marked `Colonial Americas` as `DONE` in `docs/content.md`.
+
 ## [1.3.0] — 2026-06-25
 
 ### Added — full History module placeholder scaffolding

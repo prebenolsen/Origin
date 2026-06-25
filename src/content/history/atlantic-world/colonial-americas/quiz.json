@@ -1,13 +1,85 @@
-﻿{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+﻿[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "Why did Iberian powers intensify westward ocean exploration in the late 1400s?",
+        "options": [
+            "They wanted to avoid Ottoman-controlled trade bottlenecks and access Asian goods by sea",
+            "They had already exhausted all American gold reserves",
+            "They were invited by indigenous empires to establish colonies",
+            "They had lost interest in long-distance trade"
+        ],
+        "answer": 0,
+        "explanation": "After 1453, Ottoman control over key routes increased trade friction and costs, pushing Iberian states to seek alternative maritime routes."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "The Treaty of Tordesillas was fully accepted by all major European powers.",
+        "answer": false,
+        "explanation": "Spain and Portugal agreed to it, but France and England later ignored the treaty and pursued their own colonial claims."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What best explains why smallpox mattered so much in Spanish conquests?",
+        "options": [
+            "It weakened indigenous populations that had no prior immunity, reducing resistance capacity",
+            "It only affected Spanish troops, forcing rapid withdrawals",
+            "It was used mainly as a negotiated peace strategy",
+            "It made European metal weapons unnecessary"
+        ],
+        "answer": 0,
+        "explanation": "Disease did not replace military force, but it devastated communities and made organized resistance much harder."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Put these events in chronological order.",
+        "items": [
+            "Portugal claims Brazil under Cabral",
+            "Treaty of Tordesillas",
+            "Columbus reaches the Caribbean",
+            "Cortes begins the campaign against Aztec power"
+        ],
+        "correctOrder": [2, 1, 0, 3],
+        "explanation": "1492 came first, then 1494, then 1500, and then the 1519 mainland conquest phase."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each power or actor to its early colonial pattern.",
+        "pairs": [
+            {
+                "left": "Spain",
+                "right": "Rapid conquest of Caribbean and mainland empires"
+            },
+            {
+                "left": "Portugal",
+                "right": "Brazil claim, then plantation-centered development"
+            },
+            {
+                "left": "France",
+                "right": "Exploration and fragile early settlements"
+            },
+            {
+                "left": "England",
+                "right": "Late entry with failed Roanoke attempts before later expansion"
+            }
+        ],
+        "explanation": "Each power entered differently, with Spain and Portugal leading first and France/England building later challenges."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "Why did colonial systems increasingly pull labor from West Africa by the end of this early period?",
+        "options": [
+            "European settlers refused to farm cash crops",
+            "Indigenous populations had collapsed in many regions and colonial demand for labor kept expanding",
+            "The Church banned all labor coercion in the Americas",
+            "Atlantic colonies had become fully industrialized"
+        ],
+        "answer": 1,
+        "explanation": "Settler economies required large labor forces, while disease and violence had devastated many indigenous communities, driving a turn toward transatlantic forced labor."
+    }
+]

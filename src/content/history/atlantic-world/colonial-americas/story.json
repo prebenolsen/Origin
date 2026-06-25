@@ -1,7 +1,93 @@
-﻿{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+﻿[
+    {
+        "id": 1,
+        "timeline": "1453",
+        "title": "Why Europe looked west",
+        "content": "For centuries, Europe traded with Asia through overland and Mediterranean routes. When the Ottomans captured Constantinople in 1453, trade costs rose and access became harder. Iberian kingdoms began searching for sea routes that could bypass old chokepoints.",
+        "next": "Who was willing to gamble on a western route across the Atlantic?"
+    },
+    {
+        "id": 2,
+        "timeline": "1492",
+        "title": "Columbus and Spain's opening move",
+        "content": "Christopher Columbus failed to win Portuguese backing, but Spain approved his plan in 1492. He reached the Caribbean that year, creating sustained European contact with the Americas. What began as a route-finding mission quickly became an imperial project.",
+        "next": "How did this shift from exploration to colonization so quickly?"
+    },
+    {
+        "id": 3,
+        "timeline": "1492",
+        "title": "From voyage to colony",
+        "content": "Columbus's second voyage in 1493 was much larger and included soldiers, clergy, and settlers. Spain established Santo Domingo on Hispaniola, often treated as the first durable European colonial base in the Americas. Colonization now meant permanent control, labor extraction, and conversion efforts.",
+        "next": "How did Spain and Portugal avoid fighting each other immediately?"
+    },
+    {
+        "id": 4,
+        "timeline": "1494",
+        "title": "A line across the ocean",
+        "content": "In 1494, the Treaty of Tordesillas drew a north-south demarcation line in the Atlantic. Lands west of the line were assigned to Spain, while lands east were assigned to Portugal. This agreement helped frame early imperial claims, even if other powers would later ignore it.",
+        "next": "What did Portugal gain from this division?"
+    },
+    {
+        "id": 5,
+        "timeline": "1500",
+        "title": "Portugal claims Brazil",
+        "content": "Pedro Alvares Cabral landed on Brazil's coast in 1500 and claimed it for Portugal. At first, Brazil was valued for brazilwood dye more than precious metals. Over time, sugar agriculture and formal settlement made Brazil central to Portugal's Atlantic empire.",
+        "next": "Meanwhile, how far did Spanish expansion spread?"
+    },
+    {
+        "id": 6,
+        "timeline": "1519-1533",
+        "title": "Spain's conquest model",
+        "content": "Spain expanded from Caribbean islands into mainland empires. Hernan Cortes defeated the Aztec state by 1521, and Francisco Pizarro overran Inca leadership in the 1530s. Military technology, political fragmentation, and epidemic disease together made conquest possible.",
+        "next": "Was disease really as decisive as weapons?"
+    },
+    {
+        "id": 7,
+        "timeline": "1519-1533",
+        "title": "Disease as an empire-maker",
+        "content": "Smallpox and other Eurasian diseases devastated indigenous populations that had no prior exposure. In many regions, mortality rates shattered communities before or during military campaigns. This demographic collapse weakened resistance and accelerated European takeover.",
+        "next": "How large did Spain's claimed territories become?"
+    },
+    {
+        "id": 8,
+        "timeline": "1534-1565",
+        "title": "A vast but contested Spanish sphere",
+        "content": "By the mid-1500s, Spain held major zones from Mexico and Peru to parts of Florida and the future U.S. Southwest. But these claims were never uncontested. France and England increasingly challenged Iberian dominance in Atlantic and North American spaces.",
+        "next": "How did France try to enter the colonial race?"
+    },
+    {
+        "id": 9,
+        "timeline": "1534-1565",
+        "title": "French starts, French setbacks",
+        "content": "French expeditions under Jacques Cartier explored the St. Lawrence and claimed territory for the crown. Early settlement attempts in Canada and farther south struggled with climate, financing, and conflict. Spanish attacks also disrupted French footholds in Florida.",
+        "next": "What was England doing while this unfolded?"
+    },
+    {
+        "id": 10,
+        "timeline": "1585-1600s",
+        "title": "England enters late but determined",
+        "content": "Under Elizabeth I, England backed privateering against Spanish shipping and sought its own colonies. The Roanoke ventures failed, but they marked a strategic shift toward permanent Atlantic settlement. England had not succeeded yet, but it was building momentum.",
+        "next": "How did colonizers interact with indigenous peoples on the ground?"
+    },
+    {
+        "id": 11,
+        "timeline": "1585-1600s",
+        "title": "Cooperation, coercion, and conversion",
+        "content": "Relations with indigenous communities varied from temporary alliances to violent domination. Colonists often depended on local knowledge for food and survival, yet many still imposed land seizure, forced labor, and Christian conversion. Missionaries sometimes criticized abuses, but colonial systems remained exploitative.",
+        "next": "What labor problem pushed colonization into a new phase?"
+    },
+    {
+        "id": 12,
+        "timeline": "1585-1600s",
+        "title": "The labor turn toward Atlantic slavery",
+        "content": "As settler demands grew and indigenous populations collapsed from disease and violence, colonizers sought new labor sources. European powers increasingly expanded forced labor extraction from West Africa into the Americas. This shift connected colonial expansion to the wider Atlantic slave system.",
+        "next": "By the 1600s, what kind of Atlantic world had been created?"
+    },
+    {
+        "id": 13,
+        "timeline": "1585-1600s",
+        "title": "The first century's legacy",
+        "content": "By the end of the first century of colonization, Spain had the largest American empire, Portugal had consolidated Brazil, and France and England were preparing deeper expansion. Indigenous societies had suffered catastrophic demographic and political disruption. The foundations were set for centuries of imperial rivalry and Atlantic exploitation.",
+        "next": "Test what you remember."
+    }
+]
