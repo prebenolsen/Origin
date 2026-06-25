@@ -34,5 +34,9 @@ module row status to DONE.
 
 ## Latest completion note
 
+- 2026-06-25: Completed `psychology/communication/communicate-with-confidence`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.
+- 2026-06-25: Completed `psychology/communication/dealing-with-difficult-people`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.
 - 2026-06-25: Completed `psychology/communication/becoming-a-better-conversationalist`
   from `raw.md` into all five content JSON files and set tracker status to DONE.

@@ -1,0 +1,88 @@
+{
+    "title": "Communicate with Confidence",
+    "period": "Everyday high-pressure communication at work, home, and social settings",
+    "category": "psychology",
+    "subcategory": "communication",
+    "summary": "Build confident communication under pressure by using frameworks, speaking with intention, and choosing words that match the person you want to be.",
+    "accent": "#2f6d8a",
+    "context": {
+        "type": "schematic",
+        "headline": "Confidence is a repeatable communication process",
+        "description": "People often freeze, ramble, or overexplain when they feel pressure. Confidence grows when you use simple frameworks, pause before speaking, and align words with clear goals and values. This module turns communication confidence into practical steps you can apply in your very next conversation.",
+        "when": "Live Q and A, difficult conversations, meetings, networking, and family communication",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                {
+                    "id": "pressure",
+                    "label": "Pressure moment",
+                    "x": 12,
+                    "y": 36,
+                    "role": "secondary"
+                },
+                {
+                    "id": "framework",
+                    "label": "3-2-1 framework",
+                    "x": 30,
+                    "y": 24,
+                    "role": "primary"
+                },
+                {
+                    "id": "pause",
+                    "label": "Breath before words",
+                    "x": 47,
+                    "y": 42,
+                    "role": "primary"
+                },
+                {
+                    "id": "clarity",
+                    "label": "Direct and concise speech",
+                    "x": 64,
+                    "y": 28,
+                    "role": "primary"
+                },
+                {
+                    "id": "values",
+                    "label": "Goals and values",
+                    "x": 76,
+                    "y": 52,
+                    "role": "primary"
+                },
+                {
+                    "id": "impact",
+                    "label": "Reputation and trust",
+                    "x": 56,
+                    "y": 72,
+                    "role": "secondary"
+                }
+            ],
+            "connections": [
+                {
+                    "from": "pressure",
+                    "to": "framework",
+                    "label": "avoid panic"
+                },
+                {
+                    "from": "framework",
+                    "to": "pause",
+                    "label": "slow down"
+                },
+                {
+                    "from": "pause",
+                    "to": "clarity",
+                    "label": "say the real point"
+                },
+                {
+                    "from": "clarity",
+                    "to": "values",
+                    "label": "speak with intention"
+                },
+                {
+                    "from": "values",
+                    "to": "impact",
+                    "label": "shape how people experience you"
+                }
+            ]
+        }
+    }
+}

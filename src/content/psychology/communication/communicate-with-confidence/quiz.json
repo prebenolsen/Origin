@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is the core benefit of using a communication framework under pressure?",
+        "options": [
+            "It guarantees people will agree with you",
+            "It gives your brain a structure so you do not ramble",
+            "It helps you avoid all difficult conversations",
+            "It lets you talk longer without preparation"
+        ],
+        "answer": 1,
+        "explanation": "Frameworks reduce overload by giving you a clear path, which improves clarity and confidence."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "Confident communication usually means saying more words.",
+        "answer": false,
+        "explanation": "The module emphasizes that more words are not better. Confidence often comes from concise, direct speech."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "Why is 'breath as the first word' useful?",
+        "options": [
+            "It helps you fill silence quickly",
+            "It increases speaking speed",
+            "It calms delivery and signals intentional response",
+            "It prevents any disagreement"
+        ],
+        "answer": 2,
+        "explanation": "A short pause and breath slows nervous speech and makes your response sound grounded and deliberate."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Put these steps in the best order for a difficult conversation.",
+        "items": [
+            "Set the conversation frame and desired outcome",
+            "Take a breath and slow your pace",
+            "Deliver the core message directly",
+            "Use curiosity questions to clarify understanding"
+        ],
+        "correctOrder": [1, 0, 2, 3],
+        "explanation": "Regulate first, frame second, say the point clearly, then clarify through curiosity rather than defensiveness."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each strategy to its purpose.",
+        "pairs": [
+            {
+                "left": "3-2-1 framework",
+                "right": "Creates quick structure for off-the-cuff speaking"
+            },
+            {
+                "left": "What did you hear?",
+                "right": "Checks interpretation when conflict appears"
+            },
+            {
+                "left": "Separate person from problem",
+                "right": "Reduces defensiveness and invites collaboration"
+            },
+            {
+                "left": "Neutral boundary statement",
+                "right": "Responds to disrespect without escalation"
+            }
+        ],
+        "explanation": "These tools target different moments: pressure, misunderstanding, teamwork, and boundary protection."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "Which opening is most aligned with confident and respectful directness?",
+        "options": [
+            "So, um, maybe this is not a big deal but...",
+            "This is not going to be easy, and I am sharing it because I know you can handle it.",
+            "You always do this and I am tired of it.",
+            "Never mind, it is probably not worth discussing."
+        ],
+        "answer": 1,
+        "explanation": "It is direct about difficulty, respectful in tone, and signals belief in the other person's capacity."
+    }
+]

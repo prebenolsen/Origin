@@ -1,0 +1,88 @@
+{
+  "title": "Dealing with Difficult People",
+  "period": "Everyday life and workplace conflict management",
+  "category": "psychology",
+  "subcategory": "communication",
+  "summary": "Learn why conflict feels physically overwhelming, and how to use behavioral intelligence to stay calm, reduce escalation, and protect relationships.",
+  "accent": "#3b6f5b",
+  "context": {
+    "type": "schematic",
+    "headline": "From stress reaction to skillful response",
+    "description": "When someone feels difficult, your body often reacts before your mind can reason clearly. This module explains the stress response, the labeling traps that worsen conflict, and a practical framework for explaining, predicting, influencing, and controlling behavior so conversations become safer and more productive.",
+    "when": "Modern workplaces, families, teams, and high-stress conversations",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        {
+          "id": "trigger",
+          "label": "Conflict trigger",
+          "x": 14,
+          "y": 34,
+          "role": "secondary"
+        },
+        {
+          "id": "low-road",
+          "label": "Fight-or-flight response",
+          "x": 30,
+          "y": 24,
+          "role": "primary"
+        },
+        {
+          "id": "labeling",
+          "label": "Labeling and bias",
+          "x": 48,
+          "y": 40,
+          "role": "primary"
+        },
+        {
+          "id": "explain",
+          "label": "Ask why behavior happens",
+          "x": 64,
+          "y": 28,
+          "role": "primary"
+        },
+        {
+          "id": "influence",
+          "label": "Inclusive language and recognition",
+          "x": 72,
+          "y": 56,
+          "role": "secondary"
+        },
+        {
+          "id": "control",
+          "label": "Self-control tools",
+          "x": 42,
+          "y": 70,
+          "role": "primary"
+        }
+      ],
+      "connections": [
+        {
+          "from": "trigger",
+          "to": "low-road",
+          "label": "body reacts first"
+        },
+        {
+          "from": "low-road",
+          "to": "labeling",
+          "label": "quick judgments"
+        },
+        {
+          "from": "labeling",
+          "to": "explain",
+          "label": "replace blame with why"
+        },
+        {
+          "from": "explain",
+          "to": "influence",
+          "label": "shift communication pattern"
+        },
+        {
+          "from": "influence",
+          "to": "control",
+          "label": "protect health and clarity"
+        }
+      ]
+    }
+  }
+}

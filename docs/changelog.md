@@ -4,6 +4,54 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.22.0] - 2026-06-25
+
+### Added - authored Psychology Communication module from source transcript
+- Completed `src/content/psychology/communication/communicate-with-confidence/` by replacing placeholders in all five content files:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Built a complete learning flow from `raw.md` focused on confident speaking under pressure, concise delivery, conflict framing, conversational goals and values, and boundary language.
+- Updated `docs/content.md` and marked `Psychology | Communication | Communicate with Confidence` as `DONE`.
+- Updated `docs/architecture.md` with the latest completion note for this module.
+
+## [1.21.0] - 2026-06-25
+
+### Added - authored Psychology Communication module from source transcript
+- Completed `src/content/psychology/communication/dealing-with-difficult-people/` by replacing placeholders in all five content files:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Built a complete learning flow from `raw.md` focused on stress reactivity in conflict, labeling bias, and the behavioral intelligence model (explain, predict, influence, control).
+- Updated `docs/content.md` and marked `Psychology | Communication | Dealing with Difficult People` as `DONE`.
+- Updated `docs/architecture.md` with the latest completion note for this module.
+
+## [1.20.0] - 2026-06-25
+
+### Changed - removed duplicate Politics foundations scaffold
+- Deleted duplicate folder `src/content/politics/foundations/political-spectrum-left-right-libertarian-and-authoritarian/`.
+- Kept the existing authored module in `src/content/politics/foundations/left-vs-right-the-political-spectrum/`, whose title already covers "Political Spectrum: Left, Right, Libertarian, and Authoritarian".
+
+## [1.19.0] - 2026-06-25
+
+### Added - latest content placeholder scaffolding
+- Added missing placeholder scaffold for `src/content/psychology/communication/dealing-with-difficult-people/` with:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Added missing placeholder scaffold for `src/content/politics/foundations/political-spectrum-left-right-libertarian-and-authoritarian/` with:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+
 ## [1.18.0] - 2026-06-25
 
 ### Added - authored Psychology Communication module from raw source

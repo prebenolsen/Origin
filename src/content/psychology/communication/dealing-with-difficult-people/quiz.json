@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why do difficult conversations often feel physically overwhelming?",
+    "options": [
+      "Because conflict permanently damages memory",
+      "Because fight-or-flight systems can treat social threat like danger",
+      "Because only extroverts can handle social tension",
+      "Because rational thinking always increases during arguments"
+    ],
+    "answer": 1,
+    "explanation": "The module explains that the low-road survival response can activate in social conflict, producing strong physical stress reactions."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "If someone is difficult, the best strategy is to make them change first.",
+    "answer": false,
+    "explanation": "You cannot directly control another person. The practical focus is changing your own behavior, language, and regulation."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What is the main problem with quickly labeling someone as 'difficult'?",
+    "options": [
+      "It makes conversations shorter",
+      "It guarantees better boundaries",
+      "It replaces explanation with bias and blocks useful questions",
+      "It prevents all workplace conflict"
+    ],
+    "answer": 2,
+    "explanation": "Labeling often reflects bias and closes curiosity. Asking why behavior happens is more useful than judging immediately."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Put these responses in the healthiest sequence during escalating conflict.",
+    "items": [
+      "Use inclusive language to address the issue",
+      "Take a calming breath or brief reset",
+      "Notice your stress response",
+      "Separate behavior from the person"
+    ],
+    "correctOrder": [2, 1, 0, 3],
+    "explanation": "First notice activation, then regulate, then communicate collaboratively, and finally keep judgment focused on behavior rather than identity."
+  },
+  {
+    "id": 5,
+    "type": "matching",
+    "question": "Match each behavioral intelligence action to its purpose.",
+    "pairs": [
+      {
+        "left": "Explain behavior",
+        "right": "Identify possible motives and pressures"
+      },
+      {
+        "left": "Predict behavior",
+        "right": "Reduce uncertainty and anxiety"
+      },
+      {
+        "left": "Influence behavior",
+        "right": "Use inclusive language and recognition"
+      },
+      {
+        "left": "Control behavior",
+        "right": "Regulate your response before reacting"
+      }
+    ],
+    "explanation": "The four-part model moves from understanding to preparation, then social influence, then self-management."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "Which sentence best demonstrates inclusive language?",
+    "options": [
+      "You are always the problem in these meetings.",
+      "Your attitude is making this impossible.",
+      "We seem to be stuck here; how can we reset and move forward?",
+      "You need to fix this before we talk again."
+    ],
+    "answer": 2,
+    "explanation": "Inclusive phrasing lowers defensiveness and frames communication as a shared problem to solve."
+  }
+]
