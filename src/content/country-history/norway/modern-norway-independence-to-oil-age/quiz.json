@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why was the 1814 settlement historically important even without full immediate independence?",
+    "options": [
+      "It eliminated parliament",
+      "It preserved constitutional self-government structures",
+      "It ended all Swedish influence overnight",
+      "It gave Norway colonial possessions"
+    ],
+    "answer": 1,
+    "explanation": "Keeping constitution and parliament gave Norway institutional continuity and leverage for later sovereignty."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Norway's 1905 independence was achieved only through a large military victory.",
+    "answer": false,
+    "explanation": "Constitutional procedure, negotiation, and referendum were central; war was avoided."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What was one major lesson Norway drew from the WWII occupation period?",
+    "options": [
+      "Strict neutrality always guarantees security",
+      "Maritime trade made defense unnecessary",
+      "Security alliances and preparedness mattered more than prewar assumptions",
+      "Constitutional monarchy should be abolished"
+    ],
+    "answer": 2,
+    "explanation": "Postwar policy shifted toward NATO alignment and realistic security planning."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Place these events in sequence.",
+    "items": [
+      "North Sea oil discovery",
+      "Union dissolution referendum and settlement",
+      "German occupation",
+      "Creation of sovereign wealth fund"
+    ],
+    "correctOrder": [1, 2, 0, 3],
+    "explanation": "1905 came before WWII occupation, then oil discovery, then fund creation."
+  },
+  {
+    "id": 5,
+    "type": "matching",
+    "question": "Match policy area to historical effect.",
+    "pairs": [
+      { "left": "Welfare-state expansion", "right": "Lower inequality and stronger social security" },
+      { "left": "State role in oil sector", "right": "Greater public capture of resource value" },
+      { "left": "Sovereign wealth fund", "right": "Intergenerational savings and macroeconomic stability" },
+      { "left": "NATO membership", "right": "Security integration after neutrality limits were exposed" }
+    ],
+    "explanation": "Modern Norway's model combines social policy, resource governance, and strategic alignment."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What is a core contemporary Norwegian policy tension?",
+    "options": [
+      "Balancing fossil-fuel export income with climate goals",
+      "Restoring Hanseatic monopoly control",
+      "Rebuilding Viking longship raiding routes",
+      "Rejoining union with Sweden"
+    ],
+    "answer": 0,
+    "explanation": "Norway's prosperity is tied to petroleum exports while climate leadership demands decarbonization."
+  }
+]

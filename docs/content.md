@@ -66,3 +66,7 @@
 | History  | Modern World                    | European Union                              | 1950 CE – present         | ------ |
 | History  | Modern World                    | Digital Revolution                          | 1970 CE – present         | ------ |
 | History  | Modern World                    | Artificial Intelligence and the modern era  | 2000 CE – present         | ------ |
+| Country History | Norway | Origins to Viking Age | 14000 BCE - 1066 CE | DONE |
+| Country History | Norway | Christianization and Medieval Kingdom | 933 CE - 1319 CE | DONE |
+| Country History | Norway | Plague, Union, and Danish Rule | 1319 CE - 1814 CE | DONE |
+| Country History | Norway | Modern Norway: Independence to Oil Age | 1814 CE - present | DONE |

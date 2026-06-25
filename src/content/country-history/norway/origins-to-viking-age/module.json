@@ -1,0 +1,31 @@
+{
+  "title": "Origins to Viking Age",
+  "period": "14000 BCE - 1066 CE",
+  "category": "country-history",
+  "subcategory": "norway",
+  "summary": "How ice, sea, trade, and ship technology transformed early Norway from hunter-gatherer communities into a Viking maritime power.",
+  "accent": "#3f7a8a",
+  "context": {
+    "type": "map",
+    "headline": "Geography made Norway maritime",
+    "description": "Retreating ice opened the coast, while mountains and short growing seasons limited farming. Communities turned toward the sea, developed strong boatbuilding traditions, and later used longships to raid, trade, and settle across the North Atlantic.",
+    "when": "14000 BCE - 1066 CE",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "norway-coast", "label": "Norwegian Coast", "x": 54, "y": 22, "role": "primary" },
+        { "id": "fjordlands", "label": "Fjords and Valleys", "x": 58, "y": 34, "role": "secondary" },
+        { "id": "lindisfarne", "label": "Lindisfarne", "x": 44, "y": 38, "role": "secondary" },
+        { "id": "iceland", "label": "Iceland", "x": 26, "y": 20, "role": "primary" },
+        { "id": "greenland", "label": "Greenland", "x": 14, "y": 13, "role": "secondary" },
+        { "id": "dublin", "label": "Dublin", "x": 37, "y": 43, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "norway-coast", "to": "lindisfarne", "label": "Raids" },
+        { "from": "norway-coast", "to": "iceland", "label": "Settlement" },
+        { "from": "iceland", "to": "greenland", "label": "Expansion" },
+        { "from": "norway-coast", "to": "dublin", "label": "Trade and bases" }
+      ]
+    }
+  }
+}

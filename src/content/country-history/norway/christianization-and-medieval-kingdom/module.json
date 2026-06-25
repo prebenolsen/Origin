@@ -1,0 +1,31 @@
+{
+  "title": "Christianization and Medieval Kingdom",
+  "period": "933-1319",
+  "category": "country-history",
+  "subcategory": "norway",
+  "summary": "How conflict, conversion, and state-building transformed Norway from a pagan warrior society into a Christian medieval kingdom.",
+  "accent": "#7a5f43",
+  "context": {
+    "type": "map",
+    "headline": "Faith and power remade the kingdom",
+    "description": "After early unification, succession struggles and foreign intervention fractured Norway. Christian kings used church structures to centralize rule, and by the 1200s Norway reached a medieval peak with legal reform and North Atlantic influence.",
+    "when": "933-1319",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "trondheim", "label": "Nidaros (Trondheim)", "x": 57, "y": 23, "role": "primary" },
+        { "id": "stiklestad", "label": "Stiklestad", "x": 59, "y": 20, "role": "secondary" },
+        { "id": "bergen", "label": "Bergen", "x": 49, "y": 30, "role": "primary" },
+        { "id": "iceland", "label": "Iceland", "x": 25, "y": 19, "role": "secondary" },
+        { "id": "greenland", "label": "Greenland", "x": 12, "y": 13, "role": "secondary" },
+        { "id": "copenhagen", "label": "Denmark", "x": 62, "y": 46, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "stiklestad", "to": "trondheim", "label": "St. Olaf cult" },
+        { "from": "bergen", "to": "iceland", "label": "Royal influence" },
+        { "from": "iceland", "to": "greenland", "label": "Atlantic realm" },
+        { "from": "copenhagen", "to": "trondheim", "label": "Regional rivalry" }
+      ]
+    }
+  }
+}

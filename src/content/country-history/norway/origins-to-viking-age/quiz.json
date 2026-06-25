@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why did maritime life become central in early Norway?",
+    "options": [
+      "Flat plains encouraged inland farming above all",
+      "Rugged terrain and rich coasts made sea-based livelihoods practical",
+      "Roman conquest forced all communities onto ships",
+      "Agriculture was forbidden by Norse law"
+    ],
+    "answer": 1,
+    "explanation": "Norway's geography limited large-scale farming in many regions while coasts and rivers offered reliable food and transport."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "The Viking Age was only about raiding and had little to do with trade or settlement.",
+    "answer": false,
+    "explanation": "Vikings also traded widely and founded durable settlements across the North Atlantic and British Isles."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What made the longship strategically important?",
+    "options": [
+      "It carried heavy siege towers",
+      "It required Mediterranean harbors to dock",
+      "It could move quickly in open sea and shallow rivers",
+      "It was designed mainly for deep-ocean cargo only"
+    ],
+    "answer": 2,
+    "explanation": "Its shallow draft and speed let Viking crews strike, trade, and relocate across diverse waters."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Put these milestones in order.",
+    "items": [
+      "Lindisfarne raid",
+      "Farming spreads into southern Norway",
+      "Longship breakthrough",
+      "Harald Fairhair unification tradition"
+    ],
+    "correctOrder": [1, 2, 0, 3],
+    "explanation": "Agriculture arrives first, then longship innovation, then Lindisfarne, then unification efforts."
+  },
+  {
+    "id": 5,
+    "type": "matching",
+    "question": "Match each factor to its effect.",
+    "pairs": [
+      { "left": "Bronze imports", "right": "Encouraged long-distance trade networks" },
+      { "left": "Mountainous terrain", "right": "Limited unified inland control" },
+      { "left": "Longships", "right": "Enabled fast raiding, trading, and migration" },
+      { "left": "Harald's centralization", "right": "Pushed some elites into exile" }
+    ],
+    "explanation": "Technology, geography, and politics all shaped Viking expansion and state formation."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "Why is 1066 often treated as a turning point for Norway's early history?",
+    "options": [
+      "It marked complete Roman control of Scandinavia",
+      "It ended all conflicts inside Norway",
+      "It symbolized the end of large Viking conquest campaigns and a shift toward medieval monarchy",
+      "It began Norwegian union with Denmark"
+    ],
+    "answer": 2,
+    "explanation": "Harald Hardrada's defeat is commonly used as the close of the Viking Age and the start of a different political era."
+  }
+]

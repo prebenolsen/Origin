@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "timeline": "1319-1397",
+    "title": "Union politics begin",
+    "content": "Dynastic inheritance linked Norway with Sweden and later Denmark. These personal unions shifted decision-making away from Norwegian centers. Norway became the weakest partner in a changing Scandinavian power system.",
+    "next": "What event turned this weakness into catastrophe?"
+  },
+  {
+    "id": 2,
+    "timeline": "1349-1351",
+    "title": "The Black Death devastates Norway",
+    "content": "Plague reached Norway in 1349 and killed a huge share of the population within a few years. Farms were abandoned, labor collapsed, and institutions lost personnel. Demographic shock undermined economic and political resilience for generations.",
+    "next": "How did reduced population change Norway's position in the union?"
+  },
+  {
+    "id": 3,
+    "timeline": "1397",
+    "title": "Kalmar Union formalized",
+    "content": "The crowns of Denmark, Norway, and Sweden were united under one monarch. In practice, power clustered around Denmark's political center. Norway's formal status remained kingdom, but real leverage steadily weakened.",
+    "next": "What happened in Norwegian trade hubs during this period?"
+  },
+  {
+    "id": 4,
+    "timeline": "1400s-1500s",
+    "title": "Hanseatic dominance and economic dependency",
+    "content": "German merchants, especially in Bergen, controlled key export channels like stockfish. Norwegian producers depended on foreign commercial networks and credit systems. Profit, pricing power, and urban influence shifted away from Norwegian hands.",
+    "next": "How did religious change alter sovereignty?"
+  },
+  {
+    "id": 5,
+    "timeline": "1536-1537",
+    "title": "Reformation and constitutional downgrade",
+    "content": "The Danish crown imposed Lutheran reform from above and abolished major Norwegian political institutions. Norway was treated increasingly as a subordinate territory under Copenhagen. Church property seizure also transferred wealth and authority away from local structures.",
+    "next": "Did Norwegian culture disappear under this pressure?"
+  },
+  {
+    "id": 6,
+    "timeline": "1500s-1700s",
+    "title": "Danish state, Norwegian everyday continuity",
+    "content": "Administrative elites were often Danish-oriented, but rural communities kept Norwegian dialects, customs, and folk traditions. Local life changed slowly, especially in isolated valleys and fjord regions. Cultural continuity survived inside political subordination.",
+    "next": "What economic shifts occurred before modern nationalism?"
+  },
+  {
+    "id": 7,
+    "timeline": "1600s-1700s",
+    "title": "Timber, mining, and gradual recovery",
+    "content": "Population recovered over time, and sectors like timber, shipping, silver, and copper expanded. These industries connected Norway more deeply to European markets. A modest Norwegian commercial elite began to emerge with interests not always identical to Copenhagen's.",
+    "next": "How did ideas begin to challenge old arrangements?"
+  },
+  {
+    "id": 8,
+    "timeline": "1700s",
+    "title": "Enlightenment and proto-national awareness",
+    "content": "Higher literacy, educational reforms, and historical writing revived attention to Norway's distinct past. Elites debated law, economy, and identity within union constraints. Political nationalism remained limited, but intellectual groundwork deepened.",
+    "next": "What external crisis finally broke Danish rule?"
+  },
+  {
+    "id": 9,
+    "timeline": "1807-1814",
+    "title": "Napoleonic shock and constitutional opening",
+    "content": "War, blockade, and famine hit Norway hard after Denmark's alignment with Napoleon. The 1814 Treaty of Kiel transferred Norway to Sweden without consultation. Instead of passive acceptance, Norwegian leaders convened at Eidsvoll and declared constitutional independence.",
+    "next": "Next: union with Sweden, then the road to full independence."
+  }
+]

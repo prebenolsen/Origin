@@ -1,0 +1,32 @@
+{
+  "title": "Plague, Union, and Danish Rule",
+  "period": "1319-1814",
+  "category": "country-history",
+  "subcategory": "norway",
+  "summary": "How demographic collapse, economic dependency, and political unions reduced Norway's sovereignty for centuries while local culture endured.",
+  "accent": "#55606e",
+  "context": {
+    "type": "map",
+    "headline": "From medieval kingdom to subordinate realm",
+    "description": "After dynastic union politics, the Black Death devastated Norway's population and institutions. Copenhagen became the power center, while Hanseatic trade dominance and Danish administration narrowed Norwegian autonomy until the 1800s.",
+    "when": "1319-1814",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "bergen", "label": "Bergen", "x": 50, "y": 30, "role": "primary" },
+        { "id": "copenhagen", "label": "Copenhagen", "x": 62, "y": 46, "role": "primary" },
+        { "id": "stockholm", "label": "Stockholm", "x": 71, "y": 33, "role": "secondary" },
+        { "id": "oslo", "label": "Christiania (Oslo)", "x": 60, "y": 36, "role": "secondary" },
+        { "id": "north-sea", "label": "North Sea Trade", "x": 42, "y": 39, "role": "secondary" },
+        { "id": "rural", "label": "Rural Valleys and Fjords", "x": 56, "y": 27, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "copenhagen", "to": "oslo", "label": "Administration" },
+        { "from": "bergen", "to": "north-sea", "label": "Export routes" },
+        { "from": "bergen", "to": "copenhagen", "label": "Union economy" },
+        { "from": "stockholm", "to": "copenhagen", "label": "Kalmar politics" },
+        { "from": "rural", "to": "oslo", "label": "Local survival" }
+      ]
+    }
+  }
+}

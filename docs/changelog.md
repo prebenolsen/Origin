@@ -4,6 +4,19 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.5.0] - 2026-06-25
+
+### Added - Norway country-history modules (authored from source transcript)
+- Replaced the Norway placeholder state by creating four complete modules under `src/content/country-history/norway/` authored from `raw.md`.
+- Added full learning bundles for each Norway submodule, each with `module.json`, `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json`:
+  - `origins-to-viking-age` (14000 BCE - 1066 CE)
+  - `christianization-and-medieval-kingdom` (933 CE - 1319 CE)
+  - `plague-union-and-danish-rule` (1319 CE - 1814 CE)
+  - `modern-norway-independence-to-oil-age` (1814 CE - present)
+- Structured content chronologically with clear cause-and-effect progression across environmental origins, Viking expansion, Christian state formation, plague-era decline, Danish subordination, constitutional nationalism, and modern welfare/oil governance.
+- Added understanding-focused quiz sets (multiple-choice, true-false, ordering, matching) and retention-oriented flashcards for every submodule.
+- Updated `docs/content.md` to mark all Norway submodules as `DONE`.
+
 ## [1.4.0] - 2026-06-25
 
 ### Added - Colonial Americas module (authored from source transcript)

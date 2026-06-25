@@ -1,0 +1,32 @@
+{
+  "title": "Modern Norway: Independence to Oil Age",
+  "period": "1814-present",
+  "category": "country-history",
+  "subcategory": "norway",
+  "summary": "How constitutional politics, social democracy, war experience, and oil governance shaped modern Norway.",
+  "accent": "#2f8b67",
+  "context": {
+    "type": "map",
+    "headline": "From constrained union to global high-trust state",
+    "description": "After 1814, Norway kept its constitution inside a union with Sweden, built national institutions, and achieved full independence in 1905. The 20th century brought occupation, welfare-state expansion, and oil wealth managed through long-term public policy.",
+    "when": "1814-present",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "eidsvoll", "label": "Eidsvoll", "x": 58, "y": 36, "role": "primary" },
+        { "id": "oslo", "label": "Oslo", "x": 60, "y": 38, "role": "primary" },
+        { "id": "stockholm", "label": "Stockholm", "x": 72, "y": 34, "role": "secondary" },
+        { "id": "london", "label": "London (Exile Government)", "x": 40, "y": 45, "role": "secondary" },
+        { "id": "north-sea", "label": "North Sea Oil Fields", "x": 47, "y": 34, "role": "primary" },
+        { "id": "nato", "label": "NATO Atlantic Space", "x": 33, "y": 30, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "eidsvoll", "to": "stockholm", "label": "1814 union framework" },
+        { "from": "oslo", "to": "stockholm", "label": "1905 dissolution" },
+        { "from": "oslo", "to": "london", "label": "WWII resistance and exile" },
+        { "from": "north-sea", "to": "oslo", "label": "Oil revenue governance" },
+        { "from": "oslo", "to": "nato", "label": "Post-1949 security alignment" }
+      ]
+    }
+  }
+}
