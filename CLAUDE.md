@@ -19,6 +19,7 @@ scrolling learning experience (context → story cards → timeline → recall �
    in sync).
 2. **Add an entry to [`changelog.md`](docs\changelog.md)** describing what changed.
 3. **Architecture: [`architecture.md`](docs\architecture.md)** 
+4. Content: Ensure the list in [`content.md`](docs\content.md) is updated with "DONE" in status-column once a complete entry to the module has been made.
 
 ### Versioning rules (Semantic-style: `MAJOR.MINOR.PATCH`, starts at `1.0.0`)
 

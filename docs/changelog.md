@@ -4,6 +4,11 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.1.1] — 2026-06-25
+
+### Changed — Copilot workspace instructions
+- Added `.github/copilot-instructions.md` and pointed it directly to `CLAUDE.md` as the project instruction source for Copilot behavior in this repository.
+
 ## [1.1.0] — 2026-06-25
 
 ### Added — Transatlantic Slave Trade module (authored content)
