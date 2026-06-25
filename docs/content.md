@@ -79,3 +79,15 @@
 | Politics | Foundations | States and Governments | What makes a country, how governments function, and how authority is organized | ------ |
 | Politics | Global Politics | Geopolitics: Why Geography Matters | How location, resources, and power shape international relations | ------ |
 | Politics | Global Politics | The United Nations and World Order | 1945–present: global cooperation and international institutions | ------ |
+| The Modern World | Technology | Artificial Intelligence | 1950s–present: AI development and societal impact | ------ |
+| The Modern World | Technology | The Digital Revolution | Internet, smartphones, and digital society | ------ |
+| The Modern World | Global Conflicts | Israel and Palestine | 19th century–present: nationalism, conflict, and diplomacy | ------ |
+| The Modern World | Global Conflicts | Russia and Ukraine | 1991–present: post-Soviet politics and conflict | ------ |
+| The Modern World | Global Conflicts | Iran and the Middle East | 20th century–present: revolution, religion, and regional power | ------ |
+| The Modern World | Society | Immigration and Migration | Human movement, borders, and demographic change | ------ |
+| The Modern World | Society | Social Media and Society | How digital platforms changed communication | ------ |
+| The Modern World | Economy | Globalization | Trade, supply chains, and interconnected economies | ------ |
+| The Modern World | Economy | Energy and Resources | Oil, gas, minerals, and strategic resources | ------ |
+| The Modern World | Environment | Climate Change | Causes, consequences, and global responses | ------ |
+| The Modern World | International Relations | United States and China | Great power competition | ------ |
+| The Modern World | International Relations | NATO and Global Security | Alliances and international security | ------ |

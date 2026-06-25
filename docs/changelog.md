@@ -4,6 +4,19 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.9.0] - 2026-06-25
+
+### Added - The Modern World placeholder scaffolding
+- Added a new category scaffold under `src/content/the-modern-world/` with subcategories:
+  - `technology`
+  - `global-conflicts`
+  - `society`
+  - `economy`
+  - `environment`
+  - `international-relations`
+- Created 12 module folders with full placeholder file sets (`module.json`, `story.json`, `timeline.json`, `quiz.json`, `flashcards.json`) mirroring the existing project placeholder schema.
+- Added/normalized `docs/content.md` rows for the new section to include explicit `Status` placeholders (`------`) so all rows match the tracker table format.
+
 ## [1.8.0] - 2026-06-25
 
 ### Added - authored Politics Foundations spectrum module
