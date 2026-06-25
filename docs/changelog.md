@@ -4,6 +4,16 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.3.0] — 2026-06-25
+
+### Added — full History module placeholder scaffolding
+- Ensured every module listed in `docs/content.md` under `History` has a dedicated folder path at:
+  `src/content/history/<subcategory-slug>/<module-slug>/`.
+- Created scaffold files in each module folder to mirror the `transatlantic-slave-trade` file set (excluding `raw.md`):
+  `module.json`, `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json`.
+- Filled generated files with explicit placeholder content so AI/content workflows can clearly identify and replace placeholder data.
+- Preserved existing authored modules and files by creating missing scaffold files without overwriting existing content.
+
 ## [1.2.0] — 2026-06-25
 
 ### Added — Slavery in the Americas module (authored from source transcript)
