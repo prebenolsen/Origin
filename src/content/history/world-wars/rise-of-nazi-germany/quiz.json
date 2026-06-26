@@ -1,13 +1,94 @@
-﻿{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why did the Treaty of Versailles leave such deep resentment in Germany?",
+    "options": [
+      "It forced Germany to become a communist state",
+      "It split Germany into four occupied zones",
+      "It stripped Germany of land and arms, demanded huge reparations, and made it accept full blame for the war",
+      "It banned the German language in schools"
+    ],
+    "answer": 2,
+    "explanation": "Lost territory, a tiny army, crushing reparations, and the 'war guilt' clause combined to create a lasting sense of injustice that extremist parties later exploited."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Hitler first came to power by winning an armed coup against the German government.",
+    "answer": false,
+    "explanation": "His 1923 Beer Hall Putsch failed and landed him in prison. He learned his lesson and took power legally, being appointed Chancellor in January 1933."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What single event did the most to turn Hitler's fringe party into a mass movement?",
+    "options": [
+      "The Wall Street Crash and the Great Depression",
+      "Germany hosting the 1936 Berlin Olympics",
+      "The signing of the Nazi–Soviet Pact",
+      "The remilitarisation of the Rhineland"
+    ],
+    "answer": 0,
+    "explanation": "After 1929, American loans were withdrawn, unemployment soared to six million, and desperate voters turned to extremists. The Nazis surged from a fringe group to the largest party in parliament."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What was the policy of 'appeasement'?",
+    "options": [
+      "Forming a military alliance with the Soviet Union",
+      "Giving Hitler some of his demands in the hope of avoiding another war",
+      "Rearming as fast as possible to deter Germany",
+      "Expelling Germany from the League of Nations"
+    ],
+    "answer": 1,
+    "explanation": "Exhausted by World War I and the Depression, Britain and France hoped that conceding limited demands — like the Sudetenland at Munich — would satisfy Hitler and keep the peace. It did not."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "The League of Nations successfully stopped aggression by Japan and Italy in the 1930s.",
+    "answer": false,
+    "explanation": "The League condemned Japan over Manchuria and sanctioned Italy over Abyssinia, but had no power to enforce its will. Its failures convinced the dictators that aggression carried no real cost."
+  },
+  {
+    "id": 6,
+    "type": "ordering",
+    "question": "Put Hitler's steps of expansion in the order they happened.",
+    "items": [
+      "Remilitarising the Rhineland",
+      "Annexing Austria (Anschluss)",
+      "Taking the Sudetenland at Munich",
+      "Seizing the rest of Czechoslovakia",
+      "Invading Poland"
+    ],
+    "correctOrder": [0, 1, 2, 3, 4],
+    "explanation": "1936 → March 1938 → September 1938 → March 1939 → September 1939. Each unopposed step made the next one bolder."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "Why was the Nazi–Soviet Pact of August 1939 so shocking — and so important?",
+    "options": [
+      "It made Germany and the Soviet Union permanent allies for the whole war",
+      "It forced Britain and France to surrender immediately",
+      "Two sworn ideological enemies agreed not to fight and secretly to split Poland, freeing Hitler from a two-front war",
+      "It returned the Rhineland to French control"
+    ],
+    "answer": 2,
+    "explanation": "Nazis and communists were bitter enemies, so the pact stunned the world. Its secret clause carved up Eastern Europe and removed the threat of war on two fronts, clearing Hitler's path into Poland."
+  },
+  {
+    "id": 8,
+    "type": "matching",
+    "question": "Match each person to their role in the story.",
+    "pairs": [
+      { "left": "Adolf Hitler", "right": "Nazi leader who became Führer of Germany" },
+      { "left": "Neville Chamberlain", "right": "British PM who pursued appeasement at Munich" },
+      { "left": "Benito Mussolini", "right": "Italian fascist who invaded Abyssinia" },
+      { "left": "Winston Churchill", "right": "Critic who warned Munich meant war, not peace" }
+    ],
+    "explanation": "Hitler drove events; Chamberlain tried to appease him; Mussolini provided the fascist model and his own aggression; Churchill warned where it was all heading."
+  }
+]

@@ -1,4 +1,13 @@
-﻿{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+[
+  { "year": "Sep 1939", "title": "Germany invades Poland; war declared" },
+  { "year": "May–Jun 1940", "title": "Fall of France; Dunkirk evacuation" },
+  { "year": "Jul–Sep 1940", "title": "Battle of Britain halts invasion plans" },
+  { "year": "1940–41", "title": "The Blitz bombs Britain's cities" },
+  { "year": "Jun 1941", "title": "Operation Barbarossa invades the USSR" },
+  { "year": "Dec 1941", "title": "Pearl Harbor brings in the United States" },
+  { "year": "Jun 1942", "title": "Midway turns the Pacific war" },
+  { "year": "1942–43", "title": "Stalingrad — the turning point in the East" },
+  { "year": "Jun 1944", "title": "D-Day landings in Normandy" },
+  { "year": "May 1945", "title": "Germany surrenders — V-E Day" },
+  { "year": "Aug 1945", "title": "Atomic bombs; Japan surrenders" }
+]

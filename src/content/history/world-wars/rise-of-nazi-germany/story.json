@@ -1,7 +1,198 @@
-﻿{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+  {
+    "id": 1,
+    "timeline": "Nov 1918",
+    "title": "A defeated nation — and a dangerous myth",
+    "content": "In November 1918 Germany surrendered, ending World War I. Yet its armies were still on foreign soil and Germany itself was untouched, so defeat came as a shock. Out of that shock grew a poisonous myth: that the army had never truly lost on the battlefield but had been 'stabbed in the back' by cowardly politicians at home. That lie would haunt German politics for twenty years.",
+    "next": "If the soldiers felt betrayed at home, what did the victors do to Germany next?"
+  },
+  {
+    "id": 2,
+    "timeline": "1919",
+    "title": "The Treaty of Versailles",
+    "content": "In 1919 Germany was summoned to Versailles — not to negotiate, but to hear its punishment. It lost territory, its colonies, and the resource-rich Rhineland was demilitarised. Its army was capped at 100,000 men with no air force, tanks, or submarines. Worst of all, a 'war guilt' clause forced Germany to accept full blame for the war, the legal basis for crushing reparations.",
+    "next": "How could a broken country possibly pay the bill that came with that blame?"
+  },
+  {
+    "id": 3,
+    "timeline": "1919",
+    "title": "A bill too big to pay",
+    "content": "Britain and France had begun the war as creditors and ended it deep in debt. They wanted repayment, so Germany was billed billions it could never afford. Even the British economist John Maynard Keynes called it an act of 'political unwisdom.' The reparations crippled Germany's economy and fed a national sense of injustice that extremist parties would later exploit.",
+    "next": "A grand new idea was supposed to keep such disputes peaceful forever. What was it?"
+  },
+  {
+    "id": 4,
+    "timeline": "1919–1920",
+    "title": "The League of Nations — and America's retreat",
+    "content": "America's President Woodrow Wilson promised a new world order: a League of Nations where countries would settle quarrels by debate, not battle. But back home, the U.S. Congress refused to join, fearing entanglement in another European war, and America withdrew into isolation. The League was born without its most powerful champion — fatally weak from the start.",
+    "next": "Inside Germany, a brand-new democracy was now trying to survive. How did it fare?"
+  },
+  {
+    "id": 5,
+    "timeline": "1919–1923",
+    "title": "The Weimar Republic under fire",
+    "content": "Germany's monarchy was gone, replaced by a democracy known as the Weimar Republic. From the start it was battered: street battles raged between far-right nationalists and communists trying to start a revolution. Then in 1923 came hyperinflation so extreme that prices rose hundreds of percent a month. Ordinary people's life savings became worthless overnight.",
+    "next": "Misery like that was perfect soil for a new kind of politician. Who stepped forward?"
+  },
+  {
+    "id": 6,
+    "timeline": "1919–1923",
+    "title": "Enter Adolf Hitler",
+    "content": "Adolf Hitler was Austrian by birth, a decorated World War I soldier awarded the Iron Cross. After the war he settled in Munich, where his fierce, theatrical speaking quickly won him control of a tiny fringe group: the National Socialist — or Nazi — Party. He told desperate crowds exactly who to blame for Germany's ruin, and they listened.",
+    "next": "Confident and impatient, Hitler decided not to wait for power. What did he try?"
+  },
+  {
+    "id": 7,
+    "timeline": "1923–1924",
+    "title": "The failed coup and Mein Kampf",
+    "content": "In November 1923 Hitler attempted an armed coup against the government — the Beer Hall Putsch. It collapsed and he was jailed. In prison he wrote 'Mein Kampf' ('My Struggle'), blaming Germany's ills on the Jews and demanding the nation rearm and seize new 'living space' in the East. He also drew a crucial lesson: next time he would take power legally, through the ballot box.",
+    "next": "But for the next few years, German democracy actually began to work. What changed that?"
+  },
+  {
+    "id": 8,
+    "timeline": "1924–1929",
+    "title": "The quiet years",
+    "content": "After 1924, Weimar Germany stabilised and even prospered. American loans flowed in, the economy recovered, and life improved. As things got better, support for extremists on both the far right and far left faded away. Hitler's Nazis became an irrelevant fringe. For Hitler to have any chance, Germany would need to suffer a fresh catastrophe.",
+    "next": "In October 1929, that catastrophe arrived — from the other side of the Atlantic."
+  },
+  {
+    "id": 9,
+    "timeline": "1929–1931",
+    "title": "The Wall Street Crash",
+    "content": "In October 1929 the U.S. stock market collapsed, and the world plunged into the Great Depression. American banks called in the loans propping up Germany, and its economy imploded. Banks failed, businesses closed, and by 1933 unemployment reached six million. People lost homes; children died of malnutrition. Once again, Germans were desperate — and looking for someone to blame.",
+    "next": "Hitler had spent years naming the guilty. How did he turn that anger into votes?"
+  },
+  {
+    "id": 10,
+    "timeline": "1930–1932",
+    "title": "From fringe to mass movement",
+    "content": "Hitler offered simple villains: the politicians who signed the armistice, the communists, and the Jews. As a spellbinding speaker he turned despair into support. In 1930 the Nazis leapt from a handful of seats to 107 in the Reichstag; by 1932 they had 230 and were the largest party. Behind them marched their brown-shirted street army, the SA, nearly three million strong.",
+    "next": "The largest party still wasn't the government. How did Hitler finally get the top job?"
+  },
+  {
+    "id": 11,
+    "timeline": "Jan 1933",
+    "title": "Chancellor by the back door",
+    "content": "Hitler refused to join any coalition, leaving parliament paralysed. Conservative politicians, believing they could control and use him, persuaded the elderly President Hindenburg to act. On 30 January 1933, Hitler was appointed Chancellor — head of the German government. He had reached power not by a coup, but legally, through the very democracy he despised.",
+    "next": "He was Chancellor of a democracy. How long did that democracy survive?"
+  },
+  {
+    "id": 12,
+    "timeline": "1933–1934",
+    "title": "Turning office into dictatorship",
+    "content": "Weeks after Hitler took office, the Reichstag building burned down. He blamed the communists, declared an emergency, and used it to suspend free speech and a free press. He banned rival parties, jailed and killed opponents, and built a secret police, the Gestapo. When President Hindenburg died in 1934, Hitler merged the offices and declared himself Führer — absolute dictator of Germany.",
+    "next": "With total power secured, what did Hitler do first — and what did he hide?"
+  },
+  {
+    "id": 13,
+    "timeline": "1933–1935",
+    "title": "Public works and a secret army",
+    "content": "At first Hitler looked like a builder, not a warmonger. He poured money into public works — including the famous autobahn motorways — to soak up the unemployed, and the economy roared back. But in secret he was also spending lavishly to rearm. Forbidden tanks and aircraft were developed using a hidden treaty with the Soviet Union and a network of gliding and flying clubs.",
+    "next": "How long could a rebuilding army that big stay secret?"
+  },
+  {
+    "id": 14,
+    "timeline": "1935",
+    "title": "Rearmament in the open",
+    "content": "In 1935 Hitler stopped hiding. He unveiled a brand-new air force, the Luftwaffe, announced conscription, and tripled the army toward 300,000 men — flagrant breaches of Versailles. Britain and France protested feebly, then began to rearm themselves, slowly. Months later Britain even signed a naval agreement letting Germany rebuild its fleet — a first taste of a policy called appeasement.",
+    "next": "Emboldened, Hitler began reclaiming lost ground. Where did he move first?"
+  },
+  {
+    "id": 15,
+    "timeline": "1935–1936",
+    "title": "The Saar and the Rhineland",
+    "content": "Hitler's first moves looked reasonable: in 1935 the Saar region voted to rejoin Germany, and in 1936 he marched troops into the demilitarised Rhineland — German soil all along. Many in Britain and France felt he was only taking back what was rightfully Germany's, and did nothing. The remilitarisation of the Rhineland was the final nail in the coffin of the Versailles Treaty.",
+    "next": "But behind the 'firm but fair' image, darker policies were already taking shape."
+  },
+  {
+    "id": 16,
+    "timeline": "1935–1936",
+    "title": "The Nuremberg Laws",
+    "content": "In 1936 Berlin hosted the Olympic Games, and to many the Nazis seemed strong, orderly, and no threat to anyone. Yet the warning signs were there. The 1935 Nuremberg Laws forbade Jews from marrying non-Jewish Germans and stripped them of their citizenship. Persecution was being written into law — a quiet preview of where the regime was heading.",
+    "next": "Strangely, the first threat to world peace came not from Hitler, but from elsewhere."
+  },
+  {
+    "id": 17,
+    "timeline": "1931–1937",
+    "title": "Japan tests the world",
+    "content": "Japan, short of land and resources, struck first. In 1931 its forces seized Manchuria in China and set up a puppet state. The League of Nations condemned them — so Japan simply walked out, and the League discovered it had no power to stop aggression. In 1937 Japan invaded China proper, where the brutal capture of Nanking saw an estimated 300,000 civilians massacred.",
+    "next": "If the League was powerless against Japan, what about a dictator closer to Europe?"
+  },
+  {
+    "id": 18,
+    "timeline": "1922–1936",
+    "title": "Mussolini and the Italian model",
+    "content": "Italy had already shown the way. In 1922 the fascist Benito Mussolini marched on Rome and seized power, ending unrest with public works, force, and showmanship. Leaders abroad — Hitler above all — admired fascism as strong and purposeful next to weak democracies. But Mussolini wanted glory: he dreamed of rebuilding the Roman Empire, and he chose a target.",
+    "next": "Where would Mussolini's hunger for empire put the League to its next test?"
+  },
+  {
+    "id": 19,
+    "timeline": "1935–1936",
+    "title": "Abyssinia exposes the League",
+    "content": "In 1935 Italy invaded Abyssinia (modern Ethiopia). Its modern army, artillery, and even outlawed poison gas overwhelmed the Abyssinians, and Emperor Haile Selassie appealed in person to the League of Nations. The League wrung its hands and imposed sanctions too weak to matter. The lesson was now unmistakable: the League was impotent, and the democracies had no stomach for a fight.",
+    "next": "Two dictators were watching closely. Where would they test their new weapons next?"
+  },
+  {
+    "id": 20,
+    "timeline": "1936–1939",
+    "title": "The Spanish Civil War",
+    "content": "In 1936 civil war erupted in Spain, with General Franco's nationalists rising against the elected republic. Hitler and Mussolini poured in troops, tanks, and aircraft to back Franco and test their new forces, while Britain and France stood aside. German bombers obliterated the town of Guernica. By 1939 Franco had won — and the dictators were surer than ever that the democracies would never resist.",
+    "next": "Why were Britain and France so unwilling to stand and fight?"
+  },
+  {
+    "id": 21,
+    "timeline": "1930s",
+    "title": "Why the democracies flinched",
+    "content": "Britain and France were exhausted. World War I had scarred a generation, their economies had never fully recovered, and the Depression made war seem unthinkable. France hid behind the Maginot Line, a wall of fortifications built for defence, not attack. Their leaders convinced themselves that giving Hitler some of what he wanted — appeasement — would keep the peace.",
+    "next": "Hitler read that fear perfectly. Which 'lost German' would he reclaim next?"
+  },
+  {
+    "id": 22,
+    "timeline": "Mar 1938",
+    "title": "Anschluss: Austria swallowed",
+    "content": "Hitler had long wanted to unite all German-speaking peoples, starting with his homeland, Austria — a union Versailles had banned. In March 1938, as Austria's chancellor wavered and no help came from abroad, German troops marched in unopposed to cheering crowds. Hitler declared Austria part of the Third Reich. A sovereign nation had simply vanished, and again the democracies did nothing.",
+    "next": "His next target had a powerful army and strong defences. Would that stop him?"
+  },
+  {
+    "id": 23,
+    "timeline": "Sep 1938",
+    "title": "The Sudetenland and Munich",
+    "content": "Hitler next demanded the Sudetenland, a border region of Czechoslovakia with three million ethnic Germans. Rather than risk war, Britain's Neville Chamberlain flew to meet him. At the Munich Conference in September 1938, Britain, France, and Italy handed Hitler the Sudetenland in return for his promise to go no further. The Czechs were not even in the room.",
+    "next": "Chamberlain came home a hero. Was the peace he waved really secure?"
+  },
+  {
+    "id": 24,
+    "timeline": "Sep 1938",
+    "title": "\"Peace for our time\"",
+    "content": "Chamberlain returned to Britain waving a paper signed by Hitler and declared he had secured 'peace for our time' to cheering crowds. But his critic Winston Churchill warned: 'You were given the choice between war and dishonour. You chose dishonour, and you will have war.' Hitler, meanwhile, had learned that Europe would surrender almost anything to avoid a fight.",
+    "next": "Hitler had promised to stop. How long did that promise last?"
+  },
+  {
+    "id": 25,
+    "timeline": "Mar 1939",
+    "title": "Czechoslovakia destroyed",
+    "content": "In March 1939, just months after Munich, Hitler tore up his promise. German troops marched into the rest of Czechoslovakia unopposed and dismembered it. For the first time he had seized land that was not German-speaking at all — proof that appeasement had failed completely. Britain and France now guaranteed Poland's safety and at last began rearming in earnest.",
+    "next": "Hitler's eyes were already on Poland. What stood between him and another invasion?"
+  },
+  {
+    "id": 26,
+    "timeline": "1939",
+    "title": "The demand for Poland",
+    "content": "Hitler now demanded the return of the port of Danzig and a land link to East Prussia, separated from Germany by the 'Polish Corridor' created at Versailles. Poland refused. This time Britain and France declared plainly that they would fight if Poland were attacked. But Hitler was convinced they were weak and would back down once more.",
+    "next": "Only one great power could threaten Germany's rear. How did Hitler neutralise it?"
+  },
+  {
+    "id": 27,
+    "timeline": "Aug 1939",
+    "title": "The Nazi–Soviet Pact",
+    "content": "Stalin, alarmed by Hitler yet distrustful of the West, made a stunning choice. On 23 August 1939 the two sworn enemies — Nazi Germany and the communist Soviet Union — signed a non-aggression pact, shocking the world. A secret clause carved up Poland and Eastern Europe between them. For Hitler it removed the danger of a two-front war; for Stalin it bought time to rebuild his purged army.",
+    "next": "With his rear secured and his rivals frozen, what was left to hold Hitler back?"
+  },
+  {
+    "id": 28,
+    "timeline": "31 Aug 1939",
+    "title": "The eve of war",
+    "content": "Nothing. Free from the Soviet threat and certain the West would hesitate, Hitler ordered the invasion of Poland. On the evening of 31 August 1939, German forces moved into position along the border. In twenty years Germany had gone from defeated democracy to aggressive dictatorship — and the Führer had just made the decision that would plunge the world into its deadliest war.",
+    "next": "The next morning, the tanks rolled into Poland. What kind of war would follow?"
+  }
+]

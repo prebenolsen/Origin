@@ -3,6 +3,31 @@
 All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
+## [2.2.0] - 2026-06-26
+
+### Added - Rise of Nazi Germany & World War II modules (history / world-wars)
+- Authored two full modules from the shared source transcript, replacing the
+  placeholder JSON in `rise-of-nazi-germany/` and `world-war-ii/`. The transcript
+  covered both topics with overlap; the lead-up (Versailles → 1939) went to *Rise
+  of Nazi Germany* and the conflict itself (1939 → 1945) to *World War II*.
+- **Rise of Nazi Germany** — geographic context map (Germany, Rhineland, Austria,
+  Czechoslovakia, Poland) tracing the steps of expansion. 28 story cards: a
+  defeated Germany & Versailles, the Weimar collapse and hyperinflation, Hitler's
+  rise to dictatorship, secret then open rearmament, the impotence of the League
+  (Japan, Italy, Spain), appeasement, and the road to war (Anschluss → Munich →
+  Czechoslovakia → Nazi–Soviet Pact → Poland). 12 timeline milestones, 8 quiz
+  questions, 10 flashcards.
+- **World War II** — geographic context map (Germany, Poland, France, Britain,
+  Stalingrad). 30 story cards across the war's arc: Blitzkrieg and Poland, the
+  Phoney War and Winter War, the fall of France and Dunkirk, the Battle of Britain
+  and the Blitz, Operation Barbarossa and Stalingrad, Pearl Harbor and the global
+  war, D-Day, the fall of the Reich, the atomic bombs, a brief pointer to the
+  Holocaust (its own module), and the reckoning. 11 timeline milestones, 8 quiz
+  questions, 10 flashcards.
+- Marked both modules **DONE** in [`content.md`](content.md). Scope kept distinct
+  from the neighbouring *The Holocaust* and *Post-war world order* modules.
+- Bumped `version.js` and synced `package.json` to **2.2.0** (MINOR — content).
+
 ## [2.1.0] - 2026-06-26
 
 ### Added - World War I module (history / world-wars)

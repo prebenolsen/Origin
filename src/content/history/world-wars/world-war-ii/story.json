@@ -1,7 +1,212 @@
-﻿{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+  {
+    "id": 1,
+    "timeline": "1939",
+    "title": "From one war to the next",
+    "content": "World War II grew straight out of World War I. A humiliated Germany, the resentment of Versailles, and the rise of Adolf Hitler set the stage. Through the 1930s Hitler rearmed and swallowed his neighbours while Britain and France appeased him. When he secured a pact with Stalin in August 1939, the last barrier fell. Hitler was ready to strike.",
+    "next": "He had a revolutionary new way of waging war. What made it so devastating?"
+  },
+  {
+    "id": 2,
+    "timeline": "1939",
+    "title": "Blitzkrieg: lightning war",
+    "content": "Germany's new method was Blitzkrieg, 'lightning war.' Fast-moving columns of tanks — Panzers — punched through defences and encircled the enemy before they could react, while the Luftwaffe smashed targets from the air. The aim was to win fast, without the grinding trench attrition of WWI that Germany's economy could never survive. Speed and shock were everything.",
+    "next": "On 1 September 1939, that machine was switched on. Where did it strike first?"
+  },
+  {
+    "id": 3,
+    "timeline": "Sep 1939",
+    "title": "The invasion of Poland",
+    "content": "On 1 September 1939, over a million German troops poured into Poland from north and south. Two days later, after Germany ignored an ultimatum, Britain and France — joined by Australia and New Zealand — declared war. World War II had begun. But the Western Allies were far away, and Poland would have to face the storm largely alone.",
+    "next": "Brave as they were, why couldn't the Poles hold out?"
+  },
+  {
+    "id": 4,
+    "timeline": "Sep–Oct 1939",
+    "title": "Poland crushed from two sides",
+    "content": "Poland's army was large but poorly equipped, its few tanks hopelessly outnumbered by German armour. Blitzkrieg reached the outskirts of Warsaw in a week. Then, on 17 September, Stalin's Red Army invaded from the east to claim its share under the secret pact. Caught between two giants, Poland could not survive; organised resistance ended within weeks.",
+    "next": "Britain and France had declared war. So why did almost nothing happen next?"
+  },
+  {
+    "id": 5,
+    "timeline": "1939–1940",
+    "title": "The Phoney War",
+    "content": "After Poland fell, an eerie calm settled over the Western Front. Britain and France had declared war but launched no real attack, and Hitler kept insisting he wanted no war in the west. For months the armies simply watched each other — a strange lull people called the 'Phoney War.' It would not last.",
+    "next": "Meanwhile, far to the north, Stalin started a war of his own. How did it go?"
+  },
+  {
+    "id": 6,
+    "timeline": "Nov 1939–Mar 1940",
+    "title": "Finland humiliates the Red Army",
+    "content": "Fearing for nearby Leningrad, Stalin demanded Finnish territory; when Finland refused, the Soviets invaded in the Winter War. Though outnumbered roughly fifty to one, white-clad Finns on skis ran rings around the clumsy Red Army for months. Finland was eventually forced to give ground, but the Soviet army's dreadful showing convinced Hitler it would be easy to beat.",
+    "next": "In the spring of 1940, the real storm in the west finally broke."
+  },
+  {
+    "id": 7,
+    "timeline": "Apr–May 1940",
+    "title": "Norway falls; Churchill rises",
+    "content": "To secure shipments of Swedish iron ore, Hitler seized Denmark and Norway in April 1940. The bungled Allied response to Norway brought down Britain's Prime Minister, Neville Chamberlain. On 10 May his successor took office — Winston Churchill, who had warned of Hitler's threat for years. That very same day, Germany struck in the west.",
+    "next": "How could Germany beat France, which had stopped it for four years in WWI?"
+  },
+  {
+    "id": 8,
+    "timeline": "May 1940",
+    "title": "The attack in the west",
+    "content": "On 10 May 1940 Germany attacked France, Belgium, the Netherlands, and Luxembourg at once. Dawn air raids destroyed Allied planes on the ground, handing the Luftwaffe the skies. The Allies rushed their best armies north into Belgium to meet what looked like the main thrust — exactly as Germany hoped. The real blow was coming somewhere else entirely.",
+    "next": "Where was the knockout punch actually aimed?"
+  },
+  {
+    "id": 9,
+    "timeline": "May 1940",
+    "title": "The sickle cut through the Ardennes",
+    "content": "Germany's main armoured force drove through the Ardennes — a hilly, forested region the French thought tanks could never cross, so they barely defended it. The Panzers burst out, crossed the Meuse, and raced for the coast. This 'sickle cut' trapped the finest Allied armies in Belgium, cutting them off from France and the sea behind them.",
+    "next": "Hundreds of thousands of Allied troops were now surrounded. Could any be saved?"
+  },
+  {
+    "id": 10,
+    "timeline": "May–Jun 1940",
+    "title": "The miracle of Dunkirk",
+    "content": "The trapped British and French armies fell back to the port of Dunkirk, pinned against the sea. In Operation Dynamo, the Royal Navy — joined by hundreds of civilian 'little ships,' fishing boats and ferries — ferried men off the beaches under air attack. By 4 June, 338,000 soldiers had escaped to Britain. Their guns were lost, but the army survived to fight again.",
+    "next": "With its best troops evacuated, what was left to stop Germany taking France?"
+  },
+  {
+    "id": 11,
+    "timeline": "Jun 1940",
+    "title": "The fall of France",
+    "content": "Almost nothing remained. German forces drove south, Mussolini's Italy declared war to grab the spoils, and on 14 June German troops marched into Paris. France surrendered on 22 June. In just six weeks Hitler had conquered what Germany failed to take in four years of WWI. Western Europe was his, and Britain now stood alone.",
+    "next": "One island, one Channel, one decision. Would Britain fight on or make peace?"
+  },
+  {
+    "id": 12,
+    "timeline": "Jun 1940",
+    "title": "Britain stands alone",
+    "content": "Hitler expected Britain to seek terms. Instead Churchill rallied the nation, vowing to 'fight on the beaches' and never surrender. It was as much defiance as strategy — but it transformed him into a world statesman and slammed the door on peace. If Britain would not yield, Hitler would have to invade. And that meant crossing the Channel.",
+    "next": "What stood between the German army and the British coast?"
+  },
+  {
+    "id": 13,
+    "timeline": "1940",
+    "title": "Operation Sea Lion needs the sky",
+    "content": "Hitler's invasion plan was code-named Operation Sea Lion. But the Royal Navy still ruled the Channel, and Germany's admirals knew they could not get an army across while British planes could bomb the crossing. First Germany had to destroy the Royal Air Force and win control of the air. The whole invasion now hinged on a battle in the sky.",
+    "next": "The Luftwaffe vastly outnumbered the RAF. How could Britain possibly win?"
+  },
+  {
+    "id": 14,
+    "timeline": "Jul–Sep 1940",
+    "title": "The Battle of Britain",
+    "content": "Through the summer of 1940 the Luftwaffe hammered RAF airfields, but Britain had a secret edge: radar. A coastal chain of radar masts spotted incoming raids early, so RAF Fighter Command could scramble its Spitfires and Hurricanes to exactly the right place. It let a smaller force fight smart, meeting the Germans head-on instead of being caught on the ground.",
+    "next": "The RAF was being worn down fast. What turned the battle Britain's way?"
+  },
+  {
+    "id": 15,
+    "timeline": "Sep 1940",
+    "title": "A fatal switch to London",
+    "content": "Just as the RAF neared breaking point, Germany changed targets. After British bombers hit Berlin, a furious Hitler switched the Luftwaffe to bombing London instead of the airfields. That gave Fighter Command time to repair and recover. On 15 September the RAF shattered a massive raid, and two days later Hitler postponed Sea Lion indefinitely. Britain had won.",
+    "next": "Invasion was off — but the bombs kept falling. What came next for Britain's cities?"
+  },
+  {
+    "id": 16,
+    "timeline": "1940–1941",
+    "title": "The Blitz",
+    "content": "Unable to invade, Hitler tried to bomb Britain into surrender. For eight months — including 57 nights in a row on London — German bombers struck by night. Cities like Coventry were devastated, children were evacuated to the countryside, and families sheltered in the Underground. Around 40,000 civilians died. But British morale held, and the Blitz failed.",
+    "next": "Frustrated in the west, Hitler turned to the gamble that would decide the war."
+  },
+  {
+    "id": 17,
+    "timeline": "Jun 1941",
+    "title": "Operation Barbarossa",
+    "content": "On 22 June 1941 Hitler launched Operation Barbarossa, the invasion of the Soviet Union — the largest military operation in history, with over three million men. This was the war he had always wanted: to destroy communism and seize 'living space' in the East. He counted on a quick win, since Stalin's purges had gutted the Red Army's leadership in the 1930s.",
+    "next": "At first the Germans advanced at incredible speed. What stopped them?"
+  },
+  {
+    "id": 18,
+    "timeline": "1941",
+    "title": "The drive east stalls",
+    "content": "Blitzkrieg worked as never before: vast encirclements netted millions of Soviet prisoners. But the Soviet Union was enormous and its manpower seemed endless. Hitler diverted forces south to seize Ukraine instead of racing for Moscow, costing precious weeks. Then the autumn rains turned roads to mud, and the brutal Russian winter arrived. German troops, dressed for a summer war, froze.",
+    "next": "While one army drove for Moscow, another laid siege to a great northern city."
+  },
+  {
+    "id": 19,
+    "timeline": "1941–1944",
+    "title": "The siege of Leningrad",
+    "content": "Rather than storm Leningrad (today's St Petersburg), the Germans decided to starve it into submission. The siege lasted more than two years. Cut off and rationed to almost nothing through a savage winter, the city's people died by the hundreds of thousands from cold and hunger. By the time the siege was broken, over a million Soviets had perished — yet the city never fell.",
+    "next": "Outside Moscow, the tireless Soviet army was about to turn and strike back."
+  },
+  {
+    "id": 20,
+    "timeline": "Dec 1941",
+    "title": "Moscow holds",
+    "content": "By December 1941 the Germans were within sight of Moscow but exhausted, frostbitten, and stalled in the snow. Then Stalin unleashed fresh divisions brought from Siberia, trained and equipped for winter warfare, backed by the rugged new T-34 tank. The Soviets counterattacked and drove the invaders back. For the first time, Hitler's Blitzkrieg had been beaten.",
+    "next": "The next year, Hitler reached for oil in the south — and for a city named after Stalin."
+  },
+  {
+    "id": 21,
+    "timeline": "1942–1943",
+    "title": "Stalingrad: the turning point",
+    "content": "In 1942 Germany drove south toward the oilfields and the city of Stalingrad. There the war's grimmest battle unfolded — fought street by street, house by house. Then the Soviets struck the flanks and encircled the entire German Sixth Army. Trapped and starving, over 100,000 men surrendered in early 1943; only a few thousand ever returned home. The tide of the war had turned.",
+    "next": "Could the Germans recover, or was the initiative in the East lost for good?"
+  },
+  {
+    "id": 22,
+    "timeline": "Jul 1943",
+    "title": "Kursk and the long retreat",
+    "content": "In July 1943 Germany threw its strength into one last great offensive in the East, at Kursk — the largest tank battle in history. The Soviets, forewarned and dug in, absorbed the blow and counterattacked. From then on the Germans were in near-constant retreat. The Soviet Union, with its endless manpower and growing industry, now held the initiative and pushed relentlessly west.",
+    "next": "While Europe burned, a separate war had erupted across the Pacific."
+  },
+  {
+    "id": 23,
+    "timeline": "Dec 1941",
+    "title": "Pearl Harbor brings in America",
+    "content": "On 7 December 1941, Japanese carrier aircraft attacked the U.S. naval base at Pearl Harbor in Hawaii without warning. The strike drew the United States — with its vast industry and manpower — into the war. Days later Hitler declared war on America too. What had been a European conflict was now a truly global war, fought across oceans and continents.",
+    "next": "Japan swept across the Pacific. What finally checked its advance?"
+  },
+  {
+    "id": 24,
+    "timeline": "1942",
+    "title": "The tide turns in the Pacific",
+    "content": "In the months after Pearl Harbor, Japan overran much of Southeast Asia and the Pacific. But in June 1942, at the Battle of Midway, American carriers ambushed and sank four Japanese carriers, crippling Japan's fleet. From there the U.S. began a long, bloody campaign of 'island hopping,' seizing one Pacific island after another on the road back toward Japan.",
+    "next": "Back in Europe, the Allies were closing the ring on Hitler from every side."
+  },
+  {
+    "id": 25,
+    "timeline": "1942–1943",
+    "title": "The Atlantic, the desert, and Italy",
+    "content": "Victory needed supply lines. In the Battle of the Atlantic, convoys and new tactics defeated Germany's U-boats, keeping Britain fed and armed. In North Africa, the Allies won at El Alamein and cleared the Germans and Italians out. Then they invaded Italy in 1943 — Mussolini was overthrown and Italy switched sides, though German troops fought on up the peninsula.",
+    "next": "The Allies still needed to liberate Western Europe. How would they get back in?"
+  },
+  {
+    "id": 26,
+    "timeline": "Jun 1944",
+    "title": "D-Day and the second front",
+    "content": "On 6 June 1944 — D-Day — the Western Allies launched the largest seaborne invasion in history, landing on the beaches of Normandy in occupied France. Despite fierce resistance they secured a foothold and poured men and machines ashore. A long-awaited second front was finally open in the west, and Paris was liberated by August. Germany was now squeezed from two directions.",
+    "next": "With enemies closing from east and west, how did the Third Reich finally end?"
+  },
+  {
+    "id": 27,
+    "timeline": "1945",
+    "title": "The fall of the Third Reich",
+    "content": "A last German counterattack in the west, the Battle of the Bulge, failed. The Western Allies crossed the Rhine while the Soviets stormed in from the east and fought their way into Berlin. As his capital fell around him, Hitler killed himself on 30 April 1945. Days later, on 8 May, Germany surrendered unconditionally — Victory in Europe Day, V-E Day.",
+    "next": "Europe was free, but in the Pacific Japan still refused to give in."
+  },
+  {
+    "id": 28,
+    "timeline": "Aug 1945",
+    "title": "The atomic bombs end the war",
+    "content": "Japan fought on, its defenders resisting to the death island by island. Rather than invade the home islands at huge cost, the United States dropped atomic bombs on Hiroshima and Nagasaki in August 1945, killing tens of thousands instantly. Days later, with the Soviets also declaring war on it, Japan surrendered. After six years, World War II was finally over.",
+    "next": "Behind the front lines, the war had revealed a horror beyond the battlefield."
+  },
+  {
+    "id": 29,
+    "timeline": "1941–1945",
+    "title": "The Holocaust",
+    "content": "As its armies conquered the East, Nazi Germany carried out the systematic murder of six million Jews, along with millions of Roma, disabled people, prisoners, and others — an industrial genocide in ghettos and death camps. It was the deliberate, organised attempt to wipe out an entire people, and it stands as the war's darkest chapter. (Explored fully in its own module.)",
+    "next": "When the killing finally stopped, what kind of world was left behind?"
+  },
+  {
+    "id": 30,
+    "timeline": "1945",
+    "title": "The reckoning",
+    "content": "World War II was the deadliest conflict in human history, killing an estimated 70–85 million people — most of them civilians. Empires were shattered and Europe lay in ruins. Two new superpowers emerged: the United States and the Soviet Union, whose rivalry would define the Cold War. And a new body, the United Nations, was founded in the hope of never again.",
+    "next": "How much of this story has stayed with you?"
+  }
+]

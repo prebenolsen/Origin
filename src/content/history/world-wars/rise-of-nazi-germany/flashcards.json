@@ -1,5 +1,52 @@
-﻿{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+  {
+    "id": 1,
+    "front": "What did the Treaty of Versailles (1919) do to Germany?",
+    "back": "It took territory and colonies, capped the army at 100,000 men with no air force, tanks, or submarines, demanded huge reparations, and forced Germany to accept full 'war guilt' for the war."
+  },
+  {
+    "id": 2,
+    "front": "What was the 'stab-in-the-back' myth?",
+    "back": "The false belief that Germany's army was never beaten in the field in WWI but was betrayed by politicians at home. It poisoned Weimar politics and fed the appeal of nationalists like Hitler."
+  },
+  {
+    "id": 3,
+    "front": "What was the Weimar Republic?",
+    "back": "Germany's democracy after 1918. It was battered by street violence and the 1923 hyperinflation, briefly stabilised in the late 1920s, then collapsed under the Great Depression."
+  },
+  {
+    "id": 4,
+    "front": "How did the Great Depression help Hitler?",
+    "back": "The 1929 Wall Street Crash dried up the American loans propping up Germany. Unemployment hit six million, and desperate voters abandoned moderate parties for extremists, making the Nazis the largest party by 1932."
+  },
+  {
+    "id": 5,
+    "front": "How did Hitler turn the office of Chancellor into a dictatorship?",
+    "back": "Using the 1933 Reichstag fire as a pretext, he assumed emergency powers, banned rival parties, built the Gestapo, and after Hindenburg's death in 1934 declared himself Führer — absolute dictator."
+  },
+  {
+    "id": 6,
+    "front": "What was appeasement?",
+    "back": "The British and French policy of giving Hitler limited concessions — most famously the Sudetenland at Munich in 1938 — in the hope of avoiding another war. It only emboldened him."
+  },
+  {
+    "id": 7,
+    "front": "What was the Munich Agreement (1938)?",
+    "back": "Britain, France, and Italy handed Hitler the Sudetenland of Czechoslovakia in exchange for his promise to make no further demands. Chamberlain called it 'peace for our time'; within months Hitler broke it."
+  },
+  {
+    "id": 8,
+    "front": "Why did the League of Nations fail to stop the dictators?",
+    "back": "It had no army of its own and the U.S. never joined. It could only condemn Japan in Manchuria and sanction Italy in Abyssinia — showing aggressors that aggression carried no real consequences."
+  },
+  {
+    "id": 9,
+    "front": "What was the significance of the Nazi–Soviet Pact (Aug 1939)?",
+    "back": "Hitler and Stalin, sworn enemies, agreed not to fight and secretly to divide Poland and Eastern Europe. It freed Germany from a two-front war and removed the last barrier to invading Poland."
+  },
+  {
+    "id": 10,
+    "front": "What was 'Lebensraum'?",
+    "back": "German for 'living space.' Hitler's goal of conquering territory in the East — Poland, Ukraine, and the western Soviet Union — to settle Germans and exploit its resources, set out in 'Mein Kampf.'"
+  }
+]

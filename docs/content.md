@@ -56,9 +56,9 @@
 | History | World Wars | Causes of World War I | 1800s – 1914 | ------ |
 | History | World Wars | World War I | 1914 CE – 1918 CE | DONE |
 | History | World Wars | Russian Revolution | 1917 CE | ------ |
-| History | World Wars | Rise of Nazi Germany | 1919 CE – 1939 CE | ------ |
+| History | World Wars | Rise of Nazi Germany | 1919 CE – 1939 CE | DONE |
 | History | World Wars | The Holocaust | 1933 CE – 1945 CE | ------ |
-| History | World Wars | World War II | 1939 CE – 1945 CE | ------ |
+| History | World Wars | World War II | 1939 CE – 1945 CE | DONE |
 | History | World Wars | Post-war world order | 1945 CE – 1950s | ------ |
 | History | Cold War Era | US vs Soviet Union | 1947 CE – 1991 CE | ------ |
 | History | Cold War Era | Nuclear weapons | 1945 CE – present | ------ |

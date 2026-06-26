@@ -1,4 +1,14 @@
-﻿{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+[
+  { "year": "1919", "title": "Treaty of Versailles punishes Germany" },
+  { "year": "1923", "title": "Hyperinflation; Hitler's failed Beer Hall Putsch" },
+  { "year": "1929", "title": "Wall Street Crash triggers the Depression" },
+  { "year": "Jan 1933", "title": "Hitler appointed Chancellor" },
+  { "year": "1934", "title": "Hitler becomes Führer — absolute dictator" },
+  { "year": "1935", "title": "Rearmament revealed; Nuremberg Laws" },
+  { "year": "1936", "title": "Rhineland remilitarised; Spanish Civil War begins" },
+  { "year": "Mar 1938", "title": "Anschluss — Austria annexed" },
+  { "year": "Sep 1938", "title": "Munich Agreement hands over the Sudetenland" },
+  { "year": "Mar 1939", "title": "Germany seizes the rest of Czechoslovakia" },
+  { "year": "Aug 1939", "title": "Nazi–Soviet Pact signed" },
+  { "year": "Sep 1939", "title": "Germany invades Poland — war begins" }
+]

@@ -1,5 +1,52 @@
-﻿{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+  {
+    "id": 1,
+    "front": "When and how did World War II begin?",
+    "back": "On 1 September 1939, Germany invaded Poland using Blitzkrieg. Two days later Britain and France declared war on Germany."
+  },
+  {
+    "id": 2,
+    "front": "What was Blitzkrieg?",
+    "back": "'Lightning war' — fast columns of tanks (Panzers) supported by aircraft that broke through and encircled the enemy quickly, letting Germany win without a long, economy-draining war of attrition."
+  },
+  {
+    "id": 3,
+    "front": "What happened at Dunkirk (1940)?",
+    "back": "After the German 'sickle cut' trapped the Allied armies, Operation Dynamo evacuated 338,000 British and French troops from the beaches — rescued by the navy and hundreds of civilian 'little ships.'"
+  },
+  {
+    "id": 4,
+    "front": "Why did France fall so fast in 1940?",
+    "back": "Germany struck through the lightly defended Ardennes forest, bypassing the Maginot Line and trapping the best Allied armies. Paris fell and France surrendered just six weeks after the attack began."
+  },
+  {
+    "id": 5,
+    "front": "What was the Battle of Britain, and why did Britain win?",
+    "back": "Germany's 1940 air campaign to destroy the RAF before invading. Radar and the Spitfire and Hurricane let Britain fight smart; when Germany switched to bombing London, the RAF recovered and won, forcing Hitler to cancel the invasion."
+  },
+  {
+    "id": 6,
+    "front": "What was Operation Barbarossa?",
+    "back": "Hitler's June 1941 invasion of the Soviet Union — the largest military operation in history. It aimed to destroy communism and seize 'living space,' but stalled in the vast distances and brutal Russian winter."
+  },
+  {
+    "id": 7,
+    "front": "Why was Stalingrad the turning point?",
+    "back": "In 1942–43 the Soviets encircled and destroyed an entire German army at Stalingrad. From then on Germany was in retreat in the East, and the myth of its invincibility was broken."
+  },
+  {
+    "id": 8,
+    "front": "What was the significance of Pearl Harbor (Dec 1941)?",
+    "back": "Japan's surprise attack on the U.S. fleet in Hawaii brought America — and its enormous industrial power — into the war, turning it into a truly global conflict."
+  },
+  {
+    "id": 9,
+    "front": "What was D-Day (6 June 1944)?",
+    "back": "The largest seaborne invasion in history, when the Western Allies landed in Normandy and opened a second front against Germany, leading to the liberation of Western Europe."
+  },
+  {
+    "id": 10,
+    "front": "How did World War II end?",
+    "back": "Germany surrendered in May 1945 after Soviet and Western armies converged and Hitler killed himself. Japan surrendered in August 1945 after the atomic bombing of Hiroshima and Nagasaki."
+  }
+]

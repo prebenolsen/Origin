@@ -1,40 +1,30 @@
-﻿{
-    "title":  "PLACEHOLDER: World War II",
-    "period":  "1939 CE â€“ 1945 CE",
-    "category":  "history",
-    "subcategory":  "world-wars",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "1939 CE â€“ 1945 CE",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
-                }
+{
+  "title": "World War II",
+  "period": "1939–1945",
+  "category": "history",
+  "subcategory": "world-wars",
+  "summary": "The deadliest conflict in history — how Hitler's lightning war conquered Europe, why it finally turned, and how the world fought back.",
+  "accent": "#3f5a6b",
+  "context": {
+    "type": "map",
+    "headline": "Lightning war, then a world in flames",
+    "description": "In September 1939 Germany unleashed Blitzkrieg — 'lightning war' — on Poland, and within a year had conquered most of Europe. Only Britain held out across the Channel. Then Hitler gambled everything on invading the Soviet Union, and Japan dragged in the United States. What began in Europe became a truly global war fought across the world's continents and oceans.",
+    "when": "1939 – 1945",
+    "map": {
+      "backdrop": "world",
+      "markers": [
+        { "id": "germany", "label": "Germany", "lat": 51.0, "lng": 10.5, "role": "primary" },
+        { "id": "poland", "label": "Poland", "lat": 52.2, "lng": 21.0, "role": "secondary" },
+        { "id": "france", "label": "France", "lat": 48.85, "lng": 2.35, "role": "secondary" },
+        { "id": "britain", "label": "Britain", "lat": 51.5, "lng": -0.13, "role": "primary" },
+        { "id": "stalingrad", "label": "Stalingrad", "lat": 48.7, "lng": 44.5, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "germany", "to": "poland", "label": "1939" },
+        { "from": "germany", "to": "france", "label": "1940" },
+        { "from": "germany", "to": "britain", "label": "air war 1940" },
+        { "from": "germany", "to": "stalingrad", "label": "Barbarossa 1941" }
+      ]
+    }
+  }
 }

@@ -1,13 +1,96 @@
-﻿{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What was 'Blitzkrieg,' and why did Germany rely on it?",
+    "options": [
+      "A defensive line of fortifications along the German border",
+      "A fast war of tanks and aircraft meant to win quickly, before a long war could exhaust Germany",
+      "A naval blockade designed to starve Britain",
+      "A bombing campaign aimed only at civilians"
+    ],
+    "answer": 1,
+    "explanation": "Blitzkrieg ('lightning war') used fast Panzer columns and air power to encircle the enemy quickly. Germany needed swift victories because its economy could not survive the kind of long attrition war it had lost in WWI."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Britain and France launched a major attack on Germany immediately after declaring war in September 1939.",
+    "answer": false,
+    "explanation": "After Poland fell, months of inaction followed — the 'Phoney War.' The Western Allies declared war but did not seriously attack until Germany struck west in May 1940."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "Why was the German attack through the Ardennes in 1940 so effective?",
+    "options": [
+      "It came by sea where France had no navy",
+      "The Allies had moved their armies to defend the Maginot Line",
+      "The French believed tanks could not cross the forest, so they barely defended it — and the Panzers trapped the Allied armies in Belgium",
+      "It used poison gas the Allies had no defence against"
+    ],
+    "answer": 2,
+    "explanation": "France expected the main blow in Belgium and thought the Ardennes impassable to tanks. The German 'sickle cut' burst through there, raced to the coast, and cut off the best Allied armies."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "Why did winning the Battle of Britain depend on the Royal Air Force?",
+    "options": [
+      "Germany could not invade by sea unless it first destroyed the RAF and controlled the air",
+      "The RAF was the only force defending London from tanks",
+      "Britain had no navy left after Dunkirk",
+      "The RAF was attacking Berlin every night"
+    ],
+    "answer": 0,
+    "explanation": "The Royal Navy still controlled the Channel, so Germany could not ship an army across while the RAF could bomb the crossing. Air superiority was the precondition for Operation Sea Lion — and the RAF denied it."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "Operation Barbarossa, the invasion of the Soviet Union, was a quick and complete German success.",
+    "answer": false,
+    "explanation": "Early advances were huge, but the vast distances, endless Soviet manpower, Hitler's diversion to Ukraine, and the Russian winter stopped the Germans short of Moscow — and the war in the East eventually turned against them."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "Why is the Battle of Stalingrad considered a turning point of the war?",
+    "options": [
+      "It gave Germany control of the Soviet oilfields",
+      "An entire German army was encircled and destroyed, and from then on Germany was on the defensive in the East",
+      "It forced the Soviet Union out of the war",
+      "It was the first battle the United States fought in Europe"
+    ],
+    "answer": 1,
+    "explanation": "At Stalingrad the Soviets surrounded and captured the German Sixth Army. It shattered the myth of German invincibility and marked the start of a long German retreat all the way back to Berlin."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "What turned World War II from a mainly European conflict into a truly global war?",
+    "options": [
+      "The fall of France in 1940",
+      "The Japanese attack on Pearl Harbor, which brought the United States into the war",
+      "The Nazi–Soviet Pact",
+      "The Battle of Britain"
+    ],
+    "answer": 1,
+    "explanation": "Japan's attack on Pearl Harbor in December 1941 brought the United States and its huge industrial power into the war, and Hitler then declared war on America — making the conflict global."
+  },
+  {
+    "id": 8,
+    "type": "ordering",
+    "question": "Put these major events of the war in chronological order.",
+    "items": [
+      "Germany invades Poland",
+      "Fall of France and Dunkirk",
+      "Operation Barbarossa invades the USSR",
+      "Pearl Harbor",
+      "D-Day landings in Normandy",
+      "Germany surrenders (V-E Day)"
+    ],
+    "correctOrder": [0, 1, 2, 3, 4, 5],
+    "explanation": "Sep 1939 → mid-1940 → June 1941 → Dec 1941 → June 1944 → May 1945. From the opening invasion to the conquest of Europe, the eastern gamble, America's entry, the second front, and finally Germany's defeat."
+  }
+]
