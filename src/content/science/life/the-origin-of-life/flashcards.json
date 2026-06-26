@@ -1,7 +1,62 @@
 [
   {
     "id": 1,
-    "front": "PLACEHOLDER: Key concept",
-    "back": "PLACEHOLDER: Short, clear explanation."
+    "front": "Abiogenesis",
+    "back": "The natural process by which life emerges from nonliving chemistry."
+  },
+  {
+    "id": 2,
+    "front": "Why Pasteur still matters",
+    "back": "He ruled out ordinary spontaneous generation in modern conditions, sharpening the origin-of-life problem."
+  },
+  {
+    "id": 3,
+    "front": "Two core features of life in this module",
+    "back": "Replicable information and a metabolism that can sustain replication."
+  },
+  {
+    "id": 4,
+    "front": "DNA-protein paradox",
+    "back": "DNA needs proteins to function, but proteins are encoded by DNA."
+  },
+  {
+    "id": 5,
+    "front": "Miller-Urey result",
+    "back": "Abiotic conditions can produce amino acids, key molecular building blocks."
+  },
+  {
+    "id": 6,
+    "front": "Why carbon chemistry dominates biology",
+    "back": "Carbon makes stable yet versatile bonds with itself and common elements like hydrogen, oxygen, and nitrogen."
+  },
+  {
+    "id": 7,
+    "front": "RNA-world hypothesis",
+    "back": "An early stage where RNA-like molecules handled both information storage and catalytic function."
+  },
+  {
+    "id": 8,
+    "front": "Pre-cellular selection",
+    "back": "More stable and replicable molecules persist longer and become more common before true cells exist."
+  },
+  {
+    "id": 9,
+    "front": "Protocell",
+    "back": "A primitive cell-like compartment, often modeled with self-assembled fatty-acid membranes."
+  },
+  {
+    "id": 10,
+    "front": "Why compartments matter",
+    "back": "They concentrate reactants, protect fragile molecules, and enable sustained chemical networks."
+  },
+  {
+    "id": 11,
+    "front": "When does chemistry become biology?",
+    "back": "When replication, metabolism, and compartmental boundaries reinforce self-maintenance and reproduction."
+  },
+  {
+    "id": 12,
+    "front": "Current scientific status",
+    "back": "Origin-of-life has strong plausible pathways but no single fully confirmed complete sequence yet."
   }
 ]

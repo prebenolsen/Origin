@@ -136,7 +136,7 @@
 | Science  | Universe    | The Solar System and planets                | ~4.6 billion BCE – present  | ------ |
 | Science  | Earth       | How Earth formed and changed                | ~4.6 billion BCE – present  | DONE |
 | Science  | Earth       | Climate, weather, and natural forces        | Present day                 | ------ |
-| Science  | Life        | The origin of life                          | Early Earth – present       | ------ |
+| Science  | Life        | The origin of life                          | Early Earth – present       | DONE |
 | Science  | Life        | Evolution and natural selection             | 1859 – present              | ------ |
 | Science  | Life        | DNA and genetics                            | 1860s – present             | ------ |
 | Science  | Human Body  | The brain and consciousness                 | Modern science              | ------ |

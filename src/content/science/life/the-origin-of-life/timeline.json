@@ -1,6 +1,34 @@
 [
   {
-    "year": "PLACEHOLDER",
-    "title": "PLACEHOLDER: Major timeline milestone"
+    "year": "4th century BCE",
+    "title": "Aristotelian spontaneous generation frames early thinking"
+  },
+  {
+    "year": "19th century",
+    "title": "Pasteur rejects everyday spontaneous generation"
+  },
+  {
+    "year": "Early Earth (~4.0-3.5 billion years ago)",
+    "title": "Prebiotic chemistry supplies organic building blocks"
+  },
+  {
+    "year": "1950s",
+    "title": "Miller-Urey experiment shows abiotic amino-acid formation"
+  },
+  {
+    "year": "RNA-world stage (hypothesized)",
+    "title": "RNA-like molecules combine information and catalysis"
+  },
+  {
+    "year": "Protocell stage (hypothesized)",
+    "title": "Fatty-acid compartments concentrate and protect chemistry"
+  },
+  {
+    "year": "First cellular life",
+    "title": "Replication, metabolism, and membranes integrate"
+  },
+  {
+    "year": "Modern research",
+    "title": "Origin-of-life remains an open interdisciplinary problem"
   }
 ]

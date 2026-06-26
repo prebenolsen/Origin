@@ -1,37 +1,73 @@
 {
-  "title": "PLACEHOLDER: The origin of life",
+  "title": "The Origin of Life",
   "category": "science",
   "subcategory": "life",
-  "summary": "PLACEHOLDER: Replace with authored summary from source material.",
-  "accent": "#9a9a9a",
+  "summary": "Explore how chemistry on early Earth may have crossed the line into biology through self-replication, RNA, and the first protocells.",
+  "accent": "#166534",
   "context": {
     "type": "schematic",
-    "headline": "PLACEHOLDER: Context headline",
-    "description": "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-    "when": "Early Earth - present",
+    "headline": "From Chemistry to Biology",
+    "description": "Life was not always here, so at some point nonliving chemistry produced the first living systems. This module follows the key steps: old ideas about spontaneous generation, modern definitions of life, prebiotic chemistry, RNA-world hypotheses, and the emergence of membrane-bound protocells.",
+    "when": "~4.0-3.5 billion years ago to present research",
     "map": {
       "backdrop": "region",
       "markers": [
         {
-          "id": "placeholder-a",
-          "label": "PLACEHOLDER A",
-          "x": 30,
+          "id": "prebiotic-earth",
+          "label": "Prebiotic Earth",
+          "x": 18,
+          "y": 45,
+          "role": "primary"
+        },
+        {
+          "id": "organic-building-blocks",
+          "label": "Organic molecules",
+          "x": 38,
           "y": 30,
           "role": "primary"
         },
         {
-          "id": "placeholder-b",
-          "label": "PLACEHOLDER B",
-          "x": 65,
-          "y": 55,
+          "id": "rna-world",
+          "label": "RNA world",
+          "x": 58,
+          "y": 47,
+          "role": "primary"
+        },
+        {
+          "id": "protocells",
+          "label": "Protocells",
+          "x": 76,
+          "y": 33,
+          "role": "primary"
+        },
+        {
+          "id": "first-cells",
+          "label": "First life",
+          "x": 89,
+          "y": 54,
           "role": "secondary"
         }
       ],
       "connections": [
         {
-          "from": "placeholder-a",
-          "to": "placeholder-b",
-          "label": "PLACEHOLDER LINK"
+          "from": "prebiotic-earth",
+          "to": "organic-building-blocks",
+          "label": "available chemistry"
+        },
+        {
+          "from": "organic-building-blocks",
+          "to": "rna-world",
+          "label": "replication begins"
+        },
+        {
+          "from": "rna-world",
+          "to": "protocells",
+          "label": "compartmentalization"
+        },
+        {
+          "from": "protocells",
+          "to": "first-cells",
+          "label": "selection + metabolism"
         }
       ]
     }

@@ -2,14 +2,109 @@
   {
     "id": 1,
     "type": "multiple-choice",
-    "question": "PLACEHOLDER: Add an understanding-focused question.",
+    "question": "Why did Pasteur's experiments matter for origin-of-life science?",
     "options": [
-      "PLACEHOLDER option A",
-      "PLACEHOLDER option B",
-      "PLACEHOLDER option C",
-      "PLACEHOLDER option D"
+      "They proved life first evolved in deep-sea vents",
+      "They showed all spontaneous generation is impossible under any condition",
+      "They rejected everyday spontaneous generation in modern environments",
+      "They directly created the first protocell"
+    ],
+    "answer": 2,
+    "explanation": "Pasteur ruled out routine spontaneous generation under contemporary conditions, which sharpened the search for special early-Earth conditions."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "In origin-of-life discussions, a key definition of life combines replicable information with a sustaining metabolism.",
+    "answer": true,
+    "explanation": "That pairing captures core functions needed for persistence and reproduction."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What did the Miller-Urey experiment demonstrate most directly?",
+    "options": [
+      "DNA can self-replicate in open ocean water",
+      "Inorganic starting conditions can produce amino acids",
+      "Viruses were the first life",
+      "Fatty acids cannot form naturally"
+    ],
+    "answer": 1,
+    "explanation": "The experiment showed prebiotic chemistry can generate biologically relevant building blocks without living cells."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each concept to its role.",
+    "pairs": [
+      {
+        "left": "RNA world",
+        "right": "Single molecular system for information and catalysis"
+      },
+      {
+        "left": "Protocell membrane",
+        "right": "Compartment that concentrates chemistry"
+      },
+      {
+        "left": "DNA-protein paradox",
+        "right": "Each appears to depend on the other"
+      },
+      {
+        "left": "Prebiotic soup",
+        "right": "Environment rich in organic building blocks"
+      }
+    ],
+    "explanation": "These pairs map the main steps from chemistry to early biological organization."
+  },
+  {
+    "id": 5,
+    "type": "ordering",
+    "question": "Order this simplified origin pathway.",
+    "items": [
+      "Compartmentalized protocells",
+      "Organic building blocks form",
+      "First stable cellular life",
+      "RNA-like replication and catalysis"
+    ],
+    "correctOrder": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explanation": "A common model is building blocks first, then RNA-like systems, then membranes, then integrated cellular life."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "Why are compartments considered essential in most origin-of-life models?",
+    "options": [
+      "They increase cosmic radiation",
+      "They allow chemistry to stay concentrated and protected",
+      "They eliminate the need for information molecules",
+      "They make evolution unnecessary"
+    ],
+    "answer": 1,
+    "explanation": "Without boundaries, useful reactants are too diluted and unstable for sustained metabolism-like networks."
+  },
+  {
+    "id": 7,
+    "type": "true-false",
+    "question": "Modern science has one fully confirmed, step-by-step laboratory recreation of abiogenesis.",
+    "answer": false,
+    "explanation": "There are strong partial models and experiments, but no complete confirmed recreation of the full transition yet."
+  },
+  {
+    "id": 8,
+    "type": "multiple-choice",
+    "question": "What makes RNA especially important in many hypotheses?",
+    "options": [
+      "It can both carry sequence information and catalyze reactions",
+      "It is chemically simpler than water",
+      "It requires no energy input",
+      "It only exists in viruses"
     ],
     "answer": 0,
-    "explanation": "PLACEHOLDER: Explain why the correct answer is correct."
+    "explanation": "RNA's dual capability helps bridge the information-vs-machinery gap in early systems."
   }
 ]

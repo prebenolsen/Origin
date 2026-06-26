@@ -1,9 +1,100 @@
 [
   {
     "id": 1,
-    "timeline": "PLACEHOLDER",
-    "title": "PLACEHOLDER: Story card title",
-    "content": "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next": "PLACEHOLDER: Curiosity hook for the next card."
+    "timeline": "Ancient to modern question",
+    "title": "The hardest biological question",
+    "content": "If life today comes only from life, how did the first life begin? This question sits at the boundary between chemistry, geology, and biology. The origin-of-life problem is really about how nonliving matter became self-sustaining and self-replicating.",
+    "next": "How did earlier thinkers explain this mystery?"
+  },
+  {
+    "id": 2,
+    "timeline": "Classical ideas",
+    "title": "Spontaneous generation ruled for centuries",
+    "content": "Many early philosophers believed living things could emerge directly from nonliving material. Aristotle's framework influenced science for almost two millennia. It seemed to match everyday observations of insects or worms appearing in decaying matter.",
+    "next": "What finally challenged that idea?"
+  },
+  {
+    "id": 3,
+    "timeline": "19th-century experimental shift",
+    "title": "Pasteur closed one door",
+    "content": "Louis Pasteur showed that sterile environments do not spontaneously produce microbes. His work strongly rejected everyday spontaneous generation under modern conditions. But that still left a deeper question: could early Earth conditions have been different enough for a one-time origin event?",
+    "next": "So what counts as life in the first place?"
+  },
+  {
+    "id": 4,
+    "timeline": "Defining life",
+    "title": "Function-based definitions are not enough",
+    "content": "Growth and reproduction alone can be misleading because nonliving systems can mimic parts of that behavior. A stronger origin-of-life definition focuses on two essentials: information that can replicate and chemistry that can sustain that replication. This points us toward molecules and cellular organization.",
+    "next": "What are the two core ingredients in modern cells?"
+  },
+  {
+    "id": 5,
+    "timeline": "Molecular essentials",
+    "title": "Replication plus metabolism",
+    "content": "The simplest living systems require something like a genetic molecule and a metabolic system. In modern life, DNA stores instructions while proteins and other molecules carry out cellular work. The origin puzzle asks how these tightly linked roles emerged from simpler chemistry.",
+    "next": "Where could early Earth get the raw materials?"
+  },
+  {
+    "id": 6,
+    "timeline": "Prebiotic Earth chemistry",
+    "title": "A planet rich in chemical possibilities",
+    "content": "Early Earth likely contained many reactive environments: oceans, minerals, gases, heat sources, and lightning. Key organic components such as simple sugars, nitrogenous bases, and amino acids could form through natural processes. The issue was less about ingredients existing and more about organizing them.",
+    "next": "Did experiments support this chemical plausibility?"
+  },
+  {
+    "id": 7,
+    "timeline": "Miller-Urey (1950s)",
+    "title": "Organic building blocks can arise naturally",
+    "content": "Miller and Urey simulated early-atmosphere chemistry with electrical sparks and generated amino acids. Their setup did not create life, but it demonstrated a crucial point: inorganic starting conditions can produce biologically relevant molecules. This made abiogenesis scientifically testable rather than purely speculative.",
+    "next": "If building blocks exist, why doesn't life appear automatically?"
+  },
+  {
+    "id": 8,
+    "timeline": "Core paradox",
+    "title": "The DNA-protein chicken-and-egg problem",
+    "content": "DNA needs protein machinery to copy and interpret it, while proteins in modern cells are encoded by DNA. This circular dependence suggests neither fully modern DNA-first nor protein-first systems are likely as a starting point. A simpler intermediate system is needed.",
+    "next": "What molecule might bridge that gap?"
+  },
+  {
+    "id": 9,
+    "timeline": "RNA-world hypothesis",
+    "title": "RNA can both store information and do chemistry",
+    "content": "RNA resembles DNA but can also fold into catalytic structures that perform chemical tasks. That dual ability makes it a strong candidate for early life-like systems. In an RNA-world scenario, one molecular family handled both replication and rudimentary metabolism.",
+    "next": "How would selection act before true life existed?"
+  },
+  {
+    "id": 10,
+    "timeline": "Pre-cellular selection",
+    "title": "Stability and replication create early selection",
+    "content": "Random molecular combinations would mostly fail, but a few stable and replicable forms could persist longer. Better replicators would become more common over time. This is not full biological evolution yet, but it is a plausible precursor to Darwinian selection.",
+    "next": "Why were compartments necessary?"
+  },
+  {
+    "id": 11,
+    "timeline": "Compartment problem",
+    "title": "Chemistry needed a container",
+    "content": "In open water, useful molecules are too diluted and too easily disrupted. Compartmentalization concentrates reactants, protects fragile chains, and allows local chemical environments to develop. Without boundaries, coordinated metabolism is very unlikely.",
+    "next": "What structures could create early boundaries?"
+  },
+  {
+    "id": 12,
+    "timeline": "Protocell formation",
+    "title": "Fatty acids self-assemble into membranes",
+    "content": "Certain amphiphilic molecules naturally form vesicles in water, with water-friendly surfaces and water-avoiding interiors. These vesicles can act as primitive cell-like compartments. If RNA-like chemistry occurred inside them, protocells could emerge.",
+    "next": "How does this become true life?"
+  },
+  {
+    "id": 13,
+    "timeline": "Transition to first life",
+    "title": "Replication, metabolism, and membranes converge",
+    "content": "A major threshold is crossed when information molecules, metabolic reactions, and compartments reinforce each other. Systems that maintain themselves and reproduce more reliably outcompete unstable ones. At that point, chemistry becomes biology.",
+    "next": "Do we know exactly where this happened?"
+  },
+  {
+    "id": 14,
+    "timeline": "Open scientific frontier",
+    "title": "We have strong models, not a final answer",
+    "content": "Scientists still debate precise environments and sequences, such as ocean settings, mineral surfaces, or other niches. Evidence supports plausible pathways, but no single experiment has recreated the full transition. The origin of life remains one of science's most active unresolved problems.",
+    "next": "Ready to test your origin-of-life model?"
   }
 ]

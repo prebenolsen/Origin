@@ -4,6 +4,16 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [3.3.0] - 2026-06-27
+
+### Added - authored Science Life module from source transcript
+
+- Completed `src/content/science/life/the-origin-of-life/` by replacing placeholders in `module.json`, `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json`.
+- Built a complete learning flow from `raw.md` focused on spontaneous generation vs modern evidence, definitions of life, prebiotic chemistry, RNA-world hypotheses, protocell compartmentalization, and the chemistry-to-biology transition.
+- Updated `docs/content.md` and marked `Science | Life | The origin of life` as `DONE`.
+- Updated `docs/architecture.md` with the latest completion note for this module.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.3.0** (MINOR - content).
+
 ## [3.2.0] - 2026-06-27
 
 ### Added - authored Science Earth and Universe modules from source transcripts

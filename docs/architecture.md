@@ -127,3 +127,5 @@ module row status to DONE.
   from `raw.md` into all five content JSON files and set tracker status to DONE.
 - 2026-06-27: Completed `science/earth/how-earth-formed-and-changed`
   from `raw.md` into all five content JSON files and set tracker status to DONE.
+- 2026-06-27: Completed `science/life/the-origin-of-life`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.
