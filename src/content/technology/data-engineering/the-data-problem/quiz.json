@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What is the central data challenge for modern companies?",
+    "options": [
+      "Finding enough data to collect",
+      "Affording enough storage space",
+      "Turning massive amounts of raw data into something useful",
+      "Convincing people to use computers"
+    ],
+    "answer": 2,
+    "explanation": "Collecting and storing data is now cheap and easy. The hard part is making that raw data clean, trustworthy, and useful."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Thanks to cheap cloud storage, simply storing large amounts of data is no longer the main bottleneck.",
+    "answer": true,
+    "explanation": "Storage costs dropped dramatically, so the bottleneck moved from storing data to actually making sense of it."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "Raw data is usually clean and ready to analyze the moment it is collected.",
+    "answer": false,
+    "explanation": "Raw data is messy — full of different formats, duplicates, gaps, and errors — and must be cleaned and organized first."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Put the journey data takes in the right order.",
+    "items": [
+      "Clean the data",
+      "Collect the raw data",
+      "Serve it to people and apps",
+      "Store it"
+    ],
+    "correctOrder": [1, 3, 0, 2],
+    "explanation": "Data is collected, stored, cleaned, organized, and finally served to those who need it."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "Why do organizations want a 'single source of truth'?",
+    "options": [
+      "To make data harder to access",
+      "So separate copies don't drift apart and contradict each other",
+      "To store more copies of every table",
+      "To slow down reporting"
+    ],
+    "answer": 1,
+    "explanation": "When every team keeps its own copy, the copies disagree. A single trusted version keeps everyone aligned."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "Data engineering is best described as...",
+    "options": [
+      "Designing company logos",
+      "Building the systems that turn raw data into clean, reliable, usable data",
+      "Manually reading every record by hand",
+      "Deleting old data to save space"
+    ],
+    "answer": 1,
+    "explanation": "Data engineering builds the pipelines and platforms that make data trustworthy and useful at scale and speed."
+  }
+]

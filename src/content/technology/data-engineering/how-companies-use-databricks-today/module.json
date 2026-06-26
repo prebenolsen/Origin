@@ -1,0 +1,34 @@
+{
+  "title": "How Companies Use Databricks Today",
+  "period": "Today: the end-to-end data and AI platform",
+  "category": "technology",
+  "subcategory": "data-engineering",
+  "summary": "Put it all together: companies ingest data, refine it through pipelines, orchestrate everything with jobs, then power dashboards, machine learning, generative AI, and live apps — all on one governed lakehouse.",
+  "accent": "#7c3aed",
+  "context": {
+    "type": "schematic",
+    "headline": "From raw sources to real intelligence",
+    "description": "With reliable storage, an easy platform, and a governed lakehouse in place, companies run the full data lifecycle in one system. Data is ingested (batch and streaming), refined through pipelines into bronze, silver, and gold tables, orchestrated by jobs, and then serves dashboards, machine learning, generative AI, and live applications.",
+    "when": "The modern data stack, as used in production today",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "sources", "label": "Sources & streams", "x": 12, "y": 30, "role": "secondary" },
+        { "id": "ingest", "label": "Ingestion", "x": 30, "y": 56, "role": "secondary" },
+        { "id": "lakehouse", "label": "Lakehouse (bronze→silver→gold)", "x": 52, "y": 30, "role": "primary" },
+        { "id": "jobs", "label": "Jobs orchestrate", "x": 50, "y": 64, "role": "secondary" },
+        { "id": "bi", "label": "Dashboards & Genie", "x": 83, "y": 18, "role": "secondary" },
+        { "id": "ai", "label": "ML & generative AI", "x": 87, "y": 44, "role": "primary" },
+        { "id": "apps", "label": "Live apps (Lakebase)", "x": 83, "y": 70, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "sources", "to": "ingest", "label": "in" },
+        { "from": "ingest", "to": "lakehouse", "label": "land & refine" },
+        { "from": "jobs", "to": "lakehouse", "label": "automate" },
+        { "from": "lakehouse", "to": "bi", "label": "serve" },
+        { "from": "lakehouse", "to": "ai" },
+        { "from": "lakehouse", "to": "apps" }
+      ]
+    }
+  }
+}

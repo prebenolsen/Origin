@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "timeline": "It all comes together",
+    "title": "Everything in one place",
+    "content": "We now have the full picture: reliable storage from Delta Lake, an easy platform from Databricks, and one governed home in the lakehouse. So what do real companies actually build on top of it? The rest is the modern data lifecycle, end to end.",
+    "next": "What's the very first step in that lifecycle?"
+  },
+  {
+    "id": 2,
+    "timeline": "Ingestion",
+    "title": "Step one: get the data in",
+    "content": "It starts with ingestion — bringing data into the lakehouse. Tools like Auto Loader and ready-made connectors automatically pull data from apps, databases, files, and event streams, landing it as raw bronze tables without constant manual work.",
+    "next": "Does it arrive all at once, or continuously?"
+  },
+  {
+    "id": 3,
+    "timeline": "Ingestion",
+    "title": "Batch and streaming, together",
+    "content": "Data arrives at two speeds. Batch ingestion loads scheduled chunks, like an overnight import. Streaming ingestion flows in continuously, the moment events happen. The lakehouse handles both on the same tables, so you choose the speed each use case needs.",
+    "next": "Once it's in, how does raw data become useful?"
+  },
+  {
+    "id": 4,
+    "timeline": "Pipelines",
+    "title": "Step two: shape the data",
+    "content": "Pipelines transform raw data into refined data, walking it through bronze, silver, and gold. With declarative pipelines, you describe the result you want and the platform figures out the steps, runs them in the right order, and checks data quality along the way.",
+    "next": "How do all these steps run reliably, day after day?"
+  },
+  {
+    "id": 5,
+    "timeline": "Orchestration",
+    "title": "Step three: put it on autopilot",
+    "content": "Jobs orchestrate the whole flow: ingest, then transform, then train a model, then refresh a report — in order, on a schedule, with automatic retries and alerts. The entire pipeline runs by itself, reliably, without someone pressing buttons each morning.",
+    "next": "Now that the data is clean and flowing, what gets built on it?"
+  },
+  {
+    "id": 6,
+    "timeline": "Insight & AI",
+    "title": "Dashboards and plain-English questions",
+    "content": "First, business intelligence. Clean gold tables power dashboards and reports for the whole company. And with Genie, business users can ask questions in plain English — 'which region grew fastest last quarter?' — and get back charts, tables, and the SQL behind them.",
+    "next": "What about predicting the future, not just reporting the past?"
+  },
+  {
+    "id": 7,
+    "timeline": "Insight & AI",
+    "title": "Machine learning on the same data",
+    "content": "Data scientists train models on the very same governed data — for fraud detection, recommendations, demand forecasting, and more. MLflow tracks every experiment and manages models from first test all the way to production, with no copying data to a separate system.",
+    "next": "And the newest frontier — generative AI?"
+  },
+  {
+    "id": 8,
+    "timeline": "Insight & AI",
+    "title": "Generative AI, grounded in your data",
+    "content": "Companies build chatbots and AI agents that answer from their own documents and data, using vector search and a technique called RAG (retrieval-augmented generation). Foundation models are served right on the platform, so AI stays close to the governed data it relies on.",
+    "next": "Can this data also power the live product itself?"
+  },
+  {
+    "id": 9,
+    "timeline": "Insight & AI",
+    "title": "Serving live applications",
+    "content": "Lakebase, a managed database built into the platform, serves fresh data to live applications at low latency. This closes the loop: insights and predictions flow back out of the lakehouse and into the products customers actually use.",
+    "next": "Who is doing all of this in the real world?"
+  },
+  {
+    "id": 10,
+    "timeline": "In the real world",
+    "title": "What it looks like in practice",
+    "content": "Retailers personalize recommendations and forecast demand. Banks detect fraud in real time. Hospitals analyze patient records to improve care. Manufacturers predict equipment failures from sensor data before machines break down. Same platform, very different industries.",
+    "next": "Why does doing it all on one platform matter so much?"
+  },
+  {
+    "id": 11,
+    "timeline": "In the real world",
+    "title": "Why one platform wins",
+    "content": "Because ingestion, transformation, analytics, AI, and apps all run on one governed lakehouse, every team works from a single copy of the data. They move faster, avoid drifting copies, and can finally trust that their numbers — and their models — agree.",
+    "next": "So where does that leave the story we started with?"
+  },
+  {
+    "id": 12,
+    "timeline": "In the real world",
+    "title": "The full journey",
+    "content": "We began with companies drowning in raw data. We end with a single platform that ingests it, cleans it, governs it, analyzes it, and powers AI from it. That arc — from messy flood to trusted intelligence — is the whole point of modern data engineering.",
+    "next": "From raw flood to real intelligence: that is the work, and Databricks is one of its engines."
+  }
+]

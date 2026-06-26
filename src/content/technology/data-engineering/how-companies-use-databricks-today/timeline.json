@@ -1,0 +1,8 @@
+[
+  { "year": "It all comes together", "title": "Reliable storage, an easy platform, one governed home" },
+  { "year": "Ingestion", "title": "Auto Loader and connectors bring data in (batch + streaming)" },
+  { "year": "Pipelines", "title": "Declarative pipelines refine bronze to gold" },
+  { "year": "Orchestration", "title": "Jobs schedule and automate the whole flow" },
+  { "year": "Insight & AI", "title": "Dashboards, Genie, machine learning, and generative AI" },
+  { "year": "In the real world", "title": "Retail, banking, healthcare, and manufacturing" }
+]

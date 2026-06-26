@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "Apache Spark", "back": "A fast, open-source engine for processing big data across a cluster, born at UC Berkeley in 2009." },
+  { "id": 2, "front": "In-memory processing", "back": "Keeping data in RAM between steps instead of writing to disk each time — Spark's key speed advantage over MapReduce." },
+  { "id": 3, "front": "Cluster", "back": "A group of machines working together as one. In Spark, made of a driver plus executors." },
+  { "id": 4, "front": "Driver", "back": "The 'brain' of a Spark cluster: it plans the job and splits it into tasks for the workers." },
+  { "id": 5, "front": "Executors", "back": "The worker processes in a Spark cluster, each crunching a chunk of the data in parallel." },
+  { "id": 6, "front": "DataFrame", "back": "Spark's friendly abstraction: a distributed table of rows and columns you shape with simple commands." },
+  { "id": 7, "front": "Transformations vs. actions", "back": "Transformations (filter, join) build a plan; an action (count, save) actually triggers execution." },
+  { "id": 8, "front": "Lazy evaluation", "back": "Spark delays running work until an action is called, so it can see the whole plan and optimize it first." },
+  { "id": 9, "front": "Language APIs (PySpark, etc.)", "back": "You can drive Spark with Python, SQL, Scala, or R instead of low-level Java." },
+  { "id": 10, "front": "Unified engine", "back": "One Spark engine handles batch ETL, SQL, streaming, and machine learning — no separate tools required." }
+]

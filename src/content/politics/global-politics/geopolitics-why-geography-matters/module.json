@@ -1,42 +1,90 @@
 {
-    "title":  "PLACEHOLDER: Geopolitics: Why Geography Matters",
-    "period":  "How location, resources, and power shape international relations",
-    "category":  "politics",
-    "subcategory":  "global-politics",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "How location, resources, and power shape international relations",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
+    "title": "Geopolitics: Why Geography Matters",
+    "period": "1815 to the present geopolitical order",
+    "category": "politics",
+    "subcategory": "global-politics",
+    "summary": "Understand how geography shapes power by tracing geopolitics from the Great Game and Heartland theory to today’s U.S.-China-Russia rivalry.",
+    "accent": "#365f8a",
+    "context": {
+        "type": "schematic",
+        "headline": "Geography sets the board, strategy plays the game",
+        "description": "Geopolitics studies how location, resources, chokepoints, transport routes, and population constraints influence state behavior. This module follows the shift from 19th-century imperial rivalry to modern competition across Eurasia's rimland hotspots.",
+        "when": "From the Congress of Vienna (1815) to the 21st-century multipolar transition",
+        "map": {
+            "backdrop": "world",
+            "markers": [
+                {
+                    "id": "heartland",
+                    "label": "Eurasian Heartland",
+                    "x": 51,
+                    "y": 34,
+                    "role": "primary"
+                },
+                {
+                    "id": "rimland",
+                    "label": "Rimland Arc",
+                    "x": 61,
+                    "y": 46,
+                    "role": "primary"
+                },
+                {
+                    "id": "seapower",
+                    "label": "Sea Power",
+                    "x": 33,
+                    "y": 30,
+                    "role": "secondary"
+                },
+                {
+                    "id": "landpower",
+                    "label": "Land Power",
+                    "x": 49,
+                    "y": 24,
+                    "role": "secondary"
+                },
+                {
+                    "id": "india-route",
+                    "label": "Routes to Indian Ocean",
+                    "x": 60,
+                    "y": 55,
+                    "role": "secondary"
+                },
+                {
+                    "id": "hotspots",
+                    "label": "Modern Hotspots",
+                    "x": 72,
+                    "y": 40,
+                    "role": "primary"
                 }
+            ],
+            "connections": [
+                {
+                    "from": "landpower",
+                    "to": "heartland",
+                    "label": "continental depth"
+                },
+                {
+                    "from": "seapower",
+                    "to": "rimland",
+                    "label": "containment lines"
+                },
+                {
+                    "from": "heartland",
+                    "to": "india-route",
+                    "label": "southward pressure"
+                },
+                {
+                    "from": "rimland",
+                    "to": "hotspots",
+                    "label": "competition zones"
+                },
+                {
+                    "from": "heartland",
+                    "to": "hotspots",
+                    "label": "power projection"
+                }
+            ]
+        }
+    }
 }
 
 

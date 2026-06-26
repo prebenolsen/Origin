@@ -1,8 +1,101 @@
-{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+    {
+        "id": 1,
+        "timeline": "Stage 1: The learning trap",
+        "title": "Why rereading feels productive but fails",
+        "content": "Many learners highlight, reread, and take long notes, then feel prepared. But this often creates familiarity, not recall. Learning only counts when you can pull ideas from memory without looking.",
+        "next": "What simple shift makes memory much stronger?"
+    },
+    {
+        "id": 2,
+        "timeline": "Stage 1: The learning trap",
+        "title": "Active recall changes everything",
+        "content": "After reading, step away from the material and try to reconstruct the key ideas. Then return to check gaps and correct mistakes. This retrieval attempt is the moment your brain strengthens memory traces.",
+        "next": "Why does this method feel harder than highlighting?"
+    },
+    {
+        "id": 3,
+        "timeline": "Stage 2: Productive difficulty",
+        "title": "Effective learning feels mentally taxing",
+        "content": "Active recall is difficult because it forces effortful thinking. That discomfort is not a sign of failure; it is part of the mechanism that improves retention. Hard practice now saves time later.",
+        "next": "How can you use this effort efficiently in a study session?"
+    },
+    {
+        "id": 4,
+        "timeline": "Stage 2: Productive difficulty",
+        "title": "Use the struggle pile",
+        "content": "Sort material into two groups: what you can recall and what you cannot. Rework only the weak pile, then test again. Over time, the weak pile shrinks, giving fast and focused progress.",
+        "next": "Can memory improve even more if information is visual?"
+    },
+    {
+        "id": 5,
+        "timeline": "Stage 3: Visual encoding",
+        "title": "Step 1 is visualization",
+        "content": "Brains remember vivid images better than abstract text. Convert terms, processes, or lists into memorable pictures. The stranger and more concrete the image, the easier it is to retrieve later.",
+        "next": "Once ideas become images, how do you keep them organized?"
+    },
+    {
+        "id": 6,
+        "timeline": "Stage 3: Visual encoding",
+        "title": "Step 2 is structure",
+        "content": "Link images through a structure: a story, a memory palace, knuckle positions, or chunks. Structure gives order, so recalling one element naturally cues the next. This turns random facts into navigable knowledge.",
+        "next": "What turns these images and stories into long-term memory?"
+    },
+    {
+        "id": 7,
+        "timeline": "Stage 3: Visual encoding",
+        "title": "Step 3 is repetition through retrieval",
+        "content": "Repetition works best when it is active, not passive. Flashcards and recall drills combine spacing, active retrieval, and mixing of topics. Each successful retrieval strengthens long-term access.",
+        "next": "How do you avoid spending all your time consuming new input?"
+    },
+    {
+        "id": 8,
+        "timeline": "Stage 4: Consume vs digest",
+        "title": "Learning has two stages",
+        "content": "Stage one is consumption: reading, watching, listening. Stage two is digestion: practicing, mapping, critiquing, and rehearsing. If consumption grows faster than digestion, forgetting rises quickly.",
+        "next": "What does balanced learning look like in practice?"
+    },
+    {
+        "id": 9,
+        "timeline": "Stage 4: Consume vs digest",
+        "title": "Balance prevents overload",
+        "content": "Treat learning like nutrition: input without digestion creates waste. Instead of binge-consuming information, reduce intake and process deeply. Remembering 60% deeply is better than forgetting 90% quickly.",
+        "next": "How do you choose the right processing method for each type of information?"
+    },
+    {
+        "id": 10,
+        "timeline": "Stage 5: PACER system",
+        "title": "Procedural knowledge needs practice",
+        "content": "Procedural information is how to do something, like solving a proof or running a technique. The best processing method is immediate practice, not rereading. Delay practice too long and most details fade.",
+        "next": "What if new information reminds you of something you already know?"
+    },
+    {
+        "id": 11,
+        "timeline": "Stage 5: PACER system",
+        "title": "Analogous knowledge needs critique",
+        "content": "When a new idea resembles an old one, build an analogy. Then critique it: where does it fit, where does it break, and how can it be improved? Good analogies connect new learning to existing mental networks.",
+        "next": "How should you process conceptual information?"
+    },
+    {
+        "id": 12,
+        "timeline": "Stage 5: PACER system",
+        "title": "Conceptual knowledge needs mapping",
+        "content": "Conceptual information includes principles, explanations, and relationships. Mind maps help because expert knowledge is networked, not linear. Mapping forces you to connect ideas into a usable model.",
+        "next": "What about detailed facts and references?"
+    },
+    {
+        "id": 13,
+        "timeline": "Stage 5: PACER system",
+        "title": "Evidence and reference need storage plus rehearsal",
+        "content": "Evidence details support concepts, while reference facts are precise items you may need to recall. Store both efficiently, then rehearse later using questions, problems, and flashcards. Do not let detail memorization steal time from core understanding.",
+        "next": "What is the final goal of memory and learning?"
+    },
+    {
+        "id": 14,
+        "timeline": "Stage 6: What mastery means",
+        "title": "Aim for usable knowledge, not perfect recall",
+        "content": "Memorizing everything word-for-word is neither realistic nor necessary for most learners. The real target is to remember what matters and apply it to reasoning, decisions, and problem solving. Build study systems that create understanding you can use.",
+        "next": "When your next study session starts, recall first and consume second."
+    }
+]
 

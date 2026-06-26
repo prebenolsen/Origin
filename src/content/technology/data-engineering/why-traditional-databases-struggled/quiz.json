@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What were traditional relational databases originally optimized for?",
+    "options": [
+      "Training machine learning models",
+      "Recording transactions reliably (OLTP)",
+      "Storing images and video",
+      "Running massive analytical reports"
+    ],
+    "answer": 1,
+    "explanation": "Relational databases were built for OLTP: many small, fast, exactly-correct reads and writes, like recording an order or updating a balance."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Data warehouses use 'schema-on-write', meaning you must define the structure of the data before loading it.",
+    "answer": true,
+    "explanation": "Schema-on-write keeps data tidy but rigid: data that doesn't fit the predefined columns and types can't be loaded until the schema is redesigned."
+  },
+  {
+    "id": 3,
+    "type": "matching",
+    "question": "Match each term to the best description.",
+    "pairs": [
+      { "left": "OLTP", "right": "Recording many small transactions reliably" },
+      { "left": "OLAP", "right": "Running large analytical queries for reporting" },
+      { "left": "Schema-on-write", "right": "Defining the data's structure before loading it" },
+      { "left": "Scaling up", "right": "Replacing a server with a bigger, costlier machine" }
+    ],
+    "explanation": "Databases (OLTP) record the business; warehouses (OLAP) analyze it. Both demanded structure first and scaled up expensively."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "Why did traditional data warehouses struggle with machine learning?",
+    "options": [
+      "Machine learning didn't exist yet",
+      "They stored only pre-structured data in closed formats, while ML needs raw, detailed, flexible data",
+      "They were too cheap to run",
+      "They could only store images"
+    ],
+    "answer": 1,
+    "explanation": "Warehouses offered rigid, summarized, proprietary data — the opposite of the raw, flexible detail machine learning depends on."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "Traditional warehouses handled unstructured data like free text and images as easily as neat tables.",
+    "answer": false,
+    "explanation": "They were built for structured rows and columns. Logs, text, images, and JSON had no comfortable home in a warehouse."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What problem came from data living in a vendor's proprietary format?",
+    "options": [
+      "The data was easier to share with any tool",
+      "The data was effectively locked in — hard to access elsewhere and costly to move",
+      "It made machine learning trivial",
+      "It eliminated all storage costs"
+    ],
+    "answer": 1,
+    "explanation": "Proprietary formats trapped data inside one system, limiting tool choice and making the company less in control of its own data."
+  }
+]

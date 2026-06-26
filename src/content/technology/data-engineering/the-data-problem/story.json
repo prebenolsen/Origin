@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "timeline": "The data deluge",
+    "title": "Companies are drowning in data",
+    "content": "Every company collects enormous amounts of data: clicks, purchases, sensor readings, and customer interactions. The challenge is no longer storing data — it is turning massive amounts of raw information into something useful.",
+    "next": "Where does all of this data even come from?"
+  },
+  {
+    "id": 2,
+    "timeline": "The data deluge",
+    "title": "Data pours in from everywhere",
+    "content": "A single online order can generate dozens of records: the page views before it, the items added to a cart, the payment, the shipping updates, and the support chat afterward. Multiply that by millions of customers and thousands of products, and the scale becomes staggering.",
+    "next": "If there's so much of it, isn't storing it the hard part?"
+  },
+  {
+    "id": 3,
+    "timeline": "Storage solved",
+    "title": "Storage stopped being the problem",
+    "content": "Twenty years ago, keeping all this data was expensive. Today, cloud storage is so cheap that companies can afford to keep almost everything. The bottleneck moved: the question is no longer 'can we store it?' but 'can we make sense of it?'",
+    "next": "So what makes raw data so hard to use?"
+  },
+  {
+    "id": 4,
+    "timeline": "Messy & untrusted",
+    "title": "Raw data is messy",
+    "content": "Data arrives in different formats, full of duplicates, gaps, and errors. One system spells a country 'USA', another 'United States'. Timestamps use different time zones. Before anyone can trust a number, the data has to be cleaned, matched up, and organized.",
+    "next": "Who actually needs all this cleaned-up data?"
+  },
+  {
+    "id": 5,
+    "timeline": "Messy & untrusted",
+    "title": "Everyone wants something different",
+    "content": "An analyst wants a tidy table for a weekly report. A data scientist wants raw detail to train a model. An executive wants a single dashboard number. A live app wants an instant answer. The same data must serve very different needs without contradicting itself.",
+    "next": "What happens when everyone keeps their own copy?"
+  },
+  {
+    "id": 6,
+    "timeline": "Messy & untrusted",
+    "title": "Copies create chaos",
+    "content": "When each team makes its own copy of the data, the copies drift apart. Two reports show different sales totals, and nobody knows which is right. Organizations crave a single source of truth: one trusted version everyone can rely on.",
+    "next": "How does data become trustworthy in the first place?"
+  },
+  {
+    "id": 7,
+    "timeline": "The data journey",
+    "title": "Data takes a journey",
+    "content": "Useful data is the end of a pipeline. Raw information is collected, stored, cleaned, organized, and finally served to the people and systems that need it. Each step adds quality and trust. Most of the real work in data happens along this path.",
+    "next": "Why can't a normal database just handle all of this?"
+  },
+  {
+    "id": 8,
+    "timeline": "The data journey",
+    "title": "Scale changes everything",
+    "content": "A spreadsheet works fine for a thousand rows. At a billion rows it collapses. Tools that handle small data gracefully can grind to a halt — or fall over completely — when the volume explodes. Big problems need fundamentally different tools.",
+    "next": "And what about questions that can't wait?"
+  },
+  {
+    "id": 9,
+    "timeline": "The data journey",
+    "title": "Speed matters too",
+    "content": "Some questions can wait for an overnight report. Others — fraud detection, live recommendations, a delivery map — need answers in seconds or even milliseconds. A modern data system has to handle both the patient and the urgent.",
+    "next": "Is there a name for the work of solving all this?"
+  },
+  {
+    "id": 10,
+    "timeline": "Data engineering",
+    "title": "This work is data engineering",
+    "content": "Data engineering is the craft of building the systems that turn raw, messy data into clean, reliable, ready-to-use data — at scale and at speed. It is the plumbing beneath every dashboard, every AI model, and every data-driven decision.",
+    "next": "Why was this so hard with the tools companies used first?"
+  },
+  {
+    "id": 11,
+    "timeline": "Data engineering",
+    "title": "Why this story matters",
+    "content": "Over the next modules we'll trace how the tools evolved: from rigid databases, to the big-data era, to Apache Spark, and finally to platforms like Databricks. Each step was an answer to a limit of the one before it.",
+    "next": "It starts with the tool companies reached for first: the traditional database."
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "year": "Lake + warehouse", "title": "Combine the lake's openness with warehouse reliability" },
+  { "year": "Why merge", "title": "One system removes copying, drift, and silos" },
+  { "year": "One home", "title": "One governed copy serves both BI and AI" },
+  { "year": "Medallion layers", "title": "Bronze, silver, and gold refine data in stages" },
+  { "year": "Governance", "title": "Unity Catalog controls access, lineage, and discovery" },
+  { "year": "The missing piece", "title": "Cheap storage still needs real reliability" }
+]

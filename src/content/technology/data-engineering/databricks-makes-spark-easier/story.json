@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "timeline": "A company is born",
+    "title": "The creators start a company",
+    "content": "In 2013, the team behind Spark founded Databricks. Their mission was to remove Spark's biggest pain: the infrastructure. The idea was a managed cloud service where you bring your data and ideas, and the platform runs the machines for you.",
+    "next": "What was the first thing they made easy?"
+  },
+  {
+    "id": 2,
+    "timeline": "Managed clusters",
+    "title": "Clusters with a click",
+    "content": "Setting up a Spark cluster used to take experts and patience. On Databricks, you create one with a few clicks. The platform provisions the machines, installs and configures Spark, and keeps them healthy — so you can start working in minutes.",
+    "next": "What stops those machines from wasting money?"
+  },
+  {
+    "id": 3,
+    "timeline": "Managed clusters",
+    "title": "It scales itself",
+    "content": "Databricks clusters autoscale: they add machines when the work is heavy and remove them when it's light. They also auto-terminate when idle, so you're not paying for computers doing nothing. Cost control happens automatically.",
+    "next": "Where do people actually write their code?"
+  },
+  {
+    "id": 4,
+    "timeline": "The workspace",
+    "title": "Built around notebooks",
+    "content": "The heart of the workspace is the notebook: a document where you write code in cells and see results and charts right below them. You can mix Python, SQL, Scala, and R, add notes, and edit together with teammates in real time.",
+    "next": "Is it just plain Spark running underneath?"
+  },
+  {
+    "id": 5,
+    "timeline": "The workspace",
+    "title": "A better Spark, the Databricks Runtime",
+    "content": "Underneath runs the Databricks Runtime: an optimized version of Spark with performance, reliability, and security improvements built in. It even includes Photon, a high-speed query engine. You get a faster Spark without tuning anything yourself.",
+    "next": "Could they make compute even simpler than 'one click'?"
+  },
+  {
+    "id": 6,
+    "timeline": "Serverless",
+    "title": "Serverless: forget the cluster",
+    "content": "Serverless compute goes one step further: you stop thinking about clusters entirely. Databricks instantly supplies the compute, scales it to your workload, and charges only for what you use. The infrastructure simply disappears into the background.",
+    "next": "How do you run this work automatically, every day?"
+  },
+  {
+    "id": 7,
+    "timeline": "Automation",
+    "title": "Jobs put it on autopilot",
+    "content": "A job schedules and orchestrates work. It runs tasks — notebooks, queries, or pipelines — in the right order, on a schedule or when triggered, with automatic retries and alerts if something fails. This is how data work becomes reliable production.",
+    "next": "Can you manage all of this like real software?"
+  },
+  {
+    "id": 8,
+    "timeline": "Automation",
+    "title": "Your data project, as code",
+    "content": "With asset bundles, you describe your jobs and pipelines in simple YAML configuration files. That means your whole data project can be version-controlled, reviewed, and deployed reliably — bringing software engineering's CI/CD discipline to data.",
+    "next": "Where does all of this actually run?"
+  },
+  {
+    "id": 9,
+    "timeline": "One platform",
+    "title": "Native to the cloud",
+    "content": "Databricks runs on the major clouds. On Microsoft's cloud it's a first-party service called Azure Databricks, integrated directly with Azure storage, security, and identity. You get the platform without leaving your cloud environment.",
+    "next": "Who gets to use all this in one place?"
+  },
+  {
+    "id": 10,
+    "timeline": "One platform",
+    "title": "Everyone in one workspace",
+    "content": "Data engineers, analysts, and data scientists all work in the same platform, on the same data. Instead of stitching together separate, disconnected tools, teams collaborate in one place — the original promise of a unified platform.",
+    "next": "So is the data problem finally solved?"
+  },
+  {
+    "id": 11,
+    "timeline": "One platform",
+    "title": "The engine was easy — the data wasn't",
+    "content": "Databricks made Spark easy to run. But the deeper problem remained: data still lived in messy, unreliable lakes or rigid, closed warehouses. To truly fix things, Databricks would have to rethink where the data itself should live.",
+    "next": "Their answer combined the best of both worlds: the lakehouse."
+  }
+]

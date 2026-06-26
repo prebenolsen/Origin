@@ -1,0 +1,34 @@
+{
+  "title": "The Data Problem",
+  "period": "1960s–today: the data explosion",
+  "category": "technology",
+  "subcategory": "data-engineering",
+  "summary": "Every company now collects oceans of data — clicks, sales, sensors. The real challenge is no longer storing it, but turning raw information into something useful.",
+  "accent": "#64748b",
+  "context": {
+    "type": "schematic",
+    "headline": "Drowning in data, thirsty for insight",
+    "description": "Modern companies collect enormous amounts of data from every direction. Storing it has become cheap and easy. The hard part is turning that messy flood of raw information into something clean, trustworthy, and useful. That problem is what the whole field of data engineering exists to solve.",
+    "when": "From the first business databases to today's data-driven companies",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "clicks", "label": "Clicks", "x": 14, "y": 20, "role": "secondary" },
+        { "id": "sales", "label": "Purchases", "x": 14, "y": 40, "role": "secondary" },
+        { "id": "sensors", "label": "Sensor readings", "x": 14, "y": 60, "role": "secondary" },
+        { "id": "support", "label": "Customer activity", "x": 14, "y": 80, "role": "secondary" },
+        { "id": "company", "label": "The company", "x": 48, "y": 50, "role": "primary" },
+        { "id": "raw", "label": "Mountains of raw data", "x": 72, "y": 28, "role": "secondary" },
+        { "id": "insight", "label": "Useful insight", "x": 83, "y": 66, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "clicks", "to": "company", "label": "collected" },
+        { "from": "sales", "to": "company" },
+        { "from": "sensors", "to": "company" },
+        { "from": "support", "to": "company" },
+        { "from": "company", "to": "raw", "label": "piles up" },
+        { "from": "raw", "to": "insight", "label": "the hard part" }
+      ]
+    }
+  }
+}

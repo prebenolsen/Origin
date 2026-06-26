@@ -1,5 +1,52 @@
-﻿{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+﻿[
+    {
+        "id": 1,
+        "front": "Geopolitics",
+        "back": "The study of how geography shapes state strategy, constraints, and international behavior."
+    },
+    {
+        "id": 2,
+        "front": "Great Game",
+        "back": "19th-century rivalry between Britain and Russia over influence in Eurasia, especially around routes to India."
+    },
+    {
+        "id": 3,
+        "front": "Heartland theory",
+        "back": "Mackinder's idea that control of Eurasia's interior could enable large-scale strategic dominance."
+    },
+    {
+        "id": 4,
+        "front": "Rimland",
+        "back": "The Eurasian coastal and edge zones that Spykman viewed as central to balancing continental power."
+    },
+    {
+        "id": 5,
+        "front": "Containment",
+        "back": "A strategy to limit rival expansion through alliances, forward positioning, and pressure along key regions."
+    },
+    {
+        "id": 6,
+        "front": "Buffer state",
+        "back": "A state located between rivals, often used to reduce direct military or political confrontation."
+    },
+    {
+        "id": 7,
+        "front": "Sea power vs land power",
+        "back": "A strategic contrast between control of maritime routes and continental depth/territorial reach."
+    },
+    {
+        "id": 8,
+        "front": "Unipolar moment",
+        "back": "The post-1991 period when the U.S. was the sole superpower after the Soviet Union collapsed."
+    },
+    {
+        "id": 9,
+        "front": "Geopolitical hotspot",
+        "back": "A region where strategic routes, rival powers, and local conflicts overlap and raise escalation risk."
+    },
+    {
+        "id": 10,
+        "front": "Main analytical caution",
+        "back": "Geography matters deeply, but it does not fully determine outcomes without politics, economics, and leadership choices."
+    }
+]

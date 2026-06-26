@@ -1,13 +1,85 @@
-﻿{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+﻿[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "Which statement best captures the core idea of geopolitics?",
+        "options": [
+            "Geography completely determines political outcomes",
+            "International politics is mostly random",
+            "Geography shapes strategic constraints and opportunities for states",
+            "Only military size matters in world affairs"
+        ],
+        "answer": 2,
+        "explanation": "Geopolitics emphasizes geographic constraints and incentives, but does not claim that geography is the only cause."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "In Great Game thinking, Afghanistan mattered largely as a buffer between empires.",
+        "answer": true,
+        "explanation": "Afghanistan sat between British India and Russian expansion, making it strategically important as a buffer zone."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "Why did Mackinder worry about control of Eastern Europe and the Heartland?",
+        "options": [
+            "He believed sea routes had become irrelevant",
+            "He feared rail-enabled land power could project force across Eurasia",
+            "He thought colonial empires had ended in 1904",
+            "He argued ideology was stronger than geography"
+        ],
+        "answer": 1,
+        "explanation": "Mackinder's concern was that rail and continental depth could let a land power dominate the Eurasian core and project force."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Put these milestones in chronological order.",
+        "items": [
+            "Cold War containment along Eurasia's rimland",
+            "Congress of Vienna and post-Napoleonic balance",
+            "Soviet collapse and unipolar U.S. moment",
+            "Mackinder publishes Heartland theory"
+        ],
+        "correctOrder": [1, 3, 0, 2],
+        "explanation": "The sequence is 1815, 1904, Cold War era, then post-1991 unipolar moment."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each concept to the best description.",
+        "pairs": [
+            {
+                "left": "Heartland",
+                "right": "Eurasian interior seen as core land-power zone"
+            },
+            {
+                "left": "Rimland",
+                "right": "Coastal and edge regions central to containment strategy"
+            },
+            {
+                "left": "Containment",
+                "right": "Limiting an adversary's expansion through alliances and positioning"
+            },
+            {
+                "left": "Buffer state",
+                "right": "Territory between rivals used to reduce direct confrontation"
+            }
+        ],
+        "explanation": "These concepts explain how geography and strategy interact from imperial to Cold War and post-Cold War contexts."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "What is a common misconception this module corrects?",
+        "options": [
+            "Geopolitics has no relevance after 1991",
+            "Geopolitics can replace economics and domestic politics",
+            "Geopolitics is a framework for constraints, not a complete prediction machine",
+            "Hotspots are unrelated to transport routes and chokepoints"
+        ],
+        "answer": 2,
+        "explanation": "The module stresses that geopolitics is useful but incomplete unless combined with political, economic, and social analysis."
+    }
+]

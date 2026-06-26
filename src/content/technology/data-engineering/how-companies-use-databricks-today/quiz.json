@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What is the first step in the data lifecycle on Databricks?",
+    "options": [
+      "Building a dashboard",
+      "Ingestion — bringing data into the lakehouse with tools like Auto Loader and connectors",
+      "Training a model",
+      "Deleting old tables"
+    ],
+    "answer": 1,
+    "explanation": "Before anything else, data must be ingested into the lakehouse, where it lands as raw bronze tables."
+  },
+  {
+    "id": 2,
+    "type": "matching",
+    "question": "Match each stage or tool to what it does.",
+    "pairs": [
+      { "left": "Ingestion", "right": "Getting data into the lakehouse" },
+      { "left": "Pipelines", "right": "Transforming raw data into refined tables" },
+      { "left": "Jobs", "right": "Scheduling and orchestrating the whole flow" },
+      { "left": "Genie", "right": "Asking data questions in plain English" }
+    ],
+    "explanation": "Ingest, transform, and orchestrate build the clean data; Genie and dashboards then make it accessible to everyone."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "The lakehouse can handle both batch and streaming data on the same tables.",
+    "answer": true,
+    "explanation": "Batch loads scheduled chunks; streaming flows in continuously. The lakehouse supports both, so each use case picks the speed it needs."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Order the end-to-end data flow.",
+    "items": [
+      "Refine it through bronze, silver, and gold",
+      "Ingest the raw data",
+      "Serve dashboards, AI, and apps"
+    ],
+    "correctOrder": [1, 0, 2],
+    "explanation": "Data is ingested, refined through the medallion layers, then served to BI, machine learning, generative AI, and live apps."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "What do vector search and RAG let companies build?",
+    "options": [
+      "Cheaper storage",
+      "AI chatbots and agents that answer from the company's own data",
+      "Faster batch jobs",
+      "A replacement for SQL"
+    ],
+    "answer": 1,
+    "explanation": "Retrieval-augmented generation (RAG) plus vector search ground generative AI in your governed data, so answers come from your own content."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What is Lakebase used for?",
+    "options": [
+      "Long-term cold storage",
+      "Serving fresh data to live applications at low latency",
+      "Drawing dashboards",
+      "Training large models"
+    ],
+    "answer": 1,
+    "explanation": "Lakebase is a managed database that serves data to live apps quickly, closing the loop from analytics back into products."
+  }
+]

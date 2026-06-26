@@ -40,3 +40,13 @@ module row status to DONE.
   from `raw.md` into all five content JSON files and set tracker status to DONE.
 - 2026-06-25: Completed `psychology/communication/becoming-a-better-conversationalist`
   from `raw.md` into all five content JSON files and set tracker status to DONE.
+- 2026-06-25: Completed `psychology/learning/memory-and-learning`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.
+- 2026-06-25: Completed `politics/global-politics/geopolitics-why-geography-matters`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.
+- 2026-06-26: Created new **Technology → Data Engineering** category and authored eight
+  Databricks modules from `docs/databricks-research.md` into all five content JSON files each,
+  set tracker status to DONE: `the-data-problem`, `why-traditional-databases-struggled`,
+  `the-rise-of-big-data`, `apache-spark-appears`, `databricks-makes-spark-easier`,
+  `the-lakehouse-idea`, `delta-lake-solves-reliability-problems`,
+  `how-companies-use-databricks-today`.

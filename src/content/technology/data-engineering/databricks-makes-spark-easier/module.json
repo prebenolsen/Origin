@@ -1,0 +1,34 @@
+{
+  "title": "Databricks Makes Spark Easier",
+  "period": "2013–today: from open-source engine to managed platform",
+  "category": "technology",
+  "subcategory": "data-engineering",
+  "summary": "Spark's own creators founded Databricks to take away the hard part: managing infrastructure. Clusters with a click, serverless compute, collaborative notebooks, and scheduled jobs — all in the cloud.",
+  "accent": "#dc2626",
+  "context": {
+    "type": "schematic",
+    "headline": "The engine, wrapped in an easy platform",
+    "description": "Apache Spark was powerful but hard to operate. Databricks, founded by Spark's creators, wraps the engine in a managed cloud platform: spin up compute with a click (or go serverless), work in collaborative notebooks, and schedule production jobs — without wrangling servers. On Microsoft's cloud, it's a first-party service called Azure Databricks.",
+    "when": "From founding the company to today's serverless, collaborative platform",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "platform", "label": "Databricks platform", "x": 50, "y": 24, "role": "primary" },
+        { "id": "notebooks", "label": "Notebooks", "x": 20, "y": 42, "role": "secondary" },
+        { "id": "spark", "label": "Apache Spark engine", "x": 50, "y": 52, "role": "secondary" },
+        { "id": "clusters", "label": "Managed & serverless compute", "x": 80, "y": 42, "role": "secondary" },
+        { "id": "jobs", "label": "Jobs & pipelines", "x": 24, "y": 74, "role": "secondary" },
+        { "id": "cloud", "label": "Runs on the cloud (Azure)", "x": 76, "y": 74, "role": "primary" },
+        { "id": "you", "label": "You bring the data", "x": 50, "y": 89, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "platform", "to": "spark", "label": "manages" },
+        { "from": "notebooks", "to": "platform" },
+        { "from": "clusters", "to": "platform" },
+        { "from": "jobs", "to": "platform" },
+        { "from": "platform", "to": "cloud", "label": "deploys on" },
+        { "from": "you", "to": "platform", "label": "just use it" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "Lakehouse", "back": "One system that combines a data lake's cheap, open storage with a data warehouse's reliability and structure." },
+  { "id": 2, "front": "Why combine lake + warehouse", "back": "Running both separately means copying data, drift, double cost, and silos. One system removes that friction." },
+  { "id": 3, "front": "Open formats", "back": "Standard, non-proprietary file formats that keep data accessible to many tools and under your control." },
+  { "id": 4, "front": "Single source of truth", "back": "One trusted, governed copy of the data that everyone reads — so reports finally agree." },
+  { "id": 5, "front": "Medallion architecture", "back": "Organizing the lakehouse into bronze, silver, and gold layers that progressively refine data quality." },
+  { "id": 6, "front": "Bronze layer", "back": "Raw data kept exactly as it arrived, preserving full fidelity so it can be reprocessed later." },
+  { "id": 7, "front": "Silver layer", "back": "Cleaned, validated, deduplicated, and joined data — the trustworthy, detailed foundation." },
+  { "id": 8, "front": "Gold layer", "back": "Business-ready aggregated tables and metrics, shaped for dashboards, reports, and decisions." },
+  { "id": 9, "front": "Unity Catalog", "back": "The lakehouse's unified governance layer: access control, data lineage, and data discovery in one place." },
+  { "id": 10, "front": "Data lineage", "back": "A record of where data came from and how it was transformed, from raw source to final report." }
+]

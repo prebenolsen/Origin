@@ -4,6 +4,54 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [1.26.0] - 2026-06-26
+
+### Added - new Technology → Data Engineering category: 8 Databricks modules
+- Created a new top-level **Technology** category with a **Data Engineering** subcategory
+  (auto-discovered by the content registry; no code changes needed).
+- Authored eight complete modules — `module.json`, `story.json`, `timeline.json`, `quiz.json`,
+  and `flashcards.json` each — that teach the Databricks / data-engineering story as one
+  connected arc:
+  - `the-data-problem`
+  - `why-traditional-databases-struggled`
+  - `the-rise-of-big-data`
+  - `apache-spark-appears`
+  - `databricks-makes-spark-easier`
+  - `the-lakehouse-idea`
+  - `delta-lake-solves-reliability-problems`
+  - `how-companies-use-databricks-today`
+- Built from `docs/databricks-research.md` (compiled from the official Azure Databricks
+  documentation). Each module ends on a curiosity hook leading into the next, and uses
+  stage-aligned timelines that advance as the learner scrolls.
+- Updated `docs/content.md` and marked all eight Technology rows as `DONE`.
+- Updated `docs/architecture.md` with a completion note.
+
+## [1.25.0] - 2026-06-25
+
+### Added - authored Politics Global Politics module from source transcript
+- Completed `src/content/politics/global-politics/geopolitics-why-geography-matters/` by replacing placeholders in all five content files:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Built a complete learning flow from `raw.md` focused on geopolitical fundamentals, the Great Game, Heartland and Rimland theories, Cold War containment, and modern hotspot competition.
+- Updated `docs/content.md` and marked `Politics | Global Politics | Geopolitics: Why Geography Matters` as `DONE`.
+- Updated `docs/architecture.md` with the latest completion note for this module.
+
+## [1.24.0] - 2026-06-25
+
+### Added - authored Psychology Learning module from source transcript
+- Completed `src/content/psychology/learning/memory-and-learning/` by replacing placeholders in all five content files:
+  - `module.json`
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Built a full learning flow from `raw.md` focused on active recall, visual encoding, structured memorization, consumption-vs-digestion balance, and the PACER processing model.
+- Updated `docs/content.md` and marked `Psychology | Learning | Memory and Learning` as `DONE`.
+- Updated `docs/architecture.md` with the latest completion note for this module.
+
 ## [1.23.1] - 2026-06-25
 
 ### Added - module search on the Home screen

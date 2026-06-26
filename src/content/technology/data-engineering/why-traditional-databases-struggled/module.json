@@ -1,0 +1,32 @@
+{
+  "title": "Why Traditional Databases Struggled",
+  "period": "1970–2000s: the relational era and its limits",
+  "category": "technology",
+  "subcategory": "data-engineering",
+  "summary": "Relational databases and data warehouses powered business for decades — but rigid structure, costly scaling, and closed formats left them struggling with the modern flood of data.",
+  "accent": "#0e7490",
+  "context": {
+    "type": "schematic",
+    "headline": "Great for tidy tables, strained by everything else",
+    "description": "For decades, companies relied on relational databases to record transactions and on data warehouses to analyze them. These tools were powerful for clean, structured data — but they demanded rigid structure up front, scaled expensively, locked data in closed formats, and had no good answer for the explosion of new data types.",
+    "when": "From the invention of the relational model to the strain of the internet era",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "oltp", "label": "Transactional DB (OLTP)", "x": 18, "y": 28, "role": "secondary" },
+        { "id": "schema", "label": "Rigid schema", "x": 50, "y": 20, "role": "secondary" },
+        { "id": "warehouse", "label": "Data warehouse (OLAP)", "x": 50, "y": 52, "role": "primary" },
+        { "id": "structured", "label": "Neat rows & columns", "x": 22, "y": 72, "role": "secondary" },
+        { "id": "misfit", "label": "Text, images, logs", "x": 80, "y": 28, "role": "secondary" },
+        { "id": "wall", "label": "Scale & cost wall", "x": 80, "y": 70, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "oltp", "to": "warehouse", "label": "copy in" },
+        { "from": "schema", "to": "warehouse", "label": "define first" },
+        { "from": "structured", "to": "warehouse", "label": "fits" },
+        { "from": "misfit", "to": "warehouse", "label": "doesn't fit" },
+        { "from": "warehouse", "to": "wall", "label": "hits limits" }
+      ]
+    }
+  }
+}

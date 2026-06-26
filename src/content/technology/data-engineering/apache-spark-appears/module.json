@@ -1,0 +1,34 @@
+{
+  "title": "Apache Spark Appears",
+  "period": "2009–2010s: the fast, friendly big-data engine",
+  "category": "technology",
+  "subcategory": "data-engineering",
+  "summary": "Born in a Berkeley lab, Apache Spark made big data fast and approachable: process data in memory across a cluster, using simple commands in Python, SQL, Scala, or R.",
+  "accent": "#ea580c",
+  "context": {
+    "type": "schematic",
+    "headline": "One brain, many workers, all in memory",
+    "description": "Apache Spark fixed what made early big data painful. It keeps data in memory for speed, spreads work across a cluster of machines coordinated by a driver, and lets you write in friendly languages instead of low-level code. One engine handles batch, SQL, streaming, and machine learning.",
+    "when": "From the AMPLab research project to the industry-standard engine",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "driver", "label": "Driver (coordinator)", "x": 50, "y": 16, "role": "primary" },
+        { "id": "exec1", "label": "Executor", "x": 24, "y": 46, "role": "secondary" },
+        { "id": "exec2", "label": "Executor", "x": 50, "y": 46, "role": "secondary" },
+        { "id": "exec3", "label": "Executor", "x": 76, "y": 46, "role": "secondary" },
+        { "id": "memory", "label": "In-memory speed", "x": 50, "y": 74, "role": "primary" },
+        { "id": "lake", "label": "Data in the lake", "x": 18, "y": 82, "role": "secondary" },
+        { "id": "langs", "label": "Python · SQL · Scala · R", "x": 82, "y": 82, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "driver", "to": "exec1", "label": "splits work" },
+        { "from": "driver", "to": "exec2" },
+        { "from": "driver", "to": "exec3" },
+        { "from": "lake", "to": "exec1", "label": "read" },
+        { "from": "exec2", "to": "memory", "label": "process in RAM" },
+        { "from": "langs", "to": "driver", "label": "you write" }
+      ]
+    }
+  }
+}

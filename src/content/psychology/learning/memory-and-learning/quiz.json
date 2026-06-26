@@ -1,14 +1,86 @@
-{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+    {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "Why does active recall usually beat highlighting for long-term learning?",
+        "options": [
+            "It reduces the total amount of reading to zero",
+            "It creates familiarity without effort",
+            "It forces retrieval, which strengthens memory pathways",
+            "It only works for visual learners"
+        ],
+        "answer": 2,
+        "explanation": "Retrieving information from memory is effortful and strengthens retention more than passive review methods."
+    },
+    {
+        "id": 2,
+        "type": "true-false",
+        "question": "If you cannot practice procedural knowledge immediately, it is usually best to keep reading more material first.",
+        "answer": false,
+        "explanation": "For procedural knowledge, delayed practice increases forgetting. Balance intake with immediate processing whenever possible."
+    },
+    {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "In the visualize-structure-repeat model, what is the main role of structure?",
+        "options": [
+            "To make notes look more detailed",
+            "To link images in an ordered path that aids recall",
+            "To replace all conceptual understanding",
+            "To remove the need for repetition"
+        ],
+        "answer": 1,
+        "explanation": "Structure organizes memory cues so one idea leads to the next, improving retrieval reliability."
+    },
+    {
+        "id": 4,
+        "type": "ordering",
+        "question": "Put these steps in the most effective order for a study block.",
+        "items": [
+            "Check gaps by returning to the source",
+            "Read or watch a focused section",
+            "Step away and reconstruct key points from memory",
+            "Rework only the weak points and test again"
+        ],
+        "correctOrder": [1, 2, 0, 3],
+        "explanation": "Consume first, recall second, verify third, and then target weak points through another retrieval cycle."
+    },
+    {
+        "id": 5,
+        "type": "matching",
+        "question": "Match each PACER category to its best processing action.",
+        "pairs": [
+            {
+                "left": "Procedural",
+                "right": "Practice quickly in real conditions"
+            },
+            {
+                "left": "Analogous",
+                "right": "Critique the similarity and limits"
+            },
+            {
+                "left": "Conceptual",
+                "right": "Map relationships between ideas"
+            },
+            {
+                "left": "Reference",
+                "right": "Store and rehearse with direct recall"
+            }
+        ],
+        "explanation": "PACER improves retention by pairing each information type with the processing method that fits it best."
+    },
+    {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "What is the best definition of the consumption-digestion balance?",
+        "options": [
+            "Only consume when you can memorize every detail",
+            "Consume as much as possible before any review",
+            "Keep intake and processing aligned so information gets encoded",
+            "Avoid consuming new information during revision weeks"
+        ],
+        "answer": 2,
+        "explanation": "Learning requires both intake and processing. Without digestion, most consumed material is forgotten."
+    }
+]
 

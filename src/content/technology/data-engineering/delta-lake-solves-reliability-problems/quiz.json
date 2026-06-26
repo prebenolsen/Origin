@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What core problem does Delta Lake solve?",
+    "options": [
+      "It makes storage more expensive",
+      "It makes cheap data-lake files reliable, preventing corruption from failed or concurrent writes",
+      "It deletes old data",
+      "It replaces SQL"
+    ],
+    "answer": 1,
+    "explanation": "Plain lake files have no safety net. Delta adds reliability (ACID) so half-written or competing writes can't corrupt the data."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "What is the role of Delta Lake's transaction log?",
+    "options": [
+      "It stores backups on tape",
+      "It records every change; a change only counts once logged, so readers never see half-finished writes",
+      "It compresses images",
+      "It speeds up the internet"
+    ],
+    "answer": 1,
+    "explanation": "The ordered log is the heart of Delta: a write becomes visible only when committed to the log, designing corruption out."
+  },
+  {
+    "id": 3,
+    "type": "matching",
+    "question": "Match each Delta Lake capability to what it means.",
+    "pairs": [
+      { "left": "Atomicity", "right": "A change fully happens or not at all" },
+      { "left": "Time travel", "right": "Query or restore previous versions of a table" },
+      { "left": "Schema enforcement", "right": "Reject incoming data that doesn't fit the table" },
+      { "left": "MERGE (upsert)", "right": "Update existing rows and insert new ones in one step" }
+    ],
+    "explanation": "These features bring database-grade reliability and flexibility to data stored cheaply in the lake."
+  },
+  {
+    "id": 4,
+    "type": "true-false",
+    "question": "Delta Lake's time travel lets you query previous versions of a table and roll back mistakes.",
+    "answer": true,
+    "explanation": "Because the log records every version, you can read the table as it was in the past and undo bad changes quickly."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "A Delta table can only be used for batch jobs, never for streaming.",
+    "answer": false,
+    "explanation": "A single Delta table can be fed by a batch job and a real-time stream at the same time, reliably — batch and streaming unified."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "On Databricks, what format are tables by default?",
+    "options": [
+      "Plain CSV files",
+      "A secret proprietary format",
+      "Delta Lake",
+      "No format at all"
+    ],
+    "answer": 2,
+    "explanation": "Every table on Databricks is a Delta table by default, so you get ACID reliability automatically — and Delta is open source."
+  }
+]

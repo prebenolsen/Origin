@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What was Spark's main speed advantage over MapReduce?",
+    "options": [
+      "It used a single giant machine",
+      "It kept data in memory between steps instead of writing to disk each time",
+      "It processed less data",
+      "It avoided using clusters"
+    ],
+    "answer": 1,
+    "explanation": "MapReduce wrote to disk after every step. Spark keeps data in memory between steps, making it dramatically faster for repeated work."
+  },
+  {
+    "id": 2,
+    "type": "matching",
+    "question": "Match each Spark concept to its role.",
+    "pairs": [
+      { "left": "Driver", "right": "The coordinator that plans the work" },
+      { "left": "Executors", "right": "Workers that process data chunks in parallel" },
+      { "left": "DataFrame", "right": "A distributed table of rows and columns" },
+      { "left": "Cluster", "right": "The group of machines acting as one" }
+    ],
+    "explanation": "The driver plans and splits a job into tasks; executors run those tasks in parallel across the cluster on DataFrames."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "In Spark, transformations are 'lazy' — they build a plan and only run when an action is called.",
+    "answer": true,
+    "explanation": "Lazy evaluation lets Spark see the whole plan first and optimize it before executing, instead of running each step immediately."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "Why was Spark easier to use than MapReduce?",
+    "options": [
+      "It required no code at all",
+      "It only worked on small data",
+      "You could write in Python, SQL, Scala, or R instead of low-level Java",
+      "It ran only on a single laptop"
+    ],
+    "answer": 2,
+    "explanation": "Friendly language APIs opened big data to analysts and data scientists, not just specialist Java engineers."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "What does it mean that Spark is a 'unified engine'?",
+    "options": [
+      "It can only run one job at a time",
+      "The same engine handles batch, SQL, streaming, and machine learning",
+      "It merges all data into one giant file",
+      "It replaces the need for any storage"
+    ],
+    "answer": 1,
+    "explanation": "Spark unified workloads that previously needed separate tools, so one engine and skill set covers many jobs."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "Even though Spark was powerful, running it still meant setting up and managing clusters and infrastructure.",
+    "answer": true,
+    "explanation": "Operating raw Spark was a chore — exactly the gap its creators set out to close by founding Databricks."
+  }
+]

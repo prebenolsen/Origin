@@ -1,5 +1,27 @@
-{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+[
+    {
+        "year": "Stage 1",
+        "title": "Passive study is identified as a retention problem"
+    },
+    {
+        "year": "Stage 2",
+        "title": "Active recall is adopted as the core learning method"
+    },
+    {
+        "year": "Stage 3",
+        "title": "Visualization and structure improve encoding"
+    },
+    {
+        "year": "Stage 4",
+        "title": "Consumption and digestion are balanced"
+    },
+    {
+        "year": "Stage 5",
+        "title": "PACER aligns processing with information type"
+    },
+    {
+        "year": "Stage 6",
+        "title": "Learning is measured by application, not rereading"
+    }
+]
 

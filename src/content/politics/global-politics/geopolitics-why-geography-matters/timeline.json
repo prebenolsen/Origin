@@ -1,4 +1,26 @@
-﻿{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+﻿[
+    {
+        "year": "1815",
+        "title": "Congress of Vienna establishes European balance of power"
+    },
+    {
+        "year": "1815-1907",
+        "title": "Great Game rivalry between British and Russian empires"
+    },
+    {
+        "year": "1904",
+        "title": "Mackinder publishes the Heartland thesis"
+    },
+    {
+        "year": "1947-1991",
+        "title": "Cold War containment and rimland strategy"
+    },
+    {
+        "year": "1991",
+        "title": "Soviet collapse and U.S. unipolar moment"
+    },
+    {
+        "year": "2001-present",
+        "title": "Renewed great-power competition across Eurasia"
+    }
+]

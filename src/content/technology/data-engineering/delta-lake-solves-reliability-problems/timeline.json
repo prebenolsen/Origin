@@ -1,0 +1,7 @@
+[
+  { "year": "The reliability gap", "title": "Plain lake files can be corrupted by failed writes" },
+  { "year": "The transaction log", "title": "A log of every change brings ACID reliability" },
+  { "year": "Time travel & schema", "title": "Query past versions and reject bad data" },
+  { "year": "Updates & streaming", "title": "Merge changes and unify batch with streaming" },
+  { "year": "The foundation", "title": "Open, default, and the basis of the lakehouse" }
+]

@@ -80,7 +80,7 @@
 | Politics | Foundations | Democracy and Dictatorship | Different ways power is gained, used, and limited | ------ |
 | Politics | Foundations | Constitutions and Rule of Law | How societies create rules to control government power | ------ |
 | Politics | Foundations | States and Governments | What makes a country, how governments function, and how authority is organized | ------ |
-| Politics | Global Politics | Geopolitics: Why Geography Matters | How location, resources, and power shape international relations | ------ |
+| Politics | Global Politics | Geopolitics: Why Geography Matters | How location, resources, and power shape international relations | DONE |
 | Politics | Global Politics | The United Nations and World Order | 1945–present: global cooperation and international institutions | ------ |
 | The Modern World | Technology | Artificial Intelligence | 1950s–present: AI development and societal impact | ------ |
 | The Modern World | Technology | The Digital Revolution | Internet, smartphones, and digital society | ------ |
@@ -104,7 +104,7 @@
 | Psychology | Social Psychology | Human Relationships and Social Bonds   | Attraction, friendship, trust, conflict, and cooperation       | DONE |
 | Psychology | Emotions          | Understanding Emotions                 | Why humans feel emotions and how emotions guide behavior       |
 | Psychology | Emotions          | Emotional Regulation                   | How people manage feelings, reactions, and impulses            | DONE |
-| Psychology | Learning          | Memory and Learning                    | How humans learn, remember, and adapt                          |
+| Psychology | Learning          | Memory and Learning                    | How humans learn, remember, and adapt                          | DONE |
 | Psychology | Learning          | Habits and Behavior Change             | How behaviors form and how they can be changed                 |
 | Psychology | Motivation        | Motivation and Goal Achievement        | Why people pursue goals and what drives action                 |
 | Psychology | Motivation        | Self-Control and Procrastination       | Why people delay actions and how behavior changes              |
@@ -123,3 +123,11 @@
 | Psychology | Communication | Persuasion and Influence                      | Trust, credibility, storytelling, negotiation, and ethics         | ------ |
 | Psychology | Communication | Dealing with Difficult People                 | Workplace and interpersonal conflict management | DONE |
 | Psychology | Communication | Communicate with Confidence                   | Speaking clearly and assertively under pressure | DONE |
+| Technology | Data Engineering | The Data Problem | Why modern companies are drowning in data and what makes it hard to use | DONE |
+| Technology | Data Engineering | Why Traditional Databases Struggled | The limits of relational databases and classic data warehouses at scale | DONE |
+| Technology | Data Engineering | The Rise of Big Data | Volume, velocity, and variety — and how the cloud changed storage | DONE |
+| Technology | Data Engineering | Apache Spark Appears | Fast, distributed data processing across clusters of machines | DONE |
+| Technology | Data Engineering | Databricks Makes Spark Easier | Notebooks, clusters, and serverless: turning Spark into a platform | DONE |
+| Technology | Data Engineering | The Lakehouse Idea | Combining the flexibility of data lakes with the reliability of warehouses | DONE |
+| Technology | Data Engineering | Delta Lake Solves Reliability Problems | ACID transactions and trustworthy tables on top of the data lake | DONE |
+| Technology | Data Engineering | How Companies Use Databricks Today | Ingestion, pipelines, jobs, streaming, batch, and AI in production | DONE |

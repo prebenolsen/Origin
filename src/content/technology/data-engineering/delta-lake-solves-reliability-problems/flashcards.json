@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "Delta Lake", "back": "An open-source storage layer that adds a transaction log to Parquet files, making data-lake storage reliable." },
+  { "id": 2, "front": "Transaction log", "back": "An ordered record of every change to a table. A change counts only once logged, so readers never see half-finished writes." },
+  { "id": 3, "front": "ACID transactions", "back": "The reliability standard (Atomicity, Consistency, Isolation, Durability) that keeps data correct even with concurrent access." },
+  { "id": 4, "front": "Atomicity", "back": "A change either fully happens or doesn't happen at all — never half-applied." },
+  { "id": 5, "front": "Time travel", "back": "Querying or restoring previous versions of a Delta table, making mistakes recoverable and auditing easy." },
+  { "id": 6, "front": "Schema enforcement", "back": "Checking incoming data against the table's expected columns and types, and rejecting data that doesn't fit." },
+  { "id": 7, "front": "Schema evolution", "back": "Deliberately changing a table's structure over time in a safe, controlled way." },
+  { "id": 8, "front": "MERGE (upsert)", "back": "A single operation that updates existing rows and inserts new ones — ideal for keeping a table in sync with a source." },
+  { "id": 9, "front": "Batch + streaming unified", "back": "One Delta table can be written by a scheduled batch job and a real-time stream at the same time, reliably." },
+  { "id": 10, "front": "Parquet", "back": "The popular open columnar file format that Delta Lake builds on and extends with its transaction log." }
+]

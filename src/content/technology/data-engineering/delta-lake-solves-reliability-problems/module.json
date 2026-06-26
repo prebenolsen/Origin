@@ -1,0 +1,34 @@
+{
+  "title": "Delta Lake Solves Reliability Problems",
+  "period": "2017–today: making the data lake trustworthy",
+  "category": "technology",
+  "subcategory": "data-engineering",
+  "summary": "Plain lake files offer no safety net. Delta Lake adds a transaction log on top of open Parquet files, bringing database-grade reliability — ACID transactions, time travel, and schema enforcement — to cheap storage.",
+  "accent": "#059669",
+  "context": {
+    "type": "schematic",
+    "headline": "Loose files become trustworthy tables",
+    "description": "A data lake is just files, with no transactions and no guarantees. Delta Lake fixes this by adding a transaction log on top of open Parquet files. A change only counts once it is recorded in the log, which delivers ACID reliability, the ability to query past versions (time travel), schema enforcement, and one table that serves both batch and streaming.",
+    "when": "From unreliable lake files to the foundation of the lakehouse",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "files", "label": "Parquet data files", "x": 20, "y": 28, "role": "secondary" },
+        { "id": "log", "label": "Transaction log", "x": 20, "y": 62, "role": "primary" },
+        { "id": "delta", "label": "Delta table (reliable)", "x": 50, "y": 46, "role": "primary" },
+        { "id": "acid", "label": "ACID guarantees", "x": 80, "y": 24, "role": "secondary" },
+        { "id": "timetravel", "label": "Time travel (versions)", "x": 82, "y": 50, "role": "secondary" },
+        { "id": "schema", "label": "Schema enforcement", "x": 80, "y": 76, "role": "secondary" },
+        { "id": "streams", "label": "Batch + streaming", "x": 50, "y": 86, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "files", "to": "delta", "label": "data" },
+        { "from": "log", "to": "delta", "label": "every change recorded" },
+        { "from": "delta", "to": "acid" },
+        { "from": "delta", "to": "timetravel" },
+        { "from": "delta", "to": "schema" },
+        { "from": "streams", "to": "delta", "label": "one table" }
+      ]
+    }
+  }
+}

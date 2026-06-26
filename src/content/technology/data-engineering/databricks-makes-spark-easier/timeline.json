@@ -1,0 +1,8 @@
+[
+  { "year": "A company is born", "title": "Spark's creators found Databricks (2013)" },
+  { "year": "Managed clusters", "title": "Clusters with a click that scale and shut off themselves" },
+  { "year": "The workspace", "title": "Collaborative notebooks on an optimized runtime" },
+  { "year": "Serverless", "title": "Compute with no clusters to manage at all" },
+  { "year": "Automation", "title": "Jobs and code-as-config bring CI/CD to data" },
+  { "year": "One platform", "title": "One cloud platform (Azure Databricks) for every team" }
+]

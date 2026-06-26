@@ -1,6 +1,53 @@
-{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+    {
+        "id": 1,
+        "front": "Active recall",
+        "back": "Trying to retrieve information from memory without looking at notes; it strengthens long-term retention."
+    },
+    {
+        "id": 2,
+        "front": "Passive familiarity",
+        "back": "The illusion of knowing caused by rereading or highlighting without testing recall."
+    },
+    {
+        "id": 3,
+        "front": "Struggle pile",
+        "back": "A set of weak items you repeatedly test and rework until recall improves."
+    },
+    {
+        "id": 4,
+        "front": "Visualization",
+        "back": "Turning abstract information into memorable mental images to improve encoding."
+    },
+    {
+        "id": 5,
+        "front": "Memory structure",
+        "back": "A framework such as a story, chunk, or memory palace that links items in recall order."
+    },
+    {
+        "id": 6,
+        "front": "Consumption stage",
+        "back": "Taking in information through reading, watching, or listening."
+    },
+    {
+        "id": 7,
+        "front": "Digestion stage",
+        "back": "Processing information through retrieval, mapping, critique, practice, and rehearsal."
+    },
+    {
+        "id": 8,
+        "front": "PACER: Procedural",
+        "back": "How-to knowledge; best learned through early and repeated practice."
+    },
+    {
+        "id": 9,
+        "front": "PACER: Conceptual",
+        "back": "Principles and relationships; best learned by mapping connections into a coherent model."
+    },
+    {
+        "id": 10,
+        "front": "Usable knowledge",
+        "back": "Remembering what matters in a form you can apply to solve problems, not just recite."
+    }
+]
 

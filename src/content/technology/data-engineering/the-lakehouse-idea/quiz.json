@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What does a lakehouse combine?",
+    "options": [
+      "Two separate data warehouses",
+      "The cheap, open storage of a data lake with the reliability and structure of a warehouse",
+      "A database and a spreadsheet",
+      "Storage with no governance"
+    ],
+    "answer": 1,
+    "explanation": "The lakehouse keeps the lake's cheap, flexible, open storage and adds the warehouse's reliability and structure — in one system."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "What is the main benefit of one lakehouse over separate lake and warehouse systems?",
+    "options": [
+      "It deletes old data automatically",
+      "One copy of data serves everyone (BI and ML), avoiding copies, drift, and silos",
+      "It only works for small data",
+      "It removes the need for any storage"
+    ],
+    "answer": 1,
+    "explanation": "A single governed store means no constant copying between systems, no drift, and no split between the BI and data-science worlds."
+  },
+  {
+    "id": 3,
+    "type": "ordering",
+    "question": "Order the medallion layers from rawest to most refined.",
+    "items": [
+      "Silver (cleaned and validated)",
+      "Gold (business-ready aggregates)",
+      "Bronze (raw, as it arrived)"
+    ],
+    "correctOrder": [2, 0, 1],
+    "explanation": "Data flows Bronze → Silver → Gold, gaining quality and structure at each step."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each lakehouse layer or tool to its role.",
+    "pairs": [
+      { "left": "Bronze", "right": "Raw data, kept exactly as it arrived" },
+      { "left": "Silver", "right": "Cleaned, validated, and joined data" },
+      { "left": "Gold", "right": "Business-ready aggregates for dashboards" },
+      { "left": "Unity Catalog", "right": "Governance: access control, lineage, discovery" }
+    ],
+    "explanation": "The medallion layers refine data in stages, while Unity Catalog governs the whole lakehouse."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "In a lakehouse, data is stored in open file formats in cheap cloud storage.",
+    "answer": true,
+    "explanation": "Openness and low-cost storage come from the lake side; a smart layer on top adds the warehouse-grade reliability."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What does Unity Catalog provide for the lakehouse?",
+    "options": [
+      "Faster internet",
+      "Unified governance: controlling access, tracking lineage, and helping people discover data",
+      "A replacement for Spark",
+      "Cheaper laptops"
+    ],
+    "answer": 1,
+    "explanation": "One governance layer across the whole lakehouse controls who sees what, records where data came from, and aids discovery."
+  }
+]

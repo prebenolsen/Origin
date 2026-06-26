@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "timeline": "A faster engine",
+    "title": "A spark in Berkeley",
+    "content": "In 2009, a research project at UC Berkeley's AMPLab set out to fix MapReduce. It was called Spark, and its goal was simple: make big data processing dramatically faster and far easier to use.",
+    "next": "What was its secret to going so much faster?"
+  },
+  {
+    "id": 2,
+    "timeline": "A faster engine",
+    "title": "Keep it in memory",
+    "content": "MapReduce slowed itself down by writing results to disk after every step. Spark's key trick was to keep data in memory (RAM) between steps instead. For workloads that repeat over the same data, this made Spark up to a hundred times faster.",
+    "next": "How does Spark spread work across many machines?"
+  },
+  {
+    "id": 3,
+    "timeline": "Driver & workers",
+    "title": "A driver and its workers",
+    "content": "A Spark cluster has two roles. The driver is the brain: it plans the work. The executors are the workers: each one processes a chunk of the data in parallel. Together they act as a single, powerful machine.",
+    "next": "How does the driver actually divide up a job?"
+  },
+  {
+    "id": 4,
+    "timeline": "Driver & workers",
+    "title": "Divide, conquer, combine",
+    "content": "The driver breaks a job into small tasks and hands them to the executors. Each executor works on its slice of the data at the same time, then sends results back. Splitting the work is what lets Spark chew through enormous datasets quickly.",
+    "next": "Did you still need to be a hardcore programmer to use it?"
+  },
+  {
+    "id": 5,
+    "timeline": "Easy to use",
+    "title": "Friendly languages, not just Java",
+    "content": "Where MapReduce demanded long, low-level Java, Spark let you write in Python, SQL, Scala, or R. This opened big data to analysts and data scientists, not just specialist engineers. Far more people could now work with huge datasets.",
+    "next": "What does the data look like when you work with it?"
+  },
+  {
+    "id": 6,
+    "timeline": "Easy to use",
+    "title": "The DataFrame",
+    "content": "Spark's friendly abstraction is the DataFrame: a table of rows and columns, spread across the cluster, that you shape with simple commands like filter, join, and group. It feels like a spreadsheet — but one that can span thousands of machines.",
+    "next": "When you type a command, does Spark run it right away?"
+  },
+  {
+    "id": 7,
+    "timeline": "Lazy & smart",
+    "title": "Spark is lazy — on purpose",
+    "content": "Spark doesn't run commands the moment you type them. Transformations like filter and join just build up a plan. Nothing actually executes until you call an action — like counting rows or saving results. This is called lazy evaluation.",
+    "next": "Why would being lazy be a good thing?"
+  },
+  {
+    "id": 8,
+    "timeline": "Lazy & smart",
+    "title": "Look before you leap",
+    "content": "Because Spark waits, it can see the entire plan before running it — and optimize. It reorders steps, skips wasted work, and reads only the data it truly needs. Laziness lets Spark be clever instead of just fast.",
+    "next": "Could one engine handle more than just batch jobs?"
+  },
+  {
+    "id": 9,
+    "timeline": "One engine",
+    "title": "One engine for everything",
+    "content": "Spark unified workloads that used to need separate tools: batch ETL, SQL analytics, real-time streaming, and machine learning all run on the same engine. One skill set, one system, many jobs.",
+    "next": "Where does Spark keep the data it works on?"
+  },
+  {
+    "id": 10,
+    "timeline": "One engine",
+    "title": "Compute, separated from storage",
+    "content": "Spark processes data that lives in the cheap data lake or cloud storage, rather than locking it inside a database. Because compute is separate from storage, you can scale your processing power up or down without touching the data.",
+    "next": "If Spark was so good, why isn't this the end of the story?"
+  },
+  {
+    "id": 11,
+    "timeline": "Standard, but hard",
+    "title": "Spark becomes the standard",
+    "content": "Spark was open-sourced in 2010 and became a top-level Apache project in 2014. It spread rapidly and became the default engine for big data across the industry. The creators had clearly built something special.",
+    "next": "But raw Spark still had one big catch."
+  },
+  {
+    "id": 12,
+    "timeline": "Standard, but hard",
+    "title": "Powerful, but hard to run",
+    "content": "Using Spark still meant setting up clusters, tuning them, managing servers, and wrangling infrastructure. The engine was brilliant; operating it was a chore. Spark's own creators saw this gap — and set out to close it.",
+    "next": "To close that gap, they founded a company: Databricks."
+  }
+]

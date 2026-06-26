@@ -1,0 +1,7 @@
+[
+  { "year": "The data deluge", "title": "Companies collect more data than ever before" },
+  { "year": "Storage solved", "title": "Cheap cloud storage removes the storage bottleneck" },
+  { "year": "Messy & untrusted", "title": "Raw data is inconsistent and copies drift apart" },
+  { "year": "The data journey", "title": "Data must be refined from raw to genuinely useful" },
+  { "year": "Data engineering", "title": "The craft of making data useful at scale and speed" }
+]

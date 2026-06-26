@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "Relational database", "back": "A system that stores data as tables of rows and columns, queried with SQL. The backbone of business computing since the 1970s." },
+  { "id": 2, "front": "SQL", "back": "Structured Query Language — the standard language for asking questions of and changing data in relational systems." },
+  { "id": 3, "front": "OLTP (transactional)", "back": "Online Transaction Processing: many small, fast, exactly-correct reads and writes, like recording orders or payments." },
+  { "id": 4, "front": "OLAP (analytical)", "back": "Online Analytical Processing: large, read-heavy queries that summarize lots of data for reporting and business intelligence." },
+  { "id": 5, "front": "Data warehouse", "back": "A separate system devoted to analysis (OLAP), with data copied in and organized for reporting and dashboards." },
+  { "id": 6, "front": "Schema-on-write", "back": "Requiring data's structure (columns and types) to be defined before loading it. Tidy, but rigid." },
+  { "id": 7, "front": "Vertical scaling (scale up)", "back": "Handling more load by buying a bigger, more powerful machine — expensive, and it eventually hits a ceiling." },
+  { "id": 8, "front": "Proprietary format / lock-in", "back": "Data stored in one vendor's closed format, making it hard to use with other tools and costly to move." },
+  { "id": 9, "front": "Structured vs. unstructured data", "back": "Structured data fits neat rows and columns; unstructured data (text, images, video, logs) does not." },
+  { "id": 10, "front": "Why warehouses struggled", "back": "Rigid structure up front, expensive scale-up, closed formats, and no good home for unstructured data or machine learning." }
+]

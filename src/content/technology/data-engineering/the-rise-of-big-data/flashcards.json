@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "Big data", "back": "Datasets so large, fast-moving, and varied that traditional single-machine tools can't handle them." },
+  { "id": 2, "front": "The three Vs", "back": "Volume (how much), velocity (how fast it arrives), and variety (how many forms) — the defining traits of big data." },
+  { "id": 3, "front": "Distributed computing", "back": "Spreading data and work across many cheap machines that act as one team, instead of relying on a single big machine." },
+  { "id": 4, "front": "MapReduce", "back": "Google's technique (2004) for processing huge datasets in parallel across many machines; powerful but slow and low-level." },
+  { "id": 5, "front": "Hadoop", "back": "The open-source framework (2006) that brought distributed storage (HDFS) and processing (MapReduce) to everyone." },
+  { "id": 6, "front": "Cloud object storage", "back": "Cheap, near-limitless, pay-as-you-go storage (e.g. Amazon S3) that separates storage from compute." },
+  { "id": 7, "front": "Data lake", "back": "A single cheap repository for all raw data in any format — store first, structure later." },
+  { "id": 8, "front": "Schema-on-read", "back": "Applying structure to data only when you read it, not when you write it. Flexible, the opposite of schema-on-write." },
+  { "id": 9, "front": "Data swamp", "back": "A data lake that decayed into a messy, untrustworthy mess because it had no rules or reliability guarantees." },
+  { "id": 10, "front": "The big-data trade-off", "back": "Lakes gained cheap storage and flexibility but lost the reliability and easy querying that warehouses provided." }
+]

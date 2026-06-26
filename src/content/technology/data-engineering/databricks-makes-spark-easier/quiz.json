@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why did Spark's creators found Databricks?",
+    "options": [
+      "To compete with Spark",
+      "To make Spark easy to use as a managed cloud service that handles the infrastructure",
+      "To replace SQL entirely",
+      "To stop people from using big data"
+    ],
+    "answer": 1,
+    "explanation": "Spark was powerful but hard to operate. Databricks wraps it in a managed cloud platform so you focus on data, not servers."
+  },
+  {
+    "id": 2,
+    "type": "matching",
+    "question": "Match each Databricks feature to what it does.",
+    "pairs": [
+      { "left": "Managed cluster", "right": "Databricks provisions and runs the machines for you" },
+      { "left": "Serverless compute", "right": "No clusters to manage at all — compute just appears" },
+      { "left": "Notebook", "right": "A collaborative, multi-language coding workspace" },
+      { "left": "Job", "right": "Scheduled, orchestrated, automated work" }
+    ],
+    "explanation": "Together these turn raw Spark into an easy, collaborative, production-ready platform."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "Databricks clusters can autoscale with demand and auto-terminate when idle to save money.",
+    "answer": true,
+    "explanation": "Clusters add machines under heavy load, shrink when light, and shut off when idle, so you don't pay for idle computers."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What is Azure Databricks?",
+    "options": [
+      "A separate, unrelated product",
+      "Databricks offered as a first-party service integrated into Microsoft's Azure cloud",
+      "An older version of Hadoop",
+      "A type of spreadsheet"
+    ],
+    "answer": 1,
+    "explanation": "On Microsoft's cloud, Databricks is a first-party service integrated with Azure storage, security, and identity."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "What do asset bundles (YAML configuration) let teams do?",
+    "options": [
+      "Delete all their data",
+      "Define jobs and pipelines as version-controlled code for reliable, repeatable deployment (CI/CD)",
+      "Avoid using the cloud",
+      "Turn off Spark"
+    ],
+    "answer": 1,
+    "explanation": "Describing a data project as code brings software engineering's review-and-deploy (CI/CD) discipline to data work."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "With serverless compute, you still have to manually size and manage the cluster yourself.",
+    "answer": false,
+    "explanation": "Serverless removes cluster management entirely — Databricks instantly supplies and scales the compute, and you pay only for what you use."
+  }
+]

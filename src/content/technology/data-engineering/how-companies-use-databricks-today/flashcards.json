@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "Ingestion", "back": "The first step of the lifecycle: bringing data into the lakehouse from apps, databases, files, and streams." },
+  { "id": 2, "front": "Auto Loader", "back": "A Databricks tool that automatically and incrementally loads new files from cloud storage as they arrive." },
+  { "id": 3, "front": "Batch vs. streaming", "back": "Batch loads scheduled chunks of data; streaming flows in continuously as events happen. The lakehouse supports both." },
+  { "id": 4, "front": "Declarative pipeline", "back": "You describe the refined result you want, and the platform builds, orders, runs, and quality-checks the transformation steps." },
+  { "id": 5, "front": "Job (orchestration)", "back": "Automated, scheduled work that chains tasks (ingest → transform → train → report) with retries and alerts." },
+  { "id": 6, "front": "Business intelligence (BI)", "back": "Dashboards and reports built on clean gold tables, helping the business see and act on its data." },
+  { "id": 7, "front": "Genie", "back": "A natural-language interface where business users ask questions in plain English and get charts, tables, and SQL back." },
+  { "id": 8, "front": "Machine learning on the lakehouse", "back": "Training models (fraud, recommendations, forecasting) on the same governed data, tracked end to end by MLflow." },
+  { "id": 9, "front": "Generative AI & RAG", "back": "Chatbots and agents grounded in your own data using vector search and retrieval-augmented generation (RAG)." },
+  { "id": 10, "front": "Lakebase", "back": "A managed database built into the platform that serves fresh data to live applications at low latency." }
+]

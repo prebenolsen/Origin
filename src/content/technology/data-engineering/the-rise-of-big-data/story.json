@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "timeline": "Data explodes",
+    "title": "The big data era arrives",
+    "content": "In the 2000s, data grew faster than anyone expected. Experts described it with three words: volume (how much), velocity (how fast it arrives), and variety (how many forms it takes). These 'three Vs' overwhelmed traditional tools.",
+    "next": "If one machine can't keep up, what can?"
+  },
+  {
+    "id": 2,
+    "timeline": "Distributed computing",
+    "title": "Many hands make light work",
+    "content": "The breakthrough was distributed computing: instead of one powerful, expensive machine, use many cheap, ordinary ones working together as a team. Split the data and the work across them, and the group can handle far more than any single computer ever could.",
+    "next": "Who first showed this could work at massive scale?"
+  },
+  {
+    "id": 3,
+    "timeline": "Distributed computing",
+    "title": "Google shows the way",
+    "content": "Google was already wrestling with the entire web. In 2003 and 2004 it published two landmark papers describing how it stored data across thousands of machines and processed it in parallel with a technique called MapReduce. These papers became the blueprint for big data.",
+    "next": "How did everyone else get to use these ideas?"
+  },
+  {
+    "id": 4,
+    "timeline": "Distributed computing",
+    "title": "Hadoop opens the door",
+    "content": "In 2006, an open-source project called Hadoop turned Google's ideas into free software anyone could run. It combined distributed storage (HDFS) with distributed processing (MapReduce). Suddenly, ordinary companies could crunch enormous datasets on clusters of cheap machines.",
+    "next": "But where do you put all that raw data?"
+  },
+  {
+    "id": 5,
+    "timeline": "The data lake",
+    "title": "The data lake idea",
+    "content": "Instead of forcing data into a rigid warehouse, why not pour all of it — raw, in any format — into one big, cheap repository? That's a data lake. You store first and decide on structure later, when you actually read the data.",
+    "next": "What made storing 'everything' suddenly affordable?"
+  },
+  {
+    "id": 6,
+    "timeline": "The data lake",
+    "title": "Cheap, almost limitless storage",
+    "content": "Cloud object storage — like Amazon S3, launched in 2006 — made the data lake practical. It was cheap, effectively limitless, and pay-as-you-go. Crucially, it separated storage from compute, so you could grow each independently.",
+    "next": "Why was 'structure later' such a big deal?"
+  },
+  {
+    "id": 7,
+    "timeline": "The data lake",
+    "title": "Schema-on-read flips the rules",
+    "content": "Warehouses demanded structure before loading. Data lakes flipped this to schema-on-read: dump the data in now, and apply structure only when you read it. This flexibility was a gift for data scientists and for new, messy data types.",
+    "next": "So was big data the happy ending?"
+  },
+  {
+    "id": 8,
+    "timeline": "The catch",
+    "title": "MapReduce was painful",
+    "content": "The early engine had real downsides. MapReduce was slow — it wrote constantly to disk between steps — and you had to express even simple tasks as long, low-level Java programs. Powerful, but clumsy and hard to use.",
+    "next": "And what about the lake itself — did it stay clean?"
+  },
+  {
+    "id": 9,
+    "timeline": "The catch",
+    "title": "Lakes turned into swamps",
+    "content": "Data lakes had no built-in rules or reliability. Anything could be dumped in, with no guarantees about quality or consistency. Many lakes decayed into 'data swamps': vast, messy, and so untrustworthy that nobody wanted to use them.",
+    "next": "So what did companies gain, and what did they lose?"
+  },
+  {
+    "id": 10,
+    "timeline": "The catch",
+    "title": "A trade-off, not a triumph",
+    "content": "The lake won cheap storage and flexibility but lost the reliability, structure, and easy querying of the warehouse. Companies were left juggling two imperfect worlds: trustworthy-but-rigid warehouses, and flexible-but-messy lakes.",
+    "next": "What the era really needed was a faster, friendlier engine."
+  },
+  {
+    "id": 11,
+    "timeline": "A better engine",
+    "title": "A better engine is coming",
+    "content": "The missing piece was a processing engine that was fast, flexible, and far easier to use than MapReduce. In a research lab at UC Berkeley, exactly such a project was taking shape. It would change big data forever.",
+    "next": "That project was Apache Spark."
+  }
+]

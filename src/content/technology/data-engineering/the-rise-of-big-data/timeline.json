@@ -1,0 +1,7 @@
+[
+  { "year": "Data explodes", "title": "Volume, velocity, and variety overwhelm old tools" },
+  { "year": "Distributed computing", "title": "Many cheap machines work together (Hadoop, MapReduce)" },
+  { "year": "The data lake", "title": "Store all raw data cheaply, add structure later" },
+  { "year": "The catch", "title": "Slow tooling and unreliable 'data swamps'" },
+  { "year": "A better engine", "title": "The need for something faster than MapReduce" }
+]

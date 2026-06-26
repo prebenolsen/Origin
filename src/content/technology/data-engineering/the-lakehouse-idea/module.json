@@ -1,0 +1,34 @@
+{
+  "title": "The Lakehouse Idea",
+  "period": "2019–today: combining the lake and the warehouse",
+  "category": "technology",
+  "subcategory": "data-engineering",
+  "summary": "Why choose between a cheap, flexible data lake and a reliable, structured warehouse? The lakehouse merges both into one system — a single, governed home for all your data, for both BI and AI.",
+  "accent": "#0d9488",
+  "context": {
+    "type": "schematic",
+    "headline": "Lake plus warehouse, in one",
+    "description": "For years, companies juggled two systems: cheap, flexible data lakes and reliable, structured warehouses. The lakehouse fuses them. Data sits in cheap, open cloud storage, but gains warehouse-grade reliability and structure on top. Organized as bronze, silver, and gold layers and governed by Unity Catalog, it becomes a single source of truth for everyone.",
+    "when": "From two separate systems to one unified architecture",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "lake", "label": "Data lake (cheap, flexible)", "x": 18, "y": 22, "role": "secondary" },
+        { "id": "warehouse", "label": "Warehouse (reliable, structured)", "x": 82, "y": 22, "role": "secondary" },
+        { "id": "lakehouse", "label": "Lakehouse", "x": 50, "y": 42, "role": "primary" },
+        { "id": "bronze", "label": "Bronze · raw", "x": 24, "y": 68, "role": "secondary" },
+        { "id": "silver", "label": "Silver · clean", "x": 50, "y": 74, "role": "secondary" },
+        { "id": "gold", "label": "Gold · business-ready", "x": 76, "y": 68, "role": "secondary" },
+        { "id": "governance", "label": "Unity Catalog governance", "x": 50, "y": 92, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "lake", "to": "lakehouse", "label": "cheap storage" },
+        { "from": "warehouse", "to": "lakehouse", "label": "reliability" },
+        { "from": "lakehouse", "to": "bronze" },
+        { "from": "bronze", "to": "silver", "label": "clean" },
+        { "from": "silver", "to": "gold", "label": "aggregate" },
+        { "from": "governance", "to": "lakehouse", "label": "governs all" }
+      ]
+    }
+  }
+}

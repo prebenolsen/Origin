@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "timeline": "The database",
+    "title": "The first great tool: the database",
+    "content": "In 1970, the relational database introduced a beautifully simple idea: store data as tables of rows and columns, and ask questions with a language called SQL. It was reliable, organized, and became the backbone of business computing.",
+    "next": "What were these databases actually built to do?"
+  },
+  {
+    "id": 2,
+    "timeline": "Built for transactions",
+    "title": "Built for transactions",
+    "content": "Traditional databases were optimized for transactions: recording an order, updating a balance, booking a seat. This is called OLTP — many small, fast reads and writes that must be exactly correct. Getting a bank balance wrong is not an option.",
+    "next": "So what happens when you want to analyze all those transactions?"
+  },
+  {
+    "id": 3,
+    "timeline": "The data warehouse",
+    "title": "Recording vs. analyzing",
+    "content": "Running a giant report on the live transaction database slowed it down for everyone trying to place orders. Recording data and analyzing data pull a system in opposite directions. Companies needed a separate place built for heavy analysis.",
+    "next": "What did they build to solve that?"
+  },
+  {
+    "id": 4,
+    "timeline": "The data warehouse",
+    "title": "Enter the data warehouse",
+    "content": "The answer was the data warehouse: a separate system devoted to analysis, or OLAP. Data was copied in from many sources, organized for reporting, and queried for business intelligence. For thirty years, warehouses powered the dashboards executives relied on.",
+    "next": "What did you have to do before you could load data in?"
+  },
+  {
+    "id": 5,
+    "timeline": "The data warehouse",
+    "title": "Structure first, data later",
+    "content": "Warehouses use schema-on-write: you must define the exact columns and types before loading anything. This keeps data tidy, but it's rigid. If your data doesn't fit the predefined shape, it can't come in until someone redesigns the schema.",
+    "next": "Why did that rigidity become a real problem?"
+  },
+  {
+    "id": 6,
+    "timeline": "Cracks appear",
+    "title": "The world stopped fitting in tables",
+    "content": "The internet produced data that didn't fit neat rows: web logs, free text, images, video, JSON from apps, clickstreams. This messy, semi-structured, and unstructured data was most of the new data being created — and warehouses had no comfortable home for it.",
+    "next": "Couldn't they just buy a bigger machine?"
+  },
+  {
+    "id": 7,
+    "timeline": "Cracks appear",
+    "title": "Scaling up hits a wall",
+    "content": "Traditional systems scaled 'up' — you replaced your server with a bigger, more powerful one. But bigger machines get expensive fast and eventually you hit a physical ceiling. There's only so large a single computer can get.",
+    "next": "Was the data at least easy to move and reuse?"
+  },
+  {
+    "id": 8,
+    "timeline": "Cracks appear",
+    "title": "Locked in closed formats",
+    "content": "Warehouse data often lived in proprietary formats inside one vendor's system. Your data was effectively trapped: hard to access with other tools, and expensive to move. You didn't fully control your own data.",
+    "next": "What did this mean for the rising field of machine learning?"
+  },
+  {
+    "id": 9,
+    "timeline": "Left behind",
+    "title": "Machine learning was left out",
+    "content": "Machine learning thrives on raw, detailed, flexible data. Warehouses offered the opposite: pre-summarized, rigidly structured data in closed formats. Data scientists were effectively locked out of the company's best-organized data.",
+    "next": "So where did that leave companies?"
+  },
+  {
+    "id": 10,
+    "timeline": "Left behind",
+    "title": "Two worlds, no bridge",
+    "content": "Companies were forced into a split: warehouses for clean business reporting, and... nothing good for everything else. Maintaining separate, disconnected systems was costly, slow, and meant the same data was copied and re-copied, drifting out of sync.",
+    "next": "If the data won't fit the warehouse, what's the alternative?"
+  },
+  {
+    "id": 11,
+    "timeline": "Left behind",
+    "title": "A radical new question",
+    "content": "Engineers asked a different question: instead of forcing all data into an expensive, rigid structure first, what if we just stored everything cheaply, in its raw form, and worried about structure later? That idea would launch the big data era.",
+    "next": "That cheap, store-everything idea became known as 'big data'."
+  }
+]

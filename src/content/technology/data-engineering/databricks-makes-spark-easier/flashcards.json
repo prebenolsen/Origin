@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "Databricks", "back": "The company (founded 2013 by Spark's creators) and managed cloud platform that makes Spark easy to use." },
+  { "id": 2, "front": "Managed cluster", "back": "A Spark cluster that Databricks provisions, configures, and maintains for you — created with a few clicks." },
+  { "id": 3, "front": "Autoscaling & auto-termination", "back": "Clusters that add or remove machines with demand and shut off when idle, controlling cost automatically." },
+  { "id": 4, "front": "Databricks notebook", "back": "A collaborative document where you write Python/SQL/Scala/R in cells and see results inline, editing with teammates in real time." },
+  { "id": 5, "front": "Databricks Runtime", "back": "An optimized version of Spark with built-in performance, reliability, and security improvements." },
+  { "id": 6, "front": "Photon", "back": "A high-speed query engine inside the Databricks Runtime that accelerates SQL and DataFrame work." },
+  { "id": 7, "front": "Serverless compute", "back": "Compute with no clusters to manage: Databricks instantly supplies and scales it, and you pay only for what you use." },
+  { "id": 8, "front": "Job (orchestration)", "back": "Scheduled, automated work that runs tasks in order — on a schedule or trigger — with retries and alerts." },
+  { "id": 9, "front": "Asset bundles (YAML)", "back": "Configuration files that define jobs and pipelines as version-controlled code, enabling reliable CI/CD deployment." },
+  { "id": 10, "front": "Azure Databricks", "back": "Databricks offered as a first-party service on Microsoft's Azure cloud, integrated with Azure storage and security." }
+]

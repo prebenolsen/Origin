@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "timeline": "The reliability gap",
+    "title": "Files with no safety net",
+    "content": "Plain files in a data lake have no guarantees. If a job crashes halfway through writing, you're left with half-written, corrupted data — and someone reading at that moment sees a broken mess. For serious work, that's unacceptable.",
+    "next": "How do you make loose files behave like a real database?"
+  },
+  {
+    "id": 2,
+    "timeline": "The transaction log",
+    "title": "Delta Lake's answer",
+    "content": "Delta Lake is an open-source storage layer built on the popular Parquet file format, with one crucial addition: a transaction log. That log is the key that turns a pile of files into a reliable table.",
+    "next": "What exactly does this log do?"
+  },
+  {
+    "id": 3,
+    "timeline": "The transaction log",
+    "title": "The log is the hero",
+    "content": "The transaction log is an ordered record of every change ever made to the table. A change only 'counts' once it's written to the log. A half-finished write never makes it into the log — so readers simply never see it. Corruption is designed out.",
+    "next": "What guarantees does that give you?"
+  },
+  {
+    "id": 4,
+    "timeline": "The transaction log",
+    "title": "ACID comes to the lake",
+    "content": "The log delivers ACID — the reliability standard databases always had. Atomicity: a change fully happens or not at all. Consistency and Isolation: simultaneous readers and writers never corrupt each other. Durability: once committed, it stays committed.",
+    "next": "What does this feel like in practice?"
+  },
+  {
+    "id": 5,
+    "timeline": "The transaction log",
+    "title": "Trust, restored",
+    "content": "With ACID, the lake finally behaves like a real database. No more half-written files. No more wondering whether a number is even right. The same cheap storage is now genuinely trustworthy — the missing piece the lakehouse needed.",
+    "next": "Can the log do more than just prevent corruption?"
+  },
+  {
+    "id": 6,
+    "timeline": "Time travel & schema",
+    "title": "Travel back in time",
+    "content": "Because the log records every version of the table, you can query it as it was yesterday or last week — and roll back a bad change in seconds. This 'time travel' makes mistakes recoverable and auditing easy.",
+    "next": "What stops bad data from getting in to begin with?"
+  },
+  {
+    "id": 7,
+    "timeline": "Time travel & schema",
+    "title": "A bouncer at the door",
+    "content": "Delta enforces the table's schema: incoming data is checked against the expected columns and types, and data that doesn't fit is rejected. A wrong type can't silently poison the table. When you do mean to change the shape, schema evolution lets you do it safely.",
+    "next": "What about fixing or updating records that are already there?"
+  },
+  {
+    "id": 8,
+    "timeline": "Updates & streaming",
+    "title": "Update, delete, and merge",
+    "content": "Plain lake files were painful to change — practically append-only. Delta supports proper UPDATE, DELETE, and MERGE. MERGE (an 'upsert') updates existing rows and inserts new ones in a single, clean step — perfect for keeping a table in sync with a source.",
+    "next": "Does it handle both scheduled and real-time data?"
+  },
+  {
+    "id": 9,
+    "timeline": "Updates & streaming",
+    "title": "One table for batch and streaming",
+    "content": "The same Delta table can be fed by a nightly batch job and a real-time stream at the same time, reliably. This unification — one table, both speeds — removes a whole category of complexity from data systems.",
+    "next": "Do you have to opt in to all of this?"
+  },
+  {
+    "id": 10,
+    "timeline": "The foundation",
+    "title": "Open, and on by default",
+    "content": "Delta Lake is open source, so your data isn't locked to one vendor. And on Databricks, every table is a Delta table by default. You get this reliability automatically, without doing anything special.",
+    "next": "So how does it all fit back into the lakehouse?"
+  },
+  {
+    "id": 11,
+    "timeline": "The foundation",
+    "title": "The foundation of the lakehouse",
+    "content": "Delta Lake is what makes the lakehouse real: it turns cheap, loose files into trustworthy tables that behave like a warehouse while keeping a lake's openness. Reliable storage, governance, and an easy platform are now all in place.",
+    "next": "So what do companies actually build with all of this today?"
+  }
+]

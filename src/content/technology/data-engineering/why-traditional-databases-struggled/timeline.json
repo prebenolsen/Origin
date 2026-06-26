@@ -1,0 +1,7 @@
+[
+  { "year": "The database", "title": "Relational databases organize business data (1970s)" },
+  { "year": "Built for transactions", "title": "Optimized for reliable transactional records (OLTP)" },
+  { "year": "The data warehouse", "title": "A separate, structured system for analysis (OLAP)" },
+  { "year": "Cracks appear", "title": "New data types, scale, and closed formats strain it" },
+  { "year": "Left behind", "title": "Machine learning and messy data don't fit" }
+]

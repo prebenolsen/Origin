@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What are the 'three Vs' that describe big data?",
+    "options": [
+      "Volume, Velocity, Variety",
+      "Value, Vision, Velocity",
+      "Volume, Validity, Vendor",
+      "Variety, Version, Volume"
+    ],
+    "answer": 0,
+    "explanation": "Volume (how much), velocity (how fast it arrives), and variety (how many forms) together overwhelmed traditional tools."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "What was the key breakthrough for handling data too big for one machine?",
+    "options": [
+      "Buying a single, much larger computer",
+      "Distributed computing — many cheap machines working together",
+      "Deleting most of the data",
+      "Printing the data out"
+    ],
+    "answer": 1,
+    "explanation": "Distributed computing spreads storage and processing across many ordinary machines, so the group handles far more than any one machine could."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "A data lake stores raw data of any format and applies structure later, when the data is read (schema-on-read).",
+    "answer": true,
+    "explanation": "Lakes flip the warehouse model: store everything cheaply now, decide on structure at read time — flexible, but with no built-in guarantees."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each big-data building block to what it provided.",
+    "pairs": [
+      { "left": "MapReduce", "right": "A way to process data across many machines in parallel" },
+      { "left": "Hadoop", "right": "Free, open-source software for big data" },
+      { "left": "Cloud object storage", "right": "Cheap, near-limitless storage (e.g. Amazon S3)" },
+      { "left": "Data lake", "right": "A cheap repository for all raw data, any format" }
+    ],
+    "explanation": "Google's MapReduce idea, made open by Hadoop and cheap by cloud storage, made the data lake possible."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "What is a 'data swamp'?",
+    "options": [
+      "A data lake located near water",
+      "A specially optimized warehouse",
+      "A data lake that became messy and untrustworthy because it had no rules or reliability",
+      "A faster version of MapReduce"
+    ],
+    "answer": 2,
+    "explanation": "Without built-in quality or consistency guarantees, many lakes decayed into swamps that nobody trusted enough to use."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "MapReduce was fast and simple, with no real downsides.",
+    "answer": false,
+    "explanation": "MapReduce was slow (it wrote to disk between steps) and forced even simple tasks into long, low-level code — powerful but clumsy."
+  }
+]

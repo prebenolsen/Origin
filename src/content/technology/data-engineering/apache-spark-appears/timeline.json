@@ -1,0 +1,8 @@
+[
+  { "year": "A faster engine", "title": "Spark is born at UC Berkeley to fix MapReduce (2009)" },
+  { "year": "Driver & workers", "title": "A cluster splits work across many machines" },
+  { "year": "Easy to use", "title": "Write in Python, SQL, Scala, or R on DataFrames" },
+  { "year": "Lazy & smart", "title": "Spark plans and optimizes before it runs" },
+  { "year": "One engine", "title": "Batch, SQL, streaming, and ML on one engine" },
+  { "year": "Standard, but hard", "title": "Spark wins the industry — but is still hard to operate" }
+]

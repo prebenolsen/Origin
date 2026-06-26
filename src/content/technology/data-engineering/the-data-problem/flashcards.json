@@ -1,0 +1,10 @@
+[
+  { "id": 1, "front": "Data engineering", "back": "The craft of building systems that collect, store, clean, organize, and serve data so it becomes useful — at scale and at speed." },
+  { "id": 2, "front": "Raw data", "back": "Information in its original, unprocessed form: messy, inconsistent, and not yet ready to trust or use." },
+  { "id": 3, "front": "The core modern data problem", "back": "Not storing data (that's cheap now), but turning huge amounts of raw data into something reliable and useful." },
+  { "id": 4, "front": "Data sources", "back": "Where data comes from — clicks, purchases, sensor readings, app logs, and customer interactions." },
+  { "id": 5, "front": "Why storage stopped being the bottleneck", "back": "Cloud storage became cheap enough to keep almost everything, so the hard part moved to making sense of the data." },
+  { "id": 6, "front": "Single source of truth", "back": "One trusted, shared version of the data, so separate copies don't drift apart and contradict each other." },
+  { "id": 7, "front": "Scale", "back": "As data grows from thousands to billions of records, tools that once worked fine can slow down or break entirely." },
+  { "id": 8, "front": "Why speed matters", "back": "Some questions can wait for overnight reports; others (fraud, live recommendations) need answers in seconds or real time." }
+]
