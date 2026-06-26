@@ -3,6 +3,22 @@
 All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
+
+## [3.0.1] - 2026-06-27
+
+### Changed - Geography Challenge country labels stay inside countries
+
+- Replaced the floating HTML country-name pills in the interactive map game with
+  SVG labels clipped to each country shape, so solved names no longer cover
+  nearby countries and now zoom/pan with the map itself.
+- Added per-country label fitting in `GeoQuizMap`: font size now scales down for
+  small countries, multi-word names can wrap, and long narrow countries can tilt
+  their labels to fit the dominant axis of the shape.
+- Norway and similar tall/angled countries can now display their name on an
+  angle inside the shape instead of forcing a horizontal overlay across the map.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.1**
+  (PATCH — geography UI fix).
+
 ## [3.0.0] - 2026-06-26
 
 ### Added - Geography Challenge (interactive map game)

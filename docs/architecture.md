@@ -61,6 +61,9 @@ src/components/geo/
   GeographyHome.tsx # board picker
   GeographyGame.tsx # game state (selection, solved set, hints, options)
   GeoQuizMap.tsx    # themed map: continent polygons OR sea markers; tap hit-testing
+                    # solved country labels render inside the SVG country shape,
+                    # with per-shape font fitting and optional tilt for long,
+                    # narrow countries such as Norway
   AnswerPanel.tsx   # type-the-name input + hints (inline and fullscreen-overlay)
 ```
 
