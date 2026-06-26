@@ -38,7 +38,25 @@ function clampTransform(t: Transform, rect: { width: number; height: number }): 
   };
 }
 
-export default function MapViewport({ children }: { children: ReactNode }) {
+export default function MapViewport({
+  children,
+  onTap,
+  renderOverlay,
+}: {
+  children: ReactNode;
+  /**
+   * Fired on a clean tap/click (press + release without dragging). Coordinates
+   * are normalized 0..1 over the *un-zoomed* content box, so a consumer can map
+   * them straight onto its own viewBox / projection regardless of pan & zoom.
+   */
+  onTap?: (u: number, v: number) => void;
+  /**
+   * Optional non-transformed layer rendered inside the map box (and inside the
+   * fullscreen overlay). Receives the current fullscreen state so the consumer
+   * can, e.g., only show an answer bar while immersive.
+   */
+  renderOverlay?: (fullscreen: boolean) => ReactNode;
+}) {
   const boxRef = useRef<HTMLDivElement>(null);
   const [t, setT] = useState<Transform>({ k: 1, x: 0, y: 0 });
   const [fullscreen, setFullscreen] = useState(false);
@@ -57,6 +75,8 @@ export default function MapViewport({ children }: { children: ReactNode }) {
   // Active pointers (id → client position) and the pinch seed.
   const pointers = useRef(new Map<number, { x: number; y: number }>());
   const pinch = useRef<{ dist: number; mid: { x: number; y: number }; t: Transform } | null>(null);
+  // A candidate tap: a single pointer that hasn't moved far enough to be a drag.
+  const tap = useRef<{ x: number; y: number; moved: boolean } | null>(null);
 
   const localPoint = (clientX: number, clientY: number) => {
     const rect = boxRef.current!.getBoundingClientRect();
@@ -83,6 +103,8 @@ export default function MapViewport({ children }: { children: ReactNode }) {
     }
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
     pinch.current = null; // re-seed on the next two-pointer move
+    // A tap is only a candidate while exactly one pointer is down.
+    tap.current = pointers.current.size === 1 ? { x: e.clientX, y: e.clientY, moved: false } : null;
   }, []);
 
   const onPointerMove = useCallback(
@@ -92,6 +114,11 @@ export default function MapViewport({ children }: { children: ReactNode }) {
       const prev = pts.get(e.pointerId)!;
       const cur = { x: e.clientX, y: e.clientY };
       pts.set(e.pointerId, cur);
+
+      // Past a small threshold this gesture is a drag, not a tap.
+      if (tap.current) {
+        if (Math.hypot(cur.x - tap.current.x, cur.y - tap.current.y) > 6) tap.current.moved = true;
+      }
 
       if (pts.size >= 2) {
         const [a, b] = [...pts.values()];
@@ -119,10 +146,29 @@ export default function MapViewport({ children }: { children: ReactNode }) {
     [apply],
   );
 
-  const endPointer = useCallback((e: React.PointerEvent) => {
-    pointers.current.delete(e.pointerId);
-    if (pointers.current.size < 2) pinch.current = null;
-  }, []);
+  const endPointer = useCallback(
+    (e: React.PointerEvent) => {
+      const wasOnlyPointer = pointers.current.size === 1;
+      pointers.current.delete(e.pointerId);
+      if (pointers.current.size < 2) pinch.current = null;
+
+      // A clean tap: the lone pointer lifted without dragging. Report it as a
+      // normalized point on the un-zoomed content box so the consumer can hit-test.
+      if (onTap && wasOnlyPointer && tap.current && !tap.current.moved) {
+        const rect = boxRef.current?.getBoundingClientRect();
+        if (rect) {
+          const lx = e.clientX - rect.left;
+          const ly = e.clientY - rect.top;
+          const cur = tRef.current;
+          const u = (lx - cur.x) / cur.k / rect.width;
+          const v = (ly - cur.y) / cur.k / rect.height;
+          if (u >= 0 && u <= 1 && v >= 0 && v <= 1) onTap(u, v);
+        }
+      }
+      tap.current = null;
+    },
+    [onTap],
+  );
 
   const onDoubleClick = useCallback(
     (e: React.MouseEvent) => {
@@ -211,6 +257,9 @@ export default function MapViewport({ children }: { children: ReactNode }) {
           Pinch / scroll to zoom · drag to pan
         </div>
       )}
+
+      {/* optional consumer overlay (answer bar, etc.) — not transformed */}
+      {renderOverlay && renderOverlay(fullscreen)}
     </div>
   );
 

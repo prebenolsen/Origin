@@ -43,6 +43,35 @@ Shared markers/arcs/labels live in `mapParts.tsx`; projection + land geometry in
 pinch/drag/wheel zoom-and-pan and a fullscreen toggle (inline and fullscreen
 alike). Geo maps frame tightly to their markers so they fill the canvas.
 
+## Geography Challenge (interactive map game)
+
+A second, content-free **type** of interactive learning that lives alongside the
+five module stages. Routes `/geo` (board picker) and `/geo/:board` (the game) are
+**lazy-loaded**, so the country topology + d3-geo only load when entered.
+
+```
+src/lib/
+  geography.ts      # boards (continents + seas), curated country lists with answer
+                    # aliases, answer scoring (normalized Levenshtein, ≥80% accept),
+                    # and nearest-neighbour multiple-choice generation
+  countryShapes.ts  # decodes world-atlas countries-110m → per-country polygons +
+                    # cached centroids (only imported by the quiz map)
+  geoProgress.ts    # per-board solved-set persistence in localStorage
+src/components/geo/
+  GeographyHome.tsx # board picker
+  GeographyGame.tsx # game state (selection, solved set, hints, options)
+  GeoQuizMap.tsx    # themed map: continent polygons OR sea markers; tap hit-testing
+  AnswerPanel.tsx   # type-the-name input + hints (inline and fullscreen-overlay)
+```
+
+How a tap becomes a selection: `GeoQuizMap` reuses `MapViewport`, which now reports
+clean taps via an `onTap(u, v)` callback (content-normalized coordinates that are
+invariant to pan/zoom). The game converts that to lng/lat through the same
+projection and uses `d3.geoContains` (countries) or nearest-marker (seas) to find
+the clicked region. `MapViewport` also gained a `renderOverlay(fullscreen)` prop so
+the answer bar can float over the map while fullscreen. Both props are optional and
+backward-compatible — the context maps are unchanged.
+
 ## Module completion workflow note
 
 When a placeholder module is fully authored from raw.md into module.json, story.json,

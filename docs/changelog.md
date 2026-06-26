@@ -3,6 +3,46 @@
 All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
+## [3.0.0] - 2026-06-26
+
+### Added - Geography Challenge (interactive map game)
+
+A brand-new **type** of interactive learning, separate from the five module
+stages: a click-and-name geography game built on the same map theme.
+
+- **Pick a board** at `/geo`: a continent (Europe, Asia, Africa, North America,
+  South America, Oceania) where you name **every** country, or **Oceans & Seas**
+  (18 of the world's major waters).
+- **Play**: tap a country on the real Natural Earth map and type its name. Answers
+  are accepted at **≥80% similarity** (normalized Levenshtein distance, with a
+  one-typo grace), so near-misses and minor misspellings still count. Solved
+  regions stay **highlighted and labelled** for the rest of the session.
+- **Hints**: reveal the **starting letter** (progressively, one letter per tap), or
+  **show 4 options** — the correct answer plus its three geographically nearest
+  neighbours.
+- **Zoom & fullscreen**: the game reuses `MapViewport`, so pinch / scroll / wheel
+  zoom, drag-to-pan, double-tap, and an immersive fullscreen all work — and you can
+  answer while fullscreen via a floating answer bar.
+- **Progress** is saved per board in `localStorage` (`origin:geo:v1`); a reset
+  button clears a board.
+
+#### Implementation
+- New data + logic libs: [`geography.ts`](../src/lib/geography.ts) (curated,
+  double-checked country lists per continent with answer aliases, seas, scoring,
+  and nearest-neighbour alternatives) and [`countryShapes.ts`](../src/lib/countryShapes.ts)
+  (decodes `world-atlas` **countries-110m** into per-country polygons + centroids).
+- New components under `src/components/geo/`: `GeographyHome`, `GeographyGame`,
+  `GeoQuizMap`, `AnswerPanel`; lightweight `geoProgress.ts` store.
+- `MapViewport` gained two **backward-compatible** props: `onTap` (reports a clean
+  tap as normalized content coordinates, so the game can hit-test which country
+  was clicked through any pan/zoom) and `renderOverlay` (a non-transformed layer
+  used for the fullscreen answer bar).
+- Routes `/geo` and `/geo/:board` are **lazy-loaded** so the country topology and
+  d3-geo only load when a learner opens a map — ordinary lessons are unaffected.
+- Home screen gains a "Geography Challenge" entry card.
+- Bumped `version.js` and synced `package.json` to **3.0.0** (MAJOR — new app
+  capability).
+
 ## [2.2.0] - 2026-06-26
 
 ### Added - Rise of Nazi Germany & World War II modules (history / world-wars)
