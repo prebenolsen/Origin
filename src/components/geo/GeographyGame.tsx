@@ -74,6 +74,13 @@ export default function GeographyGame() {
     resetSelection();
   }
 
+  function resetBoardProgress() {
+    const empty = new Set<string>();
+    setSolved(empty);
+    saveSolved(board!.key, empty);
+    resetSelection();
+  }
+
   function submit() {
     if (!active) return;
     if (scoreAnswer(input, active).correct) solve(active);
@@ -124,20 +131,6 @@ export default function GeographyGame() {
           >
             ← Maps
           </Link>
-          {done > 0 && (
-            <button
-              type="button"
-              onClick={() => {
-                const empty = new Set<string>();
-                setSolved(empty);
-                saveSolved(board.key, empty);
-                resetSelection();
-              }}
-              className="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-faint transition hover:text-wrong"
-            >
-              Reset
-            </button>
-          )}
         </div>
         <h1 className="mt-2 font-serif text-[1.9rem] leading-tight">{board.name}</h1>
         <div className="mt-2 flex items-center gap-3">
@@ -160,6 +153,8 @@ export default function GeographyGame() {
           solved={solved}
           activeId={active?.id ?? null}
           onSelect={select}
+          onReset={resetBoardProgress}
+          canReset={done > 0}
           renderOverlay={(fullscreen) => {
             const op = panelProps('overlay');
             return fullscreen && op ? <AnswerPanel {...op} /> : null;

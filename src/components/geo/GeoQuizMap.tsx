@@ -26,12 +26,16 @@ export default function GeoQuizMap({
   solved,
   activeId,
   onSelect,
+  onReset,
+  canReset,
   renderOverlay,
 }: {
   board: Board;
   solved: Set<string>;
   activeId: string | null;
   onSelect: (id: string | null) => void;
+  onReset?: () => void;
+  canReset?: boolean;
   renderOverlay?: (fullscreen: boolean) => ReactNode;
 }) {
   const [focusSerial, setFocusSerial] = useState(0);
@@ -135,6 +139,31 @@ export default function GeoQuizMap({
       hideHint={board.kind === 'countries'}
       renderOverlay={(fullscreen) => (
         <>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onReset?.();
+            }}
+            onPointerDown={(e) => e.stopPropagation()}
+            className="absolute left-2 top-2 z-20 grid h-9 w-9 place-items-center rounded-full border border-line bg-ink/75 text-muted backdrop-blur-sm transition enabled:hover:border-wrong/50 enabled:hover:text-wrong enabled:active:scale-95 disabled:cursor-not-allowed disabled:opacity-45"
+            aria-label="Reset map progress"
+            title="Reset map progress"
+            disabled={!canReset}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              className="h-[18px] w-[18px]"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M3 12a9 9 0 1 0 2.6-6.3M3 4.5V9h4.5" />
+            </svg>
+          </button>
+
           {board.kind === 'countries' && (
             <button
               type="button"
