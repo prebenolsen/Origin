@@ -13,11 +13,11 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "upper-south", "label": "Upper South", "x": 34, "y": 39, "role": "primary" },
-        { "id": "deep-south", "label": "Deep South", "x": 36, "y": 57, "role": "primary" },
-        { "id": "north", "label": "Northern States", "x": 30, "y": 24, "role": "primary" },
-        { "id": "atlantic", "label": "Atlantic Trade", "x": 53, "y": 30, "role": "secondary" },
-        { "id": "canada", "label": "Canada", "x": 28, "y": 12, "role": "secondary" }
+        { "id": "upper-south", "label": "Upper South", "lat": 37.5, "lng": -78.0, "role": "primary" },
+        { "id": "deep-south", "label": "Deep South", "lat": 32.5, "lng": -88.0, "role": "primary" },
+        { "id": "north", "label": "Northern States", "lat": 42.0, "lng": -73.0, "role": "primary" },
+        { "id": "atlantic", "label": "Atlantic Trade", "lat": 33.0, "lng": -42.0, "role": "secondary" },
+        { "id": "canada", "label": "Canada", "lat": 45.4, "lng": -75.7, "role": "secondary" }
       ],
       "connections": [
         { "from": "deep-south", "to": "north", "label": "cotton to mills" },

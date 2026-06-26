@@ -52,6 +52,12 @@ export interface ContextMapData {
    * `world` and `region` differ only cosmetically.
    */
   backdrop?: 'world' | 'region';
+  /**
+   * Optional explicit geographic frame for `geo` maps, as
+   * `[west, south, east, north]` in degrees. When omitted, the map auto-frames
+   * to fit all markers with padding. Ignored by schematic maps.
+   */
+  focus?: [number, number, number, number];
   markers: ContextMarker[];
   connections?: ContextConnection[];
 }
@@ -59,9 +65,20 @@ export interface ContextMapData {
 export interface ContextMarker {
   id: string;
   label: string;
-  /** Position as percentages of the map box (0–100). */
-  x: number;
-  y: number;
+  /**
+   * Real-world coordinates in degrees. When BOTH `lat` and `lng` are present
+   * on every marker, the map renders as a real `geo` map (actual coastlines,
+   * correct projection). Prefer these for any geographic topic.
+   */
+  lat?: number;
+  lng?: number;
+  /**
+   * Schematic position as percentages of the map box (0–100). Used as a
+   * fallback for non-geographic / concept maps when `lat`/`lng` are absent.
+   * Optional so geographic markers don't need to specify them.
+   */
+  x?: number;
+  y?: number;
   /** `primary` markers are emphasized. */
   role?: 'primary' | 'secondary';
 }

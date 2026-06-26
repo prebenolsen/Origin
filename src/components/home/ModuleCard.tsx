@@ -24,7 +24,7 @@ export default function ModuleCard({ bundle }: { bundle: ModuleBundle }) {
         <div className="min-w-0">
           <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-faint">
             {bundle.subcategoryName}
-            {bundle.meta.period ? ` · ${bundle.meta.period}` : ''}
+            {bundle.meta.period && /\d/.test(bundle.meta.period) ? ` · ${bundle.meta.period}` : ''}
           </div>
           <h3 className="mt-1.5 text-[1.35rem] leading-tight">{bundle.meta.title}</h3>
         </div>

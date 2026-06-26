@@ -71,6 +71,111 @@ All non-`module.json` files are optional; the UI adapts when a section is missin
 
 ---
 
+## Maps (context map authoring & integration)
+
+The context-intro map answers *where / who / what* at a glance. There are **two
+modes**, picked **automatically** from the marker data — you choose the mode by
+how you write the markers, not with a flag.
+
+| Mode | When it renders | Looks like |
+|------|-----------------|-----------|
+| **`geo`** | **Every** marker has real `lat` **and** `lng` | Real coastlines (Natural Earth), Mercator-projected and auto-framed to the markers |
+| **`schematic`** | Any marker is missing coordinates | An honest node-and-link concept diagram on a dotted field — **never** fake continents |
+
+> Rule of thumb: **geographic topic → give real coordinates. Conceptual topic
+> (psychology, abstract politics, technology) → use `x`/`y` and let it be a
+> schematic.** Do **not** put a world map behind a non-geographic lesson.
+
+### Authoring a real (`geo`) map
+
+Give **every** marker `lat`/`lng` in decimal degrees (North/East positive,
+South/West negative). The map frames itself around the markers automatically.
+
+```jsonc
+"map": {
+  "markers": [
+    { "id": "rome",     "label": "Rome",        "lat": 41.9,  "lng": 12.5,  "role": "primary" },
+    { "id": "carthage", "label": "Carthage",    "lat": 36.85, "lng": 10.32, "role": "secondary" },
+    { "id": "greece",   "label": "Greek world", "lat": 38.0,  "lng": 23.7,  "role": "secondary" }
+  ],
+  "connections": [
+    { "from": "rome", "to": "carthage", "label": "Punic Wars" }
+  ],
+  // OPTIONAL: override the auto-frame with [west, south, east, north] in degrees.
+  "focus": [-10, 30, 40, 48]
+}
+```
+
+- `role: "primary"` markers are emphasized (amber + pulse); `"secondary"` are muted.
+- `connections` reference marker `id`s and draw a labeled arc between them.
+- Omit `focus` unless the auto-frame is wrong — it usually isn't.
+
+### Authoring a schematic (concept) map
+
+Omit `lat`/`lng`. Position each marker with `x`/`y` as **percentages of the box
+(0–100)**. It renders as a relationship diagram, not a map.
+
+```jsonc
+"map": {
+  "markers": [
+    { "id": "heartland", "label": "Eurasian Heartland", "x": 50, "y": 38, "role": "primary" },
+    { "id": "rimland",   "label": "Rimland Arc",        "x": 62, "y": 52, "role": "primary" }
+  ],
+  "connections": [ { "from": "heartland", "to": "rimland", "label": "containment" } ]
+}
+```
+
+### Density & labels
+
+Labels are auto-placed by a de-collision pass (`mapLayout.ts`): each label takes
+its natural spot (a pill above its dot; a connection label on its arc) unless
+that's taken, in which case it's moved to the nearest free spot and a subtle
+leader line is drawn back to the marker/arc. So **labels never overlap** — but
+heavy clusters still produce many leader lines, which gets busy. To keep maps
+clean:
+
+- Keep markers to **~3–6** and prefer **short** labels (“Greek world”, not a
+  sentence). Long labels are placed farther out (longer leaders).
+- Even though overlaps are handled, **very tightly clustered markers** (e.g.
+  Jerusalem + West Bank, ~20 km apart) still read as a knot of leader lines —
+  drop the secondary ones or widen the topic's scope when you can.
+
+### Interaction (zoom / pan / fullscreen)
+
+Every map is wrapped in **`MapViewport.tsx`**, which adds pinch-to-zoom,
+drag-to-pan (finger or mouse), wheel zoom, double-tap zoom, and a **fullscreen**
+toggle with a leave button. You get this for free — `GeoMap` and `SchematicMap`
+just render their `<svg>` + labels as `MapViewport`'s children; the whole content
+layer is moved with one CSS transform so the SVG and HTML labels stay aligned.
+The default (un-zoomed) view is the fitted baseline; zoom is clamped to that
+baseline and pan is clamped so the map can't leave the frame.
+
+### Framing
+
+Geo maps frame **tightly to the markers** (`lib/geo.ts → fitProjection`) so the
+markers spread out and fill most of the canvas — *don't* re-introduce large
+padding. If a specific map needs a wider view, set `map.focus`.
+
+### How it works (for code changes)
+
+- `ContextMap.tsx` is a **dispatcher**: it checks the markers and renders either
+  `GeoMap` or `SchematicMap`. Both share `mapParts.tsx` (arcs, marker dots,
+  labels, leaders), de-collide their labels with `mapLayout.ts`, and are wrapped
+  by `MapViewport.tsx`, so the two modes look and feel like one family.
+- Real geometry: `lib/geo.ts` decodes `world-atlas` land (Natural Earth **110m**,
+  ~55 KB, bundled → works offline) and builds a Mercator projection fitted to the
+  markers. To use finer coastlines, swap the import to `land-50m.json`.
+- `GeoMap` is **lazy-loaded** (it pulls in `d3-geo` + the land data), so
+  schematic-only modules don't pay for it.
+- ⚠️ When fitting a projection to a bounding box, fit to the **corner points
+  (a `MultiPoint`)**, never a `Polygon` — a wrongly-wound spherical polygon makes
+  d3-geo treat the *interior as the whole planet* and zooms all the way out.
+- ⚠️ Keep the map container at the **8:5 aspect** (it matches the SVG `viewBox`)
+  so the HTML labels line up with the SVG markers. Fullscreen enlarges that 8:5
+  box rather than stretching it.
+
+---
+
 ## App structure
 
 ```
@@ -84,13 +189,19 @@ src/
     content.ts             # content registry (import.meta.glob)
     progress.ts            # localStorage progress tracking
     text.ts                # slug humanize / helpers
+    geo.ts                 # land geometry + fitted projection (d3-geo)
   components/
     AppShell.tsx           # mobile phone-frame layout
     ui/                    # small reusable bits (Button, ProgressBar, …)
     home/                  # Home + module selection
     module/               # ModuleExperience + the 5 learning stages
       ContextIntro.tsx     # 1. context introduction
-      ContextMap.tsx       # stylized map with highlighted regions
+      ContextMap.tsx       # map dispatcher → GeoMap or SchematicMap
+      GeoMap.tsx           #   real cartographic map (lazy-loaded)
+      SchematicMap.tsx     #   abstract concept diagram (non-geographic)
+      MapViewport.tsx      #   shared zoom / pan / fullscreen frame
+      mapParts.tsx         #   shared markers / arcs / labels / leaders
+      mapLayout.ts         #   label de-collision (placement + leader lines)
       StoryFeed.tsx        # 2. vertical story scroll
       Timeline.tsx         # 3. persistent timeline
       Quiz.tsx             # 4. recall

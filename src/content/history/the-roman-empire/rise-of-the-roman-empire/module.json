@@ -13,9 +13,9 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "rome", "label": "Rome", "x": 49, "y": 36, "role": "primary" },
-        { "id": "carthage", "label": "Carthage", "x": 43, "y": 62, "role": "secondary" },
-        { "id": "greece", "label": "Greek world", "x": 64, "y": 46, "role": "secondary" }
+        { "id": "rome", "label": "Rome", "lat": 41.9, "lng": 12.5, "role": "primary" },
+        { "id": "carthage", "label": "Carthage", "lat": 36.85, "lng": 10.32, "role": "secondary" },
+        { "id": "greece", "label": "Greek world", "lat": 38.0, "lng": 23.7, "role": "secondary" }
       ],
       "connections": [{ "from": "rome", "to": "carthage", "label": "Punic Wars" }]
     }

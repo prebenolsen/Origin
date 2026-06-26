@@ -13,12 +13,12 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "trondheim", "label": "Nidaros (Trondheim)", "x": 57, "y": 23, "role": "primary" },
-        { "id": "stiklestad", "label": "Stiklestad", "x": 59, "y": 20, "role": "secondary" },
-        { "id": "bergen", "label": "Bergen", "x": 49, "y": 30, "role": "primary" },
-        { "id": "iceland", "label": "Iceland", "x": 25, "y": 19, "role": "secondary" },
-        { "id": "greenland", "label": "Greenland", "x": 12, "y": 13, "role": "secondary" },
-        { "id": "copenhagen", "label": "Denmark", "x": 62, "y": 46, "role": "secondary" }
+        { "id": "trondheim", "label": "Nidaros (Trondheim)", "lat": 63.43, "lng": 10.4, "role": "primary" },
+        { "id": "stiklestad", "label": "Stiklestad", "lat": 63.8, "lng": 11.57, "role": "secondary" },
+        { "id": "bergen", "label": "Bergen", "lat": 60.39, "lng": 5.32, "role": "primary" },
+        { "id": "iceland", "label": "Iceland", "lat": 64.8, "lng": -18.9, "role": "secondary" },
+        { "id": "greenland", "label": "Greenland", "lat": 61.2, "lng": -45.4, "role": "secondary" },
+        { "id": "copenhagen", "label": "Denmark", "lat": 55.68, "lng": 12.57, "role": "secondary" }
       ],
       "connections": [
         { "from": "stiklestad", "to": "trondheim", "label": "St. Olaf cult" },

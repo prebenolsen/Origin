@@ -3,6 +3,76 @@
 All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
+## [2.0.0] - 2026-06-26
+
+### Files
+- Added `src/components/module/mapLayout.ts` (the placement engine). `mapParts.tsx`
+  gained `ArcLabel` + `LeaderLine`; `ConnectionArc` now draws only the arc.
+
+### Changed - real cartographic context maps (replaces the abstract "blob" map)
+- **Completely revamped the context map.** The old map drew three hardcoded
+  ellipse "landmasses" that were identical for every module — Rome, psychology,
+  and data-engineering all showed the same fake continents. It is gone.
+- The map now has **two honest modes**, chosen automatically per module:
+  - **`geo`** — when every marker carries real `lat`/`lng`, the map renders the
+    **actual coastlines** (Natural Earth land via `world-atlas` + `d3-geo`),
+    projected (Mercator) and auto-framed to the markers. A continent looks like
+    a continent and every marker sits at its true location.
+  - **`schematic`** — when markers lack coordinates (non-geographic topics like
+    psychology or political concepts, and legacy/placeholder data), the map
+    renders an intentional node-and-link **concept diagram** on a soft dotted
+    field. No fake geography.
+- New content schema: markers accept `lat`/`lng` (degrees); `x`/`y` (0–100 %)
+  are now the schematic fallback. Optional `map.focus` `[west, south, east,
+  north]` overrides the auto-frame. See the **Maps** section in `CLAUDE.md`.
+- Migrated the authored geographic modules to real coordinates: Rise of the
+  Roman Empire, the three Atlantic-world modules, A Nation Divided, Israel and
+  Palestine, and the four Norway modules.
+- New deps: `d3-geo`, `topojson-client`, `world-atlas`. The geo renderer is
+  lazy-loaded (~32 KB gzipped) so schematic-only modules stay lightweight; the
+  land data is bundled, so maps work offline.
+
+### Added - interactive maps: zoom, pan & fullscreen
+- **Tighter default framing.** Geo maps now frame *tightly* to their markers so
+  the markers spread out and fill the majority of the canvas instead of sitting
+  as a small cluster in the middle. A map of locations in Norway now zooms into
+  Norway rather than showing half of Europe. (Implemented by fitting the
+  projection to the markers' own bounds with label-aware margins, plus a small
+  min-span guard for single/clustered markers.)
+- **Pinch-to-zoom and drag-to-pan**, by finger or mouse, on **every** map and in
+  **both** inline and fullscreen views. Mouse-wheel zoom and double-click/tap to
+  toggle zoom are also supported. The view never zooms out past the fitted
+  baseline, and panning is clamped so the map can't be dragged off-screen.
+- **Fullscreen mode** via a button on each map, with a clear leave button (and
+  Escape / body-scroll-lock handling). Opening fullscreen resets the view.
+- Marker labels now flip below the dot near the top edge so the tighter framing
+  never clips them.
+
+### Fixed - map labels no longer overlap
+- Map text used to pile up in dense maps (e.g. Israel/Palestine, Norway). Added a
+  greedy **label de-collision** pass (`mapLayout.ts`): every label — both the
+  place-name pills and the connection labels — is placed so it doesn't overlap
+  other labels or the marker dots.
+- When a label can't stay in its natural spot (a pill above its dot, a connection
+  label on its arc), it's **moved to the nearest free position and a subtle,
+  theme-matched leader line** (thin amber/muted connector) is drawn back to the
+  marker / arc it belongs to. Well-spaced maps are unaffected — labels stay put
+  with no leaders.
+- Marker labels are placed first (they name the places, so they win the prime
+  spots); connection labels route around them.
+
+### Files
+- Added `src/components/module/MapViewport.tsx` (the shared pan/zoom/fullscreen
+  frame). `GeoMap`/`SchematicMap` now render their content inside it.
+
+### Files
+- Added `src/lib/geo.ts`, `src/components/module/GeoMap.tsx`,
+  `SchematicMap.tsx`, `mapParts.tsx`. `ContextMap.tsx` is now a thin dispatcher.
+
+## [1.26.1] - 2026-06-26
+
+### Fixed
+- Hide `period` label on module cards when the value is descriptive text rather than an actual time period (Politics and Psychology modules). Period is now only shown when the value contains a year/digit.
 
 ## [1.26.0] - 2026-06-26
 

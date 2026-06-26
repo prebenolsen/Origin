@@ -16,50 +16,50 @@
                 {
                     "id": "jerusalem",
                     "label": "Jerusalem",
-                    "x": 49,
-                    "y": 45,
+                    "lat": 31.78,
+                    "lng": 35.22,
                     "role": "primary"
                 },
                 {
                     "id": "telaviv",
                     "label": "Tel Aviv",
-                    "x": 42,
-                    "y": 44,
+                    "lat": 32.08,
+                    "lng": 34.78,
                     "role": "secondary"
                 },
                 {
                     "id": "gaza",
                     "label": "Gaza Strip",
-                    "x": 38,
-                    "y": 52,
+                    "lat": 31.5,
+                    "lng": 34.47,
                     "role": "primary"
                 },
                 {
                     "id": "westbank",
                     "label": "West Bank",
-                    "x": 52,
-                    "y": 47,
+                    "lat": 31.95,
+                    "lng": 35.3,
                     "role": "primary"
                 },
                 {
                     "id": "sinai",
                     "label": "Sinai",
-                    "x": 30,
-                    "y": 57,
+                    "lat": 29.8,
+                    "lng": 33.8,
                     "role": "secondary"
                 },
                 {
                     "id": "lebanon",
                     "label": "Lebanon",
-                    "x": 48,
-                    "y": 32,
+                    "lat": 33.6,
+                    "lng": 35.5,
                     "role": "secondary"
                 },
                 {
                     "id": "amman",
                     "label": "Jordan",
-                    "x": 61,
-                    "y": 48,
+                    "lat": 31.95,
+                    "lng": 35.93,
                     "role": "secondary"
                 }
             ],

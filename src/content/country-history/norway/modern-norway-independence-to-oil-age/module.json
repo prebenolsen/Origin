@@ -13,12 +13,12 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "eidsvoll", "label": "Eidsvoll", "x": 58, "y": 36, "role": "primary" },
-        { "id": "oslo", "label": "Oslo", "x": 60, "y": 38, "role": "primary" },
-        { "id": "stockholm", "label": "Stockholm", "x": 72, "y": 34, "role": "secondary" },
-        { "id": "london", "label": "London (Exile Government)", "x": 40, "y": 45, "role": "secondary" },
-        { "id": "north-sea", "label": "North Sea Oil Fields", "x": 47, "y": 34, "role": "primary" },
-        { "id": "nato", "label": "NATO Atlantic Space", "x": 33, "y": 30, "role": "secondary" }
+        { "id": "eidsvoll", "label": "Eidsvoll", "lat": 60.33, "lng": 11.26, "role": "primary" },
+        { "id": "oslo", "label": "Oslo", "lat": 59.91, "lng": 10.75, "role": "primary" },
+        { "id": "stockholm", "label": "Stockholm", "lat": 59.33, "lng": 18.07, "role": "secondary" },
+        { "id": "london", "label": "London (Exile Government)", "lat": 51.5, "lng": -0.13, "role": "secondary" },
+        { "id": "north-sea", "label": "North Sea Oil Fields", "lat": 59.5, "lng": 2.5, "role": "primary" },
+        { "id": "nato", "label": "NATO Atlantic Space", "lat": 58.0, "lng": -15.0, "role": "secondary" }
       ],
       "connections": [
         { "from": "eidsvoll", "to": "stockholm", "label": "1814 union framework" },

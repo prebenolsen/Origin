@@ -13,13 +13,13 @@
         "map": {
             "backdrop": "world",
             "markers": [
-                { "id": "iberia", "label": "Spain and Portugal", "x": 53, "y": 28, "role": "primary" },
-                { "id": "caribbean", "label": "Caribbean", "x": 24, "y": 45, "role": "primary" },
-                { "id": "mexico", "label": "Mesoamerica", "x": 16, "y": 49, "role": "secondary" },
-                { "id": "andes", "label": "Andean South America", "x": 27, "y": 65, "role": "secondary" },
-                { "id": "brazil", "label": "Brazil", "x": 36, "y": 61, "role": "primary" },
-                { "id": "na-east", "label": "North American Atlantic Coast", "x": 20, "y": 36, "role": "secondary" },
-                { "id": "wafrica", "label": "West Africa", "x": 49, "y": 56, "role": "secondary" }
+                { "id": "iberia", "label": "Spain and Portugal", "lat": 40.0, "lng": -4.0, "role": "primary" },
+                { "id": "caribbean", "label": "Caribbean", "lat": 18.0, "lng": -72.0, "role": "primary" },
+                { "id": "mexico", "label": "Mesoamerica", "lat": 19.4, "lng": -99.1, "role": "secondary" },
+                { "id": "andes", "label": "Andean South America", "lat": -12.0, "lng": -75.0, "role": "secondary" },
+                { "id": "brazil", "label": "Brazil", "lat": -10.0, "lng": -45.0, "role": "primary" },
+                { "id": "na-east", "label": "North American Atlantic Coast", "lat": 37.0, "lng": -76.0, "role": "secondary" },
+                { "id": "wafrica", "label": "West Africa", "lat": 6.0, "lng": -2.0, "role": "secondary" }
             ],
             "connections": [
                 { "from": "iberia", "to": "caribbean", "label": "Atlantic voyages" },

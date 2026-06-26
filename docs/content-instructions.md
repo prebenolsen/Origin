@@ -338,6 +338,29 @@ The context screen is not a geography lesson.
 
 It exists to create the mental map before the story begins.
 
+THE MAP (module.json → context.map)
+
+Two kinds of maps, chosen automatically from the marker data:
+
+- GEOGRAPHIC topic (a place matters): give EVERY marker real `lat` and `lng`
+  in decimal degrees (North/East positive, South/West negative). The app draws
+  the real coastlines and frames the view to your markers.
+
+  { "id": "rome", "label": "Rome", "lat": 41.9, "lng": 12.5, "role": "primary" }
+
+- NON-GEOGRAPHIC / conceptual topic (psychology, abstract ideas, technology):
+  do NOT use coordinates. Position markers with `x`/`y` as percentages of the
+  box (0–100). The app draws an abstract concept diagram instead of a map.
+
+  { "id": "memory", "label": "Working memory", "x": 35, "y": 40, "role": "primary" }
+
+Rules:
+- Keep it to ~3–6 markers. Use short labels. Avoid placing markers very close
+  together (their labels overlap). `role` is "primary" (emphasized) or "secondary".
+- `connections` link marker ids with an optional label: a story-driving relationship,
+  not every possible line. Example: { "from": "rome", "to": "carthage", "label": "Punic Wars" }.
+- See the "Maps" section of CLAUDE.md for the full schema and the optional `focus` frame.
+
 --------------------------------------------------
 
 QUIZ

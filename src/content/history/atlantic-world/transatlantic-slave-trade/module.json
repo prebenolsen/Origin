@@ -13,9 +13,9 @@
     "map": {
       "backdrop": "world",
       "markers": [
-        { "id": "europe", "label": "Europe", "x": 60, "y": 26, "role": "primary" },
-        { "id": "wafrica", "label": "West Africa", "x": 55, "y": 60, "role": "primary" },
-        { "id": "americas", "label": "The Americas", "x": 22, "y": 52, "role": "primary" }
+        { "id": "europe", "label": "Europe", "lat": 43.0, "lng": -6.0, "role": "primary" },
+        { "id": "wafrica", "label": "West Africa", "lat": 6.0, "lng": -2.0, "role": "primary" },
+        { "id": "americas", "label": "The Americas", "lat": 15.0, "lng": -66.0, "role": "primary" }
       ],
       "connections": [
         { "from": "europe", "to": "wafrica", "label": "goods" },

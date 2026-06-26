@@ -13,12 +13,12 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "bergen", "label": "Bergen", "x": 50, "y": 30, "role": "primary" },
-        { "id": "copenhagen", "label": "Copenhagen", "x": 62, "y": 46, "role": "primary" },
-        { "id": "stockholm", "label": "Stockholm", "x": 71, "y": 33, "role": "secondary" },
-        { "id": "oslo", "label": "Christiania (Oslo)", "x": 60, "y": 36, "role": "secondary" },
-        { "id": "north-sea", "label": "North Sea Trade", "x": 42, "y": 39, "role": "secondary" },
-        { "id": "rural", "label": "Rural Valleys and Fjords", "x": 56, "y": 27, "role": "secondary" }
+        { "id": "bergen", "label": "Bergen", "lat": 60.39, "lng": 5.32, "role": "primary" },
+        { "id": "copenhagen", "label": "Copenhagen", "lat": 55.68, "lng": 12.57, "role": "primary" },
+        { "id": "stockholm", "label": "Stockholm", "lat": 59.33, "lng": 18.07, "role": "secondary" },
+        { "id": "oslo", "label": "Christiania (Oslo)", "lat": 59.91, "lng": 10.75, "role": "secondary" },
+        { "id": "north-sea", "label": "North Sea Trade", "lat": 56.5, "lng": 3.0, "role": "secondary" },
+        { "id": "rural", "label": "Rural Valleys and Fjords", "lat": 61.5, "lng": 8.5, "role": "secondary" }
       ],
       "connections": [
         { "from": "copenhagen", "to": "oslo", "label": "Administration" },

@@ -13,9 +13,9 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "union", "label": "Union (North)", "x": 52, "y": 30, "role": "primary" },
-        { "id": "border", "label": "Border states", "x": 50, "y": 47, "role": "secondary" },
-        { "id": "confederacy", "label": "Confederacy (South)", "x": 46, "y": 66, "role": "primary" }
+        { "id": "union", "label": "Union (North)", "lat": 42.0, "lng": -75.0, "role": "primary" },
+        { "id": "border", "label": "Border states", "lat": 38.5, "lng": -85.0, "role": "secondary" },
+        { "id": "confederacy", "label": "Confederacy (South)", "lat": 32.5, "lng": -85.0, "role": "primary" }
       ]
     }
   }

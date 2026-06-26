@@ -13,12 +13,12 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "norway-coast", "label": "Norwegian Coast", "x": 54, "y": 22, "role": "primary" },
-        { "id": "fjordlands", "label": "Fjords and Valleys", "x": 58, "y": 34, "role": "secondary" },
-        { "id": "lindisfarne", "label": "Lindisfarne", "x": 44, "y": 38, "role": "secondary" },
-        { "id": "iceland", "label": "Iceland", "x": 26, "y": 20, "role": "primary" },
-        { "id": "greenland", "label": "Greenland", "x": 14, "y": 13, "role": "secondary" },
-        { "id": "dublin", "label": "Dublin", "x": 37, "y": 43, "role": "secondary" }
+        { "id": "norway-coast", "label": "Norwegian Coast", "lat": 64.5, "lng": 11.0, "role": "primary" },
+        { "id": "fjordlands", "label": "Fjords and Valleys", "lat": 61.5, "lng": 7.0, "role": "secondary" },
+        { "id": "lindisfarne", "label": "Lindisfarne", "lat": 55.68, "lng": -1.8, "role": "secondary" },
+        { "id": "iceland", "label": "Iceland", "lat": 64.8, "lng": -18.9, "role": "primary" },
+        { "id": "greenland", "label": "Greenland", "lat": 61.2, "lng": -45.4, "role": "secondary" },
+        { "id": "dublin", "label": "Dublin", "lat": 53.35, "lng": -6.26, "role": "secondary" }
       ],
       "connections": [
         { "from": "norway-coast", "to": "lindisfarne", "label": "Raids" },
