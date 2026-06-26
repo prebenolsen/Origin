@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "timeline": "Early universe to today",
+    "title": "The night sky is a history book",
+    "content": "When you look up, you are seeing objects at different distances, so you are also seeing different moments in time. The nearest star, the Sun, shows local stellar physics. Distant galaxies show how the universe organized itself over billions of years.",
+    "next": "What exactly is a star, physically?"
+  },
+  {
+    "id": 2,
+    "timeline": "Stellar birth",
+    "title": "A star is a balance of forces",
+    "content": "Stars form when giant clouds of gas collapse under gravity. In the core, fusion turns hydrogen into helium and releases energy. That outward pressure from radiation pushes against gravity, creating a temporary balance.",
+    "next": "What happens when that balance starts to fail?"
+  },
+  {
+    "id": 3,
+    "timeline": "Stellar lifetime",
+    "title": "Stars have life stages",
+    "content": "Like living systems, stars change over time as they use their fuel. A star can spend long periods in a stable phase, then shift dramatically when core conditions change. Mass is the key variable that decides how fast and how violently that story unfolds.",
+    "next": "Where does a star like our Sun fit in this picture?"
+  },
+  {
+    "id": 4,
+    "timeline": "Main-sequence phase",
+    "title": "Sun-like stars: steady but temporary",
+    "content": "Sun-like stars are in a long, stable fusion phase often called the main sequence. Their brightness and temperature stay relatively consistent for billions of years. This stability is why planetary systems can have long windows for complex evolution.",
+    "next": "How do stars look when they begin to age?"
+  },
+  {
+    "id": 5,
+    "timeline": "Red giant phase",
+    "title": "Red giants grow huge and cool at the surface",
+    "content": "As hydrogen fuel in the core is depleted, many stars expand into red giants. They become much larger than the Sun but often have cooler outer layers, giving them their reddish color. Size and surface temperature do not always increase together.",
+    "next": "What is the most dramatic way a massive star can end?"
+  },
+  {
+    "id": 6,
+    "timeline": "Supernova phase",
+    "title": "Supernova: stellar death as cosmic creation",
+    "content": "In very massive stars, fusion eventually builds heavier elements up to iron. Iron fusion does not provide usable energy, so core support collapses and the star can explode as a supernova. That explosion forges and spreads many heavy elements needed for planets and life.",
+    "next": "Do all stars behave as isolated single objects?"
+  },
+  {
+    "id": 7,
+    "timeline": "Star systems",
+    "title": "Many stars come in pairs",
+    "content": "Binary stars are two stars orbiting a shared center of mass. Studying their motion helps astronomers estimate stellar masses, which are otherwise hard to measure directly. They show that stellar evolution often happens in systems, not alone.",
+    "next": "Why do some stars appear to change brightness over time?"
+  },
+  {
+    "id": 8,
+    "timeline": "Stellar variability",
+    "title": "Variable stars are more than twinkling",
+    "content": "Variable stars genuinely change how much light they emit, often in cycles. This is different from atmospheric twinkling, which is an Earth-side effect caused by moving air. True variability reveals internal stellar processes and can even help measure cosmic distances.",
+    "next": "Where do these stars live at large scale?"
+  },
+  {
+    "id": 9,
+    "timeline": "Galaxy formation",
+    "title": "Galaxies are gravity-built cities of stars",
+    "content": "A galaxy is a vast gravitational system containing stars, gas, dust, and dark matter. Typical galaxies hold from hundreds of millions to trillions of stars. Gravity keeps these parts bound while allowing complex internal motion.",
+    "next": "Why do galaxies have different shapes?"
+  },
+  {
+    "id": 10,
+    "timeline": "Galaxy structure",
+    "title": "Galaxies come in recognizable families",
+    "content": "Astronomers classify major galaxy shapes as elliptical, spiral, barred spiral, and irregular. Shape reflects a galaxy's history of rotation, mergers, and star formation. The Milky Way, our home galaxy, is a barred spiral.",
+    "next": "Where are we inside the Milky Way?"
+  },
+  {
+    "id": 11,
+    "timeline": "Milky Way perspective",
+    "title": "We observe our galaxy from the inside",
+    "content": "The Sun sits in one arm of the Milky Way, not at the center. On dark nights, the bright band across the sky is part of our own galaxy seen edge-on. Our inside view makes mapping the Milky Way harder than mapping distant galaxies.",
+    "next": "How does a black hole enter this story?"
+  },
+  {
+    "id": 12,
+    "timeline": "Black hole formation",
+    "title": "Black holes form when gravity wins completely",
+    "content": "If a very massive stellar core collapses after a supernova, it can become a black hole. The boundary is called the event horizon: beyond it, escape would require faster-than-light speed, which is impossible. Black holes do not act like vacuum cleaners; distance and mass still govern gravity.",
+    "next": "What would falling toward one look like?"
+  },
+  {
+    "id": 13,
+    "timeline": "Event horizon effects",
+    "title": "Time, tides, and survival near black holes",
+    "content": "Strong gravity changes how time appears to pass: distant observers see infalling objects slow and redden, while the infalling observer sees outside time speed up. Tidal gravity can stretch matter, a process nicknamed spaghettification. How quickly this becomes fatal depends on black hole mass.",
+    "next": "Do black holes last forever?"
+  },
+  {
+    "id": 14,
+    "timeline": "Far-future universe",
+    "title": "Even black holes are not truly eternal",
+    "content": "Quantum effects predict that black holes slowly lose energy through Hawking radiation. Large black holes evaporate unimaginably slowly, over timescales far beyond current cosmic age. The final picture is surprising: the universe's most extreme objects may eventually fade away.",
+    "next": "Ready to test your cosmic mental model?"
+  }
+]

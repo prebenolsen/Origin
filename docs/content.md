@@ -130,4 +130,18 @@
 | Technology | Data Engineering | Databricks Makes Spark Easier | Notebooks, clusters, and serverless: turning Spark into a platform | DONE |
 | Technology | Data Engineering | The Lakehouse Idea | Combining the flexibility of data lakes with the reliability of warehouses | DONE |
 | Technology | Data Engineering | Delta Lake Solves Reliability Problems | ACID transactions and trustworthy tables on top of the data lake | DONE |
-| Technology | Data Engineering | How Companies Use Databricks Today | Ingestion, pipelines, jobs, streaming, batch, and AI in production | DONE |
+| Technology | Data Engineering | How Companies Use Databricks Today | Ingestion, pipelines, jobs, streaming, batch, and AI in production | DONE |                                  | Era/Context                 | Status |
+| Science  | Universe    | The Big Bang and the origin of the universe | ~13.8 billion BCE – present | ------ |
+| Science  | Universe    | Stars, galaxies, and black holes            | ~13 billion BCE – present   | DONE |
+| Science  | Universe    | The Solar System and planets                | ~4.6 billion BCE – present  | ------ |
+| Science  | Earth       | How Earth formed and changed                | ~4.6 billion BCE – present  | DONE |
+| Science  | Earth       | Climate, weather, and natural forces        | Present day                 | ------ |
+| Science  | Life        | The origin of life                          | Early Earth – present       | ------ |
+| Science  | Life        | Evolution and natural selection             | 1859 – present              | ------ |
+| Science  | Life        | DNA and genetics                            | 1860s – present             | ------ |
+| Science  | Human Body  | The brain and consciousness                 | Modern science              | ------ |
+| Science  | Human Body  | The human body and how it works             | Modern science              | ------ |
+| Science  | Matter      | Atoms, elements, and the periodic table     | Ancient ideas – present     | ------ |
+| Science  | Matter      | Chemistry and everyday reactions            | Modern chemistry            | ------ |
+| Science  | Physics     | Gravity, motion, and forces                 | 1600s – present             | ------ |
+| Science  | Physics     | Energy, electricity, and technology         | 1800s – present             | ------ |

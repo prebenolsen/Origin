@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "front": "What is a star, in one sentence?",
+    "back": "A star is a massive ball of hot gas where gravity inward is balanced by energy from nuclear fusion outward."
+  },
+  {
+    "id": 2,
+    "front": "Why is stellar mass so important?",
+    "back": "Mass controls core pressure and temperature, which determines a star's lifespan and how it dies."
+  },
+  {
+    "id": 3,
+    "front": "Main sequence",
+    "back": "The long stable phase when a star fuses hydrogen in its core."
+  },
+  {
+    "id": 4,
+    "front": "Red giant",
+    "back": "An expanded late-life star that is often cooler at the surface but much larger in size."
+  },
+  {
+    "id": 5,
+    "front": "Why can iron trigger collapse in massive stars?",
+    "back": "Because fusion at that stage no longer supplies enough energy to keep core pressure supporting the star."
+  },
+  {
+    "id": 6,
+    "front": "Supernova",
+    "back": "A powerful stellar explosion after core collapse that disperses heavy elements into space."
+  },
+  {
+    "id": 7,
+    "front": "Binary star system",
+    "back": "Two stars gravitationally bound in orbit around a shared center of mass."
+  },
+  {
+    "id": 8,
+    "front": "Variable star vs twinkling",
+    "back": "Variable stars truly change emitted light; twinkling is mainly atmospheric distortion seen from Earth."
+  },
+  {
+    "id": 9,
+    "front": "Galaxy",
+    "back": "A huge gravitational system of stars, gas, dust, and dark matter, often containing millions to trillions of stars."
+  },
+  {
+    "id": 10,
+    "front": "Milky Way type",
+    "back": "The Milky Way is a barred spiral galaxy, and the Sun lies in one of its spiral arms."
+  },
+  {
+    "id": 11,
+    "front": "Event horizon",
+    "back": "The boundary around a black hole beyond which nothing, including light, can escape."
+  },
+  {
+    "id": 12,
+    "front": "Hawking radiation",
+    "back": "A predicted quantum process through which black holes slowly lose energy and can eventually evaporate."
+  }
+]

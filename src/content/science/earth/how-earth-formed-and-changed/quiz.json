@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why was Hutton's Siccar Point observation so important?",
+    "options": [
+      "It proved Earth has never changed",
+      "It showed layered rock histories require very long timescales",
+      "It provided the first satellite image of plate boundaries",
+      "It directly measured Earth's core temperature"
+    ],
+    "answer": 1,
+    "explanation": "The rock sequence required deposition, deformation, erosion, and redeposition over immense spans of time."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Radiometric dating works because radioactive decay rates are predictable.",
+    "answer": true,
+    "explanation": "Methods like uranium to lead dating use known decay rates to estimate mineral ages."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What best explains why granitic crust helped continents persist?",
+    "options": [
+      "Granite is denser than oceanic basalt",
+      "Granite resists all erosion",
+      "Granite is more buoyant than basaltic crust",
+      "Granite forms only in deserts"
+    ],
+    "answer": 2,
+    "explanation": "Lower-density continental crust floats higher on the mantle and tends to persist compared with denser oceanic crust."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each person or term to its contribution.",
+    "pairs": [
+      {
+        "left": "James Hutton",
+        "right": "Rock-based argument for deep time"
+      },
+      {
+        "left": "Arthur Holmes",
+        "right": "Radiometric dating of Earth history"
+      },
+      {
+        "left": "Alfred Wegener",
+        "right": "Early continental drift proposal"
+      },
+      {
+        "left": "Stromatolites",
+        "right": "Microbial photosynthesis that raised oxygen"
+      }
+    ],
+    "explanation": "These names connect key scientific breakthroughs in age, motion, and atmospheric evolution."
+  },
+  {
+    "id": 5,
+    "type": "ordering",
+    "question": "Place these broad events in chronological order.",
+    "items": [
+      "Cambrian diversification",
+      "Formation of long-lasting oceans",
+      "Great oxygenation",
+      "Permian mass extinction"
+    ],
+    "correctOrder": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "Oceans formed first, then long oxygenation, then Cambrian diversification, and much later the Permian extinction."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What mechanism most directly drives plate motion in modern geology?",
+    "options": [
+      "Tidal pull from the Moon",
+      "Mantle convection with ridge creation and subduction",
+      "Seasonal climate cycles",
+      "Wind erosion on continents"
+    ],
+    "answer": 1,
+    "explanation": "The accepted framework is plate tectonics driven by mantle circulation, crust formation at ridges, and crust recycling at subduction zones."
+  },
+  {
+    "id": 7,
+    "type": "true-false",
+    "question": "The K-Pg extinction is best explained by a single cause with no other contributing stressors.",
+    "answer": false,
+    "explanation": "A major asteroid impact is central, but major volcanism and atmospheric effects also likely influenced severity."
+  },
+  {
+    "id": 8,
+    "type": "multiple-choice",
+    "question": "Why does this module emphasize that civilization is recent and fragile?",
+    "options": [
+      "Because geology stopped changing once humans appeared",
+      "Because the stable climate interval of civilization is short compared with Earth history",
+      "Because ice ages ended permanently",
+      "Because tectonics can be controlled by technology"
+    ],
+    "answer": 1,
+    "explanation": "Human civilization developed during a brief stable period; geological and climate systems continue to change over longer cycles."
+  }
+]

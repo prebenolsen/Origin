@@ -1,0 +1,63 @@
+{
+  "title": "Stars, Galaxies, and Black Holes",
+  "category": "science",
+  "subcategory": "universe",
+  "summary": "Learn how stars live and die, how galaxies organize the cosmos, and why black holes are extreme results of gravity.",
+  "accent": "#1d4ed8",
+  "context": {
+    "type": "schematic",
+    "headline": "From Starlight to Singularities",
+    "description": "This module follows one big cosmic chain: gas clouds form stars, stars shape galaxies, and the most massive stars can end as black holes. You will build a mental model of stellar life cycles, galaxy structure, and what the event horizon really means.",
+    "when": "From the first stars (~13.5 billion years ago) to today",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        {
+          "id": "stellar-nursery",
+          "label": "Gas clouds",
+          "x": 18,
+          "y": 42,
+          "role": "primary"
+        },
+        {
+          "id": "stars",
+          "label": "Stars",
+          "x": 40,
+          "y": 33,
+          "role": "primary"
+        },
+        {
+          "id": "galaxies",
+          "label": "Galaxies",
+          "x": 63,
+          "y": 45,
+          "role": "primary"
+        },
+        {
+          "id": "black-holes",
+          "label": "Black holes",
+          "x": 83,
+          "y": 35,
+          "role": "secondary"
+        }
+      ],
+      "connections": [
+        {
+          "from": "stellar-nursery",
+          "to": "stars",
+          "label": "collapse + fusion"
+        },
+        {
+          "from": "stars",
+          "to": "galaxies",
+          "label": "gravity binds"
+        },
+        {
+          "from": "stars",
+          "to": "black-holes",
+          "label": "massive-star death"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "timeline": "Deep time framework",
+    "title": "Earth history is mostly invisible to intuition",
+    "content": "Human history is tiny compared with planetary history. To understand Earth, geologists rely on deep time: billions of years, not thousands. This time scale is the foundation for every major process in this module.",
+    "next": "How did scientists first realize Earth was far older than traditional accounts?"
+  },
+  {
+    "id": 2,
+    "timeline": "Scientific turning point (1788 CE)",
+    "title": "James Hutton changed the story",
+    "content": "At Siccar Point in Scotland, Hutton studied rock layers that had been deposited, tilted, eroded, and buried again. That sequence required immense time. His insight moved Earth history from scriptural timelines to evidence from rocks.",
+    "next": "How was Earth's age measured more precisely?"
+  },
+  {
+    "id": 3,
+    "timeline": "Radiometric dating (1911 CE onward)",
+    "title": "Arthur Holmes put numbers on deep time",
+    "content": "Radiometric dating uses predictable decay, such as uranium to lead, to date minerals. Holmes showed Earth was about 4.5 billion years old. This gave geology a reliable clock and reordered the whole past.",
+    "next": "What was newborn Earth actually like?"
+  },
+  {
+    "id": 4,
+    "timeline": "Molten Earth (~4.5 billion years ago)",
+    "title": "Earth began as a world of fire",
+    "content": "Early Earth formed through violent collisions in the young solar system. The surface was largely molten, with intense bombardment and extreme heat. The planet had to cool before stable oceans and crust could emerge.",
+    "next": "So how did a fire world become a water world?"
+  },
+  {
+    "id": 5,
+    "timeline": "Water world transition (~4.4-4.0 billion years ago)",
+    "title": "Cooling, vapor, and relentless rain",
+    "content": "As Earth cooled, water vapor condensed and rain fell over immense timescales. Oceanic evidence from ancient pillow lavas confirms early underwater volcanism. The surface shifted toward a planet dominated by ocean.",
+    "next": "Where did all that water come from?"
+  },
+  {
+    "id": 6,
+    "timeline": "Early oceans and atmosphere",
+    "title": "Water source is still partly debated",
+    "content": "Some water came from volcanic outgassing, while some likely arrived in water-rich asteroids and comets. Ancient zircons show chemical signals consistent with very early water. The key idea is uncertainty with strong evidence, not absolute certainty.",
+    "next": "How did continents appear in an ocean-dominated world?"
+  },
+  {
+    "id": 7,
+    "timeline": "Continental crust growth (~3.5-2.5 billion years ago)",
+    "title": "Granite helped land survive",
+    "content": "Oceanic crust is denser, while granitic crust is lighter and more buoyant. As granitic proto-continents formed and grew, stable landmasses became possible. This changed coastlines, habitats, and long-term climate feedbacks.",
+    "next": "What changed the atmosphere from hostile to breathable?"
+  },
+  {
+    "id": 8,
+    "timeline": "Great oxygenation (~2.5 billion years ago onward)",
+    "title": "Stromatolites transformed the planet",
+    "content": "Photosynthetic microbes called stromatolites released oxygen for immense spans of time. At first, oxygen reacted with dissolved iron in oceans, then accumulated in air. Earth's color and chemistry shifted toward the blue planet we recognize.",
+    "next": "Why is this oxygen story also an economic story today?"
+  },
+  {
+    "id": 9,
+    "timeline": "Oxygenation consequences",
+    "title": "Ancient chemistry left modern resources",
+    "content": "The oxidation of oceanic iron helped create banded iron formations. Those deposits became major iron ore sources for modern industry. Geological events from billions of years ago still shape current economies.",
+    "next": "How did scientists explain moving continents?"
+  },
+  {
+    "id": 10,
+    "timeline": "Continental drift idea (1912 CE)",
+    "title": "Wegener was early and mostly right",
+    "content": "Alfred Wegener proposed that continents were once joined and later drifted apart. His idea was mocked because mechanism was unclear. Decades later, seafloor mapping and plate tectonics confirmed the core insight.",
+    "next": "What mechanism finally solved the puzzle?"
+  },
+  {
+    "id": 11,
+    "timeline": "Plate tectonics framework (mid-20th century)",
+    "title": "Earth recycles its crust",
+    "content": "Mantle convection drives plates apart at ridges and down at subduction zones. New ocean floor forms while old floor is destroyed. Continents move because they ride these moving plates.",
+    "next": "What did supercontinents do to climate and life?"
+  },
+  {
+    "id": 12,
+    "timeline": "Rodinia and Snowball Earth (~700 million years ago)",
+    "title": "A supercontinent helped freeze the planet",
+    "content": "Rodinia's configuration likely disrupted ocean heat transport, allowing runaway glaciation. Ice expanded, reflectivity increased, and cooling reinforced itself. Life survived, but under extreme pressure.",
+    "next": "How did Earth escape this deep freeze?"
+  },
+  {
+    "id": 13,
+    "timeline": "Post-snowball recovery (~650-540 million years ago)",
+    "title": "Volcanism helped thaw the planet",
+    "content": "As Rodinia fractured, volcanism released greenhouse gases and weakened global ice cover. New shallow seas and oxygen-rich environments expanded. Conditions improved for biological innovation.",
+    "next": "What happened when oxygen and ecosystems rose together?"
+  },
+  {
+    "id": 14,
+    "timeline": "Cambrian explosion (~540-500 million years ago)",
+    "title": "Complex animal life surged",
+    "content": "Fossils from sites like the Burgess Shale show rapid diversification of body plans and ecological roles. Predation intensified evolutionary pressure. Many core animal features became widespread.",
+    "next": "How did life move from ocean to land?"
+  },
+  {
+    "id": 15,
+    "timeline": "Land ecosystems and Carboniferous (~400-300 million years ago)",
+    "title": "Swamps, forests, and future fuel",
+    "content": "As oxygen rose and ozone shielding improved, life expanded onto land. Vast swamp ecosystems accumulated organic matter that later became coal, oil, and gas. Ancient biology became modern energy.",
+    "next": "Did Earth remain biologically stable after that?"
+  },
+  {
+    "id": 16,
+    "timeline": "Permian mass extinction (~252 million years ago)",
+    "title": "The deadliest known reset",
+    "content": "Massive Siberian volcanism released enormous volumes of lava and toxic gases. Climate and ecosystems destabilized, and most species disappeared. This was the largest mass extinction in Earth's known history.",
+    "next": "Who dominated after this reset?"
+  },
+  {
+    "id": 17,
+    "timeline": "Dinosaur era and breakup of Pangea (~230-66 million years ago)",
+    "title": "Warm worlds, drifting continents, giant animals",
+    "content": "Dinosaurs diversified under long greenhouse conditions while continents split apart. Tectonics reshaped oceans and climates across millions of years. Biological dominance can last long and still end abruptly.",
+    "next": "What ended the dinosaur age?"
+  },
+  {
+    "id": 18,
+    "timeline": "K-Pg extinction (~66 million years ago)",
+    "title": "Impact and volcanism delivered a double shock",
+    "content": "Evidence points to a major asteroid impact at Chicxulub, alongside major volcanism in India. Dust and atmospheric disruption collapsed food webs. Non-avian dinosaurs disappeared, opening ecological space for mammals.",
+    "next": "How did geology shape the modern landscapes we know?"
+  },
+  {
+    "id": 19,
+    "timeline": "Recent Earth shaping (last 50 million years)",
+    "title": "Mountains, canyons, and ice ages",
+    "content": "Continental collisions built ranges like the Alps, while uplift and rivers carved systems like the Grand Canyon. In the last two million years, glacial cycles repeatedly reshaped large regions. Modern terrain is a product of tectonics plus erosion.",
+    "next": "Where do humans fit in this entire timeline?"
+  },
+  {
+    "id": 20,
+    "timeline": "Human window (last ~10,000 years)",
+    "title": "Civilization lives in a narrow climate interval",
+    "content": "Most of civilization developed during a relatively stable warm phase between stronger glacial episodes. Geological processes will continue beyond human timescales, and future climate and tectonic shifts are inevitable. The core lesson is humility: humanity operates inside planetary systems, not outside them.",
+    "next": "Ready to test your understanding of Earth as a changing system?"
+  }
+]

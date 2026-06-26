@@ -1,8 +1,20 @@
-# Changelog
+﻿# Changelog
 
 All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
+
+## [3.2.0] - 2026-06-27
+
+### Added - authored Science Earth and Universe modules from source transcripts
+
+- Completed `src/content/science/universe/stars-galaxies-and-black-holes/` by replacing placeholders in `module.json`, `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json`.
+- Completed `src/content/science/earth/how-earth-formed-and-changed/` by replacing placeholders in `module.json`, `story.json`, `timeline.json`, `quiz.json`, and `flashcards.json`.
+- Updated `docs/content.md` and marked both tracker rows as `DONE`:
+  - `Science | Universe | Stars, galaxies, and black holes`
+  - `Science | Earth | How Earth formed and changed`
+- Updated `docs/architecture.md` with completion notes for both modules.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.2.0** (MINOR - content).
 
 ## [3.1.0] - 2026-06-27
 
@@ -14,7 +26,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
 - Documented the rule in `CLAUDE.md` and `docs/architecture.md`:
   non-history modules should omit `period` and use `context.when` when needed.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.1.0**
-  (MINOR — content schema usage normalization across modules).
+  (MINOR - content schema usage normalization across modules).
 
 ## [3.0.10] - 2026-06-27
 
@@ -24,7 +36,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
   "before content starts" experience that explains orientation, path selection,
   scope checking, and readiness before entering module stages.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.10**
-  (PATCH — documentation clarity update).
+  (PATCH - documentation clarity update).
 
 ## [3.0.9] - 2026-06-27
 
@@ -34,7 +46,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
   how learners enter the app, choose paths from the home screen, and navigate
   categories/modules or the Geography Challenge.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.9**
-  (PATCH — documentation UX clarification).
+  (PATCH - documentation UX clarification).
 
 ## [3.0.8] - 2026-06-27
 
@@ -49,7 +61,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
   1) unsolved countries in `SMALL_COUNTRY_IDS`
   2) unsolved countries in the rest of the board
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.8**
-  (PATCH — geography control UX fix).
+  (PATCH - geography control UX fix).
 
 ## [3.0.7] - 2026-06-27
 
@@ -68,7 +80,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
 - Added and exported `SMALL_COUNTRY_IDS` in `geography.ts` as the generated list
   of hard-to-tap small countries within the 193-country UN-aligned dataset.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.7**
-  (PATCH — geography interaction improvement).
+  (PATCH - geography interaction improvement).
 
 ## [3.0.6] - 2026-06-27
 
@@ -82,7 +94,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
   the UN list exactly.
 - Updated board country counts/blurbs to reflect the new totals.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.6**
-  (PATCH — geography data completeness).
+  (PATCH - geography data completeness).
 
 ## [3.0.5] - 2026-06-27
 
@@ -95,7 +107,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
   most central interior location, reducing cross-border spill (e.g. France over
   Spain) and keeping long-country labels on the main landmass.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.5**
-  (PATCH — geography label placement fix).
+  (PATCH - geography label placement fix).
 
 ## [3.0.4] - 2026-06-27
 
@@ -109,7 +121,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
 - Reduced pan/zoom blur by snapping viewport translate values to half-pixel
   increments during transform updates.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.4**
-  (PATCH — geography rendering reliability).
+  (PATCH - geography rendering reliability).
 
 ## [3.0.3] - 2026-06-27
 
@@ -124,7 +136,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
 - Removed an aggressive `will-change: transform` hint from `MapViewport` to avoid
   browser compositor rasterization that could make zoomed map layers look blurry.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.3**
-  (PATCH — geography runtime rendering fix).
+  (PATCH - geography runtime rendering fix).
 
 ## [3.0.2] - 2026-06-27
 
@@ -138,7 +150,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
 - Upgraded geography map geometry from `world-atlas` 110m to 50m for both
   country polygons and land backdrop coastlines, improving quality while zooming.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.2**
-  (PATCH — geography map bugfix + visual quality).
+  (PATCH - geography map bugfix + visual quality).
 
 ## [3.0.1] - 2026-06-27
 
@@ -153,7 +165,7 @@ MAJOR = big features, MINOR = content, PATCH = UX/UI.
 - Norway and similar tall/angled countries can now display their name on an
   angle inside the shape instead of forcing a horizontal overlay across the map.
 - Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.1**
-  (PATCH — geography UI fix).
+  (PATCH - geography UI fix).
 
 ## [3.0.0] - 2026-06-26
 
@@ -166,14 +178,14 @@ stages: a click-and-name geography game built on the same map theme.
   South America, Oceania) where you name **every** country, or **Oceans & Seas**
   (18 of the world's major waters).
 - **Play**: tap a country on the real Natural Earth map and type its name. Answers
-  are accepted at **≥80% similarity** (normalized Levenshtein distance, with a
+  are accepted at **ÔëÑ80% similarity** (normalized Levenshtein distance, with a
   one-typo grace), so near-misses and minor misspellings still count. Solved
   regions stay **highlighted and labelled** for the rest of the session.
 - **Hints**: reveal the **starting letter** (progressively, one letter per tap), or
-  **show 4 options** — the correct answer plus its three geographically nearest
+  **show 4 options** - the correct answer plus its three geographically nearest
   neighbours.
 - **Zoom & fullscreen**: the game reuses `MapViewport`, so pinch / scroll / wheel
-  zoom, drag-to-pan, double-tap, and an immersive fullscreen all work — and you can
+  zoom, drag-to-pan, double-tap, and an immersive fullscreen all work - and you can
   answer while fullscreen via a floating answer bar.
 - **Progress** is saved per board in `localStorage` (`origin:geo:v1`); a reset
   button clears a board.
@@ -190,9 +202,9 @@ stages: a click-and-name geography game built on the same map theme.
   was clicked through any pan/zoom) and `renderOverlay` (a non-transformed layer
   used for the fullscreen answer bar).
 - Routes `/geo` and `/geo/:board` are **lazy-loaded** so the country topology and
-  d3-geo only load when a learner opens a map — ordinary lessons are unaffected.
+  d3-geo only load when a learner opens a map - ordinary lessons are unaffected.
 - Home screen gains a "Geography Challenge" entry card.
-- Bumped `version.js` and synced `package.json` to **3.0.0** (MAJOR — new app
+- Bumped `version.js` and synced `package.json` to **3.0.0** (MAJOR - new app
   capability).
 
 ## [2.2.0] - 2026-06-26
@@ -200,16 +212,16 @@ stages: a click-and-name geography game built on the same map theme.
 ### Added - Rise of Nazi Germany & World War II modules (history / world-wars)
 - Authored two full modules from the shared source transcript, replacing the
   placeholder JSON in `rise-of-nazi-germany/` and `world-war-ii/`. The transcript
-  covered both topics with overlap; the lead-up (Versailles → 1939) went to *Rise
-  of Nazi Germany* and the conflict itself (1939 → 1945) to *World War II*.
-- **Rise of Nazi Germany** — geographic context map (Germany, Rhineland, Austria,
+  covered both topics with overlap; the lead-up (Versailles ÔåÆ 1939) went to *Rise
+  of Nazi Germany* and the conflict itself (1939 ÔåÆ 1945) to *World War II*.
+- **Rise of Nazi Germany** - geographic context map (Germany, Rhineland, Austria,
   Czechoslovakia, Poland) tracing the steps of expansion. 28 story cards: a
   defeated Germany & Versailles, the Weimar collapse and hyperinflation, Hitler's
   rise to dictatorship, secret then open rearmament, the impotence of the League
-  (Japan, Italy, Spain), appeasement, and the road to war (Anschluss → Munich →
-  Czechoslovakia → Nazi–Soviet Pact → Poland). 12 timeline milestones, 8 quiz
+  (Japan, Italy, Spain), appeasement, and the road to war (Anschluss ÔåÆ Munich ÔåÆ
+  Czechoslovakia ÔåÆ Nazi-Soviet Pact ÔåÆ Poland). 12 timeline milestones, 8 quiz
   questions, 10 flashcards.
-- **World War II** — geographic context map (Germany, Poland, France, Britain,
+- **World War II** - geographic context map (Germany, Poland, France, Britain,
   Stalingrad). 30 story cards across the war's arc: Blitzkrieg and Poland, the
   Phoney War and Winter War, the fall of France and Dunkirk, the Battle of Britain
   and the Blitz, Operation Barbarossa and Stalingrad, Pearl Harbor and the global
@@ -218,20 +230,20 @@ stages: a click-and-name geography game built on the same map theme.
   questions, 10 flashcards.
 - Marked both modules **DONE** in [`content.md`](content.md). Scope kept distinct
   from the neighbouring *The Holocaust* and *Post-war world order* modules.
-- Bumped `version.js` and synced `package.json` to **2.2.0** (MINOR — content).
+- Bumped `version.js` and synced `package.json` to **2.2.0** (MINOR - content).
 
 ## [2.1.0] - 2026-06-26
 
 ### Added - World War I module (history / world-wars)
 - Authored the full **World War I** module from the source transcript, replacing
   the placeholder JSON in `src/content/history/world-wars/world-war-i/`.
-- **module.json** — geographic context map (Germany, Western Front, Eastern Front,
+- **module.json** - geographic context map (Germany, Western Front, Eastern Front,
   Sarajevo, Gallipoli) framing the two-front war and the Schlieffen gamble.
-- **story.json** — 35 cards across five arcs: the war begins (1914), stalemate &
-  the widening global war (1914–15), the year of attrition (1916), the crisis year
-  (1917 — US entry, Russian Revolution), and the end & Versailles (1918–19).
-- **timeline.json** — 12 milestones; **quiz.json** — 8 understanding-focused
-  questions (multiple-choice, true/false, ordering, matching); **flashcards.json** —
+- **story.json** - 35 cards across five arcs: the war begins (1914), stalemate &
+  the widening global war (1914-15), the year of attrition (1916), the crisis year
+  (1917 - US entry, Russian Revolution), and the end & Versailles (1918-19).
+- **timeline.json** - 12 milestones; **quiz.json** - 8 understanding-focused
+  questions (multiple-choice, true/false, ordering, matching); **flashcards.json** -
   10 key terms, people, and cause/effect cards.
 - Marked World War I as **DONE** in [`content.md`](content.md). Scope kept distinct
   from the neighbouring *Causes of World War I* module (the lead-up), which remains.
@@ -245,18 +257,18 @@ stages: a click-and-name geography game built on the same map theme.
 
 ### Changed - real cartographic context maps (replaces the abstract "blob" map)
 - **Completely revamped the context map.** The old map drew three hardcoded
-  ellipse "landmasses" that were identical for every module — Rome, psychology,
+  ellipse "landmasses" that were identical for every module - Rome, psychology,
   and data-engineering all showed the same fake continents. It is gone.
 - The map now has **two honest modes**, chosen automatically per module:
-  - **`geo`** — when every marker carries real `lat`/`lng`, the map renders the
+  - **`geo`** - when every marker carries real `lat`/`lng`, the map renders the
     **actual coastlines** (Natural Earth land via `world-atlas` + `d3-geo`),
     projected (Mercator) and auto-framed to the markers. A continent looks like
     a continent and every marker sits at its true location.
-  - **`schematic`** — when markers lack coordinates (non-geographic topics like
+  - **`schematic`** - when markers lack coordinates (non-geographic topics like
     psychology or political concepts, and legacy/placeholder data), the map
     renders an intentional node-and-link **concept diagram** on a soft dotted
     field. No fake geography.
-- New content schema: markers accept `lat`/`lng` (degrees); `x`/`y` (0–100 %)
+- New content schema: markers accept `lat`/`lng` (degrees); `x`/`y` (0-100 %)
   are now the schematic fallback. Optional `map.focus` `[west, south, east,
   north]` overrides the auto-frame. See the **Maps** section in `CLAUDE.md`.
 - Migrated the authored geographic modules to real coordinates: Rise of the
@@ -284,13 +296,13 @@ stages: a click-and-name geography game built on the same map theme.
 
 ### Fixed - map labels no longer overlap
 - Map text used to pile up in dense maps (e.g. Israel/Palestine, Norway). Added a
-  greedy **label de-collision** pass (`mapLayout.ts`): every label — both the
-  place-name pills and the connection labels — is placed so it doesn't overlap
+  greedy **label de-collision** pass (`mapLayout.ts`): every label - both the
+  place-name pills and the connection labels - is placed so it doesn't overlap
   other labels or the marker dots.
 - When a label can't stay in its natural spot (a pill above its dot, a connection
   label on its arc), it's **moved to the nearest free position and a subtle,
   theme-matched leader line** (thin amber/muted connector) is drawn back to the
-  marker / arc it belongs to. Well-spaced maps are unaffected — labels stay put
+  marker / arc it belongs to. Well-spaced maps are unaffected - labels stay put
   with no leaders.
 - Marker labels are placed first (they name the places, so they win the prime
   spots); connection labels route around them.
@@ -310,11 +322,11 @@ stages: a click-and-name geography game built on the same map theme.
 
 ## [1.26.0] - 2026-06-26
 
-### Added - new Technology → Data Engineering category: 8 Databricks modules
+### Added - new Technology ÔåÆ Data Engineering category: 8 Databricks modules
 - Created a new top-level **Technology** category with a **Data Engineering** subcategory
   (auto-discovered by the content registry; no code changes needed).
-- Authored eight complete modules — `module.json`, `story.json`, `timeline.json`, `quiz.json`,
-  and `flashcards.json` each — that teach the Databricks / data-engineering story as one
+- Authored eight complete modules - `module.json`, `story.json`, `timeline.json`, `quiz.json`,
+  and `flashcards.json` each - that teach the Databricks / data-engineering story as one
   connected arc:
   - `the-data-problem`
   - `why-traditional-databases-struggled`
@@ -371,9 +383,9 @@ stages: a click-and-name geography game built on the same map theme.
 
 ### Added - Ottoman Empire tracker entries
 - Updated `docs/content.md` with three new History rows:
-  - `Medieval World | Rise of the Ottoman Empire | 1299 CE – 1453 CE`
-  - `Ottoman Empire | The Ottoman Empire at its height | 1453 CE – 1700s`
-  - `Ottoman Empire | Decline and collapse of the Ottoman Empire | 1700s – 1922 CE`
+  - `Medieval World | Rise of the Ottoman Empire | 1299 CE - 1453 CE`
+  - `Ottoman Empire | The Ottoman Empire at its height | 1453 CE - 1700s`
+  - `Ottoman Empire | Decline and collapse of the Ottoman Empire | 1700s - 1922 CE`
 
 ## [1.22.0] - 2026-06-25
 
@@ -543,7 +555,7 @@ stages: a click-and-name geography game built on the same map theme.
   was flattened into one long scroll.
 - `/` (`HomeScreen`) is now a category picker (`CategoryCard` grid); a new `/c/:cat`
   route (`CategoryScreen`) lists one category's modules grouped by subcategory, with an
-  "← All categories" back link.
+  "ÔåÉ All categories" back link.
 - Added `getCategory(slug)` to the content registry (`src/lib/content.ts`).
 - Leaving a module now returns to its category (`/c/:cat`) instead of the Home picker,
   keeping the browsing context.
@@ -553,10 +565,10 @@ stages: a click-and-name geography game built on the same map theme.
 ### Changed - hide unfinished placeholder modules from the user
 - The content registry (`src/lib/content.ts`) now skips any module whose `module.json`
   title is prefixed with `PLACEHOLDER:` (the scaffolding marker). Placeholder modules no
-  longer appear in the Home listings, the module count, or via a direct URL — only
+  longer appear in the Home listings, the module count, or via a direct URL - only
   authored modules are visible.
 - Data-driven and zero-touch: authoring a placeholder (replacing its title with a real
-  one) publishes the module automatically, with no code change — consistent with the
+  one) publishes the module automatically, with no code change - consistent with the
   "drop a folder, no code changes" workflow.
 - Currently surfaces the 12 authored modules and hides the 79 placeholder scaffolds.
 
@@ -645,9 +657,9 @@ stages: a click-and-name geography game built on the same map theme.
 - Replaced `flashcards.json` with retention-focused cards on causes, turning points, imperial patterns, and consequences.
 - Marked `Colonial Americas` as `DONE` in `docs/content.md`.
 
-## [1.3.0] — 2026-06-25
+## [1.3.0] - 2026-06-25
 
-### Added — full History module placeholder scaffolding
+### Added - full History module placeholder scaffolding
 - Ensured every module listed in `docs/content.md` under `History` has a dedicated folder path at:
   `src/content/history/<subcategory-slug>/<module-slug>/`.
 - Created scaffold files in each module folder to mirror the `transatlantic-slave-trade` file set (excluding `raw.md`):
@@ -655,9 +667,9 @@ stages: a click-and-name geography game built on the same map theme.
 - Filled generated files with explicit placeholder content so AI/content workflows can clearly identify and replace placeholder data.
 - Preserved existing authored modules and files by creating missing scaffold files without overwriting existing content.
 
-## [1.2.0] — 2026-06-25
+## [1.2.0] - 2026-06-25
 
-### Added — Slavery in the Americas module (authored from source transcript)
+### Added - Slavery in the Americas module (authored from source transcript)
 - Replaced placeholder files in `src/content/history/atlantic-world/slavery-in-the-americas/` with full authored content generated from `raw.md`.
 - Added a complete context map and metadata in `module.json` focused on regional links between the Deep South, Upper South, North, Atlantic trade, and Canada escape routes.
 - Wrote a 12-card `story.json` covering: national economic integration, social structure, proslavery ideology, legal coercion, lived conditions, everyday resistance, escape networks, rebellions, backlash, and emancipation.
@@ -666,48 +678,48 @@ stages: a click-and-name geography game built on the same map theme.
 - Replaced `flashcards.json` with core concept recall cards on system structure, resistance, ideology, and outcomes.
 - Marked `Slavery in the Americas` as `DONE` in `docs/content.md`.
 
-## [1.1.1] — 2026-06-25
+## [1.1.1] - 2026-06-25
 
-### Changed — Copilot workspace instructions
+### Changed - Copilot workspace instructions
 - Added `.github/copilot-instructions.md` and pointed it directly to `CLAUDE.md` as the project instruction source for Copilot behavior in this repository.
 
-## [1.1.0] — 2026-06-25
+## [1.1.0] - 2026-06-25
 
-### Added — Transatlantic Slave Trade module (authored content)
+### Added - Transatlantic Slave Trade module (authored content)
 - Replaced the placeholder JSON under
   `src/content/history/atlantic-world/transatlantic-slave-trade/` with a full module
   authored from the source transcript (`raw.md`).
-- **Story** (11 cards) follows the transcript's core thesis — the trade as an
-  *engineered, financed supply chain* — from slavery's ancient/global roots, through the
+- **Story** (11 cards) follows the transcript's core thesis - the trade as an
+  *engineered, financed supply chain* - from slavery's ancient/global roots, through the
   religious (not racial) fault line, the American labor shortage, coastal "factories",
   Britain's and Liverpool's dominance, the triangular trade and Middle Passage, the
   syndicate/Lloyd's/Bank of England financing, the Zong massacre, and abolition (1807
-  trade ban → 1833 emancipation and its lasting legacy).
+  trade ban ÔåÆ 1833 emancipation and its lasting legacy).
 - **Timeline** reduced to six matched milestones (Pre-1500, 1526, 1700s, 1781, 1807,
   1833); every story-card `timeline` value matches a timeline `year` exactly.
 - **Quiz** rewritten as understanding-focused questions (cause/effect, the Zong's
   significance, chronological ordering, supply-chain role matching) across all four types.
 - **Flashcards** (8) cover Middle Passage, triangular trade, demand drivers, factories,
   financing, the Zong, and the 1807-vs-1833 distinction.
-- `module.json` (triangle context map) retained — it was already accurate.
+- `module.json` (triangle context map) retained - it was already accurate.
 
-## [1.0.1] — 2026-06-25
+## [1.0.1] - 2026-06-25
 
-### Changed — content authoring workflow docs
+### Changed - content authoring workflow docs
 - Filled in `docs/content-instructions.md` with a technical output contract: it now maps
   the pedagogical steps to the exact JSON files and schema the engine consumes
   (`module.json` map markers/connections with %-based coordinates, story `next`/`timeline`
   rules, the BCE timeline-matching gotcha, quiz type shapes, `raw.md` source convention,
   and the validate + version-bump steps).
-- Aligns with the new CLAUDE.md ".txt → module" workflow and `docs/architecture.md`.
+- Aligns with the new CLAUDE.md ".txt ÔåÆ module" workflow and `docs/architecture.md`.
 
-## [1.0.0] — 2026-06-25
+## [1.0.0] - 2026-06-25
 
-### Added — initial learning engine
+### Added - initial learning engine
 - Project scaffolding: Vite + React 19 + TypeScript + Tailwind CSS v4 + React Router v7.
 - Versioning + changelog workflow (`version.js`, `CLAUDE.md`, this file).
 - **Content architecture**: `src/content/<category>/<subcategory>/<module>/*.json`,
-  auto-discovered by a content registry (`src/lib/content.ts`) via `import.meta.glob` —
+  auto-discovered by a content registry (`src/lib/content.ts`) via `import.meta.glob` -
   new modules are added by dropping in a folder, no code changes required.
 - **Data model** (`src/types/content.ts`) for modules, story cards, timeline events,
   quiz questions (multiple-choice / true-false / ordering / matching) and flashcards.
@@ -722,3 +734,4 @@ stages: a click-and-name geography game built on the same map theme.
   - Per-module **progress tracking** in localStorage.
 - **Demo content** (placeholder, not authoritative): three modules under *History*
   (Atlantic World, The American Civil War, The Roman Empire) to exercise the engine.
+

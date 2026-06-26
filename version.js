@@ -1,4 +1,4 @@
-// Origin — single source of truth for the app version.
+﻿// Origin - single source of truth for the app version.
 //
 // Bump on EVERY change and keep package.json's "version" in sync.
 //   MAJOR = big features / new app capabilities or breaking changes
@@ -6,5 +6,5 @@
 //   PATCH = UX / UI tweaks and fixes
 // See CLAUDE.md and changelog.md.
 
-export const VERSION = '3.1.0';
+export const VERSION = '3.2.0';
 export default VERSION;

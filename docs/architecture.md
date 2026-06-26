@@ -123,3 +123,7 @@ module row status to DONE.
 - 2026-06-26: **Interactive maps (v3.0.0).** Added `MapViewport.tsx` — pinch/drag/wheel
   zoom-and-pan + fullscreen (with leave button) for every map, inline and fullscreen.
   Tightened default geo framing so markers fill the canvas instead of clustering centre.
+- 2026-06-27: Completed `science/universe/stars-galaxies-and-black-holes`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.
+- 2026-06-27: Completed `science/earth/how-earth-formed-and-changed`
+  from `raw.md` into all five content JSON files and set tracker status to DONE.

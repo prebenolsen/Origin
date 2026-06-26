@@ -1,0 +1,75 @@
+{
+  "title": "How Earth Formed and Changed",
+  "category": "science",
+  "subcategory": "earth",
+  "summary": "Trace Earth from molten beginnings to oceans, continents, oxygen, plate tectonics, mass extinctions, and the fragile climate window humans depend on.",
+  "accent": "#0f766e",
+  "context": {
+    "type": "schematic",
+    "headline": "A Planet Built by Deep Time",
+    "description": "Earth was not always blue and stable. Over 4.5 billion years, geology and life co-shaped the planet through fire, oceans, drifting continents, ice ages, and extinctions. This module explains the key turning points and why human civilization exists in only a brief climate window.",
+    "when": "~4.6 billion years ago to present",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        {
+          "id": "fire-world",
+          "label": "Molten Earth",
+          "x": 16,
+          "y": 42,
+          "role": "primary"
+        },
+        {
+          "id": "water-world",
+          "label": "Oceans",
+          "x": 36,
+          "y": 28,
+          "role": "primary"
+        },
+        {
+          "id": "moving-crust",
+          "label": "Plate tectonics",
+          "x": 55,
+          "y": 46,
+          "role": "primary"
+        },
+        {
+          "id": "life-transform",
+          "label": "Life and oxygen",
+          "x": 72,
+          "y": 30,
+          "role": "primary"
+        },
+        {
+          "id": "human-window",
+          "label": "Human climate window",
+          "x": 86,
+          "y": 52,
+          "role": "secondary"
+        }
+      ],
+      "connections": [
+        {
+          "from": "fire-world",
+          "to": "water-world",
+          "label": "cooling + condensation"
+        },
+        {
+          "from": "water-world",
+          "to": "moving-crust",
+          "label": "crust evolves"
+        },
+        {
+          "from": "moving-crust",
+          "to": "life-transform",
+          "label": "new habitats"
+        },
+        {
+          "from": "life-transform",
+          "to": "human-window",
+          "label": "long chain of survival"
+        }
+      ]
+    }
+  }
+}

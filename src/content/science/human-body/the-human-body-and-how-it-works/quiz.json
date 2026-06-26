@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "PLACEHOLDER: Add an understanding-focused question.",
+    "options": [
+      "PLACEHOLDER option A",
+      "PLACEHOLDER option B",
+      "PLACEHOLDER option C",
+      "PLACEHOLDER option D"
+    ],
+    "answer": 0,
+    "explanation": "PLACEHOLDER: Explain why the correct answer is correct."
+  }
+]
