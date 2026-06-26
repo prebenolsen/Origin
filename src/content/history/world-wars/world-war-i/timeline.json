@@ -1,4 +1,14 @@
-﻿{
-    "year":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Major timeline milestone"
-}
+[
+  { "year": "Jun 1914", "title": "Franz Ferdinand assassinated at Sarajevo" },
+  { "year": "Aug 1914", "title": "War declared; Germany invades Belgium" },
+  { "year": "Sep 1914", "title": "Battle of the Marne halts Germany" },
+  { "year": "Late 1914", "title": "Trench stalemate from sea to Switzerland" },
+  { "year": "1915", "title": "Gallipoli, gas at Ypres, the Lusitania" },
+  { "year": "1916", "title": "Verdun and the Somme — the year of attrition" },
+  { "year": "Apr 1917", "title": "USA enters the war" },
+  { "year": "1917", "title": "Russian Revolution pulls Russia out" },
+  { "year": "Mar 1918", "title": "Germany's Spring Offensive" },
+  { "year": "Aug 1918", "title": "Hundred Days Offensive begins" },
+  { "year": "11 Nov 1918", "title": "Armistice ends the fighting" },
+  { "year": "1919", "title": "Treaty of Versailles" }
+]

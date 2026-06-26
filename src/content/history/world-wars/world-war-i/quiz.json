@@ -1,13 +1,94 @@
-﻿{
-    "id":  1,
-    "type":  "multiple-choice",
-    "question":  "PLACEHOLDER: Add an understanding-focused question.",
-    "options":  [
-                    "PLACEHOLDER option A",
-                    "PLACEHOLDER option B",
-                    "PLACEHOLDER option C",
-                    "PLACEHOLDER option D"
-                ],
-    "answer":  0,
-    "explanation":  "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why did a quarrel between Austria-Hungary and Serbia escalate into a war involving all of Europe?",
+    "options": [
+      "Most countries wanted to seize Serbian territory",
+      "A network of alliances obliged the great powers to back their partners, pulling each into the war in turn",
+      "The Pope ordered Christian nations to intervene",
+      "Germany invaded every neighbour at once without warning"
+    ],
+    "answer": 1,
+    "explanation": "Russia backed Serbia, Germany backed Austria-Hungary, France was tied to Russia, and Britain to Belgium. The alliance system turned a local dispute into a continental war within days."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "What was the goal of Germany's Schlieffen Plan?",
+    "options": [
+      "To defeat France quickly in the west before turning to face Russia in the east",
+      "To blockade Britain into surrender using submarines",
+      "To avoid war with France altogether",
+      "To conquer Russia first while ignoring France"
+    ],
+    "answer": 0,
+    "explanation": "Facing enemies on two sides, Germany bet on knocking out France fast — by sweeping through Belgium — before Russia's huge but slow army could fully mobilise."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "Germany's invasion of neutral Belgium is what brought Britain into the war.",
+    "answer": true,
+    "explanation": "Britain had guaranteed Belgian neutrality. When Germany invaded and ignored Britain's ultimatum to withdraw, Britain declared war."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What does the strategy of 'attrition,' which defined 1916, mean?",
+    "options": [
+      "Winning by capturing the enemy's capital city",
+      "Avoiding battle to preserve your own troops",
+      "Wearing the enemy down by inflicting more losses than they can replace, rather than seeking a breakthrough",
+      "Using new technology to end the war in a single blow"
+    ],
+    "answer": 2,
+    "explanation": "After breakthroughs proved impossible, both sides aimed simply to bleed the enemy until they ran out of men. Verdun and the Somme were attrition battles."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "What finally pushed the United States to declare war on Germany in 1917?",
+    "options": [
+      "A direct German invasion of American soil",
+      "Unrestricted submarine warfare plus the Zimmermann Telegram urging Mexico to attack the US",
+      "Russia's request for American help",
+      "The sinking of the Lusitania alone"
+    ],
+    "answer": 1,
+    "explanation": "Germany's resumption of sink-on-sight U-boat attacks, combined with the intercepted Zimmermann Telegram, pushed Wilson and the American public into war."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "Russia fought on the Allied side from the beginning of the war right through to the armistice in 1918.",
+    "answer": false,
+    "explanation": "Revolution in 1917 toppled the Tsar, and the Bolsheviks pulled Russia out of the war, signing the Treaty of Brest-Litovsk in early 1918 — freeing German troops to fight in the west."
+  },
+  {
+    "id": 7,
+    "type": "ordering",
+    "question": "Put these turning points of the war in chronological order.",
+    "items": [
+      "Assassination at Sarajevo",
+      "Battle of the Marne saves Paris",
+      "Battle of Verdun",
+      "United States enters the war",
+      "Armistice signed"
+    ],
+    "correctOrder": [0, 1, 2, 3, 4],
+    "explanation": "June 1914 → September 1914 → 1916 → April 1917 → November 1918. The spark, the stalemate, the year of attrition, America's entry, and the end."
+  },
+  {
+    "id": 8,
+    "type": "matching",
+    "question": "Match each development to what it introduced or changed.",
+    "pairs": [
+      { "left": "Convoy system", "right": "Cut shipping losses and beat the U-boat threat" },
+      { "left": "Poison gas at Ypres", "right": "First major chemical attack on the Western Front" },
+      { "left": "The tank", "right": "New armoured weapon meant to cross trenches and wire" },
+      { "left": "Treaty of Versailles", "right": "Imposed reparations and 'war guilt' on Germany" }
+    ],
+    "explanation": "The war drove rapid innovation — in tactics, weapons, and the peace that followed, which planted resentments leading toward the next war."
+  }
+]

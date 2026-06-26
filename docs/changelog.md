@@ -3,6 +3,23 @@
 All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
+## [2.1.0] - 2026-06-26
+
+### Added - World War I module (history / world-wars)
+- Authored the full **World War I** module from the source transcript, replacing
+  the placeholder JSON in `src/content/history/world-wars/world-war-i/`.
+- **module.json** — geographic context map (Germany, Western Front, Eastern Front,
+  Sarajevo, Gallipoli) framing the two-front war and the Schlieffen gamble.
+- **story.json** — 35 cards across five arcs: the war begins (1914), stalemate &
+  the widening global war (1914–15), the year of attrition (1916), the crisis year
+  (1917 — US entry, Russian Revolution), and the end & Versailles (1918–19).
+- **timeline.json** — 12 milestones; **quiz.json** — 8 understanding-focused
+  questions (multiple-choice, true/false, ordering, matching); **flashcards.json** —
+  10 key terms, people, and cause/effect cards.
+- Marked World War I as **DONE** in [`content.md`](content.md). Scope kept distinct
+  from the neighbouring *Causes of World War I* module (the lead-up), which remains.
+- Synced `package.json` version back to the `version.js` source of truth.
+
 ## [2.0.0] - 2026-06-26
 
 ### Files

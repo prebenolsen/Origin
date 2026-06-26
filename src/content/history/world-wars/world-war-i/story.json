@@ -1,7 +1,248 @@
-﻿{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+  {
+    "id": 1,
+    "timeline": "1914",
+    "title": "Two armed camps",
+    "content": "By 1914 Europe's great powers had split into two rival alliances braced for war. On one side stood the Triple Entente — France, Britain, and Russia — bound together by fear of a powerful, rising Germany. On the other stood Germany, which dreaded being encircled, alongside a fragile Austria-Hungary and an ambitious Italy. The whole continent was a loaded spring.",
+    "next": "All it needed was a single spark. Where did it come from?"
+  },
+  {
+    "id": 2,
+    "timeline": "28 Jun 1914",
+    "title": "A murder in Sarajevo",
+    "content": "On 28 June 1914, in the Bosnian city of Sarajevo, a 19-year-old Serb nationalist named Gavrilo Princip shot dead Archduke Franz Ferdinand, heir to the Austro-Hungarian throne. Austria-Hungary blamed neighbouring Serbia for backing the assassin and handed it a deliberately humiliating ultimatum. When Serbia refused part of it, Austrian guns began shelling Belgrade.",
+    "next": "How did a quarrel between two Balkan states drag in all of Europe?",
+    "visual": "map"
+  },
+  {
+    "id": 3,
+    "timeline": "Jul–Aug 1914",
+    "title": "The dominoes fall",
+    "content": "The alliances turned a local quarrel into a continental war within days. Russia mobilised to defend its fellow-Slav ally Serbia. Germany, having promised to back Austria-Hungary, declared war on Russia — and knew that meant war with Russia's ally France too. Mobilisation was almost impossible to stop once begun: six million men were soon marching across Europe.",
+    "next": "Germany now faced enemies on two sides at once. How did it plan to survive that?"
+  },
+  {
+    "id": 4,
+    "timeline": "Aug 1914",
+    "title": "The Schlieffen gamble",
+    "content": "Germany's answer to a two-front war was the Schlieffen Plan: knock out France fast, then turn east. German armies would sweep through neutral Belgium to encircle Paris and win in weeks — before Russia's vast but slow army could fully mobilise. It was a bet that speed could beat numbers. Everything depended on the western blow landing quickly.",
+    "next": "But marching through Belgium had a consequence Germany underestimated."
+  },
+  {
+    "id": 5,
+    "timeline": "Aug 1914",
+    "title": "Belgium brings in Britain",
+    "content": "Britain had guaranteed Belgium's neutrality. When German troops invaded, London demanded they withdraw; when ignored, Britain declared war and sent a British Expeditionary Force to France. Belgian resistance at the fortress of Liège bought precious days. German troops also massacred civilians — atrocities that Allied propaganda magnified to turn neutral opinion against Germany.",
+    "next": "Could Germany still reach Paris before the plan unravelled?"
+  },
+  {
+    "id": 6,
+    "timeline": "Sep 1914",
+    "title": "The miracle of the Marne",
+    "content": "France's own offensive into Germany was thrown back with appalling losses, and the British were forced to retreat from Mons. But just 40 miles from Paris, the Allies turned and counterattacked along the River Marne, halting the German advance and saving the capital. Each side suffered a quarter of a million casualties — and the Schlieffen Plan lay in ruins.",
+    "next": "If neither side could break through, what did they do instead?"
+  },
+  {
+    "id": 7,
+    "timeline": "Late 1914",
+    "title": "The trenches appear",
+    "content": "Beaten at the Marne, both armies raced north toward the sea trying to outflank each other, clashing at the First Battle of Ypres. When neither could turn the other's edge, they dug in. A line of trenches stretched 350 miles from the English Channel to Switzerland. Machine guns and artillery made open ground a killing zone — and the war of movement froze into stalemate.",
+    "next": "While armies dug into the mud, a very different war was beginning at sea."
+  },
+  {
+    "id": 8,
+    "timeline": "1914–1915",
+    "title": "The blockade and the U-boat",
+    "content": "Britain's navy was the world's most powerful, and it threw a blockade around Germany to choke off food and raw materials and starve its economy into surrender. Germany struck back with a new weapon lurking beneath the waves: the U-boat. Submarines could attack undetected, and soon began sinking merchant ships — a deadly challenge to Britain's command of the seas.",
+    "next": "Far to the east, Russia's huge army was already on the march. How did it fare?"
+  },
+  {
+    "id": 9,
+    "timeline": "Aug–Sep 1914",
+    "title": "Disaster at Tannenberg",
+    "content": "Russia invaded German East Prussia faster than expected — then blundered into catastrophe. At the Battle of Tannenberg, the German team of Hindenburg and Ludendorff destroyed an entire Russian army, taking 90,000 prisoners (helped by Russians sending orders by uncoded radio). A second defeat at the Masurian Lakes followed. In six weeks Russia lost nearly a third of a million men.",
+    "next": "Austria-Hungary was supposed to be the strong partner. Was it?"
+  },
+  {
+    "id": 10,
+    "timeline": "1914",
+    "title": "Austria-Hungary stumbles",
+    "content": "The Habsburg empire fought badly from the start. Its invasion of little Serbia was thrown back at Cer, and its offensive against Russia collapsed with over 300,000 casualties. Far from carrying the war, Austria-Hungary repeatedly had to be rescued by Germany — a dependence that would shape the whole alliance and drain German strength.",
+    "next": "The fighting was spilling far beyond Europe. How far did it spread?"
+  },
+  {
+    "id": 11,
+    "timeline": "1914",
+    "title": "A world at war",
+    "content": "Because Europe's powers held colonies everywhere, the war went global. Japan joined the Allies and seized German bases in the Pacific and China. Allied troops grabbed German colonies in Africa — but in East Africa, Colonel von Lettow-Vorbeck waged a brilliant guerrilla campaign that tied down huge Allied forces for years. Naval battles raged from Chile to the Falklands.",
+    "next": "Then a new empire entered the war — and opened a whole new front."
+  },
+  {
+    "id": 12,
+    "timeline": "Late 1914",
+    "title": "The Ottomans join in",
+    "content": "The Ottoman Empire entered the war on Germany's side, shelling Russian Black Sea ports and bringing the fighting to the Caucasus and the Middle East. An Ottoman winter offensive through the mountains ended in catastrophe at Sarikamish, where many of 60,000 Turkish casualties froze to death. Britain meanwhile seized Basra to protect the Persian oil that fuelled its fleet.",
+    "next": "As 1914 ended, did anyone still believe in a short, glorious war?"
+  },
+  {
+    "id": 13,
+    "timeline": "Dec 1914",
+    "title": "The Christmas truce",
+    "content": "That first Christmas, in some sectors of the Western Front, soldiers laid down their rifles, climbed out of the trenches, and met in No Man's Land to swap gifts and play football. It was a fleeting, human moment. But by January 1915 the war was just five months old and roughly a million soldiers had already fallen. The short, glorious war was a fantasy.",
+    "next": "If frontal attacks just produced slaughter, how could either side ever win?"
+  },
+  {
+    "id": 14,
+    "timeline": "Apr 1915",
+    "title": "Poison gas at Ypres",
+    "content": "Searching for any way through the trenches, Germany released a cloud of lethal chlorine gas at the Second Battle of Ypres — the first major gas attack on the Western Front. Allied troops fled their trenches, but Germany lacked the reserves to exploit the gap. Both sides were soon issued crude gas masks as a grim new chemical arms race began.",
+    "next": "The Allies tried a bolder idea: knock the Ottomans out of the war entirely."
+  },
+  {
+    "id": 15,
+    "timeline": "1915",
+    "title": "The Gallipoli disaster",
+    "content": "To force open the sea route to Constantinople, the Allies landed troops — including the Australian and New Zealand Army Corps, the ANZACs — on the Gallipoli peninsula. Fierce Ottoman resistance pinned them on the beaches for months amid heat, flies, and sickness. The campaign cost a quarter of a million casualties on each side before the Allies finally, brilliantly, evacuated without losing a man.",
+    "next": "Under cover of this campaign, a far darker event was unfolding."
+  },
+  {
+    "id": 16,
+    "timeline": "1915",
+    "title": "The Armenian genocide",
+    "content": "Beginning in April 1915, the Ottoman government carried out the systematic deportation and murder of its Armenian population — a long-persecuted Christian minority suspected of helping the enemy. Men, women and children were driven into the Syrian desert to die; in all more than a million perished. The Allies condemned it as a crime against humanity. To this day Turkey disputes the death toll and the term 'genocide.'",
+    "next": "Out at sea, one sinking would change America's mood toward the war forever."
+  },
+  {
+    "id": 17,
+    "timeline": "May 1915",
+    "title": "The Lusitania",
+    "content": "A German U-boat torpedoed the British passenger liner Lusitania off Ireland without warning, drowning 1,198 people — including 128 Americans. The outrage in the neutral United States was enormous. Germany argued the ship was carrying war supplies, but to avoid dragging America into the war it pulled back from attacking passenger ships. The pressure on President Wilson, though, kept building.",
+    "next": "Meanwhile a new ally joined the Allies, opening a brutal mountain front."
+  },
+  {
+    "id": 18,
+    "timeline": "1915",
+    "title": "Italy switches sides",
+    "content": "Tempted by Allied promises of Austro-Hungarian territory, Italy declared war on its former partners. But its army hurled itself again and again at Austro-Hungarian troops dug into the high ground along the Isonzo river — and was repulsed each time with heavy losses. On the Eastern Front, things were just as grim: Germany overran Poland, and the Tsar took personal command of his army, fatally tying his crown to defeat.",
+    "next": "By 1916, generals stopped dreaming of breakthroughs and embraced something colder."
+  },
+  {
+    "id": 19,
+    "timeline": "1916",
+    "title": "The logic of attrition",
+    "content": "After a year of failed offensives, strategy turned grimly mathematical. If you could not break through, you would simply bleed the enemy until they ran out of men. This was attrition — winning not by capturing ground but by killing faster than the other side could replace its dead. It was the cold idea that would define the bloodiest year of the war.",
+    "next": "Germany put attrition into practice at a place whose name still means horror."
+  },
+  {
+    "id": 20,
+    "timeline": "Feb–Dec 1916",
+    "title": "Verdun: the mincing machine",
+    "content": "Germany attacked the fortress-town of Verdun precisely because France would defend it to the last man. General von Falkenhayn's plan, in his own words, was to 'bleed France white.' For ten months Verdun became a mincing machine, swallowing divisions almost as fast as they arrived. France held — 'They shall not pass' — but at a cost of 365,000 casualties, with German losses nearly as high.",
+    "next": "To relieve Verdun, the British launched an attack that broke their own army's heart."
+  },
+  {
+    "id": 21,
+    "timeline": "Jul–Nov 1916",
+    "title": "The Somme",
+    "content": "On the first day of the Battle of the Somme, a long bombardment failed to cut the German wire, and waves of British infantry were mown down by machine guns. In a few hours Britain suffered 57,000 casualties — the worst day in its army's history. The battle ground on for five months for an advance of about ten miles, costing some 600,000 Allied and 450,000 German casualties.",
+    "next": "Amid the mud of the Somme, the British rolled out a weapon never seen before."
+  },
+  {
+    "id": 22,
+    "timeline": "Sep 1916",
+    "title": "Enter the tank",
+    "content": "Hoping to crush a path through barbed wire and trenches, the British introduced an armoured tracked vehicle they called the 'tank.' Its debut at the Somme caused alarm but little real damage — the first tanks were too few and too prone to breaking down to change anything. Yet the idea was sound, and the machine that would dominate later wars had just been born.",
+    "next": "There was one Allied success in 1916 — far away on the Eastern Front."
+  },
+  {
+    "id": 23,
+    "timeline": "1916",
+    "title": "Brusilov and Jutland",
+    "content": "On the Eastern Front, Russia's General Brusilov launched a surprise offensive that smashed through enemy lines and took 200,000 prisoners — but at a cost neither Russia nor Austria-Hungary ever fully recovered from. At sea, the war's only great naval clash, the Battle of Jutland, was indecisive: Britain lost more ships but kept control of the sea, and the German fleet never sailed out to fight again.",
+    "next": "By 1917 the strain was pushing whole nations toward collapse."
+  },
+  {
+    "id": 24,
+    "timeline": "Jan–Feb 1917",
+    "title": "The submarine gamble",
+    "content": "Knowing it would lose a long war of resources, Germany gambled everything: it resumed unrestricted submarine warfare, ordering U-boats to sink any ship without warning, hoping to starve Britain into surrender within six months. It was a desperate bet — because sinking neutral American ships would almost certainly drag the United States into the war.",
+    "next": "Then Britain handed Washington an intercepted telegram that sealed the decision."
+  },
+  {
+    "id": 25,
+    "timeline": "Apr 1917",
+    "title": "America enters the war",
+    "content": "Britain revealed the Zimmermann Telegram — a secret German offer to help Mexico attack the United States. Combined with the U-boat sinkings, it pushed America over the edge, and the United States declared war on Germany. American resources were immense, but its army would take many months to reach Europe in force. April was the U-boats' deadliest month yet: 17 ships a day.",
+    "next": "And then, the Allies lost an entire great power."
+  },
+  {
+    "id": 26,
+    "timeline": "1917",
+    "title": "Russia bows out",
+    "content": "Crushing casualties and bread shortages sparked revolution in Russia: the Tsar abdicated. A Provisional Government tried to keep fighting, but its July Offensive collapsed as the army melted away. In a second revolution, Lenin's Bolsheviks seized power, determined to end the war. With Russia leaving, Germany could finally shift its eastern armies west — just as fresh Americans arrived.",
+    "next": "Beating the U-boat, meanwhile, came down to one simple change of tactics."
+  },
+  {
+    "id": 27,
+    "timeline": "1917",
+    "title": "Convoys turn the tide at sea",
+    "content": "The answer to the U-boat was almost embarrassingly simple: instead of sailing alone, merchant ships travelled in groups — convoys — escorted by warships. Losses fell steadily as submarines struggled to penetrate the screens. Germany's great gamble to starve Britain had failed, and the lifeline across the Atlantic stayed open. Slowly, the balance at sea swung back to the Allies.",
+    "next": "On land, 1917 still had two of the war's grimmest battles in store."
+  },
+  {
+    "id": 28,
+    "timeline": "1917",
+    "title": "Mutiny, mud, and Caporetto",
+    "content": "After a failed French offensive, exhausted French units mutinied, refusing to attack. The British took up the burden at Passchendaele, where rain and shellfire turned the battlefield into a sea of mud that swallowed men and hopes alike — 240,000 British casualties for almost nothing. In Italy, German help shattered the army at Caporetto, taking a quarter of a million prisoners.",
+    "next": "Yet far from the trenches, the war was reshaping a whole region's future."
+  },
+  {
+    "id": 29,
+    "timeline": "1916–1917",
+    "title": "Promises in the Middle East",
+    "content": "To beat the Ottomans, Britain made conflicting promises. It encouraged an Arab Revolt — aided by the advisor T. E. Lawrence, 'Lawrence of Arabia' — by promising an independent Arab state. Yet it had secretly agreed with France to carve the region into spheres of control, and the Balfour Declaration backed a Jewish home in Palestine. British troops took Baghdad and Jerusalem — and sowed seeds of conflict that endure today.",
+    "next": "With Russia gone, Germany prepared one last, all-or-nothing throw of the dice."
+  },
+  {
+    "id": 30,
+    "timeline": "Mar 1918",
+    "title": "Germany's final gamble",
+    "content": "Peace with Bolshevik Russia at Brest-Litovsk freed half a million German troops for the west. Before America's strength could tell, General Ludendorff launched the Spring Offensive. Using new infiltration tactics, German stormtroopers overran the British line and advanced further than anyone had in years — threatening to split the British and French armies and win the war outright.",
+    "next": "How close did Germany come to victory — and why did it slip away?"
+  },
+  {
+    "id": 31,
+    "timeline": "Spring–Summer 1918",
+    "title": "The tide turns",
+    "content": "To meet the crisis the Allies finally united their command under Marshal Foch. The German advance was halted outside Amiens and again at the Marne — just as a million fresh American soldiers were arriving, 10,000 a day. Ludendorff's offensive had cost over 600,000 men and won no decisive breakthrough. Germany had spent its last reserves, and now the exhausted attacker had nothing left.",
+    "next": "Now it was the Allies' turn to attack — and they did not stop."
+  },
+  {
+    "id": 32,
+    "timeline": "Aug–Nov 1918",
+    "title": "The Hundred Days",
+    "content": "At Amiens, Allied troops backed by tanks and aircraft advanced seven miles in a day — Ludendorff called it 'the black day of the German army.' The Hundred Days Offensive had begun: trench warfare was over and the Germans were in full retreat. One by one Germany's partners collapsed — Bulgaria, the Ottomans, and Austria-Hungary all signed armistices as the alliance fell apart.",
+    "next": "With its allies gone and its army breaking, what was left for Germany?"
+  },
+  {
+    "id": 33,
+    "timeline": "11 Nov 1918",
+    "title": "The eleventh hour",
+    "content": "Ordered to make a suicidal last attack, the German fleet mutinied instead, and revolution swept the country. The Kaiser abdicated and a republic was proclaimed. On 11 November 1918 a German delegation signed an armistice in Marshal Foch's railway carriage, to take effect at 11 a.m. Fighting continued to the last minute — the final soldier was killed at 10:59, charging a machine gun.",
+    "next": "The guns fell silent. But what kind of peace would follow?"
+  },
+  {
+    "id": 34,
+    "timeline": "1919",
+    "title": "A peace that sowed the next war",
+    "content": "At Versailles the victors imposed harsh terms on Germany: a shrunken military, heavy reparations, lost territory, and a 'war guilt' clause forcing it to accept blame — a lasting source of resentment. Empires vanished and new states were born across Europe and the Middle East. A League of Nations was created to prevent future wars. In many places, the seeds of the next one were planted instead.",
+    "next": "When the dust settled, what had the war actually cost?"
+  },
+  {
+    "id": 35,
+    "timeline": "1918",
+    "title": "The reckoning",
+    "content": "World War I killed around nine and a half million soldiers — one in eight of all who fought — and wounded 21 million more. Seven million civilians also died. Old empires collapsed, new nations rose, women had entered the workforce in their millions, and a generation was scarred. It had been sold as a short, glorious war. The world was never the same again.",
+    "next": "How much of this story has stuck with you?"
+  }
+]

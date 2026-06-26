@@ -1,5 +1,52 @@
-﻿{
-    "id":  1,
-    "front":  "PLACEHOLDER: Key concept",
-    "back":  "PLACEHOLDER: Short, clear explanation."
-}
+[
+  {
+    "id": 1,
+    "front": "What event sparked World War I?",
+    "back": "The assassination of Archduke Franz Ferdinand of Austria-Hungary by the Serb nationalist Gavrilo Princip in Sarajevo on 28 June 1914."
+  },
+  {
+    "id": 2,
+    "front": "Who fought on each side?",
+    "back": "The Allies (Britain, France, Russia, Italy from 1915, the US from 1917, and others) against the Central Powers (Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria)."
+  },
+  {
+    "id": 3,
+    "front": "What was the Schlieffen Plan?",
+    "back": "Germany's strategy to avoid a two-front war by quickly defeating France in the west — via an attack through Belgium — before slow-mobilising Russia could strike in the east."
+  },
+  {
+    "id": 4,
+    "front": "Why did trench warfare develop?",
+    "back": "After the Marne, neither side could outflank the other. Machine guns and artillery made open assaults suicidal, so both armies dug in along a 350-mile line, producing years of stalemate."
+  },
+  {
+    "id": 5,
+    "front": "What were Verdun and the Somme (1916)?",
+    "back": "The two great attrition battles of 1916 — each costing hundreds of thousands of casualties for almost no ground, as both sides tried to bleed the enemy dry rather than break through."
+  },
+  {
+    "id": 6,
+    "front": "Why did the US enter the war in 1917?",
+    "back": "Germany's unrestricted submarine warfare (sinking ships without warning) plus the Zimmermann Telegram, which proposed a German–Mexican alliance against America."
+  },
+  {
+    "id": 7,
+    "front": "How did Russia leave the war?",
+    "back": "The 1917 revolutions toppled the Tsar and brought the Bolsheviks to power; they signed the Treaty of Brest-Litovsk in 1918, exiting the war and freeing German troops for the Western Front."
+  },
+  {
+    "id": 8,
+    "front": "How did the war end?",
+    "back": "Germany's 1918 Spring Offensive failed, the Allied Hundred Days Offensive drove the Germans back, its allies collapsed, the Kaiser abdicated, and an armistice took effect at 11 a.m. on 11 November 1918."
+  },
+  {
+    "id": 9,
+    "front": "What did the Treaty of Versailles (1919) do?",
+    "back": "It imposed reparations, military limits, territorial losses, and a 'war guilt' clause on Germany, redrew Europe and the Middle East, and created the League of Nations — while breeding lasting resentment."
+  },
+  {
+    "id": 10,
+    "front": "What was the human cost of World War I?",
+    "back": "Around 9.5 million soldiers killed (one in eight who fought), 21 million wounded, and 7 million civilian deaths — alongside the collapse of old empires and the birth of new nations."
+  }
+]

@@ -1,40 +1,28 @@
-﻿{
-    "title":  "PLACEHOLDER: World War I",
-    "period":  "1914 CE â€“ 1918 CE",
-    "category":  "history",
-    "subcategory":  "world-wars",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "1914 CE â€“ 1918 CE",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
-                }
+{
+  "title": "World War I",
+  "period": "1914–1918",
+  "category": "history",
+  "subcategory": "world-wars",
+  "summary": "How one assassination dragged the world into four years of industrial slaughter — and remade the map of the modern world.",
+  "accent": "#b0552f",
+  "context": {
+    "type": "map",
+    "headline": "A war on every front",
+    "description": "A murder in the Balkans set rival alliances marching. Germany gambled on a quick knockout of France in the west before turning to face Russia in the east — but the gamble failed, the armies dug in, and a short war became four years of stalemate that pulled in the whole world.",
+    "when": "1914 – 1918",
+    "map": {
+      "backdrop": "world",
+      "markers": [
+        { "id": "germany", "label": "Germany", "lat": 51.0, "lng": 10.5, "role": "primary" },
+        { "id": "west", "label": "Western Front", "lat": 49.7, "lng": 3.5, "role": "primary" },
+        { "id": "east", "label": "Eastern Front", "lat": 52.6, "lng": 22.0, "role": "primary" },
+        { "id": "sarajevo", "label": "Sarajevo", "lat": 43.85, "lng": 18.41, "role": "secondary" },
+        { "id": "gallipoli", "label": "Gallipoli", "lat": 40.2, "lng": 26.4, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "germany", "to": "west", "label": "Schlieffen Plan" },
+        { "from": "germany", "to": "east", "label": "vs. Russia" }
+      ]
+    }
+  }
 }
