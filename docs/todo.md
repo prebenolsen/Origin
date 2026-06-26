@@ -1,8 +1,6 @@
 # History | Atlantic World|  Slavery in the Americas
 - Should be prioritized after Transatlantic Slave Trade
 
-# Maps
-- So far they have awful maps drawn. Inconsistent with world, just spheres. 
 
 # Front page sorting, can't have all just listed blatantly
 - Categories?
@@ -12,3 +10,34 @@
 
 # Israel-Palestine
 - Use maps for helping the user understand
+
+# Maps changed on interactive map - text is coded into country not just floating
+- Is this needed elsewhere?
+
+# Interactive maps
+- First letter and 4-options -- More needed? Other types of hints? Famouns companies, celebrities, known for?
+Geography progress stats:
+
+countries learned
+regions completed
+accuracy %
+weak countries
+learning streak
+next recommended challenge
+
+# Menu tab:
+Home
+Explore
+Geography
+Profile/Progress
+
+Why:
+
+Home = "what should I do now?"
+Explore = "what exists?"
+Geography = a distinct game/practice mode
+Profile = motivation/progress/stats
+
+# Language component? 
+- Spanish
+- Lives in "Language" under "Learn/Explore". 

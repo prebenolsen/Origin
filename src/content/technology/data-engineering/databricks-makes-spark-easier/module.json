@@ -1,6 +1,5 @@
 {
   "title": "Databricks Makes Spark Easier",
-  "period": "2013–today: from open-source engine to managed platform",
   "category": "technology",
   "subcategory": "data-engineering",
   "summary": "Spark's own creators founded Databricks to take away the hard part: managing infrastructure. Clusters with a click, serverless compute, collaborative notebooks, and scheduled jobs — all in the cloud.",

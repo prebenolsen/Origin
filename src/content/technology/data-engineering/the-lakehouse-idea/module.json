@@ -1,6 +1,5 @@
 {
   "title": "The Lakehouse Idea",
-  "period": "2019–today: combining the lake and the warehouse",
   "category": "technology",
   "subcategory": "data-engineering",
   "summary": "Why choose between a cheap, flexible data lake and a reliable, structured warehouse? The lakehouse merges both into one system — a single, governed home for all your data, for both BI and AI.",

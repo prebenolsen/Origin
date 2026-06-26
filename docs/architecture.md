@@ -16,6 +16,10 @@ src/content/
         raw.md           # raw, user-generated data to build module upon
 ```
 
+      `module.json` note: `period` is reserved for `history` modules only. Modules in
+      other categories should omit `period` and rely on `context.when` if they need a
+      lightweight time cue.
+
 ## Tech stack
 
 - **React 19 + TypeScript**

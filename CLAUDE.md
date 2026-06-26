@@ -20,6 +20,7 @@ scrolling learning experience (context → story cards → timeline → recall �
 2. **Add an entry to [`changelog.md`](docs\changelog.md)** describing what changed.
 3. **Architecture: [`architecture.md`](docs\architecture.md)** 
 4. Content: Ensure the list in [`content.md`](docs\content.md) is updated with "DONE" in status-column once a complete entry to the module has been made.
+5. The readme.md [`readme.md`](docs\readme.md) should be kept up to date, in the first sections, if the user-experience changes
 
 ### Versioning rules (Semantic-style: `MAJOR.MINOR.PATCH`, starts at `1.0.0`)
 
@@ -57,9 +58,12 @@ unless overridden in `src/lib/content.ts`.
 See [`src/types/content.ts`](src/types/content.ts) for the authoritative TypeScript types.
 A short overview:
 
-- **module.json** — `title`, `period`, `category`, `subcategory`, `summary`, and a
-  `context` block (the intro map/overview). Context supports labeled `map.markers` and
-  `map.connections` so the intro can answer *where / who / when / what*.
+- **module.json** — `title`, `category`, `subcategory`, `summary`, and a `context`
+  block (the intro map/overview). `period` is **history-only**: only modules under
+  `src/content/history/**/module.json` should include `period`. Non-history
+  categories should omit `period` and use `context.when` when a time cue helps.
+  Context supports labeled `map.markers` and `map.connections` so the intro can
+  answer *where / who / when / what*.
 - **story.json** — array of cards: `{ id, timeline, title, content, next, visual? }`.
   One idea per card, ~10–30s to read, ending in a curiosity hook (`next`).
 - **timeline.json** — array of `{ year, title }` milestones (only important ones).

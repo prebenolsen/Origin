@@ -4,6 +4,38 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [3.1.0] - 2026-06-27
+
+### Changed - `period` field is now history-only
+
+- Audited all `module.json` files under `src/content/**`.
+- Removed `period` from every non-history module so only
+  `src/content/history/**/module.json` entries retain `period`.
+- Documented the rule in `CLAUDE.md` and `docs/architecture.md`:
+  non-history modules should omit `period` and use `context.when` when needed.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.1.0**
+  (MINOR — content schema usage normalization across modules).
+
+## [3.0.10] - 2026-06-27
+
+### Changed - README pre-content experience section
+
+- Reworked README guidance from a front-page-only description to a broader
+  "before content starts" experience that explains orientation, path selection,
+  scope checking, and readiness before entering module stages.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.10**
+  (PATCH — documentation clarity update).
+
+## [3.0.9] - 2026-06-27
+
+### Changed - README front page experience section
+
+- Updated README with a dedicated "Front page experience" section describing
+  how learners enter the app, choose paths from the home screen, and navigate
+  categories/modules or the Geography Challenge.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.9**
+  (PATCH — documentation UX clarification).
+
 ## [3.0.8] - 2026-06-27
 
 ### Changed - Small country assist button persistence and cycling

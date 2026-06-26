@@ -1,6 +1,5 @@
 {
   "title": "Why Traditional Databases Struggled",
-  "period": "1970–2000s: the relational era and its limits",
   "category": "technology",
   "subcategory": "data-engineering",
   "summary": "Relational databases and data warehouses powered business for decades — but rigid structure, costly scaling, and closed formats left them struggling with the modern flood of data.",

@@ -1,6 +1,5 @@
 {
   "title": "Apache Spark Appears",
-  "period": "2009–2010s: the fast, friendly big-data engine",
   "category": "technology",
   "subcategory": "data-engineering",
   "summary": "Born in a Berkeley lab, Apache Spark made big data fast and approachable: process data in memory across a cluster, using simple commands in Python, SQL, Scala, or R.",

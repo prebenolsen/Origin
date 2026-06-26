@@ -1,6 +1,5 @@
 {
   "title": "The Rise of Big Data",
-  "period": "2003–2010s: distributed computing and the data lake",
   "category": "technology",
   "subcategory": "data-engineering",
   "summary": "When data outgrew any single machine, a new idea took over: spread it across many cheap computers and store everything raw and cheap. The big data era — and the data lake — was born.",

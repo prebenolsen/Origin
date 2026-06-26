@@ -1,6 +1,5 @@
 {
   "title": "How Companies Use Databricks Today",
-  "period": "Today: the end-to-end data and AI platform",
   "category": "technology",
   "subcategory": "data-engineering",
   "summary": "Put it all together: companies ingest data, refine it through pipelines, orchestrate everything with jobs, then power dashboards, machine learning, generative AI, and live apps — all on one governed lakehouse.",
