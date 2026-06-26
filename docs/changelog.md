@@ -4,6 +4,110 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [3.0.8] - 2026-06-27
+
+### Changed - Small country assist button persistence and cycling
+
+- Moved the Geography small-country assist control to `MapViewport`'s
+  non-transformed overlay layer so the button remains visible and clickable even
+  when the map is heavily zoomed or panned.
+- Updated assist behavior so repeated clicks iterate to the **next** country in
+  the prioritized target list instead of repeatedly selecting the same one.
+- Priority order remains:
+  1) unsolved countries in `SMALL_COUNTRY_IDS`
+  2) unsolved countries in the rest of the board
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.8**
+  (PATCH — geography control UX fix).
+
+## [3.0.7] - 2026-06-27
+
+### Added - Small country assist zoom
+
+- Increased map max zoom in `MapViewport` so tiny countries (for example
+  Andorra/Monaco) can be inspected and tapped at much higher zoom levels.
+- Added programmatic map focusing support to `MapViewport` and integrated it in
+  `GeoQuizMap`.
+- Added a persistent bottom-left **small country assist** button on country
+  boards. On click, it auto-focuses so the target country fills roughly 30% of
+  the viewport and keeps surrounding context visible.
+- Assist priority now follows:
+  1) unsolved countries in `SMALL_COUNTRY_IDS`
+  2) otherwise any unsolved country
+- Added and exported `SMALL_COUNTRY_IDS` in `geography.ts` as the generated list
+  of hard-to-tap small countries within the 193-country UN-aligned dataset.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.7**
+  (PATCH — geography interaction improvement).
+
+## [3.0.6] - 2026-06-27
+
+### Fixed - Geography country coverage aligned with UN members
+
+- Updated the Geography Challenge country dataset to include **all 193 UN member
+  states** across continent boards.
+- Added previously missing members (notably microstates and island nations across
+  Europe, Africa, North America/Caribbean, Asia, and Oceania).
+- Removed non-member entries from country boards so the playable set now matches
+  the UN list exactly.
+- Updated board country counts/blurbs to reflect the new totals.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.6**
+  (PATCH — geography data completeness).
+
+## [3.0.5] - 2026-06-27
+
+### Fixed - Country label anchor placement
+
+- Updated Geography Challenge country-label placement to use each country's
+  dominant polygon (largest projected polygon) instead of mixing all polygons.
+  This prevents labels from drifting to remote islands or overseas parts.
+- Added an interior-point solver over the polygon bounds to place labels near the
+  most central interior location, reducing cross-border spill (e.g. France over
+  Spain) and keeping long-country labels on the main landmass.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.5**
+  (PATCH — geography label placement fix).
+
+## [3.0.4] - 2026-06-27
+
+### Fixed - Geography labels visible across browsers
+
+- Removed hard SVG clip-path dependency for solved-country labels in the
+  Geography Challenge. Labels now use in-country anchor placement + fit/tilt
+  logic without a clip-only rendering path that could hide all text in some
+  browser/GPU combinations.
+- Added a browser-safe baseline alignment tweak for in-country SVG text.
+- Reduced pan/zoom blur by snapping viewport translate values to half-pixel
+  increments during transform updates.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.4**
+  (PATCH — geography rendering reliability).
+
+## [3.0.3] - 2026-06-27
+
+### Fixed - Geography runtime label visibility and zoom crispness
+
+- Improved solved-country label placement by probing for an anchor point that is
+  actually inside each country polygon before rendering text. This prevents labels
+  from disappearing when geometric centroids fall outside narrow or irregular
+  shapes.
+- Enabled geometric precision rendering for geography SVG text and paths so labels
+  and boundaries remain cleaner while zooming.
+- Removed an aggressive `will-change: transform` hint from `MapViewport` to avoid
+  browser compositor rasterization that could make zoomed map layers look blurry.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.3**
+  (PATCH — geography runtime rendering fix).
+
+## [3.0.2] - 2026-06-27
+
+### Fixed - Geography map labels and zoom fidelity
+
+- Fixed missing solved-country labels in the Geography Challenge by making
+  country clip paths explicitly use user-space coordinates. Labels now render
+  reliably inside country shapes after a correct answer.
+- Improved in-country label readability by adjusting text contrast and scaling
+  the text outline with font size, so small-country labels remain visible.
+- Upgraded geography map geometry from `world-atlas` 110m to 50m for both
+  country polygons and land backdrop coastlines, improving quality while zooming.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **3.0.2**
+  (PATCH — geography map bugfix + visual quality).
+
 ## [3.0.1] - 2026-06-27
 
 ### Changed - Geography Challenge country labels stay inside countries

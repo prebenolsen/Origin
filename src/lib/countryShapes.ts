@@ -1,15 +1,15 @@
 /**
  * Country polygons for the Geography Challenge.
  *
- * Decodes the Natural Earth country boundaries (`world-atlas` countries-110m,
- * ~108 KB TopoJSON, bundled so it works offline) into per-country GeoJSON
+ * Decodes the Natural Earth country boundaries (`world-atlas` countries-50m,
+ * higher-resolution TopoJSON, bundled so it works offline) into per-country GeoJSON
  * features, indexed by their numeric ISO id — the same id the board data in
  * `geography.ts` references. This file is only imported by the quiz map, so the
  * country topology never loads for ordinary lessons.
  */
 import { geoCentroid, type GeoPermissibleObjects } from 'd3-geo';
 import { feature } from 'topojson-client';
-import countriesTopo from 'world-atlas/countries-110m.json';
+import countriesTopo from 'world-atlas/countries-50m.json';
 
 export type CountryFeature = GeoPermissibleObjects & {
   id?: string | number;

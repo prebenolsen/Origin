@@ -36,8 +36,63 @@ export interface Board {
   regions: Region[];
 }
 
+/**
+ * Countries that are commonly hard to tap at default zoom.
+ * Used by the geography "small country assist" button as first-priority targets.
+ */
+export const SMALL_COUNTRY_IDS = new Set<string>([
+  '020', // Andorra
+  '438', // Liechtenstein
+  '470', // Malta
+  '492', // Monaco
+  '674', // San Marino
+  '056', // Belgium
+  '442', // Luxembourg
+  '040', // Austria
+  '051', // Armenia
+  '031', // Azerbaijan
+  '048', // Bahrain
+  '196', // Cyprus
+  '376', // Israel
+  '422', // Lebanon
+  '702', // Singapore
+  '634', // Qatar
+  '784', // UAE
+  '262', // Djibouti
+  '174', // Comoros
+  '132', // Cabo Verde
+  '226', // Equatorial Guinea
+  '678', // Sao Tome and Principe
+  '690', // Seychelles
+  '480', // Mauritius
+  '748', // Eswatini
+  '426', // Lesotho
+  '659', // Saint Kitts and Nevis
+  '662', // Saint Lucia
+  '670', // Saint Vincent and the Grenadines
+  '212', // Dominica
+  '028', // Antigua and Barbuda
+  '052', // Barbados
+  '308', // Grenada
+  '388', // Jamaica
+  '044', // Bahamas
+  '780', // Trinidad and Tobago
+  '090', // Solomon Islands
+  '242', // Fiji
+  '296', // Kiribati
+  '584', // Marshall Islands
+  '583', // Micronesia
+  '520', // Nauru
+  '585', // Palau
+  '882', // Samoa
+  '776', // Tonga
+  '798', // Tuvalu
+  '548', // Vanuatu
+]);
+
 const EUROPE: Region[] = [
   { id: '008', name: 'Albania' },
+  { id: '020', name: 'Andorra' },
   { id: '040', name: 'Austria' },
   { id: '112', name: 'Belarus' },
   { id: '056', name: 'Belgium' },
@@ -57,8 +112,11 @@ const EUROPE: Region[] = [
   { id: '372', name: 'Ireland' },
   { id: '380', name: 'Italy' },
   { id: '428', name: 'Latvia' },
+  { id: '438', name: 'Liechtenstein' },
   { id: '440', name: 'Lithuania' },
   { id: '442', name: 'Luxembourg' },
+  { id: '470', name: 'Malta' },
+  { id: '492', name: 'Monaco' },
   { id: '807', name: 'North Macedonia', aliases: ['macedonia'] },
   { id: '498', name: 'Moldova' },
   { id: '499', name: 'Montenegro' },
@@ -69,6 +127,7 @@ const EUROPE: Region[] = [
   { id: '642', name: 'Romania' },
   { id: '643', name: 'Russia', aliases: ['russian federation'] },
   { id: '688', name: 'Serbia' },
+  { id: '674', name: 'San Marino' },
   { id: '703', name: 'Slovakia' },
   { id: '705', name: 'Slovenia' },
   { id: '724', name: 'Spain' },
@@ -82,6 +141,7 @@ const ASIA: Region[] = [
   { id: '004', name: 'Afghanistan' },
   { id: '051', name: 'Armenia' },
   { id: '031', name: 'Azerbaijan' },
+  { id: '048', name: 'Bahrain' },
   { id: '050', name: 'Bangladesh' },
   { id: '064', name: 'Bhutan' },
   { id: '096', name: 'Brunei' },
@@ -101,20 +161,20 @@ const ASIA: Region[] = [
   { id: '418', name: 'Laos' },
   { id: '422', name: 'Lebanon' },
   { id: '458', name: 'Malaysia' },
+  { id: '462', name: 'Maldives' },
   { id: '496', name: 'Mongolia' },
   { id: '104', name: 'Myanmar', aliases: ['burma'] },
   { id: '524', name: 'Nepal' },
   { id: '408', name: 'North Korea' },
   { id: '512', name: 'Oman' },
   { id: '586', name: 'Pakistan' },
-  { id: '275', name: 'Palestine' },
   { id: '608', name: 'Philippines' },
   { id: '634', name: 'Qatar' },
   { id: '682', name: 'Saudi Arabia' },
+  { id: '702', name: 'Singapore' },
   { id: '410', name: 'South Korea' },
   { id: '144', name: 'Sri Lanka' },
   { id: '760', name: 'Syria' },
-  { id: '158', name: 'Taiwan' },
   { id: '762', name: 'Tajikistan' },
   { id: '764', name: 'Thailand' },
   { id: '626', name: 'Timor-Leste', aliases: ['east timor'] },
@@ -133,9 +193,11 @@ const AFRICA: Region[] = [
   { id: '072', name: 'Botswana' },
   { id: '854', name: 'Burkina Faso' },
   { id: '108', name: 'Burundi' },
+  { id: '132', name: 'Cabo Verde', aliases: ['cape verde'] },
   { id: '120', name: 'Cameroon' },
   { id: '140', name: 'Central African Republic', aliases: ['car', 'central african rep'] },
   { id: '148', name: 'Chad' },
+  { id: '174', name: 'Comoros' },
   { id: '178', name: 'Republic of the Congo', aliases: ['congo', 'congo brazzaville'] },
   { id: '384', name: 'Ivory Coast', aliases: ["cote d'ivoire", "côte d'ivoire"] },
   {
@@ -162,13 +224,16 @@ const AFRICA: Region[] = [
   { id: '454', name: 'Malawi' },
   { id: '466', name: 'Mali' },
   { id: '478', name: 'Mauritania' },
+  { id: '480', name: 'Mauritius' },
   { id: '504', name: 'Morocco' },
   { id: '508', name: 'Mozambique' },
   { id: '516', name: 'Namibia' },
   { id: '562', name: 'Niger' },
   { id: '566', name: 'Nigeria' },
   { id: '646', name: 'Rwanda' },
+  { id: '678', name: 'Sao Tome and Principe', aliases: ['sao tome', 'sao tome & principe'] },
   { id: '686', name: 'Senegal' },
+  { id: '690', name: 'Seychelles' },
   { id: '694', name: 'Sierra Leone' },
   { id: '706', name: 'Somalia' },
   { id: '710', name: 'South Africa' },
@@ -178,19 +243,22 @@ const AFRICA: Region[] = [
   { id: '768', name: 'Togo' },
   { id: '788', name: 'Tunisia' },
   { id: '800', name: 'Uganda' },
-  { id: '732', name: 'Western Sahara' },
   { id: '894', name: 'Zambia' },
   { id: '716', name: 'Zimbabwe' },
 ];
 
 const NORTH_AMERICA: Region[] = [
+  { id: '028', name: 'Antigua and Barbuda', aliases: ['antigua'] },
   { id: '044', name: 'Bahamas', aliases: ['the bahamas'] },
+  { id: '052', name: 'Barbados' },
   { id: '084', name: 'Belize' },
   { id: '124', name: 'Canada' },
   { id: '188', name: 'Costa Rica' },
   { id: '192', name: 'Cuba' },
   { id: '214', name: 'Dominican Republic' },
+  { id: '212', name: 'Dominica' },
   { id: '222', name: 'El Salvador' },
+  { id: '308', name: 'Grenada' },
   { id: '320', name: 'Guatemala' },
   { id: '332', name: 'Haiti' },
   { id: '340', name: 'Honduras' },
@@ -198,6 +266,13 @@ const NORTH_AMERICA: Region[] = [
   { id: '484', name: 'Mexico' },
   { id: '558', name: 'Nicaragua' },
   { id: '591', name: 'Panama' },
+  { id: '659', name: 'Saint Kitts and Nevis', aliases: ['saint kitts', 'st kitts and nevis'] },
+  { id: '662', name: 'Saint Lucia', aliases: ['st lucia'] },
+  {
+    id: '670',
+    name: 'Saint Vincent and the Grenadines',
+    aliases: ['st vincent and the grenadines', 'saint vincent'],
+  },
   { id: '780', name: 'Trinidad and Tobago', aliases: ['trinidad'] },
   { id: '840', name: 'United States', aliases: ['usa', 'united states of america', 'america', 'us'] },
 ];
@@ -220,9 +295,17 @@ const SOUTH_AMERICA: Region[] = [
 const OCEANIA: Region[] = [
   { id: '036', name: 'Australia' },
   { id: '242', name: 'Fiji' },
+  { id: '296', name: 'Kiribati' },
+  { id: '584', name: 'Marshall Islands' },
+  { id: '583', name: 'Micronesia', aliases: ['federated states of micronesia'] },
+  { id: '520', name: 'Nauru' },
   { id: '554', name: 'New Zealand' },
+  { id: '585', name: 'Palau' },
   { id: '598', name: 'Papua New Guinea' },
+  { id: '882', name: 'Samoa' },
   { id: '090', name: 'Solomon Islands' },
+  { id: '776', name: 'Tonga' },
+  { id: '798', name: 'Tuvalu' },
   { id: '548', name: 'Vanuatu' },
 ];
 
@@ -248,14 +331,14 @@ const SEAS: Region[] = [
 ];
 
 export const BOARDS: Board[] = [
-  { key: 'europe', name: 'Europe', kind: 'countries', blurb: '39 countries', focus: [-25, 34, 45, 71], regions: EUROPE },
-  { key: 'asia', name: 'Asia', kind: 'countries', blurb: '45 countries', focus: [25, -11, 147, 78], regions: ASIA },
-  { key: 'africa', name: 'Africa', kind: 'countries', blurb: '51 countries', focus: [-19, -36, 52, 38], regions: AFRICA },
+  { key: 'europe', name: 'Europe', kind: 'countries', blurb: '44 countries', focus: [-25, 34, 45, 71], regions: EUROPE },
+  { key: 'asia', name: 'Asia', kind: 'countries', blurb: '46 countries', focus: [25, -11, 147, 78], regions: ASIA },
+  { key: 'africa', name: 'Africa', kind: 'countries', blurb: '54 countries', focus: [-19, -36, 52, 38], regions: AFRICA },
   {
     key: 'north-america',
     name: 'North America',
     kind: 'countries',
-    blurb: '16 countries',
+    blurb: '23 countries',
     focus: [-128, 6, -59, 62],
     regions: NORTH_AMERICA,
   },
@@ -267,7 +350,14 @@ export const BOARDS: Board[] = [
     focus: [-82, -56, -34, 13],
     regions: SOUTH_AMERICA,
   },
-  { key: 'oceania', name: 'Oceania', kind: 'countries', blurb: '6 countries', focus: [110, -48, 180, 1], regions: OCEANIA },
+  {
+    key: 'oceania',
+    name: 'Oceania',
+    kind: 'countries',
+    blurb: '14 countries',
+    focus: [110, -48, 180, 20],
+    regions: OCEANIA,
+  },
   {
     key: 'seas',
     name: 'Oceans & Seas',

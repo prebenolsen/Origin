@@ -1,14 +1,14 @@
 /**
  * Geographic helpers for the context map.
  *
- * Real coastlines come from `world-atlas` (Natural Earth, 110m resolution) as
+ * Real coastlines come from `world-atlas` (Natural Earth, 50m resolution) as
  * TopoJSON, decoded once into a GeoJSON land silhouette. We project with
  * `d3-geo` so markers given as real `lat`/`lng` land in the correct place — no
- * fake blobs. The land file is tiny (~55KB) and ships with the bundle, so the
+ * fake blobs. The land file ships with the bundle, so the
  * map works offline.
  *
- * To swap in finer coastlines, change the import to `land-50m.json`
- * (~545KB) — the rest of the pipeline is resolution-agnostic.
+ * To reduce bundle size, swap the import back to `land-110m.json` — the rest of
+ * the pipeline is resolution-agnostic.
  */
 import {
   geoMercator,
@@ -18,7 +18,7 @@ import {
   type GeoGeometryObjects,
 } from 'd3-geo';
 import { feature } from 'topojson-client';
-import landTopo from 'world-atlas/land-110m.json';
+import landTopo from 'world-atlas/land-50m.json';
 
 export interface LngLat {
   lng: number;

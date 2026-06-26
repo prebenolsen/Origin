@@ -1,10 +1,10 @@
-import { useMemo, type ReactNode } from 'react';
-import { geoContains, geoPath } from 'd3-geo';
+import { useMemo, useState, type ReactNode } from 'react';
+import { geoContains, geoPath, type GeoProjection } from 'd3-geo';
 import { fitProjection, landGeometry, graticule, type LngLat } from '../../lib/geo';
 import { countryFeaturesById, type CountryFeature } from '../../lib/countryShapes';
-import type { Board, Region } from '../../lib/geography';
+import { SMALL_COUNTRY_IDS, type Board, type Region } from '../../lib/geography';
 import { MAP_W, MAP_H } from '../module/mapParts';
-import MapViewport from '../module/MapViewport';
+import MapViewport, { type FocusTarget } from '../module/MapViewport';
 
 interface CountryLabelLayout {
   x: number;
@@ -12,7 +12,6 @@ interface CountryLabelLayout {
   angle: number;
   fontSize: number;
   lines: string[];
-  clipId: string;
 }
 
 /**
@@ -35,6 +34,10 @@ export default function GeoQuizMap({
   onSelect: (id: string | null) => void;
   renderOverlay?: (fullscreen: boolean) => ReactNode;
 }) {
+  const [focusSerial, setFocusSerial] = useState(0);
+  const [assistStep, setAssistStep] = useState(0);
+  const [focusTarget, setFocusTarget] = useState<FocusTarget | null>(null);
+
   const { project, countryShapes, seaPoints, landPath, gratPath } = useMemo(() => {
     const project = fitProjection([] as LngLat[], MAP_W, MAP_H, board.focus);
     const path = geoPath(project);
@@ -46,6 +49,10 @@ export default function GeoQuizMap({
       cx: number;
       cy: number;
       labelLayout: CountryLabelLayout | null;
+      focusU: number;
+      focusV: number;
+      focusK: number;
+      smallPriority: boolean;
     }[] = [];
     const seaPoints: { region: Region; x: number; y: number }[] = [];
 
@@ -56,14 +63,18 @@ export default function GeoQuizMap({
         if (!feature) continue;
         const d = path(feature as any) ?? '';
         const c = path.centroid(feature as any);
-        const clipId = `geo-country-${board.key}-${region.id}`;
+        const focus = computeCountryFocus(feature, project, c as [number, number]);
         countryShapes.push({
           region,
           feature,
           d,
           cx: c[0],
           cy: c[1],
-          labelLayout: d ? buildCountryLabelLayout(feature, region.name, project, c as [number, number], clipId) : null,
+          labelLayout: d ? buildCountryLabelLayout(feature, region.name, project, c as [number, number]) : null,
+          focusU: focus.u,
+          focusV: focus.v,
+          focusK: focus.k,
+          smallPriority: SMALL_COUNTRY_IDS.has(region.id),
         });
       }
     } else {
@@ -80,7 +91,15 @@ export default function GeoQuizMap({
       landPath: path(landGeometry() as any) ?? '',
       gratPath: path(graticule as any) ?? '',
     };
-  }, [board]);
+  }, [board, solved]);
+
+  const assistRanked = useMemo(() => {
+    if (board.kind !== 'countries') return [] as typeof countryShapes;
+    const unsolved = countryShapes.filter((c) => !solved.has(c.region.id));
+    const small = unsolved.filter((c) => c.smallPriority).sort((a, b) => a.focusK - b.focusK || a.region.name.localeCompare(b.region.name));
+    if (small.length > 0) return small;
+    return unsolved.sort((a, b) => a.focusK - b.focusK || a.region.name.localeCompare(b.region.name));
+  }, [board.kind, countryShapes, solved]);
 
   const handleTap = (u: number, v: number) => {
     const vx = u * MAP_W;
@@ -110,25 +129,72 @@ export default function GeoQuizMap({
   };
 
   return (
-    <MapViewport onTap={handleTap} renderOverlay={renderOverlay}>
+    <MapViewport
+      onTap={handleTap}
+      focusTarget={focusTarget}
+      hideHint={board.kind === 'countries'}
+      renderOverlay={(fullscreen) => (
+        <>
+          {board.kind === 'countries' && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                if (!assistRanked.length) return;
+                const idx = assistStep % assistRanked.length;
+                const target = assistRanked[idx];
+                onSelect(target.region.id);
+                setFocusSerial((n) => {
+                  const serial = n + 1;
+                  setFocusTarget({
+                    u: target.focusU,
+                    v: target.focusV,
+                    k: target.focusK,
+                    nonce: serial,
+                  });
+                  return serial;
+                });
+                setAssistStep((s) => s + 1);
+              }}
+              onPointerDown={(e) => e.stopPropagation()}
+              className="absolute bottom-2 left-2 z-20 grid h-10 w-10 place-items-center rounded-full border border-line bg-ink/75 text-accent-soft backdrop-blur-sm transition enabled:hover:border-accent/50 enabled:hover:text-accent enabled:active:scale-95 disabled:cursor-not-allowed disabled:opacity-45"
+              aria-label="Focus a small unsolved country"
+              title="Focus small unsolved country"
+              disabled={!assistRanked.length}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-[18px] w-[18px]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="7" cy="9" r="2" />
+                <circle cx="12" cy="6" r="1.5" />
+                <circle cx="16.5" cy="11" r="1.2" />
+                <path d="M15 15l5 5" />
+                <circle cx="13" cy="13" r="5" />
+              </svg>
+            </button>
+          )}
+          {renderOverlay ? renderOverlay(fullscreen) : null}
+        </>
+      )}
+    >
       <svg
         viewBox={`0 0 ${MAP_W} ${MAP_H}`}
         className="absolute inset-0 h-full w-full"
         preserveAspectRatio="xMidYMid slice"
+        shapeRendering="geometricPrecision"
+        textRendering="geometricPrecision"
       >
         <defs>
           <radialGradient id="quiz-glow" cx="50%" cy="20%" r="85%">
             <stop offset="0%" stopColor="rgba(232,169,75,0.10)" />
             <stop offset="100%" stopColor="rgba(232,169,75,0)" />
           </radialGradient>
-          {board.kind === 'countries' &&
-            countryShapes
-              .filter(({ region, d, labelLayout }) => solved.has(region.id) && !!d && !!labelLayout)
-              .map(({ region, d, labelLayout }) => (
-                <clipPath key={region.id} id={labelLayout!.clipId}>
-                  <path d={d} />
-                </clipPath>
-              ))}
         </defs>
 
         <rect x="0" y="0" width={MAP_W} height={MAP_H} fill="url(#quiz-glow)" />
@@ -199,8 +265,45 @@ export default function GeoQuizMap({
             .map(({ region, x, y }) => (
               <RegionLabel key={region.id} cx={x} cy={y - 22} label={region.name} solved={solved.has(region.id)} />
             ))}
+
     </MapViewport>
   );
+}
+
+function computeCountryFocus(feature: CountryFeature, project: GeoProjection, fallbackCenter: [number, number]) {
+  const dominant = dominantProjectedPolygon(feature, project);
+  if (!dominant || dominant.points.length < 3) {
+    return {
+      u: clamp(fallbackCenter[0] / MAP_W, 0.05, 0.95),
+      v: clamp(fallbackCenter[1] / MAP_H, 0.05, 0.95),
+      k: 4,
+    };
+  }
+
+  const center = bestInteriorAnchor(dominant.rings, fallbackCenter);
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  for (const [x, y] of dominant.points) {
+    if (x < minX) minX = x;
+    if (x > maxX) maxX = x;
+    if (y < minY) minY = y;
+    if (y > maxY) maxY = y;
+  }
+
+  const width = Math.max(4, maxX - minX);
+  const height = Math.max(4, maxY - minY);
+  const targetLinear = Math.sqrt(0.3);
+  const kx = targetLinear / (width / MAP_W);
+  const ky = targetLinear / (height / MAP_H);
+  const k = clamp(Math.min(kx, ky), 2.2, 20);
+
+  return {
+    u: clamp(center[0] / MAP_W, 0.03, 0.97),
+    v: clamp(center[1] / MAP_H, 0.03, 0.97),
+    k,
+  };
 }
 
 function CountryShapeLabel({ label, layout }: { label: string; layout: CountryLabelLayout }) {
@@ -208,11 +311,7 @@ function CountryShapeLabel({ label, layout }: { label: string; layout: CountryLa
   const baselineOffset = ((layout.lines.length - 1) * lineHeight) / 2;
 
   return (
-    <g
-      clipPath={`url(#${layout.clipId})`}
-      transform={`translate(${layout.x} ${layout.y}) rotate(${layout.angle})`}
-      className="pointer-events-none"
-    >
+    <g transform={`translate(${layout.x} ${layout.y}) rotate(${layout.angle})`} className="pointer-events-none">
       <text
         x={0}
         y={0}
@@ -220,10 +319,11 @@ function CountryShapeLabel({ label, layout }: { label: string; layout: CountryLa
         fontSize={layout.fontSize}
         fontWeight={700}
         letterSpacing="0.02em"
-        fill="var(--color-accent-soft)"
-        stroke="rgba(12,11,16,0.92)"
-        strokeWidth={Math.max(1.2, layout.fontSize * 0.18)}
+        fill="rgba(12,11,16,0.96)"
+        stroke="rgba(243,205,140,0.9)"
+        strokeWidth={Math.max(0.35, layout.fontSize * 0.1)}
         paintOrder="stroke"
+        dominantBaseline="middle"
       >
         {layout.lines.map((line, index) => (
           <tspan key={`${label}-${index}`} x={0} dy={index === 0 ? -baselineOffset : lineHeight}>
@@ -256,18 +356,19 @@ function RegionLabel({ cx, cy, label, solved }: { cx: number; cy: number; label:
 function buildCountryLabelLayout(
   feature: CountryFeature,
   label: string,
-  project: (point: [number, number]) => [number, number] | null,
+  project: GeoProjection,
   fallbackCenter: [number, number],
-  clipId: string,
 ): CountryLabelLayout | null {
-  const points = collectProjectedPoints(feature, project);
-  if (points.length < 2) return null;
+  const dominant = dominantProjectedPolygon(feature, project);
+  if (!dominant || dominant.points.length < 3) return null;
 
-  const center = Number.isFinite(fallbackCenter[0]) && Number.isFinite(fallbackCenter[1]) ? fallbackCenter : averagePoint(points);
-  const principal = principalAxis(points);
+  const coarseCenter =
+    Number.isFinite(fallbackCenter[0]) && Number.isFinite(fallbackCenter[1]) ? fallbackCenter : averagePoint(dominant.points);
+  const center = bestInteriorAnchor(dominant.rings, coarseCenter);
+  const principal = principalAxis(dominant.points);
   const useTilt = principal.aspect >= 1.7 && label.length <= 16;
   const angle = useTilt ? clamp(principal.angle, -65, 65) : 0;
-  const box = rotatedBounds(points, center, angle);
+  const box = rotatedBounds(dominant.points, center, angle);
   const width = Math.max(8, box.width * 0.78);
   const height = Math.max(6, box.height * 0.68);
   const lines = splitCountryLabel(label, width, height, useTilt);
@@ -282,29 +383,57 @@ function buildCountryLabelLayout(
     angle,
     fontSize,
     lines,
-    clipId,
   };
 }
 
-function collectProjectedPoints(
-  feature: CountryFeature,
-  project: (point: [number, number]) => [number, number] | null,
-): [number, number][] {
-  const points: [number, number][] = [];
-  const geometry = (feature as any)?.geometry ?? feature;
+function dominantProjectedPolygon(feature: CountryFeature, project: GeoProjection) {
+  const polygons = extractPolygons(feature);
+  if (polygons.length === 0) return null;
 
-  const visit = (node: unknown) => {
-    if (!Array.isArray(node) || node.length === 0) return;
-    if (typeof node[0] === 'number' && typeof node[1] === 'number') {
-      const xy = project([node[0], node[1]] as [number, number]);
-      if (xy) points.push([xy[0], xy[1]]);
-      return;
-    }
-    for (const child of node) visit(child);
-  };
+  let best: { rings: [number, number][][]; points: [number, number][]; area: number } | null = null;
 
-  visit((geometry as any)?.coordinates);
-  return points;
+  for (const polygon of polygons) {
+    const projectedRings = polygon
+      .map((ring) => projectRing(ring, project))
+      .filter((ring) => ring.length >= 3);
+    if (projectedRings.length === 0) continue;
+
+    const outer = projectedRings[0];
+    const area = Math.abs(ringArea(outer));
+    if (area < 1) continue;
+
+    const points = projectedRings.flat();
+    if (!best || area > best.area) best = { rings: projectedRings, points, area };
+  }
+
+  return best;
+}
+
+function extractPolygons(feature: CountryFeature): [number, number][][][] {
+  const geometry = (feature as any)?.geometry;
+  if (!geometry) return [];
+  if (geometry.type === 'Polygon') return [geometry.coordinates as [number, number][][]];
+  if (geometry.type === 'MultiPolygon') return geometry.coordinates as [number, number][][][];
+  return [];
+}
+
+function projectRing(ring: [number, number][], project: GeoProjection): [number, number][] {
+  const out: [number, number][] = [];
+  for (const point of ring) {
+    const xy = project([point[0], point[1]]);
+    if (xy && Number.isFinite(xy[0]) && Number.isFinite(xy[1])) out.push([xy[0], xy[1]]);
+  }
+  return out;
+}
+
+function ringArea(ring: [number, number][]) {
+  let sum = 0;
+  for (let i = 0; i < ring.length; i++) {
+    const a = ring[i];
+    const b = ring[(i + 1) % ring.length];
+    sum += a[0] * b[1] - b[0] * a[1];
+  }
+  return sum / 2;
 }
 
 function averagePoint(points: [number, number][]): [number, number] {
@@ -387,6 +516,106 @@ function splitCountryLabel(label: string, width: number, height: number, tilted:
   }
 
   return [words.slice(0, bestIndex).join(' '), words.slice(bestIndex).join(' ')];
+}
+
+function bestInteriorAnchor(rings: [number, number][][], fallback: [number, number]): [number, number] {
+  const outer = rings[0];
+  if (!outer || outer.length < 3) return fallback;
+
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+  for (const [x, y] of outer) {
+    if (x < minX) minX = x;
+    if (x > maxX) maxX = x;
+    if (y < minY) minY = y;
+    if (y > maxY) maxY = y;
+  }
+
+  let best = pointInPolygonWithHoles(fallback, rings) ? fallback : centroidOfRing(outer);
+  let bestScore = pointInPolygonWithHoles(best, rings) ? distanceToPolygonEdges(best, rings) : -1;
+
+  const cols = 18;
+  const rows = 18;
+  for (let xi = 0; xi <= cols; xi++) {
+    const x = minX + ((maxX - minX) * xi) / cols;
+    for (let yi = 0; yi <= rows; yi++) {
+      const y = minY + ((maxY - minY) * yi) / rows;
+      const p: [number, number] = [x, y];
+      if (!pointInPolygonWithHoles(p, rings)) continue;
+      const score = distanceToPolygonEdges(p, rings);
+      if (score > bestScore) {
+        best = p;
+        bestScore = score;
+      }
+    }
+  }
+
+  return best;
+}
+
+function centroidOfRing(ring: [number, number][]): [number, number] {
+  let cx = 0;
+  let cy = 0;
+  let a = 0;
+  for (let i = 0; i < ring.length; i++) {
+    const [x1, y1] = ring[i];
+    const [x2, y2] = ring[(i + 1) % ring.length];
+    const cross = x1 * y2 - x2 * y1;
+    a += cross;
+    cx += (x1 + x2) * cross;
+    cy += (y1 + y2) * cross;
+  }
+  if (Math.abs(a) < 1e-6) return averagePoint(ring);
+  const scale = 1 / (3 * a);
+  return [cx * scale, cy * scale];
+}
+
+function pointInPolygonWithHoles(point: [number, number], rings: [number, number][][]) {
+  if (!pointInRing(point, rings[0])) return false;
+  for (let i = 1; i < rings.length; i++) {
+    if (pointInRing(point, rings[i])) return false;
+  }
+  return true;
+}
+
+function pointInRing(point: [number, number], ring: [number, number][]) {
+  const [px, py] = point;
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    const intersects = yi > py !== yj > py && px < ((xj - xi) * (py - yi)) / (yj - yi + 1e-12) + xi;
+    if (intersects) inside = !inside;
+  }
+  return inside;
+}
+
+function distanceToPolygonEdges(point: [number, number], rings: [number, number][][]) {
+  let best = Infinity;
+  for (const ring of rings) {
+    for (let i = 0; i < ring.length; i++) {
+      const a = ring[i];
+      const b = ring[(i + 1) % ring.length];
+      const d = distancePointToSegment(point, a, b);
+      if (d < best) best = d;
+    }
+  }
+  return best;
+}
+
+function distancePointToSegment(point: [number, number], a: [number, number], b: [number, number]) {
+  const vx = b[0] - a[0];
+  const vy = b[1] - a[1];
+  const wx = point[0] - a[0];
+  const wy = point[1] - a[1];
+  const vv = vx * vx + vy * vy;
+  if (vv < 1e-12) return Math.hypot(point[0] - a[0], point[1] - a[1]);
+  const t = clamp((wx * vx + wy * vy) / vv, 0, 1);
+  const px = a[0] + vx * t;
+  const py = a[1] + vy * t;
+  return Math.hypot(point[0] - px, point[1] - py);
 }
 
 function clamp(value: number, min: number, max: number) {

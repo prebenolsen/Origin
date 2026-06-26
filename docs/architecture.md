@@ -24,7 +24,8 @@ src/content/
 - **React Router v7** (routing between home / module stages)
 - Data: **static JSON** under `src/content/` (no backend)
 - **Maps:** `d3-geo` + `topojson-client` + `world-atlas` (Natural Earth land,
-  bundled for offline use) render real coastlines for the context map. See the
+  now using 50m geometry for higher zoom fidelity, bundled for offline use)
+  render real coastlines for the context map. See the
   **Maps** section in `CLAUDE.md` for the data schema and authoring rules.
 
 No animation library — motion is done with CSS (scroll-snap, 3D flip, fade-in).
@@ -54,6 +55,8 @@ src/lib/
   geography.ts      # boards (continents + seas), curated country lists with answer
                     # aliases, answer scoring (normalized Levenshtein, ≥80% accept),
                     # and nearest-neighbour multiple-choice generation
+                    # country dataset aligned to all 193 UN member states;
+                    # exports SMALL_COUNTRY_IDS for tap-assist prioritization
   countryShapes.ts  # decodes world-atlas countries-110m → per-country polygons +
                     # cached centroids (only imported by the quiz map)
   geoProgress.ts    # per-board solved-set persistence in localStorage
@@ -64,6 +67,15 @@ src/components/geo/
                     # solved country labels render inside the SVG country shape,
                     # with per-shape font fitting and optional tilt for long,
                     # narrow countries such as Norway
+                    # (browser-safe fallback avoids hard clip-path dependence to
+                    # prevent hidden labels on some GPU/browser combinations).
+                    # Label anchoring prefers the dominant polygon and solves for
+                    # a deep interior point to avoid border overlap and remote
+                    # island placement (e.g., mainland Norway over Svalbard).
+                    # Includes a bottom-left small-country assist button in the
+                    # non-transformed overlay layer (always visible while zooming)
+                    # that cycles to the next unsolved target: small-country
+                    # list first, then remaining unsolved countries.
   AnswerPanel.tsx   # type-the-name input + hints (inline and fullscreen-overlay)
 ```
 

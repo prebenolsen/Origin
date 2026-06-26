@@ -25,7 +25,14 @@ interface Transform {
 }
 
 const MIN_K = 1;
-const MAX_K = 8;
+const MAX_K = 20;
+
+export interface FocusTarget {
+  u: number;
+  v: number;
+  k: number;
+  nonce: number;
+}
 
 function clampTransform(t: Transform, rect: { width: number; height: number }): Transform {
   const k = Math.min(MAX_K, Math.max(MIN_K, t.k));
@@ -42,6 +49,8 @@ export default function MapViewport({
   children,
   onTap,
   renderOverlay,
+  focusTarget,
+  hideHint,
 }: {
   children: ReactNode;
   /**
@@ -56,6 +65,10 @@ export default function MapViewport({
    * can, e.g., only show an answer bar while immersive.
    */
   renderOverlay?: (fullscreen: boolean) => ReactNode;
+  /** Programmatic zoom/pan target in normalized coordinates. */
+  focusTarget?: FocusTarget | null;
+  /** Hide the default bottom-left hint text when a consumer uses that area. */
+  hideHint?: boolean;
 }) {
   const boxRef = useRef<HTMLDivElement>(null);
   const [t, setT] = useState<Transform>({ k: 1, x: 0, y: 0 });
@@ -207,7 +220,21 @@ export default function MapViewport({
     };
   }, [fullscreen]);
 
+  useEffect(() => {
+    if (!focusTarget) return;
+    const rect = boxRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const k = Math.min(MAX_K, Math.max(MIN_K, focusTarget.k));
+    const cx = rect.width / 2;
+    const cy = rect.height / 2;
+    const x = cx - focusTarget.u * rect.width * k;
+    const y = cy - focusTarget.v * rect.height * k;
+    apply({ k, x, y });
+  }, [focusTarget, apply]);
+
   const zoomed = t.k > 1.01;
+  const tx = Math.round(t.x * 2) / 2;
+  const ty = Math.round(t.y * 2) / 2;
 
   const box = (
     <div
@@ -224,7 +251,7 @@ export default function MapViewport({
     >
       <div
         className="absolute inset-0 origin-top-left"
-        style={{ transform: `translate(${t.x}px, ${t.y}px) scale(${t.k})`, willChange: 'transform' }}
+        style={{ transform: `translate(${tx}px, ${ty}px) scale(${t.k})` }}
       >
         {children}
       </div>
@@ -252,7 +279,7 @@ export default function MapViewport({
       </div>
 
       {/* hint */}
-      {!zoomed && (
+      {!zoomed && !hideHint && (
         <div className="pointer-events-none absolute bottom-2 left-2 z-10 rounded-full bg-ink/55 px-2.5 py-1 text-[0.62rem] font-medium tracking-wide text-faint backdrop-blur-sm">
           Pinch / scroll to zoom · drag to pan
         </div>
