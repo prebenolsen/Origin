@@ -22,10 +22,11 @@ export default function ModuleCard({ bundle }: { bundle: ModuleBundle }) {
 
       <div className="relative flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-faint">
-            {bundle.subcategoryName}
-            {bundle.meta.period && /\d/.test(bundle.meta.period) ? ` · ${bundle.meta.period}` : ''}
-          </div>
+          {bundle.meta.period && /\d/.test(bundle.meta.period) && (
+            <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-faint">
+              {bundle.meta.period}
+            </div>
+          )}
           <h3 className="mt-1.5 flex items-center gap-2 text-[1.35rem] leading-tight">
             <span>{bundle.meta.title}</span>
             {bundle.books.length > 0 && <span aria-label="Book available">📖</span>}

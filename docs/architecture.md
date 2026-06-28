@@ -136,3 +136,5 @@ module row status to DONE.
   normal story/quiz/flashcard flow.
 - 2026-06-28: Removed the `When` row from `ContextIntro` so module starts only show
   headline/description and content stats before learners begin.
+- 2026-06-28: Simplified `ModuleCard` metadata line by removing subcategory labels;
+  cards now show only `period` text (when present).

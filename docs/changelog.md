@@ -4,6 +4,14 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.0.2] - 2026-06-28
+
+### Changed - module cards now omit subcategory label
+
+- Removed subcategory text from module-card metadata line on category/search listings.
+- Module cards now show only period/when text in that line when available.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.0.2** (PATCH - UI cleanup).
+
 ## [4.0.1] - 2026-06-28
 
 ### Changed - removed intro "When" line from all modules
