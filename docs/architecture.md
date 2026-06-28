@@ -10,6 +10,7 @@ src/content/
       <module>/
         module.json       # required — metadata + context intro
         story.json        # story feed cards
+        book-*.json       # optional book-attached card walkthrough(s)
         timeline.json     # milestones for the persistent timeline
         quiz.json         # recall questions
         flashcards.json   # review cards
@@ -129,3 +130,7 @@ module row status to DONE.
   from `raw.md` into all five content JSON files and set tracker status to DONE.
 - 2026-06-27: Completed `science/life/the-origin-of-life`
   from `raw.md` into all five content JSON files and set tracker status to DONE.
+- 2026-06-28: Added module-attached `book-*.json` support in the content registry.
+  Categories now expose book counts in Home cards, modules show a `📖` indicator when
+  a book exists, and the module intro can open a dedicated `book` stage before the
+  normal story/quiz/flashcard flow.

@@ -4,6 +4,17 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.0.0] - 2026-06-28
+
+### Added - module-attached book content flow
+
+- Added support for discovering `book-*.json` files under `src/content/**` and attaching them to their module path in the content registry.
+- Added category-level book counts to home category cards (for example: `8 modules · 4 topics · 1 book`).
+- Added a module-card book indicator (`📖`) next to module titles when at least one book is attached.
+- Added a new intro CTA for modules with books: `This module has a book associated to it. Click to start it.`
+- Added a new `/m/:cat/:sub/:mod/book` stage (`BookStage`) so the CTA opens a readable book walkthrough and then returns learners to the normal module flow.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.0.0** (MAJOR - new app capability).
+
 ## [3.3.0] - 2026-06-27
 
 ### Added - authored Science Life module from source transcript

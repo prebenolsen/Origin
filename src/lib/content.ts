@@ -7,9 +7,11 @@
  * changes required.
  */
 import type {
+  BookCard,
   CategoryGroup,
   Flashcard,
   ModuleBundle,
+  ModuleBook,
   ModuleMeta,
   QuizQuestion,
   StoryCard,
@@ -38,6 +40,10 @@ const quizFiles = import.meta.glob('../content/**/quiz.json', {
   import: 'default',
 }) as GlobMap;
 const flashcardFiles = import.meta.glob('../content/**/flashcards.json', {
+  eager: true,
+  import: 'default',
+}) as GlobMap;
+const bookFiles = import.meta.glob('../content/**/book-*.json', {
   eager: true,
   import: 'default',
 }) as GlobMap;
@@ -79,6 +85,41 @@ const timelineByPath = indexByPath<TimelineEvent[]>(timelineFiles);
 const quizByPath = indexByPath<QuizQuestion[]>(quizFiles);
 const flashcardsByPath = indexByPath<Flashcard[]>(flashcardFiles);
 
+function fileStem(key: string): string | null {
+  const file = key.split('/').pop();
+  if (!file) return null;
+  return file.replace(/\.json$/i, '');
+}
+
+function booksByModulePath(files: GlobMap): Map<string, ModuleBook[]> {
+  const map = new Map<string, ModuleBook[]>();
+  for (const key of Object.keys(files)) {
+    const parts = parseKey(key);
+    if (!parts) continue;
+    const path = `${parts.cat}/${parts.sub}/${parts.mod}`;
+    const id = fileStem(key);
+    if (!id) continue;
+    const title = humanize(id.replace(/^book-/, ''));
+    const cards = files[key] as BookCard[];
+    const books = map.get(path) ?? [];
+    books.push({ id, title, cards });
+    map.set(path, books);
+  }
+  return map;
+}
+
+const booksByPath = booksByModulePath(bookFiles);
+
+const bookCountByCategory = (() => {
+  const counts = new Map<string, number>();
+  for (const key of Object.keys(bookFiles)) {
+    const parts = parseKey(key);
+    if (!parts) continue;
+    counts.set(parts.cat, (counts.get(parts.cat) ?? 0) + 1);
+  }
+  return counts;
+})();
+
 function categoryName(slug: string): string {
   return CATEGORY_DISPLAY[slug] ?? humanize(slug);
 }
@@ -114,6 +155,7 @@ function buildBundles(): Map<string, ModuleBundle> {
       timeline: timelineByPath.get(path) ?? [],
       quiz: quizByPath.get(path) ?? [],
       flashcards: flashcardsByPath.get(path) ?? [],
+      books: booksByPath.get(path) ?? [],
     });
   }
   return bundles;
@@ -190,6 +232,7 @@ export function getCategoryGroups(): CategoryGroup[] {
         slug: bundle.categorySlug,
         name: bundle.categoryName,
         subcategories: [],
+        bookCount: bookCountByCategory.get(bundle.categorySlug) ?? 0,
       };
       categories.set(bundle.categorySlug, category);
     }

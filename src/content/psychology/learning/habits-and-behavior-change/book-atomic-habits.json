@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "timeline": "Book Context",
+        "title": "Why Resolutions Often Fail",
+        "content": "Many people struggle to change because they rely on motivation or massive action, which are unsustainable. Habits compound slowly, making early progress invisible. This creates a gap between effort and visible results where most people quit. Atomic Habits by James Clear addresses this by proposing that lasting change comes from small, consistent systems rather than overwhelming goals.",
+        "concept": "The Plateau of Latent Potential",
+        "next": "How do tiny changes create massive results over time?"
+    },
+    {
+        "id": 2,
+        "timeline": "Central Idea",
+        "title": "The Power of Tiny Improvements",
+        "content": "Improving by just 1% daily compounds to nearly 38 times better over a year. Success is the product of daily habits, not one-time transformations. Bad habits compound negatively just as good ones do. Consistency in small actions outweighs intensity in rare efforts.",
+        "concept": "Compounding Growth Model",
+        "next": "If habits drive results, what should you focus on setting?"
+    },
+    {
+        "id": 3,
+        "timeline": "Key Concepts",
+        "title": "Focus on Systems, Not Just Goals",
+        "content": "Goals set a direction, but systems deliver progress. Winners and losers often share the same goals, so the goal cannot be the differentiator. Focusing only on goals can lead to an either-or mindset where missing a target feels like failure. Systems ensure continuous improvement regardless of the outcome.",
+        "concept": "Systems vs Goals Framework",
+        "next": "What is the deepest layer for ensuring habits stick?"
+    },
+    {
+        "id": 4,
+        "title": "Change Identity to Change Behavior",
+        "content": "Behavior change has three layers: outcomes, processes, and identity. The most effective method focuses on identity. Instead of aiming for a result, adopt the belief that you are the type of person who does the action. 'I am a reader' is more powerful than 'I want to read.' Actions become proof of your new identity.",
+        "concept": "Identity-Based Behavior Change",
+        "next": "How do habits form automatically in the mind?"
+    },
+    {
+        "id": 5,
+        "timeline": "Key Concepts",
+        "title": "The Habit Loop Mechanism",
+        "content": "Habits are automatic responses triggered by cues. The loop consists of Cue, Craving, Response, and Reward. A cue triggers a dopamine-driven craving for a reward. Repeating the loop strengthens the neural pathway. Bad habits occur when cues trigger unwanted responses that provide temporary relief or pleasure.",
+        "concept": "The Habit Loop Model",
+        "next": "How can you make good habits impossible to miss?"
+    },
+    {
+        "id": 6,
+        "timeline": "Application",
+        "title": "Use Implementation Intentions",
+        "content": "Vague intentions fail because they lack specificity. Use the formula: 'I will [behavior] at [time] in [location].' This defines exactly when and where the habit happens, removing ambiguity. Clear timing and location act as strong cues that reduce the mental effort needed to decide.",
+        "concept": "Implementation Intentions",
+        "next": "How can you link a new habit to your daily routine?"
+    },
+    {
+        "id": 7,
+        "timeline": "Application",
+        "title": "Stack Habits for Automaticity",
+        "content": "Link a desired habit to an existing one using the formula: 'After [current habit], I will [new habit].' Existing routines provide reliable cues that require no extra willpower. Building a chain of stacked habits makes the sequence easier to maintain over time.",
+        "concept": "Habit Stacking Technique",
+        "next": "How does your physical environment influence choices?"
+    },
+    {
+        "id": 8,
+        "timeline": "Application",
+        "title": "Design Your Environment as a Cue",
+        "content": "Environment is the invisible hand shaping behavior. To build good habits, make cues visible and accessible by arranging objects to support the action. To break bad habits, remove or hide the cues so they cannot trigger the response. Use 'one space, one use' to reduce conflicting signals in your surroundings.",
+        "concept": "Context-Driven Behavior Design",
+        "next": "What drives the desire to repeat a habit?"
+    },
+    {
+        "id": 9,
+        "timeline": "Key Concepts",
+        "title": "Anticipation Drives Action via Dopamine",
+        "content": "Dopamine spikes in anticipation of a reward, not just during the reward itself. This anticipation fuels the craving to act. Making habits attractive involves associating the cue with a positive outcome or linking it to something you already value. The more appealing the anticipated reward, the stronger the habit loop becomes.",
+        "concept": "Dopamine-Driven Feedback Loop",
+        "next": "Are there limits to relying on this framework?"
+    },
+    {
+        "id": 10,
+        "timeline": "Limitations",
+        "title": "Contextual Limits of Atomic Habits",
+        "content": "This framework assumes habits are primarily driven by individual cues and identity, which may oversimplify complex biological, psychological, or systemic factors. Environment design relies on the ability to control one's surroundings, which is not always feasible. Severe behavioral issues often require professional intervention beyond habit loops.",
+        "concept": "Critical Perspective on Behavior Change",
+        "next": "How can you apply these insights effectively?"
+    }
+]

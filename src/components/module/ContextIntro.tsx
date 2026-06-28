@@ -71,16 +71,29 @@ export default function ContextIntro() {
           )}
         </div>
 
-        {stats.length > 0 && (
-          <div className="mt-6 flex flex-wrap gap-2">
-            {stats.map((s) => (
-              <span
-                key={s}
-                className="rounded-full bg-surface px-3 py-1.5 text-xs text-muted"
+        {(stats.length > 0 || bundle.books.length > 0) && (
+          <div className="mt-6">
+            {stats.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {stats.map((s) => (
+                  <span
+                    key={s}
+                    className="rounded-full bg-surface px-3 py-1.5 text-xs text-muted"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            )}
+            {bundle.books.length > 0 && (
+              <Button
+                variant="outline"
+                className="mt-3 w-full"
+                onClick={() => go('book')}
               >
-                {s}
-              </span>
-            ))}
+                This module has a book associated to it. Click to start it.
+              </Button>
+            )}
           </div>
         )}
       </div>

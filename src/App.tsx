@@ -5,6 +5,7 @@ import HomeScreen from './components/home/HomeScreen';
 import CategoryScreen from './components/home/CategoryScreen';
 import ModuleExperience from './components/module/ModuleExperience';
 import ContextIntro from './components/module/ContextIntro';
+import BookStage from './components/module/BookStage';
 import StoryFeed from './components/module/StoryFeed';
 import QuizStage from './components/module/QuizStage';
 import FlashcardStage from './components/module/FlashcardStage';
@@ -45,6 +46,7 @@ export default function App() {
         />
         <Route path="/m/:cat/:sub/:mod" element={<ModuleExperience />}>
           <Route index element={<ContextIntro />} />
+          <Route path="book" element={<BookStage />} />
           <Route path="story" element={<StoryFeed />} />
           <Route path="quiz" element={<QuizStage />} />
           <Route path="flashcards" element={<FlashcardStage />} />

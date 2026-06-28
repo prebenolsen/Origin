@@ -26,7 +26,10 @@ export default function ModuleCard({ bundle }: { bundle: ModuleBundle }) {
             {bundle.subcategoryName}
             {bundle.meta.period && /\d/.test(bundle.meta.period) ? ` · ${bundle.meta.period}` : ''}
           </div>
-          <h3 className="mt-1.5 text-[1.35rem] leading-tight">{bundle.meta.title}</h3>
+          <h3 className="mt-1.5 flex items-center gap-2 text-[1.35rem] leading-tight">
+            <span>{bundle.meta.title}</span>
+            {bundle.books.length > 0 && <span aria-label="Book available">📖</span>}
+          </h3>
         </div>
         {complete ? (
           <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-correct/15 text-sm text-correct">

@@ -104,6 +104,25 @@ export interface StoryCard {
   visual?: string;
 }
 
+/* ---------------------------- book-*.json ----------------------------- */
+
+export interface BookCard {
+  id: number | string;
+  timeline?: string;
+  title: string;
+  content: string;
+  concept?: string;
+  next?: string;
+}
+
+export interface ModuleBook {
+  /** File-based identifier, e.g. `book-atomic-habits`. */
+  id: string;
+  /** Humanized title from the filename, e.g. `Atomic Habits`. */
+  title: string;
+  cards: BookCard[];
+}
+
 /* ----------------------------- timeline.json ---------------------------- */
 
 export interface TimelineEvent {
@@ -179,6 +198,7 @@ export interface ModuleBundle {
   timeline: TimelineEvent[];
   quiz: QuizQuestion[];
   flashcards: Flashcard[];
+  books: ModuleBook[];
 }
 
 /** Grouping used by the Home screen. */
@@ -186,6 +206,8 @@ export interface CategoryGroup {
   slug: string;
   name: string;
   subcategories: SubcategoryGroup[];
+  /** Number of book JSON files discovered in this category. */
+  bookCount: number;
 }
 
 export interface SubcategoryGroup {

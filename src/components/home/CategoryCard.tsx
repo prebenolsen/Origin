@@ -8,6 +8,7 @@ export default function CategoryCard({ group }: { group: CategoryGroup }) {
     0,
   );
   const topicCount = group.subcategories.length;
+  const bookCount = group.bookCount;
   const subNames = group.subcategories.map((s) => s.name);
 
   // Borrow a representative accent from the first module that defines one.
@@ -32,6 +33,12 @@ export default function CategoryCard({ group }: { group: CategoryGroup }) {
           <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-faint">
             {moduleTotal} module{moduleTotal === 1 ? '' : 's'} · {topicCount}{' '}
             topic{topicCount === 1 ? '' : 's'}
+            {bookCount > 0 && (
+              <>
+                {' '}
+                · {bookCount} book{bookCount === 1 ? '' : 's'}
+              </>
+            )}
           </div>
           <h3 className="mt-1.5 text-[1.5rem] leading-tight">{group.name}</h3>
         </div>

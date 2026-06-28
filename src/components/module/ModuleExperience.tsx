@@ -2,7 +2,7 @@ import { Outlet, useOutletContext, useParams, useNavigate, Link } from 'react-ro
 import { getModule } from '../../lib/content';
 import type { ModuleBundle } from '../../types/content';
 
-export type StageSlug = '' | 'story' | 'quiz' | 'flashcards';
+export type StageSlug = '' | 'book' | 'story' | 'quiz' | 'flashcards';
 
 export interface ModuleContext {
   bundle: ModuleBundle;
