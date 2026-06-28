@@ -1,39 +1,25 @@
 {
-    "title":  "PLACEHOLDER: Russia and Ukraine",
-    "category":  "the-modern-world",
-    "subcategory":  "global-conflicts",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "1991-present: post-Soviet politics and conflict",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
-                }
+  "title": "The Russia-Ukraine Conflict: Sovereignty, Power, and a Reshaped World",
+  "period": "1991–present",
+  "category": "the-modern-world",
+  "subcategory": "global-conflicts",
+  "summary": "Rooted in the collapse of the Soviet Union in 1991, this module traces Ukraine's decades-long struggle for independence from Russia's persistent efforts to reassert imperial dominance. Driven by historical grievances, security anxieties over Western military alignment, and clashing national identities, tensions escalated through the 2014 annexation of Crimea and the Donbas war before culminating in Russia’s full-scale invasion in February 2022. The conflict has triggered a massive refugee crisis, reshaped European security architecture, unified Ukrainian national identity, and tested the resilience of the post-WWII international order through unprecedented sanctions, military aid, and global economic disruption.",
+  "accent": "#9a9a9a",
+  "context": {
+    "type": "map",
+    "headline": "Post-Cold War Geopolitics & The War for Ukraine's Future",
+    "description": "Spanning 1991 to the present, this module explores the decades-long geopolitical struggle between Russia and Ukraine over sovereignty, regional influence, and alignment with Western institutions. Driven by historical grievances, security perceptions, and competing national identities, the conflict has evolved from post-Soviet instability into a full-scale war that has redrawn European borders, triggered humanitarian crises, and reshaped global alliances.",
+    "when": "1991-present: post-Soviet politics and conflict",
+    "map": {
+       "focus": [20, 40, 45, 60],
+      "markers": [
+        { "id": "ukraine", "label": "Ukraine", "lat": 48.38, "lng": 31.17, "role": "primary" },
+        { "id": "russia", "label": "Russia", "lat": 55.76, "lng": 37.62, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "russia", "to": "ukraine", "label": "Territorial Annexation & Invasion" },
+        { "from": "ukraine", "to": "russia", "label": "Defiance & National Unification" }
+      ]
+    }
+  }
 }

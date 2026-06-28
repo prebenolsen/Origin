@@ -1,8 +1,107 @@
-{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
-
+[
+  {
+    "id": 1,
+    "timeline": "Context",
+    "title": "The Map That Refused to Change",
+    "content": "Ukraine is the second-largest country in Europe, sitting between Russia and the West. For decades, its future was a question: would it choose democracy and integration with Europe, or remain under Russian control? This struggle matters because it challenges a basic rule of the modern world—that nations have the right to choose their own alliances. When Ukraine began moving toward the West, Russia decided to draw new borders by force.",
+    "next": "How did this conflict begin over thirty years ago with nuclear weapons?"
+  },
+  {
+    "id": 2,
+    "timeline": "1991–1994",
+    "title": "The Nuclear Bargain of 1994",
+    "content": "When the Soviet Union collapsed in 1991, Ukraine declared independence and inherited the world's third-largest nuclear arsenal. In 1994, Ukraine made a historic choice: it gave up its nukes in exchange for security promises from Russia, the US, and the UK. This established Ukraine as vulnerable but hopeful that international guarantees would protect its sovereignty.",
+    "next": "What happened when those safety promises began to feel like empty words?"
+  },
+  {
+    "id": 3,
+    "timeline": "1999–2004",
+    "title": "The Ghost of Empire and the Man Who Wanted It Back",
+    "content": "Russia suffered through chaos in the 1990s, losing its superpower status. Vladimir Putin rose to power in 1999 promising to restore order and greatness. He viewed the collapse of the Soviet Union as a tragedy and saw Ukraine not as an independent neighbor, but as part of Russia's soul and necessary buffer against a hostile West.",
+    "next": "How does a leader's fear of neighboring alliances turn into a blueprint for conflict?"
+  },
+  {
+    "id": 4,
+    "timeline": "1990s–2000s",
+    "title": "The Circle of Fear: NATO Expansion",
+    "content": "After the Cold War, many Eastern European countries joined NATO for protection. Moscow viewed this as betrayal and encirclement, demanding that Ukraine never join. The West argued NATO was defensive and voluntary, creating a deep divide in how security was perceived on the continent.",
+    "next": "Why did this security debate collide violently with Ukrainian dreams?"
+  },
+  {
+    "id": 5,
+    "timeline": "Analysis",
+    "title": "The Myth of the Single Cause",
+    "content": "Many assume NATO expansion alone caused the invasion. The reality was more complicated. While security fears were real, Putin's actions were driven by imperial ideology, a desire to erase Ukrainian sovereignty, and domestic political control. Ukraine's democratic aspirations were viewed not just as a security threat, but as a challenge to Russia's right to rule over its neighbors.",
+    "next": "What specific event pushed Ukraine from a balancing act to an open break with Moscow?"
+  },
+  {
+    "id": 6,
+    "timeline": "2013–2014",
+    "title": "The Deal That Broke the Country",
+    "content": "Ukrainian President Viktor Yanukovic suspended a deal with the European Union to accept Russian money and cracked down on dissent. This triggered the Euromaidan protests, where thousands demanded democracy. When the government used violence against them, Yanukovic fled, creating a power vacuum that Russia moved to exploit.",
+    "next": "Did this internal change give Moscow a reason to intervene, or an excuse?"
+  },
+  {
+    "id": 7,
+    "timeline": "2014",
+    "title": "The Vanishing Act: Crimea and the Truth About Referendums",
+    "content": "Russia annexed Crimea in early 2014. Troops without insignia seized control before being revealed as Russian forces. A referendum was held under military occupation, boycotted by most locals and declared invalid internationally. This was the first redrawing of European borders by force since World War II.",
+    "next": "If the land was already taken, why did the war escalate to a full-scale invasion eight years later?"
+  },
+  {
+    "id": 8,
+    "timeline": "2014–2021",
+    "title": "The Donbas Grind and Rising Tensions",
+    "content": "After Crimea, Russia backed militants in eastern Ukraine's Donbas region, starting a war that killed over 14,000 people. For years, the conflict simmered while Russia built up its forces and demanded guarantees that Ukraine would never join NATO. These diplomatic efforts failed as trust between the nations collapsed completely.",
+    "next": "On February 24, 2022, the plans turned into reality. What went wrong for the invaders immediately?"
+  },
+  {
+    "id": 9,
+    "timeline": "Feb–Apr 2022",
+    "title": "The Fall of the Blitzkrieg Myth",
+    "content": "Russia launched a full-scale invasion claiming to 'denazify' Ukraine, a false pretext used to rally domestic support and mask goals of regime change and conquest. Moscow expected a quick victory, but Ukrainian resistance held strong. President Zelenskyy refused to flee Kyiv, symbolizing national defiance, while Russian columns stalled far outside the capital.",
+    "next": "When the surprise failed, how did the world respond, and what weapon became more powerful than bombs?"
+  },
+  {
+    "id": 10,
+    "timeline": "2022–2023",
+    "title": "The Invisible War: Sanctions and Economic Shock",
+    "content": "The West imposed unprecedented sanctions, freezing $300 billion of Russian assets and cutting banks from global payment systems. This crippled Russia's economy but forced Europe to rapidly end its dependence on Russian gas. The war triggered a global energy and food crisis, causing inflation and hunger threats worldwide.",
+    "next": "How did this global economic shock force a long-term shift in European power?"
+  },
+  {
+    "id": 11,
+    "timeline": "2022–Present",
+    "title": "A Nation Forged in Fire: The Rise of Ukrainian Identity",
+    "content": "Before 2014, Ukrainians were divided on their relationship with Russia. Today, 91% view Russia as an enemy. The war unified the country; language use surged, regional differences faded, and the Orthodox Church cut ties with Moscow. Ukraine's survival against a larger aggressor boosted global morale for democracies worldwide.",
+    "next": "While Ukraine fights for survival, what happened to the alliance that promised to protect Europe?"
+  },
+  {
+    "id": 12,
+    "timeline": "2022–Present",
+    "title": "The Return of Hard Power: NATO Revives",
+    "content": "The invasion transformed NATO. Finland and Sweden joined the alliance, reversing decades of neutrality. Germany committed to 2% defense spending and sent lethal aid for the first time since WWII. The war proved that collective security could still work, deterring further aggression in Europe.",
+    "next": "If the map changed in 2014, what new reality defines the war today?"
+  },
+  {
+    "id": 13,
+    "timeline": "2024",
+    "title": "The Grinding Reality: Stalemate and Irreconcilable Demands",
+    "content": "Front lines have hardened across 1,000 kilometers. Neither side has achieved a decisive breakthrough, leading to a war of attrition. Contrary to hope for quick peace, demands are incompatible: Ukraine requires full territorial restoration, while Russia demands recognition of annexed lands. Russia now controls about 17% of Ukrainian territory.",
+    "next": "What are the lasting consequences for the world order, and what must we understand about the future?"
+  },
+  {
+    "id": 14,
+    "timeline": "2024",
+    "title": "Shockwaves Beyond the Battlefield: Food, Energy, and Nuclear Fear",
+    "content": "The war reshaped global supply chains and food security, with grain exports remaining fragile. Russia has pivoted to a total war economy and escalated nuclear rhetoric, deploying tactical nukes to Belarus and suspending treaties. This raises global risk perception even without direct nuclear use.",
+    "next": "How do we make sense of this conflict when looking back? What is the core lesson?"
+  },
+  {
+    "id": 15,
+    "timeline": "Synthesis",
+    "title": "The Lesson of Sovereignty and Empire",
+    "content": "This conflict shows that borders drawn by force do not erase national identity; instead, they can strengthen it. It demonstrates the cost of ignoring security assurances and the power of international unity against aggression. Ukraine's struggle reminds us that sovereignty is not just a principle but a daily defense of how people choose to live.",
+    "next": null
+  }
+]

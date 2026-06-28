@@ -16,6 +16,7 @@
 
 # Interactive maps
 - First letter and 4-options -- More needed? Other types of hints? Famouns companies, celebrities, known for?
+- The user should be allowed to zoom out as much as tehy want, and see the world - so they know where exactly they are. 
 Geography progress stats:
 
 countries learned
@@ -41,3 +42,6 @@ Profile = motivation/progress/stats
 # Language component? 
 - Spanish
 - Lives in "Language" under "Learn/Explore". 
+
+## IMPORTANT: 
+- Russian Ukraine conflict is Ollama generated. 
