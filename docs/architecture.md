@@ -134,3 +134,5 @@ module row status to DONE.
   Categories now expose book counts in Home cards, modules show a `📖` indicator when
   a book exists, and the module intro can open a dedicated `book` stage before the
   normal story/quiz/flashcard flow.
+- 2026-06-28: Removed the `When` row from `ContextIntro` so module starts only show
+  headline/description and content stats before learners begin.

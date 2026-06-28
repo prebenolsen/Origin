@@ -63,12 +63,6 @@ export default function ContextIntro() {
           <p className="mt-2 text-[1.02rem] leading-relaxed text-text/90">
             {ctx.description}
           </p>
-          {ctx.when && (
-            <p className="mt-3 text-sm text-muted">
-              <span className="text-faint">When · </span>
-              {ctx.when}
-            </p>
-          )}
         </div>
 
         {(stats.length > 0 || bundle.books.length > 0) && (

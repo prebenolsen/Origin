@@ -4,6 +4,13 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.0.1] - 2026-06-28
+
+### Changed - removed intro "When" line from all modules
+
+- Removed rendering of the `When` row from the module introduction screen so it no longer appears before starting a module.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.0.1** (PATCH - UX cleanup).
+
 ## [4.0.0] - 2026-06-28
 
 ### Added - module-attached book content flow
