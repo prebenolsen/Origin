@@ -71,12 +71,18 @@
 | History | Modern World | European Union | 1950 CE – present | ------ |
 | History | Modern World | Digital Revolution | 1970 CE – present | ------ |
 | History | Modern World | Artificial Intelligence and the modern era | 2000 CE – present | ------ |
-| Countries | Norway | Norway Overview | Where is it? What shaped it? Why does it matter? | DONE |
+| Countries | Norway | Norway Overview | Where is it? What shaped it? Why does it matter? | ------ |
 | Countries | Norway | Norway History | How did Norway move from unions to full independence and modern statehood? | DONE |
-| Countries | Norway | Norway Politics | How does Norway govern itself, and why is trust central to the system? | DONE |
-| Countries | Norway | Norway Society | How do Norwegians live, and how do social systems shape daily life? | DONE |
-| Countries | Norway | Norway Economy | How did Norway become wealthy, and how does it manage that wealth? | DONE |
+| Countries | Norway | Norway Politics | How does Norway govern itself, and why is trust central to the system? | ------ |
+| Countries | Norway | Norway Society | How do Norwegians live, and how do social systems shape daily life? | ------ |
+| Countries | Norway | Norway Economy | How did Norway become wealthy, and how does it manage that wealth? | ------ |
 | Countries | Norway | Norway Geography (Interactive Cities and Counties) | Interactive map-first module for cities and counties (future module type) | ------ |
+| Countries | United States | United States Overview | Country mental model starter module | ------ |
+| Countries | United States | United States History | History module scaffold for source-grounded authoring | ------ |
+| Countries | United States | United States Politics | Politics module scaffold for source-grounded authoring | ------ |
+| Countries | United States | United States Society | Society module scaffold for source-grounded authoring | ------ |
+| Countries | United States | United States Economy | Economy module scaffold for source-grounded authoring | ------ |
+| Countries | United States | United States Geography (Interactive Cities and States) | Interactive map-first module scaffold for cities and states | ------ |
 | Politics | Foundations | Political Ideologies Explained | Conservatism, liberalism, socialism, communism, fascism, nationalism, and other major ideas | DONE |
 | Politics | Foundations | Political Spectrum: Left, Right, Libertarian, and Authoritarian | Modern political classification and competing ideas | DONE |
 | Politics | Foundations | Democracy and Dictatorship | Different ways power is gained, used, and limited | ------ |

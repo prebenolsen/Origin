@@ -4,6 +4,35 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.3.0] - 2026-06-28
+
+### Changed - countries non-history content reset to placeholders
+
+- Converted Norway non-history country modules to placeholder-only scaffolds (no synthetic authored content):
+  - `norway-overview`
+  - `norway-politics`
+  - `norway-society`
+  - `norway-economy`
+- Kept Norway history module content in place.
+- Added new `src/content/countries/united-states/` scaffolds with placeholder-only files for:
+  - `united-states-overview`
+  - `united-states-history`
+  - `united-states-politics`
+  - `united-states-society`
+  - `united-states-economy`
+  - `united-states-geography-interactive`
+- Updated `docs/content.md` statuses accordingly.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.3.0** (MINOR - content policy alignment and new country scaffolds).
+
+## [4.2.1] - 2026-06-28
+
+### Changed - Countries now requires country selection first
+
+- Updated category routing to support `/c/:cat/:sub`.
+- Changed Countries flow so opening `Countries` now shows a country picker instead of listing all country modules directly.
+- Added country-specific listing screen under `Countries` so users must pick a country first (for example Norway) before seeing modules like Overview, History, Politics, Society, and Economy.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.2.1** (PATCH - navigation UX behavior).
+
 ## [4.2.0] - 2026-06-28
 
 ### Changed - category slug renamed to countries

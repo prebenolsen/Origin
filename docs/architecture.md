@@ -148,3 +148,10 @@ module row status to DONE.
   module set: `norway-overview`, `norway-history`, `norway-politics`,
   `norway-society`, `norway-economy`, plus a hidden placeholder scaffold for
   `norway-geography-interactive`.
+- 2026-06-28: Updated home/category navigation for `countries` so learners must
+  choose a country first (`/c/countries`), then view that country's modules via
+  `/c/countries/:sub`.
+- 2026-06-28: Reset country non-history modules to placeholder-only scaffolds
+  pending source-grounded authoring. Added placeholder scaffolds for
+  `countries/united-states` across overview/history/politics/society/economy
+  plus geography-interactive.

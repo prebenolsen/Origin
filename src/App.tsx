@@ -28,6 +28,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/c/:cat" element={<CategoryScreen />} />
+        <Route path="/c/:cat/:sub" element={<CategoryScreen />} />
         <Route
           path="/geo"
           element={

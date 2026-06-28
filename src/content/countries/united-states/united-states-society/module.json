@@ -1,7 +1,7 @@
 {
-  "title": "PLACEHOLDER: Norway Politics",
+  "title": "PLACEHOLDER: United States Society",
   "category": "countries",
-  "subcategory": "norway",
+  "subcategory": "united-states",
   "summary": "Placeholder module. Awaiting source-grounded authoring.",
   "accent": "#4f6f82",
   "context": {
@@ -12,7 +12,7 @@
     "map": {
       "backdrop": "region",
       "markers": [
-        { "id": "norway", "label": "Norway", "lat": 64.5, "lng": 11.0, "role": "primary" }
+        { "id": "united-states", "label": "United States", "lat": 39.5, "lng": -98.35, "role": "primary" }
       ]
     }
   }
