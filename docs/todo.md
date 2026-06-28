@@ -45,3 +45,5 @@ Profile = motivation/progress/stats
 
 ## IMPORTANT: 
 - Russian Ukraine conflict is Ollama generated. 
+
+# Ask AI to generate step by step for Ollama to create content
