@@ -1,4 +1,13 @@
-{
-  "year": "PLACEHOLDER",
-  "title": "PLACEHOLDER: Major timeline milestone"
-}
+[
+  { "year": "Pre-1492 to 1500s", "title": "Two Worlds, One Intersection" },
+  { "year": "1600s", "title": "Building an Economy on Competition and Coercion" },
+  { "year": "1754-1763", "title": "Victory at Home, Tyranny Overseas" },
+  { "year": "1765-1776", "title": "The Price of Political Self-Determination" },
+  { "year": "1777-1789", "title": "Forging Independence and a Federal Republic" },
+  { "year": "1803-1848", "title": "Expansion and the Fracturing Compact" },
+  { "year": "1861-1865", "title": "Preserving the Union by Ending Slavery" },
+  { "year": "1917-1945", "title": "The Factory that Outproduced Empires" },
+  { "year": "Late 1940s", "title": "Building Hegemony through Institutions" },
+  { "year": "Reconstruction to Civil Rights Era", "title": "The Long Fight for Inclusive Citizenship" },
+  { "year": "Present Day", "title": "How Contradiction Drives National Identity" }
+]

@@ -1,7 +1,78 @@
-{
+[
+ {
   "id": 1,
-  "timeline": "PLACEHOLDER",
-  "title": "PLACEHOLDER: Story card title",
-  "content": "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-  "next": "PLACEHOLDER: Curiosity hook for the next card."
-}
+  "timeline": "Pre-1492 to 1500s",
+  "title": "Two Worlds, One Intersection",
+  "content": "Before European ships crossed the Atlantic, North America was already shaped by complex Indigenous civilizations, vast trade networks, and established political confederacies. In 15th-century Europe, Ottoman control of Asian trade routes forced monarchs to seek direct maritime passages for goods like silk and spices. When these worlds collided, it triggered centuries of territorial competition and cross-continental exchange that would eventually restructure the continent's map and people.",
+  "next": "How did European economic strategies and Indigenous displacement lay the foundation for colonial settlements?"
+ },
+ {
+  "id": 2,
+  "timeline": "1600s",
+  "title": "Building an Economy on Competition and Coercion",
+  "content": "European powers adopted mercantilism, treating colonies as sources of raw materials to fuel metropolitan wealth. This system required massive labor, which drove the transatlantic slave trade and entrenched chattel slavery in southern plantations. Coastal settlements evolved distinct regional economies, but all relied on Indigenous displacement and land acquisition, creating an economic foundation that tied American prosperity directly to forced labor and territorial control.",
+  "next": "Why did Britain's victory in a distant war suddenly threaten the colonies' everyday freedoms?"
+ },
+ {
+  "id": 3,
+  "timeline": "1754–1763",
+  "title": "Victory at Home, Tyranny Overseas",
+  "content": "Britain’s defeat of France in the French and Indian War secured North American territory but left London bankrupt from military costs. To pay debts, British officials abandoned decades of hands-off governance, imposing direct taxes and quartering troops across the colonies. This shattered a long-standing pattern of colonial self-rule and forced disparate settlements to coordinate their resistance around shared grievances over sovereignty and trade rights.",
+  "next": "How did economic protests harden into a full political break with Britain?"
+ },
+ {
+  "id": 4,
+  "timeline": "1765–1776",
+  "title": "The Price of Political Self-Determination",
+  "content": "Colonial assemblies transformed tax boycotts into a constitutional crisis, arguing that parliamentary rule without colonial voting rights violated English legal tradition. Pamphlets, Committees of Correspondence, and the Continental Congress turned economic disagreement into a unified ideological campaign for republicanism. By 1776, the conflict shifted from demanding better terms within the empire to declaring complete political separation.",
+  "next": "How did a fragmented rebellion defeat the world’s most powerful military?"
+ },
+ {
+  "id": 5,
+  "timeline": "1777–1789",
+  "title": "Forging Independence and a Federal Republic",
+  "content": "The American victory at Saratoga convinced France to provide critical naval and financial support, turning the tide of the Revolutionary War. After independence, leaders faced a brutal question: how to hold a vast, diverse territory together without recreating monarchy? The resulting Constitution balanced federal authority with state power, creating the world’s first modern constitutional republic while leaving foundational contradictions unresolved.",
+  "next": "What happens when the new government looks west for prosperity but inherits an unworkable compromise?"
+ },
+ {
+  "id": 6,
+  "timeline": "1803–1848",
+  "title": "Expansion and the Fracturing Compact",
+  "content": "The Louisiana Purchase and subsequent annexations doubled U.S. territory, fulfilling a national belief in Manifest Destiny while triggering massive Indigenous displacement and Mexican-American conflict. But acquiring new land violently reopened the debate over whether slavery would expand into free territories. Each political compromise only delayed the inevitable collision between an industrializing North and an agrarian South fighting to preserve human bondage.",
+  "next": "How did a nation built on liberty resolve its greatest moral and constitutional failure?"
+ },
+ {
+  "id": 7,
+  "timeline": "1861–1865",
+  "title": "Preserving the Union by Ending Slavery",
+  "content": "Southern secession forced the North to fight not just for territorial integrity but to define who belonged in the republic. Lincoln’s strategic shift to emancipation reframed the conflict as a moral crusade, stripping the Confederacy of foreign support while mobilizing enslaved people as agents of their own liberation. Union victory cemented federal supremacy over states’ rights and legally abolished chattel slavery, fundamentally rewriting American citizenship.",
+  "next": "How did wartime industry transform a continental republic into a global power?"
+ },
+ {
+  "id": 8,
+  "timeline": "1917–1945",
+  "title": "The Factory that Outproduced Empires",
+  "content": "Initially isolationist, the U.S. entered two world wars after foreign attacks violated its neutrality, triggering total economic mobilization. Factories converted to wartime production, scientific labs developed nuclear technology, and naval supply lines outpaced every adversary. While Europe and Asia faced devastation, American industrial capacity expanded exponentially, creating unprecedented wealth and strategic reach that could no longer be contained behind two oceans.",
+  "next": "What happens when the victor of a global war must decide the world’s new rules?"
+ },
+ {
+  "id": 9,
+  "timeline": "Late 1940s",
+  "title": "Building Hegemony through Institutions",
+  "content": "Rather than retreating, American leaders chose to shape global stability through economic reconstruction, new financial systems, and military alliances. This deliberate strategy locked in dollar dominance and security guarantees while containing Soviet expansion during the Cold War. The nation transitioned from a regional republic to an economic and military superpower, but its global commitments also bound it to proxy conflicts worldwide.",
+  "next": "How did the struggle for freedom at home keep pace with growing global ambition?"
+ },
+ {
+  "id": 10,
+  "timeline": "Reconstruction to Civil Rights Era",
+  "title": "The Long Fight for Inclusive Citizenship",
+  "content": "Though slavery ended legally, structural inequality persisted through Reconstruction collapse and Jim Crow segregation. Decades of grassroots activism, legal challenges, and federal intervention slowly dismantled institutional racism, expanding voting rights and cultural inclusion. These movements proved that American democracy functions not as a fixed monument but as a continuous negotiation between founding ideals and lived reality.",
+  "next": "What does this centuries-long arc teach us about how nations actually grow?"
+ },
+ {
+  "id": 11,
+  "timeline": "Present Day",
+  "title": "How Contradiction Drives National Identity",
+  "content": "The United States emerged through geographic expansion, institutional adaptation, and repeated moral reckoning rather than a single founding moment. Each turning point—debt-driven rebellion, continental acquisition, civil war, and global mobilization—forced the nation to redefine who it served and what it stood for. Understanding this journey reveals that national identity is built not by erasing tension, but by continuously confronting the gap between principle and practice.",
+  "next": "Which concept from this journey should we examine first: economic foundations, constitutional tensions, or global power shifts?"
+ }]

@@ -222,4 +222,3 @@ No explanation.
 
 Knowledge notes:
 
-<Knowledge notes>
