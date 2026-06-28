@@ -1,18 +1,28 @@
 {
-  "title": "PLACEHOLDER: United States History",
+  "title": "History of the United States",
+  "period": "Pre-1492 – Present Day",
   "category": "countries",
   "subcategory": "united-states",
-  "summary": "Placeholder module. Awaiting source-grounded authoring.",
+  "summary": "How geographic expansion, constitutional innovation, and continuous moral reckoning shaped a continental republic into a global superpower.",
   "accent": "#4f6f82",
   "context": {
     "type": "map",
-    "headline": "Placeholder module scaffold",
-    "description": "This module is intentionally placeholder-only until verified source data is provided.",
-    "when": "Planned",
+    "headline": "A continent forged in contradiction",
+    "description": "From colonial periphery to global hegemon, the U.S. grew through territorial acquisition, civil war, and industrial mobilization. Its national identity was continuously rebuilt through the tension between founding ideals and lived reality, transforming regional conflict into constitutional framework and wartime industry into worldwide influence.",
+    "when": "Pre-1492 – Present Day",
     "map": {
-      "backdrop": "region",
+      "backdrop": "north-america",
       "markers": [
-        { "id": "united-states", "label": "United States", "lat": 39.5, "lng": -98.35, "role": "primary" }
+        { "id": "east_coast", "label": "East Coast / Founding", "lat": 39.0, "lng": -76.0, "role": "primary" },
+        { "id": "south", "label": "South / Slavery & Civil War", "lat": 32.5, "lng": -84.5, "role": "secondary" },
+        { "id": "west", "label": "West / Expansion & Frontier", "lat": 37.0, "lng": -105.0, "role": "secondary" },
+        { "id": "atlantic_link", "label": "Atlantic / Colonial Origins & Global Ties", "lat": 42.0, "lng": -22.0, "role": "reference" }
+      ],
+      "connections": [
+        { "from": "atlantic_link", "to": "east_coast", "label": "Colonial Foundations" },
+        { "from": "east_coast", "to": "south", "label": "Cotton Economy & Civil War" },
+        { "from": "east_coast", "to": "west", "label": "Manifest Destiny & Expansion" },
+        { "from": "west", "to": "atlantic_link", "label": "Industrial Mobilization & Global Power Shift" }
       ]
     }
   }

@@ -1,5 +1,57 @@
-{
-  "id": 1,
-  "front": "PLACEHOLDER: Key concept",
-  "back": "PLACEHOLDER: Short, clear explanation."
-}
+[
+  {
+    "id": 1,
+    "front": "When did sustained European maritime contact with North America begin?",
+    "back": "In the late 15th century, when Ottoman control of Asian trade routes forced European monarchs to seek direct sea passages for silk and spices."
+  },
+  {
+    "id": 2,
+    "front": "What was mercantilism in early colonial America?",
+    "back": "An economic system that treated colonies as sources of raw materials to build wealth back in Europe, requiring massive forced labor and land seizure."
+  },
+  {
+    "id": 3,
+    "front": "Why did Britain suddenly stop its policy of hands-off rule over the colonies?",
+    "back": "Victory in the French and Indian War left Britain deeply in debt, forcing it to tax the colonies directly to repay military costs."
+  },
+  {
+    "id": 4,
+    "front": "How did colonial tax protests turn into a push for independence?",
+    "back": "Colonists framed resistance as a constitutional issue over voting rights, using pamphlets and committees to unite around the idea of republicanism."
+  },
+  {
+    "id": 5,
+    "front": "Which battle convinced France to fund the American Revolution?",
+    "back": "The Battle of Saratoga proved American resilience and secured critical French naval and financial support."
+  },
+  {
+    "id": 6,
+    "front": "What political problem did westward expansion create after the Louisiana Purchase?",
+    "back": "It reopened fierce national debates over whether slavery should expand into new free territories, straining earlier political compromises."
+  },
+  {
+    "id": 7,
+    "front": "How did Lincoln’s Emancipation Proclamation change the purpose of the Civil War?",
+    "back": "It reframed the conflict as a moral crusade against slavery, stripped the Confederacy of foreign support, and freed enslaved people."
+  },
+  {
+    "id": 8,
+    "front": "What economic shift turned isolationist America into a global power during the world wars?",
+    "back": "Total wartime mobilization turned American factories into unmatched industrial engines while Europe and Asia faced destruction."
+  },
+  {
+    "id": 9,
+    "front": "How did the United States maintain global influence after World War II without direct empire-building?",
+    "back": "By shaping international institutions, backing a new financial system, and forming military alliances to contain Soviet power."
+  },
+  {
+    "id": 10,
+    "front": "What was the main challenge after slavery ended legally?",
+    "back": "Structural inequality and Jim Crow laws persisted for decades, requiring massive grassroots activism to expand actual voting rights and citizenship."
+  },
+  {
+    "id": 11,
+    "front": "What does the text say about how American national identity is actually built?",
+    "back": "It grows not by erasing historical tensions, but by continuously confronting the gap between founding ideals and real-world practice."
+  }
+]

@@ -1,13 +1,60 @@
-{
-  "id": 1,
-  "type": "multiple-choice",
-  "question": "PLACEHOLDER: Add an understanding-focused question.",
-  "options": [
-    "PLACEHOLDER option A",
-    "PLACEHOLDER option B",
-    "PLACEHOLDER option C",
-    "PLACEHOLDER option D"
-  ],
-  "answer": 0,
-  "explanation": "PLACEHOLDER: Explain why the correct answer is correct."
-}
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What economic system drove European powers to treat colonies as sources of raw materials and rely on forced labor?",
+    "options": [
+      "Feudalism",
+      "Free-market capitalism",
+      "Mercantilism",
+      "Laissez-faire socialism"
+    ],
+    "answer": 2,
+    "explanation": "Card 2 states European powers adopted mercantilism, treating colonies as sources of raw materials to fuel metropolitan wealth, which required massive labor and drove the transatlantic slave trade."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Before European contact, North America lacked complex civilizations or established political structures.",
+    "answer": false,
+    "explanation": "Card 1 confirms that before European ships crossed the Atlantic, North America was 'already shaped by complex Indigenous civilizations, vast trade networks, and established political confederacies.'"
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "How did the French and Indian War lead to colonial resistance?",
+    "options": [
+      "France invaded the colonies after the war, forcing them to ally with Britain.",
+      "Britain's victory left London bankrupt, prompting direct taxation and quartering of troops that ended colonial self-rule.",
+      "The war depleted European populations, causing a labor shortage that forced Britain to rely on volunteers.",
+      "British officials rewarded the colonies with more autonomy to celebrate their victory."
+    ],
+    "answer": 1,
+    "explanation": "Card 3 explains that British defeat of France secured territory but left London bankrupt; to pay debts, officials imposed taxes and quartered troops, shattering the pattern of colonial self-rule."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Put these milestones in chronological order (1765–1776).",
+    "items": [
+      "Continental Congress unifies disparate colonies around shared grievances.",
+      "The conflict shifts from demanding better terms to declaring complete political separation.",
+      "Colonial assemblies transform tax boycotts into a constitutional crisis over representation.",
+      "Pamphlets and Committees of Correspondence turn disagreement into an ideological campaign for republicanism."
+    ],
+    "correctOrder": [2, 3, 0, 1],
+    "explanation": "Colonial assemblies first transformed boycotts into a crisis; then pamphlets and committees unified ideological opposition; the Continental Congress consolidated grievances; finally, by 1776, the focus shifted to declaring separation."
+  },
+  {
+    "id": 5,
+    "type": "matching",
+    "question": "Match each era or event to its primary constitutional or territorial outcome.",
+    "pairs": [
+      { "left": "Constitution of 1789", "right": "Balanced federal authority with state power while leaving contradictions unresolved" },
+      { "left": "Louisiana Purchase (1803)", "right": "Doubled territory but reopened the debate over slavery expansion" },
+      { "left": "Emancipation Proclamation shift", "right": "Reframed Civil War as a moral crusade and stripped Confederacy of foreign support" },
+      { "left": "Post-WWII Strategy", "right": "Locked in dollar dominance and security guarantees to contain Soviet expansion" }
+    ],
+    "explanation": "Card 5 notes the Constitution balanced power but left contradictions; Card 6 links the Purchase to doubling territory and reigniting slavery debates; Card 7 describes Lincoln's shift reframing the war and losing foreign support for the South; Card 9 details the post-war strategy of institutions, dollar dominance, and containment."
+  }
+]
