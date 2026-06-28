@@ -71,11 +71,13 @@ Explain:
 - Why does it matter?
 - What problem is being solved?
 
+Do not treat the author's argument as automatically correct.
+
 --------------------------------------------------
 
 KEY CONCEPTS
 
-Extract the important frameworks.
+Extract the important concepts and frameworks.
 
 For each concept explain:
 
@@ -88,11 +90,23 @@ Do not create disconnected definitions.
 
 Show how ideas relate to each other.
 
+Use established terminology from the book when available.
+Do not invent complex-sounding names for simple concepts.
+
+Prefer:
+"Identity-Based Habits"
+
+Avoid:
+"Identity Transformation Framework"
+
+Do not invent new names for concepts. Use terminology from the book when available. If simplifying a concept, use plain descriptive language.
+
 --------------------------------------------------
 
 MENTAL MODELS
 
 Prioritize concepts that change how someone thinks.
+A mental model is a reusable way of understanding a problem.
 
 Examples:
 
@@ -100,6 +114,8 @@ Examples:
 - incentives shape behavior
 - identity influences actions
 - environment influences decisions
+
+Only label something as a mental model when it represents a broader way of thinking.
 
 --------------------------------------------------
 
@@ -109,16 +125,28 @@ Explain how the ideas can be used.
 
 Connect actions to principles.
 
-Avoid generic self-help advice.
+Include examples, methods, or exercises from the book when they clarify the idea.
 
-Include examples or methods from the book when they clarify the framework.
+Do not remove practical application. Many books explain concepts through methods and frameworks.
 
-Do not turn the content into a coaching program:
-- do not add unrelated exercises
-- do not create assignments
-- do not over-focus on step-by-step instructions
+However:
 
-Explain the principle behind the method.
+Do not turn the content into a coaching program.
+
+Avoid:
+
+- unrelated exercises
+- added assignments
+- excessive step-by-step instructions
+- making the user complete the author's program
+
+Explain methods as examples of the author's ideas. Do not present them as required actions for the learner. Prefer explaining why a method works over instructing the user to perform it.
+
+Explain:
+
+- why the method exists
+- what principle it represents
+- how it demonstrates the author's framework
 
 --------------------------------------------------
 
@@ -138,11 +166,21 @@ The goal is understanding, not promotion.
 
 SOURCE BIAS HANDLING
 
+The transcript is created by a person and may contain interpretation, opinions, or bias.
+
 Separate:
 
 - the book's core ideas
 - the narrator's interpretation
 - the narrator's opinions
+
+Do not assume every point in the transcript has equal importance.
+
+Prefer concepts that are:
+
+- central to the book
+- reusable across situations
+- supported by reasoning or examples
 
 Avoid:
 
@@ -151,7 +189,7 @@ Avoid:
 - treating ideas as universally correct
 - presenting opinions as facts
 
-Use neutral language:
+Use neutral educational language:
 
 "This framework suggests..."
 "This approach argues..."
@@ -219,11 +257,11 @@ A short memorable headline.
 Content:
 
 2-7 sentences explaining one concept.
-If a concept deserves more, continue on the next card.
+If a concept deserves more explanation, continue on the next card.
 
 Concept:
 
-The mental model being taught.
+The mental model or framework being taught.
 
 Next:
 
@@ -279,5 +317,4 @@ Return the result as JSON cards:
 FINAL PRINCIPLE
 
 A successful book insight does not make someone feel like they read the book.
-
 It makes them understand the ideas that made the book valuable.
