@@ -4,6 +4,23 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.0.4] - 2026-06-28
+
+### Changed - strict UTF-8 JSON normalization
+
+- Normalized all `src/**/*.json` files to strict UTF-8 without BOM.
+- Added explicit JSON encoding and punctuation rules to `CLAUDE.md` (including guidance for `æ`, `ø`, `å` and dash usage).
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.0.4** (PATCH - content encoding hygiene).
+
+## [4.0.3] - 2026-06-28
+
+### Fixed - timeline progression mapping across story cards
+
+- Fixed `StoryFeed` timeline mapping so story-card `timeline` labels are matched against both timeline `year` and `title` (with normalized comparisons).
+- Added a robust fallback: when no story cards map by label/number, cards are distributed across timeline milestones instead of staying pinned to the first milestone.
+- Prevents the bug where nearly all cards display the same timeline stage until the end card.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.0.3** (PATCH - timeline UX fix).
+
 ## [4.0.2] - 2026-06-28
 
 ### Changed - module cards now omit subcategory label

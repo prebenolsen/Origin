@@ -12,6 +12,17 @@ export default function StoryFeed() {
   const { story, timeline } = bundle;
   const mapData = bundle.meta.context.map;
 
+  const norm = (value: string) =>
+    value
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+
+  const nearestIndex = (i: number, total: number, milestones: number) => {
+    if (total <= 1 || milestones <= 1) return 0;
+    return Math.round((i / (total - 1)) * (milestones - 1));
+  };
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [active, setActive] = useState(0);
@@ -21,14 +32,28 @@ export default function StoryFeed() {
   const timelineForCard = useMemo(() => {
     const out: number[] = [];
     let last = -1;
+    let matchedAny = false;
     for (const card of story) {
       let idx = last;
       if (timeline.length && card.timeline) {
-        const exact = timeline.findIndex((e) => e.year === card.timeline);
+        const cardLabel = card.timeline.trim();
+        const cardNorm = norm(cardLabel);
+
+        const exact = timeline.findIndex((e) => {
+          const year = e.year.trim();
+          const title = e.title.trim();
+          return (
+            year === cardLabel ||
+            title === cardLabel ||
+            norm(year) === cardNorm ||
+            norm(title) === cardNorm
+          );
+        });
         if (exact >= 0) {
           idx = exact;
+          matchedAny = true;
         } else {
-          const cv = yearValue(card.timeline);
+          const cv = yearValue(cardLabel);
           if (cv != null) {
             let best = last;
             timeline.forEach((e, i) => {
@@ -36,6 +61,7 @@ export default function StoryFeed() {
               if (ev != null && ev <= cv) best = i;
             });
             idx = best;
+            matchedAny = true;
           }
         }
       }
@@ -43,6 +69,12 @@ export default function StoryFeed() {
       out.push(idx);
       last = idx;
     }
+
+    // If no card could be mapped by label/number, spread cards across the timeline.
+    if (!matchedAny && timeline.length > 1 && story.length > 1) {
+      return story.map((_, i) => nearestIndex(i, story.length, timeline.length));
+    }
+
     return out;
   }, [story, timeline]);
 

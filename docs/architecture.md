@@ -138,3 +138,9 @@ module row status to DONE.
   headline/description and content stats before learners begin.
 - 2026-06-28: Simplified `ModuleCard` metadata line by removing subcategory labels;
   cards now show only `period` text (when present).
+- 2026-06-28: Hardened story-to-timeline mapping in `StoryFeed` by matching card
+  timeline labels against milestone `year` and `title` (normalized), with an
+  index-based spread fallback when no explicit matches are found.
+- 2026-06-28: Normalized all `src/**/*.json` files to UTF-8 without BOM and added
+  strict JSON encoding/punctuation guidance in `CLAUDE.md` (including safe handling
+  of `æ`, `ø`, `å`).

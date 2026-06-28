@@ -73,6 +73,21 @@ A short overview:
 
 All non-`module.json` files are optional; the UI adapts when a section is missing.
 
+### JSON encoding and character rules (strict)
+
+All JSON content files under `src/content/**` must follow these rules:
+
+- Encoding must be **UTF-8 without BOM**.
+- Files must be valid JSON (no trailing commas, comments, or non-JSON wrappers).
+- Norwegian letters (`æ`, `ø`, `å`, and uppercase variants) are allowed and should be
+  stored directly as UTF-8 characters, not lossy replacements.
+- Prefer plain ASCII punctuation for generated text in JSON, especially hyphen-minus
+  (`-`) instead of typographic dashes (`—` / `–`) unless there is a clear editorial
+  reason.
+
+When adding or editing content, preserve these rules to avoid parser/encoding
+regressions across environments.
+
 ---
 
 ## Maps (context map authoring & integration)
