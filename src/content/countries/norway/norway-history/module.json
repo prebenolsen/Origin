@@ -1,0 +1,29 @@
+{
+  "title": "Norway History",
+  "category": "countries",
+  "subcategory": "norway",
+  "summary": "How Norway moved from union politics to independence and a modern democratic state.",
+  "accent": "#466f9f",
+  "context": {
+    "type": "map",
+    "headline": "From unions to sovereignty",
+    "description": "Norway\u0027s modern history is a long transition from being governed through larger unions to building an independent parliamentary state. Constitutional milestones, union dissolution, occupation, reconstruction, and energy transformation define the modern timeline.",
+    "when": "1814 - present",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "eidsvoll", "label": "Eidsvoll", "lat": 60.33, "lng": 11.26, "role": "primary" },
+        { "id": "oslo", "label": "Oslo", "lat": 59.91, "lng": 10.75, "role": "primary" },
+        { "id": "stockholm", "label": "Stockholm", "lat": 59.33, "lng": 18.07, "role": "secondary" },
+        { "id": "narvik", "label": "Narvik", "lat": 68.44, "lng": 17.43, "role": "secondary" },
+        { "id": "north-sea", "label": "North Sea fields", "lat": 59.0, "lng": 2.0, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "eidsvoll", "to": "oslo", "label": "Constitution and state building" },
+        { "from": "oslo", "to": "stockholm", "label": "Union with Sweden" },
+        { "from": "oslo", "to": "narvik", "label": "War and occupation" },
+        { "from": "oslo", "to": "north-sea", "label": "Oil era" }
+      ]
+    }
+  }
+}

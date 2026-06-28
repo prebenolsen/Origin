@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Which physical feature most strongly shaped Norway\u0027s historical movement and economy?",
+    "options": ["Flat inland plains", "Long coastline and fjords", "Large desert belt", "Tropical river basin"],
+    "answer": 1,
+    "explanation": "Norway\u0027s long, broken coastline and fjords made sea travel and maritime livelihoods central."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Most of Norway\u0027s population is spread evenly across inland and northern regions.",
+    "answer": false,
+    "explanation": "Population is concentrated around cities and coastal areas, especially in the south."
+  },
+  {
+    "id": 3,
+    "type": "matching",
+    "question": "Match each identity element to its system outcome.",
+    "pairs": [
+      { "left": "Maritime tradition", "right": "Shipping and ocean industries" },
+      { "left": "Nordic welfare model", "right": "Broad public services" },
+      { "left": "Resource governance", "right": "Long-term sovereign fund" }
+    ],
+    "explanation": "Norway\u0027s identity links directly to practical economic and institutional choices."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Put this mental model in order.",
+    "items": ["Institutions manage wealth", "Geography shapes settlement", "Maritime economy grows", "Global strategic role emerges"],
+    "correctOrder": [1, 2, 0, 3],
+    "explanation": "Physical geography came first, then maritime development, then institutional management, then wider influence."
+  }
+]

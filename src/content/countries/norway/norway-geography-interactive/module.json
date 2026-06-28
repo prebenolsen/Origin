@@ -1,0 +1,19 @@
+{
+  "title": "PLACEHOLDER: Norway Geography Interactive",
+  "category": "countries",
+  "subcategory": "norway",
+  "summary": "Reserved for interactive Norway cities and counties module.",
+  "accent": "#3e7286",
+  "context": {
+    "type": "map",
+    "headline": "Interactive geography module scaffold",
+    "description": "This placeholder reserves the upcoming map-first geography experience for Norway focused on cities and counties. It is hidden from learners until fully implemented.",
+    "when": "Planned module type",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "norway", "label": "Norway", "lat": 64.5, "lng": 11.0, "role": "primary" }
+      ]
+    }
+  }
+}

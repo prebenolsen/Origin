@@ -1,0 +1,29 @@
+{
+  "title": "Norway Economy",
+  "category": "countries",
+  "subcategory": "norway",
+  "summary": "How Norway built wealth through maritime sectors, energy, and disciplined long-term governance.",
+  "accent": "#3b7a68",
+  "context": {
+    "type": "map",
+    "headline": "From sea economy to sovereign wealth",
+    "description": "Norway\u0027s economy grew from fisheries and shipping into a diversified high-income model with offshore petroleum at its core. The central economic question is not only how wealth was generated, but how institutions managed volatility and intergenerational fairness.",
+    "when": "Industrial era to present",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "bergen", "label": "Bergen", "lat": 60.39, "lng": 5.32, "role": "secondary" },
+        { "id": "stavanger", "label": "Stavanger", "lat": 58.97, "lng": 5.73, "role": "primary" },
+        { "id": "oslo", "label": "Oslo", "lat": 59.91, "lng": 10.75, "role": "primary" },
+        { "id": "north-sea", "label": "North Sea", "lat": 58.7, "lng": 2.5, "role": "primary" },
+        { "id": "barents", "label": "Barents Sea", "lat": 72.0, "lng": 35.0, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "bergen", "to": "north-sea", "label": "Shipping and services" },
+        { "from": "stavanger", "to": "north-sea", "label": "Offshore petroleum" },
+        { "from": "oslo", "to": "north-sea", "label": "Fiscal and regulatory governance" },
+        { "from": "oslo", "to": "barents", "label": "Arctic resource strategy" }
+      ]
+    }
+  }
+}

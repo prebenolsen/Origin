@@ -1,0 +1,27 @@
+{
+  "title": "Norway Society",
+  "category": "countries",
+  "subcategory": "norway",
+  "summary": "How Norwegians live through people patterns, culture, values, language, and social systems.",
+  "accent": "#5f7f74",
+  "context": {
+    "type": "map",
+    "headline": "Society as lived systems",
+    "description": "Norwegian society is not just culture facts. It is a system where demography, regional settlement, language, public institutions, and values like trust and equality interact. Daily life is shaped by both local communities and a broad national welfare framework.",
+    "when": "Contemporary Norway",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "oslo-region", "label": "Oslo region", "lat": 59.95, "lng": 10.75, "role": "primary" },
+        { "id": "west-coast", "label": "West coast cities", "lat": 60.6, "lng": 5.3, "role": "secondary" },
+        { "id": "north", "label": "Northern communities", "lat": 69.5, "lng": 19.0, "role": "secondary" },
+        { "id": "sami", "label": "Sami language areas", "lat": 68.0, "lng": 24.0, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "oslo-region", "to": "west-coast", "label": "Urban and labor mobility" },
+        { "from": "west-coast", "to": "north", "label": "Regional variation" },
+        { "from": "north", "to": "sami", "label": "Language and identity" }
+      ]
+    }
+  }
+}

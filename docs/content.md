@@ -71,10 +71,12 @@
 | History | Modern World | European Union | 1950 CE – present | ------ |
 | History | Modern World | Digital Revolution | 1970 CE – present | ------ |
 | History | Modern World | Artificial Intelligence and the modern era | 2000 CE – present | ------ |
-| Country History | Norway | Origins to Viking Age | 14000 BCE - 1066 CE | DONE |
-| Country History | Norway | Christianization and Medieval Kingdom | 933 CE - 1319 CE | DONE |
-| Country History | Norway | Plague, Union, and Danish Rule | 1319 CE - 1814 CE | DONE |
-| Country History | Norway | Modern Norway: Independence to Oil Age | 1814 CE - present | DONE |
+| Countries | Norway | Norway Overview | Where is it? What shaped it? Why does it matter? | DONE |
+| Countries | Norway | Norway History | How did Norway move from unions to full independence and modern statehood? | DONE |
+| Countries | Norway | Norway Politics | How does Norway govern itself, and why is trust central to the system? | DONE |
+| Countries | Norway | Norway Society | How do Norwegians live, and how do social systems shape daily life? | DONE |
+| Countries | Norway | Norway Economy | How did Norway become wealthy, and how does it manage that wealth? | DONE |
+| Countries | Norway | Norway Geography (Interactive Cities and Counties) | Interactive map-first module for cities and counties (future module type) | ------ |
 | Politics | Foundations | Political Ideologies Explained | Conservatism, liberalism, socialism, communism, fascism, nationalism, and other major ideas | DONE |
 | Politics | Foundations | Political Spectrum: Left, Right, Libertarian, and Authoritarian | Modern political classification and competing ideas | DONE |
 | Politics | Foundations | Democracy and Dictatorship | Different ways power is gained, used, and limited | ------ |

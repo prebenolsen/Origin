@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "timeline": "System",
+    "title": "A constitutional monarchy with parliamentary rule",
+    "content": "Norway\u0027s monarch is head of state, but political authority comes from elected institutions. The core democratic arena is the Storting, which supports and oversees the government.",
+    "next": "How are seats distributed?"
+  },
+  {
+    "id": 2,
+    "timeline": "Elections",
+    "title": "Proportional representation shapes party politics",
+    "content": "Elections use proportional representation, so multiple parties usually enter parliament. This encourages coalition building and negotiation rather than winner-takes-all government.",
+    "next": "Coalitions create a specific governing style."
+  },
+  {
+    "id": 3,
+    "timeline": "Governance style",
+    "title": "Consensus politics over sharp swings",
+    "content": "Because governments often depend on coalition support, policy change tends to be negotiated and incremental. This reduces sudden reversals and supports long-term planning.",
+    "next": "Local government carries much of daily implementation."
+  },
+  {
+    "id": 4,
+    "timeline": "Local state",
+    "title": "Municipal and county levels matter",
+    "content": "Municipalities and counties deliver many public services, including schools, planning, and parts of healthcare. National policy is therefore filtered through local administrative capacity.",
+    "next": "Trust is a political resource."
+  },
+  {
+    "id": 5,
+    "timeline": "Political culture",
+    "title": "High trust lowers transaction costs",
+    "content": "Norway\u0027s political culture relies on relatively high trust in institutions. High trust makes taxation, regulatory compliance, and social-compromise politics easier to sustain.",
+    "next": "Still, there are real political tensions."
+  },
+  {
+    "id": 6,
+    "timeline": "Policy tensions",
+    "title": "Energy, climate, and regional equity",
+    "content": "Current politics balances petroleum income against climate goals, and central efficiency against regional inclusion. These tensions test how adaptable the consensus model is.",
+    "next": "Norway also navigates external alignment choices."
+  },
+  {
+    "id": 7,
+    "timeline": "External alignment",
+    "title": "EU-outsider, Europe-insider",
+    "content": "Norway is not an EU member but aligns with much EU regulation through the EEA. Domestic politics therefore includes ongoing debates about sovereignty, integration, and democratic control.",
+    "next": "The main takeaway is institutional resilience."
+  },
+  {
+    "id": 8,
+    "timeline": "Takeaway",
+    "title": "Norwegian politics is system-heavy, not personality-heavy",
+    "content": "The country\u0027s political stability rests less on single leaders and more on durable rules, party bargaining, local governance, and social trust.",
+    "next": "Society module: how this system feels in everyday life."
+  }
+]

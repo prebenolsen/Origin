@@ -1,0 +1,27 @@
+{
+  "title": "Norway Politics",
+  "category": "countries",
+  "subcategory": "norway",
+  "summary": "How Norway governs itself through parliament, parties, local government, and high-trust institutions.",
+  "accent": "#4d6b87",
+  "context": {
+    "type": "map",
+    "headline": "Politics built on institutions and trust",
+    "description": "Norway is a parliamentary constitutional monarchy where governments are formed through coalition politics and proportional representation. Power is shared across national institutions and municipalities, and high trust supports broad compliance and policy continuity.",
+    "when": "Modern democratic era",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "storting", "label": "Storting (Parliament)", "lat": 59.91, "lng": 10.74, "role": "primary" },
+        { "id": "government", "label": "Government", "lat": 59.92, "lng": 10.75, "role": "primary" },
+        { "id": "counties", "label": "County administrations", "lat": 63.0, "lng": 10.0, "role": "secondary" },
+        { "id": "municipal", "label": "Municipal services", "lat": 60.8, "lng": 8.8, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "storting", "to": "government", "label": "Parliamentary accountability" },
+        { "from": "government", "to": "counties", "label": "Policy implementation" },
+        { "from": "counties", "to": "municipal", "label": "Local service delivery" }
+      ]
+    }
+  }
+}

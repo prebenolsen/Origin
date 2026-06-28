@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What best explains Norway\u0027s long-term economic resilience?",
+    "options": ["Only high oil prices", "Resource wealth plus institutional governance", "Closed economy policies", "Military exports"],
+    "answer": 1,
+    "explanation": "Resource income mattered, but institutions and fiscal design turned it into stable long-term strength."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Norway\u0027s economy had no significant maritime base before petroleum.",
+    "answer": false,
+    "explanation": "Fisheries, shipping, and maritime industries predated and prepared for the petroleum era."
+  },
+  {
+    "id": 3,
+    "type": "matching",
+    "question": "Match sector and role.",
+    "pairs": [
+      { "left": "Hydropower", "right": "Industrial energy foundation" },
+      { "left": "Sovereign wealth fund", "right": "Intergenerational resource management" },
+      { "left": "Shipping", "right": "Global maritime connectivity" }
+    ],
+    "explanation": "These sectors and tools represent different phases of Norway\u0027s economic model."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Order the structural economic sequence.",
+    "items": ["Petroleum revenues surge", "Maritime base develops", "Fiscal rules and fund governance expand", "Transition pressure grows"],
+    "correctOrder": [1, 0, 2, 3],
+    "explanation": "Maritime foundations came first, then oil, then governance scaling, then transition challenges."
+  }
+]

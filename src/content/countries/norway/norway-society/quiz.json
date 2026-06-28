@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Which framing best captures the Society module approach?",
+    "options": ["Culture as trivia", "Society as interacting systems", "Society as only demographics", "Society as only traditions"],
+    "answer": 1,
+    "explanation": "The module treats society as linked systems: people, values, language, institutions, and pressures."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Norway has no significant center-periphery social tensions.",
+    "answer": false,
+    "explanation": "Regional differences remain a recurring policy and social challenge."
+  },
+  {
+    "id": 3,
+    "type": "matching",
+    "question": "Match domain and example.",
+    "pairs": [
+      { "left": "Values", "right": "Trust and equality" },
+      { "left": "Language", "right": "Dialects and Sami languages" },
+      { "left": "Social systems", "right": "Education, healthcare, welfare" }
+    ],
+    "explanation": "These domains connect directly to how daily life is organized."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Order this chain of social logic.",
+    "items": ["Values legitimize institutions", "Institutions shape daily life", "Demographic change creates pressure", "Policy adapts systems"],
+    "correctOrder": [0, 1, 2, 3],
+    "explanation": "Values support institutions, institutions affect life, demographic shifts stress systems, and policy responds."
+  }
+]

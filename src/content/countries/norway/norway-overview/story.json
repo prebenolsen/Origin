@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "timeline": "Location",
+    "title": "Norway sits at Europe\u0027s northern edge",
+    "content": "Norway stretches along the Scandinavian peninsula and faces the North Atlantic and Arctic waters. It is part of the Nordic region, but its coast opens directly toward sea lanes that connect Europe and the wider world.",
+    "next": "Its shape is unusual, and that matters."
+  },
+  {
+    "id": 2,
+    "timeline": "Physical foundation",
+    "title": "A long coastline and hard terrain shaped settlement",
+    "content": "Mountains, fjords, islands, and long distances made overland travel difficult for centuries. Coastal movement was often easier than crossing inland terrain, so sea travel became a practical and cultural default.",
+    "next": "That affected where people could live."
+  },
+  {
+    "id": 3,
+    "timeline": "Population pattern",
+    "title": "Few people, spread unevenly",
+    "content": "Norway has a relatively small population for its land area. Most people live in urban zones near the coast and in the south, while the interior and far north are much less densely populated.",
+    "next": "This produces a specific national identity."
+  },
+  {
+    "id": 4,
+    "timeline": "Identity",
+    "title": "Maritime, Nordic, and resource-based",
+    "content": "Norwegian identity mixes seafaring traditions, local self-reliance, and strong public institutions. The country is both a welfare state and a major exporter of energy and maritime services.",
+    "next": "Key facts help anchor this mental model."
+  },
+  {
+    "id": 5,
+    "timeline": "Key facts",
+    "title": "Core facts to remember",
+    "content": "Capital: Oslo. Language: Norwegian (with Sami languages in parts of the north). Currency: Norwegian krone. Government: parliamentary constitutional monarchy. Population: about 5.5 million.",
+    "next": "But facts alone do not explain outcomes."
+  },
+  {
+    "id": 6,
+    "timeline": "Why it developed this way",
+    "title": "Geography pushed Norway toward the sea",
+    "content": "Because mountains fragmented inland regions and the coast offered access and livelihoods, maritime industries became central: fishing first, then shipping, then offshore petroleum and ocean technology.",
+    "next": "Institutions decided how this wealth was managed."
+  },
+  {
+    "id": 7,
+    "timeline": "Institutions",
+    "title": "State capacity turned resource income into long-term strength",
+    "content": "Norway built high-trust institutions that tax and regulate effectively, then channel revenues into public systems and a sovereign wealth fund. This reduced the boom-and-bust pattern seen in many resource exporters.",
+    "next": "Now connect Norway to the wider world."
+  },
+  {
+    "id": 8,
+    "timeline": "Why it matters",
+    "title": "A small state with outsized strategic relevance",
+    "content": "Norway matters in European energy, Arctic security, shipping, and climate transition debates. Its model is often studied: how a resource-rich country can combine market openness, social protection, and long-term fiscal planning.",
+    "next": "From here, the deeper modules explain history, politics, society, and economy in detail."
+  }
+]

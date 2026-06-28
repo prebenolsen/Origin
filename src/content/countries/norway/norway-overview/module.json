@@ -1,0 +1,29 @@
+{
+  "title": "Norway Overview",
+  "category": "countries",
+  "subcategory": "norway",
+  "summary": "Where Norway is, what it is, what shaped it, and why it matters.",
+  "accent": "#2f6f8f",
+  "context": {
+    "type": "map",
+    "headline": "The country in one story",
+    "description": "Norway is a long, mountainous country shaped by the sea. Geography created scattered communities, strong coastal cities, and a maritime mindset. Over time, that physical foundation fed into shipping, fisheries, hydropower, and offshore oil and gas, while Nordic institutions built a high-trust welfare state.",
+    "when": "Modern Norway, rooted in long-term geography and state-building",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "oslo", "label": "Oslo", "lat": 59.91, "lng": 10.75, "role": "primary" },
+        { "id": "bergen", "label": "Bergen", "lat": 60.39, "lng": 5.32, "role": "secondary" },
+        { "id": "trondheim", "label": "Trondheim", "lat": 63.43, "lng": 10.39, "role": "secondary" },
+        { "id": "tromso", "label": "Tromso", "lat": 69.65, "lng": 18.96, "role": "secondary" },
+        { "id": "barents", "label": "Barents Sea", "lat": 72.0, "lng": 35.0, "role": "primary" },
+        { "id": "north-sea", "label": "North Sea", "lat": 58.5, "lng": 2.0, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "bergen", "to": "north-sea", "label": "Shipping and offshore routes" },
+        { "from": "oslo", "to": "trondheim", "label": "Population corridor" },
+        { "from": "tromso", "to": "barents", "label": "Arctic economy" }
+      ]
+    }
+  }
+}

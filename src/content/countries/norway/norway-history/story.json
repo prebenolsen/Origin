@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "timeline": "1814",
+    "title": "A constitution before full independence",
+    "content": "In 1814, Norwegian elites drafted a constitution at Eidsvoll. Norway did not become fully independent then, but it gained a constitutional foundation that shaped later sovereignty.",
+    "next": "A union still followed."
+  },
+  {
+    "id": 2,
+    "timeline": "1814-1905",
+    "title": "Union with Sweden, but growing self-rule",
+    "content": "After 1814, Norway entered a union with Sweden. Over the 1800s, Norwegian institutions, parliament, and national identity strengthened, creating pressure for full independence.",
+    "next": "The key break came in 1905."
+  },
+  {
+    "id": 3,
+    "timeline": "1905",
+    "title": "Peaceful dissolution of the union",
+    "content": "In 1905, the union with Sweden was dissolved peacefully. Norway became fully sovereign and chose a constitutional monarchy with a parliamentary system.",
+    "next": "Independence did not end security risks."
+  },
+  {
+    "id": 4,
+    "timeline": "1940-1945",
+    "title": "Occupation in World War II",
+    "content": "Nazi Germany occupied Norway from 1940 to 1945. The occupation was a major national trauma, shaping postwar security policy and state legitimacy.",
+    "next": "Postwar politics focused on rebuilding."
+  },
+  {
+    "id": 5,
+    "timeline": "Post-1945",
+    "title": "Reconstruction and welfare-state expansion",
+    "content": "After 1945, Norway invested in institutions, infrastructure, and social systems. Broad political consensus helped build a stable welfare model and high social trust.",
+    "next": "Then came a structural economic shift."
+  },
+  {
+    "id": 6,
+    "timeline": "Late 1960s onward",
+    "title": "North Sea oil changed state capacity",
+    "content": "Offshore petroleum discoveries transformed public finances and economic planning. Norway gradually built legal and fiscal mechanisms to manage resource income over generations.",
+    "next": "Europe integration remained selective."
+  },
+  {
+    "id": 7,
+    "timeline": "1972 and 1994",
+    "title": "Twice outside the EU, still integrated",
+    "content": "Norway voted against joining the EU in two referendums. Yet through EEA arrangements and trade links, it stayed deeply integrated with European markets and regulation.",
+    "next": "Today\u0027s history question is about transition."
+  },
+  {
+    "id": 8,
+    "timeline": "Today",
+    "title": "From oil state to transition state",
+    "content": "Modern Norwegian history is now about balancing petroleum legacy, climate commitments, Arctic strategy, and long-term fiscal sustainability.",
+    "next": "History explains why Norway\u0027s institutions look the way they do."
+  }
+]

@@ -52,3 +52,6 @@ Profile = motivation/progress/stats
 D:\OneDrive\Private prosjekter (VSCODE)\Origin\src\content\psychology\communication\becoming-a-better-conversationalist\timeline.json
 
 Timeline and Story do not match. Error in code? It's the same timeline for each except last.
+
+# Frontpage
+- Grid instead of rows. Less info on cards. Save for when they user it.

@@ -4,6 +4,30 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.2.0] - 2026-06-28
+
+### Changed - category slug renamed to countries
+
+- Renamed content category folder from `src/content/country-history/` to `src/content/countries/`.
+- Updated Norway module metadata category fields from `country-history` to `countries`.
+- Updated content category display mapping in `src/lib/content.ts` to use `countries` as the canonical slug for **Countries**.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.2.0** (MINOR - content architecture rename).
+
+## [4.1.0] - 2026-06-28
+
+### Added - Norway Countries rebuild (first country rollout)
+
+- Rebuilt `src/content/countries/norway` from era-specific history modules into a country-structure set:
+  - `norway-overview`
+  - `norway-history`
+  - `norway-politics`
+  - `norway-society`
+  - `norway-economy`
+- Added a hidden scaffold module `norway-geography-interactive` using a `PLACEHOLDER:` title to reserve the upcoming interactive cities-and-counties country geography experience.
+- Updated category display naming so `country-history` is shown as **Countries** in the app.
+- Updated `docs/content.md` tracker rows for Norway to the new Countries module model.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.1.0** (MINOR - content rebuild).
+
 ## [4.0.4] - 2026-06-28
 
 ### Changed - strict UTF-8 JSON normalization

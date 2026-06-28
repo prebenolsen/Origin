@@ -51,6 +51,7 @@ const bookFiles = import.meta.glob('../content/**/book-*.json', {
 /** Optional pretty names for categories (otherwise the slug is humanized). */
 const CATEGORY_DISPLAY: Record<string, string> = {
   history: 'History',
+  countries: 'Countries',
   science: 'Science',
   philosophy: 'Philosophy',
   arts: 'Arts & Culture',

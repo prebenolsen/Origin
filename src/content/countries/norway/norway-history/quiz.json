@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What happened in Norway in 1905?",
+    "options": ["The constitution was written", "The union with Sweden was dissolved", "NATO was founded", "Oil was first exported"],
+    "answer": 1,
+    "explanation": "1905 marks the dissolution of the union with Sweden and full Norwegian sovereignty."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "Norway became fully independent in 1814 and remained outside all unions immediately.",
+    "answer": false,
+    "explanation": "Norway wrote its constitution in 1814 but then entered a union with Sweden until 1905."
+  },
+  {
+    "id": 3,
+    "type": "ordering",
+    "question": "Order these developments.",
+    "items": ["Oil discoveries in the North Sea", "German occupation", "Constitution at Eidsvoll", "Dissolution of union with Sweden"],
+    "correctOrder": [2, 3, 1, 0],
+    "explanation": "The sequence is 1814, 1905, 1940-1945, then late-1960s oil era."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match event and meaning.",
+    "pairs": [
+      { "left": "1814", "right": "Constitutional foundation" },
+      { "left": "1905", "right": "Full sovereignty" },
+      { "left": "1940-1945", "right": "Occupation trauma" }
+    ],
+    "explanation": "These are core anchors in Norway\u0027s modern history."
+  }
+]

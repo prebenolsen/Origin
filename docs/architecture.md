@@ -144,3 +144,7 @@ module row status to DONE.
 - 2026-06-28: Normalized all `src/**/*.json` files to UTF-8 without BOM and added
   strict JSON encoding/punctuation guidance in `CLAUDE.md` (including safe handling
   of `æ`, `ø`, `å`).
+- 2026-06-28: Rebuilt Norway under `countries/norway` into a Countries-style
+  module set: `norway-overview`, `norway-history`, `norway-politics`,
+  `norway-society`, `norway-economy`, plus a hidden placeholder scaffold for
+  `norway-geography-interactive`.
