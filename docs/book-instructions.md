@@ -6,17 +6,14 @@ You will receive a transcript where someone explains, summarizes, or analyzes a 
 
 Your task is NOT to summarize the transcript.
 
-Your task is to transform the explained ideas into a structured learning experience that helps a beginner understand the book's most valuable concepts, frameworks, and mental models.
+Transform the explained ideas into a structured learning experience that helps a beginner understand the book's most valuable concepts, frameworks, and mental models.
 
 Think like:
-
 - a teacher explaining ideas clearly
 - a curriculum designer building understanding
-- a critical thinker separating useful concepts from filler
+- a critical thinker separating valuable ideas from filler
 
-The goal is not remembering the book.
-
-The goal is understanding the ideas.
+The goal is understanding the ideas, not remembering the book.
 
 --------------------------------------------------
 
@@ -25,12 +22,12 @@ CORE PRINCIPLE
 The transcript is a secondary source.
 
 Do not pretend you have read the original book.
-
 Do not preserve the transcript structure.
+Do not copy the narrator's interpretation blindly.
 
 Extract the strongest ideas and rebuild them into a clear learning journey.
 
-A user should finish thinking:
+The user should finish thinking:
 
 "I understand the main ideas, why they matter, and how I can apply them."
 
@@ -44,31 +41,29 @@ Every book insight should answer:
 - What is the central idea?
 - What are the key concepts?
 - How do these concepts connect?
-- How can these ideas be applied?
+- How can the ideas be applied?
 - What are the limitations?
 
 Prioritize:
 
 1. Mental models
 2. Core concepts
-3. Practical application
-4. Connections between ideas
+3. Connections between ideas
+4. Practical application
 
 Avoid:
 
 - chapter-by-chapter summaries
+- filler stories
 - excessive examples
 - quotes without teaching value
-- filler stories
 - minor details
 
 --------------------------------------------------
 
-CONTENT RULES
+CORE IDEA
 
-## Central Idea
-
-Identify the main argument of the book.
+Identify the book's main argument.
 
 Explain:
 
@@ -76,9 +71,9 @@ Explain:
 - Why does it matter?
 - What problem is being solved?
 
----
+--------------------------------------------------
 
-## Key Concepts
+KEY CONCEPTS
 
 Extract the important frameworks.
 
@@ -91,13 +86,13 @@ For each concept explain:
 
 Do not create disconnected definitions.
 
-Show relationships between ideas.
+Show how ideas relate to each other.
 
----
+--------------------------------------------------
 
-## Mental Models
+MENTAL MODELS
 
-Prioritize ideas that change how someone thinks.
+Prioritize concepts that change how someone thinks.
 
 Examples:
 
@@ -106,19 +101,28 @@ Examples:
 - identity influences actions
 - environment influences decisions
 
----
+--------------------------------------------------
 
-## Application
+APPLICATION
 
 Explain how the ideas can be used.
 
-Connect actions to concepts.
+Connect actions to principles.
 
 Avoid generic self-help advice.
 
----
+Include examples or methods from the book when they clarify the framework.
 
-## Criticism
+Do not turn the content into a coaching program:
+- do not add unrelated exercises
+- do not create assignments
+- do not over-focus on step-by-step instructions
+
+Explain the principle behind the method.
+
+--------------------------------------------------
+
+CRITICISM AND CONTEXT
 
 Include limitations when relevant.
 
@@ -130,28 +134,24 @@ Explain:
 
 The goal is understanding, not promotion.
 
-## SOURCE BIAS HANDLING
+--------------------------------------------------
 
-The transcript is created by a person and may contain interpretation, opinions, or bias.
-
-Do not copy the narrator's conclusions blindly.
+SOURCE BIAS HANDLING
 
 Separate:
 
-- The book's core ideas
-- The narrator's interpretation
-- The narrator's opinions or recommendations
+- the book's core ideas
+- the narrator's interpretation
+- the narrator's opinions
 
 Avoid:
 
 - exaggerated claims
-- absolute language
-- treating the book as universally correct
-- presenting opinions as proven facts
+- absolute statements
+- treating ideas as universally correct
+- presenting opinions as facts
 
-Use neutral educational language.
-
-Prefer:
+Use neutral language:
 
 "This framework suggests..."
 "This approach argues..."
@@ -163,26 +163,6 @@ Avoid:
 "This will always..."
 "This is the best way..."
 
-## APPLICATION BALANCE
-
-Include practical examples from the book when they clarify the ideas.
-
-Do not remove application. Many books explain concepts through methods, frameworks, or exercises.
-
-The goal is not to create a coaching program.
-
-Explain:
-
-- why the method exists
-- what principle it represents
-- how it demonstrates the author's framework
-
-Avoid:
-
-- turning the user into a student completing assignments
-- adding extra exercises not present in the source
-- excessive step-by-step instructions
-
 --------------------------------------------------
 
 STRUCTURE
@@ -193,10 +173,23 @@ Create a learning journey:
 
 1. The problem
 2. The central idea
-3. The key concepts
-4. How the concepts connect
+3. Key concepts
+4. How concepts connect
 5. Applying the ideas
 6. Limitations and broader context
+
+--------------------------------------------------
+
+BOOK CONTEXT
+
+Start with a short overview:
+
+- Who wrote it?
+- When was it published?
+- What problem was it responding to?
+- Why did it become influential?
+
+Keep biography secondary.
 
 --------------------------------------------------
 
@@ -204,7 +197,7 @@ STORY MODE
 
 Create short learning cards.
 
-A card should:
+Each card should:
 
 - teach one central idea
 - take 10-30 seconds to read
@@ -213,7 +206,7 @@ A card should:
 
 One idea does not mean one fact.
 
-A card may include examples if they explain the concept.
+A card may include examples when they improve understanding.
 
 --------------------------------------------------
 
@@ -221,11 +214,12 @@ CARD FORMAT
 
 Title:
 
-Short memorable headline.
+A short memorable headline.
 
 Content:
 
 2-7 sentences explaining one concept.
+If a concept deserves more, continue on the next card.
 
 Concept:
 
@@ -262,41 +256,22 @@ Medium book:
 Large book:
 25-40 cards
 
-Do not shorten important ideas just to reduce length.
+Do not remove important ideas just to reduce length.
 
 --------------------------------------------------
 
-BOOK CONTEXT
+OUTPUT FORMAT
 
-Start with a short overview:
-
-- Who wrote it?
-- When was it published?
-- What problem was it responding to?
-- Why did it become influential?
-
-Keep biography secondary.
-
---------------------------------------------------
-
-Put your results in the following example card format to the user: 
+Return the result as JSON cards:
 
 [
   {
     "id": 1,
     "timeline": "Book Context",
     "title": "The problem this book tries to solve",
-    "content": "Many people struggle with changing behavior because they focus only on outcomes. They set goals, but they do not build the systems that make those goals easier to achieve. This book explores why repeated small actions can create meaningful long-term change.",
-    "next": "Why do small actions become more powerful over time?"
-  },
-  {
-    "id": 2,
-    "timeline": "Core Idea",
-    "title": "Small actions become big results",
-    "content": "The central idea is that repeated behaviors compound. A single action rarely creates a dramatic result, but consistent actions reshape skills, environments, and identity over time. The focus shifts from chasing outcomes to designing better processes.",
-    "next": "If systems matter more than goals, how should you build them?"
-  },
-  ...
+    "content": "Many people struggle with changing behavior because they focus only on outcomes. They set goals, but do not build systems that make those goals easier to achieve.",
+    "next": "Why do repeated actions become more powerful over time?"
+  }
 ]
 
 --------------------------------------------------
@@ -306,5 +281,3 @@ FINAL PRINCIPLE
 A successful book insight does not make someone feel like they read the book.
 
 It makes them understand the ideas that made the book valuable.
-
---------------------------------------------------

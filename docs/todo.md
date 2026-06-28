@@ -47,3 +47,8 @@ Profile = motivation/progress/stats
 - Russian Ukraine conflict is Ollama generated. 
 
 # Ask AI to generate step by step for Ollama to create content
+
+# Bugs:
+D:\OneDrive\Private prosjekter (VSCODE)\Origin\src\content\psychology\communication\becoming-a-better-conversationalist\timeline.json
+
+Timeline and Story do not match. Error in code? It's the same timeline for each except last.
