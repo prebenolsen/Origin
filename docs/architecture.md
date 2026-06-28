@@ -155,3 +155,6 @@ module row status to DONE.
   pending source-grounded authoring. Added placeholder scaffolds for
   `countries/united-states` across overview/history/politics/society/economy
   plus geography-interactive.
+- 2026-06-28: Updated countries placeholder stage files to code-ready scaffold
+  objects (matching psychology placeholder format) instead of bare empty arrays
+  for story/timeline/quiz/flashcards files.

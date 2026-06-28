@@ -4,6 +4,19 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.4.0] - 2026-06-28
+
+### Changed - placeholder stage files now use scaffold objects (not empty arrays)
+
+- Replaced bare `[]` placeholder files under `src/content/countries/**` with code-ready scaffold JSON objects matching the placeholder style used in psychology placeholder files.
+- Applied this across Norway non-history placeholder modules and all United States placeholder modules for:
+  - `story.json`
+  - `timeline.json`
+  - `quiz.json`
+  - `flashcards.json`
+- Kept `norway-history` authored content unchanged.
+- Bumped `version.js`, `package.json`, and `package-lock.json` to **4.4.0** (MINOR - content scaffold format update).
+
 ## [4.3.0] - 2026-06-28
 
 ### Changed - countries non-history content reset to placeholders
