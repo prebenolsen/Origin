@@ -1,8 +1,8 @@
 {
-  "slug": "small-talk",
-  "title": "Small Talk",
-  "summary": "Meet people, introduce yourself and give a compliment.",
-  "icon": "💬",
-  "kind": "placeholder",
-  "estMinutes": 7
+  "slug": "introductions",
+  "title": "Introductions",
+  "summary": "Say who you are - your name, where you're from, and that you only speak a little Spanish.",
+  "icon": "🙋",
+  "kind": "standard",
+  "estMinutes": 6
 }

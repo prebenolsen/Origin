@@ -1,0 +1,8 @@
+{
+  "slug": "cafe",
+  "title": "Cafe",
+  "summary": "Order food, ask for the menu and the bill, and pay - leave able to eat out alone.",
+  "icon": "🍽️",
+  "kind": "placeholder",
+  "estMinutes": 8
+}

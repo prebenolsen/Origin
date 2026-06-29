@@ -2,9 +2,12 @@
  * Language content registry.
  *
  * Auto-discovers every language under `src/content/languages/<lang>/` at build
- * time, mirroring the history content registry. To add a scenario, drop a
- * folder with a `scenario.json` (and optional lesson/vocabulary/personalize) -
- * no code changes required.
+ * time, mirroring the history content registry. Scenarios live one phase folder
+ * deep - `scenarios/<phase>/<slug>/` - so phase-1 content stays separate from
+ * later phases. To add a scenario, drop a folder with a `scenario.json` (and
+ * optional lesson/vocabulary/personalize) into a phase - no code changes
+ * required. The leaf `<slug>` is the scenario's identity (keep it unique across
+ * phases).
  */
 import type {
   Language,
@@ -22,19 +25,19 @@ const languageFiles = import.meta.glob('../../content/languages/*/language.json'
   import: 'default',
 }) as GlobMap;
 const scenarioFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/scenario.json',
+  '../../content/languages/*/scenarios/*/*/scenario.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 const lessonFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/lesson.json',
+  '../../content/languages/*/scenarios/*/*/lesson.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 const vocabFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/vocabulary.json',
+  '../../content/languages/*/scenarios/*/*/vocabulary.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 const personalizeFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/personalize.json',
+  '../../content/languages/*/scenarios/*/*/personalize.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 
@@ -45,14 +48,19 @@ function langOf(key: string): string | null {
   return after.split('/')[0] ?? null;
 }
 
-/** `.../scenarios/greetings/scenario.json` -> `{ lang, scenario }`. */
-function scenarioOf(key: string): { lang: string; scenario: string } | null {
+/**
+ * `.../scenarios/visiting-spain/greetings/scenario.json`
+ *   -> `{ lang, phase, scenario }`.
+ * The leaf slug stays the scenario's identity; `phase` is the folder that
+ * groups it (used only to detect cross-phase slug collisions).
+ */
+function scenarioOf(key: string): { lang: string; phase: string; scenario: string } | null {
   const after = key.split('/content/languages/')[1];
   if (!after) return null;
   const parts = after.split('/');
-  // [lang, "scenarios", scenarioSlug, file.json]
-  if (parts.length < 4 || parts[1] !== 'scenarios') return null;
-  return { lang: parts[0], scenario: parts[2] };
+  // [lang, "scenarios", phase, scenarioSlug, file.json]
+  if (parts.length < 5 || parts[1] !== 'scenarios') return null;
+  return { lang: parts[0], phase: parts[2], scenario: parts[3] };
 }
 
 function indexLanguages(): Map<string, Language> {
@@ -66,9 +74,22 @@ function indexLanguages(): Map<string, Language> {
 
 function indexByScenario<T>(files: GlobMap): Map<string, T> {
   const map = new Map<string, T>();
+  const phaseOfKey = new Map<string, string>();
   for (const key of Object.keys(files)) {
     const parts = scenarioOf(key);
-    if (parts) map.set(`${parts.lang}/${parts.scenario}`, files[key] as T);
+    if (!parts) continue;
+    const id = `${parts.lang}/${parts.scenario}`;
+    const prevPhase = phaseOfKey.get(id);
+    if (prevPhase && prevPhase !== parts.phase && import.meta.env?.DEV) {
+      // Leaf slug is the identity, so two phases can't share one. Give a phase-2
+      // scenario a distinct slug (e.g. `restaurant-social`) instead of reusing.
+      console.warn(
+        `[language content] duplicate scenario slug "${parts.scenario}" in ` +
+          `phases "${prevPhase}" and "${parts.phase}" - one will shadow the other.`,
+      );
+    }
+    phaseOfKey.set(id, parts.phase);
+    map.set(id, files[key] as T);
   }
   return map;
 }

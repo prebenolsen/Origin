@@ -1,33 +1,33 @@
 {
   "prompt": "What do you wear?",
-  "intro": "Template only - fill in the Spanish for the clothes you actually wear, then change scenario.json \"kind\" to \"personalized\" to switch this on. Do not teach dresses or skirts unless the learner picks them.",
+  "intro": "Pick the clothes you'd actually shop for - we'll only teach you those words, nothing you don't need.",
   "template": { "es": "Tiene esto en ___?", "en": "Do you have this in ___?" },
   "groups": [
     {
       "category": "tops",
       "label": "Tops",
       "options": [
-        { "en": "t-shirt", "es": "" },
-        { "en": "shirt", "es": "" },
-        { "en": "jumper", "es": "" },
-        { "en": "jacket", "es": "" }
+        { "en": "t-shirt", "es": "camiseta" },
+        { "en": "shirt", "es": "camisa" },
+        { "en": "jumper", "es": "jersey" },
+        { "en": "jacket", "es": "chaqueta" }
       ]
     },
     {
       "category": "bottoms",
       "label": "Bottoms",
       "options": [
-        { "en": "jeans", "es": "" },
-        { "en": "chinos", "es": "" },
-        { "en": "shorts", "es": "" }
+        { "en": "jeans", "es": "vaqueros" },
+        { "en": "chinos", "es": "pantalones chinos" },
+        { "en": "shorts", "es": "pantalones cortos" }
       ]
     },
     {
       "category": "shoes",
       "label": "Shoes",
       "options": [
-        { "en": "sneakers", "es": "" },
-        { "en": "boots", "es": "" }
+        { "en": "sneakers", "es": "zapatillas" },
+        { "en": "boots", "es": "botas" }
       ]
     }
   ]

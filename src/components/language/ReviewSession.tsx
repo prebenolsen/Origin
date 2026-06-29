@@ -6,6 +6,7 @@ import {
   getByScenario,
   getRecent,
   getWeak,
+  orderAdaptive,
   recordReview,
   vocabId,
   type VocabState,
@@ -44,10 +45,14 @@ export default function ReviewSession() {
   const title = titleFor(mode);
 
   const questions = useMemo(() => {
-    const states = selectTargets(mode);
-    const targets: QuestionTarget[] = states
-      .slice(0, MAX)
-      .map((s) => ({ es: s.es, en: s.en, category: s.category }));
+    // Adaptive order: failed first, recent next, a sample of mastered last -
+    // never introduction order. Difficulty ramps via per-word mastery.
+    const ordered = orderAdaptive(selectTargets(mode), MAX);
+    const targets: QuestionTarget[] = ordered.map((s) => ({
+      es: s.es,
+      en: s.en,
+      category: s.category,
+    }));
     const pool: QuestionTarget[] = getAll(LANG).map((s) => ({
       es: s.es,
       en: s.en,
@@ -75,7 +80,7 @@ export default function ReviewSession() {
     <VocabTest
       questions={questions}
       title={title}
-      onResult={(t, correct) => recordReview(LANG, vocabId(t.es), correct)}
+      onResult={(t, correct, level) => recordReview(LANG, vocabId(t.es), correct, level)}
       onComplete={back}
       onExit={back}
       finishLabel="Back to review"

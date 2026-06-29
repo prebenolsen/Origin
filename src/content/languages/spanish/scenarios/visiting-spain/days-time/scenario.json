@@ -1,0 +1,8 @@
+{
+  "slug": "days-time",
+  "title": "Days & Simple Time",
+  "summary": "Handle 'today', 'tomorrow' and the days of the week - enough to book, plan and check opening days.",
+  "icon": "📅",
+  "kind": "standard",
+  "estMinutes": 6
+}

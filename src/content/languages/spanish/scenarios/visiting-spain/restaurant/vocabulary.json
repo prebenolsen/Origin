@@ -1,10 +1,14 @@
 [
-  { "en": "the menu", "es": "", "category": "restaurant" },
-  { "en": "I would like", "es": "", "category": "restaurant" },
-  { "en": "water", "es": "", "category": "restaurant" },
-  { "en": "the bill", "es": "", "category": "restaurant" },
-  { "en": "how much is it", "es": "", "category": "restaurant" },
-  { "en": "do you take card", "es": "", "category": "restaurant" },
-  { "en": "a table for two", "es": "", "category": "restaurant" },
-  { "en": "the waiter", "es": "", "category": "restaurant" }
+  { "en": "the menu", "es": "el menu", "category": "food" },
+  { "en": "I would like", "es": "quiero", "category": "phrase" },
+  { "en": "the bill", "es": "la cuenta", "category": "phrase" },
+  { "en": "still water", "es": "agua sin gas", "category": "drink" },
+  { "en": "sparkling water", "es": "agua con gas", "category": "drink" },
+  { "en": "bread", "es": "el pan", "category": "food" },
+  { "en": "meat", "es": "la carne", "category": "food" },
+  { "en": "fish", "es": "el pescado", "category": "food" },
+  { "en": "vegetarian", "es": "vegetariano", "category": "food" },
+  { "en": "the waiter", "es": "el camarero", "category": "place" },
+  { "en": "the table", "es": "la mesa", "category": "place" },
+  { "en": "to pay", "es": "pagar", "category": "phrase" }
 ]

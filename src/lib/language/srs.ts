@@ -8,11 +8,15 @@
  * `origin_language_spanish_vocab_state` table for a later Supabase backend.
  */
 
+import { seededShuffle } from '../text';
+
 export type Mastery = 'new' | 'learning' | 'strong';
 
 export interface ReviewEvent {
   at: number;
   correct: boolean;
+  /** Difficulty level (1=recognise … 4=produce) of the question answered. */
+  level?: number;
 }
 
 export interface VocabState {
@@ -32,6 +36,8 @@ export interface VocabState {
   incorrect: number;
   /** Consecutive correct answers. */
   streak: number;
+  /** Highest difficulty level the learner has answered correctly (1..4). */
+  maxCorrectLevel: number;
   review_history: ReviewEvent[];
   lastReview?: number;
   lastCorrect?: number;
@@ -84,7 +90,9 @@ export function vocabId(es: string): string {
 
 export function masteryOf(s: VocabState): Mastery {
   if (s.attempts === 0) return 'new';
-  if (s.streak >= 3) return 'strong';
+  // "Strong" demands more than a lucky streak: the learner must have recalled
+  // the word at a higher difficulty (context/production), not just recognised it.
+  if (s.streak >= 3 && (s.maxCorrectLevel ?? 0) >= 3) return 'strong';
   return 'learning';
 }
 
@@ -128,6 +136,7 @@ export function introduce(
     correct: 0,
     incorrect: 0,
     streak: 0,
+    maxCorrectLevel: 0,
     review_history: [],
     interval: 0,
     ease: 2.5,
@@ -146,15 +155,30 @@ export function markSeen(langSlug: string, id: string): void {
   write(langSlug, store);
 }
 
-/** Record the outcome of a single review and reschedule the word. */
-export function recordReview(langSlug: string, id: string, correct: boolean): void {
+const clamp = (min: number, max: number, x: number) => Math.min(max, Math.max(min, x));
+
+/**
+ * Record the outcome of a single review and reschedule the word.
+ *
+ * `level` is the difficulty of the question answered (1=recognise … 4=produce).
+ * A correct *guess* (recognition, 1-of-4) must not count the same as confident
+ * recall: higher levels grow the interval and ease much more, and only a
+ * higher-level correct answer can move a word toward "strong" (see `masteryOf`).
+ */
+export function recordReview(
+  langSlug: string,
+  id: string,
+  correct: boolean,
+  level = 1,
+): void {
   const store = read(langSlug);
   const s = store[id];
   if (!s) return;
   const now = Date.now();
+  const lvl = clamp(1, 4, level);
 
   s.attempts += 1;
-  s.review_history.push({ at: now, correct });
+  s.review_history.push({ at: now, correct, level: lvl });
   if (s.review_history.length > 50) s.review_history.shift();
   s.lastReview = now;
 
@@ -162,8 +186,16 @@ export function recordReview(langSlug: string, id: string, correct: boolean): vo
     s.correct += 1;
     s.streak += 1;
     s.lastCorrect = now;
-    s.interval = s.interval === 0 ? 1 : Math.round(s.interval * s.ease);
-    s.ease = Math.min(2.8, s.ease + 0.05);
+    s.maxCorrectLevel = Math.max(s.maxCorrectLevel ?? 0, lvl);
+    // Ease barely moves on a recognition guess; confident production boosts it.
+    s.ease = clamp(1.3, 2.8, s.ease + (lvl >= 3 ? 0.1 : lvl === 2 ? 0.02 : -0.02));
+    if (s.interval === 0) {
+      // First correct: a guess comes back within hours; production days out.
+      s.interval = lvl >= 4 ? 3 : lvl === 3 ? 1.5 : lvl === 2 ? 0.75 : 0.35;
+    } else {
+      const levelFactor = clamp(0.5, 1.25, 0.4 + 0.22 * lvl); // L1 .62 … L4 1.25
+      s.interval = Math.max(0.35, s.interval * s.ease * levelFactor);
+    }
     s.nextReview = now + s.interval * DAY;
   } else {
     s.incorrect += 1;
@@ -210,6 +242,43 @@ export function getRecent(langSlug: string, days = 7): VocabState[] {
   return getAll(langSlug)
     .filter((s) => s.introducedAt >= cutoff)
     .sort((a, b) => b.introducedAt - a.introducedAt);
+}
+
+/**
+ * Order a set of words for an adaptive review (never introduction order):
+ *  - failed/weak words first (highest priority),
+ *  - then recently learned words,
+ *  - then other learning words,
+ *  - then a retention sample of mastered words at the end.
+ * Each band is shuffled, and the bands also ramp difficulty (weak/new tested at
+ * low levels first, mastered → production last), capping the result at `max`.
+ */
+export function orderAdaptive(
+  states: VocabState[],
+  max = states.length,
+  days = 7,
+  seed = Date.now() % 100000,
+): VocabState[] {
+  const cutoff = Date.now() - days * DAY;
+  const recentP = (s: VocabState) => s.introducedAt >= cutoff;
+
+  const failed = seededShuffle(states.filter(isWeak), seed + 1);
+  const rest = states.filter((s) => !isWeak(s));
+  const recent = seededShuffle(rest.filter(recentP), seed + 2);
+  const strong = seededShuffle(
+    rest.filter((s) => masteryOf(s) === 'strong' && !recentP(s)),
+    seed + 3,
+  );
+  const other = seededShuffle(
+    rest.filter((s) => masteryOf(s) !== 'strong' && !recentP(s)),
+    seed + 4,
+  );
+
+  // Reserve ~20% of the budget for mastered-word retention at the end.
+  const reserveStrong = Math.min(strong.length, Math.floor(max * 0.2));
+  const mainBudget = Math.max(0, max - reserveStrong);
+  const main = [...failed, ...recent, ...other].slice(0, mainBudget);
+  return [...main, ...strong.slice(0, reserveStrong)];
 }
 
 export interface LanguageStats {

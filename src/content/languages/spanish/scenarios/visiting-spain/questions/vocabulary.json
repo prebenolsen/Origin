@@ -1,0 +1,14 @@
+[
+  { "en": "what", "es": "que", "category": "question" },
+  { "en": "who", "es": "quien", "category": "question" },
+  { "en": "where", "es": "donde", "category": "question" },
+  { "en": "when", "es": "cuando", "category": "question" },
+  { "en": "why", "es": "por que", "category": "question" },
+  { "en": "how", "es": "como", "category": "question" },
+  { "en": "how much", "es": "cuanto", "category": "question" },
+  { "en": "how many", "es": "cuantos", "category": "question" },
+  { "en": "which", "es": "cual", "category": "question" },
+  { "en": "where is", "es": "donde esta", "category": "phrase" },
+  { "en": "at what time", "es": "a que hora", "category": "phrase" },
+  { "en": "how much is it", "es": "cuanto cuesta", "category": "phrase" }
+]

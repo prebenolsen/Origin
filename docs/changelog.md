@@ -4,6 +4,95 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [5.4.0] - 2026-06-30
+
+### Changed - "Visiting Spain" reshaped as a tourist-survival phase (Spanish)
+
+Phase 1 is now a coherent "I can take care of myself in Spain" path - survival vocabulary,
+fixed expressions and real situations, with no grammar or two-way social conversation
+(that is reserved for a later "Meeting People" phase). The goal now runs through 13 short,
+word-first scenarios in a deliberate order.
+
+- **All placeholders filled - the phase is fully playable.** `numbers`, `directions`, `taxi`
+  and `shopping` were scaffolding (`placeholder`, empty Spanish) and are now live.
+- **Introductions (was "Small Talk"), kept one-way.** Renamed `small-talk` -> `introductions`.
+  Teaches only what you say about yourself - me llamo, soy de, estoy de visita en Espana,
+  hablo un poco de espanol, no hablo bien espanol. Dropped the question-asking words
+  ("what's your name", "where are you from", "how are you") - those belong to the next phase.
+- **Numbers -> "Numbers & Money", refocused on prices.** Now cuanto es / euros / el precio plus
+  uno..cien. Dropped dates and clock time from scope (not needed for this phase).
+- **Getting around made situational.** `directions` ("Getting Around") teaches the ask-and-
+  understand pair (donde esta + aqui/alli/izquierda/derecha/todo recto/cerca/lejos) and the
+  most-asked place, el bano. `taxi` covers lleveme a / el hotel / el aeropuerto / la estacion /
+  cuanto cuesta / pare aqui.
+- **Shopping (clothes) switched on as a personalized scenario** - base phrases (cuanto cuesta,
+  puedo probarmelo, el probador, mi talla, mas grande/pequeno) plus a "what do you wear?"
+  picker (tops/bottoms/shoes); only the clothes you pick are taught.
+- **Three new survival scenarios.** `basic-needs` (necesito/quiero + el bano, agua, el wifi,
+  la contrasena), `days-time` ("Days & Simple Time": hoy/manana/ayer, the weekdays, abierto/
+  cerrado) and `help` ("Problems & Help": no entiendo, puede repetir, mas despacio, puede
+  ayudarme, habla ingles, estoy perdido).
+- Goal order is now greetings -> introductions -> numbers -> questions -> cafe -> restaurant ->
+  supermarket -> shopping -> directions -> taxi -> basic-needs -> days-time -> help.
+
+## [5.3.0] - 2026-06-30
+
+### Added - Phase folders + Cafe/Restaurant/Questions (Spanish, "Visiting Spain")
+
+- **Phase-based content layout.** Spanish scenarios now live one phase folder deep -
+  `scenarios/<phase>/<slug>/` (all current scenarios moved under `visiting-spain/`) - so
+  phase-1 content stays separate from later phases. The content registry
+  (`src/lib/language/content.ts`) discovers scenarios at this depth; the leaf `<slug>`
+  remains the scenario's identity, with a dev-time warning if two phases collide on a slug.
+  The content validator was updated to descend phase folders.
+- **Cafe** and **Restaurant** are now playable (`placeholder` -> `standard`), deliberately
+  kept to small, word-first lists (12 each) for phase 1 - drinks/food/order basics for the
+  cafe, menu/food/pay basics for the restaurant. Fuller, sentence-level versions are planned
+  for a later phase.
+- **New "Questions" scenario** (`visiting-spain/questions`): the core question words and
+  short question phrases - que, quien, donde, cuando, por que, como, cuanto, cuantos, cual,
+  plus donde esta / a que hora / cuanto cuesta. Added to the "Visiting Spain" goal.
+
+## [5.2.1] - 2026-06-30
+
+### Added - Authoring/engine skills + content validator (dev tooling)
+
+- New project skills under `.claude/skills/`:
+  - **spanish-content** - authoring & extending language content (rules, file shapes,
+    templates) with a runnable validator
+    `node .claude/skills/spanish-content/scripts/validate-content.mjs` that checks JSON
+    validity, BOM, typographic dashes, required fields, scenario `kind`, empty `es` in
+    non-placeholder scenarios, duplicate words, and goals referencing missing scenarios.
+  - **language-engine** - invariants, optimization notes, and a verification recipe for the
+    SRS / adaptive-testing / review code, so future refactors preserve behaviour.
+- Fixed `scenarios/cafe` which had been duplicated from Restaurant (wrong `slug`/title/word
+  list) - now a proper Cafe placeholder. Caught by the new validator.
+- PATCH bump (dev tooling + placeholder content fix; no learner-facing module changed).
+
+## [5.2.0] - 2026-06-29
+
+### Changed - Adaptive review & confidence-weighted memory (Spanish)
+
+- **Adaptive review order** (`srs.ts → orderAdaptive`): reviews no longer run in
+  introduction order. Words are banded and shuffled - failed/weak words first, then
+  recently learned, then other learning words, with a ~20% retention sample of mastered
+  words at the end. The full section review and every review session now use this.
+- **Difficulty ramps Recognition → Recall → Context → Production**: `levelFor` now ramps a
+  word by *demonstrated* competence (`maxCorrectLevel`), not a bare streak - recognise once,
+  then recall, then context, then (when strong) production.
+- **A correct guess no longer counts like confident recall**: `recordReview(…, level)` is
+  level-weighted. A correct recognition (1-of-4) nudges ease down slightly and reschedules
+  the word within hours; confident production grows the interval to days. "Strong" mastery
+  now *requires* a higher-level correct answer (`maxCorrectLevel >= 3`), so clicking through
+  multiple-choice can't fake fluency. Every answer still updates correct/wrong counts,
+  mastery, and `next_review_date`, and now also stores the question level in the history.
+- **Shorter intros, no pre-teaching**: the Greetings explanation was trimmed to only the
+  first batch's words; time-of-day detail moved to per-word notes. Teach-screen example
+  sentences are now gated to words already introduced (whole-word match), so a batch never
+  shows vocabulary the learner hasn't met yet.
+- Added `maxCorrectLevel` to the vocab state and `max_correct_level` to the Supabase schema.
+- Bumped version to **5.2.0** (MINOR - learning-system change + content edit).
+
 ## [5.1.0] - 2026-06-29
 
 ### Changed - Block-based lesson progression & mastery gating (Spanish)

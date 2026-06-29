@@ -1,8 +1,8 @@
 {
   "slug": "numbers",
-  "title": "Numbers",
-  "summary": "Understand prices, times and dates - the whole numbers capability, not one digit at a time.",
-  "icon": "🔢",
-  "kind": "placeholder",
-  "estMinutes": 8
+  "title": "Numbers & Money",
+  "summary": "Understand a price and pay the right amount - 'how much?', euros and the numbers you'll actually hear.",
+  "icon": "💶",
+  "kind": "standard",
+  "estMinutes": 7
 }

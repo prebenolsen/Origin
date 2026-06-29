@@ -13,13 +13,18 @@
       "available": true,
       "scenarios": [
         "greetings",
+        "introductions",
         "numbers",
+        "questions",
+        "cafe",
         "restaurant",
-        "taxi",
         "supermarket",
         "shopping",
         "directions",
-        "small-talk"
+        "taxi",
+        "basic-needs",
+        "days-time",
+        "help"
       ]
     },
     {

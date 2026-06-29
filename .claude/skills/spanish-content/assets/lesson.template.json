@@ -1,0 +1,10 @@
+{
+  "context": "Why this matters in the real situation. Keep it to 2-3 sentences.",
+  "explanation": "One short paragraph about the FIRST batch's words only. Do not mention words from later batches.",
+  "examples": [
+    { "es": "Spanish example using only batch-1 words.", "en": "English translation.", "note": "optional" }
+  ],
+  "phrases": [
+    { "en": "English phrase", "es": "Spanish phrase", "note": "optional" }
+  ]
+}

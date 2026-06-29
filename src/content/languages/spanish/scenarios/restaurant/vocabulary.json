@@ -1,0 +1,17 @@
+[
+  { "en": "a table for two", "es": "", "category": "restaurant" },
+  { "en": "do you have a reservation", "es": "", "category": "restaurant" },
+  { "en": "I have a reservation", "es": "", "category": "restaurant" },
+  { "en": "I would like to reserve a table", "es": "", "category": "restaurant" },
+  { "en": "the menu", "es": "", "category": "restaurant" },
+  { "en": "the waiter/waitress", "es": "", "category": "restaurant" },
+  { "en": "water", "es": "", "category": "restaurant" },
+  { "en": "still water", "es": "", "category": "restaurant" },
+  { "en": "sparkling water", "es": "", "category": "restaurant" },
+  { "en": "what do you recommend", "es": "", "category": "restaurant" },
+  { "en": "I would like", "es": "", "category": "restaurant" },
+  { "en": "what is this", "es": "", "category": "restaurant" },
+  { "en": "the bill", "es": "", "category": "restaurant" },
+  { "en": "do you take card", "es": "", "category": "restaurant" },
+  { "en": "can I pay", "es": "", "category": "restaurant" }
+]

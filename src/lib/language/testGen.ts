@@ -107,12 +107,12 @@ function pickDistractors(
 }
 
 function levelFor(state?: VocabState): Level {
-  if (!state) return 1;
-  const m = masteryOf(state);
-  if (m === 'new') return 1;
-  if (m === 'strong') return 4;
-  // learning: alternate recognition-recall to build production gradually.
-  return state.streak >= 1 ? 3 : 2;
+  if (!state || state.attempts === 0) return 1; // Stage 1: recognition
+  if (masteryOf(state) === 'strong') return 4; // Stage 4: production
+  // Ramp by demonstrated competence: recognised -> recall -> context.
+  const best = state.maxCorrectLevel ?? 0;
+  if (best <= 1) return 2; // Stage 2: recall
+  return 3; // Stage 3: context usage
 }
 
 interface BuildOptions {

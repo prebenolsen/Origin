@@ -1,10 +1,11 @@
 [
-  { "en": "left", "es": "", "category": "directions" },
-  { "en": "right", "es": "", "category": "directions" },
-  { "en": "straight on", "es": "", "category": "directions" },
-  { "en": "near", "es": "", "category": "directions" },
-  { "en": "far", "es": "", "category": "directions" },
-  { "en": "where is", "es": "", "category": "directions" },
-  { "en": "here", "es": "", "category": "directions" },
-  { "en": "there", "es": "", "category": "directions" }
+  { "en": "where is", "es": "donde esta", "category": "directions" },
+  { "en": "here", "es": "aqui", "category": "directions" },
+  { "en": "there", "es": "alli", "category": "directions" },
+  { "en": "left", "es": "a la izquierda", "category": "directions" },
+  { "en": "right", "es": "a la derecha", "category": "directions" },
+  { "en": "straight on", "es": "todo recto", "category": "directions" },
+  { "en": "near", "es": "cerca", "category": "directions" },
+  { "en": "far", "es": "lejos", "category": "directions" },
+  { "en": "the toilet", "es": "el bano", "category": "place", "note": "The single most-asked-for place; \"Donde esta el bano?\"." }
 ]

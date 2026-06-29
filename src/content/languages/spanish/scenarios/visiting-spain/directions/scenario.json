@@ -1,8 +1,8 @@
 {
   "slug": "directions",
-  "title": "Directions",
-  "summary": "Understand left, right and straight on - and find what you're looking for.",
+  "title": "Getting Around",
+  "summary": "Ask where something is and understand the answer - left, right, straight on, near or far.",
   "icon": "🧭",
-  "kind": "placeholder",
+  "kind": "standard",
   "estMinutes": 6
 }

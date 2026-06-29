@@ -1,0 +1,17 @@
+{
+  "context": "A taxi is the one place you must make yourself understood quickly, often with luggage and in a hurry. You only need three moves: say where you're going, check the fare, and tell the driver when to stop.",
+  "explanation": "Start with \"lleveme a...\" (take me to...) and the place - this is how every ride begins. \"El hotel\" and \"el aeropuerto\" are the two destinations you'll name most. Get in, say it, and you're on your way.",
+  "examples": [
+    { "es": "Lleveme al aeropuerto, por favor.", "en": "Take me to the airport, please.", "note": "\"a + el\" becomes \"al\"." },
+    { "es": "Lleveme a este hotel.", "en": "Take me to this hotel.", "note": "Show the address on your phone." },
+    { "es": "Al aeropuerto.", "en": "To the airport.", "note": "Short version once you're settled in." }
+  ],
+  "phrases": [
+    { "en": "Take me to...", "es": "Lleveme a..." },
+    { "en": "The hotel", "es": "El hotel" },
+    { "en": "The airport", "es": "El aeropuerto" },
+    { "en": "The station", "es": "La estacion" },
+    { "en": "How much is it?", "es": "Cuanto cuesta?" },
+    { "en": "Stop here", "es": "Pare aqui" }
+  ]
+}

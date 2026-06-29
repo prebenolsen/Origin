@@ -1,0 +1,8 @@
+{
+  "slug": "cafe",
+  "title": "Cafe",
+  "summary": "Order a coffee or a beer at the bar and pay - the quick cafe basics.",
+  "icon": "☕",
+  "kind": "standard",
+  "estMinutes": 6
+}

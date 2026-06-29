@@ -1,0 +1,20 @@
+{
+  "context": "You won't give directions in Spain - you'll ask for them and understand the reply. The trick is to ask one clear question and then recognise the handful of words that come back: left, right, straight on. That alone gets you to the toilet, the exit or the square.",
+  "explanation": "The key phrase is \"donde esta...?\" (where is...?) followed by the place you want. The answer usually points you \"aqui\" (here) or \"alli\" (there). Learn this question-and-answer pair first - it carries the whole scenario.",
+  "examples": [
+    { "es": "Donde esta la salida?", "en": "Where is the exit?" },
+    { "es": "Esta aqui.", "en": "It's here." },
+    { "es": "Esta alli.", "en": "It's there.", "note": "Often said with a point of the finger." }
+  ],
+  "phrases": [
+    { "en": "Where is...?", "es": "Donde esta...?" },
+    { "en": "Here", "es": "Aqui" },
+    { "en": "There", "es": "Alli" },
+    { "en": "To the left", "es": "A la izquierda" },
+    { "en": "To the right", "es": "A la derecha" },
+    { "en": "Straight on", "es": "Todo recto" },
+    { "en": "Near", "es": "Cerca" },
+    { "en": "Far", "es": "Lejos" },
+    { "en": "Where is the toilet?", "es": "Donde esta el bano?" }
+  ]
+}

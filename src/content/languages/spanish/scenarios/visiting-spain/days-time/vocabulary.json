@@ -1,0 +1,14 @@
+[
+  { "en": "today", "es": "hoy", "category": "time" },
+  { "en": "tomorrow", "es": "manana", "category": "time", "note": "Same word as \"morning\" (la manana); context tells them apart." },
+  { "en": "yesterday", "es": "ayer", "category": "time" },
+  { "en": "Monday", "es": "lunes", "category": "days" },
+  { "en": "Tuesday", "es": "martes", "category": "days" },
+  { "en": "Wednesday", "es": "miercoles", "category": "days" },
+  { "en": "Thursday", "es": "jueves", "category": "days" },
+  { "en": "Friday", "es": "viernes", "category": "days" },
+  { "en": "Saturday", "es": "sabado", "category": "days" },
+  { "en": "Sunday", "es": "domingo", "category": "days" },
+  { "en": "open", "es": "abierto", "category": "status" },
+  { "en": "closed", "es": "cerrado", "category": "status" }
+]

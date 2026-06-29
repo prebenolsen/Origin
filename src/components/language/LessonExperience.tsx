@@ -2,7 +2,15 @@ import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import type { VocabItem } from '../../types/language';
 import { getScenarioBundle, isEnterable } from '../../lib/language/content';
-import { getAll, introduce, markSeen, recordReview, vocabId } from '../../lib/language/srs';
+import {
+  getAll,
+  getState,
+  introduce,
+  markSeen,
+  orderAdaptive,
+  recordReview,
+  vocabId,
+} from '../../lib/language/srs';
 import { getSelections, markComplete, setSelections } from '../../lib/language/profile';
 import { buildQuiz, type Level, type QuestionTarget, type VocabQuestion } from '../../lib/language/testGen';
 import TopBar from '../ui/TopBar';
@@ -151,6 +159,19 @@ function LessonRunner({ scenario }: { scenario: string }) {
   if (phase === 'block') {
     const blockWords = blocks[blockIndex] ?? [];
 
+    // Examples may only use words already introduced (no pre-teaching future
+    // vocab). Whole-word match so e.g. "no" doesn't match inside "noches".
+    const introducedEs = new Set(
+      blocks.slice(0, blockIndex + 1).flat().map((v) => vocabId(v.es)),
+    );
+    const usesWord = (es: string, sentence: string) =>
+      ` ${sentence.toLowerCase().replace(/[^\p{L} ]/gu, ' ').replace(/\s+/g, ' ').trim()} `.includes(
+        ` ${es.toLowerCase()} `,
+      );
+    const allowedExamples = (lesson?.examples ?? [])
+      .filter((ex) => vocab.every((v) => !usesWord(v.es, ex.es) || introducedEs.has(vocabId(v.es))))
+      .slice(0, 2);
+
     if (blockSub === 'teach') {
       return (
         <div className="flex h-full flex-col">
@@ -178,13 +199,13 @@ function LessonRunner({ scenario }: { scenario: string }) {
               ))}
             </div>
 
-            {blockIndex === 0 && lesson?.examples && lesson.examples.length > 0 && (
+            {allowedExamples.length > 0 && (
               <div className="mt-6">
                 <div className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-faint">
                   In use
                 </div>
                 <div className="space-y-2">
-                  {lesson.examples.slice(0, 2).map((ex, i) => (
+                  {allowedExamples.map((ex, i) => (
                     <div key={i} className="rounded-xl border border-line bg-surface px-4 py-3">
                       <div className="font-serif text-[1.05rem] text-text">{ex.es}</div>
                       <div className="mt-0.5 text-sm text-muted">{ex.en}</div>
@@ -229,7 +250,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
         label="Practice"
         requeueWrong
         regenerate={regenerate}
-        onResult={(t, correct) => recordReview(LANG, vocabId(t.es), correct)}
+        onResult={(t, correct, level) => recordReview(LANG, vocabId(t.es), correct, level)}
         onComplete={() => {
           if (blockIndex + 1 < totalBlocks) {
             setBlockIndex((b) => b + 1);
@@ -246,7 +267,13 @@ function LessonRunner({ scenario }: { scenario: string }) {
 
   /* --------------------------- full section review ---------------------- */
   if (phase === 'final') {
-    const targets = vocab.map((v) => ({ es: v.es, en: v.en, category: v.category }));
+    // Adaptive order (NOT introduction order): failed words first, then the
+    // rest, mastered last - and the per-word difficulty ramps with mastery.
+    const lessonStates = vocab
+      .map((v) => getState(LANG, vocabId(v.es)))
+      .filter((s): s is NonNullable<typeof s> => !!s);
+    const ordered = orderAdaptive(lessonStates, lessonStates.length);
+    const targets = ordered.map((s) => ({ es: s.es, en: s.en, category: s.category }));
     const questions: VocabQuestion[] = buildQuiz(targets, pool, {
       states: stateMap,
       template: bundle.personalize?.template,
@@ -256,7 +283,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
         questions={questions}
         title={`${bundle.scenario.title} · full review`}
         label="Section review"
-        onResult={(t, correct) => recordReview(LANG, vocabId(t.es), correct)}
+        onResult={(t, correct, level) => recordReview(LANG, vocabId(t.es), correct, level)}
         onComplete={() => setPhase('done')}
         onExit={exit}
         finishLabel="Finish"

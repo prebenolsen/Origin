@@ -1,9 +1,11 @@
 [
-  { "en": "what's your name", "es": "", "category": "small-talk" },
-  { "en": "my name is", "es": "", "category": "small-talk" },
-  { "en": "nice to meet you", "es": "", "category": "small-talk" },
-  { "en": "where are you from", "es": "", "category": "small-talk" },
-  { "en": "I'm from", "es": "", "category": "small-talk" },
-  { "en": "how are you", "es": "", "category": "small-talk" },
-  { "en": "very well", "es": "", "category": "small-talk" }
+  { "en": "my name is", "es": "me llamo", "category": "introductions", "note": "Literally \"I call myself\"; add your name: \"Me llamo Ana\"." },
+  { "en": "nice to meet you", "es": "mucho gusto", "category": "introductions" },
+  { "en": "I am from", "es": "soy de", "category": "introductions", "note": "Add your country or city: \"Soy de Noruega\"." },
+  { "en": "I am on holiday", "es": "estoy de vacaciones", "category": "introductions" },
+  { "en": "I am visiting Spain", "es": "estoy de visita en Espana", "category": "introductions" },
+  { "en": "I am a tourist", "es": "soy turista", "category": "introductions" },
+  { "en": "I speak a little Spanish", "es": "hablo un poco de espanol", "category": "introductions" },
+  { "en": "I don't speak Spanish well", "es": "no hablo bien espanol", "category": "introductions" },
+  { "en": "I understand a little", "es": "entiendo un poco", "category": "introductions" }
 ]

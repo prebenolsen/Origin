@@ -1,0 +1,8 @@
+{
+  "slug": "basic-needs",
+  "title": "Basic Needs",
+  "summary": "Cover the essentials - say 'I need' or 'I want', and ask for the toilet, water or the wifi.",
+  "icon": "🆘",
+  "kind": "standard",
+  "estMinutes": 6
+}

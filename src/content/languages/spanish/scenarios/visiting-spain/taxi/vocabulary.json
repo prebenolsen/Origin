@@ -1,9 +1,8 @@
 [
-  { "en": "take me to", "es": "", "category": "taxi" },
-  { "en": "how much does it cost", "es": "", "category": "taxi" },
-  { "en": "stop here", "es": "", "category": "taxi" },
-  { "en": "the airport", "es": "", "category": "taxi" },
-  { "en": "the station", "es": "", "category": "taxi" },
-  { "en": "the hotel", "es": "", "category": "taxi" },
-  { "en": "I don't understand", "es": "", "category": "taxi" }
+  { "en": "take me to", "es": "lleveme a", "category": "taxi", "note": "Add the place: \"Lleveme al hotel\"." },
+  { "en": "the hotel", "es": "el hotel", "category": "taxi" },
+  { "en": "the airport", "es": "el aeropuerto", "category": "taxi" },
+  { "en": "the station", "es": "la estacion", "category": "taxi" },
+  { "en": "how much is it", "es": "cuanto cuesta", "category": "taxi" },
+  { "en": "stop here", "es": "pare aqui", "category": "taxi" }
 ]

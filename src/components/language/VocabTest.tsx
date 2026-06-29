@@ -12,8 +12,8 @@ import Button from '../ui/Button';
 interface Props {
   questions: VocabQuestion[];
   title: string;
-  /** Called once per answered question with the SRS outcome. */
-  onResult: (target: QuestionTarget, correct: boolean) => void;
+  /** Called once per answered question with the SRS outcome + difficulty level. */
+  onResult: (target: QuestionTarget, correct: boolean, level: number) => void;
   /** Called from the result screen's primary button. */
   onComplete: (correct: number, total: number) => void;
   onExit: () => void;
@@ -85,7 +85,7 @@ export default function VocabTest({
     if (locked || !q) return;
     setLocked(true);
     setLastCorrect(isCorrect);
-    onResult(q.target, isCorrect);
+    onResult(q.target, isCorrect, q.level);
     if (isCorrect) {
       setCorrect((c) => c + 1);
       setMastered((m) => new Set(m).add(vocabId(q.target.es)));

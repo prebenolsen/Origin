@@ -46,6 +46,7 @@ create table origin_language_spanish_vocab_state (
   correct        int  not null default 0,
   incorrect      int  not null default 0,
   streak         int  not null default 0,
+  max_correct_level int not null default 0, -- highest level recalled (gates "strong")
   interval_days  int  not null default 0,  -- SM-2 interval
   ease           real not null default 2.5,-- SM-2 ease factor
   last_review    timestamptz,

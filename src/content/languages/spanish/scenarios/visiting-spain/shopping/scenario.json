@@ -3,6 +3,6 @@
   "title": "Shopping",
   "summary": "Buy clothes that fit - personalized to what you actually wear.",
   "icon": "👕",
-  "kind": "placeholder",
+  "kind": "personalized",
   "estMinutes": 8
 }

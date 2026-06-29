@@ -1,14 +1,14 @@
 [
-  { "en": "zero", "es": "", "category": "numbers" },
-  { "en": "one", "es": "", "category": "numbers" },
-  { "en": "two", "es": "", "category": "numbers" },
-  { "en": "three", "es": "", "category": "numbers" },
-  { "en": "four", "es": "", "category": "numbers" },
-  { "en": "five", "es": "", "category": "numbers" },
-  { "en": "ten", "es": "", "category": "numbers" },
-  { "en": "twenty", "es": "", "category": "numbers" },
-  { "en": "fifty", "es": "", "category": "numbers" },
-  { "en": "one hundred", "es": "", "category": "numbers" },
-  { "en": "how much", "es": "", "category": "prices" },
-  { "en": "euros", "es": "", "category": "prices" }
+  { "en": "how much is it", "es": "cuanto es", "category": "prices" },
+  { "en": "euros", "es": "euros", "category": "prices" },
+  { "en": "the price", "es": "el precio", "category": "prices" },
+  { "en": "one", "es": "uno", "category": "numbers" },
+  { "en": "two", "es": "dos", "category": "numbers" },
+  { "en": "three", "es": "tres", "category": "numbers" },
+  { "en": "four", "es": "cuatro", "category": "numbers" },
+  { "en": "five", "es": "cinco", "category": "numbers" },
+  { "en": "ten", "es": "diez", "category": "numbers" },
+  { "en": "twenty", "es": "veinte", "category": "numbers" },
+  { "en": "fifty", "es": "cincuenta", "category": "numbers" },
+  { "en": "one hundred", "es": "cien", "category": "numbers" }
 ]

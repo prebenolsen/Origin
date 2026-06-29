@@ -1,0 +1,17 @@
+{
+  "context": "Most travel trouble is just an unmet basic need - a toilet, a glass of water, the wifi code. You can solve almost all of them with one frame plus a noun, so you never have to build a full sentence to get what you need.",
+  "explanation": "Two openers do the heavy lifting: \"necesito\" (I need) and \"quiero\" (I want). Put either one in front of a thing and you've made a clear request. \"Necesito\" sounds a little more urgent; \"quiero\" plus \"por favor\" is the everyday ask.",
+  "examples": [
+    { "es": "Necesito un bano.", "en": "I need a toilet." },
+    { "es": "Quiero agua, por favor.", "en": "I want water, please." },
+    { "es": "Necesito ayuda.", "en": "I need help." }
+  ],
+  "phrases": [
+    { "en": "I need...", "es": "Necesito..." },
+    { "en": "I want...", "es": "Quiero..." },
+    { "en": "The toilet", "es": "El bano" },
+    { "en": "Water", "es": "Agua" },
+    { "en": "The wifi", "es": "El wifi" },
+    { "en": "The password", "es": "La contrasena" }
+  ]
+}

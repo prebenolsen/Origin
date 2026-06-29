@@ -1,0 +1,20 @@
+{
+  "context": "Question words are the highest-leverage words in any language - a single one plus a noun gets you an answer. As a visitor you can ask for almost anything with these, even before you can build full sentences. Learn them early and you stop feeling stuck.",
+  "explanation": "Start with the three you'll point with most: \"que\" (what), \"quien\" (who) and \"donde\" (where). On their own, or in front of a word you know, they already ask a real question.",
+  "examples": [
+    { "es": "Que?", "en": "What?", "note": "Ask someone to repeat or clarify." },
+    { "es": "Quien?", "en": "Who?", "note": "Asking who someone is." },
+    { "es": "Donde?", "en": "Where?", "note": "Asking where something is." }
+  ],
+  "phrases": [
+    { "en": "What", "es": "Que" },
+    { "en": "Who", "es": "Quien" },
+    { "en": "Where", "es": "Donde" },
+    { "en": "When", "es": "Cuando" },
+    { "en": "Why", "es": "Por que" },
+    { "en": "How", "es": "Como" },
+    { "en": "How much", "es": "Cuanto" },
+    { "en": "How many", "es": "Cuantos" },
+    { "en": "Which", "es": "Cual" }
+  ]
+}

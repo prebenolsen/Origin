@@ -1,0 +1,20 @@
+{
+  "context": "You will get stuck - someone speaks too fast, you miss a word, you take a wrong turn. The difference between a panic and a non-event is a few phrases that keep the exchange going instead of ending it. These are your safety net.",
+  "explanation": "Reach for these three first: \"no entiendo\" (I don't understand) tells the other person to try again, \"puede repetir?\" (can you repeat?) asks them to say it once more, and \"mas despacio, por favor\" (more slowly, please) usually fixes the problem on its own.",
+  "examples": [
+    { "es": "Perdon, no entiendo.", "en": "Sorry, I don't understand." },
+    { "es": "Puede repetir, por favor?", "en": "Can you repeat that, please?" },
+    { "es": "Mas despacio, por favor.", "en": "More slowly, please." }
+  ],
+  "phrases": [
+    { "en": "I don't understand", "es": "No entiendo" },
+    { "en": "Can you repeat that?", "es": "Puede repetir?" },
+    { "en": "More slowly, please", "es": "Mas despacio, por favor" },
+    { "en": "Can you help me?", "es": "Puede ayudarme?" },
+    { "en": "Do you speak English?", "es": "Habla ingles?" },
+    { "en": "I don't know", "es": "No se" },
+    { "en": "I'm lost", "es": "Estoy perdido" },
+    { "en": "How do you say...?", "es": "Como se dice...?" },
+    { "en": "One moment", "es": "Un momento" }
+  ]
+}

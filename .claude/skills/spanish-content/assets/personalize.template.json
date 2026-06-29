@@ -1,0 +1,15 @@
+{
+  "prompt": "What do you usually ___?",
+  "intro": "Pick only what is relevant to you - we teach only those words.",
+  "template": { "es": "Spanish frame with ___ slot", "en": "English frame with ___ slot" },
+  "groups": [
+    {
+      "category": "group-slug",
+      "label": "Group label",
+      "options": [
+        { "en": "option one", "es": "" },
+        { "en": "option two", "es": "" }
+      ]
+    }
+  ]
+}

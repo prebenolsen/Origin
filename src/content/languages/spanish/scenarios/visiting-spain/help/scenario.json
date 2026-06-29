@@ -1,0 +1,8 @@
+{
+  "slug": "help",
+  "title": "Problems & Help",
+  "summary": "Keep a conversation going when you're stuck - say you don't understand, ask for a repeat, or for help.",
+  "icon": "🙋‍♂️",
+  "kind": "standard",
+  "estMinutes": 6
+}
