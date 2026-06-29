@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Why did the Mongol defeat of the Seljuks at Kose Dag (1243) create an opportunity for the early Ottomans?",
+    "options": [
+      "It destroyed the Byzantine Empire's main army",
+      "It caused the Mongols to retreat permanently from Anatolia",
+      "It shattered Seljuk power, leaving a political vacuum the Ottomans could fill",
+      "It gave the Ottomans direct control over Constantinople"
+    ],
+    "answer": 2,
+    "explanation": "The Mongols' defeat of the Seljuks left Anatolia fragmented among dozens of small principalities. The Ottomans, positioned on the wealthy Byzantine frontier, were well placed to grow into this vacuum - turning the chaos that destroyed others into their own opportunity."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "What was the Gazi warrior ethos, and why did it matter to Ottoman expansion?",
+    "options": [
+      "A tribal loyalty code that bound the Kayı clan together",
+      "An ideology of holy frontier warfare that attracted fighters to the Ottoman cause",
+      "A taxation system that funded the Ottoman military campaigns",
+      "A diplomatic framework for dealing with Byzantine neighbors"
+    ],
+    "answer": 1,
+    "explanation": "The Gazi ethos framed warfare on the Islamic-Christian frontier as holy duty, attracting warriors from across Anatolia and beyond. It gave the Ottomans a powerful recruitment tool - a cause that drew motivated soldiers who saw conquest as both religious purpose and opportunity."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What was the Devsirme system, and what did it create?",
+    "options": [
+      "A land-grant system rewarding Ottoman cavalry officers with fiefs",
+      "A tax levied on Christian communities to fund the military",
+      "The practice of taking Christian boys to train as elite Muslim soldiers loyal to the sultan",
+      "A system of diplomatic tribute paid by vassal Balkan states"
+    ],
+    "answer": 2,
+    "explanation": "The Devsirme system took boys from Christian communities, converted them to Islam, and trained them as Janissaries - elite infantry loyal directly to the sultan rather than to any tribal or local lord. It created a professional standing army that was the backbone of Ottoman military power for two centuries."
+  },
+  {
+    "id": 4,
+    "type": "true-false",
+    "question": "Sultan Murad I survived the Battle of Kosovo (1389) and continued to rule the Ottoman Empire for years afterward.",
+    "answer": false,
+    "explanation": "Murad I was assassinated at the Battle of Kosovo in 1389 by a Serbian noble who feigned surrender to get close to him. Despite the sultan's death, the Ottomans won the battle decisively, and his son Bayezid I immediately took the throne."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "What was Murad I's key strategic innovation in the Balkans?",
+    "options": [
+      "He demanded immediate mass conversion of all conquered populations",
+      "He imposed vassalage on many Balkan states rather than always conquering them outright",
+      "He formed permanent military alliances with all neighboring Christian rulers",
+      "He avoided the Balkans entirely and focused on Anatolian expansion"
+    ],
+    "answer": 1,
+    "explanation": "Rather than destroying every Balkan state outright - which was costly and could provoke united resistance - Murad often forced them into vassalage: paying tribute and providing troops while keeping local rulers in place. This expanded Ottoman influence efficiently and created a network of client states."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What caused the Ottoman Interregnum (1402-1413)?",
+    "options": [
+      "A devastating plague that killed most of the Ottoman leadership",
+      "A successful Byzantine invasion that recaptured Adrianople",
+      "Timur's defeat and capture of Bayezid I, which triggered civil war among his sons",
+      "A coordinated European crusade that destroyed the Ottoman army"
+    ],
+    "answer": 2,
+    "explanation": "After Timur shattered the Ottoman army at Ankara and captured Bayezid I, the empire had no clear ruler. Bayezid's four sons fought each other for eleven years, nearly destroying what three generations had built. Mehmed I eventually emerged victorious and reunified the empire."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "What gave Mehmed II the decisive military advantage in the 1453 siege of Constantinople?",
+    "options": [
+      "A surprise night assault through the Golden Horn harbor",
+      "A plague inside the city that weakened the defenders",
+      "Massive purpose-built cannons and a fortress cutting off the city's supply routes",
+      "Betrayal by Byzantine commanders who opened the city gates"
+    ],
+    "answer": 2,
+    "explanation": "Mehmed's two key preparations were Rumeli Hisari - a fortress controlling the Bosphorus strait, cutting off Constantinople's Black Sea supplies - and Orban's giant cannons, which could destroy the ancient walls that had protected the city for centuries. Together they made the siege possible for the first time."
+  },
+  {
+    "id": 8,
+    "type": "matching",
+    "question": "Match each Ottoman sultan to their most significant achievement:",
+    "pairs": [
+      { "left": "Osman I", "right": "Founded the Ottoman state and declared independence in 1299" },
+      { "left": "Orhan", "right": "Captured Bursa, established the first capital, and created the Janissaries" },
+      { "left": "Murad I", "right": "Moved the capital to Adrianople and secured the Balkans at Kosovo" },
+      { "left": "Mehmed II", "right": "Conquered Constantinople in 1453, ending the Byzantine Empire" }
+    ],
+    "explanation": "Each sultan marked a decisive step forward: Osman founded the state, Orhan institutionalized it, Murad I made it a European power, and Mehmed II achieved the conquest that transformed it into a world empire."
+  },
+  {
+    "id": 9,
+    "type": "true-false",
+    "question": "After conquering Constantinople, Mehmed II expelled all Christians and Jews from the city.",
+    "answer": false,
+    "explanation": "Mehmed II actively protected the city's Christian and Jewish communities and encouraged immigration from across the empire. He understood that skilled merchants, artisans, and scholars were essential to rebuilding Istanbul as a great imperial capital. This pragmatic religious tolerance became a hallmark of Ottoman governance."
+  },
+  {
+    "id": 10,
+    "type": "ordering",
+    "question": "Place these events in the correct chronological order, from earliest to latest:",
+    "items": [
+      "Battle of Kosovo",
+      "Ottomans cross into Europe at Gallipoli",
+      "Fall of Constantinople",
+      "Battle of Kose Dag - Mongols crush the Seljuks",
+      "Battle of Ankara - Bayezid I captured by Timur"
+    ],
+    "correctOrder": [3, 1, 0, 4, 2],
+    "explanation": "The sequence is: Kose Dag (1243) created the Ottoman opportunity; Gallipoli (1354) opened Europe; Kosovo (1389) secured the Balkans; Ankara (1402) nearly destroyed the empire; Constantinople (1453) completed the rise."
+  }
+]

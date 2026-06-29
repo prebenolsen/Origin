@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "How did Bayezid II's approach to ruling differ from that of his conquering predecessors?",
+    "options": [
+      "He abandoned the empire's European territories to focus on Asia",
+      "He shifted from constant conquest toward consolidation, trade, and internal stability",
+      "He dismantled the Janissary corps to save money",
+      "He converted the empire from Sunni to Shia Islam"
+    ],
+    "answer": 1,
+    "explanation": "Where his father Mehmed the Conqueror had expanded relentlessly, Bayezid II turned inward - strengthening central authority, building infrastructure, and encouraging trade. His reign tested whether the empire could thrive by consolidating rather than constantly conquering."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "Why was welcoming the Sephardic Jews expelled from Spain in 1492 a shrewd move, not just a merciful one?",
+    "options": [
+      "It allowed Bayezid to tax them more heavily than other subjects",
+      "It gave the empire a pretext to invade Spain",
+      "The refugees brought skills, trade networks, and intellectual capital that enriched the empire",
+      "It forced the refugees to convert to Islam and join the army"
+    ],
+    "answer": 2,
+    "explanation": "The Jewish refugees included skilled artisans, merchants, and scholars who strengthened Ottoman cities economically and culturally. Welcoming them also reinforced the empire's image as a realm of relative religious freedom - a sharp contrast to the persecutions of Christian Europe."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "Selim I expanded the empire gradually over a long, peaceful reign focused on diplomacy.",
+    "answer": false,
+    "explanation": "Selim I, called 'the Grim,' ruled only about eight years (1512-1520) but transformed the empire through aggressive war. He crushed the Safavids, conquered the Mamluks, claimed the Caliphate, and nearly doubled Ottoman territory - the opposite of his father Bayezid's diplomatic approach."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What gave the Ottomans their decisive advantage over the Safavids at Chaldiran in 1514?",
+    "options": [
+      "Superior numbers of cavalry",
+      "Firearms and artillery against the Safavid horsemen",
+      "A surprise naval attack from the Caspian Sea",
+      "An alliance with the Mamluk Sultanate"
+    ],
+    "answer": 1,
+    "explanation": "Ottoman troops equipped with firearms and artillery overwhelmed the Safavid cavalry. The victory secured eastern Anatolia and demonstrated how gunpowder technology was reshaping warfare - while opening a centuries-long Sunni-Shia rivalry between the two empires."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "Why was Selim I's conquest of the Mamluks in 1516-1517 so significant beyond the territory it added?",
+    "options": [
+      "It gave the Ottomans their first access to the Mediterranean Sea",
+      "It ended the rivalry with the Safavid Empire for good",
+      "Control of Mecca and Medina let the sultan claim the title of Caliph of Islam",
+      "It forced the European powers to recognize Ottoman independence"
+    ],
+    "answer": 2,
+    "explanation": "Taking Egypt and Syria brought enormous wealth, but the deeper prize was guardianship of Islam's holiest cities, Mecca and Medina. This let Selim claim the Caliphate, making the Ottoman sultan the recognized religious and political leader of the entire Sunni Muslim world."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What did the 1529 Siege of Vienna represent in Ottoman history?",
+    "options": [
+      "The empire's first major defeat on land",
+      "The farthest reach of Ottoman expansion into Europe",
+      "The moment the Ottomans abandoned European conquest",
+      "The start of the Safavid rivalry"
+    ],
+    "answer": 1,
+    "explanation": "Although Suleiman failed to capture Vienna, reaching the Habsburg capital marked the high-water mark of Ottoman expansion into Europe. The shock of an Ottoman army at Vienna's walls confirmed the empire as the continent's most formidable military power."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "Why was Suleiman known to his own people as 'Kanuni,' the Lawgiver?",
+    "options": [
+      "He personally judged every legal case in the empire",
+      "He abolished Islamic law in favor of European codes",
+      "He overhauled the Ottoman legal system, creating a lasting framework of governance",
+      "He wrote the first written constitution in history"
+    ],
+    "answer": 2,
+    "explanation": "While Europe called him 'the Magnificent' for his conquests and splendor, Suleiman's own subjects valued his comprehensive reform of the legal system - from criminal law to land management. These laws gave the diverse empire a shared structure of governance that endured for centuries."
+  },
+  {
+    "id": 8,
+    "type": "multiple-choice",
+    "question": "What was most remarkable about the Ottoman response to their defeat at Lepanto in 1571?",
+    "options": [
+      "They immediately sued for peace and gave up the Mediterranean",
+      "They rebuilt an entire new fleet within a single year",
+      "They never went to sea again",
+      "They blamed and executed Admiral Barbarossa"
+    ],
+    "answer": 1,
+    "explanation": "Although Lepanto broke the myth of Ottoman naval invincibility, the empire rebuilt a complete new fleet within a year. This showed the vast resources and organizational capacity of the Ottoman state - proof that the defeat was a shock, not yet a true decline."
+  },
+  {
+    "id": 9,
+    "type": "true-false",
+    "question": "During the 'Sultanate of Women,' imperial women such as the Valide Sultan could wield more influence than senior male officials.",
+    "answer": true,
+    "explanation": "For over a century, mothers and favored consorts of sultans held real political power. By controlling access to the sultan and shaping policy, figures like Nurbanu, Safiye, and Kosem Sultan often exercised authority that surpassed that of high-ranking male officials - especially when sultans were young or weak."
+  },
+  {
+    "id": 10,
+    "type": "ordering",
+    "question": "Place these key moments of the Ottoman golden age in chronological order, earliest to latest:",
+    "items": [
+      "Battle of Lepanto",
+      "Bayezid II welcomes the Sephardic Jews",
+      "Selim I claims the Caliphate after defeating the Mamluks",
+      "Siege of Vienna",
+      "Battle of Chaldiran against the Safavids"
+    ],
+    "correctOrder": [1, 4, 2, 3, 0],
+    "explanation": "The sequence is: Bayezid welcomes the Jews (1492); Selim defeats the Safavids at Chaldiran (1514); Selim takes the Caliphate (1517); Suleiman besieges Vienna (1529); and the Holy League defeats the Ottoman fleet at Lepanto (1571)."
+  }
+]

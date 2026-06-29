@@ -1,0 +1,26 @@
+{
+  "title": "Rise of the Ottoman Empire",
+  "period": "1299-1453 CE",
+  "category": "history",
+  "subcategory": "medieval-world",
+  "summary": "From a small nomadic tribe on the edge of Anatolia, the Ottomans built one of history's greatest empires in just 150 years - through warfare, shrewd politics, and relentless ambition - culminating in the conquest of Constantinople.",
+  "context": {
+    "type": "map",
+    "headline": "A tribe becomes an empire",
+    "description": "In the late 1200s, a small Turkish tribe settled on the edge of the crumbling Byzantine Empire. Over 150 years they absorbed rivals, crossed into Europe, survived near-total collapse, and conquered Constantinople - ending the Byzantine Empire forever.",
+    "when": "1299-1453 CE",
+    "map": {
+      "markers": [
+        { "id": "anatolia", "label": "Anatolia", "lat": 40.0, "lng": 32.0, "role": "primary" },
+        { "id": "constantinople", "label": "Constantinople", "lat": 41.01, "lng": 28.97, "role": "primary" },
+        { "id": "adrianople", "label": "Adrianople", "lat": 41.68, "lng": 26.56, "role": "secondary" },
+        { "id": "kosovo", "label": "Kosovo", "lat": 42.66, "lng": 21.17, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "anatolia", "to": "constantinople", "label": "expansion" },
+        { "from": "adrianople", "to": "kosovo", "label": "Balkan campaigns" }
+      ],
+      "focus": [17, 37, 40, 47]
+    }
+  }
+}

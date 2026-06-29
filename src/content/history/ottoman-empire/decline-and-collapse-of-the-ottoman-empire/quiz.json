@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "How did New World silver contribute to the Ottoman Empire's 17th-century crisis?",
+    "options": [
+      "It made the empire's silver mines suddenly worthless to operate",
+      "Floods of silver into Europe collapsed its value, devaluing Ottoman currency and causing inflation",
+      "It allowed Europeans to buy up all Ottoman farmland",
+      "It forced the empire to switch entirely to a gold-based currency"
+    ],
+    "answer": 1,
+    "explanation": "As Spanish silver from the Americas flooded European markets, the metal's value collapsed - and because Ottoman money was silver-based, the currency was devalued with it. The resulting inflation eroded ordinary people's purchasing power and strained the state, an external shock the empire could not control."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "How did the Janissary corps change from an asset into a liability for the empire?",
+    "options": [
+      "They converted to Christianity and defected to Europe",
+      "They were disbanded and replaced entirely by foreign mercenaries",
+      "They became a privileged, self-interested force focused on palace intrigue rather than war",
+      "They refused to use any gunpowder weapons"
+    ],
+    "answer": 2,
+    "explanation": "Once the disciplined backbone of Ottoman power, the Janissaries grew into a privileged political class more interested in protecting their own status and meddling in palace politics than in fighting. They came to obstruct reform - most damagingly by resisting Selim III's New Order army."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "The 1683 Siege of Vienna was a decisive Ottoman victory that opened central Europe to further conquest.",
+    "answer": false,
+    "explanation": "The opposite is true. The siege failed when King Jan III Sobieski's relief army - led by the Polish winged Hussars - shattered the Ottoman forces. Vienna was the great turning point: it marked the start of the empire's long retreat and prompted the Holy League of 1684 to push the Ottomans out of central Europe."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What was the Tulip Era, and why did it end in revolt?",
+    "options": [
+      "A military campaign that ended when the army mutinied over unpaid wages",
+      "A period of cultural flourishing and westernization whose perceived decadence angered ordinary people and conservatives",
+      "A famine caused by farmers growing tulips instead of food",
+      "A religious reform movement crushed by the European powers"
+    ],
+    "answer": 1,
+    "explanation": "The Tulip Era (1718-1730) under Ahmed III brought peace, art, European-influenced culture, and the first Ottoman printing press. But while the elite enjoyed lavish tulip gardens, ordinary people faced hardship and rising taxes. The perceived decadence and foreign influence triggered the Patrona Halil revolt, which toppled the sultan."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "Why was Russia such a dangerous rival to the Ottomans in the 18th century?",
+    "options": [
+      "It sought warm-water ports and control of Black Sea trade, pushing into Ottoman territory like Crimea",
+      "It controlled the spice routes the Ottomans depended on",
+      "It had allied with the Safavid Empire to attack from two sides",
+      "It blockaded Istanbul and starved the city into submission"
+    ],
+    "answer": 0,
+    "explanation": "Russia's long-standing goal was access to warm-water ports and the Black Sea trade routes, which drove it south into Ottoman lands. The Treaty of Kucuk Kaynarca (1774) gave Russia Black Sea access and influence over Crimea, leading to Crimea's annexation in 1783 - a humiliating blow that exposed Ottoman military weakness."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What was the central aim of the Tanzimat reforms beginning in 1839?",
+    "options": [
+      "To restore the empire's traditional Islamic legal system and reject European ideas",
+      "To break the empire into autonomous provinces ruled by local lords",
+      "To centralize and strengthen the state by adopting Western practices, including legal equality for all subjects",
+      "To hand financial control of the empire to European banks"
+    ],
+    "answer": 2,
+    "explanation": "The Tanzimat ('reorganization') aimed to modernize and centralize the state to ensure its survival. Reformers introduced legal equality for all subjects, secular courts and schools, railways, and telegraphs. The reforms brought real change but also deepened reliance on European loans and failed to satisfy rising nationalist demands."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "Why did ethnic nationalism become so destructive to the multi-ethnic Ottoman Empire?",
+    "options": [
+      "It convinced the sultans to expel all non-Turkish subjects",
+      "It led diverse subject peoples to seek independence rather than equality within the empire",
+      "It was a Russian invention with no real support among Ottoman peoples",
+      "It only ever affected the empire's distant Arab provinces"
+    ],
+    "answer": 1,
+    "explanation": "For centuries the Ottomans had balanced many ethnic and religious groups under one rule. Nationalism, spread from European thought, led these peoples - starting in the Balkans with Greece - to want their own nation-states. Each successful revolt proved independence was possible, steadily dismembering the empire from within."
+  },
+  {
+    "id": 8,
+    "type": "true-false",
+    "question": "The Ottoman Empire entered World War I hoping to reverse its decline and regain lost territories.",
+    "answer": true,
+    "explanation": "The empire joined the Central Powers in 1914 precisely hoping to recover lost lands and halt its decline. The gamble was catastrophic: disasters like the Battle of Sarikamish, the Arab Revolt, and ultimately total defeat led to the Treaty of Sevres and the empire's collapse."
+  },
+  {
+    "id": 9,
+    "type": "multiple-choice",
+    "question": "What did the Treaty of Sevres (1920) trigger among Turkish nationalists?",
+    "options": [
+      "Immediate acceptance and a peaceful handover of power",
+      "A fierce backlash and a war of independence led by Mustafa Kemal Ataturk",
+      "An alliance with Russia to reconquer the Balkans",
+      "The restoration of the Ottoman sultan to full power"
+    ],
+    "answer": 1,
+    "explanation": "Sevres carved up the empire and left only a sliver of Anatolia under Ottoman rule - a humiliation many Turks refused to accept. The backlash fueled the Turkish War of Independence under Ataturk, whose victories at Sakarya and Dumlupinar led to the Treaty of Lausanne (1923) and the founding of the Republic of Turkey."
+  },
+  {
+    "id": 10,
+    "type": "ordering",
+    "question": "Place these milestones of Ottoman decline in chronological order, earliest to latest:",
+    "items": [
+      "Young Turk Revolution restores the constitution",
+      "Failed Siege of Vienna begins the long retreat",
+      "Republic of Turkey is proclaimed",
+      "Treaty of Kucuk Kaynarca gives Russia the Black Sea",
+      "Tanzimat reforms begin"
+    ],
+    "correctOrder": [1, 3, 4, 0, 2],
+    "explanation": "The sequence is: Vienna (1683) begins the retreat; Kucuk Kaynarca (1774) opens the Black Sea to Russia; the Tanzimat reforms begin (1839); the Young Turks restore the constitution (1908); and the Republic of Turkey is proclaimed (1923)."
+  }
+]

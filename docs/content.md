@@ -27,9 +27,9 @@
 | History | Medieval World | The Islamic Golden Age | 750 CE – 1258 CE | ------ |
 | History | Medieval World | The Crusades | 1095 CE – 1291 CE | ------ |
 | History | Medieval World | The Black Death | 1347 CE – 1351 CE | ------ |
-| History | Medieval World | Rise of the Ottoman Empire | 1299 CE – 1453 CE | ------ |
-| History | Ottoman Empire | The Ottoman Empire at its height | 1453 CE – 1700s | ------ |
-| History | Ottoman Empire | Decline and collapse of the Ottoman Empire | 1700s – 1922 CE | ------ |
+| History | Medieval World | Rise of the Ottoman Empire | 1299 CE – 1453 CE | DONE |
+| History | Ottoman Empire | The Ottoman Empire at its height | 1481 CE – 1650s | DONE |
+| History | Ottoman Empire | Decline and collapse of the Ottoman Empire | 1650s – 1924 CE | DONE |
 | History | Renaissance and Modern Thinking | The Renaissance | 1400 CE – 1600 CE | ------ |
 | History | Renaissance and Modern Thinking | The Printing Press | ~1450 CE | ------ |
 | History | Renaissance and Modern Thinking | The Scientific Revolution | 1500 CE – 1700 CE | ------ |

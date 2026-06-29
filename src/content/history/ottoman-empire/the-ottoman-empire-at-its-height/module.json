@@ -1,0 +1,29 @@
+{
+  "title": "The Ottoman Empire at its Height",
+  "period": "1481 CE - 1650s CE",
+  "category": "history",
+  "subcategory": "ottoman-empire",
+  "summary": "After the conquest of Constantinople, the Ottomans reached their golden age - mastering diplomacy, doubling their territory, claiming the Caliphate, ruling the Mediterranean, and building a civilization of law and art before power quietly shifted inside the palace itself.",
+  "accent": "#c79a4b",
+  "context": {
+    "type": "map",
+    "headline": "An empire that ruled three continents",
+    "description": "At its peak the Ottoman Empire stretched from the gates of Vienna to the holy cities of Arabia, and from Algiers to Persia. This is the story of how it shifted from endless conquest to consolidation, claimed leadership of the Muslim world, and dominated the Mediterranean - even as real power began to move from the battlefield into the imperial palace.",
+    "when": "1481 CE - 1650s CE",
+    "map": {
+      "markers": [
+        { "id": "istanbul", "label": "Istanbul", "lat": 41.01, "lng": 28.97, "role": "primary" },
+        { "id": "vienna", "label": "Vienna", "lat": 48.2, "lng": 16.37, "role": "secondary" },
+        { "id": "cairo", "label": "Cairo", "lat": 30.04, "lng": 31.24, "role": "secondary" },
+        { "id": "chaldiran", "label": "Chaldiran", "lat": 38.96, "lng": 44.3, "role": "secondary" },
+        { "id": "lepanto", "label": "Lepanto", "lat": 38.43, "lng": 21.32, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "istanbul", "to": "vienna", "label": "into Europe" },
+        { "from": "istanbul", "to": "cairo", "label": "conquest of the Mamluks" },
+        { "from": "istanbul", "to": "chaldiran", "label": "Safavid rivalry" }
+      ],
+      "focus": [12, 27, 47, 50]
+    }
+  }
+}

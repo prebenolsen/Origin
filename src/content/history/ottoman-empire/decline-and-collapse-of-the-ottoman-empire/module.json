@@ -1,0 +1,29 @@
+{
+  "title": "Decline and Collapse of the Ottoman Empire",
+  "period": "1650s CE - 1924 CE",
+  "category": "history",
+  "subcategory": "ottoman-empire",
+  "summary": "How an empire that spanned three continents slowly unravelled - hollowed out by inflation and corruption, halted at Vienna in 1683, outpaced by Russia and Europe, fractured by nationalism, and finally swept away by World War I and the birth of the Turkish Republic.",
+  "accent": "#9c5043",
+  "context": {
+    "type": "map",
+    "headline": "The slow unravelling of an empire",
+    "description": "For nearly three centuries the Ottoman Empire shrank from a feared superpower into the 'sick man of Europe.' Its retreat began at the gates of Vienna, accelerated under Russian and nationalist pressure, and ended in the ashes of World War I - replaced by a new Turkish republic with its capital at Ankara.",
+    "when": "1650s CE - 1924 CE",
+    "map": {
+      "markers": [
+        { "id": "istanbul", "label": "Istanbul", "lat": 41.01, "lng": 28.97, "role": "primary" },
+        { "id": "vienna", "label": "Vienna", "lat": 48.2, "lng": 16.37, "role": "secondary" },
+        { "id": "crimea", "label": "Crimea", "lat": 45.3, "lng": 34.5, "role": "secondary" },
+        { "id": "athens", "label": "Greece", "lat": 37.98, "lng": 23.73, "role": "secondary" },
+        { "id": "ankara", "label": "Ankara", "lat": 39.93, "lng": 32.86, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "vienna", "to": "istanbul", "label": "the retreat begins, 1683" },
+        { "from": "crimea", "to": "istanbul", "label": "Russian pressure" },
+        { "from": "istanbul", "to": "ankara", "label": "empire to republic" }
+      ],
+      "focus": [12, 35, 40, 50]
+    }
+  }
+}

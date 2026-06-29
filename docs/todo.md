@@ -2,12 +2,6 @@
 - Should be prioritized after Transatlantic Slave Trade
 
 
-# Front page sorting, can't have all just listed blatantly
-- Categories?
-- Timeline sorted?
-- Choose to sort by timeline vs location? Needs geo-tag? 
-- Other tags that can be useful? 
-
 # Israel-Palestine
 - Use maps for helping the user understand
 
@@ -48,10 +42,9 @@ Profile = motivation/progress/stats
 
 # Ask AI to generate step by step for Ollama to create content
 
-# Bugs:
-D:\OneDrive\Private prosjekter (VSCODE)\Origin\src\content\psychology\communication\becoming-a-better-conversationalist\timeline.json
+# Go through all "Maps" and "fix". 
+- Is water land? Is land water? Are colors used differently across the modules?
 
-Timeline and Story do not match. Error in code? It's the same timeline for each except last.
 
-# Frontpage
-- Grid instead of rows. Less info on cards. Save for when they user it.
+# Some modules have a natural next step, this should be suggested at the end of a story, and the user can do "Test me" or "Go to Abolition in the United States"
+

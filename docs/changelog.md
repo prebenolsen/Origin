@@ -4,6 +4,44 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.7.0] - 2026-06-29
+
+### Added - Decline and Collapse of the Ottoman Empire module
+
+- Authored all 5 content files for `history/ottoman-empire/decline-and-collapse-of-the-ottoman-empire` from raw source material (the placeholder JSON was a copy from another section).
+- `module.json`: geo map spanning Istanbul, Vienna, Crimea, Greece, and Ankara with period 1650s-1924 CE.
+- `story.json`: 31 cards covering 17th-century decay, the 1683 Siege of Vienna, the Tulip Era, the Russo-Turkish wars, the Tanzimat reforms, Balkan nationalism, the Young Turks, World War I, and the founding of the Republic of Turkey.
+- `timeline.json`: 12 milestones from the 1600s crises to the abolition of the sultanate and caliphate (1922-1924).
+- `quiz.json`: 10 questions (multiple-choice, true-false, ordering) on the causes and turning points of Ottoman decline.
+- `flashcards.json`: 15 flashcards covering key reforms, battles, treaties, people, and the empire's end.
+- Marked the module DONE in `content.md`.
+- Bumped version to **4.7.0** (MINOR - new content module).
+
+## [4.6.0] - 2026-06-29
+
+### Added - The Ottoman Empire at its Height module
+
+- Authored all 5 content files for `history/ottoman-empire/the-ottoman-empire-at-its-height` from raw source material.
+- `module.json`: geo map spanning Istanbul, Vienna, Cairo, Chaldiran, and Lepanto with period 1481-1650s CE.
+- `story.json`: 25 cards covering Bayezid II's consolidation, Selim I's conquests and the Caliphate, Suleiman the Magnificent's golden age, the Battle of Lepanto, and the Sultanate of Women.
+- `timeline.json`: 11 major milestones from Bayezid II (1481) to the Sultanate of Women (1600s).
+- `quiz.json`: 10 questions (multiple-choice, true-false, ordering) testing causes, turning points, and the shift from conquest to consolidation.
+- `flashcards.json`: 15 flashcards covering key sultans, battles, the Caliphate, and the rise of imperial women.
+- Marked the module DONE in `content.md`.
+- Bumped version to **4.6.0** (MINOR - new content module).
+
+## [4.5.0] - 2026-06-29
+
+### Added - Rise of the Ottoman Empire module
+
+- Authored all 5 content files for `history/medieval-world/rise-of-the-ottoman-empire` from raw source material.
+- `module.json`: geo map covering Anatolia, Constantinople, Adrianople, and Kosovo with period 1299-1453 CE.
+- `story.json`: 31 cards covering the full arc from the Kayı tribe's origins through Mehmed II's conquest of Constantinople.
+- `timeline.json`: 12 major milestones from the Mongol shockwave (1243) to the fall of Constantinople (1453).
+- `quiz.json`: 10 questions (multiple-choice, true-false, matching, ordering) testing understanding of causes and turning points.
+- `flashcards.json`: 15 flashcards covering key people, events, systems, and concepts.
+- Bumped version to **4.5.0** (MINOR - new content module).
+
 ## [4.4.1] - 2026-06-29
 
 ### Changed - category card layout redesigned

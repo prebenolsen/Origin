@@ -271,7 +271,7 @@ Short memorable headline.
 
 Content:
 
-2-5 sentences explaining one concept.
+2-7 sentences explaining one concept.
 
 Timeline:
 
