@@ -141,7 +141,7 @@ export default function HomeScreen() {
                 <code className="text-accent">src/content/</code>.
               </p>
             ) : (
-              <div className="grid gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {groups.map((group) => (
                   <CategoryCard key={group.slug} group={group} />
                 ))}

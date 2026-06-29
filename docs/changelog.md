@@ -4,6 +4,16 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [4.4.1] - 2026-06-29
+
+### Changed - category card layout redesigned
+
+- Reorganized category cards on the home screen into a responsive 2-column grid layout
+- Moved category name to the top of each card
+- Repositioned metadata (modules, topics, books count) to the bottom with a divider
+- Reduced metadata font size for visual hierarchy
+- Added `whitespace-nowrap` to ensure metadata stays on two lines: modules on row 1, topics & books on row 2
+
 ## [4.4.0] - 2026-06-28
 
 ### Changed - placeholder stage files now use scaffold objects (not empty arrays)

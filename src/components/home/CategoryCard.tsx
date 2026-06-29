@@ -19,8 +19,9 @@ export default function CategoryCard({ group }: { group: CategoryGroup }) {
   return (
     <Link
       to={`/c/${group.slug}`}
-      className="group relative block overflow-hidden rounded-card border border-line bg-surface
-                 p-5 transition hover:border-accent/50 hover:bg-surface-2 active:scale-[0.99]"
+      className="group relative flex flex-col overflow-hidden rounded-card border border-line bg-surface
+                 p-5 transition hover:border-accent/50 hover:bg-surface-2 active:scale-[0.99]
+                 min-h-[160px]"
     >
       {/* accent glow */}
       <div
@@ -28,30 +29,26 @@ export default function CategoryCard({ group }: { group: CategoryGroup }) {
         style={{ background: accent ?? 'var(--color-accent)' }}
       />
 
-      <div className="relative flex items-start justify-between gap-3">
-        <div className="min-w-0">
-          <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-faint">
-            {moduleTotal} module{moduleTotal === 1 ? '' : 's'} · {topicCount}{' '}
-            topic{topicCount === 1 ? '' : 's'}
-            {bookCount > 0 && (
-              <>
-                {' '}
-                · {bookCount} book{bookCount === 1 ? '' : 's'}
-              </>
-            )}
-          </div>
-          <h3 className="mt-1.5 text-[1.5rem] leading-tight">{group.name}</h3>
-        </div>
-        <span className="mt-1 shrink-0 text-muted transition group-hover:translate-x-0.5 group-hover:text-accent">
-          →
-        </span>
+      {/* Title at top */}
+      <div className="relative flex-1">
+        <h3 className="text-[1.5rem] leading-tight">{group.name}</h3>
       </div>
 
-      {subNames.length > 0 && (
-        <p className="relative mt-2 line-clamp-2 text-sm leading-relaxed text-muted">
-          {subNames.join(' · ')}
-        </p>
-      )}
+      {/* Metadata at bottom */}
+      <div className="relative pt-3 border-t border-line/50 space-y-1">
+        <div className="text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-muted whitespace-nowrap">
+          {moduleTotal} module{moduleTotal === 1 ? '' : 's'}
+        </div>
+        <div className="text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-muted whitespace-nowrap">
+          {topicCount} topic{topicCount === 1 ? '' : 's'}
+          {bookCount > 0 && (
+            <>
+              {' '}
+              · {bookCount} book{bookCount === 1 ? '' : 's'}
+            </>
+          )}
+        </div>
+      </div>
     </Link>
   );
 }
