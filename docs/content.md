@@ -153,6 +153,20 @@
 | Science  | Matter      | Chemistry and everyday reactions            | Modern chemistry            | ------ |
 | Science  | Physics     | Gravity, motion, and forces                 | 1600s – present             | ------ |
 | Science  | Physics     | Energy, electricity, and technology         | 1800s – present             | ------ |
+| Languages | Spanish · Visiting Spain | Greetings                       | Travel / personalized       | DONE |
+| Languages | Spanish · Visiting Spain | Supermarket (personalized)      | Travel / personalized       | DONE |
+| Languages | Spanish · Visiting Spain | Numbers                         | Travel / personalized       | PLACEHOLDER |
+| Languages | Spanish · Visiting Spain | Restaurant                      | Travel / personalized       | PLACEHOLDER |
+| Languages | Spanish · Visiting Spain | Taxi                            | Travel / personalized       | PLACEHOLDER |
+| Languages | Spanish · Visiting Spain | Shopping (personalized)         | Travel / personalized       | PLACEHOLDER |
+| Languages | Spanish · Visiting Spain | Directions                      | Travel / personalized       | PLACEHOLDER |
+| Languages | Spanish · Visiting Spain | Small Talk                      | Travel / personalized       | PLACEHOLDER |
+
+> Languages are authored differently from history modules — see
+> `docs/content-instructions.md` is for history; language scenarios live under
+> `src/content/languages/spanish/scenarios/<slug>/`. To fill a placeholder, complete the
+> Spanish column in that scenario's `vocabulary.json` (and set `scenario.json` "kind" to
+> "standard" or "personalized"). See `docs/architecture.md` → "Languages domain".
 
 Ollama:
 Countries - United States History + Timeline

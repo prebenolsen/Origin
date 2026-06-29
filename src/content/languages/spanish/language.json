@@ -1,0 +1,42 @@
+{
+  "code": "es",
+  "name": "Spanish",
+  "nativeName": "Español",
+  "flag": "🇪🇸",
+  "tagline": "Learn the Spanish you actually need - for where you are going.",
+  "goals": [
+    {
+      "slug": "visiting-spain",
+      "title": "Visiting Spain",
+      "summary": "Survive and connect on a trip - greetings, numbers, eating out, getting around and shopping.",
+      "icon": "🧳",
+      "available": true,
+      "scenarios": [
+        "greetings",
+        "numbers",
+        "restaurant",
+        "taxi",
+        "supermarket",
+        "shopping",
+        "directions",
+        "small-talk"
+      ]
+    },
+    {
+      "slug": "living-in-spain",
+      "title": "Living in Spain",
+      "summary": "Settle in - paperwork, the doctor, renting, and everyday neighbourhood life.",
+      "icon": "🏠",
+      "available": false,
+      "scenarios": []
+    },
+    {
+      "slug": "business-spanish",
+      "title": "Business Spanish",
+      "summary": "Meetings, email, introductions and negotiating in a professional setting.",
+      "icon": "💼",
+      "available": false,
+      "scenarios": []
+    }
+  ]
+}

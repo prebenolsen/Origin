@@ -1,0 +1,34 @@
+{
+  "prompt": "What do you wear?",
+  "intro": "Template only - fill in the Spanish for the clothes you actually wear, then change scenario.json \"kind\" to \"personalized\" to switch this on. Do not teach dresses or skirts unless the learner picks them.",
+  "template": { "es": "Tiene esto en ___?", "en": "Do you have this in ___?" },
+  "groups": [
+    {
+      "category": "tops",
+      "label": "Tops",
+      "options": [
+        { "en": "t-shirt", "es": "" },
+        { "en": "shirt", "es": "" },
+        { "en": "jumper", "es": "" },
+        { "en": "jacket", "es": "" }
+      ]
+    },
+    {
+      "category": "bottoms",
+      "label": "Bottoms",
+      "options": [
+        { "en": "jeans", "es": "" },
+        { "en": "chinos", "es": "" },
+        { "en": "shorts", "es": "" }
+      ]
+    },
+    {
+      "category": "shoes",
+      "label": "Shoes",
+      "options": [
+        { "en": "sneakers", "es": "" },
+        { "en": "boots", "es": "" }
+      ]
+    }
+  ]
+}

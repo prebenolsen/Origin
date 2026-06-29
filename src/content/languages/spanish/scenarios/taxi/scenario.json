@@ -1,0 +1,8 @@
+{
+  "slug": "taxi",
+  "title": "Taxi",
+  "summary": "Tell a driver where to go, ask the fare and stop where you want.",
+  "icon": "🚕",
+  "kind": "placeholder",
+  "estMinutes": 6
+}

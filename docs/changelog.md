@@ -4,6 +4,67 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [5.1.0] - 2026-06-29
+
+### Changed - Block-based lesson progression & mastery gating (Spanish)
+
+Reworked the lesson flow so a section is no longer a dictionary page that dumps all words
+then tests them at the end.
+
+- **Small learning batches**: a lesson now teaches ~3 words at a time
+  (`BLOCK_SIZE = 3`) - introduce a batch, practice it immediately, then move to the next.
+  Each batch shows the words + (on the first batch) the explanation and example sentences.
+- **Mastery before progression**: the per-batch practice runs in mastery mode - a word
+  answered wrong is **requeued** (regenerated as a harder recall question) and must be
+  recalled before the batch ends. Clicking through is no longer enough. (`VocabTest` is now
+  queue-based with `requeueWrong` + `regenerate`.)
+- **Mini review per batch + full section review**: every batch ends in active recall, and
+  after the last batch a full review tests every word introduced in the section.
+- **Category separation fix**: removed Restaurant/Cafe vocabulary that had leaked into
+  Greetings (`Un cafe, por favor`, and the standalone `por favor`). Greetings is now exactly
+  the brief's set of 11 words, ordered into clean batches (hola/adios/gracias →
+  buenos dias/buenas tardes/buenas noches → hasta luego/de nada/perdon → si/no).
+- **Memory tracking**: added `seen` (times_seen) to the vocab state, distinct from
+  `attempts` (times_tested); `markSeen()` is recorded when a batch is taught. Updated the
+  Supabase schema doc to the explicit `Vocabulary` / `UserVocabularyProgress` /
+  `ReviewAttempt` model.
+- Bumped version to **5.1.0** (MINOR - content + learning-loop change).
+
+## [5.0.0] - 2026-06-29
+
+### Added - Languages domain (Spanish) - a new app capability
+
+A goal-driven, personalized language-learning engine that lives alongside (and reuses)
+the existing UI, progress pattern, and design system. Not a Duolingo-style fixed
+curriculum: the learner picks a goal and is taught the words and phrases that situation
+actually needs.
+
+- **New domain & routes** (`/learn/spanish`, `.../path`, `.../lesson/:scenario`,
+  `.../review`, `.../review/:mode`), all lazy-loaded. Entry card added to the Home screen.
+- **Goal selection** - "Visiting Spain" generates the learning path (Greetings, Numbers,
+  Restaurant, Taxi, Supermarket, Shopping, Directions, Small Talk). "Living in Spain" and
+  "Business Spanish" stubbed as coming-soon.
+- **Greetings** - one fully authored module (context -> teach -> practice -> review).
+- **Supermarket** - personalization example: asks "What do you usually buy?", then teaches
+  only the selected words (e.g. cucumber -> pepino) merged with base navigation phrases.
+- **Vocabulary memory & spaced repetition** (`lib/language/srs.ts`): every word carries a
+  learning state (attempts, streak, review history, SM-2 ease/interval, next-review). Words
+  resurface for review at the right time; performance drives frequency.
+- **Adaptive testing** (`lib/language/testGen.ts`): difficulty rises with mastery
+  (recognise -> recall -> in-context -> produce) and **distractors are intelligent** -
+  drawn from the same category and spelling-similar words, never random unrelated ones.
+- **Review dashboard** - words learned / strong / to-improve / new, "Review all words",
+  "Practice weak words" (a "Words to improve" trainer), "This week's vocabulary", and
+  per-scenario testing.
+- **New data models** in `src/types/language.ts`; content auto-discovered from
+  `src/content/languages/spanish/**` (drop-in scenario folders, no code changes).
+- **Placeholder scenarios** for the remaining categories ship as easy-to-fill
+  `vocabulary.json` word-list templates (and a `personalize.json` template for Shopping);
+  scenarios marked `kind: "placeholder"` stay hidden from learners until authored.
+- State persists in localStorage today (same pattern as `lib/progress.ts`); see
+  `docs/language-supabase-schema.md` for the matching `origin_language_spanish` tables.
+- Bumped version to **5.0.0** (MAJOR - new app capability).
+
 ## [4.7.0] - 2026-06-29
 
 ### Added - Decline and Collapse of the Ottoman Empire module

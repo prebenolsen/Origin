@@ -21,6 +21,42 @@ src/content/
       other categories should omit `period` and rely on `context.when` if they need a
       lightweight time cue.
 
+## Languages domain (Spanish) - goal-driven & personalized
+
+The Languages domain is a separate, parallel subsystem from the history-style modules
+above. It is **goal-driven and personalized**, so it does not use `module.json`; instead
+it has its own content shape, its own registry, and a spaced-repetition memory engine.
+It **reuses** the existing UI kit (`components/ui/*`), the localStorage progress pattern,
+the design tokens, and `AppShell`.
+
+```
+src/content/languages/<lang>/
+  language.json                      # Language meta + goals (each goal lists its scenarios)
+  scenarios/<slug>/
+    scenario.json                    # meta + kind: standard | personalized | placeholder
+    lesson.json                      # context / explanation / examples / phrases
+    vocabulary.json                  # VocabItem[]  (the word list — what reviews track)
+    personalize.json                 # optional: "what do you buy/wear?" picker + sentence frame
+```
+
+- **Registry:** `src/lib/language/content.ts` auto-discovers the above with
+  `import.meta.glob` (same approach as the history registry). Drop in a scenario folder, no
+  code changes. `kind: "placeholder"` scenarios are hidden from learners (mirrors the
+  history `PLACEHOLDER:` convention).
+- **Memory / SRS:** `src/lib/language/srs.ts` tracks every word's learning state
+  (attempts, streak, review history, SM-2 ease/interval, next-review) in localStorage and
+  derives mastery (`new`/`learning`/`strong`) and weakness. `profile.ts` stores the chosen
+  goal, personalized word picks, and completed scenarios.
+- **Adaptive tests:** `src/lib/language/testGen.ts` raises difficulty with mastery
+  (recognise → recall → in-context → produce) and builds **intelligent distractors** from
+  the same category + spelling-similar words.
+- **Screens** (`src/components/language/`): `SpanishHome` (goal selection), `PathScreen`
+  (generated path), `LessonExperience` (context → teach → practice → review, with
+  `PersonalizeStep` first for personalized scenarios), `VocabTest` (shared adaptive runner),
+  `ReviewDashboard` + `ReviewSession`. All routes under `/learn/spanish` are lazy-loaded.
+- **Backend:** state is localStorage today; `docs/language-supabase-schema.md` defines the
+  matching Supabase tables (prefix `origin_language_spanish`) for a later sync.
+
 ## Tech stack
 
 - **React 19 + TypeScript**

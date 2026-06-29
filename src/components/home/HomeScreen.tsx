@@ -109,6 +109,28 @@ export default function HomeScreen() {
         ) : (
           /* Category picker */
           <>
+            {/* Languages — Spanish */}
+            <Link
+              to="/learn/spanish"
+              className="group relative mb-4 block overflow-hidden rounded-card border border-accent/30 bg-surface p-5 transition hover:border-accent/60 hover:bg-surface-2 active:scale-[0.99]"
+            >
+              <div className="pointer-events-none absolute -right-8 -top-10 h-32 w-32 rounded-full bg-accent opacity-25 blur-2xl transition group-hover:opacity-50" />
+              <div className="relative flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                    Languages · Personalized
+                  </div>
+                  <h3 className="mt-1.5 text-[1.5rem] leading-tight">Learn Spanish</h3>
+                  <p className="mt-1 text-sm text-muted">
+                    Pick your goal — learn the Spanish you actually need.
+                  </p>
+                </div>
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-accent/40 text-accent transition group-hover:bg-accent/10">
+                  🇪🇸
+                </span>
+              </div>
+            </Link>
+
             {/* Interactive geography challenge */}
             <Link
               to="/geo"

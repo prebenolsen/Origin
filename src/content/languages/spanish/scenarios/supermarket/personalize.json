@@ -1,0 +1,58 @@
+{
+  "prompt": "What do you usually buy?",
+  "intro": "Pick the things you actually put in your basket. We'll only teach you those words - nothing you don't need.",
+  "template": { "es": "Donde estan los/las ___?", "en": "Where are the ___?" },
+  "groups": [
+    {
+      "category": "vegetables",
+      "label": "Vegetables",
+      "options": [
+        { "en": "cucumber", "es": "pepino" },
+        { "en": "tomatoes", "es": "tomates" },
+        { "en": "peppers", "es": "pimientos" },
+        { "en": "onion", "es": "cebolla" },
+        { "en": "potatoes", "es": "patatas" },
+        { "en": "lettuce", "es": "lechuga" },
+        { "en": "carrots", "es": "zanahorias" },
+        { "en": "garlic", "es": "ajo" }
+      ]
+    },
+    {
+      "category": "fruit",
+      "label": "Fruit",
+      "options": [
+        { "en": "apples", "es": "manzanas" },
+        { "en": "bananas", "es": "platanos" },
+        { "en": "oranges", "es": "naranjas" },
+        { "en": "lemons", "es": "limones" },
+        { "en": "strawberries", "es": "fresas" }
+      ]
+    },
+    {
+      "category": "food",
+      "label": "Food",
+      "options": [
+        { "en": "chicken", "es": "pollo" },
+        { "en": "eggs", "es": "huevos" },
+        { "en": "fish", "es": "pescado" },
+        { "en": "bread", "es": "pan" },
+        { "en": "cheese", "es": "queso" },
+        { "en": "rice", "es": "arroz" },
+        { "en": "pasta", "es": "pasta" }
+      ]
+    },
+    {
+      "category": "drinks",
+      "label": "Drinks",
+      "options": [
+        { "en": "coffee", "es": "cafe" },
+        { "en": "sparkling water", "es": "agua con gas" },
+        { "en": "still water", "es": "agua sin gas" },
+        { "en": "milk", "es": "leche" },
+        { "en": "juice", "es": "zumo" },
+        { "en": "beer", "es": "cerveza" },
+        { "en": "wine", "es": "vino" }
+      ]
+    }
+  ]
+}

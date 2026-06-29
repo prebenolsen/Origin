@@ -1,0 +1,8 @@
+{
+  "slug": "greetings",
+  "title": "Greetings",
+  "summary": "Open and close any conversation politely - hello, goodbye, please and thank you.",
+  "icon": "👋",
+  "kind": "standard",
+  "estMinutes": 6
+}

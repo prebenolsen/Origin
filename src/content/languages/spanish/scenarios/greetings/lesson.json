@@ -1,0 +1,22 @@
+{
+  "context": "The first thing you do in any shop, bar or street in Spain is greet someone. A warm \"hola\" and a \"gracias\" instantly change how locals treat you - even if you say nothing else in Spanish. This is the single highest-value thing to learn first.",
+  "explanation": "\"Hola\" works at any time of day and is always safe. To be more specific, Spanish greetings change with the time: \"buenos dias\" in the morning, \"buenas tardes\" in the afternoon, \"buenas noches\" in the evening. The two words that make you sound polite anywhere are \"gracias\" (thank you) and the reply \"de nada\" (you're welcome). \"Perdon\" gets someone's attention or says sorry.",
+  "examples": [
+    { "es": "Hola. - Adios.", "en": "Hello. - Goodbye.", "note": "Opening and closing, any time of day." },
+    { "es": "Gracias. - De nada.", "en": "Thank you. - You're welcome.", "note": "The standard thank-you exchange." },
+    { "es": "Hola, buenos dias.", "en": "Hello, good morning.", "note": "A friendly way to enter a shop." },
+    { "es": "Perdon. Adios, hasta luego.", "en": "Excuse me. Goodbye, see you later." }
+  ],
+  "phrases": [
+    { "en": "Hello", "es": "Hola", "note": "Works at any time of day." },
+    { "en": "Goodbye", "es": "Adios" },
+    { "en": "See you later", "es": "Hasta luego" },
+    { "en": "Good morning", "es": "Buenos dias", "literal": "good days" },
+    { "en": "Good afternoon", "es": "Buenas tardes" },
+    { "en": "Good evening", "es": "Buenas noches" },
+    { "en": "Thank you", "es": "Gracias" },
+    { "en": "You're welcome", "es": "De nada", "literal": "of nothing" },
+    { "en": "Excuse me / Sorry", "es": "Perdon" },
+    { "en": "Yes / No", "es": "Si / No" }
+  ]
+}

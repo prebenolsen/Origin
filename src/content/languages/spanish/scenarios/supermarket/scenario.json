@@ -1,0 +1,8 @@
+{
+  "slug": "supermarket",
+  "title": "Supermarket",
+  "summary": "Find and ask for the things YOU actually buy - built from your own shopping list.",
+  "icon": "🛒",
+  "kind": "personalized",
+  "estMinutes": 8
+}

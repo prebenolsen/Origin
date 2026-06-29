@@ -1,0 +1,14 @@
+[
+  { "en": "zero", "es": "", "category": "numbers" },
+  { "en": "one", "es": "", "category": "numbers" },
+  { "en": "two", "es": "", "category": "numbers" },
+  { "en": "three", "es": "", "category": "numbers" },
+  { "en": "four", "es": "", "category": "numbers" },
+  { "en": "five", "es": "", "category": "numbers" },
+  { "en": "ten", "es": "", "category": "numbers" },
+  { "en": "twenty", "es": "", "category": "numbers" },
+  { "en": "fifty", "es": "", "category": "numbers" },
+  { "en": "one hundred", "es": "", "category": "numbers" },
+  { "en": "how much", "es": "", "category": "prices" },
+  { "en": "euros", "es": "", "category": "prices" }
+]

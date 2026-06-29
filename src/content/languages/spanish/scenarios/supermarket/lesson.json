@@ -1,0 +1,17 @@
+{
+  "context": "A Spanish supermarket is mostly self-service, but the moment you can't find something you need one sentence: \"Where is...?\". Pair that with the names of the things you actually buy and you can handle a whole shop on your own.",
+  "explanation": "To ask where something is, use \"donde esta\" for one thing and \"donde estan\" for several: \"Donde estan los tomates?\" (Where are the tomatoes?). To say you want something, use \"quiero\" (I want) or the softer \"quería\" - then the item: \"Quiero pan\". At the till you'll hear \"algo mas?\" (anything else?); answer \"no, gracias\" or \"eso es todo\" (that's all).",
+  "examples": [
+    { "es": "Donde estan las manzanas?", "en": "Where are the apples?", "note": "Use \"estan\" for plural items." },
+    { "es": "Quiero pollo, por favor.", "en": "I want chicken, please." },
+    { "es": "Algo mas? - No, eso es todo.", "en": "Anything else? - No, that's all." },
+    { "es": "Cuanto es?", "en": "How much is it?", "note": "Ask for the total at the till." }
+  ],
+  "phrases": [
+    { "en": "Where is the...?", "es": "Donde esta el/la...?" },
+    { "en": "Where are the...?", "es": "Donde estan los/las...?" },
+    { "en": "I want...", "es": "Quiero..." },
+    { "en": "How much is it?", "es": "Cuanto es?" },
+    { "en": "That's all", "es": "Eso es todo" }
+  ]
+}

@@ -6,5 +6,5 @@
 //   PATCH = UX / UI tweaks and fixes
 // See CLAUDE.md and changelog.md.
 
-export const VERSION = '4.7.0';
+export const VERSION = '5.1.0';
 export default VERSION;

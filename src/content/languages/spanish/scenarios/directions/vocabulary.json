@@ -1,0 +1,10 @@
+[
+  { "en": "left", "es": "", "category": "directions" },
+  { "en": "right", "es": "", "category": "directions" },
+  { "en": "straight on", "es": "", "category": "directions" },
+  { "en": "near", "es": "", "category": "directions" },
+  { "en": "far", "es": "", "category": "directions" },
+  { "en": "where is", "es": "", "category": "directions" },
+  { "en": "here", "es": "", "category": "directions" },
+  { "en": "there", "es": "", "category": "directions" }
+]
