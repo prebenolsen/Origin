@@ -4,6 +4,42 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.6.0] - 2026-06-30
+
+### Content - New goal "Everyday Life": first two scenarios (My Day, My Week)
+
+Started the Everyday Life journey - a second sentence-building goal that grows what the learner
+can say rather than adding niche vocabulary. Replaced the two retired "coming soon" goals
+(Business Spanish, Living in Spain) with this general-progression goal in `language.json`.
+
+- **1. My Day (`my-day`)** - describing a routine in order. `vocabulary.json` (12 words, four
+  blocks of three): the three parts of the day (por la mañana / tarde / noche), the core routine
+  verbs (me levanto - a first reflexive verb, desayuno, como), telling the time (a las), voy /
+  duermo, and the sequence words después / antes / tarde. `lesson.json` teaches the por + part-of-day
+  frame on the opening block. `sentences.json`: six builds like "me levanto a las siete" and
+  "por la mañana desayuno y después trabajo".
+- **2. My Week (`my-week`)** - how often you do things. `vocabulary.json` (9 words, three blocks):
+  siempre / a veces / normalmente, todos los días / todas las semanas / los domingos, and casi
+  siempre / casi nunca / una vez a la semana. Reuses nunca and a menudo from Unlock Spanish.
+  `sentences.json`: six builds like "nunca trabajo los domingos" and "como pescado una vez a la
+  semana".
+
+Every sentence-builder tile is a word already taught (or introduced in the same scenario). Removed
+the leftover `living-in-spain/` content-plan folder. Updated `words-taught.md` and `content.md`.
+
+## [6.5.0] - 2026-06-30
+
+### Content - More adjectives & antonyms in Making Descriptions
+
+Expanded `describing-things/vocabulary.json` from 6 to 12 words, adding the missing antonyms
+and two new opposite pairs so the words drill as opposites:
+
+- Added **bad** (malo), **ugly** (feo) to complete the good/bad and pretty/ugly pairs.
+- Added **many** (muchos) / **few** (pocos) and **often** (a menudo) / **never** (nunca).
+- Reordered the list so each opposite reads next to its pair across the four blocks of three.
+
+Updated `words-taught.md` with the new entries.
+
 ## [6.4.0] - 2026-06-30
 
 ### Content - Unlock Spanish scenarios 5-7: present tense, descriptions, capstone

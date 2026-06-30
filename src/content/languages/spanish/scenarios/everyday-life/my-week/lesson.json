@@ -1,0 +1,11 @@
+{
+  "context": "You can already say what you do. Now say how often - and your Spanish gains a personality. Always, sometimes, never: these tiny words turn a single fact into a habit.",
+  "explanation": "Three frequency words do most of the work: siempre (always), a veces (sometimes) and normalmente (usually). They sit right before the verb - siempre trabajo, a veces como tarde - or at the very start of the sentence. You already know nunca (never) and a menudo (often), so you can mix all five.",
+  "examples": [
+    { "es": "siempre trabajo por la mañana", "en": "I always work in the morning", "note": "siempre goes before the verb." },
+    { "es": "a veces como tarde", "en": "sometimes I eat late", "note": "a veces = sometimes." },
+    { "es": "normalmente desayuno a las siete", "en": "I usually have breakfast at seven", "note": "normalmente = usually." },
+    { "es": "nunca trabajo los domingos", "en": "I never work on Sundays", "note": "los + a day = every week on that day: los domingos = on Sundays." },
+    { "es": "como pescado una vez a la semana", "en": "I eat fish once a week", "note": "una vez a la semana = once a week." }
+  ]
+}

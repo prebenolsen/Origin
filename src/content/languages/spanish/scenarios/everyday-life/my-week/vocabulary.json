@@ -1,0 +1,11 @@
+[
+  { "en": "always", "es": "siempre", "category": "frequency", "note": "Goes before the verb: siempre trabajo = I always work." },
+  { "en": "sometimes", "es": "a veces", "category": "frequency", "note": "Two words, one idea: a veces como tarde = sometimes I eat late." },
+  { "en": "usually", "es": "normalmente", "category": "frequency", "note": "normalmente desayuno a las siete = I usually have breakfast at seven." },
+  { "en": "every day", "es": "todos los días", "category": "frequency", "note": "Literally \"all the days\"." },
+  { "en": "every week", "es": "todas las semanas", "category": "frequency", "note": "semana = week, so todas las semanas = every week." },
+  { "en": "on Sundays", "es": "los domingos", "category": "frequency", "note": "los + a day (in plural) means every week on that day: los domingos = on Sundays, los lunes = on Mondays." },
+  { "en": "almost always", "es": "casi siempre", "category": "frequency", "note": "casi = almost, so casi siempre = almost always." },
+  { "en": "almost never", "es": "casi nunca", "category": "frequency", "note": "casi + nunca (never, which you know) = almost never." },
+  { "en": "once a week", "es": "una vez a la semana", "category": "frequency", "note": "una vez = one time; a la semana = a week." }
+]

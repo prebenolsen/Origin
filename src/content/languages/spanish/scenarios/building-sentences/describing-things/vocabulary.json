@@ -1,8 +1,14 @@
 [
   { "en": "good", "es": "bueno", "category": "adjective", "note": "Masculine -o; feminine -a: \"un cafe bueno\" / \"una comida buena\"." },
+  { "en": "bad", "es": "malo", "category": "adjective", "note": "Feminine mala. The opposite of bueno: \"un dia malo\" / \"una idea mala\"." },
   { "en": "big", "es": "grande", "category": "adjective", "note": "Ends in -e, so it does not change for gender: \"un cafe grande\" / \"una mesa grande\"." },
-  { "en": "small", "es": "pequeño", "category": "adjective", "note": "Feminine pequeña. Say \"peh-KEH-nyo\" (ñ = ny)." },
+  { "en": "small", "es": "pequeño", "category": "adjective", "note": "Feminine pequeña. Say \"peh-KEH-nyo\" (ñ = ny). The opposite of grande." },
   { "en": "nice / pretty", "es": "bonito", "category": "adjective", "note": "Feminine bonita: \"una mesa bonita\"." },
+  { "en": "ugly", "es": "feo", "category": "adjective", "note": "Feminine fea. The opposite of bonito: \"un edificio feo\" / \"una casa fea\"." },
+  { "en": "cheap", "es": "barato", "category": "adjective", "note": "Feminine barata. The opposite of caro." },
   { "en": "expensive", "es": "caro", "category": "adjective", "note": "Feminine cara: \"la comida es cara\"." },
-  { "en": "cheap", "es": "barato", "category": "adjective", "note": "Feminine barata. The opposite of caro." }
+  { "en": "many", "es": "muchos", "category": "adjective", "note": "Agrees in gender and number: muchos (m.) / muchas (f.): \"muchos amigos\" / \"muchas mesas\"." },
+  { "en": "few", "es": "pocos", "category": "adjective", "note": "Feminine pocas. The opposite of muchos: \"pocos dias\" / \"pocas personas\"." },
+  { "en": "often", "es": "a menudo", "category": "adverb", "note": "An adverb of frequency: \"voy a menudo\" = I go often." },
+  { "en": "never", "es": "nunca", "category": "adverb", "note": "The opposite of a menudo: \"nunca como carne\" = I never eat meat." }
 ]

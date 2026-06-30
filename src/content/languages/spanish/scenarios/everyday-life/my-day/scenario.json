@@ -1,0 +1,8 @@
+{
+  "slug": "my-day",
+  "title": "My Day",
+  "summary": "Describe your routine in order - get up, work, eat, sleep - using the parts of the day.",
+  "icon": "🌅",
+  "kind": "standard",
+  "estMinutes": 6
+}

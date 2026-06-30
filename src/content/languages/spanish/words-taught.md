@@ -467,8 +467,87 @@ only recombine known ones into sentences.
 
 ### Making Descriptions (adjectives)
 - good
+- bad
 - big
 - small
 - nice / pretty
-- expensive
+- ugly
 - cheap
+- expensive
+- many
+- few
+- often
+- never
+
+
+# Everyday Life — Words Taught (English)
+
+Module 4. Like the grammar bridge, it mostly recombines known words into sentences, so the new
+entries are few and structural (routine verbs, parts of the day, frequency). Split into words
+carried over and words introduced here.
+
+---
+
+## Words from previous modules
+
+From **Visiting Spain** (Module 1) — 126 entries — **Meeting People** (Module 2) — 66 entries —
+and **Unlock Spanish** (Module 3) — 33 entries. See those module sections above for the full
+lists. Note that nunca (never) and a menudo (often) come from Unlock Spanish, and the nouns used
+in the sentence drills (fish, meat) come from Visiting Spain.
+
+---
+
+## Words introduced in this module
+
+21 entries.
+
+### My Day (daily routine)
+- in the morning
+- in the afternoon
+- at night
+- every morning
+- at (o'clock)
+- late
+- I get up
+- I have breakfast
+- I eat
+- I drink
+- I go
+- I sleep
+- I go home
+- I go to the gym
+- I return / I come back
+- I work
+- I study
+- I start
+- I finish
+- before
+- then / afterwards
+
+### My Week (habits & frequency)
+- always
+- sometimes
+- usually
+- every day
+- every week
+- on Sundays
+- almost always
+- almost never
+- once a week
+
+### My Home (where you live)
+- house
+- apartment
+- room
+- there is / there are
+- is / are (located)
+- kitchen
+- bedroom
+- bathroom
+- living room
+- floor
+- upstairs
+- downstairs
+- alone
+- with my family
+- with my friends

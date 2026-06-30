@@ -1,0 +1,17 @@
+[
+  { "en": "house", "es": "casa", "category": "home", "note": "casa = house or home. \"a casa\" (to home) you already saw in My Day: voy a casa." },
+  { "en": "apartment", "es": "apartamento", "category": "home", "note": "Vivo en un apartamento = I live in an apartment. In Spain you also hear \"piso\"." },
+  { "en": "room", "es": "habitación", "category": "home", "note": "A room in general, and often \"bedroom\" too: mi habitación = my room." },
+  { "en": "there is / there are", "es": "hay", "category": "grammar", "note": "One word for both: hay una cocina = there is a kitchen; hay dos baños = there are two bathrooms. It never changes." },
+  { "en": "is / are (located)", "es": "está / están", "category": "grammar", "note": "Use está for where one thing is, están for several: el baño está arriba; los dormitorios están abajo." },
+  { "en": "kitchen", "es": "cocina", "category": "room", "note": "Hay una cocina grande = there is a big kitchen. cocina also means \"I cook\" (from cocinar)." },
+  { "en": "bedroom", "es": "dormitorio", "category": "room", "note": "From dormir (to sleep) - the room you sleep in." },
+  { "en": "bathroom", "es": "baño", "category": "room", "note": "El baño está arriba = the bathroom is upstairs." },
+  { "en": "living room", "es": "salón", "category": "room", "note": "The main shared room. Hay un salón grande = there is a big living room." },
+  { "en": "floor", "es": "planta", "category": "level", "note": "A floor/storey of a building: la primera planta = the first floor." },
+  { "en": "upstairs", "es": "arriba", "category": "level", "note": "Where something is: el baño está arriba = the bathroom is upstairs." },
+  { "en": "downstairs", "es": "abajo", "category": "level", "note": "The opposite of arriba: la cocina está abajo = the kitchen is downstairs." },
+  { "en": "alone", "es": "solo", "category": "people", "note": "Vivo solo = I live alone. A woman says \"sola\"." },
+  { "en": "with my family", "es": "con mi familia", "category": "people", "note": "Vivo con mi familia = I live with my family." },
+  { "en": "with my friends", "es": "con mis amigos", "category": "people", "note": "mis (plural \"my\") because amigos is plural: con mis amigos = with my friends." }
+]

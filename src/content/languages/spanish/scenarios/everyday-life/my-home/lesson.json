@@ -1,0 +1,11 @@
+{
+  "context": "You can talk about your day - now talk about where you spend it. Describing your home is one of the first real conversations you will have: where you live, what is in it, and who you live with.",
+  "explanation": "Start with the place itself. casa is house or home, apartamento is an apartment, and habitación is a room inside it - \"vivo en un apartamento\" means I live in an apartment. Once you can name the place, you only need two small tools to describe it: hay (there is / there are) for what exists, and está (is located) for where things are. Those come next.",
+  "examples": [
+    { "es": "vivo en un apartamento", "en": "I live in an apartment", "note": "apartamento = apartment; casa = house/home." },
+    { "es": "hay una cocina grande", "en": "there is a big kitchen", "note": "hay = there is / there are - it never changes." },
+    { "es": "mi habitación es pequeña", "en": "my room is small", "note": "habitación = room; es describes what it is like." },
+    { "es": "el baño está arriba", "en": "the bathroom is upstairs", "note": "está tells you where something is located." },
+    { "es": "vivo con mi familia", "en": "I live with my family", "note": "con mi familia = with my family; vivo solo = I live alone." }
+  ]
+}

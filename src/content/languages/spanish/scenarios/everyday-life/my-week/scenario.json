@@ -1,0 +1,8 @@
+{
+  "slug": "my-week",
+  "title": "My Week",
+  "summary": "Say how often you do things - always, sometimes, never - and give your Spanish a personality.",
+  "icon": "📅",
+  "kind": "standard",
+  "estMinutes": 5
+}

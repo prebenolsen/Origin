@@ -1,0 +1,8 @@
+{
+  "slug": "my-home",
+  "title": "My Home",
+  "summary": "Describe where you live - the rooms, the floors and who you live with - using hay and está.",
+  "icon": "🏠",
+  "kind": "standard",
+  "estMinutes": 6
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "en": "I live in an apartment",
+    "es": "vivo en un apartamento",
+    "distractors": ["casa", "con mi familia"]
+  },
+  {
+    "en": "I live with my family",
+    "es": "vivo con mi familia",
+    "distractors": ["solo", "con mis amigos"]
+  },
+  {
+    "en": "There is a big kitchen",
+    "es": "hay una cocina grande",
+    "distractors": ["está", "baño"]
+  },
+  {
+    "en": "My room is small",
+    "es": "mi habitación es pequeña",
+    "distractors": ["está", "grande"]
+  },
+  {
+    "en": "The bathroom is upstairs",
+    "es": "el baño está arriba",
+    "distractors": ["abajo", "hay"]
+  },
+  {
+    "en": "The bedroom is downstairs",
+    "es": "el dormitorio está abajo",
+    "distractors": ["arriba", "salón"]
+  },
+  {
+    "en": "I live alone",
+    "es": "vivo solo",
+    "distractors": ["con mi familia", "habitación"]
+  },
+  {
+    "en": "There is a living room",
+    "es": "hay un salón",
+    "distractors": ["está", "cocina"]
+  }
+]

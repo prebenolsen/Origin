@@ -1,0 +1,42 @@
+[
+  {
+    "en": "I get up at seven",
+    "es": "me levanto a las siete",
+    "distractors": ["como", "por la noche"]
+  },
+  {
+    "en": "I work in the morning",
+    "es": "trabajo por la mañana",
+    "distractors": ["por la noche", "voy"]
+  },
+  {
+    "en": "I go to the gym after work",
+    "es": "voy al gimnasio después del trabajo",
+    "distractors": ["antes", "vuelvo"]
+  },
+  {
+    "en": "I come back home in the afternoon",
+    "es": "vuelvo a casa por la tarde",
+    "distractors": ["voy", "por la noche"]
+  },
+  {
+    "en": "I have breakfast and then I study",
+    "es": "desayuno y después estudio",
+    "distractors": ["antes", "duermo"]
+  },
+  {
+    "en": "I start at eight",
+    "es": "empiezo a las ocho",
+    "distractors": ["termino", "tarde"]
+  },
+  {
+    "en": "I finish late",
+    "es": "termino tarde",
+    "distractors": ["empiezo", "antes"]
+  },
+  {
+    "en": "I sleep at night",
+    "es": "duermo por la noche",
+    "distractors": ["por la mañana", "tarde"]
+  }
+]

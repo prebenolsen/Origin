@@ -1,0 +1,23 @@
+[
+  { "en": "in the morning", "es": "por la mañana", "category": "time", "note": "Literally \"in the morning\". Add it to any verb: trabajo por la mañana." },
+  { "en": "in the afternoon", "es": "por la tarde", "category": "time", "note": "The middle of the day, roughly 2pm to 8pm." },
+  { "en": "at night", "es": "por la noche", "category": "time", "note": "The same por + part-of-day pattern: por la noche = at night." },
+  { "en": "every morning", "es": "todas las mañanas", "category": "frequency", "note": "Literally \"all the mornings\". Use it for a daily habit: todas las mañanas me levanto a las siete." },
+  { "en": "at (o'clock)", "es": "a las", "category": "time", "note": "Use with a number to tell the time: a las siete = at seven, a las dos = at two." },
+  { "en": "late", "es": "tarde", "category": "time", "note": "como tarde = I eat late. It is also the \"tarde\" inside por la tarde." },
+  { "en": "I get up", "es": "me levanto", "category": "routine", "note": "A reflexive verb - the little \"me\" points the action back at you: me levanto = I get (myself) up." },
+  { "en": "I have breakfast", "es": "desayuno", "category": "routine", "note": "From desayunar. \"desayuno\" can also mean \"breakfast\" the meal." },
+  { "en": "I eat", "es": "como", "category": "routine", "note": "From comer = to eat. Same spelling as como (how), but here it means I eat. In Spain the main meal is around two." },
+  { "en": "I drink", "es": "bebo", "category": "routine", "note": "From beber = to drink: bebo café por la mañana = I drink coffee in the morning." },
+  { "en": "I go", "es": "voy", "category": "routine", "note": "From ir (to go) - irregular and worth memorising: voy = I go." },
+  { "en": "I sleep", "es": "duermo", "category": "routine", "note": "From dormir. The o turns into ue: dormir -> duermo = I sleep." },
+  { "en": "I go home", "es": "voy a casa", "category": "routine", "note": "voy + a casa = I go home. casa = home/house; \"a casa\" means \"to home\" without an article." },
+  { "en": "I go to the gym", "es": "voy al gimnasio", "category": "routine", "note": "a + el contracts to al: voy al gimnasio. To say \"I work out\" use hago ejercicio." },
+  { "en": "I return / I come back", "es": "vuelvo", "category": "routine", "note": "From volver. The o turns into ue: vuelvo a casa = I come back home." },
+  { "en": "I work", "es": "trabajo", "category": "routine", "note": "From trabajar. The noun \"el trabajo\" (work/job) is the same word: después del trabajo = after work." },
+  { "en": "I study", "es": "estudio", "category": "routine", "note": "From estudiar: estudio español por la noche = I study Spanish at night." },
+  { "en": "I start", "es": "empiezo", "category": "routine", "note": "From empezar. The e turns into ie: empiezo a las ocho = I start at eight." },
+  { "en": "I finish", "es": "termino", "category": "routine", "note": "From terminar: termino tarde = I finish late." },
+  { "en": "before", "es": "antes", "category": "sequence", "note": "The opposite of después: antes trabajo, después como." },
+  { "en": "then / afterwards", "es": "después", "category": "sequence", "note": "Links actions in order: como y después trabajo = I eat and then I work. With de it means \"after\": después del trabajo = after work." }
+]

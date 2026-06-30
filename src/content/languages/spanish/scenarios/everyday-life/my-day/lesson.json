@@ -1,0 +1,11 @@
+{
+  "context": "So far every action has stood on its own - I work, I live. But real life is a sequence: you get up, then you eat, later you sleep. This is where you start describing your day in order.",
+  "explanation": "Spanish splits the day into three parts: por la mañana (in the morning), por la tarde (in the afternoon) and por la noche (at night). Drop one onto a sentence you already know - \"trabajo por la mañana\" = I work in the morning - and suddenly you are saying when, not just what. Next you'll add the routine itself.",
+  "examples": [
+    { "es": "trabajo por la mañana", "en": "I work in the morning", "note": "por + part of the day = when something happens." },
+    { "es": "me levanto a las siete", "en": "I get up at seven", "note": "me levanto = I get up; a las + a number tells the time." },
+    { "es": "como a las dos", "en": "I eat at two", "note": "como here = I eat (same spelling as como = how)." },
+    { "es": "duermo por la noche", "en": "I sleep at night", "note": "duermo = I sleep." },
+    { "es": "por la mañana desayuno y después trabajo", "en": "in the morning I have breakfast and then I work", "note": "después = then - it links two actions in order." }
+  ]
+}

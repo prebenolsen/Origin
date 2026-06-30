@@ -181,6 +181,8 @@
 | Languages | Spanish · Unlock Spanish | I Do, You Do, They Do           | Grammar bridge / build      | DONE |
 | Languages | Spanish · Unlock Spanish | Making Descriptions             | Grammar bridge / build      | DONE |
 | Languages | Spanish · Unlock Spanish | Say Anything                    | Grammar bridge / build      | DONE |
+| Languages | Spanish · Everyday Life  | My Day - Daily Routine          | Everyday life / build       | DONE |
+| Languages | Spanish · Everyday Life  | My Week - Habits & Frequency    | Everyday life / build       | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language scenarios live under

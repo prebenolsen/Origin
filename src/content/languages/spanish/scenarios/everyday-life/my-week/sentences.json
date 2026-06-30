@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I always work in the morning",
+    "es": "siempre trabajo por la mañana",
+    "distractors": ["a veces", "por la noche"]
+  },
+  {
+    "en": "Sometimes I eat late",
+    "es": "a veces como tarde",
+    "distractors": ["siempre", "después"]
+  },
+  {
+    "en": "I never work on Sundays",
+    "es": "nunca trabajo los domingos",
+    "distractors": ["siempre", "los lunes"]
+  },
+  {
+    "en": "I usually have breakfast at seven",
+    "es": "normalmente desayuno a las siete",
+    "distractors": ["a veces", "a las dos"]
+  },
+  {
+    "en": "Every day I eat at two",
+    "es": "todos los días como a las dos",
+    "distractors": ["todas las semanas", "por la noche"]
+  },
+  {
+    "en": "I eat fish once a week",
+    "es": "como pescado una vez a la semana",
+    "distractors": ["todos los días", "carne"]
+  }
+]

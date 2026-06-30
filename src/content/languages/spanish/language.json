@@ -61,20 +61,16 @@
       ]
     },
     {
-      "slug": "business-spanish",
-      "title": "Business Spanish",
-      "summary": "Meetings, email, introductions and negotiating in a professional setting.",
-      "icon": "💼",
-      "available": false,
-      "scenarios": []
-    },
-    {
-      "slug": "living-in-spain",
-      "title": "Living in Spain",
-      "summary": "Settle in - paperwork, the doctor, renting, and everyday neighbourhood life.",
-      "icon": "🏠",
-      "available": false,
-      "scenarios": []
+      "slug": "everyday-life",
+      "title": "Everyday Life",
+      "summary": "Talk about your routine, habits, home and free time - and hold a basic conversation about daily life.",
+      "icon": "🏡",
+      "available": true,
+      "scenarios": [
+        "my-day",
+        "my-week",
+        "my-home"
+      ]
     }
   ]
 }
