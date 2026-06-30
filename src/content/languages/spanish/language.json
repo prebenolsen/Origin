@@ -84,7 +84,8 @@
       "icon": "🔥",
       "available": true,
       "scenarios": [
-        "perfect-fit"
+        "perfect-fit",
+        "talking-about-people"
       ]
     }
   ]

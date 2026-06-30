@@ -1,0 +1,82 @@
+[
+  {
+    "en": "Write: My friend is funny and friendly.",
+    "es": "mi amigo es divertido y simpatico",
+    "acceptable": [
+      "mi amiga es divertida y simpatica"
+    ],
+    "concepts": [
+      "ser for description",
+      "adjective agreement",
+      "connector y"
+    ],
+    "required": ["mi amigo/mi amiga", "es", "divertido/divertida", "simpatico/simpatica"],
+    "distractors": ["esta", "cansado"]
+  },
+  {
+    "en": "Write: My coworker is serious but friendly.",
+    "es": "mi companero de trabajo es serio pero simpatico",
+    "acceptable": [
+      "mi companera de trabajo es seria pero simpatica"
+    ],
+    "concepts": [
+      "occupation relationship label",
+      "connector pero",
+      "adjective agreement"
+    ],
+    "required": ["mi companero de trabajo", "es", "serio/seria", "pero", "simpatico/simpatica"],
+    "distractors": ["joven", "muy"]
+  },
+  {
+    "en": "Write: My sister is tall and my brother is short.",
+    "es": "mi hermana es alta y mi hermano es bajo",
+    "acceptable": [
+      "mi hermano es bajo y mi hermana es alta"
+    ],
+    "concepts": [
+      "two clauses with y",
+      "gender agreement alta/bajo"
+    ],
+    "required": ["mi hermana", "es", "alta", "mi hermano", "bajo"],
+    "distractors": ["mayor", "serio"]
+  },
+  {
+    "en": "Write: My grandparents are older.",
+    "es": "mis abuelos son mayores",
+    "acceptable": [
+      "mis abuelos son mayor"
+    ],
+    "concepts": [
+      "plural possession mis",
+      "son for plural"
+    ],
+    "required": ["mis abuelos", "son", "mayor/mayores"],
+    "distractors": ["es", "joven"]
+  },
+  {
+    "en": "Write: My boyfriend is young but serious.",
+    "es": "mi novio es joven pero serio",
+    "acceptable": [
+      "mi novia es joven pero seria"
+    ],
+    "concepts": [
+      "relationship noun",
+      "contrast with pero"
+    ],
+    "required": ["mi novio/mi novia", "es", "joven", "pero", "serio/seria"],
+    "distractors": ["divertido", "alta"]
+  },
+  {
+    "en": "Write: My stepbrother is friendly and funny.",
+    "es": "mi hermanastro es simpatico y divertido",
+    "acceptable": [
+      "mi hermanastra es simpatica y divertida"
+    ],
+    "concepts": [
+      "family relationship label",
+      "multiple adjectives"
+    ],
+    "required": ["mi hermanastro/mi hermanastra", "es", "simpatico/simpatica", "divertido/divertida"],
+    "distractors": ["bajo", "mayor"]
+  }
+]

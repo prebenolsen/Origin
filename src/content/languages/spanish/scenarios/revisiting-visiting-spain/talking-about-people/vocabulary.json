@@ -1,0 +1,21 @@
+[
+  { "en": "my friend (male)", "es": "mi amigo", "category": "people", "note": "Use with masculine person words and adjectives." },
+  { "en": "my friend (female)", "es": "mi amiga", "category": "people", "note": "Use with feminine adjective forms when needed." },
+  { "en": "my coworker", "es": "mi companero de trabajo", "category": "people", "note": "Feminine form: mi companera de trabajo." },
+
+  { "en": "my brother", "es": "mi hermano", "category": "family" },
+  { "en": "my sister", "es": "mi hermana", "category": "family" },
+  { "en": "my grandparents", "es": "mis abuelos", "category": "family", "note": "Use mis (plural)." },
+
+  { "en": "my boyfriend / my girlfriend", "es": "mi novio / mi novia", "category": "people" },
+  { "en": "my stepbrother / my stepsister", "es": "mi hermanastro / mi hermanastra", "category": "family", "note": "Less frequent but useful family label." },
+  { "en": "tall", "es": "alto / alta", "category": "descriptions", "note": "Agree adjective with person gender." },
+
+  { "en": "short", "es": "bajo / baja", "category": "descriptions", "note": "For height; not short length." },
+  { "en": "young", "es": "joven", "category": "descriptions", "note": "Same form for masculine/feminine singular." },
+  { "en": "older", "es": "mayor", "category": "descriptions", "note": "Preferred over viejo for people in neutral description." },
+
+  { "en": "funny", "es": "divertido / divertida", "category": "descriptions" },
+  { "en": "friendly", "es": "simpatico / simpatica", "category": "descriptions" },
+  { "en": "serious", "es": "serio / seria", "category": "descriptions" }
+]

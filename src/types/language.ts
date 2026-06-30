@@ -109,6 +109,12 @@ export interface Sentence {
   es: string;
   /** Optional extra wrong tiles added to the bank. */
   distractors?: string[];
+  /** Optional alternate accepted answers for production-style scoring. */
+  acceptable?: string[];
+  /** Optional key concepts this sentence is designed to test. */
+  concepts?: string[];
+  /** Optional required chunks/words that must appear for full credit. */
+  required?: string[];
 }
 
 /* -------------------------------- lesson.json --------------------------- */
@@ -136,6 +142,35 @@ export interface Lesson {
   examples?: LessonExample[];
   /** Full phrases the learner leaves able to say. */
   phrases?: Phrase[];
+  /** Optional reusable scoring rubric for sentence-production scenarios. */
+  answerEvaluation?: AnswerEvaluationConfig;
+}
+
+export interface AnswerEvaluationWeights {
+  /** Percentage weight for preserving core message. */
+  meaningCoverage: number;
+  /** Percentage weight for required chunks/words. */
+  requiredVocabulary: number;
+  /** Percentage weight for key grammar patterns. */
+  grammarPatterns: number;
+  /** Percentage weight for spelling tolerance. */
+  spellingTypos: number;
+}
+
+export interface AnswerEvaluationConfig {
+  /** Deterministic means no model inference; pure rule scoring. */
+  deterministic: boolean;
+  weights: AnswerEvaluationWeights;
+  /** Human-readable accepted tolerance notes for authors/UI. */
+  allow?: string[];
+  /** Human-readable hard-fail criteria for authors/UI. */
+  rejectIf?: string[];
+  /** Optional authored partial-credit example. */
+  partialCreditExample?: {
+    answer: string;
+    result: 'partial' | 'pass' | 'fail';
+    reason: string;
+  };
 }
 
 /* ----------------------------- personalize.json ------------------------- */

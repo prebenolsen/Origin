@@ -10,6 +10,8 @@
  */
 import { seededShuffle } from '../text';
 import { vocabId, masteryOf, type VocabState } from './srs';
+import type { Sentence } from '../../types/language';
+import type { AnswerEvaluationConfig } from '../../types/language';
 
 /** Minimal shape every question carries so the runner can grade + report. */
 export interface QuestionTarget {
@@ -65,6 +67,14 @@ export type VocabQuestion =
       bank: string[];
       /** Same as `tokens`; the ordered tiles a correct build must match. */
       answer: string[];
+      /** Optional accepted alternate answers for future production scoring. */
+      acceptable?: string[];
+      /** Optional author-defined concepts this item tests. */
+      concepts?: string[];
+      /** Optional required chunks/words for weighted scoring. */
+      required?: string[];
+      /** Optional lesson-level deterministic scoring config. */
+      answerEvaluation?: AnswerEvaluationConfig;
     };
 
 /** Normalize a typed answer for forgiving comparison (accents/case/punctuation). */
@@ -221,14 +231,14 @@ export function buildQuiz(
 
 /* ------------------------- sentence-builder quiz ------------------------ */
 
-export interface SentenceInput {
-  es: string;
-  en: string;
-  distractors?: string[];
-}
+export type SentenceInput = Sentence;
 
 /** Build one `build-sentence` question from a sentence. */
-export function buildSentenceQuestion(sentence: SentenceInput, seed: number): VocabQuestion {
+export function buildSentenceQuestion(
+  sentence: SentenceInput,
+  seed: number,
+  answerEvaluation?: AnswerEvaluationConfig,
+): VocabQuestion {
   const tokens = sentence.es.trim().split(/\s+/).filter(Boolean);
   const distractors = (sentence.distractors ?? []).map((d) => d.trim()).filter(Boolean);
   const bank = seededShuffle([...tokens, ...distractors], seed);
@@ -240,14 +250,18 @@ export function buildSentenceQuestion(sentence: SentenceInput, seed: number): Vo
     tokens,
     bank,
     answer: tokens,
+    acceptable: sentence.acceptable,
+    concepts: sentence.concepts,
+    required: sentence.required,
+    answerEvaluation,
   };
 }
 
 /** Build a word-bank sentence-builder quiz from a list of sentences. */
 export function buildSentenceQuiz(
   sentences: SentenceInput[],
-  opts: { seed?: number } = {},
+  opts: { seed?: number; answerEvaluation?: AnswerEvaluationConfig } = {},
 ): VocabQuestion[] {
   const baseSeed = opts.seed ?? Date.now() % 100000;
-  return sentences.map((s, i) => buildSentenceQuestion(s, baseSeed + i * 31));
+  return sentences.map((s, i) => buildSentenceQuestion(s, baseSeed + i * 31, opts.answerEvaluation));
 }

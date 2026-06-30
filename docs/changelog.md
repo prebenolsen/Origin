@@ -4,6 +4,86 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.12.2] - 2026-06-30
+
+### Engine - Wired production evaluator into sentence runtime flow
+
+Activated the deterministic production-scoring concept in the lesson runtime so authored
+rubric metadata is now used during sentence checks.
+
+Updated:
+
+- `src/lib/language/testGen.ts`
+  - sentence-builder questions now carry lesson-level `answerEvaluation`
+- `src/components/language/LessonExperience.tsx`
+  - passes `lesson.answerEvaluation` into sentence quiz generation
+- `src/components/language/VocabTest.tsx`
+  - build-sentence `Check` now uses `evaluateProductionAnswer(...)`
+  - pass/fail now follows deterministic weighted scoring instead of strict exact-order-only match
+  - added retry feedback panel with score and per-dimension breakdown (meaning/required/grammar/spelling)
+
+## [6.12.1] - 2026-06-30
+
+### Engine - Reusable sentence-production metadata and deterministic evaluator
+
+Prepared the language engine for future production-writing scenarios by adding shared,
+typed metadata and a reusable deterministic scoring utility.
+
+Added reusable schema support in `src/types/language.ts`:
+
+- `Sentence` now supports optional production metadata:
+  - `acceptable`
+  - `concepts`
+  - `required`
+- `Lesson` now supports optional `answerEvaluation` with weighted scoring config:
+  - meaning coverage
+  - required vocabulary
+  - grammar patterns
+  - spelling/typos
+
+Added reusable utility:
+
+- `src/lib/language/productionEval.ts`
+  - `evaluateProductionAnswer(...)`
+  - deterministic weighted scoring with partial-credit breakdown
+  - tolerant normalization (accents/case/punctuation)
+
+Updated quiz generation to preserve metadata for future runtime use:
+
+- `src/lib/language/testGen.ts`
+  - sentence-builder questions now carry optional `acceptable`, `concepts`, and `required`
+  - `SentenceInput` now reuses the shared `Sentence` type
+
+## [6.12.0] - 2026-06-30
+
+### Content - Added Spanish scenario: Talking About People
+
+Extended **Revisiting Visiting Spain** with a second scenario focused on producing useful
+descriptions of friends, family, and coworkers.
+
+Added:
+
+- `src/content/languages/spanish/scenarios/revisiting-visiting-spain/talking-about-people/`
+  - `scenario.json`
+  - `lesson.json`
+  - `vocabulary.json`
+  - `sentences.json`
+- Scenario wiring in `src/content/languages/spanish/language.json`
+
+Content design highlights:
+
+- Reuses previously taught high-frequency structure (`ser`, `y`, `pero`, possessives) and adds
+  the minimum new people-description vocabulary.
+- Includes production-oriented sentence prompts in `sentences.json` with expected answers,
+  acceptable variations, and key concepts metadata.
+- Adds deterministic answer-evaluation rubric metadata in `lesson.json` with weighted dimensions
+  (meaning, required vocabulary, grammar patterns, spelling/typos).
+
+Also updated:
+
+- `src/content/languages/spanish/words-taught.md`
+- `docs/content.md`
+
 ## [6.11.0] - 2026-06-30
 
 ### Content - Added Spanish module 5 opener: The Perfect Fit (Shopping v2)

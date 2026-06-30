@@ -1,11 +1,14 @@
 import { useMemo, useState } from 'react';
 import {
-  checkBuildSentence,
   checkProduce,
   type QuestionTarget,
   type VocabQuestion,
 } from '../../lib/language/testGen';
 import { vocabId } from '../../lib/language/srs';
+import {
+  evaluateProductionAnswer,
+  type ProductionCheckResult,
+} from '../../lib/language/productionEval';
 import TopBar from '../ui/TopBar';
 import ProgressBar from '../ui/ProgressBar';
 import Button from '../ui/Button';
@@ -76,6 +79,8 @@ export default function VocabTest({
   const [triedWrong, setTriedWrong] = useState(false);
   // Build-sentence: the SRS result is recorded once, on the first Check attempt.
   const [resultRecorded, setResultRecorded] = useState(false);
+  // Build-sentence: keep weighted score breakdown for retry feedback.
+  const [buildEval, setBuildEval] = useState<ProductionCheckResult | null>(null);
   const [answered, setAnswered] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [mastered, setMastered] = useState<Set<string>>(new Set());
@@ -114,7 +119,16 @@ export default function VocabTest({
 
   const checkBuilt = () => {
     if (locked || q.kind !== 'build-sentence') return;
-    const isCorrect = checkBuildSentence(q, placed.map((i) => q.bank[i]));
+    const built = placed.map((i) => q.bank[i]).join(' ');
+    const evalResult = evaluateProductionAnswer({
+      expected: q.answer.join(' '),
+      answer: built,
+      acceptable: q.acceptable,
+      required: q.required,
+      config: q.answerEvaluation,
+    });
+    setBuildEval(evalResult);
+    const isCorrect = evalResult.passed;
     // Record the SRS outcome once, on the FIRST attempt - retries/help don't
     // inflate the score, but the learner still must reach the right sentence.
     if (!resultRecorded) {
@@ -179,6 +193,7 @@ export default function VocabTest({
     setAutoPlaced([]);
     setTriedWrong(false);
     setResultRecorded(false);
+    setBuildEval(null);
   };
 
   if (phase === 'result' || !q) {
@@ -366,6 +381,21 @@ export default function VocabTest({
               {triedWrong && !locked && (
                 <div className="mt-3 rounded-2xl border border-wrong/40 bg-wrong/10 p-3 text-sm font-semibold text-wrong">
                   Not quite - try again.
+                </div>
+              )}
+
+              {buildEval && (
+                <div className="mt-3 rounded-2xl border border-line bg-surface p-3 text-xs text-muted">
+                  <div className="font-semibold text-text">Score: {Math.round(buildEval.score * 100)}%</div>
+                  <div className="mt-1">
+                    Meaning {Math.round(buildEval.breakdown.meaningCoverage * 100)}% · Required{' '}
+                    {Math.round(buildEval.breakdown.requiredVocabulary * 100)}% · Grammar{' '}
+                    {Math.round(buildEval.breakdown.grammarPatterns * 100)}% · Spelling{' '}
+                    {Math.round(buildEval.breakdown.spellingTypos * 100)}%
+                  </div>
+                  {buildEval.notes.length > 0 && (
+                    <div className="mt-1">{buildEval.notes.join(' · ')}</div>
+                  )}
                 </div>
               )}
 

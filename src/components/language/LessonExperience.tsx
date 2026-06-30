@@ -337,7 +337,10 @@ function LessonRunner({ scenario }: { scenario: string }) {
       en: pers(s.en),
       distractors: s.distractors,
     }));
-    const questions = buildSentenceQuiz(sentences, { seed: 7 });
+    const questions = buildSentenceQuiz(sentences, {
+      seed: 7,
+      answerEvaluation: bundle.lesson?.answerEvaluation,
+    });
     // A correct build demonstrates contextual (level-3) recall of every known
     // word in it - credit each word that's already in the learner's memory.
     const creditSentence = (sentenceEs: string, correct: boolean, level: number) => {

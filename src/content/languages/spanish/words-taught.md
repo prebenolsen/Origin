@@ -617,7 +617,7 @@ See those module sections above for full lists.
 
 ## Words introduced in this module
 
-18 entries.
+33 entries.
 
 ### The Perfect Fit
 - I am looking for
@@ -638,3 +638,20 @@ See those module sections above for full lists.
 - this one
 - that one
 - I will take it
+
+### Talking About People
+- my friend (male)
+- my friend (female)
+- my coworker
+- my brother
+- my sister
+- my grandparents
+- my boyfriend / my girlfriend
+- my stepbrother / my stepsister
+- tall
+- short
+- young
+- older
+- funny
+- friendly
+- serious

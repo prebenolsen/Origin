@@ -1,0 +1,43 @@
+{
+  "context": "Now you move from survival talk to social description. You can describe who someone is in your life and what they are like in one clear sentence.",
+  "explanation": "Spanish usually describes people with ser + adjective: \"mi amigo es divertido\". The key pattern is agreement: many adjectives change for gender (divertido/divertida, simpatico/simpatica, serio/seria).",
+  "examples": [
+    { "es": "Mi amigo es divertido y simpatico.", "en": "My friend is funny and friendly", "note": "Use ser for stable description." },
+    { "es": "Mi companera de trabajo es seria pero simpatica.", "en": "My coworker is serious but friendly", "note": "Reuse connector words y/pero from earlier modules." },
+    { "es": "Mi hermana es alta y mi hermano es bajo.", "en": "My sister is tall and my brother is short", "note": "Adjectives agree with each person." },
+    { "es": "Mis abuelos son mayores.", "en": "My grandparents are older", "note": "Plural family description with son." }
+  ],
+  "phrases": [
+    { "en": "my friend", "es": "mi amigo / mi amiga" },
+    { "en": "my coworker", "es": "mi companero de trabajo / mi companera de trabajo" },
+    { "en": "my brother / my sister", "es": "mi hermano / mi hermana" },
+    { "en": "my grandparents", "es": "mis abuelos" },
+    { "en": "is funny", "es": "es divertido / es divertida" },
+    { "en": "is friendly", "es": "es simpatico / es simpatica" },
+    { "en": "is serious", "es": "es serio / es seria" }
+  ],
+  "answerEvaluation": {
+    "deterministic": true,
+    "weights": {
+      "meaningCoverage": 40,
+      "requiredVocabulary": 30,
+      "grammarPatterns": 20,
+      "spellingTypos": 10
+    },
+    "allow": [
+      "small spelling mistakes",
+      "missing accents",
+      "minor word order mistakes"
+    ],
+    "rejectIf": [
+      "main meaning is missing",
+      "key relationship words are wrong (friend/family/coworker)",
+      "required verb pattern is removed so meaning breaks"
+    ],
+    "partialCreditExample": {
+      "answer": "mi amigo divertido",
+      "result": "partial",
+      "reason": "meaning mostly clear but missing required ser pattern"
+    }
+  }
+}
