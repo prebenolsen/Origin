@@ -1,0 +1,17 @@
+{
+  "context": "Family is one of the first things people ask about when they get to know you - \"tienes hermanos?\", \"tienes hijos?\". You don't need the whole family tree; a few words about the people closest to you, plus the verb \"tener\", cover almost every conversation.",
+  "explanation": "Talking about family runs on one verb: \"tengo\" (I have). Put a person after it - \"tengo un hermano\" - and ask it straight back with \"tienes?\" (do you have?). \"Mi familia\" (my family) sets up the whole topic.",
+  "examples": [
+    { "es": "Tengo un hermano y una hermana.", "en": "I have a brother and a sister." },
+    { "es": "Tienes hijos? - No, no tengo.", "en": "Do you have children? - No, I don't." },
+    { "es": "Mi madre se llama Ana y mi padre, Juan.", "en": "My mother is called Ana and my father, Juan." }
+  ],
+  "phrases": [
+    { "en": "My family", "es": "Mi familia" },
+    { "en": "I have...", "es": "Tengo...", "note": "Add a person: a brother, a daughter, a partner..." },
+    { "en": "I don't have...", "es": "No tengo..." },
+    { "en": "Do you have...?", "es": "Tienes...?" },
+    { "en": "My mother / my father", "es": "Mi madre / mi padre" },
+    { "en": "My parents", "es": "Mis padres" }
+  ]
+}

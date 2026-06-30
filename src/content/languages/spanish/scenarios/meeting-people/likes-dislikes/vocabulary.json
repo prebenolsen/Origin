@@ -1,0 +1,14 @@
+[
+  { "en": "I like", "es": "me gusta", "category": "opinion", "note": "Literally \"it pleases me\". Use for one thing or an action: \"me gusta el cafe\"." },
+  { "en": "I like (plural things)", "es": "me gustan", "category": "opinion", "note": "Use \"gustan\" for several things: \"me gustan los perros\"." },
+  { "en": "I don't like", "es": "no me gusta", "category": "opinion" },
+  { "en": "I love it", "es": "me encanta", "category": "opinion", "note": "Stronger than \"me gusta\"." },
+  { "en": "I hate", "es": "odio", "category": "opinion", "note": "Strong; for something milder say \"no me gusta\"." },
+  { "en": "I prefer", "es": "prefiero", "category": "opinion" },
+  { "en": "me too", "es": "a mi tambien", "category": "reaction", "note": "Agree with a like: \"Me gusta el mar.\" - \"A mi tambien!\"" },
+  { "en": "not me", "es": "a mi no", "category": "reaction" },
+  { "en": "do you like it?", "es": "te gusta", "category": "question", "note": "Ask back: \"A mi me gusta. Y a ti, te gusta?\"" },
+  { "en": "music", "es": "la musica", "category": "topic" },
+  { "en": "food", "es": "la comida", "category": "topic", "note": "Food in general: \"me encanta la comida española\"." },
+  { "en": "animals", "es": "los animales", "category": "topic" }
+]

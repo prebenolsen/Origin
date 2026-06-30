@@ -1,0 +1,8 @@
+[
+  { "en": "where are you from?", "es": "de donde eres", "category": "question", "note": "Say \"de DON-de E-res\". Answer with \"soy de...\"." },
+  { "en": "I'm from", "es": "soy de", "category": "origin", "note": "Add your country: \"soy de Noruega\"." },
+  { "en": "I live in", "es": "vivo en", "category": "origin", "note": "Where you live now (not where you're from): \"vivo en Madrid\"." },
+  { "en": "where do you live?", "es": "donde vives", "category": "question", "note": "Ask back. Say \"DON-de VEE-bes\"." },
+  { "en": "the country", "es": "el pais", "category": "topic", "note": "Say \"el pa-EES\". Plural \"los paises\"." },
+  { "en": "I'm Spanish", "es": "soy español", "category": "nationality", "note": "Nationality: \"-o\" for a man, \"-a\" for a woman (española). Keeps the \"ñ\"." }
+]

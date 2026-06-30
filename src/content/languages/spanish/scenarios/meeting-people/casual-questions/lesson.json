@@ -1,0 +1,17 @@
+{
+  "context": "A conversation stays alive when you ask back and react. A couple of easy follow-up questions and a few warm reactions do more than any long sentence - they show you're listening. Keep first-meeting questions light; age and \"how long have you been here?\" are normal small talk, anything more personal can wait.",
+  "explanation": "Ask age with \"cuantos años tienes?\" and answer \"tengo... años\" with a number in the middle. Sprinkle in \"de verdad?\" (really?) to show you're interested and keep them talking.",
+  "examples": [
+    { "es": "Cuantos años tienes? - Tengo treinta años. Y tu?", "en": "How old are you? - I'm thirty. And you?" },
+    { "es": "Vivo aqui desde enero. - De verdad? Que bien.", "en": "I've lived here since January. - Really? How nice." },
+    { "es": "Cuanto tiempo llevas aqui?", "en": "How long have you been here?" }
+  ],
+  "phrases": [
+    { "en": "How old are you?", "es": "Cuantos años tienes?" },
+    { "en": "I'm ... years old", "es": "Tengo ... años" },
+    { "en": "Really?", "es": "De verdad?" },
+    { "en": "How long have you been here?", "es": "Cuanto tiempo llevas aqui?" },
+    { "en": "How nice", "es": "Que bien" },
+    { "en": "Tell me", "es": "Cuentame" }
+  ]
+}

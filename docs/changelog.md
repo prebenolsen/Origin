@@ -4,6 +4,91 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [5.10.0] - 2026-06-30
+
+### Added - Five new "Meeting People" scenarios (Spanish)
+
+The Meeting People goal grew from 4 to 9 scenarios, completing the social chapter from the
+content plan. New scenarios, ordered so each hands the next the words it needs:
+
+- **Where You're From** (`where-youre-from`, standard) - "de donde eres?", "soy de",
+  "vivo en"; lesson examples weave in the learner's own country via the `{country_es}` token.
+- **Work & Study** (`what-you-do`, personalized) - the frame ("a que te dedicas?", "soy",
+  "trabajo en", "estudio") plus a profession picker so the job you drill is your real one.
+- **Casual Questions** (`casual-questions`, standard) - the follow-ups and reactions that
+  keep a chat alive: "cuantos años tienes?", "de verdad?", "que bien", "cuentame".
+- **Making Plans** (`invitations`, standard) - "te apetece...?", "quieres...?", "tomar algo",
+  "quedamos?", "vale", "quiza otro dia".
+- **Compliments & Small Talk** (`compliments-smalltalk`, standard) - "que bien hablas
+  español!", "me gusta tu...", "que guay", "como va todo?".
+
+Existing scenarios were reordered in `language.json` to match the plan's progression
+(intro -> origin -> work -> family -> hobbies -> likes -> questions -> plans -> compliments).
+The recurring "y tu?" beat is threaded through the lesson examples throughout.
+
+## [5.9.0] - 2026-06-30
+
+### Changed - Removed "Basic Needs", folded its essentials into Cafe (Spanish)
+
+The `basic-needs` scenario duplicated words already taught earlier in the path, so it has
+been removed from the Visiting Spain goal and its folder deleted. Its useful pieces now live
+where a traveller actually uses them:
+
+- **Cafe** gained a final batch - `necesito` (I need), `el baño` (the toilet) and
+  `los servicios` (the restrooms) - plus a lesson note and example, since a bar is the
+  easiest place to duck in for the toilet and ask with "Necesito un baño".
+- `quiero` (I want) was already taught in Cafe and Restaurant; `agua` (water) in both;
+  `el baño` (the toilet) in Directions; and `tengo` (I have) in Introductions and Family -
+  so the three request frames "I want / I need / I have" are all still covered.
+- `el wifi` and `la contraseña` (wifi / password) were dropped as requested.
+
+## [5.8.1] - 2026-06-30
+
+### Fixed - Personalize picker empty-state label (Spanish)
+
+The "pick something" button on personalized scenarios was hardcoded to "Pick what you buy"
+(a leftover from the supermarket scenario), so it read wrong on Shopping ("wear"), Hobbies
+("do") and Family. Replaced with the prompt-agnostic "Pick what applies to you"; the
+scenario-specific wording already lives in each picker's `intro`.
+
+## [5.8.0] - 2026-06-30
+
+### Added - "Family" scenario in Meeting People (Spanish)
+
+A personalized `family` scenario, placed second in the Meeting People path (right after the
+two-way intro). Family is social, not transactional, so it belongs in Phase 2 - taught on
+the `tener` verb the chapter already uses.
+
+- **Base frame (6 words):** `mi familia`, `tengo` / `no tengo`, `tienes?`, plus the
+  near-universal `mi madre` / `mi padre` (with `mis padres` in the notes).
+- **`personalize.json` picker** - "Who's in your family?" with Siblings / Children / Partner
+  groups, slotting into the frame `Tengo ___.`. Only the picked members are taught, so the
+  words are true for the learner and the partner term matches them (`pareja` / `novio` /
+  `novia` / `marido` / `mujer`) - no member is taught that doesn't apply.
+- Extended family (`abuelos`, `tios`, `primos`, ...) is intentionally deferred to a later
+  phase, per the small-batches rule.
+
+## [5.7.0] - 2026-06-30
+
+### Added - "Meeting People" goal, Phase 2 (Spanish)
+
+The social chapter where the language stops being transactional and becomes a
+conversation. New goal `meeting-people`, available now with its first three scenarios.
+Goal order corrected to phases: Visiting Spain -> Meeting People -> Business Spanish ->
+Living in Spain (Living moved to a later phase per the roadmap).
+
+- **`introductions-social`** (standard, 12 words) - the reciprocal two-way intro:
+  ask names and swap pleasantries, with the chapter's golden habit `y tu?` (and you?),
+  and the informal `tu` register contrasted with Visiting Spain's `usted`.
+- **`likes-dislikes`** (standard, 12 words) - the `gustar` centerpiece: `me gusta` /
+  `me gustan` taught as "it pleases me", plus reactions (`a mi tambien`, `te gusta?`).
+- **`hobbies-freetime`** (personalized) - frame verbs (`que haces`, `juego`, `toco`,
+  `hago`, `me gusta`) plus a `personalize.json` picker so the learner only drills the
+  hobbies they actually do (sport / music & arts / at home / outdoors).
+- Plan documented in
+  `src/content/languages/spanish/scenarios/meeting-people/content-plan.md`; the full ToC
+  (where-you're-from, what-you-do, casual-questions, invitations, compliments) ships next.
+
 ## [5.6.0] - 2026-06-30
 
 ### Changed - Visiting Spain content review pass (Spanish)

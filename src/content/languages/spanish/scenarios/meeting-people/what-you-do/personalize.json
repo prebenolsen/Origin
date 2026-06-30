@@ -1,0 +1,44 @@
+{
+  "prompt": "What do you do?",
+  "intro": "Pick your job or what you study - we'll only teach you that word, so the sentence you drill is true about you.",
+  "template": { "es": "Soy ___.", "en": "I'm a ___." },
+  "groups": [
+    {
+      "category": "tech-engineering",
+      "label": "Tech & engineering",
+      "options": [
+        { "en": "an engineer", "es": "ingeniero", "note": "Woman: \"ingeniera\"." },
+        { "en": "a programmer", "es": "programador", "note": "Woman: \"programadora\"." },
+        { "en": "a designer", "es": "diseñador", "note": "Woman: \"diseñadora\". Keeps the \"ñ\"." }
+      ]
+    },
+    {
+      "category": "health",
+      "label": "Health",
+      "options": [
+        { "en": "a doctor", "es": "medico", "note": "Woman: \"medica\"." },
+        { "en": "a nurse", "es": "enfermero", "note": "Woman: \"enfermera\"." },
+        { "en": "a dentist", "es": "dentista", "note": "Same for a man or a woman." }
+      ]
+    },
+    {
+      "category": "education-office",
+      "label": "Education & office",
+      "options": [
+        { "en": "a teacher", "es": "profesor", "note": "Woman: \"profesora\"." },
+        { "en": "a student", "es": "estudiante", "note": "Same for a man or a woman." },
+        { "en": "a lawyer", "es": "abogado", "note": "Woman: \"abogada\"." },
+        { "en": "an accountant", "es": "contable", "note": "Same for a man or a woman." }
+      ]
+    },
+    {
+      "category": "trades-service",
+      "label": "Trades & service",
+      "options": [
+        { "en": "a chef / cook", "es": "cocinero", "note": "Woman: \"cocinera\"." },
+        { "en": "a waiter", "es": "camarero", "note": "Woman: \"camarera\"." },
+        { "en": "self-employed", "es": "autonomo", "note": "Freelancer / own business. Woman: \"autonoma\"." }
+      ]
+    }
+  ]
+}

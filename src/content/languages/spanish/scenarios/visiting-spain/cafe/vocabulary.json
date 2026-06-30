@@ -10,5 +10,8 @@
   { "en": "a cake", "es": "un pastel", "category": "food" },
   { "en": "I would like", "es": "quiero", "category": "phrase", "note": "Literally \"I want\"; soften with \"por favor\"." },
   { "en": "the bill", "es": "la cuenta", "category": "phrase" },
-  { "en": "to take away", "es": "para llevar", "category": "phrase", "note": "Say \"para yeh-VAR\" (ll = y)." }
+  { "en": "to take away", "es": "para llevar", "category": "phrase", "note": "Say \"para yeh-VAR\" (ll = y)." },
+  { "en": "I need", "es": "necesito", "category": "phrase", "note": "Add the thing: \"Necesito un baño\". A touch more urgent than \"quiero\"." },
+  { "en": "the toilet", "es": "el baño", "category": "place", "note": "Say \"BAH-nyo\" (ñ = ny)." },
+  { "en": "the restrooms", "es": "los servicios", "category": "place", "note": "The word on the door in most Spanish bars; \"Donde estan los servicios?\"." }
 ]

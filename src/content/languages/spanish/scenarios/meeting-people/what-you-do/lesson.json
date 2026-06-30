@@ -1,0 +1,17 @@
+{
+  "context": "\"A que te dedicas?\" - what do you do? - is the second question everyone asks, right after where you're from. The frame is short and you can reuse it for anyone you meet.",
+  "explanation": "Ask with \"a que te dedicas?\", then answer with \"soy...\" plus your job (no \"a\" needed - \"soy profesor\") or \"trabajo en...\" plus the place you work.",
+  "examples": [
+    { "es": "A que te dedicas? - Soy profesor.", "en": "What do you do? - I'm a teacher." },
+    { "es": "Trabajo en un hospital.", "en": "I work at a hospital.", "note": "\"soy\" + the job; \"trabajo en\" + the place." },
+    { "es": "A que te dedicas? Y tu?", "en": "What do you do? And you?" }
+  ],
+  "phrases": [
+    { "en": "What do you do?", "es": "A que te dedicas?" },
+    { "en": "I am (a job)", "es": "Soy..." },
+    { "en": "I work at / in...", "es": "Trabajo en..." },
+    { "en": "I study...", "es": "Estudio..." },
+    { "en": "Where do you work?", "es": "Donde trabajas?" },
+    { "en": "A company", "es": "Una empresa" }
+  ]
+}

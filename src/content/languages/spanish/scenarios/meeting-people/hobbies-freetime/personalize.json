@@ -1,0 +1,48 @@
+{
+  "prompt": "What do you do for fun?",
+  "intro": "Pick the things you actually do - we'll only teach you those words, nothing you don't need.",
+  "template": { "es": "En mi tiempo libre, me gusta ___.", "en": "In my free time, I like to ___." },
+  "groups": [
+    {
+      "category": "sport",
+      "label": "Sport & exercise",
+      "options": [
+        { "en": "play football", "es": "jugar al futbol" },
+        { "en": "play tennis", "es": "jugar al tenis" },
+        { "en": "swim", "es": "nadar" },
+        { "en": "run", "es": "correr" },
+        { "en": "go to the gym", "es": "ir al gimnasio" }
+      ]
+    },
+    {
+      "category": "music-arts",
+      "label": "Music & arts",
+      "options": [
+        { "en": "play the guitar", "es": "tocar la guitarra" },
+        { "en": "sing", "es": "cantar" },
+        { "en": "dance", "es": "bailar" },
+        { "en": "paint", "es": "pintar" }
+      ]
+    },
+    {
+      "category": "at-home",
+      "label": "At home",
+      "options": [
+        { "en": "cook", "es": "cocinar" },
+        { "en": "read", "es": "leer" },
+        { "en": "watch series", "es": "ver series" },
+        { "en": "play video games", "es": "jugar a videojuegos" }
+      ]
+    },
+    {
+      "category": "outdoors",
+      "label": "Outdoors",
+      "options": [
+        { "en": "go hiking", "es": "hacer senderismo" },
+        { "en": "travel", "es": "viajar" },
+        { "en": "take photos", "es": "hacer fotos" },
+        { "en": "go to the beach", "es": "ir a la playa" }
+      ]
+    }
+  ]
+}

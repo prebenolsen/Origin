@@ -1,0 +1,17 @@
+{
+  "context": "Right after names, the next question is almost always \"where are you from?\". Spanish neatly separates where you're from (\"soy de\") and where you live now (\"vivo en\") - handy when those are two different places.",
+  "explanation": "Ask with \"de donde eres?\" (where are you from?), answer with \"soy de...\" plus your country, and add \"vivo en...\" for the place you live now. Then send it back: \"y tu?\".",
+  "examples": [
+    { "es": "De donde eres? - Soy de {country_es}.", "en": "Where are you from? - I'm from {country}." },
+    { "es": "Soy de {country_es}, pero vivo en Madrid.", "en": "I'm from {country}, but I live in Madrid.", "note": "\"soy de\" = origin; \"vivo en\" = where you live now." },
+    { "es": "Yo soy de Madrid. Y tu, de donde eres?", "en": "I'm from Madrid. And you, where are you from?" }
+  ],
+  "phrases": [
+    { "en": "Where are you from?", "es": "De donde eres?" },
+    { "en": "I'm from...", "es": "Soy de..." },
+    { "en": "I live in...", "es": "Vivo en..." },
+    { "en": "Where do you live?", "es": "Donde vives?" },
+    { "en": "The country", "es": "El pais" },
+    { "en": "I'm Spanish", "es": "Soy español" }
+  ]
+}

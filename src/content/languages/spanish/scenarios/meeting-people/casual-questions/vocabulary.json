@@ -1,0 +1,8 @@
+[
+  { "en": "how old are you?", "es": "cuantos años tienes", "category": "question", "note": "Literally \"how many years do you have?\". Keeps the \"ñ\": \"AN-yos\"." },
+  { "en": "I'm ... years old", "es": "tengo años", "category": "phrase", "note": "Put a number in the middle: \"tengo treinta años\"." },
+  { "en": "really?", "es": "de verdad", "category": "reaction", "note": "Show interest and keep them talking: \"De verdad?\"." },
+  { "en": "how long have you been here?", "es": "cuanto tiempo llevas aqui", "category": "question", "note": "A natural follow-up when you meet someone abroad." },
+  { "en": "how nice", "es": "que bien", "category": "reaction", "note": "React warmly to almost any good news." },
+  { "en": "tell me", "es": "cuentame", "category": "reaction", "note": "\"Go on, tell me more\". Say \"KWEN-ta-me\"." }
+]

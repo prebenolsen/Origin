@@ -1,0 +1,17 @@
+{
+  "context": "\"What do you do for fun?\" is one of the first questions you'll be asked - and a great one to ask back. Once you can name what you enjoy, conversations almost run themselves.",
+  "explanation": "The frame does the work: \"que haces?\" (what do you do?) to ask, \"en mi tiempo libre\" (in my free time) to set the scene, and \"me gusta\" plus an activity to answer - \"me gusta cocinar\".",
+  "examples": [
+    { "es": "Que haces en tu tiempo libre?", "en": "What do you do in your free time?" },
+    { "es": "En mi tiempo libre, me gusta cocinar.", "en": "In my free time, I like to cook." },
+    { "es": "Juego al futbol los sabados.", "en": "I play football on Saturdays.", "note": "\"juego\" for sports; \"toco\" for instruments." }
+  ],
+  "phrases": [
+    { "en": "What do you do?", "es": "Que haces?" },
+    { "en": "In my free time", "es": "En mi tiempo libre" },
+    { "en": "I like to...", "es": "Me gusta..." },
+    { "en": "I play (a sport)", "es": "Juego..." },
+    { "en": "I play (an instrument)", "es": "Toco..." },
+    { "en": "I do / I make", "es": "Hago..." }
+  ]
+}

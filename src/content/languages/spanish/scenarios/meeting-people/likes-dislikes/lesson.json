@@ -1,0 +1,20 @@
+{
+  "context": "Opinions are the heart of any conversation - the moment you can say what you like, you can talk about almost anything. Spanish builds likes in a way that feels backwards at first, so it's worth slowing down for one minute here.",
+  "explanation": "\"Me gusta\" doesn't mean \"I like\" - it literally means \"it pleases me\". So you say \"me gusta el cafe\" (coffee pleases me) for one thing, \"me gustan los perros\" for several, and \"no me gusta\" to turn it down.",
+  "examples": [
+    { "es": "Me gusta el cafe.", "en": "I like coffee." },
+    { "es": "Me gustan los perros.", "en": "I like dogs.", "note": "\"gustan\" (plural) when you like more than one thing." },
+    { "es": "Te gusta el futbol? - Si, me encanta.", "en": "Do you like football? - Yes, I love it." },
+    { "es": "Me encanta la musica. - A mi tambien!", "en": "I love music. - Me too!" }
+  ],
+  "phrases": [
+    { "en": "I like...", "es": "Me gusta...", "literal": "it pleases me" },
+    { "en": "I like... (plural)", "es": "Me gustan..." },
+    { "en": "I don't like...", "es": "No me gusta..." },
+    { "en": "I love it", "es": "Me encanta" },
+    { "en": "I hate...", "es": "Odio..." },
+    { "en": "I prefer...", "es": "Prefiero..." },
+    { "en": "Me too / not me", "es": "A mi tambien / a mi no" },
+    { "en": "Do you like it?", "es": "Te gusta?" }
+  ]
+}

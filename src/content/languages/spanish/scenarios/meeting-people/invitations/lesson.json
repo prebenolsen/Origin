@@ -1,0 +1,17 @@
+{
+  "context": "At some point a nice chat turns into a plan. In Spain the default invitation is \"tomar algo\" - to grab a coffee, a beer or a bite - and the verb for meeting up is \"quedar\". Knowing how to invite, accept, or gently say no is what turns an acquaintance into a friend.",
+  "explanation": "Invite with \"te apetece...?\" (do you fancy...?) or \"quieres...?\" (do you want to...?), and pair it with \"tomar algo\" - the catch-all \"have a drink or a bite\" that's the standard social plan in Spain.",
+  "examples": [
+    { "es": "Te apetece tomar algo?", "en": "Do you fancy a drink?" },
+    { "es": "Quieres tomar un cafe? - Vale!", "en": "Do you want to grab a coffee? - Okay!" },
+    { "es": "Quedamos a las ocho? - Quiza otro dia.", "en": "Shall we meet up at eight? - Maybe another day.", "note": "\"quedar\" = to meet up; \"quiza otro dia\" is a soft no." }
+  ],
+  "phrases": [
+    { "en": "Do you fancy...?", "es": "Te apetece...?" },
+    { "en": "Do you want to...?", "es": "Quieres...?" },
+    { "en": "To have a drink / bite", "es": "Tomar algo" },
+    { "en": "Shall we meet up?", "es": "Quedamos?" },
+    { "en": "Okay", "es": "Vale" },
+    { "en": "Maybe another day", "es": "Quiza otro dia" }
+  ]
+}

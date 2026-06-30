@@ -1,0 +1,8 @@
+[
+  { "en": "what do you do?", "es": "que haces", "category": "question", "note": "Ask about free time: \"Que haces en tu tiempo libre?\". Say \"AH-thes\" (c = \"th\")." },
+  { "en": "in my free time", "es": "en mi tiempo libre", "category": "phrase" },
+  { "en": "I like (to)", "es": "me gusta", "category": "opinion", "note": "\"me gusta\" + an activity: \"me gusta cocinar\"." },
+  { "en": "I play (a sport)", "es": "juego", "category": "verb", "note": "For sports and games: \"juego al futbol\"." },
+  { "en": "I play (an instrument)", "es": "toco", "category": "verb", "note": "For instruments: \"toco la guitarra\". (Use \"juego\" for sports.)" },
+  { "en": "I do / I make", "es": "hago", "category": "verb", "note": "\"hago deporte\" = I do sport; \"hago yoga\"." }
+]

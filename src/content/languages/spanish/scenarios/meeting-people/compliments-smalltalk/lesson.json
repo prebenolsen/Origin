@@ -1,0 +1,17 @@
+{
+  "context": "Compliments are social currency in Spain - a genuine one opens doors. Paired with a little easy small talk, they're the glue between topics and the thing that makes people enjoy your company. Keep them honest and non-romantic by default.",
+  "explanation": "The most useful compliment is \"que bien hablas español!\" (you speak Spanish so well!) - you'll hear it often and it's lovely to give back. \"Me gusta tu...\" lets you compliment almost anything: \"me gusta tu chaqueta\".",
+  "examples": [
+    { "es": "Que bien hablas español! - Gracias, todavia estoy aprendiendo.", "en": "You speak Spanish so well! - Thanks, I'm still learning." },
+    { "es": "Me gusta tu chaqueta. - Que guay, gracias!", "en": "I like your jacket. - How cool, thanks!" },
+    { "es": "Como va todo? - Todo bien, gracias.", "en": "How's everything going? - All good, thanks." }
+  ],
+  "phrases": [
+    { "en": "You speak Spanish so well!", "es": "Que bien hablas español!" },
+    { "en": "I like your...", "es": "Me gusta tu..." },
+    { "en": "How cool", "es": "Que guay" },
+    { "en": "How's everything going?", "es": "Como va todo?" },
+    { "en": "Looking sharp", "es": "Que guapo" },
+    { "en": "Thanks, you too", "es": "Gracias, igualmente" }
+  ]
+}

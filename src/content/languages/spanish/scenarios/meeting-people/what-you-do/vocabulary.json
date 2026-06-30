@@ -1,0 +1,8 @@
+[
+  { "en": "what do you do?", "es": "a que te dedicas", "category": "question", "note": "Literally \"what do you dedicate yourself to?\". The natural way to ask about work." },
+  { "en": "I am (a job)", "es": "soy", "category": "verb", "note": "Add your job, no \"a\" needed: \"soy profesor\"." },
+  { "en": "I work at / in", "es": "trabajo en", "category": "verb", "note": "Add the place: \"trabajo en un hospital\"." },
+  { "en": "I study", "es": "estudio", "category": "verb", "note": "For students: \"estudio medicina\"." },
+  { "en": "where do you work?", "es": "donde trabajas", "category": "question", "note": "Ask back. Say \"tra-BA-has\" (j = throaty h)." },
+  { "en": "a company", "es": "una empresa", "category": "topic", "note": "\"trabajo en una empresa de software\"." }
+]

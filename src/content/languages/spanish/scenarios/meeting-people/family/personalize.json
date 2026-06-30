@@ -1,0 +1,37 @@
+{
+  "prompt": "Who's in your family?",
+  "intro": "Pick the people in your family - we'll only teach you those, so the words you learn are actually true for you.",
+  "template": { "es": "Tengo ___.", "en": "I have ___." },
+  "groups": [
+    {
+      "category": "siblings",
+      "label": "Siblings",
+      "options": [
+        { "en": "a brother", "es": "un hermano" },
+        { "en": "a sister", "es": "una hermana" },
+        { "en": "two brothers", "es": "dos hermanos" },
+        { "en": "two sisters", "es": "dos hermanas" }
+      ]
+    },
+    {
+      "category": "children",
+      "label": "Children",
+      "options": [
+        { "en": "a son", "es": "un hijo", "note": "j = throaty h: \"EE-ho\"." },
+        { "en": "a daughter", "es": "una hija" },
+        { "en": "two children", "es": "dos hijos" }
+      ]
+    },
+    {
+      "category": "partner",
+      "label": "Partner",
+      "options": [
+        { "en": "a partner", "es": "pareja", "note": "Gender-neutral: \"tengo pareja\"." },
+        { "en": "a boyfriend", "es": "novio" },
+        { "en": "a girlfriend", "es": "novia" },
+        { "en": "a husband", "es": "marido" },
+        { "en": "a wife", "es": "mujer", "note": "j = throaty h: \"moo-HER\"." }
+      ]
+    }
+  ]
+}

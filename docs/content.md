@@ -163,9 +163,17 @@
 | Languages | Spanish · Visiting Spain | Shopping (personalized)         | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Getting Around (directions)     | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Taxi                            | Travel / survival           | DONE |
-| Languages | Spanish · Visiting Spain | Basic Needs                     | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Days & Simple Time              | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Problems & Help                 | Travel / survival           | DONE |
+| Languages | Spanish · Meeting People | Meeting Someone (two-way intro) | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Where You're From               | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Work & Study (personalized)     | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Family (personalized)           | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Hobbies & Free Time (personalized) | Social / conversation    | DONE |
+| Languages | Spanish · Meeting People | Likes & Dislikes (gustar)       | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Casual Questions                | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Making Plans (invitations)      | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Compliments & Small Talk        | Social / conversation       | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language scenarios live under

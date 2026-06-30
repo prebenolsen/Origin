@@ -1,0 +1,22 @@
+{
+  "context": "Meeting someone is where Spanish comes alive: it goes both ways. You're not just saying who you are - you're asking back and reacting. With new acquaintances and people your own age, Spaniards use the friendly \"tu\", not the formal \"usted\" you used in shops.",
+  "explanation": "Start with the exchange itself: ask \"como te llamas?\" (what's your name?), answer \"me llamo...\" (my name is...), and - the golden rule of this chapter - send it straight back with \"y tu?\" (and you?).",
+  "examples": [
+    { "es": "Me llamo {name}. Y tu, como te llamas?", "en": "My name is {name}. And you, what's your name?" },
+    { "es": "Mucho gusto. - Igualmente.", "en": "Nice to meet you. - Likewise." },
+    { "es": "Que tal? - Estoy bien, gracias. Y tu?", "en": "How's it going? - I'm fine, thanks. And you?" }
+  ],
+  "phrases": [
+    { "en": "What's your name?", "es": "Como te llamas?" },
+    { "en": "My name is...", "es": "Me llamo..." },
+    { "en": "And you?", "es": "Y tu?" },
+    { "en": "Pleased to meet you", "es": "Encantado" },
+    { "en": "Nice to meet you", "es": "Mucho gusto" },
+    { "en": "Likewise", "es": "Igualmente" },
+    { "en": "How are you?", "es": "Como estas?" },
+    { "en": "I'm fine", "es": "Estoy bien" },
+    { "en": "How's it going?", "es": "Que tal?" },
+    { "en": "Glad to hear it", "es": "Me alegro" },
+    { "en": "See you soon", "es": "Hasta pronto" }
+  ]
+}

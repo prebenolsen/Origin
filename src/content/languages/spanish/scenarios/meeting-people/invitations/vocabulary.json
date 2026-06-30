@@ -1,0 +1,8 @@
+[
+  { "en": "do you fancy...?", "es": "te apetece", "category": "question", "note": "The friendly way to invite: \"te apetece un cafe?\". Say \"a-pe-TE-the\"." },
+  { "en": "do you want to...?", "es": "quieres", "category": "question", "note": "Add an activity: \"quieres tomar algo?\"." },
+  { "en": "to have a drink / bite", "es": "tomar algo", "category": "phrase", "note": "Literally \"to have something\" - the default social invitation in Spain." },
+  { "en": "shall we meet up?", "es": "quedamos", "category": "question", "note": "From \"quedar\" = to meet up: \"quedamos a las ocho?\"." },
+  { "en": "okay", "es": "vale", "category": "reaction", "note": "The all-purpose Spanish \"okay\". You'll hear it constantly." },
+  { "en": "maybe another day", "es": "quiza otro dia", "category": "phrase", "note": "A soft, polite no." }
+]

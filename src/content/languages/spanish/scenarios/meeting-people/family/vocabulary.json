@@ -1,0 +1,8 @@
+[
+  { "en": "my family", "es": "mi familia", "category": "family", "note": "Say \"mi fa-MEE-lya\"." },
+  { "en": "I have", "es": "tengo", "category": "verb", "note": "Add a person: \"tengo un hermano\"." },
+  { "en": "do you have?", "es": "tienes", "category": "question", "note": "Ask back: \"tienes hijos?\". Say \"TYEH-nes\"." },
+  { "en": "my mother", "es": "mi madre", "category": "family", "note": "\"madre\" = mother; informally \"mama\"." },
+  { "en": "my father", "es": "mi padre", "category": "family", "note": "\"padre\" = father; informally \"papa\". Plural \"mis padres\" = my parents." },
+  { "en": "I don't have", "es": "no tengo", "category": "verb", "note": "\"No tengo hermanos\" = I don't have any siblings." }
+]

@@ -76,7 +76,7 @@ export default function PersonalizeStep({ data, initial = [], onDone, onExit }: 
       <div className="border-t border-line-soft bg-ink/80 p-5 backdrop-blur">
         <Button full disabled={count === 0} onClick={() => onDone(selected)}>
           {count === 0
-            ? 'Pick what you buy'
+            ? 'Pick what applies to you'
             : `Build my lesson · ${count} word${count === 1 ? '' : 's'}`}
         </Button>
       </div>

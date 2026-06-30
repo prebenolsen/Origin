@@ -1,8 +1,8 @@
 {
   "slug": "cafe",
   "title": "Cafe",
-  "summary": "Order a coffee or a beer at the bar and pay - the quick cafe basics.",
+  "summary": "Order a coffee or a beer at the bar, pay, and find the toilet - the quick cafe basics.",
   "icon": "☕",
   "kind": "standard",
-  "estMinutes": 6
+  "estMinutes": 7
 }

@@ -1,0 +1,14 @@
+[
+  { "en": "what's your name?", "es": "como te llamas", "category": "question", "note": "Literally \"what do you call yourself?\". Say \"KO-mo te YA-mas\" (ll = y)." },
+  { "en": "my name is", "es": "me llamo", "category": "social", "note": "Answer with your name: \"Me llamo Preben\"." },
+  { "en": "and you?", "es": "y tu", "category": "reaction", "note": "The golden phrase of this chapter - ask the question straight back." },
+  { "en": "pleased to meet you", "es": "encantado", "category": "social", "note": "Masculine form (said by a man)." },
+  { "en": "nice to meet you", "es": "mucho gusto", "category": "social" },
+  { "en": "likewise", "es": "igualmente", "category": "reaction", "note": "Reply to \"encantado\" or \"mucho gusto\"." },
+  { "en": "how are you?", "es": "como estas", "category": "question", "note": "Informal \"tu\" form. Say \"KO-mo es-TAS\"." },
+  { "en": "I'm fine", "es": "estoy bien", "category": "state" },
+  { "en": "how's it going?", "es": "que tal", "category": "question", "note": "Casual; answer \"bien\" or \"muy bien\"." },
+  { "en": "glad to hear it", "es": "me alegro", "category": "reaction", "note": "React to good news: \"Estoy bien.\" - \"Me alegro!\"" },
+  { "en": "see you soon", "es": "hasta pronto", "category": "greetings" },
+  { "en": "see you around", "es": "nos vemos", "category": "greetings", "note": "Casual goodbye. Say \"nos VE-mos\"." }
+]

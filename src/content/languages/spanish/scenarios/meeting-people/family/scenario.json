@@ -1,0 +1,8 @@
+{
+  "slug": "family",
+  "title": "Family",
+  "summary": "Talk about the people closest to you - personalized to your real family.",
+  "icon": "👪",
+  "kind": "personalized",
+  "estMinutes": 7
+}

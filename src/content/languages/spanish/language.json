@@ -16,7 +16,6 @@
         "introductions",
         "numbers",
         "questions",
-        "basic-needs",
         "cafe",
         "restaurant",
         "supermarket",
@@ -28,18 +27,36 @@
       ]
     },
     {
-      "slug": "living-in-spain",
-      "title": "Living in Spain",
-      "summary": "Settle in - paperwork, the doctor, renting, and everyday neighbourhood life.",
-      "icon": "🏠",
-      "available": false,
-      "scenarios": []
+      "slug": "meeting-people",
+      "title": "Meeting People",
+      "summary": "Make it social - introduce yourself, say what you like and do, and keep a conversation going.",
+      "icon": "🗣️",
+      "available": true,
+      "scenarios": [
+        "introductions-social",
+        "where-youre-from",
+        "what-you-do",
+        "family",
+        "hobbies-freetime",
+        "likes-dislikes",
+        "casual-questions",
+        "invitations",
+        "compliments-smalltalk"
+      ]
     },
     {
       "slug": "business-spanish",
       "title": "Business Spanish",
       "summary": "Meetings, email, introductions and negotiating in a professional setting.",
       "icon": "💼",
+      "available": false,
+      "scenarios": []
+    },
+    {
+      "slug": "living-in-spain",
+      "title": "Living in Spain",
+      "summary": "Settle in - paperwork, the doctor, renting, and everyday neighbourhood life.",
+      "icon": "🏠",
       "available": false,
       "scenarios": []
     }
