@@ -1,0 +1,21 @@
+{
+  "context": "You are in hot Spain and you are not just browsing anymore. You ask for the clothes you want, ask about fabric, and solve size problems until the fit is right.",
+  "explanation": "Start with three high-power chunks: \"busco\" (I am looking for), \"necesito\" (I need), and \"tiene\" (do you have). With only these, you can drive the interaction instead of waiting for the clerk.",
+  "examples": [
+    { "es": "Busco una camisa de lino.", "en": "I am looking for a linen shirt", "note": "Use busco to lead with intent." },
+    { "es": "Tiene otra talla?", "en": "Do you have another size?", "note": "Core question for sizing problems." },
+    { "es": "Necesito pantalones para el calor.", "en": "I need trousers for hot weather", "note": "State your practical need directly." },
+    { "es": "Esta camiseta es demasiado pequena.", "en": "This t-shirt is too small", "note": "Use esta/esa to point at a specific item." },
+    { "es": "Me la llevo.", "en": "I will take it", "note": "Close the conversation confidently when it fits." }
+  ],
+  "phrases": [
+    { "en": "I am looking for...", "es": "Busco..." },
+    { "en": "I need...", "es": "Necesito..." },
+    { "en": "Do you have...?", "es": "Tiene...?" },
+    { "en": "Do you have another size?", "es": "Tiene otra talla?" },
+    { "en": "Linen", "es": "Lino" },
+    { "en": "Too big / too small", "es": "Demasiado grande / demasiado pequeno" },
+    { "en": "It fits", "es": "Me queda bien" },
+    { "en": "I will take it", "es": "Me la llevo" }
+  ]
+}

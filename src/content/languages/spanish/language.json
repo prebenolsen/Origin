@@ -76,6 +76,16 @@
         "how-i-feel-today",
         "everyday-conversation"
       ]
+    },
+    {
+      "slug": "revisiting-visiting-spain",
+      "title": "Revisiting Visiting Spain",
+      "summary": "Level up old tourist situations into real two-way conversations where you ask, negotiate, and decide.",
+      "icon": "🔥",
+      "available": true,
+      "scenarios": [
+        "perfect-fit"
+      ]
     }
   ]
 }

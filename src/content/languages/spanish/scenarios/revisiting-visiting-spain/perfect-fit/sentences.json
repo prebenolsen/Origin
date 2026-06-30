@@ -1,0 +1,42 @@
+[
+  {
+    "en": "I am looking for a linen shirt",
+    "es": "busco una camisa de lino",
+    "distractors": ["esa", "pantalones"]
+  },
+  {
+    "en": "Do you have another size?",
+    "es": "tiene otra talla",
+    "distractors": ["demasiado", "sueter"]
+  },
+  {
+    "en": "I need trousers for hot weather",
+    "es": "necesito pantalones para el calor",
+    "distractors": ["esa", "lino"]
+  },
+  {
+    "en": "This t-shirt is too small",
+    "es": "esta camiseta es demasiado pequena",
+    "distractors": ["grande", "otra"]
+  },
+  {
+    "en": "That t-shirt is too big",
+    "es": "esa camiseta es demasiado grande",
+    "distractors": ["pequena", "camisa"]
+  },
+  {
+    "en": "Can I try this one on?",
+    "es": "puedo probarmelo",
+    "distractors": ["esa", "necesito"]
+  },
+  {
+    "en": "It fits well, I will take it",
+    "es": "me queda bien me la llevo",
+    "distractors": ["otra talla", "demasiado"]
+  },
+  {
+    "en": "Do you have this t-shirt in linen?",
+    "es": "tiene esta camiseta de lino",
+    "distractors": ["para el calor", "pantalones"]
+  }
+]

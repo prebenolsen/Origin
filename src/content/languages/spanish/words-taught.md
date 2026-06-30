@@ -591,10 +591,50 @@ in the sentence drills (fish, meat) come from Visiting Spain.
 - busy
 - bored
 - sick
-- hungry
-- thirsty
-- cold
-- hot
+- I am hungry
+- I am thirsty
+- I am cold
+- I am hot
 
 ### My Typical Conversation
 - no new vocabulary (capstone recombination)
+
+
+# Revisit Visiting Spain — Words Taught (English)
+
+Module 5. This module revisits travel situations as real two-way conversation. Split into words
+carried over and words introduced here.
+
+---
+
+## Words from previous modules
+
+From **Visiting Spain** (Module 1) — 126 entries — **Meeting People** (Module 2) — 66 entries —
+**Unlock Spanish** (Module 3) — 33 entries — and **Everyday Life** (Module 4) — 81 entries.
+See those module sections above for full lists.
+
+---
+
+## Words introduced in this module
+
+18 entries.
+
+### The Perfect Fit
+- I am looking for
+- I need
+- do you have
+- a shirt
+- trousers
+- a t-shirt
+- a sweater
+- linen
+- for hot weather
+- size
+- another size
+- too big
+- too small
+- it fits
+- can I try it on
+- this one
+- that one
+- I will take it

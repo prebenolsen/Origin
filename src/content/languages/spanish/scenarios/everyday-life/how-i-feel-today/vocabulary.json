@@ -4,8 +4,8 @@
   { "en": "busy", "es": "ocupado", "category": "state", "note": "With estar: estoy ocupado. Female form: ocupada." },
   { "en": "bored", "es": "aburrido", "category": "state", "note": "With estar: estoy aburrido. Female form: aburrida." },
   { "en": "sick", "es": "enfermo", "category": "state", "note": "With estar: estoy enfermo. Female form: enferma." },
-  { "en": "hungry", "es": "tengo hambre", "category": "need", "note": "Pattern: tengo + need." },
-  { "en": "thirsty", "es": "tengo sed", "category": "need", "note": "Pattern: tengo + need." },
-  { "en": "cold", "es": "tengo frio", "category": "need", "note": "Physical cold uses tener, not estar." },
-  { "en": "hot", "es": "tengo calor", "category": "need", "note": "Physical heat uses tener, not estar." }
+  { "en": "I am hungry", "es": "tengo hambre", "category": "need", "note": "Spanish uses tener (to have) for physical needs: tengo hambre = I am hungry." },
+  { "en": "I am thirsty", "es": "tengo sed", "category": "need", "note": "Spanish uses tener (to have) for physical needs: tengo sed = I am thirsty." },
+  { "en": "I am cold", "es": "tengo frio", "category": "need", "note": "Spanish uses tener (to have) for physical needs: tengo frio = I am cold." },
+  { "en": "I am hot", "es": "tengo calor", "category": "need", "note": "Spanish uses tener (to have) for physical needs: tengo calor = I am hot." }
 ]

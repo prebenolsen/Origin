@@ -38,6 +38,15 @@ Each scenario folder should contain:
 - Keep lessons concise and pattern-focused.
 - Use meaningful distractors that test contrasts.
 - Keep tone practical and conversational.
+- Keep translation units aligned (`en` and `es` must be the same learning unit).
+- For fixed Spanish expressions, use full natural English chunks in `en` (not collapsed single-word labels).
+
+Examples:
+
+- Correct: `{"en":"I am hungry","es":"tengo hambre"}`
+- Wrong: `{"en":"hungry","es":"tengo hambre"}`
+- Correct: `{"en":"I am cold","es":"tengo frio"}`
+- Wrong: `{"en":"cold","es":"tengo frio"}`
 
 ## Hard constraints
 
@@ -48,12 +57,15 @@ Each scenario folder should contain:
 
 ## Completion checklist
 
-1. Validate content:
+1. Check chunk mapping quality:
+   - no multi-word Spanish fixed expressions mapped to one-word English labels
+   - `en` reflects natural usable meaning; literal explanation goes in `note`
+2. Validate content:
    - `node .claude/skills/spanish-content/scripts/validate-content.mjs`
-2. Sync version and changelog:
+3. Sync version and changelog:
    - [version.js](../../../version.js)
    - [package.json](../../../package.json)
    - [docs/changelog.md](../../../docs/changelog.md)
-3. Update trackers when needed:
+4. Update trackers when needed:
    - [docs/content.md](../../../docs/content.md)
    - [src/content/languages/spanish/words-taught.md](../../../src/content/languages/spanish/words-taught.md)

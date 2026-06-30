@@ -189,6 +189,7 @@
 | Languages | Spanish · Everyday Life  | Food & Habits                   | Everyday life / build       | DONE |
 | Languages | Spanish · Everyday Life  | How I Feel Today                | Everyday life / build       | DONE |
 | Languages | Spanish · Everyday Life  | My Typical Conversation         | Everyday life / build       | DONE |
+| Languages | Spanish · Revisit Visiting Spain | The Perfect Fit (Shopping v2) | Conversational travel / shopping | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language scenarios live under

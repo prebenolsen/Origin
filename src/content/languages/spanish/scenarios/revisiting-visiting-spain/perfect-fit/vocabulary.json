@@ -1,0 +1,25 @@
+[
+  { "en": "I am looking for", "es": "busco", "category": "shopping-conversation" },
+  { "en": "I need", "es": "necesito", "category": "shopping-conversation" },
+  { "en": "do you have", "es": "tiene", "category": "shopping-conversation", "note": "Use as a polite store question, like \"Tiene... ?\"." },
+
+  { "en": "a shirt", "es": "una camisa", "category": "clothes" },
+  { "en": "trousers", "es": "pantalones", "category": "clothes" },
+  { "en": "a t-shirt", "es": "una camiseta", "category": "clothes" },
+
+  { "en": "a sweater", "es": "un sueter", "category": "clothes" },
+  { "en": "linen", "es": "lino", "category": "fabric" },
+  { "en": "for hot weather", "es": "para el calor", "category": "fabric" },
+
+  { "en": "size", "es": "talla", "category": "sizes" },
+  { "en": "another size", "es": "otra talla", "category": "sizes" },
+  { "en": "too big", "es": "demasiado grande", "category": "sizes" },
+
+  { "en": "too small", "es": "demasiado pequeno", "category": "sizes" },
+  { "en": "it fits", "es": "me queda bien", "category": "sizes" },
+  { "en": "can I try it on", "es": "puedo probarmelo", "category": "sizes" },
+
+  { "en": "this one", "es": "esta", "category": "demonstratives" },
+  { "en": "that one", "es": "esa", "category": "demonstratives" },
+  { "en": "I will take it", "es": "me la llevo", "category": "shopping-conversation" }
+]

@@ -4,6 +4,66 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.11.0] - 2026-06-30
+
+### Content - Added Spanish module 5 opener: The Perfect Fit (Shopping v2)
+
+Started the new **Revisiting Visiting Spain** phase with the first scenario,
+**The Perfect Fit**, focused on confident two-way shopping conversation.
+
+Added:
+
+- New goal in `src/content/languages/spanish/language.json`:
+  - `revisiting-visiting-spain` with first scenario `perfect-fit`
+- New scenario folder:
+  - `src/content/languages/spanish/scenarios/revisiting-visiting-spain/perfect-fit/`
+  - `scenario.json`, `lesson.json`, `vocabulary.json`, `sentences.json`
+
+Content focus in this scenario:
+
+- Asking direct shop questions (`busco`, `necesito`, `tiene...`)
+- Clothing targets for hot weather (shirt, trousers, sweater, t-shirt)
+- Fabric and fit flow (`lino`, size negotiation, `me queda bien`, `me la llevo`)
+- Demonstratives for real pointing choices (`esta`, `esa`)
+
+Also updated tracking docs:
+
+- `src/content/languages/spanish/words-taught.md`
+- `docs/content.md`
+
+## [6.10.1] - 2026-06-30
+
+### Docs/Workflow - Enforced strict Spanish chunk-mapping rules in .github guidance
+
+Hardened workspace `.github` guidance so Spanish authoring consistently keeps English/Spanish
+translation units aligned (word-to-word, chunk-to-chunk, sentence-to-sentence), with explicit
+protection against collapsing fixed multi-word Spanish expressions into one-word English labels.
+
+Updated:
+
+- `.github/instructions/spanish-language-component.instructions.md`
+  - added strict chunk-mapping rules
+  - added explicit correct/wrong examples (`tengo hambre`, `tengo sed`, etc.)
+  - added checklist gate for fixed-expression mapping
+- `.github/skills/spanish-content-authoring/SKILL.md`
+  - added quality standards for translation-unit parity
+  - added fixed-expression examples
+  - added completion checklist checks for chunk mapping
+
+## [6.10.0] - 2026-06-30
+
+### Content - Corrected fixed-expression chunk mappings in Everyday Life
+
+Updated `everyday-life/how-i-feel-today/vocabulary.json` so `tener` physical-need expressions are
+taught as full usable English chunks, not adjective-only glosses.
+
+- `tengo hambre` -> `I am hungry`
+- `tengo sed` -> `I am thirsty`
+- `tengo frio` -> `I am cold`
+- `tengo calor` -> `I am hot`
+
+Also synced the same wording in `words-taught.md` under **How I Feel Today**.
+
 ## [6.9.5] - 2026-06-30
 
 ### Tweaked - Spanish home vertical spacing
