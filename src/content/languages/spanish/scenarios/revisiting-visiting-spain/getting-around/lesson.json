@@ -1,0 +1,42 @@
+{
+  "context": "You already know where is and basic direction words. This section upgrades you to navigation language you can actually use while moving through a city.",
+  "explanation": "The key shift is verb choice: donde esta asks location, while como llego a asks route. Use necesito ir a for destination intent, then follow commands like gira and cruza.",
+  "examples": [
+    { "es": "Busco la estacion.", "en": "I am looking for the station", "note": "Use busco for what you are trying to find." },
+    { "es": "Como llego al centro?", "en": "How do I get to the city center?", "note": "Use llegar a for route, not static location." },
+    { "es": "Necesito ir al hotel.", "en": "I need to go to the hotel", "note": "ir a marks destination." },
+    { "es": "Gira a la izquierda y cruza.", "en": "Turn left and cross", "note": "Imperatives for step-by-step directions." }
+  ],
+  "phrases": [
+    { "en": "How do I get to...?", "es": "Como llego a...?" },
+    { "en": "I need to go to...", "es": "Necesito ir a..." },
+    { "en": "Where can I buy a ticket?", "es": "Donde compro un billete?" },
+    { "en": "Which way?", "es": "Por donde?" },
+    { "en": "Is it far?", "es": "Esta lejos?" },
+    { "en": "Is it close?", "es": "Esta cerca?" }
+  ],
+  "answerEvaluation": {
+    "deterministic": true,
+    "weights": {
+      "meaningCoverage": 40,
+      "requiredVocabulary": 30,
+      "grammarPatterns": 20,
+      "spellingTypos": 10
+    },
+    "allow": [
+      "small spelling mistakes",
+      "missing accents",
+      "minor word order mistakes"
+    ],
+    "rejectIf": [
+      "main meaning is missing",
+      "route verb is replaced by unrelated wording",
+      "destination chunk is missing when required"
+    ],
+    "partialCreditExample": {
+      "answer": "como al centro",
+      "result": "partial",
+      "reason": "destination idea is present but key llegar pattern is missing"
+    }
+  }
+}

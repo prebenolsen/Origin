@@ -617,7 +617,7 @@ See those module sections above for full lists.
 
 ## Words introduced in this module
 
-33 entries.
+83 entries.
 
 ### The Perfect Fit
 - I am looking for
@@ -660,3 +660,54 @@ See those module sections above for full lists.
 - weird / odd
 - friendly
 - serious
+
+### Getting Around
+- a bus
+- a train
+- the metro
+- a ticket
+- the platform
+- the stop
+- to turn
+- to cross
+- a map
+- the entrance
+- the exit
+- how do I get to
+- I need to go to
+- where can I buy a ticket
+- which way
+- is it far
+- is it close
+- I am looking for
+
+### Eating Out Again
+- is there a table available
+- for two people
+- for three people
+- later this evening
+- at what time
+- on the balcony
+- outside
+- inside
+- do you have a table on the balcony
+- can we order
+- I would like to order
+- I have a question about
+- I will have
+- for me
+- could I please have
+- what do you recommend
+- without
+- with
+
+### Colors Around You
+- blue
+- red
+- green
+- yellow
+- black
+- white
+- a banana
+- what color is it
+- colors

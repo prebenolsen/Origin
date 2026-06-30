@@ -85,7 +85,10 @@
       "available": true,
       "scenarios": [
         "perfect-fit",
-        "talking-about-people"
+        "talking-about-people",
+        "getting-around",
+        "eating-out-again",
+        "colors-around-you"
       ]
     }
   ]

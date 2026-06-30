@@ -1,0 +1,13 @@
+[
+  { "en": "blue", "es": "azul", "category": "colors" },
+  { "en": "red", "es": "rojo / roja", "category": "colors", "note": "Agree with noun gender when used as adjective." },
+  { "en": "green", "es": "verde", "category": "colors", "note": "Same form in singular masculine/feminine." },
+
+  { "en": "yellow", "es": "amarillo / amarilla", "category": "colors" },
+  { "en": "black", "es": "negro / negra", "category": "colors" },
+  { "en": "white", "es": "blanco / blanca", "category": "colors" },
+
+  { "en": "a banana", "es": "una banana", "category": "objects", "note": "Added as a natural object for yellow." },
+  { "en": "what color is it", "es": "de que color es", "category": "chunks" },
+  { "en": "colors", "es": "colores", "category": "colors", "note": "Useful for instructions in review activities." }
+]

@@ -1,0 +1,8 @@
+{
+  "slug": "eating-out-again",
+  "title": "Eating Out Again",
+  "summary": "Restaurant v2: move from ordering basics to real interaction at the door and with the waiter.",
+  "icon": "🍽️",
+  "kind": "standard",
+  "estMinutes": 10
+}

@@ -1,0 +1,47 @@
+{
+  "context": "Now you are not just saying one order line. You need to handle the full restaurant flow: ask for a table, negotiate time or seating, then order politely with questions and preferences.",
+  "explanation": "Start with one high-value door pattern: hay mesa libre + para dos personas / para tres personas. With this, you can check availability quickly and keep the conversation moving.",
+  "examples": [
+    { "es": "Hay mesa libre para dos personas?", "en": "Is there a table available for two people?", "note": "Use this immediately at the door." },
+    { "es": "No? Mas tarde esta noche?", "en": "No? Later this evening?", "note": "Simple follow-up when there is no table now." },
+    { "es": "Tiene mesa en el balcon?", "en": "Do you have a table on the balcony?", "note": "Ask directly for a preferred seating area." },
+    { "es": "Podemos pedir?", "en": "Can we order?", "note": "Polite way to start once seated." },
+    { "es": "Me pone pescado, por favor.", "en": "Could I please have fish?", "note": "A natural polite Spain ordering frame." }
+  ],
+  "phrases": [
+    { "en": "Is there a table available?", "es": "Hay mesa libre?" },
+    { "en": "For two / three people", "es": "Para dos / tres personas" },
+    { "en": "Later this evening", "es": "Mas tarde esta noche" },
+    { "en": "Can we have a table outside?", "es": "Mesa fuera?" },
+    { "en": "Can we have a table on the balcony?", "es": "Tiene mesa en el balcon?" },
+    { "en": "Can we order?", "es": "Podemos pedir?" },
+    { "en": "I would like to order...", "es": "Me gustaria pedir..." },
+    { "en": "I have a question about...", "es": "Tengo una pregunta sobre..." },
+    { "en": "Could I please have...", "es": "Me pone ..., por favor" },
+    { "en": "What do you recommend?", "es": "Que recomienda?" }
+  ],
+  "answerEvaluation": {
+    "deterministic": true,
+    "weights": {
+      "meaningCoverage": 40,
+      "requiredVocabulary": 30,
+      "grammarPatterns": 20,
+      "spellingTypos": 10
+    },
+    "allow": [
+      "small spelling mistakes",
+      "missing accents",
+      "minor word order mistakes"
+    ],
+    "rejectIf": [
+      "main meaning is missing",
+      "table request intent is missing in door-stage prompts",
+      "polite ordering frame is replaced with unrelated wording"
+    ],
+    "partialCreditExample": {
+      "answer": "mesa dos personas",
+      "result": "partial",
+      "reason": "core need is visible but missing the hay mesa libre pattern"
+    }
+  }
+}

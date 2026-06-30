@@ -1,0 +1,25 @@
+[
+  { "en": "is there a table available", "es": "hay mesa libre", "category": "at-the-door" },
+  { "en": "for two people", "es": "para dos personas", "category": "at-the-door" },
+  { "en": "for three people", "es": "para tres personas", "category": "at-the-door" },
+
+  { "en": "later this evening", "es": "mas tarde esta noche", "category": "timing" },
+  { "en": "at what time", "es": "a que hora", "category": "timing" },
+  { "en": "on the balcony", "es": "en el balcon", "category": "seating" },
+
+  { "en": "outside", "es": "fuera", "category": "seating" },
+  { "en": "inside", "es": "dentro", "category": "seating" },
+  { "en": "do you have a table on the balcony", "es": "tiene mesa en el balcon", "category": "seating" },
+
+  { "en": "can we order", "es": "podemos pedir", "category": "ordering" },
+  { "en": "I would like to order", "es": "me gustaria pedir", "category": "ordering" },
+  { "en": "I have a question about", "es": "tengo una pregunta sobre", "category": "ordering" },
+
+  { "en": "I will have", "es": "voy a pedir", "category": "ordering-polite" },
+  { "en": "for me", "es": "para mi", "category": "ordering-polite" },
+  { "en": "could I please have", "es": "me pone por favor", "category": "ordering-polite", "note": "Common polite Spain restaurant frame, followed by the item." },
+
+  { "en": "what do you recommend", "es": "que recomienda", "category": "ordering-polite" },
+  { "en": "without", "es": "sin", "category": "customizing" },
+  { "en": "with", "es": "con", "category": "customizing" }
+]

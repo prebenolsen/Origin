@@ -1,0 +1,40 @@
+{
+  "context": "Colors become useful when you attach them to real things you already talk about - clothes, transport, and simple objects.",
+  "explanation": "Start with three high-frequency colors: azul (blue), rojo (red), and verde (green). Then add common colors like amarillo, negro, and blanco. Use ser to describe color: mi camisa es azul.",
+  "examples": [
+    { "es": "Azul es blue, rojo es red y verde es green.", "en": "Azul is blue, rojo is red and verde is green", "note": "Core starter set of 3 colors." },
+    { "es": "Mis pantalones son azules.", "en": "My trousers are blue", "note": "Plural noun uses son + plural adjective." },
+    { "es": "Mi camiseta es roja.", "en": "My t-shirt is red", "note": "Adjective agrees with feminine noun." },
+    { "es": "La banana es amarilla.", "en": "The banana is yellow", "note": "New object added for yellow." },
+    { "es": "Ahora juega Word-Matching Test para emparejar colores.", "en": "Now play Word-Matching Test to match color pairs", "note": "Use Review -> Word-Matching Test after this lesson." }
+  ],
+  "phrases": [
+    { "en": "What color is it?", "es": "De que color es?" },
+    { "en": "My shirt is blue", "es": "Mi camisa es azul" },
+    { "en": "My trousers are blue", "es": "Mis pantalones son azules" },
+    { "en": "The banana is yellow", "es": "La banana es amarilla" }
+  ],
+  "answerEvaluation": {
+    "deterministic": true,
+    "weights": {
+      "meaningCoverage": 40,
+      "requiredVocabulary": 30,
+      "grammarPatterns": 20,
+      "spellingTypos": 10
+    },
+    "allow": [
+      "small spelling mistakes",
+      "missing accents",
+      "minor word order mistakes"
+    ],
+    "rejectIf": [
+      "main color meaning is wrong or missing",
+      "object-color relation is reversed or broken"
+    ],
+    "partialCreditExample": {
+      "answer": "pantalones azul",
+      "result": "partial",
+      "reason": "core meaning is present but missing ser agreement pattern"
+    }
+  }
+}

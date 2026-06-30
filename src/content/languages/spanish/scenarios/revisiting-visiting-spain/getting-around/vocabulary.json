@@ -1,0 +1,25 @@
+[
+  { "en": "a bus", "es": "un autobus", "category": "transport" },
+  { "en": "a train", "es": "un tren", "category": "transport" },
+  { "en": "the metro", "es": "el metro", "category": "transport" },
+
+  { "en": "a ticket", "es": "un billete", "category": "transport" },
+  { "en": "the platform", "es": "el anden", "category": "transport" },
+  { "en": "the stop", "es": "la parada", "category": "transport" },
+
+  { "en": "to turn", "es": "gira", "category": "navigation", "note": "Common direction command form." },
+  { "en": "to cross", "es": "cruza", "category": "navigation", "note": "Command used in street directions." },
+  { "en": "a map", "es": "un mapa", "category": "navigation" },
+
+  { "en": "the entrance", "es": "la entrada", "category": "navigation" },
+  { "en": "the exit", "es": "la salida", "category": "navigation" },
+  { "en": "how do I get to", "es": "como llego a", "category": "chunks", "note": "Route question pattern." },
+
+  { "en": "I need to go to", "es": "necesito ir a", "category": "chunks", "note": "Destination-intent chunk." },
+  { "en": "where can I buy a ticket", "es": "donde compro un billete", "category": "chunks" },
+  { "en": "which way", "es": "por donde", "category": "chunks" },
+
+  { "en": "is it far", "es": "esta lejos", "category": "chunks" },
+  { "en": "is it close", "es": "esta cerca", "category": "chunks" },
+  { "en": "I am looking for", "es": "busco", "category": "chunks", "note": "Reused high-frequency chunk." }
+]

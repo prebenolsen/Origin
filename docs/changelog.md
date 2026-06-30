@@ -4,6 +4,116 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.16.1] - 2026-07-01
+
+### Cleanup - Removed stale duplicate Spanish scenario folders
+
+Removed legacy one-level folders that overlapped with the active phase-based
+language content structure (`scenarios/<phase>/<slug>/`).
+
+Removed:
+
+- `src/content/languages/spanish/scenarios/cafe/`
+- `src/content/languages/spanish/scenarios/restaurant/`
+
+Notes:
+
+- Active authored scenarios remain under:
+  - `src/content/languages/spanish/scenarios/visiting-spain/cafe/`
+  - `src/content/languages/spanish/scenarios/visiting-spain/restaurant/`
+- This cleanup reduces repository confusion and avoids duplicate content artifacts.
+
+## [6.16.0] - 2026-06-30
+
+### Content - Added Spanish scenario: Eating Out Again (Restaurant v2)
+
+Added a new chapter in `revisiting-visiting-spain` focused on restaurant interaction,
+moving from simple ordering to full two-way flow at the door and with the waiter.
+
+Added:
+
+- `src/content/languages/spanish/scenarios/revisiting-visiting-spain/eating-out-again/`
+  - `scenario.json`
+  - `lesson.json`
+  - `vocabulary.json`
+  - `sentences.json`
+- Scenario wiring in `src/content/languages/spanish/language.json`
+
+Content focus:
+
+- Before seating: table availability and party-size requests
+- If unavailable now: follow-up for later evening timing
+- Seating preferences: outside / inside / balcony
+- Ordering interaction: polite starts (`podemos pedir`, `me gustaria pedir`)
+- Waiter dialogue: asking questions and recommendation language
+- Polite request frames (`me pone ..., por favor`) and customization (`con`/`sin`)
+- Production drills in `sentences.json` aligned to click/build/write practice flow
+
+Also updated:
+
+- `src/content/languages/spanish/words-taught.md`
+- `docs/content.md`
+
+## [6.15.0] - 2026-06-30
+
+### Content - Added Spanish scenario: Colors Around You
+
+Added a new section in `revisiting-visiting-spain` to teach colors through
+production-first sentence building and then hand off to the existing matching-pair
+review mode.
+
+Added:
+
+- `src/content/languages/spanish/scenarios/revisiting-visiting-spain/colors-around-you/`
+  - `scenario.json`
+  - `lesson.json`
+  - `vocabulary.json`
+  - `sentences.json`
+- Scenario wiring in `src/content/languages/spanish/language.json`
+
+Content structure:
+
+- Starts with 3 core colors (`azul`, `rojo`, `verde`)
+- Expands to common colors (`amarillo`, `negro`, `blanco`)
+- Adds a minimal new object (`banana`) for yellow usage
+- Includes guided sentence prompts like "My trousers are blue"
+- Introduces color reinforcement via `Review -> Word-Matching Test`
+
+Also updated:
+
+- `src/content/languages/spanish/words-taught.md`
+- `docs/content.md`
+
+## [6.14.0] - 2026-06-30
+
+### Content - Added Spanish scenario: Getting Around
+
+Continued the new chapter work in `revisiting-visiting-spain` by adding
+`getting-around`, focused on real movement/navigation language (not just static
+"where is" questions).
+
+Added:
+
+- `src/content/languages/spanish/scenarios/revisiting-visiting-spain/getting-around/`
+  - `scenario.json`
+  - `lesson.json`
+  - `vocabulary.json`
+  - `sentences.json`
+- Scenario wiring in `src/content/languages/spanish/language.json`
+
+Content focus:
+
+- Transport essentials (`autobus`, `tren`, `metro`, `billete`, `anden`, `parada`)
+- Navigation actions (`gira`, `cruza`, `entrada`, `salida`)
+- Route/intent chunks (`como llego a`, `necesito ir a`, `donde compro un billete`,
+  `por donde`, `esta cerca/lejos`)
+- Production sentence drills aligned with route verbs and practical city movement
+
+Also updated:
+
+- `src/content/languages/spanish/words-taught.md`
+- `docs/content.md`
+
 ## [6.13.0] - 2026-06-30
 
 ### Content - Expanded people-description adjectives in Talking About People

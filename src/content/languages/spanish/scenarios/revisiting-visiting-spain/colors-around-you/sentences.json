@@ -1,0 +1,104 @@
+[
+  {
+    "en": "Write: Blue, red and green are colors.",
+    "es": "azul rojo y verde son colores",
+    "acceptable": [
+      "rojo azul y verde son colores"
+    ],
+    "concepts": [
+      "core 3 colors",
+      "color set"
+    ],
+    "required": ["azul", "rojo", "verde", "colores"],
+    "distractors": ["amarillo", "banana"]
+  },
+  {
+    "en": "Write: My trousers are blue.",
+    "es": "mis pantalones son azules",
+    "acceptable": [
+      "mis pantalones son azul"
+    ],
+    "concepts": [
+      "plural ser pattern",
+      "color adjective"
+    ],
+    "required": ["mis pantalones", "son", "azul/azules"],
+    "distractors": ["roja", "entrada"]
+  },
+  {
+    "en": "Write: My t-shirt is red.",
+    "es": "mi camiseta es roja",
+    "acceptable": [
+      "mi camiseta es rojo"
+    ],
+    "concepts": [
+      "feminine adjective agreement",
+      "ser pattern"
+    ],
+    "required": ["mi camiseta", "es", "rojo/roja"],
+    "distractors": ["verde", "tranquila"]
+  },
+  {
+    "en": "Write: My shirt is green.",
+    "es": "mi camisa es verde",
+    "acceptable": [
+      "mi camisa verde"
+    ],
+    "concepts": [
+      "ser with color",
+      "object + color"
+    ],
+    "required": ["mi camisa", "es", "verde"],
+    "distractors": ["negra", "billete"]
+  },
+  {
+    "en": "Write: The banana is yellow.",
+    "es": "la banana es amarilla",
+    "acceptable": [
+      "la banana es amarillo"
+    ],
+    "concepts": [
+      "new object",
+      "yellow adjective agreement"
+    ],
+    "required": ["banana", "es", "amarillo/amarilla"],
+    "distractors": ["azul", "pantalones"]
+  },
+  {
+    "en": "Write: The bus is white and the metro is black.",
+    "es": "el autobus es blanco y el metro es negro",
+    "acceptable": [
+      "el metro es negro y el autobus es blanco"
+    ],
+    "concepts": [
+      "two color clauses",
+      "connector y"
+    ],
+    "required": ["autobus", "blanco", "metro", "negro"],
+    "distractors": ["roja", "entrada"]
+  },
+  {
+    "en": "Write: What color is it?",
+    "es": "de que color es",
+    "acceptable": [
+      "de que color es?"
+    ],
+    "concepts": [
+      "color question chunk"
+    ],
+    "required": ["de que color es"],
+    "distractors": ["por donde", "esta lejos"]
+  },
+  {
+    "en": "Write: After this, do Word-Matching Test for colors.",
+    "es": "despues haz word matching test de colores",
+    "acceptable": [
+      "despues haz word matching test para colores"
+    ],
+    "concepts": [
+      "matching-pair game handoff"
+    ],
+    "required": ["word matching test", "colores"],
+    "distractors": ["llego", "izquierda"]
+  }
+]

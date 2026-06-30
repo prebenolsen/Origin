@@ -1,0 +1,119 @@
+[
+  {
+    "en": "Write: Is there a table available for two people?",
+    "es": "hay mesa libre para dos personas",
+    "acceptable": [
+      "hay una mesa libre para dos personas"
+    ],
+    "concepts": [
+      "door availability",
+      "party size"
+    ],
+    "required": ["hay mesa libre", "para dos personas"],
+    "distractors": ["podemos pedir", "balcon"]
+  },
+  {
+    "en": "Write: Is there a table available for three people?",
+    "es": "hay mesa libre para tres personas",
+    "acceptable": [
+      "hay una mesa libre para tres personas"
+    ],
+    "concepts": [
+      "door availability",
+      "party size"
+    ],
+    "required": ["hay mesa libre", "para tres personas"],
+    "distractors": ["dentro", "que recomienda"]
+  },
+  {
+    "en": "Write: Is it available later this evening?",
+    "es": "mas tarde esta noche",
+    "acceptable": [
+      "hay mesa mas tarde esta noche"
+    ],
+    "concepts": [
+      "time negotiation",
+      "follow-up question"
+    ],
+    "required": ["mas tarde esta noche"],
+    "distractors": ["a que hora", "podemos pedir"]
+  },
+  {
+    "en": "Write: Do you have a table on the balcony?",
+    "es": "tiene mesa en el balcon",
+    "acceptable": [
+      "tiene una mesa en el balcon"
+    ],
+    "concepts": [
+      "seating preference",
+      "balcony request"
+    ],
+    "required": ["tiene mesa", "en el balcon"],
+    "distractors": ["fuera", "dentro"]
+  },
+  {
+    "en": "Write: Can we order?",
+    "es": "podemos pedir",
+    "acceptable": [
+      "podemos pedir?"
+    ],
+    "concepts": [
+      "ordering start",
+      "polite interaction"
+    ],
+    "required": ["podemos pedir"],
+    "distractors": ["hay mesa libre", "sin"]
+  },
+  {
+    "en": "Write: I would like to order fish.",
+    "es": "me gustaria pedir pescado",
+    "acceptable": [
+      "me gustaria pedir el pescado"
+    ],
+    "concepts": [
+      "polite frame",
+      "order item"
+    ],
+    "required": ["me gustaria pedir", "pescado"],
+    "distractors": ["balcon", "personas"]
+  },
+  {
+    "en": "Write: For me, I will have meat without bread.",
+    "es": "para mi voy a pedir carne sin pan",
+    "acceptable": [
+      "voy a pedir carne sin pan para mi"
+    ],
+    "concepts": [
+      "for me frame",
+      "customization"
+    ],
+    "required": ["para mi", "voy a pedir", "sin"],
+    "distractors": ["con", "mesa"]
+  },
+  {
+    "en": "Write: Could I please have water with lemon?",
+    "es": "me pone agua con limon por favor",
+    "acceptable": [
+      "me pone un agua con limon por favor"
+    ],
+    "concepts": [
+      "polite request",
+      "with customization"
+    ],
+    "required": ["me pone", "con", "por favor"],
+    "distractors": ["dentro", "tres personas"]
+  },
+  {
+    "en": "Write: I have a question about the menu, what do you recommend?",
+    "es": "tengo una pregunta sobre el menu que recomienda",
+    "acceptable": [
+      "tengo una pregunta sobre el menu, que recomienda"
+    ],
+    "concepts": [
+      "waiter interaction",
+      "recommendation question"
+    ],
+    "required": ["tengo una pregunta sobre", "que recomienda"],
+    "distractors": ["hay mesa libre", "balcon"]
+  }
+]

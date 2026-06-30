@@ -191,6 +191,9 @@
 | Languages | Spanish · Everyday Life  | My Typical Conversation         | Everyday life / build       | DONE |
 | Languages | Spanish · Revisit Visiting Spain | The Perfect Fit (Shopping v2) | Conversational travel / shopping | DONE |
 | Languages | Spanish · Revisit Visiting Spain | Talking About People | Conversational travel / people | DONE |
+| Languages | Spanish · Revisit Visiting Spain | Getting Around | Conversational travel / navigation | DONE |
+| Languages | Spanish · Revisit Visiting Spain | Eating Out Again (Restaurant v2) | Conversational travel / restaurant interaction | DONE |
+| Languages | Spanish · Revisit Visiting Spain | Colors Around You | Conversational travel / colors | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language scenarios live under

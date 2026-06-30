@@ -1,0 +1,106 @@
+[
+  {
+    "en": "Write: I am looking for the station.",
+    "es": "busco la estacion",
+    "acceptable": [
+      "estoy buscando la estacion"
+    ],
+    "concepts": [
+      "search chunk",
+      "location target"
+    ],
+    "required": ["busco", "la estacion"],
+    "distractors": ["billete", "izquierda"]
+  },
+  {
+    "en": "Write: How do I get to the city center?",
+    "es": "como llego al centro",
+    "acceptable": [
+      "como llego a el centro"
+    ],
+    "concepts": [
+      "llegar a route pattern",
+      "destination phrase"
+    ],
+    "required": ["como llego a", "centro"],
+    "distractors": ["donde esta", "mapa"]
+  },
+  {
+    "en": "Write: I need to go to the hotel.",
+    "es": "necesito ir al hotel",
+    "acceptable": [
+      "necesito ir a el hotel"
+    ],
+    "concepts": [
+      "ir a destination",
+      "need statement"
+    ],
+    "required": ["necesito ir a", "hotel"],
+    "distractors": ["aeropuerto", "por donde"]
+  },
+  {
+    "en": "Write: Where can I buy a ticket?",
+    "es": "donde compro un billete",
+    "acceptable": [
+      "donde puedo comprar un billete"
+    ],
+    "concepts": [
+      "purchase question",
+      "transport noun"
+    ],
+    "required": ["donde", "compro", "billete"],
+    "distractors": ["anden", "salida"]
+  },
+  {
+    "en": "Write: Turn left and cross.",
+    "es": "gira a la izquierda y cruza",
+    "acceptable": [
+      "gira a la izquierda y cruza la calle"
+    ],
+    "concepts": [
+      "direction imperative",
+      "step sequence"
+    ],
+    "required": ["gira", "izquierda", "cruza"],
+    "distractors": ["derecha", "esta cerca"]
+  },
+  {
+    "en": "Write: Is it close or far?",
+    "es": "esta cerca o lejos",
+    "acceptable": [
+      "esta lejos o cerca"
+    ],
+    "concepts": [
+      "distance check",
+      "location state"
+    ],
+    "required": ["esta", "cerca", "lejos"],
+    "distractors": ["busco", "metro"]
+  },
+  {
+    "en": "Write: Which way to the metro stop?",
+    "es": "por donde a la parada del metro",
+    "acceptable": [
+      "por donde esta la parada del metro"
+    ],
+    "concepts": [
+      "navigation chunk",
+      "transport place"
+    ],
+    "required": ["por donde", "parada", "metro"],
+    "distractors": ["billete", "entrada"]
+  },
+  {
+    "en": "Write: The entrance is here and the exit is there.",
+    "es": "la entrada esta aqui y la salida esta alli",
+    "acceptable": [
+      "la entrada esta aqui y la salida esta ahi"
+    ],
+    "concepts": [
+      "estar for location",
+      "contrast here/there"
+    ],
+    "required": ["entrada", "aqui", "salida", "alli"],
+    "distractors": ["izquierda", "tren"]
+  }
+]
