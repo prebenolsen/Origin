@@ -4,6 +4,52 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.16.3] - 2026-07-01
+
+### Engine - Replaced immediate lesson-end section review with checkpoint reviews
+
+Updated the Spanish lesson flow so lessons no longer force a full section review immediately
+after finishing teaching batches.
+
+Changed behavior:
+
+- Removed immediate post-batch "Section review" from lesson completion.
+- Added checkpoint-based review triggers at scenario milestones: every 4 completed scenarios,
+  plus the final scenario of each goal.
+- Checkpoint review now samples from all completed scenarios in the active goal, weighted toward
+  recent scenarios while still reinforcing older material.
+- Added persistent checkpoint tracking in profile state to ensure each checkpoint runs once per
+  milestone (`goalSlug:completedCount`).
+
+Goals now checkpoint at:
+
+- Visiting Spain (12): 4, 8, 12
+- Meeting People (9): 4, 8, 9
+- Unlock Spanish (7): 4, 7
+- Everyday Life (8): 4, 8
+- Revisiting Visiting Spain (5): 4, 5
+
+Files updated:
+
+- `src/components/language/LessonExperience.tsx`
+- `src/lib/language/profile.ts`
+
+## [6.16.2] - 2026-07-01
+
+### Docs - Added Spanish component README summary
+
+Added a consolidated Spanish component README at:
+
+- `src/content/languages/spanish/README.md`
+
+The new document summarizes:
+
+- current Spanish module/goal structure (5 goals)
+- scenario coverage (41 scenarios)
+- authored vocabulary footprint (401 entries, 373 unique Spanish items)
+- in-module testing types (recognition, recall, fill-blank, production, sentence-building)
+- available review modes (Classic Review and Word-Matching Test)
+
 ## [6.16.1] - 2026-07-01
 
 ### Cleanup - Removed stale duplicate Spanish scenario folders

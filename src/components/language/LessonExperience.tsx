@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import type { VocabItem } from '../../types/language';
-import { getScenarioBundle, isEnterable } from '../../lib/language/content';
+import { getGoal, getScenarioBundle, isEnterable } from '../../lib/language/content';
 import {
   getAll,
   getState,
@@ -11,7 +11,17 @@ import {
   recordReview,
   vocabId,
 } from '../../lib/language/srs';
-import { getLearner, getSelections, markComplete, setSelections } from '../../lib/language/profile';
+import {
+  getProfile,
+  getGoalSlug,
+  getLearner,
+  getSelections,
+  isComplete,
+  isCheckpointComplete,
+  markCheckpointComplete,
+  markComplete,
+  setSelections,
+} from '../../lib/language/profile';
 import { personalizeText } from '../../lib/language/learner';
 import {
   buildQuiz,
@@ -26,7 +36,7 @@ import { LANG } from './SpanishHome';
 import PersonalizeStep from './PersonalizeStep';
 import VocabTest from './VocabTest';
 
-type Phase = 'personalize' | 'context' | 'block' | 'final' | 'sentences' | 'done';
+type Phase = 'personalize' | 'context' | 'block' | 'checkpoint' | 'sentences' | 'done';
 type BlockSub = 'teach' | 'practice';
 
 /** Words are taught in small batches, not all at once (no dictionary pages). */
@@ -70,6 +80,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
   });
   const [blockIndex, setBlockIndex] = useState(0);
   const [blockSub, setBlockSub] = useState<BlockSub>('teach');
+  const [checkpointId, setCheckpointId] = useState<string | null>(null);
 
   // The words this lesson teaches: authored base vocab + personalized picks.
   const vocab = useMemo<VocabItem[]>(() => {
@@ -124,6 +135,48 @@ function LessonRunner({ scenario }: { scenario: string }) {
     setPhase('context');
   };
 
+  const completeScenario = () => {
+    const wasAlreadyComplete = isComplete(LANG, scenario);
+    markComplete(LANG, scenario);
+
+    if (wasAlreadyComplete) {
+      setCheckpointId(null);
+      setPhase('done');
+      return;
+    }
+
+    const goalSlug = getGoalSlug(LANG);
+    if (!goalSlug) {
+      setCheckpointId(null);
+      setPhase('done');
+      return;
+    }
+
+    const goal = getGoal(LANG, goalSlug);
+    if (!goal) {
+      setCheckpointId(null);
+      setPhase('done');
+      return;
+    }
+
+    const profile = getProfile(LANG);
+    const completedInGoal = goal.scenarios.filter((slug) => profile.completed.includes(slug));
+    const completedCount = completedInGoal.length;
+    const checkpoints = checkpointCounts(goal.scenarios.length);
+    const candidate = `${goal.slug}:${completedCount}`;
+    const shouldRunCheckpoint =
+      checkpoints.includes(completedCount) && !isCheckpointComplete(LANG, candidate);
+
+    if (shouldRunCheckpoint) {
+      setCheckpointId(candidate);
+      setPhase('checkpoint');
+      return;
+    }
+
+    setCheckpointId(null);
+    setPhase('done');
+  };
+
   /* ----------------------------- personalize ---------------------------- */
   if (phase === 'personalize' && bundle.personalize) {
     return (
@@ -158,7 +211,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
                 <>
                   You'll learn {vocab.length} word{vocab.length === 1 ? '' : 's'} in {totalBlocks} small
                   {totalBlocks === 1 ? ' batch' : ' batches'} of a few at a time - learn a few, practice
-                  them, then move on. A full review ties it together at the end
+                  them, then move on. Every 4 completed scenarios you unlock a progress checkpoint review
                   {hasSentences ? ', and you finish by building real sentences.' : '.'}
                 </>
               ) : (
@@ -293,37 +346,71 @@ function LessonRunner({ scenario }: { scenario: string }) {
             setBlockIndex((b) => b + 1);
             setBlockSub('teach');
           } else {
-            setPhase('final');
+            if (hasSentences) setPhase('sentences');
+            else completeScenario();
           }
         }}
         onExit={exit}
-        finishLabel={blockIndex + 1 < totalBlocks ? 'Next batch' : 'Full review'}
+        finishLabel={blockIndex + 1 < totalBlocks ? 'Next batch' : hasSentences ? 'Build sentences' : 'Finish'}
       />
     );
   }
 
-  /* --------------------------- full section review ---------------------- */
-  if (phase === 'final') {
-    // Adaptive order (NOT introduction order): failed words first, then the
-    // rest, mastered last - and the per-word difficulty ramps with mastery.
-    const lessonStates = vocab
-      .map((v) => getState(LANG, vocabId(v.es)))
-      .filter((s): s is NonNullable<typeof s> => !!s);
-    const ordered = orderAdaptive(lessonStates, lessonStates.length);
-    const targets = ordered.map((s) => ({ es: s.es, en: s.en, category: s.category }));
+  /* ---------------------------- checkpoint review ----------------------- */
+  if (phase === 'checkpoint') {
+    const goalSlug = getGoalSlug(LANG);
+    const goal = goalSlug ? getGoal(LANG, goalSlug) : undefined;
+    const profile = getProfile(LANG);
+
+    const completedInGoal = goal
+      ? goal.scenarios.filter((slug) => profile.completed.includes(slug))
+      : [];
+    const [oldScenarios, midScenarios, recentScenarios] = splitBands(completedInGoal);
+    const allStates = getAll(LANG);
+    const byBand = (slugs: string[]) => {
+      const set = new Set(slugs);
+      return allStates.filter((s) => set.has(scenarioSlugFromPath(s.scenario)));
+    };
+
+    const oldStates = byBand(oldScenarios);
+    const midStates = byBand(midScenarios);
+    const recentStates = byBand(recentScenarios);
+    const questionCount = Math.min(
+      CHECKPOINT_MAX_QUESTIONS,
+      Math.max(CHECKPOINT_BASE_QUESTIONS, completedInGoal.length + 4),
+      allStates.length,
+    );
+    const [oldQuota, midQuota, recentQuota] = weightedQuotas(questionCount);
+
+    const pickFromBand = (states: ReturnType<typeof getAll>, quota: number, seed: number) =>
+      orderAdaptive(states, Math.min(quota, states.length), 7, seed);
+
+    const selected = [
+      ...pickFromBand(oldStates, oldQuota, 101),
+      ...pickFromBand(midStates, midQuota, 202),
+      ...pickFromBand(recentStates, recentQuota, 303),
+    ];
+    const selectedIds = new Set(selected.map((s) => s.id));
+    const fallback = orderAdaptive(allStates, allStates.length, 7, 404).filter((s) => !selectedIds.has(s.id));
+    const combined = [...selected, ...fallback].slice(0, questionCount);
+    const targets = combined.map((s) => ({ es: s.es, en: s.en, category: s.category }));
     const questions: VocabQuestion[] = buildQuiz(targets, pool, {
       states: stateMap,
       template: bundle.personalize?.template,
+      seed: 909,
     });
     return (
       <VocabTest
         questions={questions}
-        title={`${bundle.scenario.title} · full review`}
-        label="Section review"
+        title={`${goal?.title ?? 'Your path'} · checkpoint review`}
+        label="Checkpoint"
         onResult={(t, correct, level) => recordReview(LANG, vocabId(t.es), correct, level)}
-        onComplete={() => setPhase(hasSentences ? 'sentences' : 'done')}
+        onComplete={() => {
+          if (checkpointId) markCheckpointComplete(LANG, checkpointId);
+          setPhase('done');
+        }}
         onExit={exit}
-        finishLabel={hasSentences ? 'Build sentences' : 'Finish'}
+        finishLabel="Finish checkpoint"
       />
     );
   }
@@ -355,7 +442,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
         title={`${bundle.scenario.title} · build sentences`}
         label="Build sentences"
         onResult={(t, correct, level) => creditSentence(t.es, correct, level)}
-        onComplete={() => setPhase('done')}
+        onComplete={completeScenario}
         onExit={exit}
         finishLabel="Finish"
       />
@@ -363,7 +450,6 @@ function LessonRunner({ scenario }: { scenario: string }) {
   }
 
   /* --------------------------------- done -------------------------------- */
-  markComplete(LANG, scenario);
   return (
     <div className="flex h-full flex-col items-center justify-center gap-6 px-8 text-center">
       <div className="animate-pop font-serif text-5xl text-accent">✓</div>
@@ -384,4 +470,42 @@ function LessonRunner({ scenario }: { scenario: string }) {
       </div>
     </div>
   );
+}
+
+const CHECKPOINT_BASE_QUESTIONS = 8;
+const CHECKPOINT_MAX_QUESTIONS = 14;
+
+function checkpointCounts(totalScenarios: number): number[] {
+  if (totalScenarios <= 0) return [];
+  const counts: number[] = [];
+  for (let i = 4; i < totalScenarios; i += 4) counts.push(i);
+  counts.push(totalScenarios);
+  return counts;
+}
+
+function scenarioSlugFromPath(path: string): string {
+  const parts = path.split('/');
+  return parts.at(-1) ?? path;
+}
+
+function splitBands<T>(arr: T[]): [T[], T[], T[]] {
+  const n = arr.length;
+  if (n <= 2) return [[], [], arr];
+  const oldEnd = Math.max(1, Math.floor(n * 0.25));
+  const midEnd = Math.max(oldEnd + 1, Math.floor(n * 0.65));
+  return [arr.slice(0, oldEnd), arr.slice(oldEnd, midEnd), arr.slice(midEnd)];
+}
+
+function weightedQuotas(total: number): [number, number, number] {
+  const weights = [0.25, 0.35, 0.4] as const;
+  const quotas = weights.map((w) => Math.floor(total * w)) as [number, number, number];
+  let remaining = total - (quotas[0] + quotas[1] + quotas[2]);
+  const order = [2, 1, 0] as const;
+  let i = 0;
+  while (remaining > 0) {
+    quotas[order[i % order.length]] += 1;
+    remaining -= 1;
+    i += 1;
+  }
+  return quotas;
 }

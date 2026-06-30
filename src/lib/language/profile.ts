@@ -16,9 +16,11 @@ export interface LanguageProfile {
   selections: Record<string, VocabOption[]>;
   /** scenario slugs the learner has completed at least once. */
   completed: string[];
+  /** Completed checkpoint ids, e.g. `visiting-spain:4`. */
+  checkpoints: string[];
 }
 
-const EMPTY: LanguageProfile = { selections: {}, completed: [] };
+const EMPTY: LanguageProfile = { selections: {}, completed: [], checkpoints: [] };
 
 function keyFor(langSlug: string): string {
   return `origin:lang:${langSlug}:profile:v1`;
@@ -28,7 +30,13 @@ function read(langSlug: string): LanguageProfile {
   if (typeof localStorage === 'undefined') return { ...EMPTY };
   try {
     const raw = JSON.parse(localStorage.getItem(keyFor(langSlug)) ?? '{}');
-    return { ...EMPTY, ...raw, selections: raw.selections ?? {}, completed: raw.completed ?? [] };
+    return {
+      ...EMPTY,
+      ...raw,
+      selections: raw.selections ?? {},
+      completed: raw.completed ?? [],
+      checkpoints: raw.checkpoints ?? [],
+    };
   } catch {
     return { ...EMPTY };
   }
@@ -94,5 +102,15 @@ export function isComplete(langSlug: string, scenario: string): boolean {
 export function markComplete(langSlug: string, scenario: string): void {
   const p = read(langSlug);
   if (!p.completed.includes(scenario)) p.completed.push(scenario);
+  write(langSlug, p);
+}
+
+export function isCheckpointComplete(langSlug: string, checkpointId: string): boolean {
+  return read(langSlug).checkpoints.includes(checkpointId);
+}
+
+export function markCheckpointComplete(langSlug: string, checkpointId: string): void {
+  const p = read(langSlug);
+  if (!p.checkpoints.includes(checkpointId)) p.checkpoints.push(checkpointId);
   write(langSlug, p);
 }
