@@ -4,6 +4,39 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.9.5] - 2026-06-30
+
+### Tweaked - Spanish home vertical spacing
+
+Reduced the gap between the `words learned · Review` chip and the first `Continue` card while
+keeping the overlap-prevention layout fix.
+
+- Header bottom padding reduced.
+- Removed extra top padding on the content section below the header.
+
+## [6.9.4] - 2026-06-30
+
+### Fixed - Spanish home review chip inline overlap
+
+Applied a structural layout fix to the Spanish home header so the review chip cannot align on the
+same inline row as the `Hola ..., edit` control.
+
+- Changed the review chip from `inline-flex` to block-row layout (`flex w-fit`) so it always
+  starts on its own line.
+- Keeps previous spacing adjustments while removing inline flow overlap behavior.
+
+## [6.9.3] - 2026-06-30
+
+### Fixed - Spanish home review button overlap spacing
+
+Adjusted spacing in `SpanishHome` so the `words learned · Review →` button no longer overlaps
+the profile edit control, and pushed the following card section slightly lower for cleaner
+separation.
+
+- Increased header bottom padding.
+- Increased top margin on the review button.
+- Added top padding to the cards container below the header.
+
 ## [6.9.2] - 2026-06-30
 
 ### Added - Second Spanish review mode: Word-Matching Test

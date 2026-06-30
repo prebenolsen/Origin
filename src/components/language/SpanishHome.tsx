@@ -73,7 +73,7 @@ export default function SpanishHome() {
         {stats.total > 0 && (
           <button
             onClick={() => navigate('/learn/spanish/review')}
-            className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2 text-xs text-muted transition hover:border-accent/50 hover:text-text"
+            className="mt-2 flex w-fit items-center gap-2 rounded-full border border-line bg-surface px-4 py-2 text-xs text-muted transition hover:border-accent/50 hover:text-text"
           >
             <span className="font-semibold text-accent">{stats.total}</span> words learned
             {stats.due > 0 && <span className="text-faint">· {stats.due} due</span>}
