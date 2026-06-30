@@ -2,9 +2,9 @@
   "context": "When you meet someone in Spain - a host, a guide, a shopkeeper - a few words about yourself break the ice. You don't need to hold a conversation; you just need to say who you are and set the expectation that your Spanish is basic.",
   "explanation": "Start with the three you'll lead with: \"me llamo\" (my name is) plus your name, \"mucho gusto\" (nice to meet you), and \"soy de\" (I am from) plus your country. Together they introduce you in one breath.",
   "examples": [
-    { "es": "Me llamo Ana. Mucho gusto.", "en": "My name is Ana. Nice to meet you." },
-    { "es": "Soy de Noruega.", "en": "I am from Norway.", "note": "Swap in your own country." },
-    { "es": "Me llamo Tom, soy de Londres.", "en": "My name is Tom, I am from London." }
+    { "es": "Me llamo {name}. Mucho gusto.", "en": "My name is {name}. Nice to meet you." },
+    { "es": "Soy de {country_es}.", "en": "I am from {country}.", "note": "Your own country goes here." },
+    { "es": "Tengo {age} años.", "en": "I am {age} years old." }
   ],
   "phrases": [
     { "en": "My name is...", "es": "Me llamo...", "literal": "I call myself" },
@@ -15,6 +15,8 @@
     { "en": "I am a tourist", "es": "Soy turista" },
     { "en": "I speak a little Spanish", "es": "Hablo un poco de espanol" },
     { "en": "I don't speak Spanish well", "es": "No hablo bien espanol" },
-    { "en": "I understand a little", "es": "Entiendo un poco" }
+    { "en": "I understand a little", "es": "Entiendo un poco" },
+    { "en": "How old are you?", "es": "Cuantos años tienes?", "literal": "How many years do you have?" },
+    { "en": "I am ... years old", "es": "Tengo ... años", "literal": "I have ... years" }
   ]
 }

@@ -4,6 +4,29 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [5.5.0] - 2026-06-30
+
+### Added - Learner onboarding that personalizes the lessons (Spanish)
+
+Starting Spanish now opens with a short onboarding step: the learner types their **name,
+country, and age**. Those answers are woven straight into the lessons, so the first
+sentences they learn to say are actually true about them ("Me llamo Preben. Soy de
+Noruega. Tengo 36 años.").
+
+- **Onboarding screen** (`Onboarding.tsx`), shown once on first entry to Spanish and
+  re-openable from the home header ("¡Hola, <name>!  edit"). All fields are optional; the
+  country field has a datalist of common countries and previews the Spanish name.
+- **Learner profile** added to the language profile store (`profile.ts` +
+  `learner.ts`): `{ name, city, country, countryEs, age }`, persisted in localStorage and
+  mapped onto new `origin_language_spanish_profile` columns.
+- **Token substitution in lessons** (`personalizeText`): lesson context/explanation and
+  examples support `{name}`, `{city}`, `{country}`, `{country_es}`, `{age}` tokens, applied
+  before the "no pre-teaching" example gate so personalized sentences still appear only once
+  their words are introduced. A built-in English->Spanish country map renders `{country_es}`.
+- **Introductions content** now leads its examples with the learner's own details and gains
+  a third batch-of-three covering **age** (`cuantos años tienes`, `tengo`, `años`), taking
+  the scenario from 9 to 12 words.
+
 ## [5.4.0] - 2026-06-30
 
 ### Changed - "Visiting Spain" reshaped as a tourist-survival phase (Spanish)

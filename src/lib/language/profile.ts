@@ -4,10 +4,14 @@
  * `origin_language_spanish_profile` later.
  */
 import type { VocabOption } from '../../types/language';
+import type { Learner } from './learner';
 
 export interface LanguageProfile {
   /** Chosen goal slug, e.g. `visiting-spain`. */
   goal?: string;
+  /** The learner's own details (name/country/age), woven into lesson examples.
+   * Present (even if its fields are blank) once onboarding has been done. */
+  learner?: Learner;
   /** scenario slug -> the vocab options the learner selected (personalization). */
   selections: Record<string, VocabOption[]>;
   /** scenario slugs the learner has completed at least once. */
@@ -46,6 +50,21 @@ export function getProfile(langSlug: string): LanguageProfile {
 
 export function getGoalSlug(langSlug: string): string | undefined {
   return read(langSlug).goal;
+}
+
+export function getLearner(langSlug: string): Learner | undefined {
+  return read(langSlug).learner;
+}
+
+/** Whether the learner has been through onboarding (a learner object exists). */
+export function hasOnboarded(langSlug: string): boolean {
+  return read(langSlug).learner != null;
+}
+
+export function setLearner(langSlug: string, learner: Learner): void {
+  const p = read(langSlug);
+  p.learner = learner;
+  write(langSlug, p);
 }
 
 export function setGoal(langSlug: string, goalSlug: string): void {

@@ -23,10 +23,11 @@ device-local store. Until auth is added, the app keys everything to the browser.
 ## DDL
 
 ```sql
--- One row per learner: chosen goal + personalized picks.
+-- One row per learner: chosen goal + personalized picks + their own details.
 create table origin_language_spanish_profile (
   user_id      uuid primary key references auth.users (id) on delete cascade,
   goal         text,                       -- e.g. 'visiting-spain'
+  learner      jsonb,                       -- { name, city, country, countryEs, age } (onboarding)
   selections   jsonb not null default '{}',-- { scenarioSlug: VocabOption[] }
   completed    text[] not null default '{}',
   updated_at   timestamptz not null default now()

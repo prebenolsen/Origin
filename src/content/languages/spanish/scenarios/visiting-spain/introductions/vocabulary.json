@@ -7,5 +7,8 @@
   { "en": "I am a tourist", "es": "soy turista", "category": "introductions" },
   { "en": "I speak a little Spanish", "es": "hablo un poco de espanol", "category": "introductions" },
   { "en": "I don't speak Spanish well", "es": "no hablo bien espanol", "category": "introductions" },
-  { "en": "I understand a little", "es": "entiendo un poco", "category": "introductions" }
+  { "en": "I understand a little", "es": "entiendo un poco", "category": "introductions" },
+  { "en": "how old are you?", "es": "cuantos años tienes", "category": "introductions", "note": "Literally \"how many years do you have?\"" },
+  { "en": "I have / I am (for age)", "es": "tengo", "category": "introductions", "note": "Spanish uses \"have\" for age: \"Tengo 36 años\" = I am 36." },
+  { "en": "years (old)", "es": "años", "category": "introductions", "note": "Add your age before it: \"Tengo 36 años\"." }
 ]

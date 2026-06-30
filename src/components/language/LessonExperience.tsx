@@ -11,7 +11,8 @@ import {
   recordReview,
   vocabId,
 } from '../../lib/language/srs';
-import { getSelections, markComplete, setSelections } from '../../lib/language/profile';
+import { getLearner, getSelections, markComplete, setSelections } from '../../lib/language/profile';
+import { personalizeText } from '../../lib/language/learner';
 import { buildQuiz, type Level, type QuestionTarget, type VocabQuestion } from '../../lib/language/testGen';
 import TopBar from '../ui/TopBar';
 import Button from '../ui/Button';
@@ -41,6 +42,10 @@ function LessonRunner({ scenario }: { scenario: string }) {
   const navigate = useNavigate();
   const bundle = getScenarioBundle(LANG, scenario);
   const exit = () => navigate('/learn/spanish/path');
+
+  // Weave the learner's own details into lesson text ({name}/{country_es}/{age}).
+  const learner = getLearner(LANG);
+  const pers = (text: string) => personalizeText(text, learner);
 
   const isPersonalized = bundle?.scenario.kind === 'personalized';
   const [selected, setSelectedState] = useState<VocabItem[]>(() => {
@@ -132,7 +137,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
             <div className="text-4xl">{bundle.scenario.icon}</div>
             <h1 className="mt-3 font-serif text-[2.3rem] leading-[1.08]">{bundle.scenario.title}</h1>
             {lesson?.context && (
-              <p className="mt-4 text-[1.02rem] leading-relaxed text-text/90">{lesson.context}</p>
+              <p className="mt-4 text-[1.02rem] leading-relaxed text-text/90">{pers(lesson.context)}</p>
             )}
           </div>
           <div className="mt-6 rounded-2xl border border-line bg-surface p-4">
@@ -169,6 +174,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
         ` ${es.toLowerCase()} `,
       );
     const allowedExamples = (lesson?.examples ?? [])
+      .map((ex) => ({ ...ex, es: pers(ex.es), en: pers(ex.en) }))
       .filter((ex) => vocab.every((v) => !usesWord(v.es, ex.es) || introducedEs.has(vocabId(v.es))))
       .slice(0, 2);
 
@@ -183,7 +189,7 @@ function LessonRunner({ scenario }: { scenario: string }) {
 
             {blockIndex === 0 && lesson?.explanation && (
               <div className="mt-3 animate-rise">
-                <p className="text-[1rem] leading-relaxed text-text/90">{lesson.explanation}</p>
+                <p className="text-[1rem] leading-relaxed text-text/90">{pers(lesson.explanation)}</p>
               </div>
             )}
 

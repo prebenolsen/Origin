@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getLanguage } from '../../lib/language/content';
-import { setGoal } from '../../lib/language/profile';
+import { setGoal, setLearner } from '../../lib/language/profile';
+import type { Learner } from '../../lib/language/learner';
 import { useLanguageProfile, useLanguageStats } from '../../lib/language/useLanguage';
 import TopBar from '../ui/TopBar';
+import Onboarding from './Onboarding';
 
 export const LANG = 'spanish';
 
@@ -11,6 +14,25 @@ export default function SpanishHome() {
   const language = getLanguage(LANG);
   const profile = useLanguageProfile(LANG);
   const stats = useLanguageStats(LANG);
+  const [editingProfile, setEditingProfile] = useState(false);
+
+  // First visit (or "edit details"): collect who the learner is before anything
+  // else, so every lesson can speak to them by name.
+  const needsOnboarding = profile.learner == null;
+  if (language && (needsOnboarding || editingProfile)) {
+    const saveLearner = (learner: Learner) => {
+      setLearner(LANG, learner);
+      setEditingProfile(false);
+    };
+    return (
+      <Onboarding
+        initial={profile.learner}
+        editing={editingProfile}
+        onDone={saveLearner}
+        onExit={() => (editingProfile ? setEditingProfile(false) : navigate('/'))}
+      />
+    );
+  }
 
   if (!language) {
     return (
@@ -39,6 +61,14 @@ export default function SpanishHome() {
         <p className="mt-3 max-w-[34ch] text-[0.95rem] leading-relaxed text-muted">
           {language.tagline}
         </p>
+
+        <button
+          onClick={() => setEditingProfile(true)}
+          className="mt-4 inline-flex items-center gap-1.5 text-xs text-muted transition hover:text-text"
+        >
+          {profile.learner?.name ? `¡Hola, ${profile.learner.name}!` : 'Add your details'}
+          <span className="text-faint underline">edit</span>
+        </button>
 
         {stats.total > 0 && (
           <button
