@@ -13,14 +13,20 @@ import {
 } from '../../lib/language/srs';
 import { getLearner, getSelections, markComplete, setSelections } from '../../lib/language/profile';
 import { personalizeText } from '../../lib/language/learner';
-import { buildQuiz, type Level, type QuestionTarget, type VocabQuestion } from '../../lib/language/testGen';
+import {
+  buildQuiz,
+  buildSentenceQuiz,
+  type Level,
+  type QuestionTarget,
+  type VocabQuestion,
+} from '../../lib/language/testGen';
 import TopBar from '../ui/TopBar';
 import Button from '../ui/Button';
 import { LANG } from './SpanishHome';
 import PersonalizeStep from './PersonalizeStep';
 import VocabTest from './VocabTest';
 
-type Phase = 'personalize' | 'context' | 'block' | 'final' | 'done';
+type Phase = 'personalize' | 'context' | 'block' | 'final' | 'sentences' | 'done';
 type BlockSub = 'teach' | 'practice';
 
 /** Words are taught in small batches, not all at once (no dictionary pages). */
@@ -102,6 +108,9 @@ function LessonRunner({ scenario }: { scenario: string }) {
 
   const { lesson } = bundle;
   const totalBlocks = blocks.length;
+  const sentenceDrills = bundle.sentences ?? [];
+  const hasVocab = vocab.length > 0;
+  const hasSentences = sentenceDrills.length > 0;
 
   const pool: QuestionTarget[] = [
     ...getAll(LANG).map((s) => ({ es: s.es, en: s.en, category: s.category })),
@@ -145,15 +154,37 @@ function LessonRunner({ scenario }: { scenario: string }) {
               How this works
             </div>
             <p className="mt-1.5 text-sm text-muted">
-              You'll learn {vocab.length} word{vocab.length === 1 ? '' : 's'} in {totalBlocks} small
-              {totalBlocks === 1 ? ' batch' : ' batches'} of a few at a time - learn a few, practice
-              them, then move on. A full review ties it together at the end.
+              {hasVocab ? (
+                <>
+                  You'll learn {vocab.length} word{vocab.length === 1 ? '' : 's'} in {totalBlocks} small
+                  {totalBlocks === 1 ? ' batch' : ' batches'} of a few at a time - learn a few, practice
+                  them, then move on. A full review ties it together at the end
+                  {hasSentences ? ', and you finish by building real sentences.' : '.'}
+                </>
+              ) : (
+                <>
+                  No new words here. You'll build {sentenceDrills.length} sentence
+                  {sentenceDrills.length === 1 ? '' : 's'} from words you already know - tap the tiles
+                  into the right order, and tap a tile again to send it back.
+                </>
+              )}
             </p>
           </div>
         </div>
         <div className="border-t border-line-soft bg-ink/80 p-5 backdrop-blur">
-          <Button full onClick={() => { setBlockIndex(0); setBlockSub('teach'); setPhase('block'); }}>
-            Start learning
+          <Button
+            full
+            onClick={() => {
+              if (hasVocab) {
+                setBlockIndex(0);
+                setBlockSub('teach');
+                setPhase('block');
+              } else {
+                setPhase('sentences');
+              }
+            }}
+          >
+            {hasVocab ? 'Start learning' : 'Start building'}
           </Button>
         </div>
       </div>
@@ -290,6 +321,37 @@ function LessonRunner({ scenario }: { scenario: string }) {
         title={`${bundle.scenario.title} · full review`}
         label="Section review"
         onResult={(t, correct, level) => recordReview(LANG, vocabId(t.es), correct, level)}
+        onComplete={() => setPhase(hasSentences ? 'sentences' : 'done')}
+        onExit={exit}
+        finishLabel={hasSentences ? 'Build sentences' : 'Finish'}
+      />
+    );
+  }
+
+  /* ---------------------------- sentence builder ------------------------- */
+  if (phase === 'sentences' && hasSentences) {
+    // Reuse known words to build full sentences. Personalize the text first so
+    // tiles reflect the learner's own details, then split into tiles.
+    const sentences = sentenceDrills.map((s) => ({
+      es: pers(s.es),
+      en: pers(s.en),
+      distractors: s.distractors,
+    }));
+    const questions = buildSentenceQuiz(sentences, { seed: 7 });
+    // A correct build demonstrates contextual (level-3) recall of every known
+    // word in it - credit each word that's already in the learner's memory.
+    const creditSentence = (sentenceEs: string, correct: boolean, level: number) => {
+      const ids = new Set(
+        sentenceEs.split(/\s+/).map((t) => vocabId(t)).filter(Boolean),
+      );
+      for (const id of ids) if (getState(LANG, id)) recordReview(LANG, id, correct, level);
+    };
+    return (
+      <VocabTest
+        questions={questions}
+        title={`${bundle.scenario.title} · build sentences`}
+        label="Build sentences"
+        onResult={(t, correct, level) => creditSentence(t.es, correct, level)}
         onComplete={() => setPhase('done')}
         onExit={exit}
         finishLabel="Finish"

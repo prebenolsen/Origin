@@ -37,6 +37,7 @@ src/content/languages/<lang>/
     lesson.json                      # context / explanation / examples / phrases
     vocabulary.json                  # VocabItem[]  (the word list — what reviews track)
     personalize.json                 # optional: "what do you buy/wear?" picker + sentence frame
+    sentences.json                   # optional: full sentences the learner assembles (build-sentence)
 ```
 
 - **Registry:** `src/lib/language/content.ts` auto-discovers the above with
@@ -50,10 +51,18 @@ src/content/languages/<lang>/
 - **Adaptive tests:** `src/lib/language/testGen.ts` raises difficulty with mastery
   (recognise → recall → in-context → produce) and builds **intelligent distractors** from
   the same category + spelling-similar words.
+- **Sentence builder:** the `build-sentence` exercise (also in `testGen.ts`) is a
+  Duolingo-style word bank — the learner taps known-word tiles into order to assemble a full
+  sentence (tap a placed tile to send it back). It is fed by `sentences.json` (tokens are
+  split from the Spanish; `distractors` add wrong tiles) and credits every known word in a
+  correct build as in-context recall, so the grammar drill still feeds the SRS. A scenario
+  can be sentence-only (no `vocabulary.json`), making the lesson skip teaching and go
+  straight to building.
 - **Screens** (`src/components/language/`): `SpanishHome` (goal selection), `PathScreen`
-  (generated path), `LessonExperience` (context → teach → practice → review, with
-  `PersonalizeStep` first for personalized scenarios), `VocabTest` (shared adaptive runner),
-  `ReviewDashboard` + `ReviewSession`. All routes under `/learn/spanish` are lazy-loaded.
+  (generated path), `LessonExperience` (context → teach → practice → review → build
+  sentences, with `PersonalizeStep` first for personalized scenarios), `VocabTest` (shared
+  adaptive runner, including the word-bank builder), `ReviewDashboard` + `ReviewSession`. All
+  routes under `/learn/spanish` are lazy-loaded.
 - **Backend:** state is localStorage today; `docs/language-supabase-schema.md` defines the
   matching Supabase tables (prefix `origin_language_spanish`) for a later sync.
 

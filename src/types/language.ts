@@ -91,6 +91,26 @@ export interface VocabItem {
   note?: string;
 }
 
+/* ------------------------------ sentences.json -------------------------- */
+
+/**
+ * A full sentence the learner assembles from a word bank (the `build-sentence`
+ * exercise). `es` is the correct sentence; its tokens are derived by splitting
+ * on spaces. `distractors` are extra wrong tiles (wrong gender, wrong ending)
+ * mixed into the bank so the exercise tests understanding, not just unscrambling.
+ *
+ * Every token in `es` should be a word the learner has already met (or a proper
+ * noun); the exercise is for *combining* known words, not teaching new ones.
+ */
+export interface Sentence {
+  /** English prompt shown above the bank, e.g. `I like coffee but not tea`. */
+  en: string;
+  /** The target Spanish sentence, e.g. `me gusta el cafe pero no me gusta el te`. */
+  es: string;
+  /** Optional extra wrong tiles added to the bank. */
+  distractors?: string[];
+}
+
 /* -------------------------------- lesson.json --------------------------- */
 
 export interface Phrase {
@@ -157,4 +177,6 @@ export interface ScenarioBundle {
   lesson?: Lesson;
   vocabulary: VocabItem[];
   personalize?: Personalize;
+  /** Optional sentence-builder drills (the `build-sentence` exercise). */
+  sentences?: Sentence[];
 }

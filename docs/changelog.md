@@ -4,6 +4,67 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.0.1] - 2026-06-30
+
+### Changed - Sentence builder retries instead of revealing the answer
+
+UX refinements to the `build-sentence` exercise (`VocabTest.tsx`):
+
+- **Correct just says "Correct"** - the redundant `<spanish> = <english>` line is gone for
+  built sentences (the learner just assembled it, so echoing it back added nothing).
+- **A wrong build no longer reveals the answer or advances.** The learner stays on the
+  sentence with a "Not quite - try again" note and can keep adding/removing tiles until it's
+  right. The SRS result is still recorded from the **first** attempt, so retries don't inflate
+  the score.
+- **New "Help me" button** (appears after the first wrong check): the first press trims the
+  answer back to its longest correct prefix (dropping the first wrong tile and everything
+  after it); once the placed tiles are a correct prefix, each press auto-places the next
+  correct word, shown in **green** to mark that the learner didn't place it themselves.
+- **Layout:** the answer row sits under the prompt, the word bank moved down to just above
+  the footer, and **Check** is pinned to the bottom with reserved space above it for the Help
+  button (so revealing Help doesn't shift the layout).
+
+## [6.0.0] - 2026-06-30
+
+### Added - "Unlock Spanish": a word-bank sentence builder (new exercise type)
+
+A new app capability for the Spanish course - the learner moves from *memorizing* Spanish to
+*creating* it. A Duolingo-style **`build-sentence`** exercise lets them assemble full sentences
+from words they already know, and a new **Unlock Spanish** section teaches the grammar that
+ties the first two sections' vocabulary together.
+
+**Engine + UI**
+
+- **New `build-sentence` question kind** (`src/lib/language/testGen.ts`): a word bank of
+  shuffled tiles (the answer's tokens + `distractors`) that the learner taps into order.
+  `buildSentenceQuestion` / `buildSentenceQuiz` build the drills; `checkBuildSentence` grades
+  the tapped order with the same accent/case-forgiving normalizer as `produce`.
+- **Word-bank UI** (`src/components/language/VocabTest.tsx`): large mobile tiles, an answer
+  row (tap a placed tile to send it back to the bank) and a bank row, with a Check button -
+  no dragging. Reuses the shared correct/wrong result panel and SRS reporting.
+- **Lesson flow** (`LessonExperience.tsx`): a new `sentences` phase runs after the full
+  review and is fed by `sentences.json`. A scenario can be **sentence-only** (no
+  `vocabulary.json`), in which case the lesson skips teaching and goes straight to building.
+  A correct build credits every known word in the sentence as in-context (level-3) recall,
+  so the grammar drill still feeds the spaced-repetition memory.
+- **Content shape**: optional **`sentences.json`** (`{ en, es, distractors? }[]`), a new
+  `Sentence` type, and registry discovery in `src/lib/language/content.ts`.
+
+**Content**
+
+- New goal **Unlock Spanish** (`building-sentences`) with 7 scenarios. Scenario 1,
+  **From Chunks to Sentences** (`from-chunks-to-sentences`), is fully authored as a
+  sentence-only opener (6 build-sentence drills from already-known words). Scenarios 2-7
+  (`el-la-gender`, `joining-ideas`, `ser-vs-estar`, `people-and-actions`,
+  `describing-things`, `make-a-sentence`) ship as placeholders ("Soon").
+- **Business Spanish** and **Living in Spain** stay locked until this section is complete.
+
+**Docs**
+
+- `scenarios/visiting-spain/overview.md` and `scenarios/meeting-people/overview.md` summarize
+  the two completed sections plus every word/phrase taught; `plan-going-forward.md` records
+  the tutor's reasoning for prioritizing this grammar bridge.
+
 ## [5.10.0] - 2026-06-30
 
 ### Added - Five new "Meeting People" scenarios (Spanish)

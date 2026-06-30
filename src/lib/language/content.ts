@@ -15,6 +15,7 @@ import type {
   Personalize,
   Scenario,
   ScenarioBundle,
+  Sentence,
   VocabItem,
 } from '../../types/language';
 
@@ -38,6 +39,10 @@ const vocabFiles = import.meta.glob(
 ) as GlobMap;
 const personalizeFiles = import.meta.glob(
   '../../content/languages/*/scenarios/*/*/personalize.json',
+  { eager: true, import: 'default' },
+) as GlobMap;
+const sentenceFiles = import.meta.glob(
+  '../../content/languages/*/scenarios/*/*/sentences.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 
@@ -99,6 +104,7 @@ const SCENARIOS = indexByScenario<Scenario>(scenarioFiles);
 const LESSONS = indexByScenario<Lesson>(lessonFiles);
 const VOCAB = indexByScenario<VocabItem[]>(vocabFiles);
 const PERSONALIZE = indexByScenario<Personalize>(personalizeFiles);
+const SENTENCES = indexByScenario<Sentence[]>(sentenceFiles);
 
 export function allLanguages(): { slug: string; language: Language }[] {
   return [...LANGUAGES.entries()].map(([slug, language]) => ({ slug, language }));
@@ -127,6 +133,7 @@ export function getScenarioBundle(
     lesson: LESSONS.get(path),
     vocabulary: VOCAB.get(path) ?? [],
     personalize: PERSONALIZE.get(path),
+    sentences: SENTENCES.get(path),
   };
 }
 

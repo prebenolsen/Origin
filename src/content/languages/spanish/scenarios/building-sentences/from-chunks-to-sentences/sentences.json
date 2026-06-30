@@ -1,0 +1,32 @@
+[
+  {
+    "en": "My name is Ana and I'm from Madrid",
+    "es": "me llamo Ana y soy de Madrid",
+    "distractors": ["estoy", "gracias"]
+  },
+  {
+    "en": "I like coffee but I don't like tea",
+    "es": "me gusta el cafe pero no me gusta el te",
+    "distractors": ["la", "gustan"]
+  },
+  {
+    "en": "Good morning, I would like a coffee please",
+    "es": "buenos dias quiero un cafe por favor",
+    "distractors": ["una", "noches"]
+  },
+  {
+    "en": "I'm a tourist and I speak a little Spanish",
+    "es": "soy turista y hablo un poco de español",
+    "distractors": ["estoy", "mucho"]
+  },
+  {
+    "en": "Where is the toilet, please?",
+    "es": "donde esta el baño por favor",
+    "distractors": ["estan", "gracias"]
+  },
+  {
+    "en": "How much is the coffee?",
+    "es": "cuanto cuesta el cafe",
+    "distractors": ["donde", "euros"]
+  }
+]

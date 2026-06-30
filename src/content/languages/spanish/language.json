@@ -45,6 +45,22 @@
       ]
     },
     {
+      "slug": "building-sentences",
+      "title": "Unlock Spanish",
+      "summary": "Stop reciting, start creating - combine the words you already know into your own sentences.",
+      "icon": "🔓",
+      "available": true,
+      "scenarios": [
+        "from-chunks-to-sentences",
+        "el-la-gender",
+        "joining-ideas",
+        "ser-vs-estar",
+        "people-and-actions",
+        "describing-things",
+        "make-a-sentence"
+      ]
+    },
+    {
       "slug": "business-spanish",
       "title": "Business Spanish",
       "summary": "Meetings, email, introductions and negotiating in a professional setting.",

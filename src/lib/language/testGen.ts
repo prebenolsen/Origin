@@ -52,6 +52,19 @@ export type VocabQuestion =
       target: QuestionTarget;
       prompt: string;
       answer: string;
+    }
+  | {
+      kind: 'build-sentence'; // English shown -> tap word-bank tiles into order
+      level: 3;
+      target: QuestionTarget;
+      /** English prompt shown above the bank. */
+      promptEn: string;
+      /** Correct ordered tokens (the answer, split from the Spanish sentence). */
+      tokens: string[];
+      /** Tokens + distractors, shuffled - the tiles the learner taps from. */
+      bank: string[];
+      /** Same as `tokens`; the ordered tiles a correct build must match. */
+      answer: string[];
     };
 
 /** Normalize a typed answer for forgiving comparison (accents/case/punctuation). */
@@ -61,6 +74,14 @@ export function normalizeAnswer(text: string): string {
 
 export function checkProduce(q: Extract<VocabQuestion, { kind: 'produce' }>, typed: string): boolean {
   return normalizeAnswer(typed) === normalizeAnswer(q.answer);
+}
+
+/** Grade a built sentence: the tapped tiles, in order, must match the answer. */
+export function checkBuildSentence(
+  q: Extract<VocabQuestion, { kind: 'build-sentence' }>,
+  built: string[],
+): boolean {
+  return normalizeAnswer(built.join(' ')) === normalizeAnswer(q.answer.join(' '));
 }
 
 /** Cheap spelling closeness 0..1 - rewards shared prefix + similar length. */
@@ -196,4 +217,37 @@ export function buildQuiz(
     const level = opts.forceLevel ?? levelFor(opts.states?.[vocabId(t.es)]);
     return makeQuestion(t, distractorPool, level, opts, baseSeed + i * 17);
   });
+}
+
+/* ------------------------- sentence-builder quiz ------------------------ */
+
+export interface SentenceInput {
+  es: string;
+  en: string;
+  distractors?: string[];
+}
+
+/** Build one `build-sentence` question from a sentence. */
+export function buildSentenceQuestion(sentence: SentenceInput, seed: number): VocabQuestion {
+  const tokens = sentence.es.trim().split(/\s+/).filter(Boolean);
+  const distractors = (sentence.distractors ?? []).map((d) => d.trim()).filter(Boolean);
+  const bank = seededShuffle([...tokens, ...distractors], seed);
+  return {
+    kind: 'build-sentence',
+    level: 3,
+    target: { es: sentence.es, en: sentence.en },
+    promptEn: sentence.en,
+    tokens,
+    bank,
+    answer: tokens,
+  };
+}
+
+/** Build a word-bank sentence-builder quiz from a list of sentences. */
+export function buildSentenceQuiz(
+  sentences: SentenceInput[],
+  opts: { seed?: number } = {},
+): VocabQuestion[] {
+  const baseSeed = opts.seed ?? Date.now() % 100000;
+  return sentences.map((s, i) => buildSentenceQuestion(s, baseSeed + i * 31));
 }
