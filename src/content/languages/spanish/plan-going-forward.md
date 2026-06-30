@@ -378,7 +378,7 @@ Requirements:
   - Right side: corresponding words in Spanish
 - The user clicks one word from either side, then clicks the matching word from the other side to create a pair.
 - Correct matches disappear or are marked as completed.
-- Incorrect matches should provide feedback and remain available.
+- Incorrect matches give error, and the user can try again
 
 Game flow:
 - Only show 6 English–Spanish pairs at a time.

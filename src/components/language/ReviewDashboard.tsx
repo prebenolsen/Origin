@@ -27,7 +27,7 @@ export default function ReviewDashboard() {
   if (stats.total === 0) {
     return (
       <div className="flex h-full flex-col">
-        <TopBar label="Review" onClose={() => navigate('/learn/spanish')} back />
+        <TopBar label="Classic Review" onClose={() => navigate('/learn/spanish/review')} back />
         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-8 text-center">
           <div className="text-4xl">🧠</div>
           <h2 className="font-serif text-xl">Nothing to review yet</h2>
@@ -73,7 +73,7 @@ export default function ReviewDashboard() {
 
   return (
     <div className="no-scrollbar h-full overflow-y-auto">
-      <TopBar label="Review" onClose={() => navigate('/learn/spanish')} back />
+      <TopBar label="Classic Review" onClose={() => navigate('/learn/spanish/review')} back />
 
       <header className="bg-aurora px-6 pb-6 pt-4">
         <h1 className="font-serif text-[2.2rem] leading-[1.05]">Your Spanish</h1>

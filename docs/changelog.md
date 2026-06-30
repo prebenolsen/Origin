@@ -4,6 +4,33 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.9.2] - 2026-06-30
+
+### Added - Second Spanish review mode: Word-Matching Test
+
+Implemented a Duolingo-style bilingual matching review mode and introduced a review-mode picker
+so learners can choose between the existing adaptive review and the new matching test.
+
+- **New review mode chooser** at `/learn/spanish/review`:
+  - `Classic Review` (existing adaptive review dashboard)
+  - `Word-Matching Test` (new two-column English/Spanish matcher)
+- **New Word-Matching Test screen** (`WordMatchingReview.tsx`):
+  - two clickable columns (English left, Spanish right)
+  - pick one word from either side, then match on the other side
+  - correct matches animate away and stay completed
+  - wrong matches show immediate feedback and remain playable
+  - progress shown as words completed (`x / total`)
+  - fixed session list generated once and shuffled once at start
+  - batch flow in groups of 6 pairs; next batch only after all 6 are matched
+  - no reshuffling/regeneration mid-session
+- **Routing updates**:
+  - `/learn/spanish/review` -> review mode picker
+  - `/learn/spanish/review/classic` -> existing `ReviewDashboard`
+  - `/learn/spanish/review/matching` -> new word-matching mode
+  - existing `/learn/spanish/review/:mode` sessions unchanged
+- **Homepage and path Review buttons** continue to open `/learn/spanish/review`, which now lets
+  the learner choose between both review forms.
+
 ## [6.9.1] - 2026-06-30
 
 ### Docs/Workflow - Persistent Copilot instruction and skill setup

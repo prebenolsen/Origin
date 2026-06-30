@@ -21,7 +21,9 @@ const GeographyGame = lazy(() => import('./components/geo/GeographyGame'));
 const SpanishHome = lazy(() => import('./components/language/SpanishHome'));
 const PathScreen = lazy(() => import('./components/language/PathScreen'));
 const LessonExperience = lazy(() => import('./components/language/LessonExperience'));
+const ReviewModePicker = lazy(() => import('./components/language/ReviewModePicker'));
 const ReviewDashboard = lazy(() => import('./components/language/ReviewDashboard'));
+const WordMatchingReview = lazy(() => import('./components/language/WordMatchingReview'));
 const ReviewSession = lazy(() => import('./components/language/ReviewSession'));
 
 function GeoFallback() {
@@ -87,7 +89,23 @@ export default function App() {
           path="/learn/spanish/review"
           element={
             <Suspense fallback={<LangFallback />}>
+              <ReviewModePicker />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/learn/spanish/review/classic"
+          element={
+            <Suspense fallback={<LangFallback />}>
               <ReviewDashboard />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/learn/spanish/review/matching"
+          element={
+            <Suspense fallback={<LangFallback />}>
+              <WordMatchingReview />
             </Suspense>
           }
         />
