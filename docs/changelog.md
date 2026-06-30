@@ -4,6 +4,35 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [5.6.0] - 2026-06-30
+
+### Changed - Visiting Spain content review pass (Spanish)
+
+Acted on the content evaluation in
+`src/content/languages/spanish/scenarios/visiting-spain/content-evaluation.md`. No new
+scenarios - this tightens accuracy, consistency and coverage of the existing 13.
+
+- **Correctness: `ñ` restored everywhere.** Previously dropped in `España`, `español`,
+  `mañana`, `baño`, `contraseña`, `pequeño` (the same files kept `años`). `ñ` is a distinct
+  letter, not an accent - `año` vs `ano`. Acute accents stay stripped as before.
+- **Greetings now teaches `por favor`** ("please"), which the summary always promised but
+  the word list never contained. Greetings is now 12 words (4 clean batches of 3).
+- **Numbers gains 6-9 plus `treinta`/`cuarenta`** and an example of the `treinta y cinco`
+  pattern, so real prices and dates are sayable (now 6 batches of 3).
+- **One form per meaning for "how much is it":** standardized on `cuanto cuesta`
+  (numbers, supermarket updated; `cuanto es` kept as a noted alternative).
+- **`basic-needs` moved earlier** (right after `questions`) so its core words
+  (`necesito`, `agua`, `baño`, `wifi`) are introduced before the scenarios that reuse them.
+- **`supermarket` base trimmed** from 5 duplicative phrases to 3 genuinely-new ones
+  (`donde estan`, `cuanto cuesta`, `eso es todo`); the products still come from
+  `personalize.json`.
+- **Pronunciation hints** added to the sounds beginners can't guess from spelling - `ll`
+  (`me llamo`, `bocadillo`), `j` (`jueves`), Castilian `z`/`ce`/`ci` (`cerveza`, `cinco`,
+  `estacion`) and `ñ` - carried in each item's `note`.
+- **Lessons added** for `cafe`, `restaurant` and `shopping` (previously lesson-less).
+- **Gendered self-descriptions fixed to masculine** for this learner: `vegetariano` and
+  `estoy perdido` are noted as the male form; no feminine variant is taught.
+
 ## [5.5.0] - 2026-06-30
 
 ### Added - Learner onboarding that personalizes the lessons (Spanish)

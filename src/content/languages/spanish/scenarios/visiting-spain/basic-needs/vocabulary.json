@@ -1,8 +1,8 @@
 [
   { "en": "I need", "es": "necesito", "category": "needs", "note": "Add the thing: \"Necesito agua\"." },
   { "en": "I want", "es": "quiero", "category": "needs", "note": "A touch more direct than \"necesito\"; soften with \"por favor\"." },
-  { "en": "the toilet", "es": "el bano", "category": "needs" },
+  { "en": "the toilet", "es": "el baño", "category": "needs", "note": "Say \"BAH-nyo\" (ñ = ny)." },
   { "en": "water", "es": "agua", "category": "needs" },
   { "en": "the wifi", "es": "el wifi", "category": "needs" },
-  { "en": "the password", "es": "la contrasena", "category": "needs", "note": "For the wifi: \"la contrasena del wifi\"." }
+  { "en": "the password", "es": "la contraseña", "category": "needs", "note": "For the wifi: \"la contraseña del wifi\". Say \"kon-tra-SEH-nya\" (ñ = ny)." }
 ]

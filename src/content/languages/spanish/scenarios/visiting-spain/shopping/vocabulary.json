@@ -2,7 +2,7 @@
   { "en": "how much is it", "es": "cuanto cuesta", "category": "clothes" },
   { "en": "can I try it on", "es": "puedo probarmelo", "category": "clothes" },
   { "en": "the changing room", "es": "el probador", "category": "clothes" },
-  { "en": "my size", "es": "mi talla", "category": "clothes" },
+  { "en": "my size", "es": "mi talla", "category": "clothes", "note": "Say \"TA-ya\" (ll = y)." },
   { "en": "bigger", "es": "mas grande", "category": "clothes" },
-  { "en": "smaller", "es": "mas pequeno", "category": "clothes" }
+  { "en": "smaller", "es": "mas pequeño", "category": "clothes", "note": "pequeño: say \"peh-KEH-nyo\" (ñ = ny)." }
 ]

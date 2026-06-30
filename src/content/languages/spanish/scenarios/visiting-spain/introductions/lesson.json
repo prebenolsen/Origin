@@ -11,10 +11,10 @@
     { "en": "Nice to meet you", "es": "Mucho gusto" },
     { "en": "I am from...", "es": "Soy de..." },
     { "en": "I am on holiday", "es": "Estoy de vacaciones" },
-    { "en": "I am visiting Spain", "es": "Estoy de visita en Espana" },
+    { "en": "I am visiting Spain", "es": "Estoy de visita en España" },
     { "en": "I am a tourist", "es": "Soy turista" },
-    { "en": "I speak a little Spanish", "es": "Hablo un poco de espanol" },
-    { "en": "I don't speak Spanish well", "es": "No hablo bien espanol" },
+    { "en": "I speak a little Spanish", "es": "Hablo un poco de español" },
+    { "en": "I don't speak Spanish well", "es": "No hablo bien español" },
     { "en": "I understand a little", "es": "Entiendo un poco" },
     { "en": "How old are you?", "es": "Cuantos años tienes?", "literal": "How many years do you have?" },
     { "en": "I am ... years old", "es": "Tengo ... años", "literal": "I have ... years" }

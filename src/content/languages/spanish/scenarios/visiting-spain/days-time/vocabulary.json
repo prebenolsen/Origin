@@ -1,11 +1,11 @@
 [
   { "en": "today", "es": "hoy", "category": "time" },
-  { "en": "tomorrow", "es": "manana", "category": "time", "note": "Same word as \"morning\" (la manana); context tells them apart." },
+  { "en": "tomorrow", "es": "mañana", "category": "time", "note": "Same word as \"morning\" (la mañana); context tells them apart. Say \"ma-NYA-na\" (ñ = ny)." },
   { "en": "yesterday", "es": "ayer", "category": "time" },
   { "en": "Monday", "es": "lunes", "category": "days" },
   { "en": "Tuesday", "es": "martes", "category": "days" },
   { "en": "Wednesday", "es": "miercoles", "category": "days" },
-  { "en": "Thursday", "es": "jueves", "category": "days" },
+  { "en": "Thursday", "es": "jueves", "category": "days", "note": "Say \"HWEH-bes\" (j = a throaty h)." },
   { "en": "Friday", "es": "viernes", "category": "days" },
   { "en": "Saturday", "es": "sabado", "category": "days" },
   { "en": "Sunday", "es": "domingo", "category": "days" },

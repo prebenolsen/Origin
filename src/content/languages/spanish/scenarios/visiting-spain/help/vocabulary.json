@@ -5,7 +5,7 @@
   { "en": "can you help me", "es": "puede ayudarme", "category": "help" },
   { "en": "do you speak English", "es": "habla ingles", "category": "help" },
   { "en": "I don't know", "es": "no se", "category": "help" },
-  { "en": "I'm lost", "es": "estoy perdido", "category": "help" },
+  { "en": "I'm lost", "es": "estoy perdido", "category": "help", "note": "Masculine form (said by a man)." },
   { "en": "how do you say", "es": "como se dice", "category": "help" },
   { "en": "one moment", "es": "un momento", "category": "help" }
 ]

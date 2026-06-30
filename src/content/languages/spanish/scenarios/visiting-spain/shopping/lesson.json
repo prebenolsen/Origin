@@ -1,0 +1,16 @@
+{
+  "context": "Buying clothes is a handful of predictable moments: find your size, try it on, check the price. Learn those and you can shop for anything - we'll teach the names of the clothes you actually wear, nothing else.",
+  "explanation": "The frame \"Tiene esto en...?\" (Do you have this in...?) plus your size or a colour covers most of it. Ask \"cuanto cuesta?\" for the price, \"mi talla\" for your size, and point to \"el probador\" (the changing room) to try things on.",
+  "examples": [
+    { "es": "Cuanto cuesta?", "en": "How much is it?" },
+    { "es": "Donde esta el probador?", "en": "Where is the changing room?" },
+    { "es": "Lo tiene mas grande?", "en": "Do you have it bigger?", "note": "Swap in \"mas pequeño\" for smaller." }
+  ],
+  "phrases": [
+    { "en": "How much is it?", "es": "Cuanto cuesta?" },
+    { "en": "Can I try it on?", "es": "Puedo probarmelo?" },
+    { "en": "The changing room", "es": "El probador" },
+    { "en": "My size", "es": "Mi talla" },
+    { "en": "Bigger / smaller", "es": "Mas grande / mas pequeño" }
+  ]
+}

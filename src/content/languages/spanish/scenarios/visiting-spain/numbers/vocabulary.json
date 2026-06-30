@@ -1,14 +1,20 @@
 [
-  { "en": "how much is it", "es": "cuanto es", "category": "prices" },
+  { "en": "how much is it", "es": "cuanto cuesta", "category": "prices", "note": "\"Cuanto es?\" works too, especially for a total at the till." },
   { "en": "euros", "es": "euros", "category": "prices" },
-  { "en": "the price", "es": "el precio", "category": "prices" },
+  { "en": "the price", "es": "el precio", "category": "prices", "note": "Say \"PRE-thyo\" (c before i = \"th\" in Spain)." },
   { "en": "one", "es": "uno", "category": "numbers" },
   { "en": "two", "es": "dos", "category": "numbers" },
   { "en": "three", "es": "tres", "category": "numbers" },
   { "en": "four", "es": "cuatro", "category": "numbers" },
-  { "en": "five", "es": "cinco", "category": "numbers" },
-  { "en": "ten", "es": "diez", "category": "numbers" },
+  { "en": "five", "es": "cinco", "category": "numbers", "note": "Say \"THEEN-ko\" (c before i = \"th\")." },
+  { "en": "six", "es": "seis", "category": "numbers" },
+  { "en": "seven", "es": "siete", "category": "numbers" },
+  { "en": "eight", "es": "ocho", "category": "numbers" },
+  { "en": "nine", "es": "nueve", "category": "numbers" },
+  { "en": "ten", "es": "diez", "category": "numbers", "note": "Say \"dyeth\" (z = \"th\")." },
   { "en": "twenty", "es": "veinte", "category": "numbers" },
-  { "en": "fifty", "es": "cincuenta", "category": "numbers" },
-  { "en": "one hundred", "es": "cien", "category": "numbers" }
+  { "en": "thirty", "es": "treinta", "category": "numbers" },
+  { "en": "forty", "es": "cuarenta", "category": "numbers" },
+  { "en": "fifty", "es": "cincuenta", "category": "numbers", "note": "Say \"thin-KWEN-ta\"." },
+  { "en": "one hundred", "es": "cien", "category": "numbers", "note": "Say \"thyen\"." }
 ]

@@ -1,20 +1,21 @@
 {
   "context": "Almost every transaction on a trip ends with a price. You don't need to do maths in Spanish - you need to ask the price, recognise \"euros\", and catch the number that comes back. That's enough to pay confidently at any till or counter.",
-  "explanation": "Lead with the question itself: \"cuanto es?\" (how much is it?). The answer comes in \"euros\", and if you spot a tag you can read \"el precio\" (the price). Master this trio and you can settle up anywhere before you even know the numbers.",
+  "explanation": "Lead with the question itself: \"cuanto cuesta?\" (how much is it?). The answer comes in \"euros\", and if you spot a tag you can read \"el precio\" (the price). Master this trio and you can settle up anywhere before you even know the numbers.",
   "examples": [
-    { "es": "Cuanto es?", "en": "How much is it?", "note": "Your go-to question at any counter." },
+    { "es": "Cuanto cuesta?", "en": "How much is it?", "note": "Your go-to question at any counter. \"Cuanto es?\" works too for a total." },
     { "es": "Son diez euros.", "en": "That's ten euros.", "note": "\"Son\" + a number is the typical reply." },
+    { "es": "Son treinta y cinco euros.", "en": "That's thirty-five euros.", "note": "Tens + \"y\" + units: treinta y cinco = 35, cuarenta y dos = 42." },
     { "es": "El precio, por favor.", "en": "The price, please." }
   ],
   "phrases": [
-    { "en": "How much is it?", "es": "Cuanto es?" },
+    { "en": "How much is it?", "es": "Cuanto cuesta?" },
     { "en": "...euros", "es": "...euros" },
     { "en": "The price", "es": "El precio" },
     { "en": "One / two / three", "es": "Uno / dos / tres" },
-    { "en": "Four / five", "es": "Cuatro / cinco" },
-    { "en": "Ten", "es": "Diez" },
-    { "en": "Twenty", "es": "Veinte" },
-    { "en": "Fifty", "es": "Cincuenta" },
+    { "en": "Four / five / six", "es": "Cuatro / cinco / seis" },
+    { "en": "Seven / eight / nine", "es": "Siete / ocho / nueve" },
+    { "en": "Ten / twenty / thirty", "es": "Diez / veinte / treinta" },
+    { "en": "Forty / fifty", "es": "Cuarenta / cincuenta" },
     { "en": "One hundred", "es": "Cien" }
   ]
 }

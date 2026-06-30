@@ -1,14 +1,14 @@
 {
   "context": "Planning a trip runs on a few time words: is it open today, can we go tomorrow, was that yesterday? You don't need to tell the time in Spanish - you need today, tomorrow, and the days of the week so you can book and not turn up on a closed day.",
-  "explanation": "Begin with the three that anchor everything: \"hoy\" (today), \"manana\" (tomorrow) and \"ayer\" (yesterday). Heads-up: \"manana\" also means \"morning\" - which one is meant is always clear from context.",
+  "explanation": "Begin with the three that anchor everything: \"hoy\" (today), \"mañana\" (tomorrow) and \"ayer\" (yesterday). Heads-up: \"mañana\" also means \"morning\" - which one is meant is always clear from context.",
   "examples": [
-    { "es": "Hoy no, manana.", "en": "Not today, tomorrow." },
+    { "es": "Hoy no, mañana.", "en": "Not today, tomorrow." },
     { "es": "Cerramos ayer.", "en": "We closed yesterday." },
-    { "es": "Manana, por favor.", "en": "Tomorrow, please." }
+    { "es": "Mañana, por favor.", "en": "Tomorrow, please." }
   ],
   "phrases": [
     { "en": "Today", "es": "Hoy" },
-    { "en": "Tomorrow", "es": "Manana" },
+    { "en": "Tomorrow", "es": "Mañana" },
     { "en": "Yesterday", "es": "Ayer" },
     { "en": "Monday / Tuesday", "es": "Lunes / Martes" },
     { "en": "Wednesday / Thursday", "es": "Miercoles / Jueves" },

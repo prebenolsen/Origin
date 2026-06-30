@@ -2,10 +2,10 @@
   { "en": "where is", "es": "donde esta", "category": "directions" },
   { "en": "here", "es": "aqui", "category": "directions" },
   { "en": "there", "es": "alli", "category": "directions" },
-  { "en": "left", "es": "a la izquierda", "category": "directions" },
+  { "en": "left", "es": "a la izquierda", "category": "directions", "note": "Say \"ees-kee-AIR-da\" (z = \"th\")." },
   { "en": "right", "es": "a la derecha", "category": "directions" },
   { "en": "straight on", "es": "todo recto", "category": "directions" },
   { "en": "near", "es": "cerca", "category": "directions" },
   { "en": "far", "es": "lejos", "category": "directions" },
-  { "en": "the toilet", "es": "el bano", "category": "place", "note": "The single most-asked-for place; \"Donde esta el bano?\"." }
+  { "en": "the toilet", "es": "el baño", "category": "place", "note": "The single most-asked-for place; \"Donde esta el baño?\". Say \"BAH-nyo\" (ñ = ny)." }
 ]

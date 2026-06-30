@@ -5,13 +5,11 @@
     { "es": "Donde estan las manzanas?", "en": "Where are the apples?", "note": "Use \"estan\" for plural items." },
     { "es": "Quiero pollo, por favor.", "en": "I want chicken, please." },
     { "es": "Algo mas? - No, eso es todo.", "en": "Anything else? - No, that's all." },
-    { "es": "Cuanto es?", "en": "How much is it?", "note": "Ask for the total at the till." }
+    { "es": "Cuanto cuesta?", "en": "How much is it?", "note": "Ask for the total at the till." }
   ],
   "phrases": [
-    { "en": "Where is the...?", "es": "Donde esta el/la...?" },
     { "en": "Where are the...?", "es": "Donde estan los/las...?" },
-    { "en": "I want...", "es": "Quiero..." },
-    { "en": "How much is it?", "es": "Cuanto es?" },
+    { "en": "How much is it?", "es": "Cuanto cuesta?" },
     { "en": "That's all", "es": "Eso es todo" }
   ]
 }

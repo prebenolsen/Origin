@@ -1,0 +1,19 @@
+{
+  "context": "Eating out is one of the best parts of a trip, and you can do the whole thing in Spanish: ask for the menu, order, and pay. You'll be seated and served at the table, so a little politeness goes a long way.",
+  "explanation": "Start by asking for \"el menu\" (the menu), then order with \"quiero\" (I would like) plus the dish, and \"por favor\". When you're done, ask for \"la cuenta\" (the bill) - it won't arrive until you do.",
+  "examples": [
+    { "es": "El menu, por favor.", "en": "The menu, please." },
+    { "es": "Quiero el pescado.", "en": "I would like the fish." },
+    { "es": "La cuenta, por favor.", "en": "The bill, please.", "note": "In Spain the bill comes only when you ask for it." }
+  ],
+  "phrases": [
+    { "en": "The menu", "es": "El menu" },
+    { "en": "I would like...", "es": "Quiero...", "literal": "I want" },
+    { "en": "Still / sparkling water", "es": "Agua sin gas / con gas" },
+    { "en": "Bread", "es": "El pan" },
+    { "en": "Meat / fish", "es": "La carne / el pescado" },
+    { "en": "I'm vegetarian", "es": "Soy vegetariano", "note": "Masculine form (said by a man)." },
+    { "en": "The bill", "es": "La cuenta" },
+    { "en": "To pay", "es": "Pagar" }
+  ]
+}

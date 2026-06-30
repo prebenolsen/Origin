@@ -3,12 +3,12 @@
   { "en": "coffee with milk", "es": "cafe con leche", "category": "drink" },
   { "en": "a tea", "es": "un te", "category": "drink" },
   { "en": "water", "es": "agua", "category": "drink" },
-  { "en": "a beer", "es": "una cerveza", "category": "drink" },
-  { "en": "a juice", "es": "un zumo", "category": "drink" },
-  { "en": "a sandwich", "es": "un bocadillo", "category": "food" },
+  { "en": "a beer", "es": "una cerveza", "category": "drink", "note": "Say \"ther-VAY-tha\" (c + e = \"th\" in Spain)." },
+  { "en": "a juice", "es": "un zumo", "category": "drink", "note": "Say \"THOO-mo\" (z = \"th\")." },
+  { "en": "a sandwich", "es": "un bocadillo", "category": "food", "note": "Say \"bo-ka-DEE-yo\" (ll = y)." },
   { "en": "a croissant", "es": "un cruasan", "category": "food" },
   { "en": "a cake", "es": "un pastel", "category": "food" },
-  { "en": "I would like", "es": "quiero", "category": "phrase" },
+  { "en": "I would like", "es": "quiero", "category": "phrase", "note": "Literally \"I want\"; soften with \"por favor\"." },
   { "en": "the bill", "es": "la cuenta", "category": "phrase" },
-  { "en": "to take away", "es": "para llevar", "category": "phrase" }
+  { "en": "to take away", "es": "para llevar", "category": "phrase", "note": "Say \"para yeh-VAR\" (ll = y)." }
 ]

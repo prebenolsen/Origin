@@ -1,0 +1,18 @@
+{
+  "context": "A Spanish bar or cafe is where half of daily life happens. You can often stand right at the bar, order in a few words, and pay when you leave - no need to wait to be seated or to flag anyone down.",
+  "explanation": "Ordering is just \"quiero\" (I would like) plus what you want, finished with \"por favor\": \"Un cafe, por favor\". You don't have to build a full sentence - the drink alone, said politely, is enough.",
+  "examples": [
+    { "es": "Un cafe con leche, por favor.", "en": "A coffee with milk, please." },
+    { "es": "Quiero una cerveza.", "en": "I would like a beer." },
+    { "es": "La cuenta, por favor.", "en": "The bill, please.", "note": "Ask for it when you're ready - it rarely comes on its own." }
+  ],
+  "phrases": [
+    { "en": "A coffee", "es": "Un cafe" },
+    { "en": "Coffee with milk", "es": "Cafe con leche" },
+    { "en": "A beer", "es": "Una cerveza" },
+    { "en": "Water", "es": "Agua" },
+    { "en": "I would like...", "es": "Quiero...", "literal": "I want" },
+    { "en": "The bill", "es": "La cuenta" },
+    { "en": "To take away", "es": "Para llevar" }
+  ]
+}

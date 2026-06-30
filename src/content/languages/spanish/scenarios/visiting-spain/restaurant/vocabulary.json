@@ -1,13 +1,13 @@
 [
   { "en": "the menu", "es": "el menu", "category": "food" },
-  { "en": "I would like", "es": "quiero", "category": "phrase" },
+  { "en": "I would like", "es": "quiero", "category": "phrase", "note": "Literally \"I want\"; soften with \"por favor\"." },
   { "en": "the bill", "es": "la cuenta", "category": "phrase" },
   { "en": "still water", "es": "agua sin gas", "category": "drink" },
   { "en": "sparkling water", "es": "agua con gas", "category": "drink" },
   { "en": "bread", "es": "el pan", "category": "food" },
   { "en": "meat", "es": "la carne", "category": "food" },
   { "en": "fish", "es": "el pescado", "category": "food" },
-  { "en": "vegetarian", "es": "vegetariano", "category": "food" },
+  { "en": "vegetarian", "es": "vegetariano", "category": "food", "note": "Masculine form (said by a man)." },
   { "en": "the waiter", "es": "el camarero", "category": "place" },
   { "en": "the table", "es": "la mesa", "category": "place" },
   { "en": "to pay", "es": "pagar", "category": "phrase" }

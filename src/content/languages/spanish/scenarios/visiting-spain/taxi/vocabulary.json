@@ -1,8 +1,8 @@
 [
-  { "en": "take me to", "es": "lleveme a", "category": "taxi", "note": "Add the place: \"Lleveme al hotel\"." },
+  { "en": "take me to", "es": "lleveme a", "category": "taxi", "note": "Add the place: \"Lleveme al hotel\". Say \"YEH-veh-meh\" (ll = y)." },
   { "en": "the hotel", "es": "el hotel", "category": "taxi" },
   { "en": "the airport", "es": "el aeropuerto", "category": "taxi" },
-  { "en": "the station", "es": "la estacion", "category": "taxi" },
+  { "en": "the station", "es": "la estacion", "category": "taxi", "note": "Say \"es-ta-THYON\" (c before i = \"th\")." },
   { "en": "how much is it", "es": "cuanto cuesta", "category": "taxi" },
   { "en": "stop here", "es": "pare aqui", "category": "taxi" }
 ]

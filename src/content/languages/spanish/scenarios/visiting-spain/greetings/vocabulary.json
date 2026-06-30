@@ -1,13 +1,14 @@
 [
-  { "en": "hello", "es": "hola", "category": "greetings" },
+  { "en": "hello", "es": "hola", "category": "greetings", "note": "The h is silent: say \"OH-la\"." },
   { "en": "goodbye", "es": "adios", "category": "greetings" },
-  { "en": "thank you", "es": "gracias", "category": "courtesy" },
+  { "en": "thank you", "es": "gracias", "category": "courtesy", "note": "In Spain the c sounds like \"th\": \"GRA-thyas\"." },
   { "en": "good morning", "es": "buenos dias", "category": "greetings", "note": "Used in the morning." },
   { "en": "good afternoon", "es": "buenas tardes", "category": "greetings", "note": "From about midday onward." },
   { "en": "good evening", "es": "buenas noches", "category": "greetings", "note": "Evening and night; also \"goodnight\"." },
-  { "en": "see you later", "es": "hasta luego", "category": "greetings" },
+  { "en": "please", "es": "por favor", "category": "courtesy", "note": "The most useful courtesy phrase; add it to almost any request." },
   { "en": "you're welcome", "es": "de nada", "category": "courtesy" },
   { "en": "excuse me", "es": "perdon", "category": "courtesy" },
+  { "en": "see you later", "es": "hasta luego", "category": "greetings" },
   { "en": "yes", "es": "si", "category": "courtesy" },
   { "en": "no", "es": "no", "category": "courtesy" }
 ]

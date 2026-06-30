@@ -5,7 +5,7 @@
     { "es": "Hola. - Adios.", "en": "Hello. - Goodbye.", "note": "Opening and closing, any time of day." },
     { "es": "Gracias. - De nada.", "en": "Thank you. - You're welcome.", "note": "The standard thank-you exchange." },
     { "es": "Hola, buenos dias.", "en": "Hello, good morning.", "note": "A friendly way to enter a shop." },
-    { "es": "Perdon. Adios, hasta luego.", "en": "Excuse me. Goodbye, see you later." }
+    { "es": "Si, por favor. - No, gracias.", "en": "Yes, please. - No, thank you.", "note": "The polite way to accept or decline." }
   ],
   "phrases": [
     { "en": "Hello", "es": "Hola", "note": "Works at any time of day." },
@@ -14,6 +14,7 @@
     { "en": "Good morning", "es": "Buenos dias", "literal": "good days" },
     { "en": "Good afternoon", "es": "Buenas tardes" },
     { "en": "Good evening", "es": "Buenas noches" },
+    { "en": "Please", "es": "Por favor" },
     { "en": "Thank you", "es": "Gracias" },
     { "en": "You're welcome", "es": "De nada", "literal": "of nothing" },
     { "en": "Excuse me / Sorry", "es": "Perdon" },

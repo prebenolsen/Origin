@@ -1,14 +1,14 @@
 [
-  { "en": "my name is", "es": "me llamo", "category": "introductions", "note": "Literally \"I call myself\"; add your name: \"Me llamo Ana\"." },
+  { "en": "my name is", "es": "me llamo", "category": "introductions", "note": "Literally \"I call myself\"; add your name: \"Me llamo Ana\". Say \"may YAH-mo\" (ll = y)." },
   { "en": "nice to meet you", "es": "mucho gusto", "category": "introductions" },
   { "en": "I am from", "es": "soy de", "category": "introductions", "note": "Add your country or city: \"Soy de Noruega\"." },
   { "en": "I am on holiday", "es": "estoy de vacaciones", "category": "introductions" },
-  { "en": "I am visiting Spain", "es": "estoy de visita en Espana", "category": "introductions" },
+  { "en": "I am visiting Spain", "es": "estoy de visita en España", "category": "introductions" },
   { "en": "I am a tourist", "es": "soy turista", "category": "introductions" },
-  { "en": "I speak a little Spanish", "es": "hablo un poco de espanol", "category": "introductions" },
-  { "en": "I don't speak Spanish well", "es": "no hablo bien espanol", "category": "introductions" },
+  { "en": "I speak a little Spanish", "es": "hablo un poco de español", "category": "introductions", "note": "español: say \"es-pan-YOL\" (ñ = ny)." },
+  { "en": "I don't speak Spanish well", "es": "no hablo bien español", "category": "introductions" },
   { "en": "I understand a little", "es": "entiendo un poco", "category": "introductions" },
   { "en": "how old are you?", "es": "cuantos años tienes", "category": "introductions", "note": "Literally \"how many years do you have?\"" },
   { "en": "I have / I am (for age)", "es": "tengo", "category": "introductions", "note": "Spanish uses \"have\" for age: \"Tengo 36 años\" = I am 36." },
-  { "en": "years (old)", "es": "años", "category": "introductions", "note": "Add your age before it: \"Tengo 36 años\"." }
+  { "en": "years (old)", "es": "años", "category": "introductions", "note": "Add your age before it: \"Tengo 36 años\". Say \"AH-nyos\" (ñ = ny) - never drop the tilde." }
 ]
