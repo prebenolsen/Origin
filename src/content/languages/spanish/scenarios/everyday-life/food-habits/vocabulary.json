@@ -1,0 +1,8 @@
+[
+  { "en": "breakfast", "es": "desayuno", "category": "meal", "note": "desayuno = breakfast; also appears in the verb form desayuno." },
+  { "en": "lunch", "es": "almuerzo", "category": "meal", "note": "almuerzo = lunch; also appears in the verb form almuerzo." },
+  { "en": "dinner", "es": "cena", "category": "meal", "note": "cena = dinner (noun)." },
+  { "en": "I cook", "es": "cocino", "category": "habit", "note": "Daily-routine verb: cocino en casa." },
+  { "en": "I prepare", "es": "preparo", "category": "habit", "note": "Useful with comida: preparo comida en casa." },
+  { "en": "at home", "es": "en casa", "category": "location", "note": "Reusable location chunk across many routines." }
+]

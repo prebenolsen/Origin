@@ -1,0 +1,11 @@
+{
+  "context": "This is the capstone for Everyday Life. You already have the pieces - now combine them into full answers that sound like real conversation.",
+  "explanation": "No major new vocabulary here. The main idea is recombination: who you are, where you live, what you do, how often, and how you feel - in connected sentences instead of isolated lines.",
+  "examples": [
+    { "es": "soy de Noruega y vivo en un apartamento", "en": "I am from Norway and I live in an apartment", "note": "Start with identity and home." },
+    { "es": "normalmente me levanto a las siete y trabajo por la mañana", "en": "I usually get up at seven and work in the morning", "note": "Add routine and time." },
+    { "es": "despues del trabajo voy al gimnasio y vuelvo a casa", "en": "after work I go to the gym and return home", "note": "Link actions with sequencing." },
+    { "es": "los fines de semana viajo con amigos", "en": "on weekends I travel with friends", "note": "Add free-time habits." },
+    { "es": "hoy estoy cansado pero feliz", "en": "today I am tired but happy", "note": "Close with a feeling state." }
+  ]
+}

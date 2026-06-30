@@ -69,7 +69,12 @@
       "scenarios": [
         "my-day",
         "my-week",
-        "my-home"
+        "my-home",
+        "around-the-city",
+        "free-time-deeper",
+        "food-habits",
+        "how-i-feel-today",
+        "everyday-conversation"
       ]
     }
   ]

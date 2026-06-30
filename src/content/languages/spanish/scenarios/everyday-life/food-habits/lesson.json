@@ -1,0 +1,11 @@
+{
+  "context": "You already learned restaurant Spanish while traveling. This scenario is daily life: what meals you usually have, and what you cook at home.",
+  "explanation": "Start with three meal words: desayuno, almuerzo, cena. Then add verbs you already use (como, bebo) plus this scenario's home-routine verbs (cocino, preparo) to describe real habits.",
+  "examples": [
+    { "es": "normalmente desayuno cafe", "en": "I usually have coffee for breakfast", "note": "desayuno is both the meal and the verb form in I have breakfast." },
+    { "es": "almuerzo en casa", "en": "I have lunch at home", "note": "Simple daily-routine pattern: verb + en casa." },
+    { "es": "la cena es por la noche", "en": "dinner is at night", "note": "A useful way to talk about when a meal happens." },
+    { "es": "me gusta cocinar", "en": "I like cooking", "note": "Reuses gustar with a daily-life verb." },
+    { "es": "preparo comida en casa", "en": "I prepare food at home", "note": "preparo is practical for everyday routine talk." }
+  ]
+}

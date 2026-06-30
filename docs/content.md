@@ -183,6 +183,12 @@
 | Languages | Spanish · Unlock Spanish | Say Anything                    | Grammar bridge / build      | DONE |
 | Languages | Spanish · Everyday Life  | My Day - Daily Routine          | Everyday life / build       | DONE |
 | Languages | Spanish · Everyday Life  | My Week - Habits & Frequency    | Everyday life / build       | DONE |
+| Languages | Spanish · Everyday Life  | My Home - Where You Live        | Everyday life / build       | DONE |
+| Languages | Spanish · Everyday Life  | Around the City - Places & Location | Everyday life / build   | DONE |
+| Languages | Spanish · Everyday Life  | Free Time - Going Deeper        | Everyday life / build       | DONE |
+| Languages | Spanish · Everyday Life  | Food & Habits                   | Everyday life / build       | DONE |
+| Languages | Spanish · Everyday Life  | How I Feel Today                | Everyday life / build       | DONE |
+| Languages | Spanish · Everyday Life  | My Typical Conversation         | Everyday life / build       | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language scenarios live under

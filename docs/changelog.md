@@ -4,6 +4,80 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.9.1] - 2026-06-30
+
+### Docs/Workflow - Persistent Copilot instruction and skill setup
+
+Added workspace-level Copilot customization files so future sessions consistently apply
+Origin-specific Claude guidance and Spanish language content rules.
+
+- Added [.github/instructions/origin-claude-priority.instructions.md](../.github/instructions/origin-claude-priority.instructions.md)
+  for always-on repository workflow guidance.
+- Added [.github/instructions/spanish-language-component.instructions.md](../.github/instructions/spanish-language-component.instructions.md)
+  scoped to `src/content/languages/spanish/**` for language-content authoring behavior.
+- Added custom skill [.github/skills/spanish-content-authoring/SKILL.md](../.github/skills/spanish-content-authoring/SKILL.md)
+  with checklists and required references for Spanish scenario authoring.
+- Updated [.github/copilot-instructions.md](../.github/copilot-instructions.md)
+  to reference and surface the new instruction and skill files.
+
+## [6.9.0] - 2026-06-30
+
+### Content - Remade Everyday Life scenarios 4-8 for quality and consistency
+
+Reworked the Spanish Everyday Life scenarios authored in v6.7.0-v6.8.0 to better match the
+existing Claude style (`my-week`) and the content rules:
+
+- tightened lesson explanations around one main pattern per scenario,
+- strengthened sentence drills with more meaningful contrast distractors,
+- improved vocabulary notes to teach reusable patterns (not just translations),
+- reduced unnecessary vocabulary in **Food & Habits** to keep the module focused,
+- preserved the same scenario structure and progression (no architecture changes).
+
+Updated files under `src/content/languages/spanish/scenarios/everyday-life/` for:
+`around-the-city`, `free-time-deeper`, `food-habits`, `how-i-feel-today`, and
+`everyday-conversation`, and synced `words-taught.md` totals.
+
+## [6.8.0] - 2026-06-30
+
+### Content - Everyday Life sections 5-8
+
+Continued Everyday Life after Around the City by authoring the next four scenarios, focused on
+building communicative ability through recombination rather than niche vocabulary.
+
+- **5. Free Time - Going Deeper (`free-time-deeper`)**
+  Added time/people/frequency expansion for hobbies: fin de semana, en verano, con amigos,
+  con quien, una vez al año. Sentence drills move from "me gusta..." to fuller answers.
+- **6. Food & Habits (`food-habits`)**
+  Added daily food-routine language (desayuno/almuerzo/cena, cocino, preparo, ceno, en casa)
+  centered on everyday habits rather than restaurant ordering.
+- **7. How I Feel Today (`how-i-feel-today`)**
+  Added small-talk state language and physical needs: cansado, feliz, ocupado, aburrido,
+  enfermo, tengo hambre/sed/frio/calor.
+- **8. My Typical Conversation (`everyday-conversation`)**
+  Added a capstone recombination scenario (no new vocabulary list) with sentence-builder drills
+  that combine origin, routine, home, city, food habits, free time and feelings.
+
+Wired all new slugs into `language.json` under Everyday Life and updated tracker docs.
+
+## [6.7.0] - 2026-06-30
+
+### Content - Everyday Life scenario 4: Around the City
+
+Added the fourth Everyday Life scenario, `everyday-life/around-the-city`, focused on talking
+about city places and locations so learners can describe where things are in real conversation.
+
+- **`scenario.json`** - published as `standard` with title **Around the City**.
+- **`vocabulary.json`** - 12 high-utility items grouped into place nouns and location phrases:
+  calle, parque, tienda, restaurante, supermercado, gimnasio, al lado de, enfrente de,
+  detras de, dentro de, fuera de, centro.
+- **`lesson.json`** - teaches place naming plus location framing using known near/far with new
+  connectors, with practical examples like "el gimnasio esta al lado del parque".
+- **`sentences.json`** - 8 build-sentence drills covering nearby/far and core location patterns
+  (next to, in front of, behind, inside, outside).
+
+Wired the new scenario into `language.json` under **Everyday Life**, updated `words-taught.md`
+and `docs/content.md`, and kept version metadata in sync.
+
 ## [6.6.0] - 2026-06-30
 
 ### Content - New goal "Everyday Life": first two scenarios (My Day, My Week)

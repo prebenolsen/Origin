@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I usually have coffee for breakfast",
+    "es": "normalmente desayuno cafe",
+    "distractors": ["nunca", "por la noche"]
+  },
+  {
+    "en": "I have lunch at home",
+    "es": "almuerzo en casa",
+    "distractors": ["restaurante", "por la mañana"]
+  },
+  {
+    "en": "Dinner is at night",
+    "es": "la cena es por la noche",
+    "distractors": ["por la mañana", "el desayuno"]
+  },
+  {
+    "en": "I like cooking",
+    "es": "me gusta cocinar",
+    "distractors": ["comer", "beber"]
+  },
+  {
+    "en": "I prepare food at home",
+    "es": "preparo comida en casa",
+    "distractors": ["trabajo", "gimnasio"]
+  },
+  {
+    "en": "I eat fish but not meat",
+    "es": "como pescado pero no carne",
+    "distractors": ["y", "siempre"]
+  }
+]

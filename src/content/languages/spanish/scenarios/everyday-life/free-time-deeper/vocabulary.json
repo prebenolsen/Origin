@@ -1,0 +1,11 @@
+[
+  { "en": "weekend", "es": "fin de semana", "category": "time", "note": "fin de semana = weekend (singular)." },
+  { "en": "on weekends", "es": "los fines de semana", "category": "time", "note": "Use it for habits: los fines de semana viajo." },
+  { "en": "summer", "es": "verano", "category": "time", "note": "verano = summer." },
+  { "en": "in summer", "es": "en verano", "category": "time", "note": "Pattern: en + season (en verano)." },
+  { "en": "with friends", "es": "con amigos", "category": "people", "note": "con + people gives who you do things with." },
+  { "en": "with family", "es": "con la familia", "category": "people", "note": "Reusable swap with con amigos." },
+  { "en": "once a year", "es": "una vez al año", "category": "frequency", "note": "Complete frequency chunk for routines." },
+  { "en": "with whom", "es": "con quien", "category": "question", "note": "Question starter: con quien viajas?" },
+  { "en": "how often", "es": "con que frecuencia", "category": "question", "note": "Question starter: con que frecuencia viajas?" }
+]

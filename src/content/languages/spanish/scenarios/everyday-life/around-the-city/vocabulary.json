@@ -1,0 +1,14 @@
+[
+  { "en": "street", "es": "calle", "category": "place", "note": "la calle = street. Useful with estar: estoy en la calle." },
+  { "en": "park", "es": "parque", "category": "place", "note": "el parque = park." },
+  { "en": "shop", "es": "tienda", "category": "place", "note": "la tienda = shop/store." },
+  { "en": "restaurant", "es": "restaurante", "category": "place", "note": "el restaurante = restaurant." },
+  { "en": "supermarket", "es": "supermercado", "category": "place", "note": "el supermercado = supermarket." },
+  { "en": "gym", "es": "gimnasio", "category": "place", "note": "el gimnasio = gym." },
+  { "en": "next to", "es": "al lado de", "category": "location", "note": "Pattern: X esta al lado de Y." },
+  { "en": "in front of", "es": "enfrente de", "category": "location", "note": "Pattern: X esta enfrente de Y." },
+  { "en": "behind", "es": "detras de", "category": "location", "note": "Pattern: X esta detras de Y." },
+  { "en": "inside", "es": "dentro de", "category": "location", "note": "Use with a place: dentro del centro." },
+  { "en": "outside", "es": "fuera de", "category": "location", "note": "Direct contrast with dentro de." },
+  { "en": "city center", "es": "centro", "category": "place", "note": "el centro = city center." }
+]

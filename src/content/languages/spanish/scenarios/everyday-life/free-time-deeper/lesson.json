@@ -1,0 +1,11 @@
+{
+  "context": "You can already say what you like. Now make it sound like real life by adding details: when, with whom, and how often.",
+  "explanation": "Use one known sentence as the base - me gusta viajar - then add one detail from this block: los fines de semana or en verano. This small add-on pattern lets you say much more without learning many new words.",
+  "examples": [
+    { "es": "me gusta viajar en verano", "en": "I like to travel in summer", "note": "en + time gives a natural time anchor." },
+    { "es": "los fines de semana voy al gimnasio", "en": "on weekends I go to the gym", "note": "los fines de semana is a high-use routine chunk." },
+    { "es": "viajo con amigos", "en": "I travel with friends", "note": "con + person answers with whom." },
+    { "es": "normalmente viajo una vez al año", "en": "I usually travel once a year", "note": "una vez al año is a complete frequency chunk." },
+    { "es": "a veces viajo con la familia", "en": "sometimes I travel with family", "note": "You can swap con amigos / con la familia easily." }
+  ]
+}

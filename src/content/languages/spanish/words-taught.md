@@ -499,7 +499,7 @@ in the sentence drills (fish, meat) come from Visiting Spain.
 
 ## Words introduced in this module
 
-21 entries.
+81 entries.
 
 ### My Day (daily routine)
 - in the morning
@@ -551,3 +551,50 @@ in the sentence drills (fish, meat) come from Visiting Spain.
 - alone
 - with my family
 - with my friends
+
+### Around the City (places & locations)
+- street
+- park
+- shop
+- restaurant
+- supermarket
+- gym
+- next to
+- in front of
+- behind
+- inside
+- outside
+- city center
+
+### Free Time - Going Deeper
+- weekend
+- on weekends
+- summer
+- in summer
+- with friends
+- with family
+- with whom
+- once a year
+- how often
+
+### Food & Habits
+- breakfast
+- lunch
+- dinner
+- I cook
+- I prepare
+- at home
+
+### How I Feel Today
+- tired
+- happy
+- busy
+- bored
+- sick
+- hungry
+- thirsty
+- cold
+- hot
+
+### My Typical Conversation
+- no new vocabulary (capstone recombination)

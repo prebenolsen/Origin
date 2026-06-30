@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I like to travel in summer",
+    "es": "me gusta viajar en verano",
+    "distractors": ["invierno", "los fines de semana"]
+  },
+  {
+    "en": "I go with friends",
+    "es": "voy con amigos",
+    "distractors": ["con la familia", "solo"]
+  },
+  {
+    "en": "I usually travel once a year",
+    "es": "normalmente viajo una vez al año",
+    "distractors": ["una vez a la semana", "siempre"]
+  },
+  {
+    "en": "On weekends I go to the gym",
+    "es": "los fines de semana voy al gimnasio",
+    "distractors": ["en verano", "nunca"]
+  },
+  {
+    "en": "Sometimes I travel with family",
+    "es": "a veces viajo con la familia",
+    "distractors": ["con amigos", "siempre"]
+  },
+  {
+    "en": "I travel with friends in summer",
+    "es": "viajo con amigos en verano",
+    "distractors": ["con la familia", "en invierno"]
+  }
+]

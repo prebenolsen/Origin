@@ -1,0 +1,42 @@
+[
+  {
+    "en": "I am from Norway and I live in an apartment",
+    "es": "soy de Noruega y vivo en un apartamento",
+    "distractors": ["estoy", "pero"]
+  },
+  {
+    "en": "I usually get up at seven and work in the morning",
+    "es": "normalmente me levanto a las siete y trabajo por la mañana",
+    "distractors": ["nunca", "por la noche"]
+  },
+  {
+    "en": "After work I go to the gym and then I go home",
+    "es": "despues del trabajo voy al gimnasio y despues voy a casa",
+    "distractors": ["antes", "supermercado"]
+  },
+  {
+    "en": "Sometimes I cook at home but today I eat out",
+    "es": "a veces cocino en casa pero hoy como fuera",
+    "distractors": ["siempre", "en casa"]
+  },
+  {
+    "en": "On weekends I travel with friends",
+    "es": "los fines de semana viajo con amigos",
+    "distractors": ["con la familia", "nunca"]
+  },
+  {
+    "en": "Today I am tired but happy",
+    "es": "hoy estoy cansado pero feliz",
+    "distractors": ["soy", "ocupado"]
+  },
+  {
+    "en": "There is a park near my home and the gym is next to it",
+    "es": "hay un parque cerca de mi casa y el gimnasio esta al lado",
+    "distractors": ["lejos", "detras de"]
+  },
+  {
+    "en": "I have dinner at night and then I study Spanish",
+    "es": "la cena es por la noche y despues estudio espanol",
+    "distractors": ["por la mañana", "el almuerzo"]
+  }
+]

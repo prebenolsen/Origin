@@ -1,0 +1,11 @@
+{
+  "context": "You can already describe your routine and your home. The next real-life step is the city around you: saying where places are so you can answer and ask simple location questions.",
+  "explanation": "Start with three high-use place words: calle, parque and tienda. With just these and words you already know (hay, esta), you can already say useful things: hay un parque, estoy en la calle, hay una tienda cerca.",
+  "examples": [
+    { "es": "hay un restaurante cerca", "en": "there is a restaurant nearby", "note": "hay + place is the fastest way to locate something." },
+    { "es": "el gimnasio esta al lado del parque", "en": "the gym is next to the park", "note": "al lado de is a reusable location chunk." },
+    { "es": "la tienda esta enfrente del restaurante", "en": "the shop is in front of the restaurant", "note": "enfrente de helps you compare two places directly." },
+    { "es": "el parque esta detras del supermercado", "en": "the park is behind the supermarket", "note": "detras de gives rear-position location." },
+    { "es": "el supermercado esta fuera del centro", "en": "the supermarket is outside the center", "note": "dentro de / fuera de gives inside vs outside contrast." }
+  ]
+}

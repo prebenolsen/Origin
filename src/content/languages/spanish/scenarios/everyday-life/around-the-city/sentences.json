@@ -1,0 +1,42 @@
+[
+  {
+    "en": "There is a restaurant nearby",
+    "es": "hay un restaurante cerca",
+    "distractors": ["lejos", "supermercado"]
+  },
+  {
+    "en": "The gym is next to the park",
+    "es": "el gimnasio esta al lado del parque",
+    "distractors": ["enfrente de", "detras de"]
+  },
+  {
+    "en": "The shop is in front of the restaurant",
+    "es": "la tienda esta enfrente del restaurante",
+    "distractors": ["detras de", "al lado de"]
+  },
+  {
+    "en": "The park is behind the supermarket",
+    "es": "el parque esta detras del supermercado",
+    "distractors": ["enfrente de", "al lado de"]
+  },
+  {
+    "en": "The supermarket is inside the center",
+    "es": "el supermercado esta dentro del centro",
+    "distractors": ["fuera de", "enfrente de"]
+  },
+  {
+    "en": "The gym is outside the center",
+    "es": "el gimnasio esta fuera del centro",
+    "distractors": ["dentro de", "al lado de"]
+  },
+  {
+    "en": "The restaurant is in front of the park",
+    "es": "el restaurante esta enfrente del parque",
+    "distractors": ["detras de", "al lado de"]
+  },
+  {
+    "en": "The park is far but the shop is nearby",
+    "es": "el parque esta lejos pero la tienda esta cerca",
+    "distractors": ["y", "enfrente de"]
+  }
+]

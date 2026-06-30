@@ -1,0 +1,11 @@
+{
+  "context": "Small talk starts with how you feel. This scenario gives you the highest-use daily states so your conversations sound natural right away.",
+  "explanation": "Use two patterns: estoy + state (estoy cansado, estoy feliz) and tengo + need (tengo hambre, tengo sed). This contrast is more useful than memorizing isolated adjectives.",
+  "examples": [
+    { "es": "estoy cansado", "en": "I am tired", "note": "Use cansada if you are female." },
+    { "es": "estoy ocupado", "en": "I am busy", "note": "Use ocupada if you are female." },
+    { "es": "estoy feliz", "en": "I am happy", "note": "feliz does not change for gender." },
+    { "es": "tengo hambre", "en": "I am hungry", "note": "Spanish uses tener for physical needs." },
+    { "es": "tengo frio pero estoy feliz", "en": "I am cold but happy", "note": "One sentence can mix both patterns." }
+  ]
+}

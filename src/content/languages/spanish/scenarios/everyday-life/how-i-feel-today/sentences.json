@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I am tired",
+    "es": "estoy cansado",
+    "distractors": ["soy", "ocupado"]
+  },
+  {
+    "en": "I am busy",
+    "es": "estoy ocupado",
+    "distractors": ["aburrido", "soy"]
+  },
+  {
+    "en": "I am happy",
+    "es": "estoy feliz",
+    "distractors": ["ocupado", "soy"]
+  },
+  {
+    "en": "I am hungry",
+    "es": "tengo hambre",
+    "distractors": ["estoy", "tengo sed"]
+  },
+  {
+    "en": "I am thirsty",
+    "es": "tengo sed",
+    "distractors": ["tengo hambre", "estoy"]
+  },
+  {
+    "en": "I am cold but I am happy",
+    "es": "tengo frio pero estoy feliz",
+    "distractors": ["tengo calor", "y"]
+  }
+]
