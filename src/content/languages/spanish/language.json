@@ -90,6 +90,17 @@
         "eating-out-again",
         "colors-around-you"
       ]
+    },
+    {
+      "slug": "real-conversations",
+      "title": "Real conversations",
+      "summary": "Move from surviving situations into real social life, then handle everyday conversations naturally.",
+      "icon": "🧠",
+      "available": true,
+      "scenarios": [
+        "making-plans",
+        "everyday-conversations"
+      ]
     }
   ]
 }

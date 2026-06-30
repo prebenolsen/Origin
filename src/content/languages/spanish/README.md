@@ -11,38 +11,39 @@ This file summarizes the current Spanish learning component in Origin.
 
 ## Current learning path (modules/goals)
 
-The Spanish path currently has 5 goals (all available) and 41 authored scenarios total.
+The Spanish path currently has 6 goals (all available) and 43 authored scenarios total.
 
 1. Visiting Spain (12 scenarios)
 2. Meeting People (9 scenarios)
 3. Unlock Spanish (7 scenarios)
 4. Everyday Life (8 scenarios)
 5. Revisiting Visiting Spain (5 scenarios)
+6. Real conversations (2 scenarios)
 
-Together, these goals cover travel survival Spanish, social conversation, sentence construction, daily-life conversation, and reinforcement/level-up scenarios.
+Together, these goals cover travel survival Spanish, social conversation, sentence construction, daily-life conversation, reinforcement/level-up scenarios, and more natural real-world planning and everyday talk.
 
 ## Categories and sections coverage
 
 The content is organized by:
 
-- Modules/goals: the 5 goals listed above
-- Sections/scenarios: 41 scenario folders (each with `scenario.json` and `lesson.json`, plus vocabulary and optional sentence/personalization files)
-- Vocabulary categories: 62 authored category labels in `vocabulary.json` files (examples include question, phrase, numbers, routine, place, time, greetings, family, food, navigation, colors, connectors, and verb-focused groups)
+- Modules/goals: the 6 goals listed above
+- Sections/scenarios: 43 scenario folders (each with `scenario.json` and `lesson.json`, plus vocabulary and optional sentence/personalization files)
+- Vocabulary categories: 69 authored category labels in `vocabulary.json` files (examples include question, phrase, numbers, routine, place, time, greetings, family, food, navigation, colors, connectors, and verb-focused groups)
 
 Authoring coverage currently includes:
 
-- 39 `vocabulary.json` files
-- 20 `sentences.json` files
+- 41 `vocabulary.json` files
+- 22 `sentences.json` files
 - 5 `personalize.json` files
 
 ## Total words learned (component total)
 
 Based on all authored scenario vocabulary files:
 
-- 401 total vocabulary entries
-- 373 unique Spanish vocabulary items
+- 449 total vocabulary entries
+- 400 unique Spanish vocabulary items
 
-The practical headline number for component scope is 373 unique taught Spanish items so far.
+The practical headline number for component scope is 400 unique taught Spanish items so far.
 
 ## How users are tested inside modules
 
@@ -99,3 +100,14 @@ The Spanish component is now a multi-goal, multi-scenario path with:
 - two complementary review modes for retention and recall speed
 
 This README is intentionally concise and should be updated as goals, scenario counts, or test/review mechanics change.
+
+## Maintenance checklist (keep this file current)
+
+When adding or changing Spanish goals/scenarios, update this README in the same change with:
+
+1. Goal count and goal list in "Current learning path"
+2. Total scenario count
+3. File coverage counts (`vocabulary.json`, `sentences.json`, `personalize.json`)
+4. Total and unique vocabulary totals
+5. Summary wording if new capability or review behavior was added
+6. Run `npm run sync:spanish-readme` after content edits to refresh counts automatically

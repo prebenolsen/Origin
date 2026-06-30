@@ -4,6 +4,80 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.17.2] - 2026-07-01
+
+### Tooling - Added automated Spanish README metrics sync command
+
+Added automation to keep `src/content/languages/spanish/README.md` aligned with
+actual authored content counts.
+
+Added:
+
+- `scripts/sync-spanish-readme.mjs`
+- npm script: `sync:spanish-readme`
+
+What it updates automatically:
+
+- goal/scenario headline counts
+- numbered goal list with scenario counts per goal
+- categories/sections coverage count lines
+- authored file counts (`vocabulary.json`, `sentences.json`, `personalize.json`)
+- total and unique vocabulary totals
+- maintenance checklist command hint
+
+Also applied the command once to normalize current README values and remove drift.
+
+## [6.17.1] - 2026-07-01
+
+### Docs - Updated Spanish component README and added maintenance checklist
+
+Updated `src/content/languages/spanish/README.md` to reflect the newly added
+`real-conversations` goal and current component metrics.
+
+Refreshed counts:
+
+- goals: 6
+- scenarios: 43
+- `vocabulary.json` files: 41
+- `sentences.json` files: 22
+- `personalize.json` files: 5
+- total vocabulary entries: 449
+- unique Spanish vocabulary items: 400
+
+Also added a short "Maintenance checklist" section to make future README updates
+part of normal Spanish content edits.
+
+## [6.17.0] - 2026-07-01
+
+### Content - Added new Spanish goal: Real conversations
+
+Added a new Spanish goal path in `language.json`:
+
+- `real-conversations`
+
+Added two authored scenarios under:
+
+- `src/content/languages/spanish/scenarios/real-conversations/making-plans/`
+- `src/content/languages/spanish/scenarios/real-conversations/everyday-conversations/`
+
+Scenario focus:
+
+- **Making Plans**
+  - planning language for today/tomorrow/this weekend/next week
+  - availability and social responses (`estoy libre`, `estoy ocupado`, `suena bien`)
+  - plan grammar chunks (`quiero`, `puedo`, `no puedo`, `quieres`, `vamos a`)
+  - sentence drills for inviting, changing plans, and fixing meeting time
+- **Everyday Conversations**
+  - natural connectors and discourse flow (`porque`, `pero`, `entonces`, `tambien`)
+  - opinion chunks (`creo que`, `me gusta`, `no me gusta`, `prefiero`)
+  - high-frequency past forms (`fui`, `hice`, `tuve`, `vi`)
+  - sentence drills for day recap, weekend talk, small talk, and short story flow
+
+Also updated:
+
+- `src/content/languages/spanish/words-taught.md`
+- `docs/content.md`
+
 ## [6.16.3] - 2026-07-01
 
 ### Engine - Replaced immediate lesson-end section review with checkpoint reviews

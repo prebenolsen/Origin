@@ -1,0 +1,22 @@
+{
+  "context": "This is where Spanish becomes social. Instead of only reacting, you now propose plans, confirm times, and adapt when plans change.",
+  "explanation": "Use ir + a + infinitive for future plans (voy a salir, vamos a comer). Use querer + infinitive to say what you want to do, and poder + infinitive to say what you can or cannot do. Keep questions simple: quieres...?, a las seis?, mas tarde?",
+  "examples": [
+    { "es": "quieres salir esta noche", "en": "do you want to go out tonight" },
+    { "es": "si, vamos a cenar", "en": "yes, let's have dinner" },
+    { "es": "lo siento, no puedo hoy", "en": "sorry, I cannot today" },
+    { "es": "podemos manana", "en": "can we do tomorrow" },
+    { "es": "manana voy a trabajar", "en": "tomorrow I am going to work" },
+    { "es": "este fin de semana voy a viajar", "en": "this weekend I am going to travel" }
+  ],
+  "phrases": [
+    { "en": "Do you want to...?", "es": "Quieres...?" },
+    { "en": "Let's...", "es": "Vamos a..." },
+    { "en": "I want to...", "es": "Quiero..." },
+    { "en": "I can / I can't", "es": "Puedo / No puedo" },
+    { "en": "At six?", "es": "A las seis?" },
+    { "en": "A little later?", "es": "Un poco mas tarde?" },
+    { "en": "See you there", "es": "Nos vemos alli" },
+    { "en": "Until tomorrow", "es": "Hasta manana" }
+  ]
+}

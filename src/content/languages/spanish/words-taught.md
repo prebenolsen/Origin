@@ -658,6 +658,77 @@ See those module sections above for full lists.
 - quiet
 - interesting
 - weird / odd
+
+
+# Real conversations — Words Taught (English)
+
+Module 6. This module pushes you into real social interaction and natural everyday flow.
+
+---
+
+## Words from previous modules
+
+From **Visiting Spain** (Module 1), **Meeting People** (Module 2), **Unlock Spanish** (Module 3),
+**Everyday Life** (Module 4), and **Revisit Visiting Spain** (Module 5).
+See those module sections above for full lists.
+
+---
+
+## Words introduced in this module
+
+48 entries.
+
+### Making Plans
+- today
+- tomorrow
+- this weekend
+- next week
+- later
+- in the morning
+- in the afternoon
+- at night
+- I am free
+- I am busy
+- maybe
+- of course
+- sounds good
+- I want to
+- I can
+- I can't
+- do you want to...?
+- let's...
+- at what time
+- see you
+- until tomorrow
+
+### Everyday Conversations
+- actually
+- really
+- probably
+- maybe
+- I think
+- I don't know
+- because
+- but
+- also
+- then
+- already
+- still
+- usually
+- sometimes
+- always
+- never
+- I went
+- I did / made
+- I had
+- I saw
+- after that
+- I like
+- I don't like
+- I prefer
+- I don't understand
+- can you repeat?
+- I need help
 - friendly
 - serious
 

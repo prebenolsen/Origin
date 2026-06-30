@@ -194,6 +194,8 @@
 | Languages | Spanish · Revisit Visiting Spain | Getting Around | Conversational travel / navigation | DONE |
 | Languages | Spanish · Revisit Visiting Spain | Eating Out Again (Restaurant v2) | Conversational travel / restaurant interaction | DONE |
 | Languages | Spanish · Revisit Visiting Spain | Colors Around You | Conversational travel / colors | DONE |
+| Languages | Spanish · Real conversations | Making Plans | Social planning / invitations / scheduling | DONE |
+| Languages | Spanish · Real conversations | Everyday Conversations | Natural flow / opinions / short past stories | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language scenarios live under

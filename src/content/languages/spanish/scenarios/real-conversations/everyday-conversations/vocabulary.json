@@ -1,0 +1,37 @@
+[
+  { "en": "actually", "es": "en realidad", "category": "connectors" },
+  { "en": "really", "es": "de verdad", "category": "connectors" },
+  { "en": "probably", "es": "probablemente", "category": "connectors" },
+
+  { "en": "maybe", "es": "quiza", "category": "connectors" },
+  { "en": "I think", "es": "creo que", "category": "opinions" },
+  { "en": "I don't know", "es": "no se", "category": "opinions" },
+
+  { "en": "because", "es": "porque", "category": "connectors" },
+  { "en": "but", "es": "pero", "category": "connectors" },
+  { "en": "also", "es": "tambien", "category": "connectors" },
+
+  { "en": "then", "es": "entonces", "category": "connectors" },
+  { "en": "already", "es": "ya", "category": "time" },
+  { "en": "still", "es": "todavia", "category": "time" },
+
+  { "en": "usually", "es": "normalmente", "category": "frequency" },
+  { "en": "sometimes", "es": "a veces", "category": "frequency" },
+  { "en": "always", "es": "siempre", "category": "frequency" },
+
+  { "en": "never", "es": "nunca", "category": "frequency" },
+  { "en": "I went", "es": "fui", "category": "past" },
+  { "en": "I did / made", "es": "hice", "category": "past" },
+
+  { "en": "I had", "es": "tuve", "category": "past" },
+  { "en": "I saw", "es": "vi", "category": "past" },
+  { "en": "after that", "es": "despues", "category": "connectors" },
+  { "en": "I like", "es": "me gusta", "category": "opinions" },
+
+  { "en": "I don't like", "es": "no me gusta", "category": "opinions" },
+  { "en": "I prefer", "es": "prefiero", "category": "opinions" },
+  { "en": "I don't understand", "es": "no entiendo", "category": "problems" },
+
+  { "en": "can you repeat?", "es": "puedes repetir", "category": "problems" },
+  { "en": "I need help", "es": "necesito ayuda", "category": "problems" }
+]

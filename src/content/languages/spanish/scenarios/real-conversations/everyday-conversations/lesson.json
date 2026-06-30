@@ -1,0 +1,21 @@
+{
+  "context": "Real conversation is messy and connected. You need fillers, opinions, and simple past forms to talk about your day and weekend naturally.",
+  "explanation": "Use connectors to keep flow: porque, pero, entonces, tambien. Use opinion chunks: me gusta, no me gusta, prefiero, creo que. Add high-frequency past forms to tell short stories: fui, hice, tuve, vi.",
+  "examples": [
+    { "es": "hoy trabaje, fui al gimnasio y cocine", "en": "today I worked, went to the gym, and cooked" },
+    { "es": "fui a la playa y fue muy bien", "en": "I went to the beach and it was very good" },
+    { "es": "creo que este restaurante es bueno, pero prefiero este", "en": "I think this restaurant is good, but I prefer this one" },
+    { "es": "no entiendo, puedes repetir", "en": "I do not understand, can you repeat" },
+    { "es": "ayer fui al centro, despues vi a un amigo", "en": "yesterday I went downtown, then I saw a friend" }
+  ],
+  "phrases": [
+    { "en": "actually", "es": "en realidad" },
+    { "en": "really", "es": "de verdad" },
+    { "en": "I think", "es": "creo que" },
+    { "en": "because", "es": "porque" },
+    { "en": "but", "es": "pero" },
+    { "en": "then", "es": "entonces" },
+    { "en": "can you repeat?", "es": "puedes repetir" },
+    { "en": "I need help", "es": "necesito ayuda" }
+  ]
+}

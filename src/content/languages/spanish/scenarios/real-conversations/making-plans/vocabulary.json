@@ -1,0 +1,29 @@
+[
+  { "en": "today", "es": "hoy", "category": "time" },
+  { "en": "tomorrow", "es": "manana", "category": "time" },
+  { "en": "this weekend", "es": "este fin de semana", "category": "time" },
+
+  { "en": "next week", "es": "la proxima semana", "category": "time" },
+  { "en": "later", "es": "mas tarde", "category": "time" },
+  { "en": "in the morning", "es": "por la manana", "category": "time" },
+
+  { "en": "in the afternoon", "es": "por la tarde", "category": "time" },
+  { "en": "at night", "es": "por la noche", "category": "time" },
+  { "en": "I am free", "es": "estoy libre", "category": "availability" },
+
+  { "en": "I am busy", "es": "estoy ocupado", "category": "availability" },
+  { "en": "maybe", "es": "quiza", "category": "reaction" },
+  { "en": "of course", "es": "claro", "category": "reaction" },
+
+  { "en": "sounds good", "es": "suena bien", "category": "reaction" },
+  { "en": "I want to", "es": "quiero", "category": "plans", "note": "Use with an infinitive: quiero ir, quiero comer." },
+  { "en": "I can", "es": "puedo", "category": "plans", "note": "Use with a time or infinitive: puedo manana, puedo ir." },
+
+  { "en": "I can't", "es": "no puedo", "category": "plans" },
+  { "en": "do you want to...?", "es": "quieres", "category": "question", "note": "Use with an infinitive: quieres salir?" },
+  { "en": "let's...", "es": "vamos a", "category": "plans", "note": "Core ir + a chunk for shared plans." },
+
+  { "en": "at what time", "es": "a que hora", "category": "question" },
+  { "en": "see you", "es": "nos vemos", "category": "closing" },
+  { "en": "until tomorrow", "es": "hasta manana", "category": "closing" }
+]

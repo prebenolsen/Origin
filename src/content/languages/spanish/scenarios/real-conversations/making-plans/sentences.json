@@ -1,0 +1,52 @@
+[
+  {
+    "en": "Do you want to go out tonight?",
+    "es": "quieres salir esta noche",
+    "distractors": ["ayer", "nunca"]
+  },
+  {
+    "en": "Yes, let's have dinner.",
+    "es": "si vamos a cenar",
+    "distractors": ["trabajar", "despues"]
+  },
+  {
+    "en": "Sorry, I can't today.",
+    "es": "lo siento no puedo hoy",
+    "distractors": ["siempre", "manana"]
+  },
+  {
+    "en": "Can we do tomorrow?",
+    "es": "podemos manana",
+    "distractors": ["ayer", "nunca"]
+  },
+  {
+    "en": "Are you free this weekend?",
+    "es": "estas libre este fin de semana",
+    "distractors": ["ocupado", "la proxima semana"]
+  },
+  {
+    "en": "At six or a little later?",
+    "es": "a las seis o un poco mas tarde",
+    "distractors": ["por la manana", "muy temprano"]
+  },
+  {
+    "en": "Tomorrow I am going to work in the morning.",
+    "es": "manana voy a trabajar por la manana",
+    "distractors": ["ayer", "por la noche"]
+  },
+  {
+    "en": "This weekend we are going to travel.",
+    "es": "este fin de semana vamos a viajar",
+    "distractors": ["no puedo", "en casa"]
+  },
+  {
+    "en": "Do you want to come with us?",
+    "es": "quieres venir con nosotros",
+    "distractors": ["sola", "despues"]
+  },
+  {
+    "en": "Sounds good, see you there.",
+    "es": "suena bien nos vemos alli",
+    "distractors": ["quiza", "hasta manana"]
+  }
+]

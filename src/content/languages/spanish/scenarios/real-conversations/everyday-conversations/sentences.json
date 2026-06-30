@@ -1,0 +1,52 @@
+[
+  {
+    "en": "What did you do today?",
+    "es": "que hiciste hoy",
+    "distractors": ["manana", "nunca"]
+  },
+  {
+    "en": "I worked, went to the gym, and cooked.",
+    "es": "trabaje fui al gimnasio y cocine",
+    "distractors": ["ayer", "entonces"]
+  },
+  {
+    "en": "I went to the beach and it was nice.",
+    "es": "fui a la playa y fue muy bien",
+    "distractors": ["nunca", "todavia"]
+  },
+  {
+    "en": "I think this restaurant is good, but I prefer this one.",
+    "es": "creo que este restaurante es bueno pero prefiero este",
+    "distractors": ["porque", "nunca"]
+  },
+  {
+    "en": "Actually, I do not know because I have not seen it yet.",
+    "es": "en realidad no se porque todavia no lo vi",
+    "distractors": ["siempre", "entonces"]
+  },
+  {
+    "en": "Can you repeat? I do not understand.",
+    "es": "puedes repetir no entiendo",
+    "distractors": ["claro", "ya"]
+  },
+  {
+    "en": "Yesterday I went downtown, then I saw a friend.",
+    "es": "ayer fui al centro entonces vi a un amigo",
+    "distractors": ["manana", "nunca"]
+  },
+  {
+    "en": "I had a problem, but now I am fine.",
+    "es": "tuve un problema pero ahora estoy bien",
+    "distractors": ["siempre", "tambien"]
+  },
+  {
+    "en": "Usually I drink coffee, but today I had tea.",
+    "es": "normalmente tomo cafe pero hoy tuve te",
+    "distractors": ["nunca", "probablemente"]
+  },
+  {
+    "en": "Sometimes we talk about work, hobbies, and travel.",
+    "es": "a veces hablamos de trabajo hobbies y viajes",
+    "distractors": ["ayer", "fui"]
+  }
+]

@@ -42,10 +42,6 @@ Explore = "what exists?"
 Geography = a distinct game/practice mode
 Profile = motivation/progress/stats
 
-# Language component? 
-- Spanish
-- Lives in "Language" under "Learn/Explore". 
-
 ## IMPORTANT: 
 - Russian Ukraine conflict is Ollama generated. 
 
@@ -57,3 +53,9 @@ Profile = motivation/progress/stats
 # Sørg for at følgende blir fikset:
 
 Want me to fix the russia-and-ukraine module (it has real story content but stub timeline/quiz/flashcards), or auto-convert the en-dashes to ASCII across content?
+
+# Spanish component
+## New content
+- Mini stories (two NPCs having a conversation, the user follows along at own pace, can click to reveal words or full text)
+
+## Rename "goals", "scenarios". What even is that lol. Chapters, am I right? 
