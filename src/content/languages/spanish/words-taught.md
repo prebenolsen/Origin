@@ -425,7 +425,7 @@ restrooms) was taught there.
 
 ## Words introduced in this module
 
-33 entries.
+38 entries.
 
 Scenarios 1 (*From Chunks to Sentences*) and 7 (*Say Anything*) introduced no new words - they
 only recombine known ones into sentences.
@@ -653,5 +653,10 @@ See those module sections above for full lists.
 - young
 - older
 - funny
+- kind
+- nice
+- quiet
+- interesting
+- weird / odd
 - friendly
 - serious

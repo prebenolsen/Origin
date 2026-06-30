@@ -78,5 +78,44 @@
     ],
     "required": ["mi hermanastro/mi hermanastra", "es", "simpatico/simpatica", "divertido/divertida"],
     "distractors": ["bajo", "mayor"]
+  },
+  {
+    "en": "Write: My mother is kind and nice.",
+    "es": "mi madre es amable y agradable",
+    "acceptable": [
+      "mi mama es amable y agradable"
+    ],
+    "concepts": [
+      "two personality adjectives",
+      "ser for description"
+    ],
+    "required": ["mi madre/mi mama", "es", "amable", "agradable"],
+    "distractors": ["raro", "alta"]
+  },
+  {
+    "en": "Write: My sister is quiet but interesting.",
+    "es": "mi hermana es tranquila pero interesante",
+    "acceptable": [
+      "mi hermana es callada pero interesante"
+    ],
+    "concepts": [
+      "contrast with pero",
+      "adjective agreement"
+    ],
+    "required": ["mi hermana", "es", "tranquilo/tranquila", "pero", "interesante"],
+    "distractors": ["divertido", "joven"]
+  },
+  {
+    "en": "Write: My coworker is weird but kind.",
+    "es": "mi companero de trabajo es raro pero amable",
+    "acceptable": [
+      "mi companera de trabajo es rara pero amable"
+    ],
+    "concepts": [
+      "balanced description",
+      "gender agreement raro/rara"
+    ],
+    "required": ["mi companero de trabajo", "es", "raro/rara", "pero", "amable"],
+    "distractors": ["simpatico", "bajo"]
   }
 ]

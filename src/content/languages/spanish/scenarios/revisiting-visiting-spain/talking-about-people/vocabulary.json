@@ -16,6 +16,11 @@
   { "en": "older", "es": "mayor", "category": "descriptions", "note": "Preferred over viejo for people in neutral description." },
 
   { "en": "funny", "es": "divertido / divertida", "category": "descriptions" },
+  { "en": "kind", "es": "amable", "category": "descriptions", "note": "Same form for masculine/feminine singular." },
+  { "en": "nice", "es": "agradable", "category": "descriptions", "note": "General positive personality description." },
+  { "en": "quiet", "es": "tranquilo / tranquila", "category": "descriptions", "note": "For calm personality or manner." },
+  { "en": "interesting", "es": "interesante", "category": "descriptions", "note": "Same form for masculine/feminine singular." },
+  { "en": "weird / odd", "es": "raro / rara", "category": "descriptions", "note": "Informal description; use carefully." },
   { "en": "friendly", "es": "simpatico / simpatica", "category": "descriptions" },
   { "en": "serious", "es": "serio / seria", "category": "descriptions" }
 ]

@@ -4,6 +4,27 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.13.0] - 2026-06-30
+
+### Content - Expanded people-description adjectives in Talking About People
+
+Extended Spanish scenario `revisiting-visiting-spain/talking-about-people` with additional
+adjectives for family and social descriptions, plus new production sentence drills.
+
+Added adjective targets:
+
+- kind (`amable`)
+- nice (`agradable`)
+- quiet (`tranquilo / tranquila`)
+- interesting (`interesante`)
+- weird / odd (`raro / rara`)
+
+Also updated:
+
+- `src/content/languages/spanish/scenarios/revisiting-visiting-spain/talking-about-people/vocabulary.json`
+- `src/content/languages/spanish/scenarios/revisiting-visiting-spain/talking-about-people/sentences.json`
+- `src/content/languages/spanish/words-taught.md`
+
 ## [6.12.2] - 2026-06-30
 
 ### Engine - Wired production evaluator into sentence runtime flow
