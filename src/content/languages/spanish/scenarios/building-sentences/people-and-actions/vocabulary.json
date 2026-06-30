@@ -1,0 +1,11 @@
+[
+  { "en": "I", "es": "yo", "category": "person", "note": "The verb ending usually shows it's you, so \"yo\" is often dropped: \"hablo\" already means \"I speak\"." },
+  { "en": "you (informal)", "es": "tu", "category": "person", "note": "For a friend or someone your age. You already say \"y tu?\" = and you?" },
+  { "en": "he", "es": "el", "category": "person", "note": "Same spelling as \"el\" (the), but here it means \"he\"." },
+  { "en": "she", "es": "ella", "category": "person", "note": "El and ella use the same verb form: el habla / ella habla." },
+  { "en": "he/she speaks", "es": "habla", "category": "action", "note": "From hablar. \"I speak\" = hablo (-o); he/she = habla (-a)." },
+  { "en": "he/she works", "es": "trabaja", "category": "action", "note": "From trabajar. \"I work\" = trabajo; he/she = trabaja." },
+  { "en": "he/she lives", "es": "vive", "category": "action", "note": "From vivir (an -ir verb). \"I live\" = vivo; he/she = vive (-e, not -a)." },
+  { "en": "you speak", "es": "hablas", "category": "action", "note": "The \"tu\" form ends in -s: tu hablas = you speak." },
+  { "en": "you work", "es": "trabajas", "category": "action", "note": "Same -s ending: tu trabajas = you work." }
+]

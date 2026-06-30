@@ -4,6 +4,104 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.4.0] - 2026-06-30
+
+### Content - Unlock Spanish scenarios 5-7: present tense, descriptions, capstone
+
+Authored the final three grammar-bridge scenarios, completing the Unlock Spanish section. All
+flipped from placeholder to `standard`:
+
+- **5. I Do, You Do, They Do (`people-and-actions`)** - the minimum useful present tense.
+  `vocabulary.json`: yo / tu / el / ella plus the third-person and "you" forms of verbs the
+  learner already uses (habla, trabaja, vive, hablas, trabajas). `lesson.json` teaches the
+  ending change (-o for I -> -a/-e for he/she, -s for you) and that Spanish drops the pronoun.
+  `sentences.json`: six builds like "ella trabaja en Madrid" with wrong-person distractors.
+- **6. Making Descriptions (`describing-things`)** - adjectives, placement and agreement.
+  `vocabulary.json`: bueno, grande, pequeño, bonito, caro, barato. `lesson.json` teaches the
+  two rules (adjective after the noun; -o flips to -a for feminine, -e adjectives invariant).
+  `sentences.json`: six builds (e.g. "el cafe es bueno", "la comida es buena") with wrong-gender
+  agreement distractors.
+- **7. Say Anything (`make-a-sentence`)** - the capstone. Sentence-only (no `vocabulary.json`),
+  like scenario 1. `sentences.json`: eight builds that combine articles, ser/estar, connectors,
+  other people and descriptions ("soy de Noruega pero vivo en España", "la comida es muy buena
+  pero es cara"), with distractors targeting the trickiest choice in each.
+
+With this, all 7 Unlock Spanish scenarios are authored and playable. Updated `words-taught.md`
+(new present-tense and adjective entries), the plan table (5-7 -> DONE), and the content
+tracking table. Content validator passes.
+
+## [6.3.0] - 2026-06-30
+
+### Content - Unlock Spanish scenario 4: The Two "To Be" Verbs (ser vs estar)
+
+Authored the fourth grammar-bridge scenario, `building-sentences/ser-vs-estar` ("The Two
+\"To Be\" Verbs"), and flipped it from placeholder to `standard`:
+
+- **`vocabulary.json`** - the six everyday forms the learner already half-knows, grouped to
+  contrast the pair: soy / estoy / es (batch 1), eres / estas / esta (batch 2). All share the
+  `to-be` category so distractors swap ser<->estar.
+- **`lesson.json`** - context (Spanish has two "to be" and they are not interchangeable),
+  explanation taught as a contrast rather than rules (ser = identity/origin: soy de Noruega,
+  soy turista; estar = state/location: estoy bien, estoy aqui), and five worked examples.
+- **`sentences.json`** - six build-sentence drills where the distractor is the wrong "to be"
+  (e.g. "soy de Noruega" vs "estoy"; "estoy aqui ..." vs "soy"; "como estas" vs "eres"), so
+  the choice is the whole exercise. All tokens reuse known vocabulary.
+
+Updated `words-taught.md` (six new verb-form entries), the plan table, and the content
+tracking table (scenario 4 -> DONE). Content validator passes.
+
+## [6.2.0] - 2026-06-30
+
+### Content - Unlock Spanish scenario 3: Connect Your Thoughts (connectors)
+
+Authored the third grammar-bridge scenario, `building-sentences/joining-ideas` ("Connect Your
+Thoughts"), and flipped it from placeholder to `standard`:
+
+- **`vocabulary.json`** - six connectors in two batches of three: y, pero, porque / tambien,
+  muy, un poco. All structural - no new content nouns.
+- **`lesson.json`** - context (real conversation joins single ideas), explanation of the
+  opening batch (y / pero / porque sitting between two already-known clauses), and five worked
+  examples.
+- **`sentences.json`** - six build-sentence drills that join two known clauses (e.g. "me gusta
+  el cafe pero no me gusta el te", "estoy aqui porque me gusta España", and a multi-connector
+  capstone), with distractors that swap the connector so the build tests the right join.
+
+Updated `words-taught.md` (six new connector entries), the plan table, and the content
+tracking table (scenario 3 -> DONE). Content validator passes.
+
+## [6.1.0] - 2026-06-30
+
+### Content - Unlock Spanish scenario 2: El & La (noun gender)
+
+Authored the second grammar-bridge scenario, `building-sentences/el-la-gender` ("El & La -
+Words Have a Gender"), and flipped it from placeholder to `standard`:
+
+- **`vocabulary.json`** - the six articles (el, la, un, una, los, las) followed by six
+  already-familiar nouns to hang them on (el cafe, la mesa, el pan, la comida, la familia, el
+  baño), ordered into four batches of three.
+- **`lesson.json`** - context (every noun carries a gender; the article matches it),
+  explanation (el/la, the -o/-a tendency taught honestly as a tendency not a law, un/una), and
+  five worked examples.
+- **`sentences.json`** - six build-sentence drills that force the correct article and number,
+  each with wrong-gender / wrong-number distractors (e.g. "quiero un cafe" with distractor
+  "una"; "donde estan los servicios" with distractor "las"). All tokens reuse vocabulary from
+  Visiting Spain and Meeting People.
+
+Updated the master word list (`words-taught.md`) with the new Unlock Spanish module section
+and the plan/content tracking tables (scenario 2 -> DONE). Content validator passes.
+
+## [6.0.2] - 2026-06-30
+
+### Docs - Refresh the Spanish forward plan
+
+Rewrote `scenarios/building-sentences/plan-going-forward.md` to match reality (no
+learner-facing change - the file is not consumed by the content registry): Part A keeps the
+original rationale, Part B records what is now built (the Unlock Spanish section, the
+`build-sentence` engine/UI, the v6.0.1 retry/Help behavior, and scenario 1), and Part C lays
+out the going-forward work - authoring scenarios 2-7 (starting with El & La), optional engine
+enhancements (listening/speaking/sentence review), and opening Business Spanish / Living in
+Spain only once the grammar bridge is complete.
+
 ## [6.0.1] - 2026-06-30
 
 ### Changed - Sentence builder retries instead of revealing the answer

@@ -1,0 +1,11 @@
+{
+  "context": "English has one word for \"to be\". Spanish has two - ser and estar - and they are not interchangeable. The good news: you already use both. \"Soy de Noruega\" is ser; \"estoy bien\" is estar. This lesson just makes the choice conscious.",
+  "explanation": "Use soy (from ser) for who you are and where you're from - the things that don't change: \"soy turista\", \"soy de Noruega\". Use estoy (from estar) for how you are and where you are right now - things that can change: \"estoy bien\", \"estoy aqui\". The \"he/she/it\" form of ser is es (\"es un cafe\"). A quick test: identity or origin -> ser; a state or a location -> estar.",
+  "examples": [
+    { "es": "soy de Noruega", "en": "I'm from Norway", "note": "Origin -> ser." },
+    { "es": "soy turista", "en": "I'm a tourist", "note": "Identity -> ser." },
+    { "es": "estoy bien", "en": "I'm fine", "note": "A state -> estar." },
+    { "es": "estoy aqui", "en": "I'm here", "note": "A location -> estar." },
+    { "es": "es un cafe", "en": "it's a coffee", "note": "Identity, he/she/it form of ser." }
+  ]
+}

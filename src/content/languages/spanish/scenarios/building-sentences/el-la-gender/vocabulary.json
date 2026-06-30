@@ -1,0 +1,14 @@
+[
+  { "en": "the (masculine)", "es": "el", "category": "article", "note": "Goes before masculine nouns: el cafe, el pan." },
+  { "en": "the (feminine)", "es": "la", "category": "article", "note": "Goes before feminine nouns: la mesa, la comida." },
+  { "en": "a (masculine)", "es": "un", "category": "article", "note": "\"a / an\" with a masculine noun: un cafe." },
+  { "en": "a (feminine)", "es": "una", "category": "article", "note": "\"a / an\" with a feminine noun: una mesa." },
+  { "en": "the (masculine plural)", "es": "los", "category": "article", "note": "More than one masculine thing: los servicios." },
+  { "en": "the (feminine plural)", "es": "las", "category": "article", "note": "More than one feminine thing: las mesas." },
+  { "en": "the coffee", "es": "el cafe", "category": "noun", "note": "Masculine - el cafe." },
+  { "en": "the table", "es": "la mesa", "category": "noun", "note": "Feminine - la mesa. Ends in -a." },
+  { "en": "the bread", "es": "el pan", "category": "noun", "note": "Masculine - el pan." },
+  { "en": "the food", "es": "la comida", "category": "noun", "note": "Feminine - la comida. Ends in -a." },
+  { "en": "the family", "es": "la familia", "category": "noun", "note": "Feminine - la familia." },
+  { "en": "the toilet", "es": "el baño", "category": "noun", "note": "Masculine - el baño. Say \"BAH-nyo\"." }
+]

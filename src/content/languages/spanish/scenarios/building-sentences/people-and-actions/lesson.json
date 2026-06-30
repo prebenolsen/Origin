@@ -1,0 +1,11 @@
+{
+  "context": "Everything you've built so far has been about you - \"yo\". But conversation is about other people too: where she works, what he does. The verb changes a little for each person, and once you see the pattern it's easy.",
+  "explanation": "Every Spanish verb has a different ending for each person. You already use the \"I\" endings - hablo, trabajo, vivo, all ending in -o. First meet the people: yo (I), tu (you), el (he). Spanish so often drops these little words - because the ending already shows who - that \"hablo\" on its own means \"I speak\". Next you'll change those endings for other people.",
+  "examples": [
+    { "es": "yo hablo español", "en": "I speak Spanish", "note": "The -o ending = I." },
+    { "es": "el habla español", "en": "he speaks Spanish", "note": "For he/she, -o becomes -a: habla." },
+    { "es": "ella trabaja en Madrid", "en": "she works in Madrid", "note": "trabajo -> trabaja for he/she." },
+    { "es": "ella vive en España", "en": "she lives in Spain", "note": "vivir is an -ir verb, so he/she ends in -e: vive." },
+    { "es": "tu hablas español", "en": "you speak Spanish", "note": "The \"you\" form adds -s: hablas." }
+  ]
+}

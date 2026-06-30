@@ -50,6 +50,12 @@ src/content/languages/<lang>/
    fill every `es`, then set `kind` to `standard` (or `personalized`) - no code change.
 8. **Required-on-every-change (repo rule):** bump `version.js` + `package.json` (MINOR for
    content), add a `docs/changelog.md` entry, and mark the row DONE in `docs/content.md`.
+9. **Keep the master word list current.** Every English word/phrase taught by any scenario is
+   catalogued in [`src/content/languages/spanish/words-taught.md`](../../../src/content/languages/spanish/words-taught.md).
+   Whenever you add or change vocabulary (`vocabulary.json`, or picked `personalize.json`
+   options), add the new English entries to that file under the matching module section. New
+   modules after the first list both "Words from previous modules" and "Words introduced in
+   this module". Add words there in the same order they are taught.
 
 ## Add a new scenario (checklist)
 
@@ -60,14 +66,16 @@ src/content/languages/<lang>/
 3. Write `vocabulary.json` from `assets/vocabulary.template.json` - ordered into batches.
 4. Optional `lesson.json` from `assets/lesson.template.json` (short context + explanation).
 5. Add the `<slug>` to the relevant goal's `scenarios` array in `language.json`.
-6. **Validate:** `node .claude/skills/spanish-content/scripts/validate-content.mjs`
-7. Do the repo "required on every change" steps (version, changelog, content.md).
+6. Add the scenario's English words to `src/content/languages/spanish/words-taught.md` (rule 9).
+7. **Validate:** `node .claude/skills/spanish-content/scripts/validate-content.mjs`
+8. Do the repo "required on every change" steps (version, changelog, content.md).
 
 ## Fill a placeholder (the "feed me a word list" path)
 
 Open the scenario's `vocabulary.json`, translate each `en` into `es` (ASCII, no accents),
 set `category` sensibly (drives smart distractors), then flip `scenario.json` `kind` to
-`standard`/`personalized`. Re-run the validator.
+`standard`/`personalized`. Add the English words to `words-taught.md` (rule 9). Re-run the
+validator.
 
 ## Validate
 

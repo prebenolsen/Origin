@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I would like a coffee",
+    "es": "quiero un cafe",
+    "distractors": ["una", "el"]
+  },
+  {
+    "en": "Where is the table?",
+    "es": "donde esta la mesa",
+    "distractors": ["el", "estan"]
+  },
+  {
+    "en": "The bread is here",
+    "es": "el pan esta aqui",
+    "distractors": ["la", "los"]
+  },
+  {
+    "en": "Where are the restrooms?",
+    "es": "donde estan los servicios",
+    "distractors": ["las", "esta"]
+  },
+  {
+    "en": "I need a table, please",
+    "es": "necesito una mesa por favor",
+    "distractors": ["un", "el"]
+  },
+  {
+    "en": "The food is here",
+    "es": "la comida esta aqui",
+    "distractors": ["el", "un"]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "en": "I'm from Norway but I live in Spain",
+    "es": "soy de Noruega pero vivo en España",
+    "distractors": ["estoy", "y"]
+  },
+  {
+    "en": "I like coffee because it is good",
+    "es": "me gusta el cafe porque es bueno",
+    "distractors": ["esta", "buena"]
+  },
+  {
+    "en": "My family is big",
+    "es": "mi familia es grande",
+    "distractors": ["esta", "un"]
+  },
+  {
+    "en": "She works in Madrid and speaks Spanish",
+    "es": "ella trabaja en Madrid y habla español",
+    "distractors": ["trabajo", "pero"]
+  },
+  {
+    "en": "The food is very good but it is expensive",
+    "es": "la comida es muy buena pero es cara",
+    "distractors": ["bueno", "caro"]
+  },
+  {
+    "en": "I'm a tourist and I speak a little Spanish",
+    "es": "soy turista y hablo un poco de español",
+    "distractors": ["estoy", "muy"]
+  },
+  {
+    "en": "He is from Spain but he lives in Norway",
+    "es": "el es de España pero vive en Noruega",
+    "distractors": ["esta", "y"]
+  },
+  {
+    "en": "Where is the toilet, please?",
+    "es": "donde esta el baño por favor",
+    "distractors": ["es", "gracias"]
+  }
+]

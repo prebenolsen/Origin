@@ -1,0 +1,32 @@
+[
+  {
+    "en": "She works in Madrid",
+    "es": "ella trabaja en Madrid",
+    "distractors": ["trabajo", "el"]
+  },
+  {
+    "en": "He speaks Spanish",
+    "es": "el habla español",
+    "distractors": ["hablo", "ella"]
+  },
+  {
+    "en": "She lives in Spain",
+    "es": "ella vive en España",
+    "distractors": ["vivo", "habla"]
+  },
+  {
+    "en": "You speak Spanish very well",
+    "es": "tu hablas español muy bien",
+    "distractors": ["hablo", "habla"]
+  },
+  {
+    "en": "You work in Madrid",
+    "es": "tu trabajas en Madrid",
+    "distractors": ["trabaja", "trabajo"]
+  },
+  {
+    "en": "I speak Spanish and she speaks English",
+    "es": "yo hablo español y ella habla ingles",
+    "distractors": ["hablas", "trabaja"]
+  }
+]

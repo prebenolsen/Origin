@@ -175,12 +175,12 @@
 | Languages | Spanish · Meeting People | Making Plans (invitations)      | Social / conversation       | DONE |
 | Languages | Spanish · Meeting People | Compliments & Small Talk        | Social / conversation       | DONE |
 | Languages | Spanish · Unlock Spanish | From Chunks to Sentences        | Grammar bridge / build      | DONE |
-| Languages | Spanish · Unlock Spanish | El & La - Words Have a Gender   | Grammar bridge / build      | PLACEHOLDER |
-| Languages | Spanish · Unlock Spanish | Connect Your Thoughts           | Grammar bridge / build      | PLACEHOLDER |
-| Languages | Spanish · Unlock Spanish | The Two "To Be" Verbs           | Grammar bridge / build      | PLACEHOLDER |
-| Languages | Spanish · Unlock Spanish | I Do, You Do, They Do           | Grammar bridge / build      | PLACEHOLDER |
-| Languages | Spanish · Unlock Spanish | Making Descriptions             | Grammar bridge / build      | PLACEHOLDER |
-| Languages | Spanish · Unlock Spanish | Say Anything                    | Grammar bridge / build      | PLACEHOLDER |
+| Languages | Spanish · Unlock Spanish | El & La - Words Have a Gender   | Grammar bridge / build      | DONE |
+| Languages | Spanish · Unlock Spanish | Connect Your Thoughts           | Grammar bridge / build      | DONE |
+| Languages | Spanish · Unlock Spanish | The Two "To Be" Verbs           | Grammar bridge / build      | DONE |
+| Languages | Spanish · Unlock Spanish | I Do, You Do, They Do           | Grammar bridge / build      | DONE |
+| Languages | Spanish · Unlock Spanish | Making Descriptions             | Grammar bridge / build      | DONE |
+| Languages | Spanish · Unlock Spanish | Say Anything                    | Grammar bridge / build      | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language scenarios live under

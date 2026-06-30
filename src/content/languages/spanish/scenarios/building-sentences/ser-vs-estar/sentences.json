@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I'm from Norway",
+    "es": "soy de Noruega",
+    "distractors": ["estoy", "es"]
+  },
+  {
+    "en": "I'm fine, thank you",
+    "es": "estoy bien gracias",
+    "distractors": ["soy"]
+  },
+  {
+    "en": "I'm a tourist and I'm from Norway",
+    "es": "soy turista y soy de Noruega",
+    "distractors": ["estoy", "esta"]
+  },
+  {
+    "en": "I'm here, where is the toilet?",
+    "es": "estoy aqui donde esta el baño",
+    "distractors": ["soy", "es"]
+  },
+  {
+    "en": "How are you?",
+    "es": "como estas",
+    "distractors": ["eres"]
+  },
+  {
+    "en": "The station is near",
+    "es": "la estacion esta cerca",
+    "distractors": ["es"]
+  }
+]

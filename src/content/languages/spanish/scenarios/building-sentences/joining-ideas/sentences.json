@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I like coffee and tea",
+    "es": "me gusta el cafe y el te",
+    "distractors": ["pero", "porque"]
+  },
+  {
+    "en": "I like coffee but I don't like tea",
+    "es": "me gusta el cafe pero no me gusta el te",
+    "distractors": ["y", "tambien"]
+  },
+  {
+    "en": "I'm here because I like Spain",
+    "es": "estoy aqui porque me gusta España",
+    "distractors": ["pero", "y"]
+  },
+  {
+    "en": "I also speak English",
+    "es": "tambien hablo ingles",
+    "distractors": ["muy", "pero"]
+  },
+  {
+    "en": "I'm from Norway but I live in Spain",
+    "es": "soy de Noruega pero vivo en España",
+    "distractors": ["y", "porque"]
+  },
+  {
+    "en": "I speak a little Spanish but I speak English very well",
+    "es": "hablo un poco de español pero hablo ingles muy bien",
+    "distractors": ["y", "tambien"]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "context": "So far your sentences have been single ideas: \"Me gusta el cafe.\" Real conversation joins ideas together. A handful of tiny words - and, but, because - do almost all of that work, and you already know everything they connect.",
+  "explanation": "Three connectors carry most conversations. Use y (and) to add: \"el cafe y el te\". Use pero (but) to contrast: \"me gusta el cafe pero no me gusta el te\". Use porque (because) to give a reason: \"estoy aqui porque me gusta España\". They simply sit between two ideas you can already say - no new endings to learn.",
+  "examples": [
+    { "es": "el cafe y el te", "en": "coffee and tea", "note": "y just adds one thing to another." },
+    { "es": "me gusta el cafe pero no me gusta el te", "en": "I like coffee but I don't like tea", "note": "pero flips to the opposite idea." },
+    { "es": "estoy aqui porque me gusta España", "en": "I'm here because I like Spain", "note": "porque answers \"why?\"." },
+    { "es": "tambien hablo ingles", "en": "I also speak English", "note": "tambien adds yourself or another fact." },
+    { "es": "hablo español muy bien", "en": "I speak Spanish very well", "note": "muy strengthens the next word (bien -> very well)." }
+  ]
+}

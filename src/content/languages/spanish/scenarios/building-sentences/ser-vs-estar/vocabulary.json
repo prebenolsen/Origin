@@ -1,0 +1,8 @@
+[
+  { "en": "I am (identity/origin)", "es": "soy", "category": "to-be", "note": "From ser. Who you are / where you're from: \"soy de Noruega\", \"soy turista\"." },
+  { "en": "I am (state/place)", "es": "estoy", "category": "to-be", "note": "From estar. How or where you are right now: \"estoy bien\", \"estoy aqui\"." },
+  { "en": "he/she/it is (identity)", "es": "es", "category": "to-be", "note": "From ser. \"es un cafe\", \"es mi familia\"." },
+  { "en": "you are (identity/origin)", "es": "eres", "category": "to-be", "note": "From ser. \"de donde eres?\" = where are you from?" },
+  { "en": "you are (state/place)", "es": "estas", "category": "to-be", "note": "From estar. \"como estas?\" = how are you?" },
+  { "en": "he/she/it is (state/place)", "es": "esta", "category": "to-be", "note": "From estar. \"donde esta el baño?\", \"esta cerca\"." }
+]

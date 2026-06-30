@@ -1,0 +1,11 @@
+{
+  "context": "Naming things is useful; describing them is where Spanish comes alive. \"Un cafe\" becomes \"un cafe bueno\". Two small rules do most of the work: where the adjective goes, and how it agrees with the noun.",
+  "explanation": "Two things to remember. First, placement: in Spanish the describing word usually comes after the noun, not before - \"un cafe bueno\" (a good coffee), \"una mesa pequeña\" (a small table). Second, agreement: the adjective matches its noun's gender, so an -o ending flips to -a for feminine - bueno -> buena, pequeño -> pequeña. Adjectives ending in -e, like grande, stay the same for both.",
+  "examples": [
+    { "es": "un cafe bueno", "en": "a good coffee", "note": "Adjective after the noun; masculine -o." },
+    { "es": "una comida buena", "en": "a good meal", "note": "Feminine noun -> buena." },
+    { "es": "un cafe pequeño", "en": "a small coffee", "note": "pequeño after the noun." },
+    { "es": "una mesa grande", "en": "a big table", "note": "grande ends in -e, so no change for feminine." },
+    { "es": "la comida es cara", "en": "the food is expensive", "note": "After \"es\" it still agrees: feminine cara." }
+  ]
+}

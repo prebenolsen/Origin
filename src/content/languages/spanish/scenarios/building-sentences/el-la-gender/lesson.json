@@ -1,0 +1,11 @@
+{
+  "context": "In Spanish every noun is either masculine or feminine, and the word for \"the\" changes to match: el for masculine, la for feminine. It is not about meaning - a table is not really \"female\" - it is just a label every noun carries. Get the article right and the rest of your Spanish starts to click.",
+  "explanation": "Use el before a masculine noun and la before a feminine one. A good first rule: nouns ending in -o are usually masculine, and nouns ending in -a are usually feminine. It is only a tendency, not a law - el cafe and el pan are masculine even though they do not end in -o - so learn each noun together with its el or la. For \"a / an\" the same split gives un (masculine) and una (feminine).",
+  "examples": [
+    { "es": "el cafe", "en": "the coffee", "note": "Masculine, even though it does not end in -o." },
+    { "es": "la mesa", "en": "the table", "note": "Ends in -a -> feminine." },
+    { "es": "un pan", "en": "a (loaf of) bread", "note": "Masculine, so un, not una." },
+    { "es": "una comida", "en": "a meal", "note": "Ends in -a -> feminine, so una." },
+    { "es": "los servicios", "en": "the restrooms", "note": "Masculine plural -> los." }
+  ]
+}

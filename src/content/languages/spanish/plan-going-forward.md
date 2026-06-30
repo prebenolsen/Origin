@@ -1,577 +1,149 @@
-# Spanish - Plan Going Forward
+# Update the Spanish Roadmap
 
-*Written as the tutor's recommendation after the learner finished
-[Visiting Spain](scenarios/visiting-spain/overview.md) and
-[Meeting People](scenarios/meeting-people/overview.md).*
+After reviewing the current progression and the vocabulary already taught, we should **change the long-term roadmap**.
 
-> **TL;DR** - The learner now knows around 180 useful words and phrases, but almost all
-> of them exist as memorized chunks. They can communicate in prepared situations, but
-> they cannot yet freely create new Spanish.
->
-> The next step is not more vocabulary themes. The learner has enough words.
->
-> The next section should unlock the ability to combine those words into new thoughts:
-> understand the patterns behind the phrases they already know, learn the small structural
-> pieces that connect ideas, and practice building complete sentences.
->
-> The new core exercise is a **word-bank sentence builder**: the learner creates Spanish
-> sentences by arranging known words into the correct order.
+The learner does **not** have a vocabulary problem.
 
----
+They have a **language construction** problem.
 
-# 1. Where the learner actually is
+After the first two modules they already know roughly 180 high-frequency words and phrases, including:
 
-The first two sections built a strong communication base.
+* greetings
+* introductions
+* family
+* work
+* hobbies
+* food
+* travel
+* directions
+* question words
+* days
+* numbers
+* common verbs (`soy`, `estoy`, `tengo`, `quiero`, `me gusta`, etc.)
 
-## What they can already do
+This is already enough vocabulary to express a huge number of ideas.
 
-They can:
+The bottleneck is that the learner cannot yet combine those pieces into original sentences.
 
-- greet people
-- introduce themselves
-- say where they are from
-- say where they live
-- talk about work
-- talk about family
-- talk about hobbies
-- express likes and dislikes
-- order food
-- buy things
-- ask questions
-- navigate Spain
-- ask for help
-
-They have met the most important beginner verbs repeatedly:
-
-- soy
-- estoy
-- tengo
-- vivo
-- trabajo
-- hablo
-- quiero
-- necesito
-- me gusta
-- prefiero
-
-They have also already seen patterns:
-
-- el / la
-- un / una
-- español / española
-- encantado / encantada
-- pequeño / pequeña
-
-The learner has the raw material.
+That means the roadmap should continue prioritizing **capability**, not **more vocabulary themes**.
 
 ---
 
-# The current limitation
+## Keep the current Unlock Spanish/Building sentences roadmap
 
-The learner is still mostly repeating sentences they have seen.
+The current sequence remains the correct direction:
 
-They can say:
+1. From Chunks to Sentences
+2. El & La
+3. Connect Your Thoughts
+4. Ser vs Estar
+5. I Do, You Do, They Do
+6. Making Descriptions
+7. Say Anything
 
-> Me llamo Carlos.
-
-But they cannot automatically create:
-
-> Me llamo Carlos y soy de Noruega.
-
-They know the words, but not how to connect them.
-
-The next wall is not vocabulary.
-
-It is sentence construction.
+No changes are needed here.
 
 ---
 
-# What the learner is missing
-
-## 1. How words fit together
-
-They have seen:
-
-- el café
-- la comida
-- me gusta
-
-but have not learned why:
-
-> me gusta el café
-
-works.
-
-They need the basic sentence structure:
-
-Subject + verb + information
+## Remove Business Spanish completely from Origin
+## Remove Living in Spain completely from Origin
 
 ---
 
-## 2. Gender and agreement
+## Replace them with general language progression
 
-They have seen:
+Continue increasing communicative ability instead of introducing niche vocabulary domains.
 
-- el / la
-- un / una
-- bueno / buena
-- español / española
+Suggested progression:
 
-but have not learned that Spanish nouns have gender and that related words change with them.
+1. Visiting Spain
+2. Meeting People
+3. Unlock Spanish/Building sentences
+4. Everyday Conversations
+5. Talking About the Past
+6. Talking About the Future
+7. Describing the World
+8. Storytelling
+9. Living in Spain
+10. Business Spanish
 
-The goal is not memorizing rules.
+The exact names can change, but the principle should remain:
 
-The goal is understanding why:
-
-- el café bueno
-- la comida buena
-
-are different.
-
----
-
-## 3. The two versions of "to be"
-
-They already use:
-
-- soy
-- estoy
-
-but they do not know they come from two different verbs.
-
-This is the perfect moment to explain:
-
-- ser → identity, origin, what something is
-- estar → state, location, temporary situations
-
-Because the learner already has examples.
+**Build the language before building specialized domains.**
 
 ---
 
-## 4. Talking about other people
+# Add a new review mode
 
-They can say:
+The current SRS reviews vocabulary.
 
-> trabajo
+The sentence builder teaches grammar.
 
-but cannot yet naturally say:
+These should eventually merge into a broader competence review.
 
-> ella trabaja
+Add a future roadmap item:
 
-or
+## Test Random Competence
 
-> tú trabajas
+Instead of reviewing only vocabulary, randomly mix every skill the learner has acquired.
 
-They need enough verb patterns to move beyond "I".
+Examples:
+
+### Vocabulary
+
+Spanish → English
+
+English → Spanish
 
 ---
 
-## 5. Connecting ideas
+### Phrases
 
-The biggest jump in ability comes from:
-
-- y (and)
-- pero (but)
-- porque (because)
-- también (also)
-- muy (very)
-
-These tiny words transform isolated answers into conversations.
+Recall complete memorized chunks.
 
 Example:
 
-Before:
-
-> Me gusta el café.
-
-After:
-
-> Me gusta el café pero no me gusta el té.
-
----
-
-# Decision
-
-Do not add:
-
-- Business Spanish
-- Living in Spain
-- more travel vocabulary
-
-yet.
-
-Those add more words to a foundation that cannot combine them.
-
-The next section builds the structure.
-
----
-
-# 2. The next section: **"Unlock Spanish"** (`building-sentences`)
-
-Promise to the learner:
-
-> "You already know enough words. Now learn how to create your own Spanish."
-
-This section should feel different.
-
-The learner moves from:
-
-> memorizing Spanish
-
-to:
-
-> creating Spanish
-
-Each lesson reuses vocabulary from the first two sections.
-
-New vocabulary should be minimal and mostly structural.
-
----
-
-# Proposed scenario sequence
-
-| # | Slug | Title | Teaches |
-|---|---|---|---|
-| 1 | `from-chunks-to-sentences` | From Chunks to Sentences | How Spanish sentences are assembled; combine phrases they already know |
-| 2 | `el-la-gender` | El & La - Words Have a Gender | Noun gender, articles, basic agreement |
-| 3 | `joining-ideas` | Connect Your Thoughts | y, pero, porque, también, muy, un poco |
-| 4 | `ser-vs-estar` | The Two "To Be" Verbs | Identity vs state/location |
-| 5 | `people-and-actions` | I Do, You Do, They Do | Basic present tense patterns |
-| 6 | `describing-things` | Making Descriptions | Adjectives, agreement, size, quality, opinions |
-| 7 | `make-a-sentence` | Say Anything | Final sentence-building challenge |
-
----
-
-# Scenario details
-
-## 1. From Chunks to Sentences
-
-Purpose:
-
-Show that the learner already owns the pieces.
-
-Examples:
-
-```
-
-Me llamo Ana.
-
-Soy de Noruega.
+> How are you?
 
 ↓
 
-Me llamo Ana y soy de Noruega.
-
-```
-```
-
-Me gusta el café.
-
-No me gusta el té.
-
-↓
-
-Me gusta el café pero no me gusta el té.
-
-```
-
-No new grammar. Just the realization that Spanish is built from pieces.
+¿Cómo estás?
 
 ---
 
-## 2. El & La - Words Have a Gender
+### Sentence building
 
-Teach:
-
-- el
-- la
-- los
-- las
-- un
-- una
-
-Use familiar vocabulary:
-
-- el café
-- la mesa
-- el pan
-- la comida
-- la familia
-
-Teach the practical patterns:
-
-- many -o words → masculine
-- many -a words → feminine
-
-But introduce exceptions honestly.
-
----
-
-## 3. Connect Your Thoughts
-
-Teach:
-
-- y
-- pero
-- porque
-- también
-- muy
-- un poco
-
-Examples:
-
-```
-
-Soy español y trabajo en una empresa.
-
-Me gusta viajar porque es divertido.
-
-El café es muy bueno.
-
-```
-
-This gives the biggest immediate increase in expression.
-
----
-
-## 4. The Two "To Be" Verbs
-
-Teach through examples.
-
-Ser:
-
-- soy de España
-- soy profesor
-- es una ciudad
-
-Estar:
-
-- estoy bien
-- estoy aquí
-- está cerca
-
----
-
-## 5. I Do, You Do, They Do
-
-Teach the minimum useful forms.
-
-Start with:
-
-- yo
-- tú
-- él/ella
-
-Regular verbs:
-
-- hablar
-- trabajar
-- vivir
-
-Connect to known vocabulary.
-
----
-
-## 6. Making Descriptions
-
-Teach:
-
-- adjective placement
-- masculine/feminine
-- singular/plural
-
-Examples:
-
-```
-
-un café bueno
-
-una comida buena
-
-unos pantalones grandes
-
-```
-
-Add useful adjectives:
-
-- bueno
-- malo
-- grande
-- pequeño
-- bonito
-- caro
-
----
-
-## 7. Say Anything
-
-Capstone.
-
-No new vocabulary.
-
-The learner builds sentences from everything learned.
-
-Examples:
-
-"Say:
-
-I am from Norway but I live in Spain."
-
-"Say:
-
-I like coffee because it is good."
-
-"Say:
-
-My family is big."
-
----
-
-# 3. The new exercise: Word-bank sentence builder
-
-The app currently tests words.
-
-This tests thinking.
-
-New exercise type:
-
-`build-sentence`
-
-The learner sees:
-
-English:
-
-> I like coffee but I don't like tea
-
-Tiles:
-
-```
-
-te
-me
-café
-gusta
-pero
-no
-el
-me
-gusta
-
-```
-
-The learner taps:
-
-```
-
-me gusta el café pero no me gusta el té
-
-````
-
----
-
-## Why this exercise matters
-
-It teaches:
-
-- word order
-- grammar patterns
-- agreement
-- sentence structure
-
-without requiring perfect typing.
-
-It sits between:
-
-Fill blank
-
-and
-
-Free production
-
----
-
-# Content format
-
-Add optional:
-
-`sentsences.json`
+Use the existing word-bank builder.
 
 Example:
 
-```json
-[
-  {
-    "en": "I like coffee but I don't like tea",
-    "es": "me gusta el cafe pero no me gusta el te",
-    "distractors": [
-      "la",
-      "gustan"
-    ]
-  }
-]
-````
+> I like coffee but I don't like tea.
 
-The same sentence data can later power:
+↓
 
-* sentence building
-* listening
-* speaking
-* production exercises
+Build the sentence.
 
 ---
 
-# 4. Engine changes
+# Guiding principle going forward
 
-Add:
+Every future module should be evaluated using one question:
 
-```ts
-kind: 'build-sentence'
-```
+> Does this significantly increase what the learner can express?
 
-Properties:
+High-leverage structural concepts usually do.
 
-```ts
-{
-  kind: 'build-sentence';
-  level: 3;
-  target;
-  tokens;
-  bank;
-  answer;
-}
-```
+Examples:
 
-Rules:
+* and
+* but
+* because
+* also
+* very
+* present tense
+* past tense
+* future tense
 
-* use existing mastery system
-* report success/failure like current exercises
-* only use known vocabulary
-* allow distractors
-* support tap to add and tap to remove
+These unlock thousands of new sentences.
 
-UI:
-
-* large mobile tiles
-* no dragging
-* answer row
-* word bank row
-* check button
-
----
-
-# 5. Rollout
-
-Order:
-
-1. Build sentence-builder engine + UI
-2. Add sample sentences
-3. Author Unlock Spanish scenarios
-4. Keep Business Spanish and Living in Spain locked until this is complete
-
-The next major milestone is not knowing more words.
-
-It is being able to create with the words already known.
-:::
-
-```
-```
+Prioritize lessons that multiply expressive ability before expanding vocabulary into specialized domains.

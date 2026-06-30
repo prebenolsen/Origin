@@ -1,0 +1,8 @@
+[
+  { "en": "good", "es": "bueno", "category": "adjective", "note": "Masculine -o; feminine -a: \"un cafe bueno\" / \"una comida buena\"." },
+  { "en": "big", "es": "grande", "category": "adjective", "note": "Ends in -e, so it does not change for gender: \"un cafe grande\" / \"una mesa grande\"." },
+  { "en": "small", "es": "pequeño", "category": "adjective", "note": "Feminine pequeña. Say \"peh-KEH-nyo\" (ñ = ny)." },
+  { "en": "nice / pretty", "es": "bonito", "category": "adjective", "note": "Feminine bonita: \"una mesa bonita\"." },
+  { "en": "expensive", "es": "caro", "category": "adjective", "note": "Feminine cara: \"la comida es cara\"." },
+  { "en": "cheap", "es": "barato", "category": "adjective", "note": "Feminine barata. The opposite of caro." }
+]

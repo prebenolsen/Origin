@@ -1,0 +1,8 @@
+[
+  { "en": "and", "es": "y", "category": "connector", "note": "Joins two things: \"el cafe y el te\". Say \"ee\"." },
+  { "en": "but", "es": "pero", "category": "connector", "note": "Sets up a contrast: \"me gusta el cafe pero no el te\"." },
+  { "en": "because", "es": "porque", "category": "connector", "note": "Gives a reason: \"...porque me gusta\". One word; \"por que\" (two words) is the question \"why?\"." },
+  { "en": "also / too", "es": "tambien", "category": "connector", "note": "\"me too\" = \"yo tambien\". Often starts the sentence: \"tambien hablo ingles\"." },
+  { "en": "very", "es": "muy", "category": "connector", "note": "Strengthens a word: \"muy bien\" = very well." },
+  { "en": "a little", "es": "un poco", "category": "connector", "note": "Softens it: \"hablo un poco de español\" = I speak a little Spanish." }
+]

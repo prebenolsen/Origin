@@ -1,0 +1,32 @@
+[
+  {
+    "en": "The coffee is good",
+    "es": "el cafe es bueno",
+    "distractors": ["buena", "la"]
+  },
+  {
+    "en": "The food is good",
+    "es": "la comida es buena",
+    "distractors": ["bueno", "el"]
+  },
+  {
+    "en": "I would like a small coffee",
+    "es": "quiero un cafe pequeño",
+    "distractors": ["pequeña", "una"]
+  },
+  {
+    "en": "I have a big family",
+    "es": "tengo una familia grande",
+    "distractors": ["un", "grandes"]
+  },
+  {
+    "en": "The table is very nice",
+    "es": "la mesa es muy bonita",
+    "distractors": ["bonito", "muy bien"]
+  },
+  {
+    "en": "The food is good but it is expensive",
+    "es": "la comida es buena pero es cara",
+    "distractors": ["bueno", "caro"]
+  }
+]
