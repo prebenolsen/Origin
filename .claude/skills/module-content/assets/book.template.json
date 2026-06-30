@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "timeline": "Idea 1",
+    "title": "The central idea",
+    "content": "Explain one mental model or concept from the book and why it matters.",
+    "concept": "Concept tag",
+    "next": "A hook into the next idea."
+  },
+  {
+    "id": 2,
+    "timeline": "Idea 2",
+    "title": "How it connects",
+    "content": "Show how this idea relates to the previous one and how to apply it.",
+    "next": "What is the limitation?"
+  }
+]

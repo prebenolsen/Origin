@@ -1,0 +1,24 @@
+{
+  "title": "Module title",
+  "category": "psychology",
+  "subcategory": "subcategory-slug",
+  "summary": "One-sentence hook shown on the module card and intro.",
+  "accent": "#7aa2d9",
+  "context": {
+    "type": "schematic",
+    "headline": "Short context headline",
+    "description": "Why this matters - 2-3 sentences. No period for non-history; use when.",
+    "when": "Optional time cue",
+    "map": {
+      "markers": [
+        { "id": "concept-a", "label": "Concept A", "x": 50, "y": 35, "role": "primary" },
+        { "id": "concept-b", "label": "Concept B", "x": 30, "y": 65, "role": "secondary" },
+        { "id": "concept-c", "label": "Concept C", "x": 70, "y": 65, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "concept-a", "to": "concept-b", "label": "relationship" },
+        { "from": "concept-a", "to": "concept-c", "label": "relationship" }
+      ]
+    }
+  }
+}

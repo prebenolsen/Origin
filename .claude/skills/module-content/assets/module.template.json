@@ -1,0 +1,24 @@
+{
+  "title": "Module title",
+  "period": "YYYY - YYYY",
+  "category": "history",
+  "subcategory": "subcategory-slug",
+  "summary": "One-sentence hook shown on the module card and intro.",
+  "accent": "#d98a5a",
+  "context": {
+    "type": "map",
+    "headline": "Short context headline",
+    "description": "Why this matters: where, when, who, and why - 2-3 sentences.",
+    "when": "YYYY - YYYY",
+    "map": {
+      "backdrop": "region",
+      "markers": [
+        { "id": "place-a", "label": "Place A", "lat": 41.9, "lng": 12.5, "role": "primary" },
+        { "id": "place-b", "label": "Place B", "lat": 36.85, "lng": 10.32, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "place-a", "to": "place-b", "label": "relationship" }
+      ]
+    }
+  }
+}

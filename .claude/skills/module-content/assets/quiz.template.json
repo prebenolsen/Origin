@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "A why/cause/effect question that tests understanding.",
+    "options": ["First option", "Correct option", "Third option", "Fourth option"],
+    "answer": 1,
+    "explanation": "Why the answer is correct - shown after answering."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "A statement that is clearly true or false.",
+    "answer": true,
+    "explanation": "Why it is true."
+  },
+  {
+    "id": 3,
+    "type": "ordering",
+    "question": "Put these events in chronological order.",
+    "items": ["Earliest", "Middle", "Latest"],
+    "correctOrder": [0, 1, 2],
+    "explanation": "The correct sequence and why."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each item to its role.",
+    "pairs": [
+      { "left": "Item A", "right": "Role A" },
+      { "left": "Item B", "right": "Role B" }
+    ],
+    "explanation": "How each pairs up."
+  }
+]
