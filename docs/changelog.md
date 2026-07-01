@@ -4,6 +4,54 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [6.18.0] - 2026-07-01
+
+### Content/Architecture - Collapsed the Spanish hierarchy to Language > Chapter > Module
+
+Replaced the four overlapping terms `Goal` / `Path` / `Scenario` with a clean
+three-level model: **Language > Chapter > Module**. `Goal` is now `Chapter`,
+`Scenario` is now `Module`, and the on-disk container folder is `chapters/`
+instead of `scenarios/` (leaf files renamed `scenario.json` -> `module.json`).
+
+Reordered and renamed two chapters to match the intended learner sequence:
+
+Visiting Spain -> Meeting People -> **Visiting Spain II** (was "Revisiting
+Visiting Spain") -> **Unlock Spanish** (folder was `building-sentences`, now
+`unlock-spanish`) -> Everyday Life -> Real conversations.
+
+Renamed throughout the codebase: types (`Chapter`, `Module`, `ModuleBundle`,
+`ModuleKind`), the content registry (`getChapter`, `getModuleBundle`,
+`listModules`), the profile store (`profile.chapter`, `getChapterSlug`,
+`setChapter`), the SRS word record (`VocabState.module`, `getByModule`), the
+`PathScreen` component (renamed `ChapterScreen`), the `/learn/spanish/path`
+route (renamed `/learn/spanish/chapter`), and all "goal"/"path" UI copy. Also
+updated the Spanish README/words-taught sync scripts and `docs/architecture.md`,
+`docs/content.md`, and `docs/language-supabase-schema.md` to match.
+
+Note: this resets any existing learner's "which chapter I'm on" selection
+(re-pick from the chapter list) - per-module progress and all SRS word memory
+are unaffected since module leaf slugs didn't change.
+
+## [6.17.3] - 2026-07-01
+
+### Docs/Tooling - Restructured Spanish words-taught by module-only new words
+
+Updated `src/content/languages/spanish/words-taught.md` to remove repeated
+"words from previous modules" sections and use a clean module progression format:
+
+- Module N header
+- `Total new word entries`
+- `Total new words so far` (from Module 2 onward)
+- `List of words taught in this module`
+
+Added automation for keeping this file synced from source scenario content:
+
+- `scripts/sync-spanish-words-taught.mjs`
+- npm script: `sync:spanish-words`
+
+The generated file now reflects only newly introduced English entries per module,
+with cumulative totals across the full Spanish path.
+
 ## [6.17.2] - 2026-07-01
 
 ### Tooling - Added automated Spanish README metrics sync command

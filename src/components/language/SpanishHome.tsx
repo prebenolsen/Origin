@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getLanguage } from '../../lib/language/content';
-import { setGoal, setLearner } from '../../lib/language/profile';
+import { setChapter, setLearner } from '../../lib/language/profile';
 import type { Learner } from '../../lib/language/learner';
 import { useLanguageProfile, useLanguageStats } from '../../lib/language/useLanguage';
 import TopBar from '../ui/TopBar';
@@ -43,9 +43,9 @@ export default function SpanishHome() {
     );
   }
 
-  const chooseGoal = (slug: string) => {
-    setGoal(LANG, slug);
-    navigate('/learn/spanish/path');
+  const chooseChapter = (slug: string) => {
+    setChapter(LANG, slug);
+    navigate('/learn/spanish/chapter');
   };
 
   return (
@@ -83,39 +83,39 @@ export default function SpanishHome() {
       </header>
 
       <div className="px-5 pb-10">
-        {profile.goal && (
+        {profile.chapter && (
           <button
-            onClick={() => navigate('/learn/spanish/path')}
+            onClick={() => navigate('/learn/spanish/chapter')}
             className="group mb-6 block w-full overflow-hidden rounded-card border border-accent/40 bg-surface p-5 text-left transition hover:bg-surface-2 active:scale-[0.99]"
           >
             <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
               Continue
             </div>
             <h3 className="mt-1.5 text-[1.4rem] leading-tight">
-              {language.goals.find((g) => g.slug === profile.goal)?.title ?? 'Your path'}
+              {language.chapters.find((c) => c.slug === profile.chapter)?.title ?? 'Your chapter'}
             </h3>
             <p className="mt-1 text-sm text-muted">Pick up where you left off →</p>
           </button>
         )}
 
         <div className="mb-4 flex items-baseline justify-between px-1">
-          <h2 className="text-xl">What's your goal?</h2>
+          <h2 className="text-xl">Where do you want to start?</h2>
         </div>
         <p className="mb-4 px-1 text-sm text-muted">
-          Your goal shapes the whole learning path. We start with the words and phrases that
+          Each chapter shapes what you learn next. We start with the words and phrases that
           situation needs first.
         </p>
 
         <div className="grid gap-3">
-          {language.goals.map((goal) => {
-            const active = profile.goal === goal.slug;
+          {language.chapters.map((chapter) => {
+            const active = profile.chapter === chapter.slug;
             return (
               <button
-                key={goal.slug}
-                disabled={!goal.available}
-                onClick={() => goal.available && chooseGoal(goal.slug)}
+                key={chapter.slug}
+                disabled={!chapter.available}
+                onClick={() => chapter.available && chooseChapter(chapter.slug)}
                 className={`group relative block overflow-hidden rounded-card border p-5 text-left transition active:scale-[0.99] ${
-                  goal.available
+                  chapter.available
                     ? 'border-line bg-surface hover:border-accent/50 hover:bg-surface-2'
                     : 'cursor-not-allowed border-line-soft bg-surface/50 opacity-60'
                 } ${active ? 'border-accent/60' : ''}`}
@@ -123,12 +123,12 @@ export default function SpanishHome() {
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <h3 className="flex items-center gap-2 text-[1.3rem] leading-tight">
-                      <span>{goal.icon}</span>
-                      <span>{goal.title}</span>
+                      <span>{chapter.icon}</span>
+                      <span>{chapter.title}</span>
                     </h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-muted">{goal.summary}</p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-muted">{chapter.summary}</p>
                   </div>
-                  {goal.available ? (
+                  {chapter.available ? (
                     <span className="mt-1 shrink-0 text-muted transition group-hover:translate-x-0.5 group-hover:text-accent">
                       →
                     </span>

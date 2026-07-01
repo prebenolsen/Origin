@@ -39,7 +39,7 @@ once - mirror that pattern.
 - All `/learn/spanish/**` routes are lazy-loaded in `App.tsx`. Keep `content.ts` and the
   language components out of the Home/critical bundle.
 - `content.ts` uses eager `import.meta.glob`; content JSON is small. If it ever grows large,
-  switch the heavy files to lazy glob (`{ eager: false }`) and load per scenario.
+  switch the heavy files to lazy glob (`{ eager: false }`) and load per module.
 
 ## Determinism
 

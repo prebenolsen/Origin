@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { getScenarioBundle } from '../../lib/language/content';
+import { getModuleBundle } from '../../lib/language/content';
 import { getAll, getWeak } from '../../lib/language/srs';
 import { useLanguageStats } from '../../lib/language/useLanguage';
 import TopBar from '../ui/TopBar';
@@ -20,9 +20,9 @@ export default function ReviewDashboard() {
   const stats = useLanguageStats(LANG);
   const weak = getWeak(LANG).slice(0, 6);
 
-  // Scenarios the learner has words from, for category testing.
-  const byScenario = new Map<string, number>();
-  for (const s of getAll(LANG)) byScenario.set(s.scenario, (byScenario.get(s.scenario) ?? 0) + 1);
+  // Modules the learner has words from, for category testing.
+  const byModule = new Map<string, number>();
+  for (const s of getAll(LANG)) byModule.set(s.module, (byModule.get(s.module) ?? 0) + 1);
 
   if (stats.total === 0) {
     return (
@@ -126,21 +126,21 @@ export default function ReviewDashboard() {
           </div>
         )}
 
-        {byScenario.size > 0 && (
+        {byModule.size > 0 && (
           <div>
             <div className="mb-2 mt-4 px-1 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-faint">
-              Test by scenario
+              Test by module
             </div>
             <div className="grid gap-2">
-              {[...byScenario.entries()].map(([path, n]) => {
+              {[...byModule.entries()].map(([path, n]) => {
                 const slug = path.split('/')[1] ?? path;
-                const title = getScenarioBundle(LANG, slug)?.scenario.title ?? slug;
+                const title = getModuleBundle(LANG, slug)?.module.title ?? slug;
                 return (
                   <Action
                     key={path}
                     label={`Test my ${title.toLowerCase()} vocabulary`}
                     sub={`${n} word${n === 1 ? '' : 's'}`}
-                    onClick={() => navigate(`/learn/spanish/review/s-${slug}`)}
+                    onClick={() => navigate(`/learn/spanish/review/m-${slug}`)}
                   />
                 );
               })}

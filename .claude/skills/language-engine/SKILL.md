@@ -16,7 +16,7 @@ difficulty, or review behaviour, read [`references/invariants.md`](references/in
 | `src/lib/language/content.ts` | Auto-discovers content (`import.meta.glob`); read-only registry. |
 | `src/lib/language/srs.ts` | Per-word memory state, level-weighted scoring, mastery, spaced-repetition schedule, `orderAdaptive`. **The heart.** |
 | `src/lib/language/testGen.ts` | Builds questions; `levelFor` (difficulty ramp) + intelligent distractors. |
-| `src/lib/language/profile.ts` | Chosen goal, personalized picks, completed scenarios. |
+| `src/lib/language/profile.ts` | Chosen chapter, personalized picks, completed modules. |
 | `src/lib/language/useLanguage.ts` | Reactive hooks over the `origin:lang` event. |
 | `src/components/language/LessonExperience.tsx` | Block-based lesson: personalize → context → teach/practice batches → full review → done. |
 | `src/components/language/VocabTest.tsx` | Queue-based runner; mastery requeue; reports `(target, correct, level)`. |

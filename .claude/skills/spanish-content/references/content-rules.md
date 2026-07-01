@@ -5,12 +5,12 @@ Authoritative shapes live in `src/types/language.ts`.
 
 ## File shapes (quick reference)
 
-### scenario.json
+### module.json
 ```jsonc
 {
   "slug": "greetings",           // must equal the folder name
   "title": "Greetings",
-  "summary": "One line shown on the path.",
+  "summary": "One line shown on the chapter.",
   "icon": "👋",                  // emoji
   "kind": "standard",            // standard | personalized | placeholder
   "estMinutes": 6
@@ -41,7 +41,7 @@ Authoritative shapes live in `src/types/language.ts`.
 Examples on the teach screen are auto-gated to words already introduced (whole-word match),
 so they will never surface a future word - but still write them honestly per batch.
 
-### personalize.json  (personalized scenarios)
+### personalize.json  (personalized modules)
 ```jsonc
 {
   "prompt": "What do you usually buy?",
@@ -62,7 +62,7 @@ Only the learner's picked options are taught, merged with the base `vocabulary.j
 - **Punctuation:** ASCII only. Use `-` (hyphen-minus), never `—`/`–`. No smart quotes.
 - **Accents:** this Spanish set stores words without accents (ids are accent-normalized in
   `srs.vocabId`, so "cafe" and "café" collide). Be consistent - omit accents.
-- **Category separation:** never include another scenario's vocabulary. Greetings is exactly
+- **Category separation:** never include another module's vocabulary. Greetings is exactly
   hello/goodbye/see-you-later/good-morning/afternoon/evening/thank-you/you're-welcome/
   excuse-me/yes/no. Cafe orders belong to Restaurant.
 - **No pre-teaching:** the first-batch `explanation` references only first-batch words.
@@ -81,6 +81,6 @@ Only the learner's picked options are taught, merged with the base `vocabulary.j
 
 1. Fill every `es` in `vocabulary.json` (ASCII, no accents), set `category`.
 2. Add a short `lesson.json` (optional but recommended).
-3. Set `scenario.json` `"kind"` to `standard` (or `personalized` + add `personalize.json`).
+3. Set `module.json` `"kind"` to `standard` (or `personalized` + add `personalize.json`).
 4. Run the validator; fix errors.
 5. Bump version (MINOR), update `docs/changelog.md` and mark DONE in `docs/content.md`.

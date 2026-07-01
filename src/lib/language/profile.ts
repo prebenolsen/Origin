@@ -1,20 +1,20 @@
 /**
- * Learner profile for a language: the chosen goal, the personalized word picks
- * per scenario, and which scenarios are complete. localStorage today; maps onto
- * `origin_language_spanish_profile` later.
+ * Learner profile for a language: the chosen chapter, the personalized word
+ * picks per module, and which modules are complete. localStorage today; maps
+ * onto `origin_language_spanish_profile` later.
  */
 import type { VocabOption } from '../../types/language';
 import type { Learner } from './learner';
 
 export interface LanguageProfile {
-  /** Chosen goal slug, e.g. `visiting-spain`. */
-  goal?: string;
+  /** Chosen chapter slug, e.g. `visiting-spain`. */
+  chapter?: string;
   /** The learner's own details (name/country/age), woven into lesson examples.
    * Present (even if its fields are blank) once onboarding has been done. */
   learner?: Learner;
-  /** scenario slug -> the vocab options the learner selected (personalization). */
+  /** module slug -> the vocab options the learner selected (personalization). */
   selections: Record<string, VocabOption[]>;
-  /** scenario slugs the learner has completed at least once. */
+  /** module slugs the learner has completed at least once. */
   completed: string[];
   /** Completed checkpoint ids, e.g. `visiting-spain:4`. */
   checkpoints: string[];
@@ -56,8 +56,8 @@ export function getProfile(langSlug: string): LanguageProfile {
   return read(langSlug);
 }
 
-export function getGoalSlug(langSlug: string): string | undefined {
-  return read(langSlug).goal;
+export function getChapterSlug(langSlug: string): string | undefined {
+  return read(langSlug).chapter;
 }
 
 export function getLearner(langSlug: string): Learner | undefined {
@@ -75,33 +75,33 @@ export function setLearner(langSlug: string, learner: Learner): void {
   write(langSlug, p);
 }
 
-export function setGoal(langSlug: string, goalSlug: string): void {
+export function setChapter(langSlug: string, chapterSlug: string): void {
   const p = read(langSlug);
-  p.goal = goalSlug;
+  p.chapter = chapterSlug;
   write(langSlug, p);
 }
 
-export function getSelections(langSlug: string, scenario: string): VocabOption[] {
-  return read(langSlug).selections[scenario] ?? [];
+export function getSelections(langSlug: string, module: string): VocabOption[] {
+  return read(langSlug).selections[module] ?? [];
 }
 
 export function setSelections(
   langSlug: string,
-  scenario: string,
+  module: string,
   options: VocabOption[],
 ): void {
   const p = read(langSlug);
-  p.selections[scenario] = options;
+  p.selections[module] = options;
   write(langSlug, p);
 }
 
-export function isComplete(langSlug: string, scenario: string): boolean {
-  return read(langSlug).completed.includes(scenario);
+export function isComplete(langSlug: string, module: string): boolean {
+  return read(langSlug).completed.includes(module);
 }
 
-export function markComplete(langSlug: string, scenario: string): void {
+export function markComplete(langSlug: string, module: string): void {
   const p = read(langSlug);
-  if (!p.completed.includes(scenario)) p.completed.push(scenario);
+  if (!p.completed.includes(module)) p.completed.push(module);
   write(langSlug, p);
 }
 

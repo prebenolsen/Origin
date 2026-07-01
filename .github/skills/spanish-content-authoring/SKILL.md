@@ -1,6 +1,6 @@
 ---
 name: spanish-content-authoring
-description: "Create or remake Spanish language scenario content in Origin using the established format (scenario, lesson, vocabulary, sentences) and repository rules. Use when asked to add or improve Spanish learning modules under src/content/languages/spanish/**."
+description: "Create or remake Spanish language module content in Origin using the established format (module, lesson, vocabulary, sentences) and repository rules. Use when asked to add or improve Spanish learning modules under src/content/languages/spanish/**."
 ---
 
 # Spanish Content Authoring Skill
@@ -9,7 +9,7 @@ This skill is for Origin Spanish content work only.
 
 ## Goal
 
-Produce high-quality scenario content that improves practical conversational ability while preserving the existing Origin structure.
+Produce high-quality module content that improves practical conversational ability while preserving the existing Origin structure.
 
 ## Required references
 
@@ -18,14 +18,14 @@ Read these before writing content:
 - [CLAUDE.md](../../../CLAUDE.md)
 - [.claude/skills/spanish-content/SKILL.md](../../../.claude/skills/spanish-content/SKILL.md)
 - [.claude/skills/spanish-content/references/content-rules.md](../../../.claude/skills/spanish-content/references/content-rules.md)
-- A high-quality existing scenario for style matching, for example:
-  - [src/content/languages/spanish/scenarios/everyday-life/my-week/lesson.json](../../../src/content/languages/spanish/scenarios/everyday-life/my-week/lesson.json)
+- A high-quality existing module for style matching, for example:
+  - [src/content/languages/spanish/chapters/everyday-life/my-week/lesson.json](../../../src/content/languages/spanish/chapters/everyday-life/my-week/lesson.json)
 
 ## Output structure
 
-Each scenario folder should contain:
+Each module folder should contain:
 
-- `scenario.json`
+- `module.json`
 - `lesson.json`
 - `vocabulary.json`
 - `sentences.json`

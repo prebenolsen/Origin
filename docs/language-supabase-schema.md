@@ -5,7 +5,7 @@ The Spanish learning domain stores all learner state in **localStorage** today
 designed to map 1:1 onto Supabase tables prefixed `origin_language_spanish` for a later
 sync. This document is the target schema; nothing here is wired up yet.
 
-> Content (languages, scenarios, vocabulary, lessons) stays in versioned JSON under
+> Content (languages, chapters, modules, vocabulary, lessons) stays in versioned JSON under
 > `src/content/languages/**` — it is *not* in the database. The database only holds
 > per-user *state*.
 
@@ -23,12 +23,12 @@ device-local store. Until auth is added, the app keys everything to the browser.
 ## DDL
 
 ```sql
--- One row per learner: chosen goal + personalized picks + their own details.
+-- One row per learner: chosen chapter + personalized picks + their own details.
 create table origin_language_spanish_profile (
   user_id      uuid primary key references auth.users (id) on delete cascade,
-  goal         text,                       -- e.g. 'visiting-spain'
+  chapter      text,                       -- e.g. 'visiting-spain'
   learner      jsonb,                       -- { name, city, country, countryEs, age } (onboarding)
-  selections   jsonb not null default '{}',-- { scenarioSlug: VocabOption[] }
+  selections   jsonb not null default '{}',-- { moduleSlug: VocabOption[] }
   completed    text[] not null default '{}',
   updated_at   timestamptz not null default now()
 );
@@ -40,7 +40,7 @@ create table origin_language_spanish_vocab_state (
   es             text not null,
   en             text not null,
   category       text,
-  scenario       text not null,            -- e.g. 'spanish/supermarket'
+  module         text not null,            -- e.g. 'spanish/supermarket'
   introduced_at  timestamptz not null default now(),
   times_seen     int  not null default 0,  -- batches/cards the word was shown in
   attempts       int  not null default 0,  -- times_tested

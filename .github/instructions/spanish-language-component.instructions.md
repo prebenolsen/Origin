@@ -1,5 +1,5 @@
 ---
-description: "Use when creating or editing Spanish language scenarios, vocabulary, lessons, or sentence drills under src/content/languages/spanish/**."
+description: "Use when creating or editing Spanish language modules, vocabulary, lessons, or sentence drills under src/content/languages/spanish/**."
 applyTo: "src/content/languages/spanish/**"
 ---
 # Spanish Language Component Rules
@@ -14,7 +14,7 @@ Use this guidance for Spanish language content only.
 
 ## Authoring requirements
 
-- Keep scenarios practical and conversation-first.
+- Keep modules practical and conversation-first.
 - Reuse known vocabulary heavily.
 - Introduce only the minimum new language needed.
 - Prefer chunks and sentence patterns over isolated words when useful.
@@ -45,9 +45,9 @@ Examples:
 - Spanish entries should stay accentless for consistency in this repository.
 - Keep vocabulary ordered in cohesive groups of 3 where possible.
 
-## Scenario quality checklist
+## Module quality checklist
 
-- `scenario.json` slug matches folder name.
+- `module.json` slug matches folder name.
 - `vocabulary.json` categories are meaningful for distractor quality.
 - Notes explain reusable patterns or useful nuance.
 - Fixed expressions are mapped as full chunks (no collapsed one-word English for multi-word Spanish chunks).

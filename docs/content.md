@@ -189,19 +189,19 @@
 | Languages | Spanish · Everyday Life  | Food & Habits                   | Everyday life / build       | DONE |
 | Languages | Spanish · Everyday Life  | How I Feel Today                | Everyday life / build       | DONE |
 | Languages | Spanish · Everyday Life  | My Typical Conversation         | Everyday life / build       | DONE |
-| Languages | Spanish · Revisit Visiting Spain | The Perfect Fit (Shopping v2) | Conversational travel / shopping | DONE |
-| Languages | Spanish · Revisit Visiting Spain | Talking About People | Conversational travel / people | DONE |
-| Languages | Spanish · Revisit Visiting Spain | Getting Around | Conversational travel / navigation | DONE |
-| Languages | Spanish · Revisit Visiting Spain | Eating Out Again (Restaurant v2) | Conversational travel / restaurant interaction | DONE |
-| Languages | Spanish · Revisit Visiting Spain | Colors Around You | Conversational travel / colors | DONE |
+| Languages | Spanish · Visiting Spain II | The Perfect Fit (Shopping v2) | Conversational travel / shopping | DONE |
+| Languages | Spanish · Visiting Spain II | Talking About People | Conversational travel / people | DONE |
+| Languages | Spanish · Visiting Spain II | Getting Around | Conversational travel / navigation | DONE |
+| Languages | Spanish · Visiting Spain II | Eating Out Again (Restaurant v2) | Conversational travel / restaurant interaction | DONE |
+| Languages | Spanish · Visiting Spain II | Colors Around You | Conversational travel / colors | DONE |
 | Languages | Spanish · Real conversations | Making Plans | Social planning / invitations / scheduling | DONE |
 | Languages | Spanish · Real conversations | Everyday Conversations | Natural flow / opinions / short past stories | DONE |
 
 > Languages are authored differently from history modules — see
-> `docs/content-instructions.md` is for history; language scenarios live under
-> `src/content/languages/spanish/scenarios/<phase>/<slug>/` (e.g. `visiting-spain/cafe/`).
+> `docs/content-instructions.md` is for history; language modules live under
+> `src/content/languages/spanish/chapters/<chapter>/<module>/` (e.g. `visiting-spain/cafe/`).
 > To fill a placeholder, complete the
-> Spanish column in that scenario's `vocabulary.json` (and set `scenario.json` "kind" to
+> Spanish column in that module's `vocabulary.json` (and set `module.json` "kind" to
 > "standard" or "personalized"). See `docs/architecture.md` → "Languages domain".
 
 Ollama:

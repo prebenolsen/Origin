@@ -9,7 +9,7 @@ const repoRoot = path.resolve(__dirname, '..');
 const spanishRoot = path.join(repoRoot, 'src', 'content', 'languages', 'spanish');
 const languagePath = path.join(spanishRoot, 'language.json');
 const readmePath = path.join(spanishRoot, 'README.md');
-const scenariosRoot = path.join(spanishRoot, 'scenarios');
+const chaptersRoot = path.join(spanishRoot, 'chapters');
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -23,22 +23,22 @@ function replaceOrThrow(text, pattern, replacement, label) {
 }
 
 const language = readJson(languagePath);
-const goals = language.goals ?? [];
-const goalCount = goals.length;
-const scenarioCount = goals.reduce((sum, goal) => sum + (goal.scenarios?.length ?? 0), 0);
+const chapters = language.chapters ?? [];
+const chapterCount = chapters.length;
+const moduleCount = chapters.reduce((sum, chapter) => sum + (chapter.modules?.length ?? 0), 0);
 
-const goalLines = goals
-  .map((goal, index) => `${index + 1}. ${goal.title} (${goal.scenarios.length} scenarios)`)
+const chapterLines = chapters
+  .map((chapter, index) => `${index + 1}. ${chapter.title} (${chapter.modules.length} modules)`)
   .join('\n');
 
-const scenarioDirs = [];
-for (const goalSlug of fs.readdirSync(scenariosRoot)) {
-  const goalDir = path.join(scenariosRoot, goalSlug);
-  if (!fs.statSync(goalDir).isDirectory()) continue;
-  for (const scenarioSlug of fs.readdirSync(goalDir)) {
-    const scenarioDir = path.join(goalDir, scenarioSlug);
-    if (fs.statSync(scenarioDir).isDirectory()) {
-      scenarioDirs.push(scenarioDir);
+const moduleDirs = [];
+for (const chapterSlug of fs.readdirSync(chaptersRoot)) {
+  const chapterDir = path.join(chaptersRoot, chapterSlug);
+  if (!fs.statSync(chapterDir).isDirectory()) continue;
+  for (const moduleSlug of fs.readdirSync(chapterDir)) {
+    const moduleDir = path.join(chapterDir, moduleSlug);
+    if (fs.statSync(moduleDir).isDirectory()) {
+      moduleDirs.push(moduleDir);
     }
   }
 }
@@ -50,7 +50,7 @@ let totalVocabEntries = 0;
 const uniqueSpanish = new Set();
 const vocabularyCategories = new Set();
 
-for (const dir of scenarioDirs) {
+for (const dir of moduleDirs) {
   const vocabularyPath = path.join(dir, 'vocabulary.json');
   const sentencesPath = path.join(dir, 'sentences.json');
   const personalizePath = path.join(dir, 'personalize.json');
@@ -78,22 +78,22 @@ readme = readme.replace(/\r\n/g, '\n');
 
 readme = replaceOrThrow(
   readme,
-  /The Spanish path currently has \d+ goals \(all available\) and \d+ authored scenarios total\./,
-  `The Spanish path currently has ${goalCount} goals (all available) and ${scenarioCount} authored scenarios total.`,
-  'goal/scenario headline'
+  /The Spanish (?:path|track) currently has \d+ (?:goals|chapters) \(all available\) and \d+ authored (?:scenarios|modules) total\./,
+  `The Spanish track currently has ${chapterCount} chapters (all available) and ${moduleCount} authored modules total.`,
+  'chapter/module headline'
 );
 
 readme = replaceOrThrow(
   readme,
-  /1\.[\s\S]*?\n\nTogether, these goals cover/,
-  `${goalLines}\n\nTogether, these goals cover`,
-  'goal list'
+  /1\.[\s\S]*?\n\nTogether, these (?:goals|chapters) cover/,
+  `${chapterLines}\n\nTogether, these chapters cover`,
+  'chapter list'
 );
 
 readme = replaceOrThrow(
   readme,
-  /- Modules\/goals:.*\n(?:- Modules\/goals:.*\n)?- Sections\/scenarios:.*\n- Vocabulary categories:.*\n/,
-  `- Modules/goals: the ${goalCount} goals listed above\n- Sections/scenarios: ${scenarioCount} scenario folders (each with \`scenario.json\` and \`lesson.json\`, plus vocabulary and optional sentence/personalization files)\n- Vocabulary categories: ${vocabularyCategories.size} authored category labels in \`vocabulary.json\` files (examples include question, phrase, numbers, routine, place, time, greetings, family, food, navigation, colors, connectors, and verb-focused groups)\n`,
+  /- (?:Modules\/goals|Chapters):.*\n(?:- (?:Modules\/goals|Chapters):.*\n)?- (?:Sections\/scenarios|Modules):.*\n- Vocabulary categories:.*\n/,
+  `- Chapters: the ${chapterCount} chapters listed above\n- Modules: ${moduleCount} module folders (each with \`module.json\` and \`lesson.json\`, plus vocabulary and optional sentence/personalization files)\n- Vocabulary categories: ${vocabularyCategories.size} authored category labels in \`vocabulary.json\` files (examples include question, phrase, numbers, routine, place, time, greetings, family, food, navigation, colors, connectors, and verb-focused groups)\n`,
   'coverage bullets'
 );
 
@@ -154,6 +154,6 @@ if (hasCrLf) {
 fs.writeFileSync(readmePath, readme, 'utf8');
 
 console.log('Spanish README synced.');
-console.log(`Goals: ${goalCount}, Scenarios: ${scenarioCount}`);
+console.log(`Chapters: ${chapterCount}, Modules: ${moduleCount}`);
 console.log(`Files: vocab=${vocabFiles}, sentences=${sentFiles}, personalize=${personalizeFiles}`);
 console.log(`Vocabulary: total=${totalVocabEntries}, unique=${uniqueSpanish.size}, categories=${vocabularyCategories.size}`);

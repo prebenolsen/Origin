@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getScenarioBundle } from '../../lib/language/content';
+import { getModuleBundle } from '../../lib/language/content';
 import {
   getAll,
-  getByScenario,
+  getByModule,
   getRecent,
   getWeak,
   orderAdaptive,
@@ -23,9 +23,9 @@ function titleFor(mode: string): string {
   if (mode === 'all') return 'All words';
   if (mode === 'weak') return 'Weak words';
   if (mode === 'recent') return "This week";
-  if (mode.startsWith('s-')) {
+  if (mode.startsWith('m-')) {
     const slug = mode.slice(2);
-    return getScenarioBundle(LANG, slug)?.scenario.title ?? slug;
+    return getModuleBundle(LANG, slug)?.module.title ?? slug;
   }
   return 'Review';
 }
@@ -33,7 +33,7 @@ function titleFor(mode: string): string {
 function selectTargets(mode: string): VocabState[] {
   if (mode === 'weak') return getWeak(LANG);
   if (mode === 'recent') return getRecent(LANG, 7);
-  if (mode.startsWith('s-')) return getByScenario(LANG, `${LANG}/${mode.slice(2)}`);
+  if (mode.startsWith('m-')) return getByModule(LANG, `${LANG}/${mode.slice(2)}`);
   return getAll(LANG);
 }
 

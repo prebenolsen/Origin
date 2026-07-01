@@ -1,22 +1,22 @@
 /**
  * Origin — Languages domain data model.
  *
- * The Languages domain is goal-driven and personalized, so it does NOT reuse
+ * The Languages domain is chapter-driven and personalized, so it does NOT reuse
  * the static `module.json` history shape. Instead, a language is described by a
  * small set of JSON files under `src/content/languages/<lang>/`:
  *
  *   languages/spanish/
- *     language.json                      → Language (meta + goals + path)
- *     scenarios/<slug>/scenario.json      → Scenario (meta)
- *     scenarios/<slug>/lesson.json        → Lesson (context/explanation/phrases)
- *     scenarios/<slug>/vocabulary.json    → VocabItem[]   (the word list)
- *     scenarios/<slug>/personalize.json   → Personalize   (optional)
+ *     language.json                     → Language (meta + chapters)
+ *     chapters/<slug>/module.json        → Module (meta)
+ *     chapters/<slug>/lesson.json        → Lesson (context/explanation/phrases)
+ *     chapters/<slug>/vocabulary.json    → VocabItem[]   (the word list)
+ *     chapters/<slug>/personalize.json   → Personalize   (optional)
  *
  * These are auto-discovered by `src/lib/language/content.ts` with
  * `import.meta.glob`, exactly like the history content registry — drop a folder
  * in, no code changes needed.
  *
- * The learner's *state* (chosen goal, personalized word picks, and the
+ * The learner's *state* (chosen chapter, personalized word picks, and the
  * spaced-repetition memory of every word) lives in localStorage today
  * (mirroring `lib/progress.ts`). The shapes below are intentionally flat so a
  * Supabase backend (tables prefixed `origin_language_spanish`) can persist them
@@ -36,25 +36,25 @@ export interface Language {
   flag?: string;
   /** One-line hook for the landing page. */
   tagline?: string;
-  /** Goals the learner can pick from (the first journey is "Visiting Spain"). */
-  goals: Goal[];
+  /** Chapters the learner can pick from (the first is "Visiting Spain"). */
+  chapters: Chapter[];
 }
 
-export interface Goal {
+export interface Chapter {
   /** Slug, e.g. `visiting-spain`. */
   slug: string;
   title: string;
   summary: string;
   icon?: string;
-  /** `false` renders the goal as "coming soon" and disables selection. */
+  /** `false` renders the chapter as "coming soon" and disables selection. */
   available: boolean;
-  /** Ordered scenario slugs that make up this goal's learning path. */
-  scenarios: string[];
+  /** Ordered module slugs that make up this chapter. */
+  modules: string[];
 }
 
-/* ------------------------------- scenario.json -------------------------- */
+/* -------------------------------- module.json ---------------------------- */
 
-export type ScenarioKind =
+export type ModuleKind =
   /** Fixed, fully authored lesson (e.g. Greetings). */
   | 'standard'
   /** Asks the learner what's relevant to them, then teaches only that. */
@@ -62,13 +62,13 @@ export type ScenarioKind =
   /** Scaffolding only — awaiting an authored word list. Hidden from learners. */
   | 'placeholder';
 
-export interface Scenario {
+export interface Module {
   slug: string;
   title: string;
   summary: string;
-  /** Emoji shown on the path. */
+  /** Emoji shown on the chapter. */
   icon?: string;
-  kind: ScenarioKind;
+  kind: ModuleKind;
   /** Rough time-to-complete in minutes (display only). */
   estMinutes?: number;
 }
@@ -78,7 +78,7 @@ export interface Scenario {
 /**
  * A single word/translation pair. This is also the unit the review system
  * tracks. To author a category, an editor only needs to fill in `en`/`es`
- * (and optionally `category`) — see the placeholder scenarios for the template.
+ * (and optionally `category`) — see the placeholder modules for the template.
  */
 export interface VocabItem {
   /** English word, e.g. `cucumber`. */
@@ -142,7 +142,7 @@ export interface Lesson {
   examples?: LessonExample[];
   /** Full phrases the learner leaves able to say. */
   phrases?: Phrase[];
-  /** Optional reusable scoring rubric for sentence-production scenarios. */
+  /** Optional reusable scoring rubric for sentence-production modules. */
   answerEvaluation?: AnswerEvaluationConfig;
 }
 
@@ -204,11 +204,11 @@ export interface Personalize {
 
 /* --------------------- assembled, in-app representation ----------------- */
 
-export interface ScenarioBundle {
-  /** `languages/<lang>/<scenario>` path key. */
+export interface ModuleBundle {
+  /** `languages/<lang>/<module>` path key. */
   path: string;
   langCode: string;
-  scenario: Scenario;
+  module: Module;
   lesson?: Lesson;
   vocabulary: VocabItem[];
   personalize?: Personalize;

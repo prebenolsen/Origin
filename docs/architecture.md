@@ -21,19 +21,19 @@ src/content/
       other categories should omit `period` and rely on `context.when` if they need a
       lightweight time cue.
 
-## Languages domain (Spanish) - goal-driven & personalized
+## Languages domain (Spanish) - chapter-driven & personalized
 
 The Languages domain is a separate, parallel subsystem from the history-style modules
-above. It is **goal-driven and personalized**, so it does not use `module.json`; instead
-it has its own content shape, its own registry, and a spaced-repetition memory engine.
-It **reuses** the existing UI kit (`components/ui/*`), the localStorage progress pattern,
-the design tokens, and `AppShell`.
+above. It is **chapter-driven and personalized**, so it does not use `module.json` in the
+history sense; instead it has its own content shape, its own registry, and a
+spaced-repetition memory engine. It **reuses** the existing UI kit (`components/ui/*`),
+the localStorage progress pattern, the design tokens, and `AppShell`.
 
 ```
 src/content/languages/<lang>/
-  language.json                      # Language meta + goals (each goal lists its scenarios)
-  scenarios/<slug>/
-    scenario.json                    # meta + kind: standard | personalized | placeholder
+  language.json                      # Language meta + chapters (each chapter lists its modules)
+  chapters/<chapter>/<slug>/
+    module.json                      # meta + kind: standard | personalized | placeholder
     lesson.json                      # context / explanation / examples / phrases
     vocabulary.json                  # VocabItem[]  (the word list — what reviews track)
     personalize.json                 # optional: "what do you buy/wear?" picker + sentence frame
@@ -41,13 +41,13 @@ src/content/languages/<lang>/
 ```
 
 - **Registry:** `src/lib/language/content.ts` auto-discovers the above with
-  `import.meta.glob` (same approach as the history registry). Drop in a scenario folder, no
-  code changes. `kind: "placeholder"` scenarios are hidden from learners (mirrors the
+  `import.meta.glob` (same approach as the history registry). Drop in a module folder, no
+  code changes. `kind: "placeholder"` modules are hidden from learners (mirrors the
   history `PLACEHOLDER:` convention).
 - **Memory / SRS:** `src/lib/language/srs.ts` tracks every word's learning state
   (attempts, streak, review history, SM-2 ease/interval, next-review) in localStorage and
   derives mastery (`new`/`learning`/`strong`) and weakness. `profile.ts` stores the chosen
-  goal, personalized word picks, and completed scenarios.
+  chapter, personalized word picks, and completed modules.
 - **Adaptive tests:** `src/lib/language/testGen.ts` raises difficulty with mastery
   (recognise → recall → in-context → produce) and builds **intelligent distractors** from
   the same category + spelling-similar words.
@@ -55,12 +55,12 @@ src/content/languages/<lang>/
   Duolingo-style word bank — the learner taps known-word tiles into order to assemble a full
   sentence (tap a placed tile to send it back). It is fed by `sentences.json` (tokens are
   split from the Spanish; `distractors` add wrong tiles) and credits every known word in a
-  correct build as in-context recall, so the grammar drill still feeds the SRS. A scenario
+  correct build as in-context recall, so the grammar drill still feeds the SRS. A module
   can be sentence-only (no `vocabulary.json`), making the lesson skip teaching and go
   straight to building.
-- **Screens** (`src/components/language/`): `SpanishHome` (goal selection), `PathScreen`
-  (generated path), `LessonExperience` (context → teach → practice → review → build
-  sentences, with `PersonalizeStep` first for personalized scenarios), `VocabTest` (shared
+- **Screens** (`src/components/language/`): `SpanishHome` (chapter selection), `ChapterScreen`
+  (generated chapter), `LessonExperience` (context → teach → practice → review → build
+  sentences, with `PersonalizeStep` first for personalized modules), `VocabTest` (shared
   adaptive runner, including the word-bank builder), `ReviewDashboard` + `ReviewSession`. All
   routes under `/learn/spanish` are lazy-loaded.
 - **Backend:** state is localStorage today; `docs/language-supabase-schema.md` defines the

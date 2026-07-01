@@ -2,19 +2,18 @@
  * Language content registry.
  *
  * Auto-discovers every language under `src/content/languages/<lang>/` at build
- * time, mirroring the history content registry. Scenarios live one phase folder
- * deep - `scenarios/<phase>/<slug>/` - so phase-1 content stays separate from
- * later phases. To add a scenario, drop a folder with a `scenario.json` (and
- * optional lesson/vocabulary/personalize) into a phase - no code changes
- * required. The leaf `<slug>` is the scenario's identity (keep it unique across
- * phases).
+ * time, mirroring the history content registry. Modules live one chapter folder
+ * deep - `chapters/<chapter>/<slug>/` - so a chapter's content stays grouped. To
+ * add a module, drop a folder with a `module.json` (and optional
+ * lesson/vocabulary/personalize) into a chapter - no code changes required. The
+ * leaf `<slug>` is the module's identity (keep it unique across chapters).
  */
 import type {
   Language,
   Lesson,
+  Module,
+  ModuleBundle,
   Personalize,
-  Scenario,
-  ScenarioBundle,
   Sentence,
   VocabItem,
 } from '../../types/language';
@@ -25,24 +24,24 @@ const languageFiles = import.meta.glob('../../content/languages/*/language.json'
   eager: true,
   import: 'default',
 }) as GlobMap;
-const scenarioFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/*/scenario.json',
+const moduleFiles = import.meta.glob(
+  '../../content/languages/*/chapters/*/*/module.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 const lessonFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/*/lesson.json',
+  '../../content/languages/*/chapters/*/*/lesson.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 const vocabFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/*/vocabulary.json',
+  '../../content/languages/*/chapters/*/*/vocabulary.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 const personalizeFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/*/personalize.json',
+  '../../content/languages/*/chapters/*/*/personalize.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 const sentenceFiles = import.meta.glob(
-  '../../content/languages/*/scenarios/*/*/sentences.json',
+  '../../content/languages/*/chapters/*/*/sentences.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 
@@ -54,18 +53,18 @@ function langOf(key: string): string | null {
 }
 
 /**
- * `.../scenarios/visiting-spain/greetings/scenario.json`
- *   -> `{ lang, phase, scenario }`.
- * The leaf slug stays the scenario's identity; `phase` is the folder that
- * groups it (used only to detect cross-phase slug collisions).
+ * `.../chapters/visiting-spain/greetings/module.json`
+ *   -> `{ lang, chapter, module }`.
+ * The leaf slug stays the module's identity; `chapter` is the folder that
+ * groups it (used only to detect cross-chapter slug collisions).
  */
-function scenarioOf(key: string): { lang: string; phase: string; scenario: string } | null {
+function moduleOf(key: string): { lang: string; chapter: string; module: string } | null {
   const after = key.split('/content/languages/')[1];
   if (!after) return null;
   const parts = after.split('/');
-  // [lang, "scenarios", phase, scenarioSlug, file.json]
-  if (parts.length < 5 || parts[1] !== 'scenarios') return null;
-  return { lang: parts[0], phase: parts[2], scenario: parts[3] };
+  // [lang, "chapters", chapter, moduleSlug, file.json]
+  if (parts.length < 5 || parts[1] !== 'chapters') return null;
+  return { lang: parts[0], chapter: parts[2], module: parts[3] };
 }
 
 function indexLanguages(): Map<string, Language> {
@@ -77,34 +76,34 @@ function indexLanguages(): Map<string, Language> {
   return map;
 }
 
-function indexByScenario<T>(files: GlobMap): Map<string, T> {
+function indexByModule<T>(files: GlobMap): Map<string, T> {
   const map = new Map<string, T>();
-  const phaseOfKey = new Map<string, string>();
+  const chapterOfKey = new Map<string, string>();
   for (const key of Object.keys(files)) {
-    const parts = scenarioOf(key);
+    const parts = moduleOf(key);
     if (!parts) continue;
-    const id = `${parts.lang}/${parts.scenario}`;
-    const prevPhase = phaseOfKey.get(id);
-    if (prevPhase && prevPhase !== parts.phase && import.meta.env?.DEV) {
-      // Leaf slug is the identity, so two phases can't share one. Give a phase-2
-      // scenario a distinct slug (e.g. `restaurant-social`) instead of reusing.
+    const id = `${parts.lang}/${parts.module}`;
+    const prevChapter = chapterOfKey.get(id);
+    if (prevChapter && prevChapter !== parts.chapter && import.meta.env?.DEV) {
+      // Leaf slug is the identity, so two chapters can't share one. Give a
+      // second module a distinct slug (e.g. `restaurant-social`) instead.
       console.warn(
-        `[language content] duplicate scenario slug "${parts.scenario}" in ` +
-          `phases "${prevPhase}" and "${parts.phase}" - one will shadow the other.`,
+        `[language content] duplicate module slug "${parts.module}" in ` +
+          `chapters "${prevChapter}" and "${parts.chapter}" - one will shadow the other.`,
       );
     }
-    phaseOfKey.set(id, parts.phase);
+    chapterOfKey.set(id, parts.chapter);
     map.set(id, files[key] as T);
   }
   return map;
 }
 
 const LANGUAGES = indexLanguages();
-const SCENARIOS = indexByScenario<Scenario>(scenarioFiles);
-const LESSONS = indexByScenario<Lesson>(lessonFiles);
-const VOCAB = indexByScenario<VocabItem[]>(vocabFiles);
-const PERSONALIZE = indexByScenario<Personalize>(personalizeFiles);
-const SENTENCES = indexByScenario<Sentence[]>(sentenceFiles);
+const MODULES = indexByModule<Module>(moduleFiles);
+const LESSONS = indexByModule<Lesson>(lessonFiles);
+const VOCAB = indexByModule<VocabItem[]>(vocabFiles);
+const PERSONALIZE = indexByModule<Personalize>(personalizeFiles);
+const SENTENCES = indexByModule<Sentence[]>(sentenceFiles);
 
 export function allLanguages(): { slug: string; language: Language }[] {
   return [...LANGUAGES.entries()].map(([slug, language]) => ({ slug, language }));
@@ -114,22 +113,22 @@ export function getLanguage(langSlug: string): Language | undefined {
   return LANGUAGES.get(langSlug);
 }
 
-export function getGoal(langSlug: string, goalSlug: string) {
-  return getLanguage(langSlug)?.goals.find((g) => g.slug === goalSlug);
+export function getChapter(langSlug: string, chapterSlug: string) {
+  return getLanguage(langSlug)?.chapters.find((c) => c.slug === chapterSlug);
 }
 
-/** Build the assembled bundle for a single scenario, or undefined. */
-export function getScenarioBundle(
+/** Build the assembled bundle for a single module, or undefined. */
+export function getModuleBundle(
   langSlug: string,
-  scenarioSlug: string,
-): ScenarioBundle | undefined {
-  const path = `${langSlug}/${scenarioSlug}`;
-  const scenario = SCENARIOS.get(path);
-  if (!scenario) return undefined;
+  moduleSlug: string,
+): ModuleBundle | undefined {
+  const path = `${langSlug}/${moduleSlug}`;
+  const module = MODULES.get(path);
+  if (!module) return undefined;
   return {
     path,
     langCode: langSlug,
-    scenario,
+    module,
     lesson: LESSONS.get(path),
     vocabulary: VOCAB.get(path) ?? [],
     personalize: PERSONALIZE.get(path),
@@ -137,18 +136,18 @@ export function getScenarioBundle(
   };
 }
 
-/** Whether a scenario is authored and enterable (not a placeholder). */
-export function isEnterable(bundle: ScenarioBundle | undefined): boolean {
-  return !!bundle && bundle.scenario.kind !== 'placeholder';
+/** Whether a module is authored and enterable (not a placeholder). */
+export function isEnterable(bundle: ModuleBundle | undefined): boolean {
+  return !!bundle && bundle.module.kind !== 'placeholder';
 }
 
-/** Every scenario bundle for a language, in no particular order. */
-export function listScenarios(langSlug: string): ScenarioBundle[] {
-  const out: ScenarioBundle[] = [];
-  for (const key of SCENARIOS.keys()) {
+/** Every module bundle for a language, in no particular order. */
+export function listModules(langSlug: string): ModuleBundle[] {
+  const out: ModuleBundle[] = [];
+  for (const key of MODULES.keys()) {
     if (!key.startsWith(`${langSlug}/`)) continue;
     const slug = key.slice(langSlug.length + 1);
-    const bundle = getScenarioBundle(langSlug, slug);
+    const bundle = getModuleBundle(langSlug, slug);
     if (bundle) out.push(bundle);
   }
   return out;

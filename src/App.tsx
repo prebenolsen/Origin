@@ -19,7 +19,7 @@ const GeographyGame = lazy(() => import('./components/geo/GeographyGame'));
 // The Languages domain (Spanish) ships its own content + SRS engine, so it is
 // code-split too — only loaded when a learner opens it.
 const SpanishHome = lazy(() => import('./components/language/SpanishHome'));
-const PathScreen = lazy(() => import('./components/language/PathScreen'));
+const ChapterScreen = lazy(() => import('./components/language/ChapterScreen'));
 const LessonExperience = lazy(() => import('./components/language/LessonExperience'));
 const ReviewModePicker = lazy(() => import('./components/language/ReviewModePicker'));
 const ReviewDashboard = lazy(() => import('./components/language/ReviewDashboard'));
@@ -70,15 +70,15 @@ export default function App() {
           }
         />
         <Route
-          path="/learn/spanish/path"
+          path="/learn/spanish/chapter"
           element={
             <Suspense fallback={<LangFallback />}>
-              <PathScreen />
+              <ChapterScreen />
             </Suspense>
           }
         />
         <Route
-          path="/learn/spanish/lesson/:scenario"
+          path="/learn/spanish/lesson/:module"
           element={
             <Suspense fallback={<LangFallback />}>
               <LessonExperience />

@@ -66,8 +66,8 @@ the behaviour even if the implementation changes.
 - Practice batches run `VocabTest` with `requeueWrong` so a missed word returns before the
   batch ends (capped at `MAX_REQUEUE`).
 - Teach examples are gated to introduced words (whole-word match) - **no pre-teaching**.
-- The component is keyed by scenario (`<LessonRunner key={scenario}/>`) so switching lessons
-  fully remounts; don't reintroduce shared state across scenarios.
+- The component is keyed by module (`<LessonRunner key={module}/>`) so switching lessons
+  fully remounts; don't reintroduce shared state across modules.
 
 ## Persistence
 

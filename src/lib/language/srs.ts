@@ -25,8 +25,8 @@ export interface VocabState {
   es: string;
   en: string;
   category?: string;
-  /** Scenario this word was introduced from, e.g. `spanish/supermarket`. */
-  scenario: string;
+  /** Module this word was introduced from, e.g. `spanish/supermarket`. */
+  module: string;
   introducedAt: number;
   /** Times the word has been shown/introduced (times_seen). */
   seen: number;
@@ -117,7 +117,7 @@ export function difficulty(s: VocabState): number {
 export function introduce(
   langSlug: string,
   word: { es: string; en: string; category?: string },
-  scenario: string,
+  module: string,
 ): void {
   const id = vocabId(word.es);
   if (!id) return;
@@ -129,7 +129,7 @@ export function introduce(
     es: word.es,
     en: word.en,
     category: word.category,
-    scenario,
+    module,
     introducedAt: now,
     seen: 0,
     attempts: 0,
@@ -217,8 +217,8 @@ export function getState(langSlug: string, id: string): VocabState | undefined {
   return read(langSlug)[id];
 }
 
-export function getByScenario(langSlug: string, scenario: string): VocabState[] {
-  return getAll(langSlug).filter((s) => s.scenario === scenario);
+export function getByModule(langSlug: string, module: string): VocabState[] {
+  return getAll(langSlug).filter((s) => s.module === module);
 }
 
 /** Words whose `nextReview` has passed, soonest first. */

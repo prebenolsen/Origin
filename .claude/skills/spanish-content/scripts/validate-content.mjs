@@ -5,9 +5,9 @@
  * Usage:  node .claude/skills/spanish-content/scripts/validate-content.mjs [langSlug]
  *
  * Enforces the rules in the spanish-content skill: valid JSON, no BOM, no
- * typographic dashes, required fields, valid scenario `kind`, non-placeholder
- * scenarios have every `es` filled, no duplicate words within a scenario, goals
- * reference real scenarios, and personalize structure. Exits non-zero on errors.
+ * typographic dashes, required fields, valid module `kind`, non-placeholder
+ * modules have every `es` filled, no duplicate words within a module, chapters
+ * reference real modules, and personalize structure. Exits non-zero on errors.
  */
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, dirname, resolve, basename } from 'node:path';
@@ -85,7 +85,7 @@ function validateVocab(path, kind) {
     if (!item.en || !String(item.en).trim()) err(path, `${at}: missing "en"`);
     const es = String(item.es ?? '').trim();
     if (!es) {
-      if (kind !== 'placeholder') err(path, `${at} (${item.en}): empty "es" in a non-placeholder scenario`);
+      if (kind !== 'placeholder') err(path, `${at} (${item.en}): empty "es" in a non-placeholder module`);
       return; // placeholder blanks are expected
     }
     if (!item.category) warn(path, `${at} (${item.en}): no "category" - hurts smart distractors`);
@@ -93,7 +93,7 @@ function validateVocab(path, kind) {
     if (seen.has(id)) err(path, `${at}: duplicate word "${es}" (also item ${seen.get(id)})`);
     else seen.set(id, i);
   });
-  // Only nudge fully-authored standard scenarios: personalized sets are base +
+  // Only nudge fully-authored standard modules: personalized sets are base +
   // learner picks (count varies), and placeholders aren't taught yet.
   if (kind === 'standard' && data.length && data.length % 3 !== 0) {
     warn(path, `${data.length} words - not a multiple of 3, the last batch will be small`);
@@ -127,25 +127,25 @@ function validatePersonalize(path) {
   }
 }
 
-function validateScenario(scenarioDir) {
-  const slug = basename(scenarioDir);
-  const sPath = join(scenarioDir, 'scenario.json');
-  const meta = loadJson(sPath);
+function validateModule(moduleDir) {
+  const slug = basename(moduleDir);
+  const mPath = join(moduleDir, 'module.json');
+  const meta = loadJson(mPath);
   if (meta === undefined) {
-    err(scenarioDir, 'missing scenario.json');
+    err(moduleDir, 'missing module.json');
     return { slug, kind: undefined };
   }
-  checkDashes(sPath, meta);
-  for (const f of ['slug', 'title', 'summary']) if (!meta[f]) err(sPath, `missing "${f}"`);
-  if (meta.slug && meta.slug !== slug) err(sPath, `slug "${meta.slug}" != folder "${slug}"`);
-  if (!VALID_KINDS.includes(meta.kind)) err(sPath, `kind "${meta.kind}" must be one of ${VALID_KINDS.join(', ')}`);
+  checkDashes(mPath, meta);
+  for (const f of ['slug', 'title', 'summary']) if (!meta[f]) err(mPath, `missing "${f}"`);
+  if (meta.slug && meta.slug !== slug) err(mPath, `slug "${meta.slug}" != folder "${slug}"`);
+  if (!VALID_KINDS.includes(meta.kind)) err(mPath, `kind "${meta.kind}" must be one of ${VALID_KINDS.join(', ')}`);
 
-  if (existsSync(join(scenarioDir, 'vocabulary.json'))) validateVocab(join(scenarioDir, 'vocabulary.json'), meta.kind);
-  else if (meta.kind !== 'placeholder') warn(scenarioDir, 'no vocabulary.json');
+  if (existsSync(join(moduleDir, 'vocabulary.json'))) validateVocab(join(moduleDir, 'vocabulary.json'), meta.kind);
+  else if (meta.kind !== 'placeholder') warn(moduleDir, 'no vocabulary.json');
 
-  if (existsSync(join(scenarioDir, 'lesson.json'))) validateLesson(join(scenarioDir, 'lesson.json'));
-  if (existsSync(join(scenarioDir, 'personalize.json'))) validatePersonalize(join(scenarioDir, 'personalize.json'));
-  else if (meta.kind === 'personalized') warn(scenarioDir, 'personalized scenario without personalize.json');
+  if (existsSync(join(moduleDir, 'lesson.json'))) validateLesson(join(moduleDir, 'lesson.json'));
+  if (existsSync(join(moduleDir, 'personalize.json'))) validatePersonalize(join(moduleDir, 'personalize.json'));
+  else if (meta.kind === 'personalized') warn(moduleDir, 'personalized module without personalize.json');
 
   return { slug, kind: meta.kind };
 }
@@ -160,18 +160,18 @@ function validateLanguage(langDir) {
   checkDashes(langPath, lang);
   for (const f of ['code', 'name', 'nativeName']) if (!lang[f]) err(langPath, `missing "${f}"`);
 
-  // Scenarios live one phase folder deep: scenarios/<phase>/<slug>/.
-  const scenarioRoot = join(langDir, 'scenarios');
+  // Modules live one chapter folder deep: chapters/<chapter>/<slug>/.
+  const chaptersRoot = join(langDir, 'chapters');
   const found = new Set();
-  for (const phase of dirs(scenarioRoot))
-    for (const d of dirs(join(scenarioRoot, phase)))
-      found.add(validateScenario(join(scenarioRoot, phase, d)).slug);
+  for (const chapter of dirs(chaptersRoot))
+    for (const d of dirs(join(chaptersRoot, chapter)))
+      found.add(validateModule(join(chaptersRoot, chapter, d)).slug);
 
-  for (const goal of lang.goals ?? []) {
-    if (goal.available && (!goal.scenarios || goal.scenarios.length === 0))
-      warn(langPath, `goal "${goal.slug}" is available but lists no scenarios`);
-    for (const s of goal.scenarios ?? [])
-      if (!found.has(s)) err(langPath, `goal "${goal.slug}" references missing scenario "${s}"`);
+  for (const chapter of lang.chapters ?? []) {
+    if (chapter.available && (!chapter.modules || chapter.modules.length === 0))
+      warn(langPath, `chapter "${chapter.slug}" is available but lists no modules`);
+    for (const m of chapter.modules ?? [])
+      if (!found.has(m)) err(langPath, `chapter "${chapter.slug}" references missing module "${m}"`);
   }
 }
 
