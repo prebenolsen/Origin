@@ -1,0 +1,159 @@
+{
+  "intro": "Tom is lost in Madrid, so he flags down Marta's taxi and asks for the station.",
+  "speakers": [
+    { "id": "marta", "name": "Marta", "side": "left", "avatar": "👩" },
+    { "id": "tom", "name": "Tom", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "tom",
+      "es": "Hola! Buenas tardes.",
+      "en": "Hi! Good afternoon."
+    },
+    {
+      "id": "m2",
+      "speaker": "marta",
+      "es": "Buenas tardes! Donde?",
+      "en": "Good afternoon! Where to?"
+    },
+    {
+      "id": "m3",
+      "speaker": "tom",
+      "es": "Estoy perdido. Lleveme a la estacion, por favor.",
+      "en": "I'm lost. Take me to the station, please."
+    },
+    {
+      "id": "m4",
+      "speaker": "marta",
+      "es": "Vale. La estacion esta cerca.",
+      "en": "Okay. The station is near.",
+      "words": [
+        { "es": "vale", "en": "okay" }
+      ]
+    },
+    {
+      "id": "m5",
+      "speaker": "tom",
+      "es": "Cuanto cuesta?",
+      "en": "How much is it?"
+    },
+    {
+      "id": "m6",
+      "speaker": "marta",
+      "es": "Diez euros.",
+      "en": "Ten euros."
+    },
+    {
+      "id": "m7",
+      "speaker": "tom",
+      "es": "Perdon, no entiendo. Mas despacio, por favor.",
+      "en": "Sorry, I don't understand. More slowly, please."
+    },
+    {
+      "id": "m8",
+      "speaker": "marta",
+      "es": "Diez euros.",
+      "en": "Ten euros."
+    },
+    {
+      "id": "m9",
+      "speaker": "tom",
+      "es": "Vale, gracias. Habla ingles?",
+      "en": "Okay, thanks. Do you speak English?",
+      "words": [
+        { "es": "vale", "en": "okay" }
+      ]
+    },
+    {
+      "id": "m10",
+      "speaker": "marta",
+      "es": "No. Solo español.",
+      "en": "No. Only Spanish.",
+      "words": [
+        { "es": "solo", "en": "only" }
+      ]
+    },
+    {
+      "id": "m11",
+      "speaker": "tom",
+      "es": "No hay problema. Hablo un poco de español.",
+      "en": "No problem. I speak a little Spanish.",
+      "words": [
+        { "es": "hay", "en": "there is" },
+        { "es": "problema", "en": "problem" }
+      ]
+    },
+    {
+      "id": "m12",
+      "speaker": "marta",
+      "es": "Perfecto! La estacion esta aqui, a la izquierda.",
+      "en": "Perfect! The station is here, on the left.",
+      "words": [
+        { "es": "perfecto", "en": "perfect" }
+      ]
+    },
+    {
+      "id": "m13",
+      "speaker": "tom",
+      "es": "Aqui? Pare aqui, por favor.",
+      "en": "Here? Stop here, please."
+    },
+    {
+      "id": "m14",
+      "speaker": "marta",
+      "es": "Vale. Diez euros, por favor.",
+      "en": "Okay. Ten euros, please.",
+      "words": [
+        { "es": "vale", "en": "okay" }
+      ]
+    },
+    {
+      "id": "m15",
+      "speaker": "tom",
+      "es": "Gracias! Adios.",
+      "en": "Thanks! Bye."
+    },
+    {
+      "id": "m16",
+      "speaker": "marta",
+      "es": "De nada. Hasta luego!",
+      "en": "You're welcome. See you later!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "Where does Tom want to go?",
+      "options": ["The hotel", "The station", "The airport"],
+      "answer": 1
+    },
+    {
+      "type": "true-false",
+      "prompt": "The station is far away.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Habla ingles?",
+      "options": ["Marta", "Tom"],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "How much does the taxi cost?",
+      "options": ["Two euros", "Ten euros", "Twenty euros"],
+      "answer": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put the events in order.",
+      "items": [
+        "Tom greets the driver",
+        "Tom asks to go to the station",
+        "Marta says the price",
+        "Tom asks the driver to stop here"
+      ]
+    }
+  ]
+}

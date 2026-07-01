@@ -4,6 +4,23 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [7.2.0] - 2026-07-01
+
+### Content - New Conversation module: "Catching a Taxi" (Visiting Spain)
+
+Added a second Conversation module to the Visiting Spain chapter, slotted at the
+end of the chapter after **Problems & Help**
+(`chapters/visiting-spain/catching-a-taxi/`). A lost tourist, Tom, flags down
+Marta's taxi and asks for the station: he greets the driver, says he's lost, asks
+to be taken to the station, checks the price, asks her to slow down and whether
+she speaks English, then has her stop and says goodbye - reinforcing the back
+half of the chapter (Questions, Directions, Taxi, Problems & Help) that
+"Sharing a Table" left untouched. 16 short messages, only the genuinely new
+connector words glossed (`vale`, `solo`, `hay`, `perfecto`), and 5 comprehension
+questions spanning all four question types (`multiple-choice` x2, `true-false`,
+`who-said-it`, `ordering`). Tagged `kind: "conversation"` + `format:
+"conversation"`; introduces no new tracked vocabulary.
+
 ## [7.1.0] - 2026-07-01
 
 ### Content - First Conversation module: "Sharing a Table" (Visiting Spain)
