@@ -77,6 +77,49 @@ set `category` sensibly (drives smart distractors), then flip `module.json` `kin
 `standard`/`personalized`. Add the English words to `words-taught.md` (rule 9). Re-run the
 validator.
 
+## Conversation modules (the `conversation` format)
+
+A **Conversation module** is a second module *format* (set `module.json` `"format":
+"conversation"`). Instead of teaching a batch of words, it shows a realistic
+Messenger/WhatsApp-style chat between two native speakers, one message at a time, then a
+short comprehension check. **Its job is to reinforce words the learner already knows in
+natural context - it teaches little or no new vocabulary.** There is no SRS teaching flow
+and no `vocabulary.json`; the content is one `conversation.json`.
+
+Authoring rules (in addition to the shared encoding rules):
+
+1. **Reuse known words.** Write the chat almost entirely from vocabulary earlier modules
+   in the chapter already taught. A little new vocab is fine *if* it's obvious from context
+   or covered by a word gloss. Keep grammar at the chapter's level.
+2. **Sound authentic, keep it short.** Prefer natural back-and-forth (`Hola! / Que tal? /
+   Todo bien`) over textbook lines. Most messages are one sentence; avoid paragraphs.
+3. **Two speakers**, each with a stable `id`, a `name`, and a `side` (`left`/`right`). Every
+   message's `speaker` must match a declared speaker `id`.
+4. **Glosses, not translations, are the default help.** For each message, list the key words
+   in `words: [{ es, en }]` - those become tappable in the bubble and show their meaning
+   above the word. Matching is accent/case/punctuation-insensitive (`"cafe"` matches
+   `Café`). Every message also carries a full `en` translation revealed by "Reveal sentence".
+5. **Comprehension, not vocabulary.** End with **3-5** questions that test whether the learner
+   followed the *conversation*. Types: `multiple-choice`, `true-false`, `who-said-it`,
+   `ordering`. **Never** ask "what does <word> mean?".
+
+Add a conversation module (checklist):
+
+1. `mkdir src/content/languages/<lang>/chapters/<chapter>/<slug>/`.
+2. Copy `assets/module.conversation.json` -> `module.json`; set `slug` (= folder), `title`,
+   `summary`, `icon`, `estMinutes`. Keep `"format": "conversation"`.
+3. Copy `assets/conversation.template.json` -> `conversation.json`; write `intro`, the two
+   `speakers`, the `messages` (with `words` glosses), and 3-5 `questions`.
+4. Add the `<slug>` to the chapter's `modules` array in `language.json`.
+5. Validate, then do the repo "required on every change" steps. Conversation modules
+   introduce no `vocabulary.json`, so nothing is added to `words-taught.md`.
+
+**Placeholder path:** ship `module.json` with `"kind": "placeholder"` + `"format":
+"conversation"` and a skeleton `conversation.json` (empty `intro`/`messages`/`questions`,
+speakers with blank names). It's hidden from learners until you fill it and flip `kind` to
+`standard`. A live scaffold already exists at
+`chapters/meeting-people/making-plans-chat/`.
+
 ## Validate
 
 ```bash

@@ -21,6 +21,9 @@ const GeographyGame = lazy(() => import('./components/geo/GeographyGame'));
 const SpanishHome = lazy(() => import('./components/language/SpanishHome'));
 const ChapterScreen = lazy(() => import('./components/language/ChapterScreen'));
 const LessonExperience = lazy(() => import('./components/language/LessonExperience'));
+const ConversationExperience = lazy(
+  () => import('./components/language/ConversationExperience'),
+);
 const ReviewModePicker = lazy(() => import('./components/language/ReviewModePicker'));
 const ReviewDashboard = lazy(() => import('./components/language/ReviewDashboard'));
 const WordMatchingReview = lazy(() => import('./components/language/WordMatchingReview'));
@@ -82,6 +85,14 @@ export default function App() {
           element={
             <Suspense fallback={<LangFallback />}>
               <LessonExperience />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/learn/spanish/conversation/:module"
+          element={
+            <Suspense fallback={<LangFallback />}>
+              <ConversationExperience />
             </Suspense>
           }
         />

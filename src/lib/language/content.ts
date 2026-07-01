@@ -9,6 +9,7 @@
  * leaf `<slug>` is the module's identity (keep it unique across chapters).
  */
 import type {
+  Conversation,
   Language,
   Lesson,
   Module,
@@ -42,6 +43,10 @@ const personalizeFiles = import.meta.glob(
 ) as GlobMap;
 const sentenceFiles = import.meta.glob(
   '../../content/languages/*/chapters/*/*/sentences.json',
+  { eager: true, import: 'default' },
+) as GlobMap;
+const conversationFiles = import.meta.glob(
+  '../../content/languages/*/chapters/*/*/conversation.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 
@@ -104,6 +109,7 @@ const LESSONS = indexByModule<Lesson>(lessonFiles);
 const VOCAB = indexByModule<VocabItem[]>(vocabFiles);
 const PERSONALIZE = indexByModule<Personalize>(personalizeFiles);
 const SENTENCES = indexByModule<Sentence[]>(sentenceFiles);
+const CONVERSATIONS = indexByModule<Conversation>(conversationFiles);
 
 export function allLanguages(): { slug: string; language: Language }[] {
   return [...LANGUAGES.entries()].map(([slug, language]) => ({ slug, language }));
@@ -133,12 +139,21 @@ export function getModuleBundle(
     vocabulary: VOCAB.get(path) ?? [],
     personalize: PERSONALIZE.get(path),
     sentences: SENTENCES.get(path),
+    conversation: CONVERSATIONS.get(path),
   };
 }
 
 /** Whether a module is authored and enterable (not a placeholder). */
 export function isEnterable(bundle: ModuleBundle | undefined): boolean {
   return !!bundle && bundle.module.kind !== 'placeholder';
+}
+
+/**
+ * Whether a module is a Conversation module (chat + comprehension) rather than
+ * the default word-teaching lesson. Drives which experience/route to open.
+ */
+export function isConversation(bundle: ModuleBundle | undefined): boolean {
+  return !!bundle && bundle.module.format === 'conversation';
 }
 
 /** Every module bundle for a language, in no particular order. */

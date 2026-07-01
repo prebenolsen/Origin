@@ -38,6 +38,7 @@ src/content/languages/<lang>/
     vocabulary.json                  # VocabItem[]  (the word list — what reviews track)
     personalize.json                 # optional: "what do you buy/wear?" picker + sentence frame
     sentences.json                   # optional: full sentences the learner assembles (build-sentence)
+    conversation.json                # optional: chat + comprehension (format: "conversation" modules)
 ```
 
 - **Registry:** `src/lib/language/content.ts` auto-discovers the above with
@@ -58,11 +59,24 @@ src/content/languages/<lang>/
   correct build as in-context recall, so the grammar drill still feeds the SRS. A module
   can be sentence-only (no `vocabulary.json`), making the lesson skip teaching and go
   straight to building.
+- **Module formats:** a module's `module.json` `format` field selects the experience.
+  Absent/`"lesson"` (the default, every existing module) runs the teach→practice flow.
+  `"conversation"` runs a **Conversation module** instead: a realistic chat that reinforces
+  already-known words rather than teaching new ones (no `vocabulary.json`; one
+  `conversation.json`). The registry attaches `conversation` to the bundle and exposes
+  `isConversation()`; `ChapterScreen` routes those modules to `/learn/spanish/conversation/:module`.
+  The learner reads messages one at a time (left/right bubbles), with tap-a-word glosses and
+  an optional per-message "Reveal sentence", then answers 3-5 comprehension questions
+  (`multiple-choice` / `true-false` / `who-said-it` / `ordering`) that test understanding of
+  the exchange. Components: `ConversationExperience` (intro → chat → comprehension → done)
+  and `ConversationComprehension` (the question runner). Completion is recorded via
+  `profile.markComplete`; no SRS writes (it is reinforcement, not teaching).
 - **Screens** (`src/components/language/`): `SpanishHome` (chapter selection), `ChapterScreen`
   (generated chapter), `LessonExperience` (context → teach → practice → review → build
-  sentences, with `PersonalizeStep` first for personalized modules), `VocabTest` (shared
-  adaptive runner, including the word-bank builder), `ReviewDashboard` + `ReviewSession`. All
-  routes under `/learn/spanish` are lazy-loaded.
+  sentences, with `PersonalizeStep` first for personalized modules),
+  `ConversationExperience` (chat + comprehension for `conversation`-format modules),
+  `VocabTest` (shared adaptive runner, including the word-bank builder), `ReviewDashboard` +
+  `ReviewSession`. All routes under `/learn/spanish` are lazy-loaded.
 - **Backend:** state is localStorage today; `docs/language-supabase-schema.md` defines the
   matching Supabase tables (prefix `origin_language_spanish`) for a later sync.
 

@@ -1,0 +1,9 @@
+{
+  "slug": "making-plans-chat",
+  "title": "Making Plans",
+  "summary": "Read two friends make plans to meet after work - a real chat that reinforces words you already know.",
+  "icon": "💬",
+  "kind": "placeholder",
+  "format": "conversation",
+  "estMinutes": 5
+}

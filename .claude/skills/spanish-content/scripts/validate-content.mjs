@@ -25,6 +25,8 @@ const err = (p, m) => errors.push(`${rel(p)}: ${m}`);
 const warn = (p, m) => warnings.push(`${rel(p)}: ${m}`);
 
 const VALID_KINDS = ['standard', 'personalized', 'placeholder'];
+const VALID_FORMATS = ['lesson', 'conversation'];
+const VALID_Q_TYPES = ['multiple-choice', 'true-false', 'who-said-it', 'ordering'];
 const DASHES = /[‒–—―−]/; // figure/en/em/horizontal-bar/minus
 
 function dirs(p) {
@@ -127,6 +129,69 @@ function validatePersonalize(path) {
   }
 }
 
+function validateComprehensionQuestion(path, q, i) {
+  const at = `question ${i}`;
+  if (!q || typeof q !== 'object') return err(path, `${at}: not an object`);
+  if (!VALID_Q_TYPES.includes(q.type))
+    return err(path, `${at}: type "${q.type}" must be one of ${VALID_Q_TYPES.join(', ')}`);
+  if (q.type === 'multiple-choice') {
+    if (!q.prompt) err(path, `${at}: missing "prompt"`);
+    if (!Array.isArray(q.options) || q.options.length < 2) err(path, `${at}: needs >= 2 "options"`);
+    if (typeof q.answer !== 'number' || q.answer < 0 || q.answer >= (q.options?.length ?? 0))
+      err(path, `${at}: "answer" must index into "options"`);
+  } else if (q.type === 'true-false') {
+    if (!q.prompt) err(path, `${at}: missing "prompt"`);
+    if (typeof q.answer !== 'boolean') err(path, `${at}: "answer" must be true/false`);
+  } else if (q.type === 'who-said-it') {
+    if (!q.quote) err(path, `${at}: missing "quote"`);
+    if (!Array.isArray(q.options) || q.options.length < 2) err(path, `${at}: needs >= 2 "options"`);
+    if (typeof q.answer !== 'number' || q.answer < 0 || q.answer >= (q.options?.length ?? 0))
+      err(path, `${at}: "answer" must index into "options"`);
+  } else if (q.type === 'ordering') {
+    if (!q.prompt) err(path, `${at}: missing "prompt"`);
+    if (!Array.isArray(q.items) || q.items.length < 2) err(path, `${at}: needs >= 2 "items"`);
+  }
+}
+
+function validateConversation(path, kind) {
+  const data = loadJson(path);
+  if (data === undefined) return;
+  checkDashes(path, data);
+  const placeholder = kind === 'placeholder';
+
+  if (!Array.isArray(data.speakers) || data.speakers.length < 2) {
+    if (!placeholder) err(path, 'conversation needs at least 2 "speakers"');
+  }
+  const ids = new Set();
+  for (const s of data.speakers ?? []) {
+    if (!s.id) err(path, 'a speaker is missing "id"');
+    else ids.add(s.id);
+    if (!placeholder && !s.name) err(path, `speaker "${s.id}" is missing "name"`);
+    if (s.side && s.side !== 'left' && s.side !== 'right')
+      err(path, `speaker "${s.id}" side must be "left" or "right"`);
+  }
+
+  const messages = data.messages ?? [];
+  if (!Array.isArray(messages)) return err(path, '"messages" must be an array');
+  if (!placeholder && messages.length === 0) err(path, 'conversation has no "messages"');
+  messages.forEach((m, i) => {
+    const at = `message ${i}`;
+    if (!m.es || !String(m.es).trim()) err(path, `${at}: missing "es"`);
+    if (!m.en || !String(m.en).trim()) err(path, `${at}: missing "en" translation`);
+    if (m.speaker && ids.size && !ids.has(m.speaker))
+      err(path, `${at}: speaker "${m.speaker}" is not a declared speaker id`);
+    for (const w of m.words ?? [])
+      if (!w.es || !w.en) err(path, `${at}: a word gloss is missing "es"/"en"`);
+  });
+
+  const questions = data.questions ?? [];
+  if (!placeholder) {
+    if (questions.length < 3 || questions.length > 5)
+      warn(path, `${questions.length} comprehension questions - aim for 3 to 5`);
+  }
+  questions.forEach((q, i) => validateComprehensionQuestion(path, q, i));
+}
+
 function validateModule(moduleDir) {
   const slug = basename(moduleDir);
   const mPath = join(moduleDir, 'module.json');
@@ -139,9 +204,23 @@ function validateModule(moduleDir) {
   for (const f of ['slug', 'title', 'summary']) if (!meta[f]) err(mPath, `missing "${f}"`);
   if (meta.slug && meta.slug !== slug) err(mPath, `slug "${meta.slug}" != folder "${slug}"`);
   if (!VALID_KINDS.includes(meta.kind)) err(mPath, `kind "${meta.kind}" must be one of ${VALID_KINDS.join(', ')}`);
+  if (meta.format !== undefined && !VALID_FORMATS.includes(meta.format))
+    err(mPath, `format "${meta.format}" must be one of ${VALID_FORMATS.join(', ')}`);
 
-  if (existsSync(join(moduleDir, 'vocabulary.json'))) validateVocab(join(moduleDir, 'vocabulary.json'), meta.kind);
-  else if (meta.kind !== 'placeholder') warn(moduleDir, 'no vocabulary.json');
+  const isConversation = meta.format === 'conversation';
+  const convPath = join(moduleDir, 'conversation.json');
+
+  if (isConversation) {
+    // A conversation module reinforces known words; it teaches no new vocab, so
+    // it needs conversation.json instead of vocabulary.json.
+    if (existsSync(convPath)) validateConversation(convPath, meta.kind);
+    else err(moduleDir, 'conversation module without conversation.json');
+  } else {
+    if (existsSync(convPath))
+      err(convPath, 'conversation.json present but module.json format is not "conversation"');
+    if (existsSync(join(moduleDir, 'vocabulary.json'))) validateVocab(join(moduleDir, 'vocabulary.json'), meta.kind);
+    else if (meta.kind !== 'placeholder') warn(moduleDir, 'no vocabulary.json');
+  }
 
   if (existsSync(join(moduleDir, 'lesson.json'))) validateLesson(join(moduleDir, 'lesson.json'));
   if (existsSync(join(moduleDir, 'personalize.json'))) validatePersonalize(join(moduleDir, 'personalize.json'));

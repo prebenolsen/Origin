@@ -1,0 +1,9 @@
+{
+  "slug": "REPLACE-with-folder-name",
+  "title": "REPLACE Title",
+  "summary": "One line shown on the path - what the learner reads, e.g. two friends making plans.",
+  "icon": "💬",
+  "kind": "standard",
+  "format": "conversation",
+  "estMinutes": 5
+}

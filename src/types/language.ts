@@ -62,6 +62,16 @@ export type ModuleKind =
   /** Scaffolding only — awaiting an authored word list. Hidden from learners. */
   | 'placeholder';
 
+/**
+ * How a module is experienced:
+ *  - `lesson`       → the default: teach a small batch of words, then practice.
+ *  - `conversation` → read a realistic chat between native speakers, then a
+ *                     short comprehension check. Teaches little/no new vocab;
+ *                     its job is to reinforce known words in natural context.
+ * Absent = `lesson` (every existing module).
+ */
+export type ModuleFormat = 'lesson' | 'conversation';
+
 export interface Module {
   slug: string;
   title: string;
@@ -69,6 +79,8 @@ export interface Module {
   /** Emoji shown on the chapter. */
   icon?: string;
   kind: ModuleKind;
+  /** Experience type. Omit for a normal word-teaching lesson. */
+  format?: ModuleFormat;
   /** Rough time-to-complete in minutes (display only). */
   estMinutes?: number;
 }
@@ -202,6 +214,103 @@ export interface Personalize {
   template?: { es: string; en: string };
 }
 
+/* ----------------------------- conversation.json ------------------------ */
+
+/**
+ * A Conversation module (`module.json.format === "conversation"`). The learner
+ * reads a realistic chat - Messenger/WhatsApp style - between two native
+ * speakers, one message at a time, with optional understanding help, then
+ * answers a short comprehension check. It reinforces already-known vocabulary
+ * in natural context rather than teaching new words.
+ */
+export interface Conversation {
+  /** Short setup shown on the intro screen, e.g. "Maria and Carlos are making plans to meet after work." */
+  intro: string;
+  /** The chat participants (usually two). */
+  speakers: ConversationSpeaker[];
+  /** Messages in order; revealed one at a time. */
+  messages: ConversationMessage[];
+  /** 3-5 questions that test understanding of the conversation (not translation). */
+  questions: ComprehensionQuestion[];
+}
+
+export interface ConversationSpeaker {
+  /** Stable id referenced by each message's `speaker`. */
+  id: string;
+  /** Display name, e.g. `Maria`. */
+  name: string;
+  /** Which side of the chat this speaker's bubbles sit on. */
+  side: 'left' | 'right';
+  /** Optional emoji avatar shown next to the bubble. */
+  avatar?: string;
+}
+
+export interface ConversationMessage {
+  id: string;
+  /** A `ConversationSpeaker.id`. */
+  speaker: string;
+  /** The Spanish message. Keep it short - usually one sentence. */
+  es: string;
+  /** Full English translation, revealed by "Reveal sentence". */
+  en: string;
+  /**
+   * Optional per-word glosses. Any word listed here becomes tappable in the
+   * bubble and shows its English meaning above it. Matching is
+   * accent/case-insensitive and ignores punctuation, so `"cafe"` matches
+   * `Café`. Words without a gloss are simply not tappable.
+   */
+  words?: ConversationWordGloss[];
+}
+
+export interface ConversationWordGloss {
+  /** The Spanish word as it appears in `es` (matched loosely - see above). */
+  es: string;
+  /** English meaning shown above the word when tapped. */
+  en: string;
+}
+
+/**
+ * A comprehension question asked after the conversation. Types test whether the
+ * learner followed the exchange - never "what does this word mean?".
+ */
+export type ComprehensionQuestion =
+  | ComprehensionMultipleChoice
+  | ComprehensionTrueFalse
+  | ComprehensionWhoSaid
+  | ComprehensionOrdering;
+
+export interface ComprehensionMultipleChoice {
+  /** Also used for "which message matches..." questions. */
+  type: 'multiple-choice';
+  prompt: string;
+  options: string[];
+  /** Index into `options` of the correct answer. */
+  answer: number;
+}
+
+export interface ComprehensionTrueFalse {
+  type: 'true-false';
+  prompt: string;
+  answer: boolean;
+}
+
+export interface ComprehensionWhoSaid {
+  type: 'who-said-it';
+  /** The quoted message, e.g. `Estoy ocupado manana`. */
+  quote: string;
+  /** Choices, usually the speakers' names. */
+  options: string[];
+  /** Index into `options` of the speaker who said it. */
+  answer: number;
+}
+
+export interface ComprehensionOrdering {
+  type: 'ordering';
+  prompt: string;
+  /** The events in the CORRECT order; the UI presents them shuffled. */
+  items: string[];
+}
+
 /* --------------------- assembled, in-app representation ----------------- */
 
 export interface ModuleBundle {
@@ -214,4 +323,6 @@ export interface ModuleBundle {
   personalize?: Personalize;
   /** Optional sentence-builder drills (the `build-sentence` exercise). */
   sentences?: Sentence[];
+  /** Present only for Conversation modules (`module.format === "conversation"`). */
+  conversation?: Conversation;
 }

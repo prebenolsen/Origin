@@ -174,6 +174,7 @@
 | Languages | Spanish · Meeting People | Casual Questions                | Social / conversation       | DONE |
 | Languages | Spanish · Meeting People | Making Plans (invitations)      | Social / conversation       | DONE |
 | Languages | Spanish · Meeting People | Compliments & Small Talk        | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Making Plans (conversation)     | Reading comprehension / chat | ------ (placeholder, awaiting content) |
 | Languages | Spanish · Unlock Spanish | From Chunks to Sentences        | Grammar bridge / build      | DONE |
 | Languages | Spanish · Unlock Spanish | El & La - Words Have a Gender   | Grammar bridge / build      | DONE |
 | Languages | Spanish · Unlock Spanish | Connect Your Thoughts           | Grammar bridge / build      | DONE |

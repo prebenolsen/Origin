@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getChapter, getModuleBundle, isEnterable } from '../../lib/language/content';
+import {
+  getChapter,
+  getModuleBundle,
+  isConversation,
+  isEnterable,
+} from '../../lib/language/content';
 import { useLanguageProfile, useLanguageStats } from '../../lib/language/useLanguage';
 import TopBar from '../ui/TopBar';
 import ProgressBar from '../ui/ProgressBar';
@@ -58,11 +63,15 @@ export default function ChapterScreen() {
         {bundles.map((b, i) => {
           const locked = !isEnterable(b);
           const complete = profile.completed.includes(b.module.slug);
+          const conversation = isConversation(b);
+          const href = conversation
+            ? `/learn/spanish/conversation/${b.module.slug}`
+            : `/learn/spanish/lesson/${b.module.slug}`;
           return (
             <button
               key={b.module.slug}
               disabled={locked}
-              onClick={() => !locked && navigate(`/learn/spanish/lesson/${b.module.slug}`)}
+              onClick={() => !locked && navigate(href)}
               className={`group relative flex w-full items-start gap-4 overflow-hidden rounded-card border p-4 text-left transition active:scale-[0.99] ${
                 locked
                   ? 'cursor-not-allowed border-line-soft bg-surface/40 opacity-60'
@@ -78,6 +87,11 @@ export default function ChapterScreen() {
                   {b.module.kind === 'personalized' && !locked && (
                     <span className="rounded-full bg-accent/15 px-2 py-0.5 text-[0.58rem] font-semibold uppercase tracking-wider text-accent">
                       For you
+                    </span>
+                  )}
+                  {conversation && !locked && (
+                    <span className="rounded-full bg-accent/15 px-2 py-0.5 text-[0.58rem] font-semibold uppercase tracking-wider text-accent">
+                      Chat
                     </span>
                   )}
                 </div>

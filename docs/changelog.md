@@ -4,6 +4,43 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [7.0.0] - 2026-07-01
+
+### Feature - New module type: Conversation (chat + comprehension)
+
+Added a second module *format* to the Languages domain. A Conversation module
+(`module.json` `"format": "conversation"`) presents a realistic Messenger/
+WhatsApp-style chat between two native speakers instead of teaching a batch of
+words. Its purpose is to reinforce vocabulary the learner already knows by
+exposing it in natural context - it introduces little or no new vocabulary.
+
+Experience (`src/components/language/ConversationExperience.tsx`, route
+`/learn/spanish/conversation/:module`):
+
+- **Intro** - a short setup ("Maria and Carlos are making plans...") then Start.
+- **Chat** - messages revealed one at a time (left/right bubbles, previous
+  messages stay visible), advanced with Continue. Learner-controlled help: tap a
+  highlighted word to reveal its English meaning above it, or "Reveal sentence"
+  for the whole translation. No exercises interrupt the reading.
+- **Comprehension** (`ConversationComprehension.tsx`) - 3-5 questions that test
+  understanding of the conversation, not translation: `multiple-choice`,
+  `true-false`, `who-said-it`, and `ordering`. Finishing marks the module
+  complete.
+
+Platform plumbing:
+
+- New content shapes in [`src/types/language.ts`](../src/types/language.ts):
+  `ModuleFormat`, `Conversation`, `ConversationSpeaker`, `ConversationMessage`,
+  `ConversationWordGloss`, and the `ComprehensionQuestion` union; `Module.format`
+  and `ModuleBundle.conversation` added.
+- Registry ([`src/lib/language/content.ts`](../src/lib/language/content.ts))
+  auto-discovers `conversation.json` and exposes `isConversation()`; ChapterScreen
+  routes conversation modules to the chat experience and tags them "Chat".
+- Authoring support: `spanish-content` skill updated with a Conversation section,
+  `assets/module.conversation.json` + `assets/conversation.template.json`
+  templates, and validator coverage for the new format. A hidden placeholder
+  scaffold ships at `chapters/meeting-people/making-plans-chat/` awaiting content.
+
 ## [6.18.0] - 2026-07-01
 
 ### Content/Architecture - Collapsed the Spanish hierarchy to Language > Chapter > Module

@@ -1,0 +1,9 @@
+{
+  "intro": "",
+  "speakers": [
+    { "id": "a", "name": "", "side": "left", "avatar": "" },
+    { "id": "b", "name": "", "side": "right", "avatar": "" }
+  ],
+  "messages": [],
+  "questions": []
+}

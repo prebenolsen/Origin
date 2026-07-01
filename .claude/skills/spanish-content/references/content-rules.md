@@ -13,9 +13,12 @@ Authoritative shapes live in `src/types/language.ts`.
   "summary": "One line shown on the chapter.",
   "icon": "👋",                  // emoji
   "kind": "standard",            // standard | personalized | placeholder
+  "format": "lesson",            // optional: lesson (default) | conversation
   "estMinutes": 6
 }
 ```
+`format` is optional and defaults to `lesson`. Set it to `conversation` for a
+Conversation module (chat + comprehension) - see the section below.
 
 ### vocabulary.json  (VocabItem[])
 ```jsonc
@@ -55,6 +58,37 @@ so they will never surface a future word - but still write them honestly per bat
 ```
 Only the learner's picked options are taught, merged with the base `vocabulary.json`. The
 `template` enables Stage-3 (context) fill-in-the-blank questions.
+
+### conversation.json  (Conversation modules - `format: "conversation"`)
+```jsonc
+{
+  "intro": "Maria and Carlos are making plans to meet after work.",
+  "speakers": [
+    { "id": "maria",  "name": "Maria",  "side": "left",  "avatar": "👩" },
+    { "id": "carlos", "name": "Carlos", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    { "id": "m1", "speaker": "maria", "es": "Estoy en un cafe.", "en": "I'm at a cafe.",
+      "words": [ { "es": "cafe", "en": "cafe" } ] }   // tappable word glosses
+  ],
+  "questions": [
+    { "type": "multiple-choice", "prompt": "Where is Maria?",
+      "options": ["At home", "At a cafe", "At work"], "answer": 1 },
+    { "type": "true-false", "prompt": "Carlos is free right now.", "answer": false },
+    { "type": "who-said-it", "quote": "Estoy ocupado ahora.",
+      "options": ["Maria", "Carlos"], "answer": 1 },
+    { "type": "ordering", "prompt": "Order the events.",
+      "items": ["Maria messages", "Carlos replies", "They agree on tomorrow"] }  // array = correct order
+  ]
+}
+```
+- A Conversation module has **no `vocabulary.json`**; it reinforces already-known words.
+- Every message needs `es` **and** `en`; list key words in `words` so they're tappable
+  (English shown above the word). Word matching is accent/case/punctuation-insensitive.
+- `messages[].speaker` must be a declared speaker `id`. Keep messages short (one sentence).
+- **3-5** `questions`; test comprehension of the exchange, never a word's meaning.
+- Placeholder: `kind: "placeholder"` + a skeleton `conversation.json` (blank
+  intro/messages/questions); hidden until filled and `kind` flipped to `standard`.
 
 ## Hard rules
 

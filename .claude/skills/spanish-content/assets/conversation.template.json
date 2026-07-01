@@ -1,0 +1,58 @@
+{
+  "intro": "Maria and Carlos are making plans to meet after work.",
+  "speakers": [
+    { "id": "maria", "name": "Maria", "side": "left", "avatar": "👩" },
+    { "id": "carlos", "name": "Carlos", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "maria",
+      "es": "Hola Carlos! Estoy en un cafe.",
+      "en": "Hi Carlos! I'm at a cafe.",
+      "words": [
+        { "es": "hola", "en": "hi" },
+        { "es": "estoy", "en": "I am" },
+        { "es": "cafe", "en": "cafe" }
+      ]
+    },
+    {
+      "id": "m2",
+      "speaker": "carlos",
+      "es": "Que bien! Estoy ocupado ahora.",
+      "en": "Nice! I'm busy right now.",
+      "words": [
+        { "es": "ocupado", "en": "busy" },
+        { "es": "ahora", "en": "now" }
+      ]
+    },
+    {
+      "id": "m3",
+      "speaker": "maria",
+      "es": "Vale. Nos vemos manana?",
+      "en": "Okay. See you tomorrow?",
+      "words": [
+        { "es": "manana", "en": "tomorrow" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "Where is Maria?",
+      "options": ["At home", "At a cafe", "At work"],
+      "answer": 1
+    },
+    {
+      "type": "true-false",
+      "prompt": "Carlos is free right now.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Estoy ocupado ahora.",
+      "options": ["Maria", "Carlos"],
+      "answer": 1
+    }
+  ]
+}
