@@ -84,7 +84,8 @@ A **Conversation module** is a second module *format* (set `module.json` `"forma
 Messenger/WhatsApp-style chat between two native speakers, one message at a time, then a
 short comprehension check. **Its job is to reinforce words the learner already knows in
 natural context - it teaches little or no new vocabulary.** There is no SRS teaching flow
-and no `vocabulary.json`; the content is one `conversation.json`. Tag it in `module.json`
+and no `vocabulary.json`; the content is one `conversation_<slug>.json` (e.g.
+`conversation_sharing-a-table.json`). Tag it in `module.json`
 with **both** `"format": "conversation"` and `"kind": "conversation"`.
 
 > **Canonical example (study this first):**
@@ -123,14 +124,15 @@ Add a conversation module (checklist):
 2. Copy `assets/module.conversation.json` -> `module.json`; set `slug` (= folder), `title`,
    `summary`, `icon`, `estMinutes`. Keep both `"kind": "conversation"` and
    `"format": "conversation"`.
-3. Copy `assets/conversation.template.json` -> `conversation.json`; write `intro`, the two
-   `speakers`, the `messages` (with `words` glosses), and 3-5 `questions`.
+3. Copy `assets/conversation.template.json` -> `conversation_<slug>.json` (the file must be
+   named `conversation_` + the module folder slug, e.g. `conversation_catching-a-taxi.json`);
+   write `intro`, the two `speakers`, the `messages` (with `words` glosses), and 3-5 `questions`.
 4. Add the `<slug>` to the chapter's `modules` array in `language.json`.
 5. Validate, then do the repo "required on every change" steps. Conversation modules
    introduce no `vocabulary.json`, so nothing is added to `words-taught.md`.
 
 **Placeholder path:** ship `module.json` with `"kind": "placeholder"` + `"format":
-"conversation"` and a skeleton `conversation.json` (empty `intro`/`messages`/`questions`,
+"conversation"` and a skeleton `conversation_<slug>.json` (empty `intro`/`messages`/`questions`,
 speakers with blank names). It's hidden from learners until you fill it and flip `kind` to
 `conversation`. A live scaffold already exists at
 `chapters/meeting-people/making-plans-chat/`.

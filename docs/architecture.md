@@ -38,7 +38,7 @@ src/content/languages/<lang>/
     vocabulary.json                  # VocabItem[]  (the word list — what reviews track)
     personalize.json                 # optional: "what do you buy/wear?" picker + sentence frame
     sentences.json                   # optional: full sentences the learner assembles (build-sentence)
-    conversation.json                # optional: chat + comprehension (format: "conversation" modules)
+    conversation_<slug>.json         # optional: chat + comprehension (format: "conversation" modules)
 ```
 
 - **Registry:** `src/lib/language/content.ts` auto-discovers the above with
@@ -63,7 +63,8 @@ src/content/languages/<lang>/
   Absent/`"lesson"` (the default, every existing module) runs the teach→practice flow.
   `"conversation"` runs a **Conversation module** instead: a realistic chat that reinforces
   already-known words rather than teaching new ones (no `vocabulary.json`; one
-  `conversation.json`). The registry attaches `conversation` to the bundle and exposes
+  `conversation_<slug>.json`, discovered by the loader's `conversation_*.json` glob). The
+  registry attaches `conversation` to the bundle and exposes
   `isConversation()`; `ChapterScreen` routes those modules to `/learn/spanish/conversation/:module`.
   The learner reads messages one at a time (left/right bubbles), with tap-a-word glosses and
   an optional per-message "Reveal sentence", then answers 3-5 comprehension questions

@@ -46,7 +46,8 @@ const sentenceFiles = import.meta.glob(
   { eager: true, import: 'default' },
 ) as GlobMap;
 const conversationFiles = import.meta.glob(
-  '../../content/languages/*/chapters/*/*/conversation.json',
+  // Conversation content files are named `conversation_<module-slug>.json`.
+  '../../content/languages/*/chapters/*/*/conversation_*.json',
   { eager: true, import: 'default' },
 ) as GlobMap;
 

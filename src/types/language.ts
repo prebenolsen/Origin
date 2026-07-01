@@ -216,7 +216,7 @@ export interface Personalize {
   template?: { es: string; en: string };
 }
 
-/* ----------------------------- conversation.json ------------------------ */
+/* ------------------------- conversation_<slug>.json --------------------- */
 
 /**
  * A Conversation module (`module.json.format === "conversation"`). The learner

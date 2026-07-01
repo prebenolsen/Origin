@@ -1,0 +1,164 @@
+{
+  "intro": "Ana and Luis meet at a party and get to know each other - where they're from, what they do, and their families.",
+  "speakers": [
+    { "id": "ana", "name": "Ana", "side": "left", "avatar": "👩" },
+    { "id": "luis", "name": "Luis", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "ana",
+      "es": "Hola! Buenas tardes.",
+      "en": "Hi! Good afternoon."
+    },
+    {
+      "id": "m2",
+      "speaker": "luis",
+      "es": "Hola! Como te llamas?",
+      "en": "Hi! What's your name?"
+    },
+    {
+      "id": "m3",
+      "speaker": "ana",
+      "es": "Me llamo Ana. Y tu?",
+      "en": "My name is Ana. And you?"
+    },
+    {
+      "id": "m4",
+      "speaker": "luis",
+      "es": "Me llamo Luis. Encantado.",
+      "en": "My name is Luis. Pleased to meet you."
+    },
+    {
+      "id": "m5",
+      "speaker": "ana",
+      "es": "Igualmente! Como estas?",
+      "en": "Likewise! How are you?"
+    },
+    {
+      "id": "m6",
+      "speaker": "luis",
+      "es": "Estoy bien, gracias. Y tu?",
+      "en": "I'm fine, thanks. And you?"
+    },
+    {
+      "id": "m7",
+      "speaker": "ana",
+      "es": "Bien, gracias. De donde eres?",
+      "en": "Fine, thanks. Where are you from?"
+    },
+    {
+      "id": "m8",
+      "speaker": "luis",
+      "es": "Soy de Mexico. Vivo en Madrid.",
+      "en": "I'm from Mexico. I live in Madrid."
+    },
+    {
+      "id": "m9",
+      "speaker": "ana",
+      "es": "Soy española. Donde trabajas?",
+      "en": "I'm Spanish. Where do you work?"
+    },
+    {
+      "id": "m10",
+      "speaker": "luis",
+      "es": "Trabajo en una empresa. Soy programador.",
+      "en": "I work at a company. I'm a programmer.",
+      "words": [
+        { "es": "programador", "en": "programmer" }
+      ]
+    },
+    {
+      "id": "m11",
+      "speaker": "ana",
+      "es": "Soy profesora. Tienes familia aqui?",
+      "en": "I'm a teacher. Do you have family here?",
+      "words": [
+        { "es": "profesora", "en": "teacher" }
+      ]
+    },
+    {
+      "id": "m12",
+      "speaker": "luis",
+      "es": "Si. Tengo un hermano.",
+      "en": "Yes. I have a brother.",
+      "words": [
+        { "es": "hermano", "en": "brother" }
+      ]
+    },
+    {
+      "id": "m13",
+      "speaker": "ana",
+      "es": "Tengo dos hermanas.",
+      "en": "I have two sisters.",
+      "words": [
+        { "es": "hermanas", "en": "sisters" }
+      ]
+    },
+    {
+      "id": "m14",
+      "speaker": "luis",
+      "es": "Tienes hijos?",
+      "en": "Do you have children?",
+      "words": [
+        { "es": "hijos", "en": "children" }
+      ]
+    },
+    {
+      "id": "m15",
+      "speaker": "ana",
+      "es": "No, no tengo hijos.",
+      "en": "No, I don't have children.",
+      "words": [
+        { "es": "hijos", "en": "children" }
+      ]
+    },
+    {
+      "id": "m16",
+      "speaker": "luis",
+      "es": "Encantado, Ana. Nos vemos!",
+      "en": "Nice meeting you, Ana. See you around!"
+    },
+    {
+      "id": "m17",
+      "speaker": "ana",
+      "es": "Igualmente! Hasta pronto.",
+      "en": "Likewise! See you soon."
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "Where is Luis from?",
+      "options": ["Spain", "Mexico", "Argentina"],
+      "answer": 1
+    },
+    {
+      "type": "true-false",
+      "prompt": "Ana has children.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Tengo dos hermanas.",
+      "options": ["Ana", "Luis"],
+      "answer": 0
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "What does Luis do?",
+      "options": ["He's a teacher", "He's a programmer", "He's a doctor"],
+      "answer": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put the conversation in order.",
+      "items": [
+        "They say their names",
+        "They talk about where they're from",
+        "They talk about their jobs",
+        "They talk about family"
+      ]
+    }
+  ]
+}

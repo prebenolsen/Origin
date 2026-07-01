@@ -209,7 +209,8 @@ function validateModule(moduleDir) {
     err(mPath, `format "${meta.format}" must be one of ${VALID_FORMATS.join(', ')}`);
 
   const isConversation = meta.format === 'conversation';
-  const convPath = join(moduleDir, 'conversation.json');
+  // Conversation content files are named `conversation_<module-slug>.json`.
+  const convPath = join(moduleDir, `conversation_${slug}.json`);
 
   // Kind/format coherence: a conversation-format module is tagged kind
   // "conversation" (or "placeholder" while unfinished), and vice versa.
@@ -220,12 +221,12 @@ function validateModule(moduleDir) {
 
   if (isConversation) {
     // A conversation module reinforces known words; it teaches no new vocab, so
-    // it needs conversation.json instead of vocabulary.json.
+    // it needs conversation_<slug>.json instead of vocabulary.json.
     if (existsSync(convPath)) validateConversation(convPath, meta.kind);
-    else err(moduleDir, 'conversation module without conversation.json');
+    else err(moduleDir, `conversation module without conversation_${slug}.json`);
   } else {
     if (existsSync(convPath))
-      err(convPath, 'conversation.json present but module.json format is not "conversation"');
+      err(convPath, `conversation_${slug}.json present but module.json format is not "conversation"`);
     if (existsSync(join(moduleDir, 'vocabulary.json'))) validateVocab(join(moduleDir, 'vocabulary.json'), meta.kind);
     else if (meta.kind !== 'placeholder') warn(moduleDir, 'no vocabulary.json');
   }

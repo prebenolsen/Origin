@@ -60,7 +60,7 @@ so they will never surface a future word - but still write them honestly per bat
 Only the learner's picked options are taught, merged with the base `vocabulary.json`. The
 `template` enables Stage-3 (context) fill-in-the-blank questions.
 
-### conversation.json  (Conversation modules - `format: "conversation"`)
+### conversation_<slug>.json  (Conversation modules - `format: "conversation"`)
 ```jsonc
 {
   "intro": "Maria and Carlos are making plans to meet after work.",
@@ -92,7 +92,9 @@ Only the learner's picked options are taught, merged with the base `vocabulary.j
   not connectors inside a fixed taught phrase. Matching is accent/case/punctuation-insensitive.
 - `messages[].speaker` must be a declared speaker `id`. Keep messages short (one sentence).
 - **3-5** `questions`; test comprehension of the exchange, never a word's meaning.
-- Placeholder: `kind: "placeholder"` + a skeleton `conversation.json` (blank
+- The content file is named `conversation_<module-slug>.json` (e.g.
+  `conversation_sharing-a-table.json`); the loader glob discovers `conversation_*.json`.
+- Placeholder: `kind: "placeholder"` + a skeleton `conversation_<slug>.json` (blank
   intro/messages/questions); hidden until filled and `kind` flipped to `conversation`.
 
 ## Hard rules

@@ -4,6 +4,41 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [7.3.0] - 2026-07-01
+
+### Content - New Conversation module: "Getting to Know You" (Meeting People)
+
+Added a Conversation module to the Meeting People chapter, slotted directly
+after **Family** (`chapters/meeting-people/getting-to-know-you/`). Ana and Luis
+meet at a party and get acquainted: they greet, swap names, say how they are,
+where they're from and live, what they do, and talk about their families -
+reinforcing the first half of the chapter (Introductions, Where You're From,
+What You Do, Family) plus greetings from chapter 1. 17 short messages.
+
+Because the jobs and family members in Meeting People are `personalize` options
+(taught only if the learner picked them), the chat is built from the reliably
+taught base vocabulary and glosses the speakers' specific personalized words
+(`programador`, `profesora`, `hermano`, `hermanas`, `hijos`) so it reads
+naturally for every learner regardless of their own picks. 5 comprehension
+questions span all four types (`multiple-choice` x2, `true-false`, `who-said-it`,
+`ordering`). Content file follows the `conversation_<slug>.json` convention
+(`conversation_getting-to-know-you.json`); introduces no new tracked vocabulary.
+
+## [7.2.1] - 2026-07-01
+
+### Fix - Conversation content files renamed to `conversation_<slug>.json`
+
+Established a naming convention for Conversation module content files: each is now
+`conversation_<module-slug>.json` (e.g. `conversation_sharing-a-table.json`,
+`conversation_catching-a-taxi.json`, `conversation_making-plans-chat.json`) instead
+of a generic `conversation.json`, so the files are self-describing. The language
+content loader glob (`src/lib/language/content.ts`) now discovers
+`conversation_*.json`, and the `spanish-content` validator looks for
+`conversation_<slug>.json`. Loader identity is still keyed by module folder, so the
+rename is transparent to the app. Updated the authoring skill (SKILL.md, content
+rules, templates instruction) and `docs/architecture.md` to codify the convention
+for future conversations.
+
 ## [7.2.0] - 2026-07-01
 
 ### Content - New Conversation module: "Catching a Taxi" (Visiting Spain)

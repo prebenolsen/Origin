@@ -171,6 +171,7 @@
 | Languages | Spanish · Meeting People | Where You're From               | Social / conversation       | DONE |
 | Languages | Spanish · Meeting People | Work & Study (personalized)     | Social / conversation       | DONE |
 | Languages | Spanish · Meeting People | Family (personalized)           | Social / conversation       | DONE |
+| Languages | Spanish · Meeting People | Getting to Know You (conversation) | Social / conversation    | DONE |
 | Languages | Spanish · Meeting People | Hobbies & Free Time (personalized) | Social / conversation    | DONE |
 | Languages | Spanish · Meeting People | Likes & Dislikes (gustar)       | Social / conversation       | DONE |
 | Languages | Spanish · Meeting People | Casual Questions                | Social / conversation       | DONE |
