@@ -19,7 +19,7 @@ changes. This skill is for writing that content correctly and keeping it valid.
 src/content/languages/<lang>/
   language.json                     # Language meta + chapters (each chapter lists its modules)
   chapters/<chapter>/<slug>/        # chapter folder = chapter slug, e.g. visiting-spain/cafe/
-    module.json                     # meta + kind: standard | personalized | placeholder
+    module.json                     # meta + kind: standard | conversation | personalized | placeholder
     lesson.json                     # context / explanation / examples / phrases   (optional)
     vocabulary.json                 # VocabItem[] - the word list that reviews track
     personalize.json                # "what do you buy/wear?" picker + sentence frame (optional)
@@ -84,7 +84,16 @@ A **Conversation module** is a second module *format* (set `module.json` `"forma
 Messenger/WhatsApp-style chat between two native speakers, one message at a time, then a
 short comprehension check. **Its job is to reinforce words the learner already knows in
 natural context - it teaches little or no new vocabulary.** There is no SRS teaching flow
-and no `vocabulary.json`; the content is one `conversation.json`.
+and no `vocabulary.json`; the content is one `conversation.json`. Tag it in `module.json`
+with **both** `"format": "conversation"` and `"kind": "conversation"`.
+
+> **Canonical example (study this first):**
+> [`chapters/visiting-spain/sharing-a-table/`](../../../src/content/languages/spanish/chapters/visiting-spain/sharing-a-table/)
+> is the first perfected Conversation module - Lucia and Sam share a cafe table.
+> It reuses almost the whole chapter's vocabulary, runs 18 messages (the sweet
+> spot is **12-24**), glosses only the handful of new-but-useful connector words
+> (`y`, `tu`, `de`, `perfecto`, `vale`), and ends with 5 comprehension questions
+> covering all four question types. Match its shape and density.
 
 Authoring rules (in addition to the shared encoding rules):
 
@@ -92,12 +101,17 @@ Authoring rules (in addition to the shared encoding rules):
    in the chapter already taught. A little new vocab is fine *if* it's obvious from context
    or covered by a word gloss. Keep grammar at the chapter's level.
 2. **Sound authentic, keep it short.** Prefer natural back-and-forth (`Hola! / Que tal? /
-   Todo bien`) over textbook lines. Most messages are one sentence; avoid paragraphs.
+   Todo bien`) over textbook lines. Most messages are one sentence; avoid paragraphs. Aim
+   for **12-24 messages** - the sweet spot (`sharing-a-table` uses 18). Fewer feels thin;
+   more overstays its welcome.
 3. **Two speakers**, each with a stable `id`, a `name`, and a `side` (`left`/`right`). Every
    message's `speaker` must match a declared speaker `id`.
-4. **Glosses, not translations, are the default help.** For each message, list the key words
-   in `words: [{ es, en }]` - those become tappable in the bubble and show their meaning
-   above the word. Matching is accent/case/punctuation-insensitive (`"cafe"` matches
+4. **Highlight only the new-but-useful words.** For each message, list in `words: [{ es, en }]`
+   exactly the words the learner hasn't formally been taught yet but needs here (in
+   `sharing-a-table`: `y`, `tu`, `de`, `perfecto`, `vale`). Those become tappable and show
+   their meaning above the word. **Do not** gloss words already taught earlier in the chapter,
+   and don't gloss a connector that only appears inside a fixed taught phrase (e.g. `con` in
+   `cafe con leche`). Matching is accent/case/punctuation-insensitive (`"cafe"` matches
    `Café`). Every message also carries a full `en` translation revealed by "Reveal sentence".
 5. **Comprehension, not vocabulary.** End with **3-5** questions that test whether the learner
    followed the *conversation*. Types: `multiple-choice`, `true-false`, `who-said-it`,
@@ -107,7 +121,8 @@ Add a conversation module (checklist):
 
 1. `mkdir src/content/languages/<lang>/chapters/<chapter>/<slug>/`.
 2. Copy `assets/module.conversation.json` -> `module.json`; set `slug` (= folder), `title`,
-   `summary`, `icon`, `estMinutes`. Keep `"format": "conversation"`.
+   `summary`, `icon`, `estMinutes`. Keep both `"kind": "conversation"` and
+   `"format": "conversation"`.
 3. Copy `assets/conversation.template.json` -> `conversation.json`; write `intro`, the two
    `speakers`, the `messages` (with `words` glosses), and 3-5 `questions`.
 4. Add the `<slug>` to the chapter's `modules` array in `language.json`.
@@ -117,7 +132,7 @@ Add a conversation module (checklist):
 **Placeholder path:** ship `module.json` with `"kind": "placeholder"` + `"format":
 "conversation"` and a skeleton `conversation.json` (empty `intro`/`messages`/`questions`,
 speakers with blank names). It's hidden from learners until you fill it and flip `kind` to
-`standard`. A live scaffold already exists at
+`conversation`. A live scaffold already exists at
 `chapters/meeting-people/making-plans-chat/`.
 
 ## Validate

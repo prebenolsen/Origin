@@ -12,13 +12,14 @@ Authoritative shapes live in `src/types/language.ts`.
   "title": "Greetings",
   "summary": "One line shown on the chapter.",
   "icon": "👋",                  // emoji
-  "kind": "standard",            // standard | personalized | placeholder
+  "kind": "standard",            // standard | conversation | personalized | placeholder
   "format": "lesson",            // optional: lesson (default) | conversation
   "estMinutes": 6
 }
 ```
 `format` is optional and defaults to `lesson`. Set it to `conversation` for a
-Conversation module (chat + comprehension) - see the section below.
+Conversation module (chat + comprehension) - see the section below. A conversation
+module pairs `"format": "conversation"` with `"kind": "conversation"`.
 
 ### vocabulary.json  (VocabItem[])
 ```jsonc
@@ -82,13 +83,17 @@ Only the learner's picked options are taught, merged with the base `vocabulary.j
   ]
 }
 ```
+- Tagged `"format": "conversation"` **and** `"kind": "conversation"` (the validator
+  enforces this pairing). Canonical example: `chapters/visiting-spain/sharing-a-table/`.
 - A Conversation module has **no `vocabulary.json`**; it reinforces already-known words.
-- Every message needs `es` **and** `en`; list key words in `words` so they're tappable
-  (English shown above the word). Word matching is accent/case/punctuation-insensitive.
+- **12-24 messages** is the sweet spot (`sharing-a-table` uses 18).
+- Every message needs `es` **and** `en`. In `words`, gloss **only new-but-useful words**
+  (ones not yet taught in the chapter) so they're tappable - not words already taught, and
+  not connectors inside a fixed taught phrase. Matching is accent/case/punctuation-insensitive.
 - `messages[].speaker` must be a declared speaker `id`. Keep messages short (one sentence).
 - **3-5** `questions`; test comprehension of the exchange, never a word's meaning.
 - Placeholder: `kind: "placeholder"` + a skeleton `conversation.json` (blank
-  intro/messages/questions); hidden until filled and `kind` flipped to `standard`.
+  intro/messages/questions); hidden until filled and `kind` flipped to `conversation`.
 
 ## Hard rules
 

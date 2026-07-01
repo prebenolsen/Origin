@@ -5,9 +5,10 @@
  * Usage:  node .claude/skills/spanish-content/scripts/validate-content.mjs [langSlug]
  *
  * Enforces the rules in the spanish-content skill: valid JSON, no BOM, no
- * typographic dashes, required fields, valid module `kind`, non-placeholder
- * modules have every `es` filled, no duplicate words within a module, chapters
- * reference real modules, and personalize structure. Exits non-zero on errors.
+ * typographic dashes, required fields, valid module `kind` (incl. the
+ * conversation kind/format coherence), non-placeholder modules have every `es`
+ * filled, no duplicate words within a module, chapters reference real modules,
+ * and personalize structure. Exits non-zero on errors.
  */
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, dirname, resolve, basename } from 'node:path';
@@ -24,7 +25,7 @@ const rel = (p) => p.replace(repoRoot + '\\', '').replace(repoRoot + '/', '').re
 const err = (p, m) => errors.push(`${rel(p)}: ${m}`);
 const warn = (p, m) => warnings.push(`${rel(p)}: ${m}`);
 
-const VALID_KINDS = ['standard', 'personalized', 'placeholder'];
+const VALID_KINDS = ['standard', 'conversation', 'personalized', 'placeholder'];
 const VALID_FORMATS = ['lesson', 'conversation'];
 const VALID_Q_TYPES = ['multiple-choice', 'true-false', 'who-said-it', 'ordering'];
 const DASHES = /[‒–—―−]/; // figure/en/em/horizontal-bar/minus
@@ -209,6 +210,13 @@ function validateModule(moduleDir) {
 
   const isConversation = meta.format === 'conversation';
   const convPath = join(moduleDir, 'conversation.json');
+
+  // Kind/format coherence: a conversation-format module is tagged kind
+  // "conversation" (or "placeholder" while unfinished), and vice versa.
+  if (isConversation && meta.kind !== 'conversation' && meta.kind !== 'placeholder')
+    warn(mPath, 'conversation-format module should use kind "conversation" (or "placeholder" while unfinished)');
+  if (meta.kind === 'conversation' && !isConversation)
+    err(mPath, 'kind "conversation" requires format "conversation"');
 
   if (isConversation) {
     // A conversation module reinforces known words; it teaches no new vocab, so

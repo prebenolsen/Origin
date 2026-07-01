@@ -21,6 +21,12 @@ four question types (`multiple-choice` x2, `true-false`, `who-said-it`,
 `ordering`). Tagged with `kind: "conversation"` (a new `ModuleKind` value)
 alongside `format: "conversation"`.
 
+Also updated the `spanish-content` authoring skill to codify this as the
+canonical Conversation module: its validator now accepts (and requires) the
+`conversation` kind/format pairing, the templates and rules point at
+`sharing-a-table` as the reference, and the highlight rule is sharpened to gloss
+only new-but-useful words (12-24 message sweet spot).
+
 ## [7.0.0] - 2026-07-01
 
 ### Feature - New module type: Conversation (chat + comprehension)
