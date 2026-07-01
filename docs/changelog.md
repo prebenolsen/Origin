@@ -4,6 +4,60 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [8.0.2] - 2026-07-01
+
+### Build - GitHub Pages deploy workflow + SPA config
+
+Made the repo deploy-ready for GitHub Pages (previously docs-only):
+
+- Added `.github/workflows/deploy.yml` — builds with `GITHUB_PAGES=true`, writes a
+  `404.html` SPA fallback, and publishes via `actions/deploy-pages` on push to `main`.
+- `vite.config.ts` now serves from the `/Origin/` sub-path during the Pages build and `/`
+  for local dev/preview (`base: process.env.GITHUB_PAGES ? '/Origin/' : '/'`).
+- `main.tsx` passes `basename={import.meta.env.BASE_URL}` so client-side routes work under
+  the sub-path; `src/lib/auth.tsx` builds the auth `redirectTo` from
+  `origin + import.meta.env.BASE_URL` so magic-link emails return to the app under a
+  sub-path. `docs/deployment.md` updated to reflect the wired-up setup.
+
+## [8.0.1] - 2026-07-01
+
+### Docs - GitHub Pages deployment guide
+
+Added [`docs/deployment.md`](deployment.md): a step-by-step guide for deploying Origin to
+GitHub Pages, covering the Vite `base` sub-path, client-side routing on refresh (router
+`basename` + `404.html` fallback), a ready-to-use GitHub Actions workflow, and the
+build-time Supabase env + auth redirect-URL settings needed to enable optional login on the
+deployed site. Linked from `docs/readme.md` and `supabase/README.md`.
+
+## [8.0.0] - 2026-07-01
+
+### Feature - Optional Supabase backend (accounts + cross-device sync, offline-first)
+
+Origin can now optionally sync learner state to a Supabase backend. **Login is
+completely optional**: the whole app still works as a guest with nothing locked,
+and in guest mode nothing leaves the device. When a learner signs in (email +
+password, or a passwordless magic link), their progress is mirrored to their
+account and follows them across devices, and every Spanish answer is logged so
+skill/mastery can be measured over time.
+
+- **Offline-first.** localStorage stays the synchronous source of truth, so the
+  app never blocks on the network. Changes made offline are queued and flushed on
+  reconnect, and a **"Save now"** button + status pill on the Account screen let a
+  learner force a sync once they have internet again.
+- **Guest -> account merge.** On first sign-in, progress already on the device is
+  merged into the account (union of stages/words, best quiz scores kept) - nothing
+  is lost.
+- **Backend.** New `supabase/migrations/*.sql` create six `origin_`-prefixed
+  tables with owner-only Row Level Security: `origin_profile`,
+  `origin_module_progress`, `origin_geo_progress`,
+  `origin_language_spanish_profile`, `origin_language_spanish_vocab_state`, and the
+  append-only `origin_language_spanish_review_event`. See `supabase/README.md`.
+- **Config.** Set `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` in `.env` (see
+  `.env.example`) to enable accounts; absent = pure local mode.
+- New account UI (`/account`), an account button in the Home hero, and a sync
+  layer (`src/lib/sync/**`) that wraps the existing local stores without any
+  changes to the learning screens. Adds the `@supabase/supabase-js` dependency.
+
 ## [7.4.0] - 2026-07-01
 
 ### Content - New Conversation module: "Buying a Gift" (Visiting Spain II)

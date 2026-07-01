@@ -78,8 +78,10 @@ src/content/languages/<lang>/
   `ConversationExperience` (chat + comprehension for `conversation`-format modules),
   `VocabTest` (shared adaptive runner, including the word-bank builder), `ReviewDashboard` +
   `ReviewSession`. All routes under `/learn/spanish` are lazy-loaded.
-- **Backend:** state is localStorage today; `docs/language-supabase-schema.md` defines the
-  matching Supabase tables (prefix `origin_language_spanish`) for a later sync.
+- **Backend:** localStorage is the source of truth; when a learner signs in, the optional
+  Supabase sync layer mirrors the profile/vocab state up to the
+  `origin_language_spanish_*` tables (see the **Backend / Auth / Sync** section below and
+  `docs/language-supabase-schema.md`).
 
 ## Tech stack
 
@@ -87,7 +89,9 @@ src/content/languages/<lang>/
 - **Vite** (dev server + build)
 - **Tailwind CSS v4** (CSS-first config via `@theme` in `src/index.css`)
 - **React Router v7** (routing between home / module stages)
-- Data: **static JSON** under `src/content/` (no backend)
+- Data: **static JSON** under `src/content/` (content is never in a database)
+- **Supabase** (optional): auth + per-user state sync (`@supabase/supabase-js`); the app
+  runs fully without it (guest / local-only). See **Backend / Auth / Sync** below.
 - **Maps:** `d3-geo` + `topojson-client` + `world-atlas` (Natural Earth land,
   now using 50m geometry for higher zoom fidelity, bundled for offline use)
   render real coastlines for the context map. See the
@@ -151,6 +155,51 @@ projection and uses `d3.geoContains` (countries) or nearest-marker (seas) to fin
 the clicked region. `MapViewport` also gained a `renderOverlay(fullscreen)` prop so
 the answer bar can float over the map while fullscreen. Both props are optional and
 backward-compatible — the context maps are unchanged.
+
+## Backend / Auth / Sync (optional Supabase)
+
+Origin is **offline-first and guest-first**. All learner state lives in localStorage and
+the app is fully usable with no backend and no account — nothing is ever locked. Supabase
+is an **optional** layer that turns on only when the two env vars are present
+(`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`; see `.env.example`). When signed in, state
+follows the learner across devices and every Spanish answer is logged for skill-over-time.
+
+```
+supabase/
+  migrations/000{1..4}_*.sql   # origin_-prefixed tables + owner-only RLS (run in order)
+  README.md                    # setup + how to apply
+src/lib/
+  supabase/client.ts           # createClient from env; `isSupabaseConfigured`; null = guest
+  auth.tsx                     # AuthProvider / useAuth (email+password, magic link, signOut)
+  sync/
+    mappers.ts                 # local shape <-> DB row (ms <-> timestamptz); localStorage KEYS + TABLES
+    merge.ts                   # pure union-biased merges used on sign-in (nothing lost)
+    syncManager.ts             # the engine + useSyncStatus(); setSyncUser(), syncNow()
+src/components/auth/
+  AccountButton.tsx            # Home-hero control (Sign in / avatar + sync dot)
+  AccountScreen.tsx            # /account: sign in/up + magic link; account + Save now + sign out
+  SyncStatus.tsx               # status pill + manual "Save now"
+```
+
+**Design principle — localStorage stays the source of truth.** The existing stores
+(`lib/progress.ts`, `lib/geoProgress.ts`, `lib/language/srs.ts`, `lib/language/profile.ts`)
+are unchanged except that each `write()` dispatches a change event (`origin:progress`,
+`origin:geo`, `origin:lang`). `syncManager` listens to those events and, **only when signed
+in and online**, debounces a push (idempotent upserts) to Supabase. On sign-in it does
+pull -> merge (union with local so guest progress is kept) -> write back -> push. This means
+**no learning-screen code changed** and offline works for free: writes always hit
+localStorage first; the network is best-effort. A manual **Save now** flushes pending
+changes when back online.
+
+**Tables** (all `origin_`-prefixed, RLS owner-only via `auth.uid()`): `origin_profile`,
+`origin_module_progress`, `origin_geo_progress`, `origin_language_spanish_profile`,
+`origin_language_spanish_vocab_state`, and the append-only
+`origin_language_spanish_review_event` (the skills-over-time log). The anon key is safe in
+the client because RLS — not key secrecy — protects the data.
+
+**Adding a new persisted store later:** add an `origin_`-prefixed table + owner-only RLS
+(new numbered migration), add a mapper + merge in `src/lib/sync/`, make the store emit a
+change event, and register that event in `syncManager.ts`.
 
 ## Module completion workflow note
 

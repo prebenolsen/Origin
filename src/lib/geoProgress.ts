@@ -20,6 +20,8 @@ function write(store: Store): void {
   if (typeof localStorage === 'undefined') return;
   try {
     localStorage.setItem(KEY, JSON.stringify(store));
+    // Let the sync layer (when signed in) mirror geo progress to the backend.
+    window.dispatchEvent(new CustomEvent('origin:geo'));
   } catch {
     /* ignore quota / privacy errors */
   }

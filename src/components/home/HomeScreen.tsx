@@ -8,6 +8,7 @@ import {
 import { VERSION } from '../../../version.js';
 import CategoryCard from './CategoryCard';
 import ModuleCard from './ModuleCard';
+import AccountButton from '../auth/AccountButton';
 
 export default function HomeScreen() {
   const groups = getCategoryGroups();
@@ -21,9 +22,12 @@ export default function HomeScreen() {
     <div className="no-scrollbar h-full overflow-y-auto">
       {/* Hero */}
       <header className="bg-aurora px-6 pb-8 pt-12">
-        <div className="flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-accent">
-          <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
-          Origin
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-accent">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
+            Origin
+          </div>
+          <AccountButton />
         </div>
         <h1 className="mt-4 max-w-[14ch] font-serif text-[2.6rem] leading-[1.05]">
           Learn how things <em className="not-italic text-accent">began</em>.

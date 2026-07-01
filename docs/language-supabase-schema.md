@@ -1,9 +1,13 @@
 # Languages (Spanish) — Supabase schema
 
-The Spanish learning domain stores all learner state in **localStorage** today
-(mirroring `src/lib/progress.ts`), so the MVP works with no backend. The shapes were
-designed to map 1:1 onto Supabase tables prefixed `origin_language_spanish` for a later
-sync. This document is the target schema; nothing here is wired up yet.
+> **Status: implemented.** The canonical, runnable DDL now lives in
+> [`supabase/migrations/0004_origin_language_spanish.sql`](../supabase/migrations/0004_origin_language_spanish.sql)
+> (see also `supabase/README.md`). This document is the design reference and is kept in
+> sync with those migrations.
+
+The Spanish learning domain keeps localStorage as its source of truth (offline-first). When
+a learner signs in, the optional sync layer (`src/lib/sync/**`) mirrors this state to the
+`origin_language_spanish_*` tables. The shapes map 1:1 onto the tables below.
 
 > Content (languages, chapters, modules, vocabulary, lessons) stays in versioned JSON under
 > `src/content/languages/**` — it is *not* in the database. The database only holds
@@ -30,6 +34,7 @@ create table origin_language_spanish_profile (
   learner      jsonb,                       -- { name, city, country, countryEs, age } (onboarding)
   selections   jsonb not null default '{}',-- { moduleSlug: VocabOption[] }
   completed    text[] not null default '{}',
+  checkpoints  text[] not null default '{}',-- e.g. 'visiting-spain:4'
   updated_at   timestamptz not null default now()
 );
 
@@ -53,6 +58,8 @@ create table origin_language_spanish_vocab_state (
   last_review    timestamptz,
   last_correct   timestamptz,
   next_review    timestamptz not null default now(),
+  review_history jsonb not null default '[]', -- client working copy (capped ~50)
+  updated_at     timestamptz not null default now(),
   primary key (user_id, id)
 );
 
@@ -91,9 +98,12 @@ create policy own_rows on origin_language_spanish_profile
 -- repeat the same policy for the other two tables.
 ```
 
-## Wiring it up later
+## How it is wired (implemented)
 
-`src/lib/language/srs.ts` and `profile.ts` are the only modules that touch storage. To
-move to Supabase, replace their `read`/`write` helpers with table reads/writes keyed by
-`auth.uid()` (and keep localStorage as an offline cache). No UI changes are required —
-the components only call the exported functions.
+`src/lib/language/srs.ts` and `profile.ts` remain the only modules that touch storage, and
+they are **unchanged** — localStorage stays the source of truth. Instead of rewriting their
+`read`/`write` helpers, an offline-first sync layer (`src/lib/sync/**`) listens to the
+`origin:lang` change event they already dispatch and, when a user is signed in and online,
+mirrors the state to the tables above (pull + union-merge on sign-in, debounced upsert on
+change, manual "Save now"). See the **Backend / Auth / Sync** section in
+[`docs/architecture.md`](architecture.md). No UI/learning-screen changes were required.

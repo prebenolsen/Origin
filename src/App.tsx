@@ -9,6 +9,7 @@ import BookStage from './components/module/BookStage';
 import StoryFeed from './components/module/StoryFeed';
 import QuizStage from './components/module/QuizStage';
 import FlashcardStage from './components/module/FlashcardStage';
+import AccountScreen from './components/auth/AccountScreen';
 import NotFound from './components/NotFound';
 
 // The Geography Challenge pulls in the country topology + d3-geo, so it is
@@ -46,6 +47,7 @@ export default function App() {
     <AppShell>
       <Routes>
         <Route path="/" element={<HomeScreen />} />
+        <Route path="/account" element={<AccountScreen />} />
         <Route path="/c/:cat" element={<CategoryScreen />} />
         <Route path="/c/:cat/:sub" element={<CategoryScreen />} />
         <Route

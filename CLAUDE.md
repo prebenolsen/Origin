@@ -45,6 +45,30 @@ npm run typecheck
 ```
 ---
 
+## Backend (Supabase) — optional, offline-first
+
+Origin is **guest-first and offline-first**. All learner state lives in `localStorage`
+and the app is fully usable with **no account and no backend** — never lock content behind
+login. Supabase is an *optional* sync layer that only activates when the env vars are set
+(`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`; copy `.env.example` -> `.env`). When absent,
+`src/lib/supabase/client.ts` exports `supabase = null` and the app makes no network calls.
+
+- **localStorage stays the source of truth.** The stores (`lib/progress.ts`,
+  `lib/geoProgress.ts`, `lib/language/srs.ts`, `lib/language/profile.ts`) each dispatch a
+  change event on write (`origin:progress`, `origin:geo`, `origin:lang`). The sync engine
+  `src/lib/sync/syncManager.ts` listens and — only when signed in + online — debounces an
+  idempotent upsert to Supabase; on sign-in it pulls, **union-merges** with local (so guest
+  progress is never lost), writes back, and pushes. Auth lives in `src/lib/auth.tsx`
+  (`useAuth`), UI in `src/components/auth/**`, and the SQL in `supabase/migrations/**`.
+- **Table rule:** every table is prefixed `origin_` and has owner-only Row Level Security
+  (`user_id = auth.uid()`). Language tables are per-language (`origin_language_spanish_*`).
+- **When you add a new persisted store:** (1) add an `origin_`-prefixed table + RLS as a new
+  numbered migration in `supabase/migrations/`; (2) add a mapper + merge in `src/lib/sync/`
+  and register it in `syncManager.ts`; (3) make the store `write()` dispatch a change event.
+  This is a **MAJOR/feature-level** change — bump accordingly and update `docs/architecture.md`.
+
+See `supabase/README.md` (setup) and `docs/architecture.md` (design) for details.
+
 The content registry ([`src/lib/content.ts`](src/lib/content.ts)) auto-discovers every
 folder at build time with `import.meta.glob`. **To add a module, just drop a new folder
 with these JSON files — no code changes are needed.** Then bump the **MINOR** version and
