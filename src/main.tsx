@@ -3,7 +3,9 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import { AuthProvider } from './lib/auth';
+import './fonts';
 import './index.css';
+import { registerPWA } from './lib/pwa';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,3 +16,5 @@ createRoot(document.getElementById('root')!).render(
     </BrowserRouter>
   </StrictMode>,
 );
+
+registerPWA();

@@ -96,8 +96,36 @@ src/content/languages/<lang>/
   now using 50m geometry for higher zoom fidelity, bundled for offline use)
   render real coastlines for the context map. See the
   **Maps** section in `CLAUDE.md` for the data schema and authoring rules.
+- **PWA:** `vite-plugin-pwa` (Workbox) makes the app installable and fully offline.
+  See **PWA / offline** below.
+- **Fonts:** Inter + Fraunces are self-hosted via `@fontsource` (`src/fonts.ts`) — no
+  CDN, so typography is part of the offline precache.
 
 No animation library — motion is done with CSS (scroll-snap, 3D flip, fade-in).
+
+## PWA / offline
+
+Origin is a Progressive Web App that is **completely downloaded to the device on the first
+online visit** and then runs with no network — matching the guest/offline-first promise
+(learner state stays in `localStorage`; Supabase remains an optional sync layer).
+
+- **Build:** `vite-plugin-pwa` (`generateSW` mode) in [`vite.config.ts`](../vite.config.ts)
+  emits `sw.js` + `manifest.webmanifest`. Workbox precaches every built asset
+  (`**/*.{js,css,html,ico,png,svg,json,woff,woff2}`) — the app shell, all content JSON
+  (inlined into the JS chunks by `import.meta.glob`, so precaching the JS covers content),
+  and the self-hosted fonts. `maximumFileSizeToCacheInBytes` is raised to 6 MiB so the
+  large bundled content chunk is still precached. `navigateFallback` serves the app shell
+  for SPA deep links offline. `scope`/`start_url` derive from the Vite `base`, so it works
+  under the GitHub Pages `/Origin/` sub-path.
+- **Registration + UX:** [`src/lib/pwa.ts`](../src/lib/pwa.ts) registers the SW
+  (`registerType: 'prompt'`, `injectRegister: null` — we register manually) and shows a
+  small self-contained toast: "Ready to use offline" once precaching completes, and an
+  "Update available → Refresh" prompt when a new version is fetched. Gated to
+  `import.meta.env.PROD`, so no SW runs in dev.
+- **Icons:** `public/icon.svg` is the source; `npm run gen:icons`
+  (`@vite-pwa/assets-generator`, config in `pwa-assets.config.ts`) produces `pwa-*`,
+  `maskable`, `apple-touch`, and `favicon`. The manifest is standalone / portrait, themed
+  `#0c0b10`.
 
 ## Context map (geo vs. schematic)
 

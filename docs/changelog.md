@@ -4,6 +4,32 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.0.0] - 2026-07-01
+
+### Feature - Installable, fully-offline PWA
+
+Origin is now a Progressive Web App that downloads completely to the device on the first
+(online) visit and then runs with no network at all.
+
+- **Service worker + precache** via `vite-plugin-pwa` (Workbox). On first load it precaches
+  the entire app shell, all bundled content JSON (inlined into the JS chunks by
+  `import.meta.glob`), and the fonts — 47 entries / ~3.4 MB. After that, every screen,
+  lesson, map and quiz works offline, and SPA deep links resolve to the app shell
+  (`navigateFallback`). Registration + UX live in [`src/lib/pwa.ts`](../src/lib/pwa.ts):
+  a small toast confirms "Ready to use offline" once precaching finishes, and offers a
+  "Refresh" prompt when a new version has been fetched. Guest/offline-first is unchanged —
+  learner state stays in `localStorage`.
+- **Self-hosted fonts.** Inter and Fraunces now ship with the app via `@fontsource`
+  ([`src/fonts.ts`](../src/fonts.ts)) instead of the Google Fonts CDN, so typography works
+  offline and there are no third-party network calls. Removed the CDN `<link>`s from
+  `index.html`; `--font-serif` now points at `'Fraunces Variable'`.
+- **Web manifest + icons.** Added `manifest` (standalone, portrait, theme `#0c0b10`) and a
+  generated icon set (`public/icon.svg` source → `pwa-*`, `maskable`, `apple-touch`,
+  `favicon`; regenerate with `npm run gen:icons`) so the app installs to the home screen on
+  iOS and Android with proper icons and splash.
+- The PWA scope/`start_url` follow the Vite `base`, so it keeps working under the GitHub
+  Pages `/Origin/` sub-path.
+
 ## [8.0.3] - 2026-07-01
 
 ### Build - Deploy workflow accepts Supabase env from a Variable or a Secret
