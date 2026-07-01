@@ -54,12 +54,3 @@ Profile = motivation/progress/stats
 
 Want me to fix the russia-and-ukraine module (it has real story content but stub timeline/quiz/flashcards), or auto-convert the en-dashes to ASCII across content?
 
-# Spanish component
-## New content
-- Mini stories (two NPCs having a conversation, the user follows along at own pace, can click to reveal words or full text)
-
-## Rename "goals", "scenarios". What even is that lol. Chapters, am I right? 
-
-## ALL tables must be Supabase ready. 
-## Entire application must be accessible in Offline mode too. 
-- On airplane

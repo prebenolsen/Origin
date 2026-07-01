@@ -106,6 +106,20 @@
         "making-plans",
         "everyday-conversations"
       ]
+    },
+    {
+      "slug": "my-story",
+      "title": "My Story",
+      "summary": "Tell your own life in Spanish - who you are, where you live, what you do, and your connection to Spain.",
+      "icon": "📖",
+      "available": true,
+      "modules": [
+        "my-life-norway",
+        "my-work-and-hobbies",
+        "my-story-chat",
+        "my-spain-connection",
+        "my-spain-chat"
+      ]
     }
   ]
 }

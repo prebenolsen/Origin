@@ -1,0 +1,11 @@
+{
+  "context": "You already know the pieces - now use them to tell your own story. The most common thing you do with a new language is introduce yourself: who you are, how old you are, and where you live. Three small patterns carry almost all of it.",
+  "explanation": "Everything starts with three verbs you already met. soy = I am, for who or where you are from: soy Preben, soy de Bergen. tengo = I have, and Spanish uses it for age: tengo treinta y seis años (literally \"I have 36 years\"). vivo en = I live in: vivo en Bergen. Learn to swap the last word and these three sentences already describe your whole life.",
+  "examples": [
+    { "es": "soy de Bergen, en Noruega", "en": "I am from Bergen, in Norway", "note": "soy de + place = I am from somewhere." },
+    { "es": "tengo treinta y seis años", "en": "I am 36 years old", "note": "tengo ... años, not \"soy\" - Spanish HAS years." },
+    { "es": "vivo en un apartamento en el centro", "en": "I live in an apartment in the city center", "note": "vivo en + place; en el centro = in the center." },
+    { "es": "es una ciudad pequeña", "en": "it is a small city", "note": "es describes what something is like." },
+    { "es": "esta rodeada de montañas y llueve mucho", "en": "it is surrounded by mountains and it rains a lot", "note": "esta (located/state) rodeada de montañas - a very Bergen sentence." }
+  ]
+}

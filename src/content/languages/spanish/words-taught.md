@@ -512,3 +512,39 @@ List of words taught in this chapter:
 - can you repeat?
 - I need help
 
+## Chapter 7: My Story
+Total new word entries: 30
+Total new words so far: 513
+Words from previous chapters are reused heavily (soy, tengo, vivo en, me gusta, trabajo, voy a...).
+List of words introduced in this chapter:
+- a city
+- surrounded by mountains
+- it rains a lot
+- near the sea
+- I work as
+- a consultant
+- computing / IT
+- a data engineer
+- to create programs
+- to learn new things
+- I have created
+- an app
+- it is called
+- I have been
+- ... ago
+- almost
+- times (occasions)
+- this place
+- I spend a lot of time
+- the beach
+- to look for new places
+- to try new drinks
+- I rent (out)
+- I earn money
+- when
+- I watch / I see
+- the World Cup
+- I have to
+- clothes
+- old
+

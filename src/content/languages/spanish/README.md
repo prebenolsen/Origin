@@ -51,7 +51,8 @@ During lesson progression, users are tested in a staged way:
 
 1. Batch practice during the lesson (small word groups)
 2. Sentence-building drills where available
-3. Checkpoint review after progress milestones (every 4 modules, plus chapter-end)
+3. Conversation comprehension checks in conversation modules
+4. Checkpoint review after progress milestones (every 4 modules, plus chapter-end)
 
 Question/testing types used by the module engine:
 
@@ -60,6 +61,7 @@ Question/testing types used by the module engine:
 3. Fill blank (context sentence with options)
 4. Produce (type the Spanish answer)
 5. Build sentence (word-bank tile ordering)
+6. Conversation comprehension: multiple-choice, true/false, who-said-it, and ordering
 
 The system is adaptive: weaker/new words are surfaced earlier and strong words are pushed toward harder recall/production.
 

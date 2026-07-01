@@ -1,0 +1,201 @@
+{
+  "intro": "A few days later Marta asks Preben why he spends so much time in Spain. He explains his connection to Albir - the flat, the beach, the gym, the football, and how he pays for it all.",
+  "speakers": [
+    { "id": "marta", "name": "Marta", "side": "left", "avatar": "👩" },
+    { "id": "preben", "name": "Preben", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "marta",
+      "es": "Preben, por que vienes tanto a España?",
+      "en": "Preben, why do you come to Spain so much?",
+      "words": [
+        { "es": "por que", "en": "why" },
+        { "es": "vienes", "en": "do you come" },
+        { "es": "tanto", "en": "so much" }
+      ]
+    },
+    {
+      "id": "m2",
+      "speaker": "preben",
+      "es": "Mi familia tiene un apartamento en Albir.",
+      "en": "My family has an apartment in Albir.",
+      "words": [
+        { "es": "tiene", "en": "has" }
+      ]
+    },
+    {
+      "id": "m3",
+      "speaker": "preben",
+      "es": "Lo compramos hace catorce años.",
+      "en": "We bought it 14 years ago.",
+      "words": [
+        { "es": "lo compramos", "en": "we bought it" },
+        { "es": "catorce", "en": "fourteen" }
+      ]
+    },
+    {
+      "id": "m4",
+      "speaker": "marta",
+      "es": "Que bien! Vienes mucho?",
+      "en": "How nice! Do you come a lot?"
+    },
+    {
+      "id": "m5",
+      "speaker": "preben",
+      "es": "He estado aqui casi treinta veces. Me encanta este lugar.",
+      "en": "I've been here almost 30 times. I love this place."
+    },
+    {
+      "id": "m6",
+      "speaker": "marta",
+      "es": "Que te gusta de Albir?",
+      "en": "What do you like about Albir?"
+    },
+    {
+      "id": "m7",
+      "speaker": "preben",
+      "es": "Paso mucho tiempo en la playa.",
+      "en": "I spend a lot of time on the beach."
+    },
+    {
+      "id": "m8",
+      "speaker": "preben",
+      "es": "Tambien voy al gimnasio en Albir. Se llama FlexFit.",
+      "en": "I also go to the gym in Albir. It's called FlexFit."
+    },
+    {
+      "id": "m9",
+      "speaker": "marta",
+      "es": "Como es el gimnasio?",
+      "en": "What's the gym like?"
+    },
+    {
+      "id": "m10",
+      "speaker": "preben",
+      "es": "El equipo es viejo, pero funciona bien.",
+      "en": "The equipment is old, but it works fine.",
+      "words": [
+        { "es": "equipo", "en": "equipment" },
+        { "es": "funciona", "en": "it works" }
+      ]
+    },
+    {
+      "id": "m11",
+      "speaker": "preben",
+      "es": "Y cuando veo el Mundial, voy a Kasbrane. Me encanta!",
+      "en": "And when I watch the World Cup, I go to Kasbrane. I love it!"
+    },
+    {
+      "id": "m12",
+      "speaker": "marta",
+      "es": "Genial! Y que mas te gusta?",
+      "en": "Awesome! And what else do you like?",
+      "words": [
+        { "es": "genial", "en": "great / awesome" },
+        { "es": "que mas", "en": "what else" }
+      ]
+    },
+    {
+      "id": "m13",
+      "speaker": "preben",
+      "es": "Me gusta tomar algo en la Plaza de Altea.",
+      "en": "I like to have a drink at the Altea Plaza."
+    },
+    {
+      "id": "m14",
+      "speaker": "preben",
+      "es": "Tambien me gustan los bares y los restaurantes.",
+      "en": "I also like the bars and the restaurants.",
+      "words": [
+        { "es": "bares", "en": "bars" }
+      ]
+    },
+    {
+      "id": "m15",
+      "speaker": "marta",
+      "es": "Que planes tienes para mañana?",
+      "en": "What plans do you have for tomorrow?",
+      "words": [
+        { "es": "planes", "en": "plans" }
+      ]
+    },
+    {
+      "id": "m16",
+      "speaker": "preben",
+      "es": "Tengo que ir a La Marina. Necesito ropa nueva.",
+      "en": "I have to go to La Marina. I need new clothes."
+    },
+    {
+      "id": "m17",
+      "speaker": "marta",
+      "es": "Y tu apartamento en Bergen?",
+      "en": "And your apartment in Bergen?"
+    },
+    {
+      "id": "m18",
+      "speaker": "preben",
+      "es": "Cuando estoy aqui, alquilo mi apartamento en Bergen.",
+      "en": "When I'm here, I rent out my apartment in Bergen."
+    },
+    {
+      "id": "m19",
+      "speaker": "preben",
+      "es": "Gano algo de dinero con Airbnb.",
+      "en": "I earn some money with Airbnb.",
+      "words": [
+        { "es": "algo de", "en": "some" }
+      ]
+    },
+    {
+      "id": "m20",
+      "speaker": "marta",
+      "es": "Que buena idea! Salud!",
+      "en": "What a good idea! Cheers!",
+      "words": [
+        { "es": "buena idea", "en": "good idea" },
+        { "es": "salud", "en": "cheers" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "Why does Preben come to Spain so often?",
+      "options": [
+        "He works in Albir",
+        "His family has an apartment in Albir",
+        "He is studying Spanish there"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "true-false",
+      "prompt": "Preben has been to Albir almost 30 times.",
+      "answer": true
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "Where does Preben go to watch the World Cup?",
+      "options": ["FlexFit", "Kasbrane", "La Marina"],
+      "answer": 1
+    },
+    {
+      "type": "who-said-it",
+      "quote": "El equipo es viejo, pero funciona bien.",
+      "options": ["Marta", "Preben"],
+      "answer": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put the conversation in order.",
+      "items": [
+        "His family has an apartment in Albir",
+        "He talks about the beach, the gym and the football",
+        "He plans to go shopping at La Marina",
+        "He rents out his Bergen flat on Airbnb"
+      ]
+    }
+  ]
+}

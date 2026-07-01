@@ -1,0 +1,9 @@
+{
+  "slug": "my-story-chat",
+  "title": "Telling My Story",
+  "summary": "Read a real chat where Preben answers the classic questions - where are you from, what do you do, what do you like?",
+  "icon": "💬",
+  "kind": "conversation",
+  "format": "conversation",
+  "estMinutes": 5
+}

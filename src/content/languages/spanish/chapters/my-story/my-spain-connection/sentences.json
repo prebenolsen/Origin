@@ -1,0 +1,47 @@
+[
+  {
+    "en": "My family has an apartment in Albir",
+    "es": "mi familia tiene un apartamento en Albir",
+    "distractors": ["tengo", "vivo"]
+  },
+  {
+    "en": "I have been here almost 30 times",
+    "es": "he estado aqui casi treinta veces",
+    "distractors": ["soy", "mucho"]
+  },
+  {
+    "en": "I love this place",
+    "es": "me encanta este lugar",
+    "distractors": ["me gusta", "esta"]
+  },
+  {
+    "en": "I spend a lot of time on the beach",
+    "es": "paso mucho tiempo en la playa",
+    "distractors": ["voy", "el mar"]
+  },
+  {
+    "en": "I like to look for new places and try new drinks",
+    "es": "me gusta buscar nuevos sitios y probar bebidas nuevas",
+    "distractors": ["gustan", "veces"]
+  },
+  {
+    "en": "I earn money with Airbnb",
+    "es": "gano dinero con Airbnb",
+    "distractors": ["alquilo", "casi"]
+  },
+  {
+    "en": "When I watch the World Cup, I go to Kasbrane",
+    "es": "cuando veo el Mundial voy a Kasbrane",
+    "distractors": ["tengo que", "estoy"]
+  },
+  {
+    "en": "I like to have a drink at the Altea Plaza",
+    "es": "me gusta tomar algo en la Plaza de Altea",
+    "distractors": ["me encanta", "veo"]
+  },
+  {
+    "en": "I have to go to La Marina, I need new clothes",
+    "es": "tengo que ir a La Marina necesito ropa nueva",
+    "distractors": ["voy", "viejo"]
+  }
+]

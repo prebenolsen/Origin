@@ -4,6 +4,53 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.2.0] - 2026-07-01
+
+### Content - Personal details added to the "My Story" chapter
+
+Wove more of the learner's real life into the two Spain modules, and turned them into two
+extra reusable structures: `tengo que` + verb (I have to...) and `cuando` + verb (when I...),
+plus `viejo` for ser + adjective.
+
+- **My Connection with Spain**: added the FlexFit gym in Albir (old equipment, but it works),
+  watching the World Cup at Kasbrane, drinks at the Altea Plaza, and a La Marina shopping trip.
+  Vocabulary grew 12 -> 18 (`cuando`, `veo`, `el Mundial`, `tengo que`, `ropa`, `viejo`) with
+  matching lesson examples and sentence-builders.
+- **Why I Love Albir** (conversation): extended the chat to cover the gym, the football and
+  the shopping trip; comprehension questions now test those facts.
+- 6 new word entries (chapter total 30); `words-taught.md` updated.
+
+## [9.1.0] - 2026-07-01
+
+### Content - New Spanish chapter "My Story" (Mi historia)
+
+A personalized chapter that lets the learner tell their own life story in Spanish,
+built around a handful of reusable structures rather than memorized phrases
+(soy + identity, tengo + noun, vivo en + place, trabajo como + role, me gusta + verb,
+he estado + place, hace + time). It reuses vocabulary from earlier chapters heavily and
+introduces 24 new word entries.
+
+- **My Life in Norway** (standard) - who you are, your age and where you live.
+- **My Work and Hobbies** (standard) - your job, what you like to do, things you have made.
+- **Telling My Story** (conversation) - Preben answers the classic get-to-know-you
+  questions; comprehension check with all four question types.
+- **My Connection with Spain** (standard) - the family apartment in Albir, the beach,
+  and renting out the Bergen flat on Airbnb.
+- **Why I Love Albir** (conversation) - Preben explains why he keeps coming back.
+- Updated `words-taught.md`, `docs/content.md`, and wired the chapter into
+  `src/content/languages/spanish/language.json`.
+
+## [9.0.1] - 2026-07-01
+
+### Docs - Spanish testing flow now includes conversation checks
+
+Updated the Spanish component README so the "How users are tested inside modules"
+section reflects conversation modules and their comprehension checks.
+
+- Added the conversation stage to the staged test flow.
+- Added conversation comprehension question types: multiple-choice, true/false,
+  who-said-it, and ordering.
+
 ## [9.0.0] - 2026-07-01
 
 ### Feature - Installable, fully-offline PWA

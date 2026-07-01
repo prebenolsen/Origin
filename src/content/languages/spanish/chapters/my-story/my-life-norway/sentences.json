@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I am from Bergen, in Norway",
+    "es": "soy de Bergen en Noruega",
+    "distractors": ["estoy", "vivo"]
+  },
+  {
+    "en": "I am 36 years old",
+    "es": "tengo treinta y seis años",
+    "distractors": ["soy", "vivo"]
+  },
+  {
+    "en": "I live in an apartment in the city center",
+    "es": "vivo en un apartamento en el centro",
+    "distractors": ["soy", "una ciudad"]
+  },
+  {
+    "en": "Bergen is a small city",
+    "es": "Bergen es una ciudad pequeña",
+    "distractors": ["esta", "grande"]
+  },
+  {
+    "en": "It is surrounded by mountains and it rains a lot",
+    "es": "esta rodeada de montañas y llueve mucho",
+    "distractors": ["es", "cerca"]
+  },
+  {
+    "en": "Bergen is near the sea",
+    "es": "Bergen esta cerca del mar",
+    "distractors": ["es", "en el centro"]
+  }
+]

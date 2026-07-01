@@ -1,0 +1,11 @@
+{
+  "context": "\"What do you do?\" and \"What do you like?\" come up in every conversation. You do not need many words - you need a few patterns you can point at anything: your job, your hobbies, the things you have made.",
+  "explanation": "Two ways to talk about work: trabajo en + a field (trabajo en informatica = I work in IT) and trabajo como + a role (trabajo como consultor = I work as a consultant). You can also just say what you are with soy: soy ingeniero de datos. Keep both handy - you will reach for them constantly.",
+  "examples": [
+    { "es": "trabajo en informatica", "en": "I work in IT", "note": "trabajo en + a field or place." },
+    { "es": "soy ingeniero de datos y trabajo como consultor", "en": "I am a data engineer and I work as a consultant", "note": "soy + job; trabajo como + role." },
+    { "es": "me gusta crear programas", "en": "I like to create programs", "note": "me gusta + a verb = I like to do something." },
+    { "es": "me gusta aprender cosas nuevas", "en": "I like to learn new things", "note": "Same pattern: me gusta + aprender." },
+    { "es": "he creado una aplicacion, se llama Origin", "en": "I have created an app, it is called Origin", "note": "he creado = I have created (he + a -ado/-ido verb = I have done)." }
+  ]
+}

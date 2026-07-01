@@ -1,0 +1,174 @@
+{
+  "intro": "Preben meets Marta at a language exchange. She asks him the classic get-to-know-you questions - see how much you already understand.",
+  "speakers": [
+    { "id": "marta", "name": "Marta", "side": "left", "avatar": "👩" },
+    { "id": "preben", "name": "Preben", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "marta",
+      "es": "Hola! Como te llamas?",
+      "en": "Hi! What's your name?"
+    },
+    {
+      "id": "m2",
+      "speaker": "preben",
+      "es": "Me llamo Preben. Y tu?",
+      "en": "My name is Preben. And you?",
+      "words": [
+        { "es": "y", "en": "and" },
+        { "es": "tu", "en": "you" }
+      ]
+    },
+    {
+      "id": "m3",
+      "speaker": "marta",
+      "es": "Me llamo Marta. De donde eres?",
+      "en": "My name is Marta. Where are you from?"
+    },
+    {
+      "id": "m4",
+      "speaker": "preben",
+      "es": "Soy de Bergen, en Noruega.",
+      "en": "I'm from Bergen, in Norway."
+    },
+    {
+      "id": "m5",
+      "speaker": "marta",
+      "es": "Que bien! Como es Bergen?",
+      "en": "How nice! What is Bergen like?"
+    },
+    {
+      "id": "m6",
+      "speaker": "preben",
+      "es": "Es una ciudad pequeña, pero es la segunda ciudad mas grande de Noruega.",
+      "en": "It's a small city, but it's the second biggest city in Norway.",
+      "words": [
+        { "es": "segunda", "en": "second" },
+        { "es": "mas", "en": "most / more" }
+      ]
+    },
+    {
+      "id": "m7",
+      "speaker": "preben",
+      "es": "Esta rodeada de montañas y llueve mucho.",
+      "en": "It's surrounded by mountains and it rains a lot."
+    },
+    {
+      "id": "m8",
+      "speaker": "marta",
+      "es": "Cuantos años tienes?",
+      "en": "How old are you?"
+    },
+    {
+      "id": "m9",
+      "speaker": "preben",
+      "es": "Tengo treinta y seis años.",
+      "en": "I'm thirty-six years old."
+    },
+    {
+      "id": "m10",
+      "speaker": "marta",
+      "es": "A que te dedicas?",
+      "en": "What do you do (for work)?",
+      "words": [
+        { "es": "a que te dedicas", "en": "what do you do for work" }
+      ]
+    },
+    {
+      "id": "m11",
+      "speaker": "preben",
+      "es": "Trabajo en informatica. Soy ingeniero de datos.",
+      "en": "I work in IT. I'm a data engineer."
+    },
+    {
+      "id": "m12",
+      "speaker": "preben",
+      "es": "Tambien trabajo como consultor.",
+      "en": "I also work as a consultant."
+    },
+    {
+      "id": "m13",
+      "speaker": "marta",
+      "es": "Que interesante! Que haces en tu tiempo libre?",
+      "en": "How interesting! What do you do in your free time?",
+      "words": [
+        { "es": "que haces", "en": "what do you do" }
+      ]
+    },
+    {
+      "id": "m14",
+      "speaker": "preben",
+      "es": "Voy al gimnasio, creo programas y juego a videojuegos.",
+      "en": "I go to the gym, I create programs and I play video games.",
+      "words": [
+        { "es": "creo", "en": "I create" }
+      ]
+    },
+    {
+      "id": "m15",
+      "speaker": "marta",
+      "es": "Que juegas?",
+      "en": "What do you play?",
+      "words": [
+        { "es": "juegas", "en": "do you play" }
+      ]
+    },
+    {
+      "id": "m16",
+      "speaker": "preben",
+      "es": "Juego a World of Warcraft y a Counter-Strike.",
+      "en": "I play World of Warcraft and Counter-Strike."
+    },
+    {
+      "id": "m17",
+      "speaker": "marta",
+      "es": "Genial! Me gusta hablar contigo.",
+      "en": "Awesome! I like talking to you.",
+      "words": [
+        { "es": "genial", "en": "great / awesome" },
+        { "es": "contigo", "en": "with you" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "Where is Preben from?",
+      "options": ["Oslo, Norway", "Bergen, Norway", "Bergen, Sweden"],
+      "answer": 1
+    },
+    {
+      "type": "true-false",
+      "prompt": "Bergen is the biggest city in Norway.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Soy ingeniero de datos.",
+      "options": ["Marta", "Preben"],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "What does Preben do in his free time?",
+      "options": [
+        "He reads and cooks",
+        "He goes to the gym, creates programs and plays video games",
+        "He travels and takes photos"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put the conversation in order.",
+      "items": [
+        "They introduce themselves",
+        "Preben describes Bergen",
+        "Preben talks about his work",
+        "Preben talks about his hobbies"
+      ]
+    }
+  ]
+}

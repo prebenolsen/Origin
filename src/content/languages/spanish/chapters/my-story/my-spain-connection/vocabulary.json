@@ -1,0 +1,20 @@
+[
+  { "en": "I have been", "es": "he estado", "category": "connection", "note": "he estado aqui = I have been here. Same he as he creado." },
+  { "en": "... ago", "es": "hace", "category": "connection", "note": "hace + a time = that long ago: hace catorce años = 14 years ago." },
+  { "en": "almost", "es": "casi", "category": "connection", "note": "casi treinta veces = almost 30 times." },
+  { "en": "times (occasions)", "es": "veces", "category": "connection", "note": "treinta veces = 30 times; muchas veces = many times." },
+  { "en": "I love it", "es": "me encanta", "category": "feelings", "note": "me encanta este lugar = I love this place. Stronger than me gusta." },
+  { "en": "this place", "es": "este lugar", "category": "feelings", "note": "me encanta este lugar. lugar = place." },
+  { "en": "I spend a lot of time", "es": "paso mucho tiempo", "category": "activities", "note": "paso mucho tiempo en la playa = I spend a lot of time on the beach." },
+  { "en": "the beach", "es": "la playa", "category": "activities", "note": "en la playa = on/at the beach." },
+  { "en": "to look for new places", "es": "buscar nuevos sitios", "category": "activities", "note": "me gusta buscar nuevos sitios. sitios = places/spots." },
+  { "en": "to try new drinks", "es": "probar bebidas nuevas", "category": "activities", "note": "me gusta probar bebidas nuevas. probar = to try; bebidas = drinks." },
+  { "en": "I rent (out)", "es": "alquilo", "category": "airbnb", "note": "alquilo mi apartamento = I rent out my apartment." },
+  { "en": "I earn money", "es": "gano dinero", "category": "airbnb", "note": "gano dinero con Airbnb = I earn money with Airbnb. dinero = money." },
+  { "en": "when", "es": "cuando", "category": "grammar", "note": "Sets the scene: cuando veo el Mundial, voy a Kasbrane = when I watch the World Cup, I go to Kasbrane." },
+  { "en": "I watch / I see", "es": "veo", "category": "activities", "note": "cuando veo el Mundial = when I watch the World Cup." },
+  { "en": "the World Cup", "es": "el Mundial", "category": "activities", "note": "el Mundial de futbol = the football World Cup." },
+  { "en": "I have to", "es": "tengo que", "category": "grammar", "note": "tengo que + a verb = I have to do something: tengo que ir a La Marina = I have to go to La Marina." },
+  { "en": "clothes", "es": "ropa", "category": "shopping", "note": "necesito ropa nueva = I need new clothes. ropa is singular in Spanish." },
+  { "en": "old", "es": "viejo", "category": "description", "note": "el equipo es viejo = the equipment is old. A feminine thing is vieja." }
+]

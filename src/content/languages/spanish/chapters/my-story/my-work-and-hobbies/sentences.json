@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I work in IT",
+    "es": "trabajo en informatica",
+    "distractors": ["como", "soy"]
+  },
+  {
+    "en": "I am a data engineer and I work as a consultant",
+    "es": "soy ingeniero de datos y trabajo como consultor",
+    "distractors": ["en", "tengo"]
+  },
+  {
+    "en": "I like to create programs and learn new things",
+    "es": "me gusta crear programas y aprender cosas nuevas",
+    "distractors": ["gustan", "juego"]
+  },
+  {
+    "en": "I play video games",
+    "es": "juego a videojuegos",
+    "distractors": ["me gusta", "creo"]
+  },
+  {
+    "en": "I have created an app",
+    "es": "he creado una aplicacion",
+    "distractors": ["tengo", "un"]
+  },
+  {
+    "en": "It is called Origin",
+    "es": "se llama Origin",
+    "distractors": ["me llamo", "es"]
+  }
+]

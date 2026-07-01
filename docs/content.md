@@ -201,6 +201,11 @@
 | Languages | Spanish · Visiting Spain II | Buying a Gift (conversation) | Reading comprehension / chat | DONE |
 | Languages | Spanish · Real conversations | Making Plans | Social planning / invitations / scheduling | DONE |
 | Languages | Spanish · Real conversations | Everyday Conversations | Natural flow / opinions / short past stories | DONE |
+| Languages | Spanish · My Story | My Life in Norway | Personal story / self-description | DONE |
+| Languages | Spanish · My Story | My Work and Hobbies | Personal story / work & free time | DONE |
+| Languages | Spanish · My Story | Telling My Story (conversation) | Reading comprehension / chat | DONE |
+| Languages | Spanish · My Story | My Connection with Spain | Personal story / past & connection | DONE |
+| Languages | Spanish · My Story | Why I Love Albir (conversation) | Reading comprehension / chat | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language modules live under
