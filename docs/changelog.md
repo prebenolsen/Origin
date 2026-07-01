@@ -4,6 +4,15 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [8.0.3] - 2026-07-01
+
+### Build - Deploy workflow accepts Supabase env from a Variable or a Secret
+
+`.github/workflows/deploy.yml` now reads `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` as
+`${{ vars.X || secrets.X }}`, so login/sync gets enabled whether the values are stored as
+repo Variables or Secrets (previously only Variables were picked up, which silently left the
+deployed build in guest mode).
+
 ## [8.0.2] - 2026-07-01
 
 ### Build - GitHub Pages deploy workflow + SPA config
