@@ -17,16 +17,16 @@
   {
     "en": "Bergen is a small city",
     "es": "Bergen es una ciudad pequeña",
-    "distractors": ["esta", "grande"]
+    "distractors": ["está", "grande"]
   },
   {
     "en": "It is surrounded by mountains and it rains a lot",
-    "es": "esta rodeada de montañas y llueve mucho",
+    "es": "está rodeada de montañas y llueve mucho",
     "distractors": ["es", "cerca"]
   },
   {
     "en": "Bergen is near the sea",
-    "es": "Bergen esta cerca del mar",
+    "es": "Bergen está cerca del mar",
     "distractors": ["es", "en el centro"]
   }
 ]

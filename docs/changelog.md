@@ -4,6 +4,41 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.4.0] - 2026-07-01
+
+### Content - Proper Spanish accents in the "My Story" and "Tell Stories" chapters
+
+Restored correct Spanish orthography (`á é í ó ú`, plus the existing `ñ`) across every string
+in both new chapters, replacing the previous accent-free house style. Interrogatives are now
+accented (`qué`, `dónde`, `cómo`, `cuántos`), as are verbs whose accent carries meaning
+(`está`, `informática`, `caminé`, `comí`, `subí`, `llovió`, `increíble`, `el otro día`), while
+minimal-pair unaccented twins are preserved (`esta`, `tu`, `si`, `cuando`). Matching is
+unaffected because SRS ids are accent-normalized.
+
+- Updated the `spanish-content` skill (`SKILL.md` + `references/content-rules.md`) so all
+  future content is authored with correct accents; older chapters remain as-is for now.
+
+## [9.3.0] - 2026-07-01
+
+### Content - New Spanish chapter "Tell Stories" (past tense)
+
+The first chapter to leave the present tense behind. It formalizes the past forms hinted at
+in Chapter 6 (fui, hice, vi) into a full storytelling toolkit and personalizes every example
+to the learner's real life - the Albir lighthouse walk, climbing the Sierra Helada, the gym,
+the beach and the World Cup at Kasbrane (no museums or hotels). 33 new word entries.
+
+- **When It Happened** (standard) - past time markers: anoche, la semana pasada, el año pasado
+  and the `pasado` pattern.
+- **What Did You Do?** (standard) - the regular preterite ("I" forms): fui, estuve, me quede,
+  comi, bebi, compre, visite, camine, subi, hice fotos, tome algo.
+- **How Was It?** (standard) - reactions with `fue` + adjective: divertido, increible,
+  aburrido, terrible, bonito, tranquilo, duro.
+- **Telling About a Trip** (standard) - places and weather: el faro, la montaña, las fotos,
+  el tiempo, hizo sol, hizo calor, llovio.
+- **What I Did Yesterday** and **A Day in Albir** (conversations) - Preben narrates his day
+  and a trip in the past tense; comprehension checks use all four question types.
+- Wired into `language.json`; updated `words-taught.md` and `docs/content.md`.
+
 ## [9.2.0] - 2026-07-01
 
 ### Content - Personal details added to the "My Story" chapter

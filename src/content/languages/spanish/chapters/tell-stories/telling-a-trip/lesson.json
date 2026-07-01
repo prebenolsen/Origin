@@ -1,0 +1,11 @@
+{
+  "context": "Now put your stories somewhere. A good trip story names the places you went and says what the weather did. These are your places - the Albir lighthouse, the mountain, the beach - not a list of museums you never visit.",
+  "explanation": "Two anchors first: el faro = the lighthouse (the flat seaside walk to the Faro de l'Albir) and la montaña = the mountain (the climb up behind Albir). Point your past verbs at them: caminé al faro, subí la montaña. The weather words - what it did that day - come next.",
+  "examples": [
+    { "es": "caminé al faro y hice fotos", "en": "I walked to the lighthouse and took photos", "note": "el faro = the lighthouse; las fotos = the photos." },
+    { "es": "subí la montaña en Albir", "en": "I climbed the mountain in Albir", "note": "la montaña = the mountain." },
+    { "es": "fui a la playa y hizo sol", "en": "I went to the beach and it was sunny", "note": "hizo sol = it was sunny (the weather \"did sun\")." },
+    { "es": "hizo calor todo el día", "en": "it was hot all day", "note": "hizo calor = it was hot; compare tengo calor = I am hot." },
+    { "es": "el tiempo fue malo, llovió mucho", "en": "the weather was bad, it rained a lot", "note": "el tiempo = the weather; llovió = it rained (past of llueve)." }
+  ]
+}

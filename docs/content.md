@@ -206,6 +206,12 @@
 | Languages | Spanish · My Story | Telling My Story (conversation) | Reading comprehension / chat | DONE |
 | Languages | Spanish · My Story | My Connection with Spain | Personal story / past & connection | DONE |
 | Languages | Spanish · My Story | Why I Love Albir (conversation) | Reading comprehension / chat | DONE |
+| Languages | Spanish · Tell Stories | When It Happened (past time markers) | Storytelling / past tense | DONE |
+| Languages | Spanish · Tell Stories | What Did You Do? (preterite verbs) | Storytelling / past tense | DONE |
+| Languages | Spanish · Tell Stories | How Was It? (reactions) | Storytelling / past tense | DONE |
+| Languages | Spanish · Tell Stories | Telling About a Trip | Storytelling / trips & weather | DONE |
+| Languages | Spanish · Tell Stories | What I Did Yesterday (conversation) | Reading comprehension / chat | DONE |
+| Languages | Spanish · Tell Stories | A Day in Albir (conversation) | Reading comprehension / chat | DONE |
 
 > Languages are authored differently from history modules — see
 > `docs/content-instructions.md` is for history; language modules live under

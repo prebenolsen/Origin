@@ -1,0 +1,32 @@
+[
+  {
+    "en": "Yesterday I went to the gym",
+    "es": "ayer fui al gimnasio",
+    "distractors": ["hoy", "anoche"]
+  },
+  {
+    "en": "Last night I watched the World Cup",
+    "es": "anoche vi el Mundial",
+    "distractors": ["ayer", "veo"]
+  },
+  {
+    "en": "Yesterday morning I went to the beach",
+    "es": "ayer por la mañana fui a la playa",
+    "distractors": ["esta mañana", "el mar"]
+  },
+  {
+    "en": "Last week I went to Albir",
+    "es": "la semana pasada fui a Albir",
+    "distractors": ["el año pasado", "hoy"]
+  },
+  {
+    "en": "Last weekend I watched the World Cup at Kasbrane",
+    "es": "el fin de semana pasado vi el Mundial en Kasbrane",
+    "distractors": ["la semana pasada", "veo"]
+  },
+  {
+    "en": "Last year I went to Spain many times",
+    "es": "el año pasado fui a España muchas veces",
+    "distractors": ["ayer", "casi"]
+  }
+]

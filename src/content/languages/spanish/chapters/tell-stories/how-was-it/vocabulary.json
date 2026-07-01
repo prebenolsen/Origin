@@ -1,0 +1,11 @@
+[
+  { "en": "it was", "es": "fue", "category": "reaction", "note": "The past of es. fue divertido = it was fun. Works with any adjective." },
+  { "en": "fun", "es": "divertido", "category": "reaction", "note": "fue divertido = it was fun. A feminine word takes divertida." },
+  { "en": "interesting", "es": "interesante", "category": "reaction", "note": "Same word you used for people: fue interesante = it was interesting." },
+  { "en": "amazing", "es": "increíble", "category": "reaction", "note": "fue increíble = it was amazing/incredible." },
+  { "en": "boring", "es": "aburrido", "category": "reaction", "note": "Same word as \"bored\": fue aburrido = it was boring." },
+  { "en": "terrible", "es": "terrible", "category": "reaction", "note": "A cognate: fue terrible = it was terrible. Same for masculine and feminine." },
+  { "en": "beautiful", "es": "bonito", "category": "reaction", "note": "bonito = beautiful/nice: el faro fue bonito. Feminine: bonita." },
+  { "en": "calm / peaceful", "es": "tranquilo", "category": "reaction", "note": "fue tranquilo = it was calm. Same word as \"quiet\" for people." },
+  { "en": "hard / tough", "es": "duro", "category": "reaction", "note": "subir la montaña fue duro = climbing the mountain was tough." }
+]

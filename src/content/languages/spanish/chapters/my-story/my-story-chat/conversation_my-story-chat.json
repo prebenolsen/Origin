@@ -8,23 +8,23 @@
     {
       "id": "m1",
       "speaker": "marta",
-      "es": "Hola! Como te llamas?",
+      "es": "Hola! Cómo te llamas?",
       "en": "Hi! What's your name?"
     },
     {
       "id": "m2",
       "speaker": "preben",
-      "es": "Me llamo Preben. Y tu?",
+      "es": "Me llamo Preben. Y tú?",
       "en": "My name is Preben. And you?",
       "words": [
         { "es": "y", "en": "and" },
-        { "es": "tu", "en": "you" }
+        { "es": "tú", "en": "you" }
       ]
     },
     {
       "id": "m3",
       "speaker": "marta",
-      "es": "Me llamo Marta. De donde eres?",
+      "es": "Me llamo Marta. De dónde eres?",
       "en": "My name is Marta. Where are you from?"
     },
     {
@@ -36,29 +36,29 @@
     {
       "id": "m5",
       "speaker": "marta",
-      "es": "Que bien! Como es Bergen?",
+      "es": "Qué bien! Cómo es Bergen?",
       "en": "How nice! What is Bergen like?"
     },
     {
       "id": "m6",
       "speaker": "preben",
-      "es": "Es una ciudad pequeña, pero es la segunda ciudad mas grande de Noruega.",
+      "es": "Es una ciudad pequeña, pero es la segunda ciudad más grande de Noruega.",
       "en": "It's a small city, but it's the second biggest city in Norway.",
       "words": [
         { "es": "segunda", "en": "second" },
-        { "es": "mas", "en": "most / more" }
+        { "es": "más", "en": "most / more" }
       ]
     },
     {
       "id": "m7",
       "speaker": "preben",
-      "es": "Esta rodeada de montañas y llueve mucho.",
+      "es": "Está rodeada de montañas y llueve mucho.",
       "en": "It's surrounded by mountains and it rains a lot."
     },
     {
       "id": "m8",
       "speaker": "marta",
-      "es": "Cuantos años tienes?",
+      "es": "Cuántos años tienes?",
       "en": "How old are you?"
     },
     {
@@ -70,31 +70,31 @@
     {
       "id": "m10",
       "speaker": "marta",
-      "es": "A que te dedicas?",
+      "es": "A qué te dedicas?",
       "en": "What do you do (for work)?",
       "words": [
-        { "es": "a que te dedicas", "en": "what do you do for work" }
+        { "es": "a qué te dedicas", "en": "what do you do for work" }
       ]
     },
     {
       "id": "m11",
       "speaker": "preben",
-      "es": "Trabajo en informatica. Soy ingeniero de datos.",
+      "es": "Trabajo en informática. Soy ingeniero de datos.",
       "en": "I work in IT. I'm a data engineer."
     },
     {
       "id": "m12",
       "speaker": "preben",
-      "es": "Tambien trabajo como consultor.",
+      "es": "También trabajo como consultor.",
       "en": "I also work as a consultant."
     },
     {
       "id": "m13",
       "speaker": "marta",
-      "es": "Que interesante! Que haces en tu tiempo libre?",
+      "es": "Qué interesante! Qué haces en tu tiempo libre?",
       "en": "How interesting! What do you do in your free time?",
       "words": [
-        { "es": "que haces", "en": "what do you do" }
+        { "es": "qué haces", "en": "what do you do" }
       ]
     },
     {
@@ -109,7 +109,7 @@
     {
       "id": "m15",
       "speaker": "marta",
-      "es": "Que juegas?",
+      "es": "Qué juegas?",
       "en": "What do you play?",
       "words": [
         { "es": "juegas", "en": "do you play" }

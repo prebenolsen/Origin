@@ -1,0 +1,37 @@
+[
+  {
+    "en": "What did you do yesterday?",
+    "es": "qué hiciste ayer",
+    "distractors": ["hoy", "haces"]
+  },
+  {
+    "en": "I went to the gym and stayed an hour",
+    "es": "fui al gimnasio y me quedé una hora",
+    "distractors": ["estuve", "voy"]
+  },
+  {
+    "en": "I ate at a bar and drank a beer",
+    "es": "comí en un bar y bebí una cerveza",
+    "distractors": ["compré", "tomé"]
+  },
+  {
+    "en": "I bought new clothes and visited Altea",
+    "es": "compré ropa nueva y visité Altea",
+    "distractors": ["comí", "fui"]
+  },
+  {
+    "en": "I walked to the lighthouse and climbed the mountain",
+    "es": "caminé al faro y subí la montaña",
+    "distractors": ["visité", "estuve"]
+  },
+  {
+    "en": "I was in Albir and had a drink in the square",
+    "es": "estuve en Albir y tomé algo en la plaza",
+    "distractors": ["fui", "bebí"]
+  },
+  {
+    "en": "Last night I took photos at the beach",
+    "es": "anoche hice fotos en la playa",
+    "distractors": ["compré", "el mar"]
+  }
+]

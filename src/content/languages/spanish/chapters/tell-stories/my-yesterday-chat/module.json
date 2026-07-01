@@ -1,0 +1,9 @@
+{
+  "slug": "my-yesterday-chat",
+  "title": "What I Did Yesterday",
+  "summary": "Read Preben tell Marta about his day - the gym, the World Cup at Kasbrane, and a walk to the lighthouse.",
+  "icon": "💬",
+  "kind": "conversation",
+  "format": "conversation",
+  "estMinutes": 5
+}

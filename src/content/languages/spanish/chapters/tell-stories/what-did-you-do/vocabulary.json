@@ -1,0 +1,14 @@
+[
+  { "en": "what did you do?", "es": "qué hiciste", "category": "past-verb", "note": "The question that opens a story: qué hiciste ayer? = what did you do yesterday?" },
+  { "en": "I went", "es": "fui", "category": "past-verb", "note": "From ir. Irregular: fui al gimnasio = I went to the gym." },
+  { "en": "I was / I stayed (somewhere)", "es": "estuve", "category": "past-verb", "note": "From estar. estuve en Albir = I was in Albir; used for being in a place." },
+  { "en": "I stayed", "es": "me quedé", "category": "past-verb", "note": "From quedarse. me quedé en casa = I stayed home. Regular -ar verb: -é ending." },
+  { "en": "I ate", "es": "comí", "category": "past-verb", "note": "From comer. Regular -er verb: -í ending. comí en un bar." },
+  { "en": "I drank", "es": "bebí", "category": "past-verb", "note": "From beber. -í ending: bebí una cerveza = I drank a beer." },
+  { "en": "I bought", "es": "compré", "category": "past-verb", "note": "From comprar. -é ending: compré ropa nueva = I bought new clothes." },
+  { "en": "I visited", "es": "visité", "category": "past-verb", "note": "From visitar. -é ending: visité Altea = I visited Altea." },
+  { "en": "I walked", "es": "caminé", "category": "past-verb", "note": "From caminar. -é ending: caminé al faro = I walked to the lighthouse." },
+  { "en": "I went up / I climbed", "es": "subí", "category": "past-verb", "note": "From subir. -í ending: subí la montaña = I climbed the mountain." },
+  { "en": "I took photos", "es": "hice fotos", "category": "past-verb", "note": "In Spain you \"make\" photos: hice fotos. hice is the past of hacer (to do/make)." },
+  { "en": "I had a drink", "es": "tomé algo", "category": "past-verb", "note": "tomar algo = to have a drink/bite; past: tomé algo en la plaza = I had a drink in the square." }
+]

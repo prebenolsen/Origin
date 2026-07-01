@@ -39,8 +39,14 @@ src/content/languages/<lang>/
 4. **Keep introductions short.** `context` = why this matters (2-3 sentences). `explanation`
    = one short paragraph about the opening batch only.
 5. **Encoding.** UTF-8 **without BOM**, valid JSON (no trailing commas/comments). Use plain
-   ASCII punctuation - **hyphen-minus `-`, never `—`/`–`**. This content set stores Spanish
-   **without accents** (ids are accent-normalized anyway); stay consistent.
+   ASCII punctuation - **hyphen-minus `-`, never `—`/`–`**. **Write Spanish with correct
+   accents** (`á é í ó ú ñ ü`) - e.g. `está`, `informática`, `qué hiciste`, `caminé`,
+   `increíble`, `el otro día`. Mind the pairs that only differ by an accent: `qué/dónde/cómo/
+   cuántos` (interrogative, accented) vs `que/donde/como/cuando` (conjunction, plain); `está`
+   (verb) vs `esta` (this); `tú` (you) vs `tu` (your); `sí` (yes) vs `si` (if); `él` (he) vs
+   `el` (the). Accents are display-only for matching (ids are accent-normalized), but we still
+   spell them correctly. Newer chapters ("My Story" onward) follow this; some older chapters
+   are inconsistent - match this rule, not them.
 6. **Personalization.** For a `personalized` module, `personalize.json` asks a question and
    offers grouped options; only the picked words are taught (merged with the base
    `vocabulary.json`). Never teach an option the learner did not pick (no dresses/skirts
@@ -72,7 +78,7 @@ src/content/languages/<lang>/
 
 ## Fill a placeholder (the "feed me a word list" path)
 
-Open the module's `vocabulary.json`, translate each `en` into `es` (ASCII, no accents),
+Open the module's `vocabulary.json`, translate each `en` into `es` (with correct accents),
 set `category` sensibly (drives smart distractors), then flip `module.json` `kind` to
 `standard`/`personalized`. Add the English words to `words-taught.md` (rule 9). Re-run the
 validator.

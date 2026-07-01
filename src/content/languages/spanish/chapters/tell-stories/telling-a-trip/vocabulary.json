@@ -1,0 +1,11 @@
+[
+  { "en": "the lighthouse", "es": "el faro", "category": "places", "note": "The Faro de l'Albir - the flat seaside walk. caminé al faro = I walked to the lighthouse." },
+  { "en": "the mountain", "es": "la montaña", "category": "places", "note": "subí la montaña = I climbed the mountain. Plural montañas you already know." },
+  { "en": "the beach", "es": "la playa", "category": "places", "note": "fui a la playa = I went to the beach." },
+  { "en": "the gym", "es": "el gimnasio", "category": "places", "note": "fui al gimnasio = I went to the gym (a + el = al)." },
+  { "en": "the photos", "es": "las fotos", "category": "trip", "note": "hice fotos = I took photos; una foto = a photo." },
+  { "en": "the weather", "es": "el tiempo", "category": "weather", "note": "el tiempo = the weather (also means time): el tiempo fue bueno." },
+  { "en": "it was sunny", "es": "hizo sol", "category": "weather", "note": "The weather \"does\" sun: hizo sol = it was sunny. el sol = the sun." },
+  { "en": "it was hot", "es": "hizo calor", "category": "weather", "note": "hizo calor = it was hot (weather). Compare tengo calor = I feel hot." },
+  { "en": "it rained", "es": "llovió", "category": "weather", "note": "The past of llueve: llovió mucho = it rained a lot." }
+]

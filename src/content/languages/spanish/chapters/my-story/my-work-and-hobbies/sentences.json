@@ -1,7 +1,7 @@
 [
   {
     "en": "I work in IT",
-    "es": "trabajo en informatica",
+    "es": "trabajo en informática",
     "distractors": ["como", "soy"]
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "en": "I have created an app",
-    "es": "he creado una aplicacion",
+    "es": "he creado una aplicación",
     "distractors": ["tengo", "un"]
   },
   {

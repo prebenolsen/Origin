@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I walked to the lighthouse and took photos",
+    "es": "caminé al faro y hice fotos",
+    "distractors": ["subí", "la montaña"]
+  },
+  {
+    "en": "I climbed the mountain in Albir and it was tough",
+    "es": "subí la montaña en Albir y fue duro",
+    "distractors": ["caminé", "el faro"]
+  },
+  {
+    "en": "I went to the beach and it was sunny",
+    "es": "fui a la playa y hizo sol",
+    "distractors": ["llovió", "voy"]
+  },
+  {
+    "en": "It was hot all day, I had a drink in the square",
+    "es": "hizo calor todo el día tomé algo en la plaza",
+    "distractors": ["hizo sol", "bebí"]
+  },
+  {
+    "en": "The weather was bad, it rained a lot",
+    "es": "el tiempo fue malo llovió mucho",
+    "distractors": ["hizo sol", "bonito"]
+  },
+  {
+    "en": "Yesterday I went to the gym and it was boring",
+    "es": "ayer fui al gimnasio y fue aburrido",
+    "distractors": ["anoche", "divertido"]
+  }
+]

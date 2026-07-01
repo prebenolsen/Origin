@@ -120,6 +120,21 @@
         "my-spain-connection",
         "my-spain-chat"
       ]
+    },
+    {
+      "slug": "tell-stories",
+      "title": "Tell Stories",
+      "summary": "Leave the present tense behind - talk about yesterday, last weekend and past trips, and react to how it all went.",
+      "icon": "🗓️",
+      "available": true,
+      "modules": [
+        "past-time-markers",
+        "what-did-you-do",
+        "how-was-it",
+        "telling-a-trip",
+        "my-yesterday-chat",
+        "a-trip-story-chat"
+      ]
     }
   ]
 }

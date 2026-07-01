@@ -1,0 +1,11 @@
+[
+  { "en": "yesterday", "es": "ayer", "category": "when", "note": "ayer fui al gimnasio = yesterday I went to the gym. Put it at the front." },
+  { "en": "last night", "es": "anoche", "category": "when", "note": "anoche vi el Mundial = last night I watched the World Cup." },
+  { "en": "yesterday morning", "es": "ayer por la mañana", "category": "when", "note": "por la mañana = in the morning; ayer por la mañana = yesterday morning." },
+  { "en": "last week", "es": "la semana pasada", "category": "when", "note": "pasada = last/past. la semana pasada = last week." },
+  { "en": "last weekend", "es": "el fin de semana pasado", "category": "when", "note": "fin de semana = weekend; pasado = last. Masculine, so pasado not pasada." },
+  { "en": "last year", "es": "el año pasado", "category": "when", "note": "el año pasado = last year. año = year." },
+  { "en": "today", "es": "hoy", "category": "when", "note": "The present anchor, useful for contrast: hoy no, ayer sí." },
+  { "en": "this morning", "es": "esta mañana", "category": "when", "note": "esta mañana = this morning; esta tarde = this afternoon." },
+  { "en": "the other day", "es": "el otro día", "category": "when", "note": "el otro día = the other day - a vague recent past." }
+]

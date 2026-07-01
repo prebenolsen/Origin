@@ -1,0 +1,9 @@
+{
+  "slug": "a-trip-story-chat",
+  "title": "A Day in Albir",
+  "summary": "Read Preben's story of a great day in Albir - climbing the mountain, the lighthouse walk, the beach and a shopping trip.",
+  "icon": "🗨️",
+  "kind": "conversation",
+  "format": "conversation",
+  "estMinutes": 5
+}

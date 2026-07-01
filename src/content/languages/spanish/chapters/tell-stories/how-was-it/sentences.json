@@ -1,0 +1,32 @@
+[
+  {
+    "en": "I went to the beach and it was fun",
+    "es": "fui a la playa y fue divertido",
+    "distractors": ["aburrido", "voy"]
+  },
+  {
+    "en": "I watched the World Cup and it was amazing",
+    "es": "vi el Mundial y fue increíble",
+    "distractors": ["terrible", "veo"]
+  },
+  {
+    "en": "I climbed the mountain and it was tough",
+    "es": "subí la montaña y fue duro",
+    "distractors": ["divertido", "fui"]
+  },
+  {
+    "en": "I walked to the lighthouse and it was calm and beautiful",
+    "es": "caminé al faro y fue tranquilo y bonito",
+    "distractors": ["duro", "estuve"]
+  },
+  {
+    "en": "The gym was boring, but the beach was fun",
+    "es": "el gimnasio fue aburrido pero la playa fue divertida",
+    "distractors": ["increíble", "bonito"]
+  },
+  {
+    "en": "I stayed home and it was terrible",
+    "es": "me quedé en casa y fue terrible",
+    "distractors": ["tranquilo", "fui"]
+  }
+]

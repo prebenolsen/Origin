@@ -1,0 +1,11 @@
+{
+  "context": "A story is not just what you did - it is how it was. One tiny word does all the work here: fue = it was. Attach an adjective and you have an instant reaction to anything that happened.",
+  "explanation": "fue = it was, the past of es. Say fue + an adjective: fue divertido = it was fun, fue interesante = it was interesting. You already know interesante from describing people; now use it for experiences. The rest of the reactions come next.",
+  "examples": [
+    { "es": "fui a la playa y fue divertido", "en": "I went to the beach and it was fun", "note": "fue divertido = it was fun." },
+    { "es": "el museo... no, mejor la montaña. Subir fue duro pero increíble", "en": "the museum... no, better the mountain. Climbing was hard but amazing", "note": "fue duro = it was hard; fue increíble = it was amazing." },
+    { "es": "vi el Mundial y fue increíble", "en": "I watched the World Cup and it was amazing", "note": "fue increíble = it was amazing." },
+    { "es": "caminé al faro, fue tranquilo y bonito", "en": "I walked to the lighthouse, it was calm and beautiful", "note": "bonito = beautiful/nice; tranquilo = calm." },
+    { "es": "la reunión fue aburrida", "en": "the meeting was boring", "note": "aburrido = boring (a feminine word takes aburrida)." }
+  ]
+}

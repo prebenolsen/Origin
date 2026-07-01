@@ -1,0 +1,11 @@
+{
+  "context": "Every story needs a when. Before you learn the past-tense verbs, get the time words that tell the listener you are talking about the past - yesterday, last night, last week. Drop one at the start of a sentence and everyone knows you have left the present.",
+  "explanation": "Start with the easy anchors you know: ayer = yesterday, and hoy = today for contrast. Then add anoche = last night. These go at the front: ayer fui al gimnasio = yesterday I went to the gym. The pattern for \"last ...\" comes next with the word pasado.",
+  "examples": [
+    { "es": "ayer fui al gimnasio", "en": "yesterday I went to the gym", "note": "ayer at the front signals the past." },
+    { "es": "anoche vi el Mundial", "en": "last night I watched the World Cup", "note": "anoche = last night." },
+    { "es": "la semana pasada fui a Albir", "en": "last week I went to Albir", "note": "la semana pasada = last week; pasada = last/past." },
+    { "es": "el fin de semana pasado fui a la playa", "en": "last weekend I went to the beach", "note": "el fin de semana pasado - pasado agrees with the masculine fin de semana." },
+    { "es": "el año pasado fui a Albir muchas veces", "en": "last year I went to Albir many times", "note": "el año pasado = last year; muchas veces = many times." }
+  ]
+}

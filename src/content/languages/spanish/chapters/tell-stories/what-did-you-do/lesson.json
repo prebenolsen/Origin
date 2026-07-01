@@ -1,0 +1,11 @@
+{
+  "context": "This is the heart of telling stories: saying what you did. You already know fui (I went) and vi (I saw) - now add a handful more \"I did X\" verbs and you can narrate almost any day.",
+  "explanation": "When someone asks qué hiciste? (what did you do?), you answer with the \"I\" past form. Two you already have: fui = I went and estuve = I was / I stayed somewhere (la semana pasada estuve en Albir). Most other verbs are regular and predictable - that pattern comes in the next batches, one verb at a time.",
+  "examples": [
+    { "es": "qué hiciste ayer?", "en": "what did you do yesterday?", "note": "qué hiciste = what did you do - the question that starts every story." },
+    { "es": "fui al gimnasio y me quedé una hora", "en": "I went to the gym and stayed an hour", "note": "fui = I went; me quedé = I stayed." },
+    { "es": "comí en un bar y bebí una cerveza", "en": "I ate at a bar and drank a beer", "note": "comí (I ate) and bebí (I drank) - the -í ending for these verbs." },
+    { "es": "compré ropa nueva y visité Altea", "en": "I bought new clothes and visited Altea", "note": "compré (I bought) and visité (I visited) - the -é ending." },
+    { "es": "caminé al faro y subí la montaña", "en": "I walked to the lighthouse and climbed the mountain", "note": "caminé (I walked), subí (I went up / climbed)." }
+  ]
+}

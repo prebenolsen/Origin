@@ -1,14 +1,14 @@
 [
   { "en": "I work as", "es": "trabajo como", "category": "work", "note": "trabajo como consultor = I work as a consultant. como = as/like." },
   { "en": "a consultant", "es": "consultor", "category": "work", "note": "trabajo como consultor. A woman says consultora." },
-  { "en": "computing / IT", "es": "informatica", "category": "work", "note": "trabajo en informatica = I work in IT/computing." },
+  { "en": "computing / IT", "es": "informática", "category": "work", "note": "trabajo en informática = I work in IT/computing." },
   { "en": "a data engineer", "es": "ingeniero de datos", "category": "work", "note": "soy ingeniero de datos. datos = data." },
   { "en": "I like to", "es": "me gusta", "category": "grammar", "note": "me gusta + a verb: me gusta crear, me gusta aprender." },
   { "en": "to create programs", "es": "crear programas", "category": "hobby", "note": "me gusta crear programas = I like to create programs." },
   { "en": "to learn new things", "es": "aprender cosas nuevas", "category": "hobby", "note": "me gusta aprender cosas nuevas. cosas = things, nuevas = new." },
   { "en": "I play (games)", "es": "juego a", "category": "hobby", "note": "juego a videojuegos = I play video games; juego a World of Warcraft." },
-  { "en": "I have created", "es": "he creado", "category": "projects", "note": "he creado una aplicacion. he + a -ado/-ido verb = I have done something." },
-  { "en": "an app", "es": "una aplicacion", "category": "projects", "note": "una aplicacion para aprender = an app for learning." },
+  { "en": "I have created", "es": "he creado", "category": "projects", "note": "he creado una aplicación. he + a -ado/-ido verb = I have done something." },
+  { "en": "an app", "es": "una aplicación", "category": "projects", "note": "una aplicación para aprender = an app for learning." },
   { "en": "it is called", "es": "se llama", "category": "projects", "note": "se llama Origin = it is called Origin. Same llamar as me llamo." },
   { "en": "video games", "es": "videojuegos", "category": "hobby", "note": "juego a videojuegos = I play video games." }
 ]

@@ -5,10 +5,10 @@
   { "en": "I live in", "es": "vivo en", "category": "place", "note": "vivo en Bergen; vivo en un apartamento. Swap the last word for any place." },
   { "en": "a city", "es": "una ciudad", "category": "place", "note": "Bergen es una ciudad pequeña = Bergen is a small city." },
   { "en": "small", "es": "pequeña", "category": "description", "note": "una ciudad pequeña. A small thing that is masculine takes pequeño." },
-  { "en": "surrounded by mountains", "es": "rodeada de montañas", "category": "place-desc", "note": "esta rodeada de montañas = it is surrounded by mountains." },
+  { "en": "surrounded by mountains", "es": "rodeada de montañas", "category": "place-desc", "note": "está rodeada de montañas = it is surrounded by mountains." },
   { "en": "it rains a lot", "es": "llueve mucho", "category": "place-desc", "note": "llueve = it rains; mucho = a lot. Very useful in Bergen." },
   { "en": "near the sea", "es": "cerca del mar", "category": "place-desc", "note": "cerca de = near; el mar = the sea. cerca del = cerca de + el." },
-  { "en": "it is / it is located", "es": "esta", "category": "grammar", "note": "esta for where/state: esta cerca del mar. Different from es (what it is)." },
+  { "en": "it is / it is located", "es": "está", "category": "grammar", "note": "está for where/state: está cerca del mar. Different from es (what it is)." },
   { "en": "an apartment", "es": "un apartamento", "category": "home", "note": "vivo en un apartamento = I live in an apartment." },
   { "en": "in the city center", "es": "en el centro", "category": "home", "note": "en el centro de la ciudad = in the city center." }
 ]

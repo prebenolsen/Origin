@@ -1,0 +1,146 @@
+{
+  "intro": "Marta asks Preben what he got up to yesterday. He walks her through the whole day in the past tense - see if you can follow it.",
+  "speakers": [
+    { "id": "marta", "name": "Marta", "side": "left", "avatar": "👩" },
+    { "id": "preben", "name": "Preben", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "marta",
+      "es": "Hola Preben! Qué hiciste ayer?",
+      "en": "Hi Preben! What did you do yesterday?"
+    },
+    {
+      "id": "m2",
+      "speaker": "preben",
+      "es": "Ayer por la mañana fui al gimnasio.",
+      "en": "Yesterday morning I went to the gym."
+    },
+    {
+      "id": "m3",
+      "speaker": "marta",
+      "es": "Qué tal FlexFit?",
+      "en": "How was FlexFit?",
+      "words": [
+        { "es": "qué tal", "en": "how was it / how's" }
+      ]
+    },
+    {
+      "id": "m4",
+      "speaker": "preben",
+      "es": "Fue bien, pero un poco aburrido.",
+      "en": "It was fine, but a bit boring."
+    },
+    {
+      "id": "m5",
+      "speaker": "marta",
+      "es": "Y después?",
+      "en": "And after that?"
+    },
+    {
+      "id": "m6",
+      "speaker": "preben",
+      "es": "Después comí en casa y vi el Mundial.",
+      "en": "After that I ate at home and watched the World Cup."
+    },
+    {
+      "id": "m7",
+      "speaker": "marta",
+      "es": "Dónde viste el Mundial?",
+      "en": "Where did you watch the World Cup?",
+      "words": [
+        { "es": "viste", "en": "did you watch" }
+      ]
+    },
+    {
+      "id": "m8",
+      "speaker": "preben",
+      "es": "En Kasbrane. Fue increíble!",
+      "en": "At Kasbrane. It was amazing!"
+    },
+    {
+      "id": "m9",
+      "speaker": "marta",
+      "es": "Qué bien! Y por la tarde?",
+      "en": "How nice! And in the afternoon?"
+    },
+    {
+      "id": "m10",
+      "speaker": "preben",
+      "es": "Por la tarde caminé al faro y hice fotos.",
+      "en": "In the afternoon I walked to the lighthouse and took photos."
+    },
+    {
+      "id": "m11",
+      "speaker": "marta",
+      "es": "Qué bonito. Hizo sol?",
+      "en": "How lovely. Was it sunny?"
+    },
+    {
+      "id": "m12",
+      "speaker": "preben",
+      "es": "Sí, hizo calor todo el día.",
+      "en": "Yes, it was hot all day.",
+      "words": [
+        { "es": "todo el día", "en": "all day" }
+      ]
+    },
+    {
+      "id": "m13",
+      "speaker": "marta",
+      "es": "Y anoche?",
+      "en": "And last night?"
+    },
+    {
+      "id": "m14",
+      "speaker": "preben",
+      "es": "Anoche me quedé en casa. Estuve cansado.",
+      "en": "Last night I stayed home. I was tired."
+    },
+    {
+      "id": "m15",
+      "speaker": "marta",
+      "es": "Jaja, un buen día!",
+      "en": "Haha, a good day!",
+      "words": [
+        { "es": "jaja", "en": "haha" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "What did Preben do yesterday morning?",
+      "options": ["He went to the beach", "He went to the gym", "He climbed the mountain"],
+      "answer": 1
+    },
+    {
+      "type": "true-false",
+      "prompt": "It rained all day yesterday.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Anoche me quedé en casa. Estuve cansado.",
+      "options": ["Marta", "Preben"],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "Where did Preben watch the World Cup?",
+      "options": ["At home", "At FlexFit", "At Kasbrane"],
+      "answer": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put Preben's day in order.",
+      "items": [
+        "He went to the gym",
+        "He ate and watched the World Cup",
+        "He walked to the lighthouse",
+        "He stayed home in the evening"
+      ]
+    }
+  ]
+}

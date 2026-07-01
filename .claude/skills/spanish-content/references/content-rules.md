@@ -101,8 +101,12 @@ Only the learner's picked options are taught, merged with the base `vocabulary.j
 
 - **Encoding:** UTF-8 without BOM. Valid JSON (no trailing commas/comments).
 - **Punctuation:** ASCII only. Use `-` (hyphen-minus), never `—`/`–`. No smart quotes.
-- **Accents:** this Spanish set stores words without accents (ids are accent-normalized in
-  `srs.vocabId`, so "cafe" and "café" collide). Be consistent - omit accents.
+- **Accents:** write Spanish with correct accents (`á é í ó ú ñ ü`): `está`, `informática`,
+  `qué hiciste`, `caminé`, `increíble`, `el otro día`. Matching is unaffected (ids are
+  accent-normalized in `srs.vocabId`, so "cafe" and "café" collide), but spell them properly.
+  Watch the minimal pairs: `qué/dónde/cómo/cuántos` (interrogative) vs `que/donde/como/cuando`;
+  `está` (verb) vs `esta` (this); `tú` vs `tu`; `sí` vs `si`; `él` vs `el`. Newer chapters
+  ("My Story" onward) follow this; older chapters are inconsistent - match this rule, not them.
 - **Category separation:** never include another module's vocabulary. Greetings is exactly
   hello/goodbye/see-you-later/good-morning/afternoon/evening/thank-you/you're-welcome/
   excuse-me/yes/no. Cafe orders belong to Restaurant.
@@ -120,7 +124,7 @@ Only the learner's picked options are taught, merged with the base `vocabulary.j
 
 ## Publishing flow for a placeholder
 
-1. Fill every `es` in `vocabulary.json` (ASCII, no accents), set `category`.
+1. Fill every `es` in `vocabulary.json` (with correct accents), set `category`.
 2. Add a short `lesson.json` (optional but recommended).
 3. Set `module.json` `"kind"` to `standard` (or `personalized` + add `personalize.json`).
 4. Run the validator; fix errors.

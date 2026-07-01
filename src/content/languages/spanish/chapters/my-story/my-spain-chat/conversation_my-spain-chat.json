@@ -8,10 +8,10 @@
     {
       "id": "m1",
       "speaker": "marta",
-      "es": "Preben, por que vienes tanto a España?",
+      "es": "Preben, por qué vienes tanto a España?",
       "en": "Preben, why do you come to Spain so much?",
       "words": [
-        { "es": "por que", "en": "why" },
+        { "es": "por qué", "en": "why" },
         { "es": "vienes", "en": "do you come" },
         { "es": "tanto", "en": "so much" }
       ]
@@ -38,19 +38,19 @@
     {
       "id": "m4",
       "speaker": "marta",
-      "es": "Que bien! Vienes mucho?",
+      "es": "Qué bien! Vienes mucho?",
       "en": "How nice! Do you come a lot?"
     },
     {
       "id": "m5",
       "speaker": "preben",
-      "es": "He estado aqui casi treinta veces. Me encanta este lugar.",
+      "es": "He estado aquí casi treinta veces. Me encanta este lugar.",
       "en": "I've been here almost 30 times. I love this place."
     },
     {
       "id": "m6",
       "speaker": "marta",
-      "es": "Que te gusta de Albir?",
+      "es": "Qué te gusta de Albir?",
       "en": "What do you like about Albir?"
     },
     {
@@ -62,85 +62,48 @@
     {
       "id": "m8",
       "speaker": "preben",
-      "es": "Tambien voy al gimnasio en Albir. Se llama FlexFit.",
-      "en": "I also go to the gym in Albir. It's called FlexFit."
-    },
-    {
-      "id": "m9",
-      "speaker": "marta",
-      "es": "Como es el gimnasio?",
-      "en": "What's the gym like?"
-    },
-    {
-      "id": "m10",
-      "speaker": "preben",
-      "es": "El equipo es viejo, pero funciona bien.",
-      "en": "The equipment is old, but it works fine.",
-      "words": [
-        { "es": "equipo", "en": "equipment" },
-        { "es": "funciona", "en": "it works" }
-      ]
-    },
-    {
-      "id": "m11",
-      "speaker": "preben",
-      "es": "Y cuando veo el Mundial, voy a Kasbrane. Me encanta!",
-      "en": "And when I watch the World Cup, I go to Kasbrane. I love it!"
-    },
-    {
-      "id": "m12",
-      "speaker": "marta",
-      "es": "Genial! Y que mas te gusta?",
-      "en": "Awesome! And what else do you like?",
-      "words": [
-        { "es": "genial", "en": "great / awesome" },
-        { "es": "que mas", "en": "what else" }
-      ]
-    },
-    {
-      "id": "m13",
-      "speaker": "preben",
-      "es": "Me gusta tomar algo en la Plaza de Altea.",
-      "en": "I like to have a drink at the Altea Plaza."
-    },
-    {
-      "id": "m14",
-      "speaker": "preben",
-      "es": "Tambien me gustan los bares y los restaurantes.",
+      "es": "También me gustan los bares y los restaurantes.",
       "en": "I also like the bars and the restaurants.",
       "words": [
         { "es": "bares", "en": "bars" }
       ]
     },
     {
-      "id": "m15",
+      "id": "m9",
       "speaker": "marta",
-      "es": "Que planes tienes para mañana?",
-      "en": "What plans do you have for tomorrow?",
+      "es": "Visitas otros sitios?",
+      "en": "Do you visit other places?",
       "words": [
-        { "es": "planes", "en": "plans" }
+        { "es": "visitas", "en": "do you visit" },
+        { "es": "otros", "en": "other" }
       ]
     },
     {
-      "id": "m16",
+      "id": "m10",
       "speaker": "preben",
-      "es": "Tengo que ir a La Marina. Necesito ropa nueva.",
-      "en": "I have to go to La Marina. I need new clothes."
+      "es": "Sí, voy a Altea para ir a restaurantes.",
+      "en": "Yes, I go to Altea to go to restaurants.",
+      "words": [
+        { "es": "para", "en": "in order to / for" }
+      ]
     },
     {
-      "id": "m17",
+      "id": "m11",
       "speaker": "marta",
       "es": "Y tu apartamento en Bergen?",
       "en": "And your apartment in Bergen?"
     },
     {
-      "id": "m18",
+      "id": "m12",
       "speaker": "preben",
-      "es": "Cuando estoy aqui, alquilo mi apartamento en Bergen.",
-      "en": "When I'm here, I rent out my apartment in Bergen."
+      "es": "Cuando estoy aquí, alquilo mi apartamento en Bergen.",
+      "en": "When I'm here, I rent out my apartment in Bergen.",
+      "words": [
+        { "es": "cuando", "en": "when" }
+      ]
     },
     {
-      "id": "m19",
+      "id": "m13",
       "speaker": "preben",
       "es": "Gano algo de dinero con Airbnb.",
       "en": "I earn some money with Airbnb.",
@@ -149,12 +112,26 @@
       ]
     },
     {
-      "id": "m20",
+      "id": "m14",
       "speaker": "marta",
-      "es": "Que buena idea! Salud!",
-      "en": "What a good idea! Cheers!",
+      "es": "Qué buena idea!",
+      "en": "What a good idea!",
       "words": [
-        { "es": "buena idea", "en": "good idea" },
+        { "es": "buena idea", "en": "good idea" }
+      ]
+    },
+    {
+      "id": "m15",
+      "speaker": "preben",
+      "es": "Sí! Me gusta buscar nuevos sitios y probar bebidas nuevas.",
+      "en": "Yes! I like to look for new places and try new drinks."
+    },
+    {
+      "id": "m16",
+      "speaker": "marta",
+      "es": "Salud!",
+      "en": "Cheers!",
+      "words": [
         { "es": "salud", "en": "cheers" }
       ]
     }
@@ -176,15 +153,19 @@
       "answer": true
     },
     {
-      "type": "multiple-choice",
-      "prompt": "Where does Preben go to watch the World Cup?",
-      "options": ["FlexFit", "Kasbrane", "La Marina"],
+      "type": "who-said-it",
+      "quote": "Paso mucho tiempo en la playa.",
+      "options": ["Marta", "Preben"],
       "answer": 1
     },
     {
-      "type": "who-said-it",
-      "quote": "El equipo es viejo, pero funciona bien.",
-      "options": ["Marta", "Preben"],
+      "type": "multiple-choice",
+      "prompt": "What does Preben do with his apartment in Bergen?",
+      "options": [
+        "He sells it",
+        "He rents it out on Airbnb",
+        "He leaves it empty"
+      ],
       "answer": 1
     },
     {
@@ -192,8 +173,8 @@
       "prompt": "Put the conversation in order.",
       "items": [
         "His family has an apartment in Albir",
-        "He talks about the beach, the gym and the football",
-        "He plans to go shopping at La Marina",
+        "He talks about the beach and the bars",
+        "He goes to Altea for restaurants",
         "He rents out his Bergen flat on Airbnb"
       ]
     }

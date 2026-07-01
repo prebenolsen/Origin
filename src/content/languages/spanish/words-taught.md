@@ -548,3 +548,42 @@ List of words introduced in this chapter:
 - clothes
 - old
 
+## Chapter 8: Tell Stories
+Total new word entries: 33
+Total new words so far: 546
+Builds on the past forms from Chapter 6 (fui, hice, tuve, vi) and adds the regular preterite.
+List of words introduced in this chapter:
+- last night
+- yesterday morning
+- last week
+- last weekend
+- last year
+- this morning
+- the other day
+- what did you do?
+- I was / I stayed (somewhere)
+- I stayed
+- I ate
+- I drank
+- I bought
+- I visited
+- I walked
+- I went up / I climbed
+- I took photos
+- I had a drink
+- it was
+- fun
+- amazing
+- boring
+- terrible
+- beautiful
+- calm / peaceful
+- hard / tough
+- the lighthouse
+- the mountain
+- the photos
+- the weather
+- it was sunny
+- it was hot
+- it rained
+

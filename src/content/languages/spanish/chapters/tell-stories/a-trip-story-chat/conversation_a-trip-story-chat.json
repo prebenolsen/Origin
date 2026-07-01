@@ -1,0 +1,153 @@
+{
+  "intro": "Marta asks Preben to tell her about Albir. He describes one of his best days there - all in the past tense.",
+  "speakers": [
+    { "id": "marta", "name": "Marta", "side": "left", "avatar": "👩" },
+    { "id": "preben", "name": "Preben", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "marta",
+      "es": "Cuéntame algo de Albir.",
+      "en": "Tell me something about Albir.",
+      "words": [
+        { "es": "cuéntame", "en": "tell me" }
+      ]
+    },
+    {
+      "id": "m2",
+      "speaker": "preben",
+      "es": "El verano pasado subí la montaña.",
+      "en": "Last summer I climbed the mountain.",
+      "words": [
+        { "es": "el verano pasado", "en": "last summer" }
+      ]
+    },
+    {
+      "id": "m3",
+      "speaker": "marta",
+      "es": "Toda la montaña?",
+      "en": "The whole mountain?",
+      "words": [
+        { "es": "toda", "en": "the whole / all" }
+      ]
+    },
+    {
+      "id": "m4",
+      "speaker": "preben",
+      "es": "Sí! Fue duro, pero fue increíble.",
+      "en": "Yes! It was tough, but it was amazing."
+    },
+    {
+      "id": "m5",
+      "speaker": "preben",
+      "es": "Desde arriba hice muchas fotos.",
+      "en": "From the top I took a lot of photos.",
+      "words": [
+        { "es": "desde arriba", "en": "from the top" }
+      ]
+    },
+    {
+      "id": "m6",
+      "speaker": "marta",
+      "es": "Qué valiente! Y qué más hiciste?",
+      "en": "How brave! And what else did you do?",
+      "words": [
+        { "es": "valiente", "en": "brave" },
+        { "es": "qué más", "en": "what else" }
+      ]
+    },
+    {
+      "id": "m7",
+      "speaker": "preben",
+      "es": "Otro día caminé al faro. Fue tranquilo y bonito.",
+      "en": "Another day I walked to the lighthouse. It was calm and beautiful."
+    },
+    {
+      "id": "m8",
+      "speaker": "marta",
+      "es": "Me encanta el faro de Albir.",
+      "en": "I love the Albir lighthouse."
+    },
+    {
+      "id": "m9",
+      "speaker": "preben",
+      "es": "Después fui a la playa y tomé algo en la plaza.",
+      "en": "Afterwards I went to the beach and had a drink in the square."
+    },
+    {
+      "id": "m10",
+      "speaker": "marta",
+      "es": "Qué tiempo hizo?",
+      "en": "What was the weather like?",
+      "words": [
+        { "es": "qué tiempo hizo", "en": "what was the weather like" }
+      ]
+    },
+    {
+      "id": "m11",
+      "speaker": "preben",
+      "es": "Hizo sol y calor. Perfecto.",
+      "en": "It was sunny and hot. Perfect."
+    },
+    {
+      "id": "m12",
+      "speaker": "marta",
+      "es": "Compraste algo?",
+      "en": "Did you buy anything?",
+      "words": [
+        { "es": "compraste", "en": "did you buy" }
+      ]
+    },
+    {
+      "id": "m13",
+      "speaker": "preben",
+      "es": "Sí, fui a La Marina y compré ropa nueva.",
+      "en": "Yes, I went to La Marina and bought new clothes."
+    },
+    {
+      "id": "m14",
+      "speaker": "marta",
+      "es": "Un viaje perfecto!",
+      "en": "A perfect trip!",
+      "words": [
+        { "es": "viaje", "en": "trip" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "What did Preben do last summer?",
+      "options": ["He climbed the mountain", "He visited a museum", "He stayed at a hotel"],
+      "answer": 0
+    },
+    {
+      "type": "true-false",
+      "prompt": "Climbing the mountain was easy for Preben.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Otro día caminé al faro. Fue tranquilo y bonito.",
+      "options": ["Marta", "Preben"],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "What was the weather like?",
+      "options": ["It rained", "It was sunny and hot", "It was cold"],
+      "answer": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put Preben's story in order.",
+      "items": [
+        "He climbed the mountain and took photos",
+        "He walked to the lighthouse",
+        "He went to the beach and had a drink",
+        "He bought new clothes at La Marina"
+      ]
+    }
+  ]
+}
