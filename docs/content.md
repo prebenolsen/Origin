@@ -159,6 +159,7 @@
 | Languages | Spanish · Visiting Spain | Questions                       | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Cafe                            | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Restaurant                      | Travel / survival           | DONE |
+| Languages | Spanish · Visiting Spain | Sharing a Table (conversation)  | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Supermarket (personalized)      | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Shopping (personalized)         | Travel / survival           | DONE |
 | Languages | Spanish · Visiting Spain | Getting Around (directions)     | Travel / survival           | DONE |

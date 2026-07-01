@@ -4,6 +4,23 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [7.1.0] - 2026-07-01
+
+### Content - First Conversation module: "Sharing a Table" (Visiting Spain)
+
+Added the first published Conversation module, slotted right after **Restaurant**
+and before **Supermarket** in the Visiting Spain chapter
+(`chapters/visiting-spain/sharing-a-table/`). Lucia and Sam share a table at a
+busy Madrid cafe: they greet each other, introduce themselves, trade where
+they're from and their age, order a coffee/tea/croissant, ask the price, and
+say goodbye - reinforcing every module taught so far in the chapter (Greetings,
+Introductions, Numbers, Questions, Cafe, Restaurant) in one natural exchange.
+18 short messages, a handful of glossed connector words not yet taught (`y`,
+`tu`, `de`, `vale`, `perfecto`), and 5 comprehension questions spanning all
+four question types (`multiple-choice` x2, `true-false`, `who-said-it`,
+`ordering`). Tagged with `kind: "conversation"` (a new `ModuleKind` value)
+alongside `format: "conversation"`.
+
 ## [7.0.0] - 2026-07-01
 
 ### Feature - New module type: Conversation (chat + comprehension)

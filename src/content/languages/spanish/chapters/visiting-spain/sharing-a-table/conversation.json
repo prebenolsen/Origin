@@ -1,0 +1,169 @@
+{
+  "intro": "Lucia and Sam end up sharing a table at a busy cafe in Madrid.",
+  "speakers": [
+    { "id": "lucia", "name": "Lucia", "side": "left", "avatar": "👩" },
+    { "id": "sam", "name": "Sam", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "lucia",
+      "es": "Hola! Buenos dias.",
+      "en": "Hi! Good morning."
+    },
+    {
+      "id": "m2",
+      "speaker": "sam",
+      "es": "Hola! Perdon, hablo un poco de español.",
+      "en": "Hi! Sorry, I speak a little Spanish."
+    },
+    {
+      "id": "m3",
+      "speaker": "lucia",
+      "es": "Me llamo Lucia. Y tu?",
+      "en": "My name is Lucia. And you?",
+      "words": [
+        { "es": "y", "en": "and" },
+        { "es": "tu", "en": "you" }
+      ]
+    },
+    {
+      "id": "m4",
+      "speaker": "sam",
+      "es": "Me llamo Sam. Mucho gusto.",
+      "en": "My name is Sam. Nice to meet you."
+    },
+    {
+      "id": "m5",
+      "speaker": "lucia",
+      "es": "Mucho gusto, Sam. De donde?",
+      "en": "Nice to meet you, Sam. Where are you from?",
+      "words": [
+        { "es": "de", "en": "from / of" }
+      ]
+    },
+    {
+      "id": "m6",
+      "speaker": "sam",
+      "es": "Soy de Canada. Estoy de vacaciones.",
+      "en": "I'm from Canada. I'm on holiday."
+    },
+    {
+      "id": "m7",
+      "speaker": "lucia",
+      "es": "Cuantos años tienes?",
+      "en": "How old are you?"
+    },
+    {
+      "id": "m8",
+      "speaker": "sam",
+      "es": "Tengo treinta años.",
+      "en": "I'm thirty years old."
+    },
+    {
+      "id": "m9",
+      "speaker": "lucia",
+      "es": "Tengo veinte años.",
+      "en": "I'm twenty years old."
+    },
+    {
+      "id": "m10",
+      "speaker": "sam",
+      "es": "Quiero un cafe con leche. Y tu?",
+      "en": "I'd like a coffee with milk. And you?",
+      "words": [
+        { "es": "y", "en": "and" },
+        { "es": "tu", "en": "you" }
+      ]
+    },
+    {
+      "id": "m11",
+      "speaker": "lucia",
+      "es": "Quiero un te y un cruasan.",
+      "en": "I'd like a tea and a croissant."
+    },
+    {
+      "id": "m12",
+      "speaker": "sam",
+      "es": "Cuanto cuesta el cafe con leche?",
+      "en": "How much is the coffee with milk?"
+    },
+    {
+      "id": "m13",
+      "speaker": "lucia",
+      "es": "Dos euros.",
+      "en": "Two euros."
+    },
+    {
+      "id": "m14",
+      "speaker": "sam",
+      "es": "Perfecto. Necesito la cuenta, por favor.",
+      "en": "Perfect. I need the bill, please.",
+      "words": [
+        { "es": "perfecto", "en": "perfect" }
+      ]
+    },
+    {
+      "id": "m15",
+      "speaker": "lucia",
+      "es": "Necesito un cruasan para llevar, por favor.",
+      "en": "I need a croissant to take away, please."
+    },
+    {
+      "id": "m16",
+      "speaker": "sam",
+      "es": "Vale! Gracias, Lucia.",
+      "en": "Okay! Thanks, Lucia.",
+      "words": [
+        { "es": "vale", "en": "okay" }
+      ]
+    },
+    {
+      "id": "m17",
+      "speaker": "lucia",
+      "es": "De nada. Adios, Sam!",
+      "en": "You're welcome. Bye, Sam!"
+    },
+    {
+      "id": "m18",
+      "speaker": "sam",
+      "es": "Hasta luego!",
+      "en": "See you later!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "Where is Sam from?",
+      "options": ["Italy", "Canada", "Spain"],
+      "answer": 1
+    },
+    {
+      "type": "true-false",
+      "prompt": "Lucia is older than Sam.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Necesito un cruasan para llevar, por favor.",
+      "options": ["Sam", "Lucia"],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "How much does the coffee with milk cost?",
+      "options": ["One euro", "Two euros", "Three euros"],
+      "answer": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put the events in order.",
+      "items": [
+        "They introduce themselves",
+        "They order coffee and a croissant",
+        "Sam asks for the bill",
+        "They say goodbye"
+      ]
+    }
+  ]
+}

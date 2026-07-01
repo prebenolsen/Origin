@@ -57,6 +57,8 @@ export interface Chapter {
 export type ModuleKind =
   /** Fixed, fully authored lesson (e.g. Greetings). */
   | 'standard'
+  /** A read-a-chat comprehension module (pairs with `format: "conversation"`). */
+  | 'conversation'
   /** Asks the learner what's relevant to them, then teaches only that. */
   | 'personalized'
   /** Scaffolding only — awaiting an authored word list. Hidden from learners. */
