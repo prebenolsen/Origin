@@ -1,0 +1,161 @@
+{
+  "intro": "Ana is shopping for a shirt as a gift for her brother. Diego works at the store.",
+  "speakers": [
+    { "id": "ana", "name": "Ana", "side": "left", "avatar": "👩" },
+    { "id": "diego", "name": "Diego", "side": "right", "avatar": "🧑" }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "speaker": "ana",
+      "es": "Hola, buenos dias.",
+      "en": "Hi, good morning."
+    },
+    {
+      "id": "m2",
+      "speaker": "diego",
+      "es": "Hola! Digame.",
+      "en": "Hi! How can I help?",
+      "words": [
+        { "es": "digame", "en": "tell me / how can I help" }
+      ]
+    },
+    {
+      "id": "m3",
+      "speaker": "ana",
+      "es": "Busco una camisa para mi hermano.",
+      "en": "I'm looking for a shirt for my brother."
+    },
+    {
+      "id": "m4",
+      "speaker": "diego",
+      "es": "Muy bien. De que color?",
+      "en": "Great. What color?"
+    },
+    {
+      "id": "m5",
+      "speaker": "ana",
+      "es": "Azul. El es muy alto.",
+      "en": "Blue. He is very tall.",
+      "words": [
+        { "es": "el", "en": "he" }
+      ]
+    },
+    {
+      "id": "m6",
+      "speaker": "diego",
+      "es": "Tenemos esta camisa azul.",
+      "en": "We have this blue shirt.",
+      "words": [
+        { "es": "tenemos", "en": "we have" }
+      ]
+    },
+    {
+      "id": "m7",
+      "speaker": "ana",
+      "es": "Que talla es?",
+      "en": "What size is it?"
+    },
+    {
+      "id": "m8",
+      "speaker": "diego",
+      "es": "Es una talla grande.",
+      "en": "It's a large size."
+    },
+    {
+      "id": "m9",
+      "speaker": "ana",
+      "es": "Perfecto. Cuanto cuesta?",
+      "en": "Perfect. How much is it?"
+    },
+    {
+      "id": "m10",
+      "speaker": "diego",
+      "es": "Veinte euros.",
+      "en": "Twenty euros."
+    },
+    {
+      "id": "m11",
+      "speaker": "ana",
+      "es": "Es muy cara. Tiene otra camisa?",
+      "en": "That's very expensive. Do you have another shirt?",
+      "words": [
+        { "es": "cara", "en": "expensive" }
+      ]
+    },
+    {
+      "id": "m12",
+      "speaker": "diego",
+      "es": "Si. Esta camisa verde cuesta quince euros.",
+      "en": "Yes. This green shirt costs fifteen euros."
+    },
+    {
+      "id": "m13",
+      "speaker": "ana",
+      "es": "Me gusta. Pero es demasiado pequena?",
+      "en": "I like it. But is it too small?",
+      "words": [
+        { "es": "pero", "en": "but" }
+      ]
+    },
+    {
+      "id": "m14",
+      "speaker": "diego",
+      "es": "No, es una talla grande. Perfecta para el.",
+      "en": "No, it's a large size. Perfect for him."
+    },
+    {
+      "id": "m15",
+      "speaker": "ana",
+      "es": "Vale. Me la llevo.",
+      "en": "Okay. I'll take it."
+    },
+    {
+      "id": "m16",
+      "speaker": "diego",
+      "es": "Muy bien. Gracias!",
+      "en": "Great. Thank you!"
+    },
+    {
+      "id": "m17",
+      "speaker": "ana",
+      "es": "Gracias. Adios!",
+      "en": "Thank you. Bye!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "prompt": "Who is the shirt for?",
+      "options": ["Ana's brother", "Ana's friend", "Diego"],
+      "answer": 0
+    },
+    {
+      "type": "true-false",
+      "prompt": "Ana buys the blue shirt.",
+      "answer": false
+    },
+    {
+      "type": "who-said-it",
+      "quote": "Es muy cara. Tiene otra camisa?",
+      "options": ["Ana", "Diego"],
+      "answer": 0
+    },
+    {
+      "type": "multiple-choice",
+      "prompt": "Why doesn't Ana take the blue shirt?",
+      "options": ["It is too small", "It is too expensive", "It is the wrong color"],
+      "answer": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Put the events in order.",
+      "items": [
+        "Ana asks for a shirt for her brother",
+        "Diego shows a blue shirt",
+        "Ana says it is too expensive",
+        "Ana buys the green shirt"
+      ]
+    }
+  ]
+}

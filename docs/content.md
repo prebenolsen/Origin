@@ -198,6 +198,7 @@
 | Languages | Spanish · Visiting Spain II | Getting Around | Conversational travel / navigation | DONE |
 | Languages | Spanish · Visiting Spain II | Eating Out Again (Restaurant v2) | Conversational travel / restaurant interaction | DONE |
 | Languages | Spanish · Visiting Spain II | Colors Around You | Conversational travel / colors | DONE |
+| Languages | Spanish · Visiting Spain II | Buying a Gift (conversation) | Reading comprehension / chat | DONE |
 | Languages | Spanish · Real conversations | Making Plans | Social planning / invitations / scheduling | DONE |
 | Languages | Spanish · Real conversations | Everyday Conversations | Natural flow / opinions / short past stories | DONE |
 

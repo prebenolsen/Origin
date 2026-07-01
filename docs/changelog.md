@@ -4,6 +4,21 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [7.4.0] - 2026-07-01
+
+### Content - New Conversation module: "Buying a Gift" (Visiting Spain II)
+
+Added a Conversation module to the end of the Visiting Spain II chapter
+(`chapters/visiting-spain-ii/buying-a-gift/`). Ana shops for a shirt as a gift
+for her brother and Diego, the shop assistant, helps her negotiate color, size
+and price - reinforcing the chapter's shopping (The Perfect Fit), colors,
+sizes, and people-description vocabulary in a natural two-way exchange. 17 short
+messages; glosses only the handful of new-but-useful words (`digame`, `el`,
+`tenemos`, `cara`, `pero`). 5 comprehension questions span all four types
+(`multiple-choice` x2, `true-false`, `who-said-it`, `ordering`). Content file
+follows the `conversation_<slug>.json` convention
+(`conversation_buying-a-gift.json`); introduces no new tracked vocabulary.
+
 ## [7.3.0] - 2026-07-01
 
 ### Content - New Conversation module: "Getting to Know You" (Meeting People)
