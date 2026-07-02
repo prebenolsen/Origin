@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "timeline": "The shift",
+    "title": "From answers to outcomes",
+    "content": "Ask a chatbot 'how do I plan a trip to Rome?' and it explains. Give an agent 'plan my trip to Rome for next month' and it searches flights, compares hotels, checks the weather, and comes back with an itinerary. The shift is from answering a question to accomplishing a goal - and it changes what AI is for.",
+    "next": "What turns a talking model into a working one?"
+  },
+  {
+    "id": 2,
+    "timeline": "The loop",
+    "title": "The agent loop",
+    "content": "An agent runs a cycle: look at the goal, make a plan, take one action (usually a tool call), observe what happened, and decide the next step. Then repeat - dozens of times if needed - until the goal is reached. You already know every ingredient; the agent just runs them on repeat without waiting for you.",
+    "next": "That last part is the actual definition worth keeping."
+  },
+  {
+    "id": 3,
+    "timeline": "The loop",
+    "title": "What makes it an agent",
+    "content": "In a normal chat, the model takes one turn and stops - you drive every step. In an agent, the model decides the next step itself, again and again, steering its own multi-step process. Autonomy over multiple steps is the defining trait. A useful mental picture: a capable new intern with a checklist, working through it and adapting as they go.",
+    "next": "The recipe has exactly four ingredients."
+  },
+  {
+    "id": 4,
+    "timeline": "The loop",
+    "title": "The recipe: brain, hands, loop, goal",
+    "content": "An agent is an LLM (the brain), plus tools (the hands - search, files, code), plus a loop (the persistence to keep going), plus a goal (the finish line that tells it when to stop). Remove any one ingredient and you are back to an ordinary chatbot with extras.",
+    "next": "The clearest example is probably writing code."
+  },
+  {
+    "id": 5,
+    "timeline": "Agents at work",
+    "title": "Example: the coding agent",
+    "content": "Asked to fix a bug, a coding agent reads the relevant files, forms a theory, edits the code, and runs the tests. Tests fail? It reads the error, revises, and runs them again - looping until they pass. That observe-and-retry cycle, not smarter code-writing, is what separates a coding agent from autocomplete.",
+    "next": "The same loop works on knowledge instead of code."
+  },
+  {
+    "id": 6,
+    "timeline": "Agents at work",
+    "title": "Example: the research agent",
+    "content": "A research agent given 'compare the top e-bike brands' will search, open sources, notice gaps in what it found, search again with sharper queries, cross-check disagreements, and compile a report. Minutes of autonomous looping replace an afternoon of tab-juggling - with the same pattern underneath: plan, act, observe, repeat.",
+    "next": "So why doesn't everything work this way yet?"
+  },
+  {
+    "id": 7,
+    "timeline": "The catch",
+    "title": "Errors compound",
+    "content": "A chatbot's wrong answer costs one bad reply. An agent's wrong step becomes the foundation for every step after it - a misread file in step 3 quietly poisons step 10. If each step is 95 percent reliable, twenty chained steps succeed only about a third of the time. Long chains demand near-perfect links.",
+    "next": "Which is why well-built agents keep a human nearby."
+  },
+  {
+    "id": 8,
+    "timeline": "The catch",
+    "title": "Humans stay in the loop",
+    "content": "Serious agent products add checkpoints: the agent proposes, a human approves - especially for consequential actions like sending money, deleting files, or emailing customers. The intern drafts the email; the manager hits send. Autonomy is a dial to turn up with trust, not a switch to flip on day one.",
+    "next": "One more defense: the word itself is being stretched."
+  },
+  {
+    "id": 9,
+    "timeline": "The catch",
+    "title": "Buzzword check",
+    "content": "Marketing now calls almost anything an 'agent'. Your filter: does the model decide its own next steps and act through tools, in a loop, toward a goal? If it is a single prompt with a fancy interface, it is a feature, not an agent. Asking this question will instantly make you the clearest thinker in the meeting.",
+    "next": "Every agent needs tools to act - and connecting tools used to be a mess. Next: MCP."
+  }
+]

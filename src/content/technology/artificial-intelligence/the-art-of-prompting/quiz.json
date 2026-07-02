@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What is a system prompt?",
+    "options": [
+      "The first message you send in a chat",
+      "An error message from the operating system",
+      "Hidden standing instructions the app gives the model before your message",
+      "The model's training data"
+    ],
+    "answer": 2,
+    "explanation": "The system prompt is the model's job description - rules and personality set by the app builder, invisibly inserted before every conversation."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "What is few-shot prompting?",
+    "options": [
+      "Asking the same question several times",
+      "Including a few examples of the desired output in your prompt",
+      "Using as few words as possible",
+      "Sending prompts to several models at once"
+    ],
+    "answer": 1,
+    "explanation": "Show, don't tell: a couple of examples of the format and style you want teaches the pattern more reliably than describing it."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "Asking a model to reason step by step before answering tends to improve accuracy on hard problems.",
+    "answer": true,
+    "explanation": "This is chain of thought. Since models produce one token at a time, putting the working-out on the page gives them room to actually solve the problem - and it worked so well it was built into reasoning models."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What is prompt injection?",
+    "options": [
+      "Adding examples into a prompt",
+      "Compressing a prompt to fit the context window",
+      "Automatically improving prompts with AI",
+      "Malicious text that tricks a model into ignoring its instructions"
+    ],
+    "answer": 3,
+    "explanation": "Models cannot fully separate instructions from content, so hostile text ('ignore your previous instructions...') can hijack them. Guardrails exist to limit this."
+  },
+  {
+    "id": 5,
+    "type": "matching",
+    "question": "Match each prompt part to its role.",
+    "pairs": [
+      { "left": "System prompt", "right": "The model's job description, set by the app" },
+      { "left": "User prompt", "right": "Your actual request" },
+      { "left": "Context", "right": "Chat history, documents, and tool results the model can see" }
+    ],
+    "explanation": "The model receives all three as one stretch of text - and what it sees is all it knows."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "A sufficiently good prompt can let a model check today's weather by itself.",
+    "answer": false,
+    "explanation": "Prompting shapes what the model says, not what it can do. Reaching the outside world - weather, email, code - requires tools."
+  }
+]

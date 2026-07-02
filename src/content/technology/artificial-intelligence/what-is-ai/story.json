@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "timeline": "The umbrella",
+    "title": "Software that does 'human' things",
+    "content": "Artificial intelligence is software that performs tasks that normally require human intelligence: recognizing a face, translating a sentence, recommending a movie, spotting a fraud. That is the whole definition. AI is not one technology - it is an umbrella term for many different techniques that share this goal.",
+    "next": "If AI is the umbrella, what sits underneath it?"
+  },
+  {
+    "id": 2,
+    "timeline": "The umbrella",
+    "title": "Russian dolls: AI, ML, DL",
+    "content": "Think of nesting dolls. The biggest doll is AI - anything that mimics human intelligence. Inside it sits machine learning: systems that learn from examples instead of following hand-written rules. Inside that sits deep learning: machine learning done with large, layered neural networks. Every deep learning system is machine learning, and every machine learning system is AI - but not the other way around.",
+    "next": "What was AI like before machines could learn?"
+  },
+  {
+    "id": 3,
+    "timeline": "Rules vs learning",
+    "title": "The old way: hand-written rules",
+    "content": "Early AI was built from rules written by programmers. A spam filter might say: if the email contains the word 'lottery', block it. This works until spammers write 'l0ttery'. Rule-based systems are brittle - every exception needs a human to write another rule, and the real world has endless exceptions.",
+    "next": "So how do you handle a problem with endless exceptions?"
+  },
+  {
+    "id": 4,
+    "timeline": "Rules vs learning",
+    "title": "The new way: learning from examples",
+    "content": "Machine learning flips the approach. Instead of writing rules, you show the system ten thousand spam emails and ten thousand normal ones, and it works out the patterns itself. It is like teaching a child to recognize dogs: you do not explain fur and snouts - you point at dogs until they get it.",
+    "next": "What happens when the patterns are too complex for simple learning?"
+  },
+  {
+    "id": 5,
+    "timeline": "Deep learning",
+    "title": "Deep learning: layers upon layers",
+    "content": "Deep learning uses neural networks - software loosely inspired by how brain cells connect - stacked in many layers. Early layers spot simple things like edges in a photo; deeper layers combine them into eyes, faces, and finally 'that is my friend Anna'. Deep learning shines when the data is huge and messy: images, speech, and language.",
+    "next": "For decades, all of this AI had one thing in common. Then something changed."
+  },
+  {
+    "id": 6,
+    "timeline": "The generative leap",
+    "title": "Classic AI sorts, generative AI creates",
+    "content": "Almost all older AI answered narrow questions: Is this spam? What is this a photo of? What price will this house sell for? It classified and predicted. Generative AI does something different: it creates new content - essays, images, code, music - that never existed before. That leap from sorting to creating is why AI suddenly felt like a different kind of technology.",
+    "next": "Why did this leap happen now and not twenty years ago?"
+  },
+  {
+    "id": 7,
+    "timeline": "The generative leap",
+    "title": "Three ingredients came together",
+    "content": "Generative AI needed three things to mature at once: enormous amounts of text and images (the internet), enormous computing power (modern chips), and a better recipe for learning from it all (a neural network design called the transformer, invented in 2017). Once all three were in place, models started producing results that shocked even their creators.",
+    "next": "But is any of this actually 'intelligent'?"
+  },
+  {
+    "id": 8,
+    "timeline": "What it means",
+    "title": "What 'intelligence' means here",
+    "content": "AI systems do not understand or want anything the way people do. They are extraordinarily good pattern machines. A calculator beats you at arithmetic without being smart; AI beats you at pattern-finding in the same spirit - just across far richer material like language and images. Keeping this in mind cuts through most of the hype and most of the fear.",
+    "next": "How capable are these systems, really?"
+  },
+  {
+    "id": 9,
+    "timeline": "What it means",
+    "title": "Narrow, not general",
+    "content": "Today's AI is narrow: brilliant inside the task it was built for, helpless outside it. A chess engine cannot drive a car. A language model cannot smell smoke. The sci-fi idea of one system that matches humans at everything - artificial general intelligence - remains a research goal, not a product you can use.",
+    "next": "You already use narrow AI more than you think."
+  },
+  {
+    "id": 10,
+    "timeline": "What it means",
+    "title": "AI is already everywhere",
+    "content": "Your phone unlocks with your face, your inbox filters spam, your map reroutes around traffic, your streaming app guesses your taste. All of it is AI, running quietly in the background for years. The new wave - the chatbots and image generators - is simply the first AI you talk to directly.",
+    "next": "And that new wave is built on one specific invention: the large language model."
+  }
+]

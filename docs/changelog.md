@@ -4,6 +4,29 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.5.0] - 2026-07-02
+
+### Content - New Technology subcategory "Artificial Intelligence" (11 modules)
+
+A complete top-down learning path through modern AI - built to make products like ChatGPT,
+Claude, and AI coding assistants understandable without jargon. Heavy use of analogies
+(nesting dolls, engine-vs-car, open-book exams, USB-C) and schematic concept maps. Each
+module ships with story, timeline, quiz, and flashcards; the buzzword glossary
+(hallucination, inference, prompt injection, vector database, ...) is distributed across
+the flashcard decks.
+
+1. **What Is AI, Really?** - AI vs ML vs deep learning vs generative AI
+2. **How LLMs Actually Work** - tokens, next-token prediction, training, parameters, context window, temperature, reasoning models, fine-tuning
+3. **ChatGPT Is Not GPT** - company -> model -> app; what the app layer adds
+4. **Prompting: Talking to AI** - system/user prompts, context, few-shot, chain of thought, prompt injection
+5. **Tools: Giving AI Hands** - tool/function calling and the LLM -> tool -> result loop
+6. **Why AI Remembers and Forgets** - context window vs chat history vs saved memory vs retrieval
+7. **Embeddings & RAG: Searching by Meaning** - vectors, vector databases, the RAG pipeline
+8. **Agents: AI That Gets Things Done** - the plan-act-observe loop, compounding errors, humans in the loop
+9. **MCP: A USB-C Port for AI** - the Model Context Protocol and the integration explosion it solves
+10. **APIs & Workflows: How AI Apps Are Built** - renting intelligence per token; workflows vs agents
+11. **The Model Landscape** - model families, major providers, open vs closed weights, benchmarks
+
 ## [9.4.0] - 2026-07-01
 
 ### Content - Proper Spanish accents in the "My Story" and "Tell Stories" chapters

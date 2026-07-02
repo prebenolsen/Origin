@@ -1,0 +1,6 @@
+[
+  { "year": "The search problem", "title": "Keywords match letters, not meaning" },
+  { "year": "Embeddings", "title": "Text becomes coordinates on a map of meaning" },
+  { "year": "RAG", "title": "The open-book exam: retrieve, then answer" },
+  { "year": "Why it matters", "title": "Grounded answers power chatbots everywhere" }
+]

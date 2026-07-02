@@ -1,0 +1,28 @@
+{
+  "title": "APIs & Workflows: How AI Apps Are Built",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "Thousands of AI products, only a handful of model builders. The secret is APIs - and most 'AI products' are actually simple workflows with a model inside one or two steps.",
+  "accent": "#86198f",
+  "context": {
+    "type": "schematic",
+    "headline": "An assembly line with a model inside",
+    "description": "Most business AI is not an agent - it is a fixed pipeline where an LLM handles one or two steps, like reading an invoice out of an email. Understanding the workflow pattern, and the APIs that make it possible, explains where almost all real-world AI value is created today.",
+    "when": "How real products use AI in production",
+    "map": {
+      "markers": [
+        { "id": "email", "label": "Email arrives", "x": 10, "y": 30, "role": "secondary" },
+        { "id": "extract", "label": "LLM extracts invoice", "x": 33, "y": 55, "role": "primary" },
+        { "id": "save", "label": "Save to database", "x": 56, "y": 30, "role": "secondary" },
+        { "id": "reply", "label": "Send reply", "x": 74, "y": 58, "role": "secondary" },
+        { "id": "notify", "label": "Notify Slack", "x": 90, "y": 30, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "email", "to": "extract" },
+        { "from": "extract", "to": "save" },
+        { "from": "save", "to": "reply" },
+        { "from": "reply", "to": "notify" }
+      ]
+    }
+  }
+}

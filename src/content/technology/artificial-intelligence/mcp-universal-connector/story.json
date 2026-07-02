@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "timeline": "The plug problem",
+    "title": "A drawer full of cables",
+    "content": "Remember when every gadget had its own charger, and a drawer at home held a tangle of incompatible cables? Early AI tooling was exactly that. Every AI app that wanted to reach Slack, GitHub, or a database had to build its own custom connection to each one - and every tool had to be re-integrated for every app.",
+    "next": "Multiply apps by tools and you see how bad it gets."
+  },
+  {
+    "id": 2,
+    "timeline": "The plug problem",
+    "title": "The multiplication trap",
+    "content": "Ten AI apps and twenty tools means two hundred custom integrations - each built, tested, and maintained separately. Every new app starts from zero; every tool update breaks things in ten places. This 'N times M' explosion is the classic sign that an industry needs a standard.",
+    "next": "The hardware world already showed the way out."
+  },
+  {
+    "id": 3,
+    "timeline": "The standard",
+    "title": "Enter MCP",
+    "content": "The Model Context Protocol, introduced by Anthropic in late 2024 and since adopted across the industry, is an open standard for connecting AI applications to tools and data. Open means anyone can implement it - it is not locked to one company's models or products.",
+    "next": "The nickname that stuck says it all."
+  },
+  {
+    "id": 4,
+    "timeline": "The standard",
+    "title": "USB-C for AI",
+    "content": "USB-C means one port charges your laptop, connects your screen, and reads your camera - device makers build one plug and trust it fits everywhere. MCP does this for AI: build one MCP connector for your tool, and every MCP-capable AI app can use it. Two hundred custom integrations collapse into ten apps plus twenty connectors.",
+    "next": "So what does one of these connectors actually look like?"
+  },
+  {
+    "id": 5,
+    "timeline": "How it works",
+    "title": "Servers offer, apps discover",
+    "content": "The tool side runs an MCP server - a small program that announces: here are my capabilities, here is how to call them. A GitHub server might offer 'list pull requests' and 'create issue'. The AI app connects, reads the menu of capabilities, and hands it to the model - which then uses them through the same tool-calling loop you already know.",
+    "next": "Nothing new for the model to learn - just new hands to use."
+  },
+  {
+    "id": 6,
+    "timeline": "How it works",
+    "title": "The same loop, standardized",
+    "content": "MCP does not replace tool calling - it standardizes how tools are found and connected. The model still asks, the tool still runs, the result still comes back. What changed is the plumbing: instead of custom wiring per app and per tool, one protocol carries it all. Boring plumbing, transformative effect.",
+    "next": "And the effect is a whole ecosystem."
+  },
+  {
+    "id": 7,
+    "timeline": "Why it matters",
+    "title": "An ecosystem of ready-made connectors",
+    "content": "Because anyone can publish an MCP server, thousands now exist: GitHub, Slack, databases, calendars, file systems, browsers, design tools. Setting up an AI assistant for your tools increasingly means picking connectors off a shelf rather than hiring developers to build integrations - the app-store moment for AI tooling.",
+    "next": "There is a quiet strategic benefit too."
+  },
+  {
+    "id": 8,
+    "timeline": "Why it matters",
+    "title": "Less lock-in, more choice",
+    "content": "When connectors follow a standard, they are not welded to one AI vendor. Switch your assistant from one provider to another, and your MCP connectors come along. Like changing phones without repurchasing your chargers - standards shift power from vendors to users.",
+    "next": "You now have every building block. Time to see how real products assemble them."
+  }
+]

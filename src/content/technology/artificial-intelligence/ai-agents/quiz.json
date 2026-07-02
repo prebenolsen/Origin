@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What is the defining trait of an AI agent?",
+    "options": [
+      "It uses a larger model than a chatbot",
+      "It has a voice interface",
+      "It decides its own next steps in a loop, working toward a goal",
+      "It never hallucinates"
+    ],
+    "answer": 2,
+    "explanation": "Autonomy over multiple steps is the definition: the model plans, acts through tools, observes, and repeats - without you driving each step."
+  },
+  {
+    "id": 2,
+    "type": "ordering",
+    "question": "Put one cycle of the agent loop in order.",
+    "items": [
+      "Observe the result",
+      "Make a plan",
+      "Decide: repeat or finish",
+      "Take an action with a tool"
+    ],
+    "correctOrder": [1, 3, 0, 2],
+    "explanation": "Plan, act, observe, decide - and around again until the goal is reached."
+  },
+  {
+    "id": 3,
+    "type": "matching",
+    "question": "Match each agent ingredient to its role.",
+    "pairs": [
+      { "left": "LLM", "right": "The brain" },
+      { "left": "Tools", "right": "The hands" },
+      { "left": "The loop", "right": "The persistence" },
+      { "left": "The goal", "right": "The finish line" }
+    ],
+    "explanation": "Brain, hands, loop, goal - remove any one and you have an ordinary chatbot with extras."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What separates a coding agent from smart autocomplete?",
+    "options": [
+      "It writes code in more programming languages",
+      "It types faster",
+      "It only works on small files",
+      "It runs the tests, reads failures, and revises - looping until they pass"
+    ],
+    "answer": 3,
+    "explanation": "The observe-and-retry cycle is the difference: the agent checks its own work against reality and keeps going."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "In a long chain of agent steps, small per-step error rates stay small overall.",
+    "answer": false,
+    "explanation": "Errors compound: at 95 percent per step, twenty chained steps succeed only about a third of the time. A wrong step 3 poisons step 10."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "Why do serious agent products keep a human 'in the loop'?",
+    "options": [
+      "So consequential actions get approved before they happen",
+      "Because agents legally require supervision everywhere",
+      "To make the agent run faster",
+      "Because models refuse to work alone"
+    ],
+    "answer": 0,
+    "explanation": "The agent proposes, the human approves - especially for sending money, deleting files, or contacting customers. Autonomy is a dial, not a switch."
+  }
+]

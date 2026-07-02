@@ -1,0 +1,29 @@
+{
+  "title": "Agents: AI That Gets Things Done",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "A chatbot answers a question. An agent takes a goal and works toward it - planning, using tools, checking results, and trying again - until the job is done.",
+  "accent": "#c026d3",
+  "context": {
+    "type": "schematic",
+    "headline": "From one answer to a working loop",
+    "description": "An agent is an LLM put in charge of a loop: it plans, acts through tools, looks at what happened, and decides the next step - repeating until the goal is reached. This loop is what powers coding assistants and research agents, and it is the buzzword most worth understanding precisely.",
+    "when": "Today's biggest AI buzzword, made concrete",
+    "map": {
+      "markers": [
+        { "id": "goal", "label": "Goal", "x": 14, "y": 22, "role": "secondary" },
+        { "id": "plan", "label": "Plan", "x": 44, "y": 30, "role": "primary" },
+        { "id": "act", "label": "Act (use a tool)", "x": 76, "y": 24, "role": "primary" },
+        { "id": "check", "label": "Check the result", "x": 74, "y": 62, "role": "secondary" },
+        { "id": "done", "label": "Done", "x": 34, "y": 80, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "goal", "to": "plan" },
+        { "from": "plan", "to": "act" },
+        { "from": "act", "to": "check" },
+        { "from": "check", "to": "plan", "label": "repeat until solved" },
+        { "from": "check", "to": "done", "label": "goal reached" }
+      ]
+    }
+  }
+}

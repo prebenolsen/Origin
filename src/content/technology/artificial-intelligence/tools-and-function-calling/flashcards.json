@@ -1,0 +1,9 @@
+[
+  { "id": 1, "front": "Tool calling", "back": "The mechanism where an LLM outputs a structured request (like 'search the web for X'), the app runs it, and the result is fed back into the conversation." },
+  { "id": 2, "front": "Function calling", "back": "Another name for tool calling: developers register functions with descriptions, and the model calls them with the right arguments when needed." },
+  { "id": 3, "front": "The tool loop", "back": "LLM -> tool -> result -> LLM. The model asks, the app acts, the result returns, and the model continues with real data." },
+  { "id": 4, "front": "Name four common AI tools", "back": "Web search, code interpreter (running Python), file readers, email/calendar access, image generation." },
+  { "id": 5, "front": "Why can't a raw LLM reliably do arithmetic?", "back": "It predicts plausible text, and plausible digits are often wrong. A code interpreter tool fixes this by computing the real answer." },
+  { "id": 6, "front": "Who decides when a tool is used?", "back": "The model itself - it judges mid-conversation whether to answer from knowledge or reach for a tool." },
+  { "id": 7, "front": "Why do AI tools need guardrails and permissions?", "back": "A model that can act can act wrongly. Limited permissions, confirmations, and sandboxes keep mistakes contained - like a new employee without the master key." }
+]

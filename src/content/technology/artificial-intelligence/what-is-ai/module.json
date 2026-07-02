@@ -1,0 +1,26 @@
+{
+  "title": "What Is AI, Really?",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "AI, machine learning, deep learning, generative AI - the words get mixed up constantly. Learn what each one actually means and how they fit inside each other.",
+  "accent": "#8b5cf6",
+  "context": {
+    "type": "schematic",
+    "headline": "One word, four layers",
+    "description": "AI is an umbrella term, and most confusion comes from mixing up its layers. Machine learning sits inside AI, deep learning sits inside machine learning, and generative AI is the newest layer of all. Once you see the nesting, the whole field snaps into focus.",
+    "when": "From 1950s research labs to the tools you use today",
+    "map": {
+      "markers": [
+        { "id": "ai", "label": "Artificial Intelligence", "x": 18, "y": 22, "role": "primary" },
+        { "id": "ml", "label": "Machine Learning", "x": 40, "y": 42, "role": "secondary" },
+        { "id": "dl", "label": "Deep Learning", "x": 62, "y": 62, "role": "secondary" },
+        { "id": "genai", "label": "Generative AI", "x": 82, "y": 82, "role": "primary" }
+      ],
+      "connections": [
+        { "from": "ai", "to": "ml", "label": "contains" },
+        { "from": "ml", "to": "dl", "label": "contains" },
+        { "from": "dl", "to": "genai", "label": "powers" }
+      ]
+    }
+  }
+}

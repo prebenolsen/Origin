@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "timeline": "The puzzle",
+    "title": "Thousands of apps, a handful of models",
+    "content": "Only a few organizations in the world train frontier models - it costs hundreds of millions. Yet there are thousands of AI products: writing tools, support bots, coding assistants, invoice readers. How does a three-person startup ship an AI product without building an AI? The answer is one of tech's oldest tricks.",
+    "next": "They rent the intelligence."
+  },
+  {
+    "id": 2,
+    "timeline": "APIs",
+    "title": "The AI API: intelligence from a socket",
+    "content": "An API lets a developer's code send a prompt to a provider's model over the internet and get the response back - a few lines of code, paid per token. It is the electricity grid model: you do not build a power plant to make toast, and you do not train a model to summarize documents. You plug in.",
+    "next": "The flow is simpler than you might think."
+  },
+  {
+    "id": 3,
+    "timeline": "APIs",
+    "title": "Developer, API, model, response",
+    "content": "The chain: the developer's app sends a request to the provider's API - say OpenAI's or Anthropic's. The API runs the prompt through the model and returns the text. The app then does whatever it wants with that answer: shows it, stores it, acts on it. Every AI product you have used that is not ChatGPT or Claude itself was almost certainly built this way.",
+    "next": "And what developers build with it is usually not an agent."
+  },
+  {
+    "id": 4,
+    "timeline": "Workflows",
+    "title": "The workflow: a fixed assembly line",
+    "content": "A workflow is a predetermined sequence of steps where an LLM handles one or a few of them. The steps never change order; the model never decides what happens next - it just does its station's job, like one worker on an assembly line. This is the workhorse pattern of business AI.",
+    "next": "One concrete example makes it click."
+  },
+  {
+    "id": 5,
+    "timeline": "Workflows",
+    "title": "Example: the invoice pipeline",
+    "content": "An email arrives. The LLM extracts the invoice details - sender, amount, due date - from the messy text. The amount is saved to the accounting database. A confirmation reply goes to the sender. A notification lands in the finance team's Slack. Five steps, one of them AI. The company saved a full-time job, and no agent was involved.",
+    "next": "So when do you need an agent, and when a workflow?"
+  },
+  {
+    "id": 6,
+    "timeline": "Workflows",
+    "title": "Recipe or chef?",
+    "content": "A workflow is a recipe: fixed steps, same order every time, predictable result. An agent is a chef: given a goal, it improvises the steps. If the path is known in advance - invoices, ticket routing, report generation - use the recipe. Reserve the chef for open-ended problems where the path cannot be scripted.",
+    "next": "In production, the recipe usually wins - for good reasons."
+  },
+  {
+    "id": 7,
+    "timeline": "In production",
+    "title": "Why workflows win at work",
+    "content": "Workflows are predictable (same input, same path), testable (each station checked separately), cheaper (one or two model calls instead of an agent's dozens), and easier to debug (a failure points at one step). When someone says their company 'uses AI', the reality is usually a workflow like the invoice pipeline - and that is not a lesser form of AI; it is the proven one.",
+    "next": "Step back, and all your building blocks form one picture."
+  },
+  {
+    "id": 8,
+    "timeline": "In production",
+    "title": "The assembly kit",
+    "content": "You now hold the full kit: a model accessed via an API, shaped by prompts, extended with tools, grounded by RAG, personalized by memory - arranged either as a fixed workflow or a free agent loop. Every AI product you encounter, from a support bot to a coding assistant, is some arrangement of exactly these pieces.",
+    "next": "One question remains: with so many models on offer, which one goes in the kit?"
+  }
+]

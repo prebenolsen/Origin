@@ -1,0 +1,9 @@
+[
+  { "id": 1, "front": "AI agent", "back": "An LLM in charge of a loop: it plans, acts through tools, observes results, and repeats autonomously until a goal is reached." },
+  { "id": 2, "front": "The agent loop", "back": "Plan -> act (tool call) -> observe -> decide next step -> repeat until done." },
+  { "id": 3, "front": "The four agent ingredients", "back": "LLM (brain) + tools (hands) + loop (persistence) + goal (finish line)." },
+  { "id": 4, "front": "Chatbot vs agent", "back": "A chatbot takes one turn and waits for you. An agent decides its own next steps across many turns - autonomy over multiple steps." },
+  { "id": 5, "front": "Why do agent errors compound?", "back": "Each step builds on the last, so one wrong step becomes the foundation for everything after it. Long chains need near-perfect links." },
+  { "id": 6, "front": "Human in the loop", "back": "A checkpoint where the agent proposes and a human approves - standard practice for consequential actions." },
+  { "id": 7, "front": "How to spot a real agent behind the buzzword", "back": "Ask: does the model decide its own next steps and act through tools, in a loop, toward a goal? If not, it is a feature, not an agent." }
+]

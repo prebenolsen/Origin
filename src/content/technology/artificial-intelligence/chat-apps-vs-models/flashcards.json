@@ -1,0 +1,9 @@
+[
+  { "id": 1, "front": "Model vs app - what is the difference?", "back": "The model (LLM) is the raw engine: text in, text out. The app is the car around it: history, memory, files, voice, tools, and UI." },
+  { "id": 2, "front": "What is the company-model-app chain for OpenAI?", "back": "OpenAI (company) builds GPT-5 (model), which powers ChatGPT (app)." },
+  { "id": 3, "front": "What is the company-model-app chain for Anthropic?", "back": "Anthropic (company) builds Claude models like Claude Opus, which power the Claude app and Claude Code." },
+  { "id": 4, "front": "Name four things the app layer adds on top of the model", "back": "Chat history, saved memory, file uploads, voice, tools (like web search), and the user interface." },
+  { "id": 5, "front": "Why can a chatbot change behavior without a new model?", "back": "The app layer changed - a different system prompt, memory logic, or tools. The experience is model + app, not just the model." },
+  { "id": 6, "front": "Claude Opus vs Sonnet vs Haiku", "back": "One model family in three sizes: Opus (most capable), Sonnet (balanced), Haiku (fastest and cheapest)." },
+  { "id": 7, "front": "Which layer of the AI stack do YOU control?", "back": "The prompt. You cannot change the training or the app, but a sharper prompt can dramatically improve results from the same model." }
+]

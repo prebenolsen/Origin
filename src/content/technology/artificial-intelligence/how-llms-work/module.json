@@ -1,0 +1,27 @@
+{
+  "title": "How LLMs Actually Work",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "Under the hood, a large language model does exactly one thing: predict the next word-piece. Learn how that single trick, repeated fast enough, produces essays, answers, and code.",
+  "accent": "#7c3aed",
+  "context": {
+    "type": "schematic",
+    "headline": "One trick, repeated a thousand times",
+    "description": "Every chatbot answer is built the same way: your prompt goes in, the model predicts the most likely next token, adds it to the text, and repeats. Understanding this loop - and the handful of terms around it - demystifies almost everything about modern AI.",
+    "when": "The engine behind every modern chatbot",
+    "map": {
+      "markers": [
+        { "id": "prompt", "label": "Your prompt", "x": 12, "y": 50, "role": "secondary" },
+        { "id": "llm", "label": "LLM", "x": 42, "y": 50, "role": "primary" },
+        { "id": "token", "label": "Next token", "x": 72, "y": 28, "role": "primary" },
+        { "id": "response", "label": "Growing response", "x": 84, "y": 70, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "prompt", "to": "llm" },
+        { "from": "llm", "to": "token", "label": "predicts" },
+        { "from": "token", "to": "response", "label": "builds up" },
+        { "from": "token", "to": "llm", "label": "feeds back in" }
+      ]
+    }
+  }
+}

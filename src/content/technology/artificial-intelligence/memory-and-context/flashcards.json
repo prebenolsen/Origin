@@ -1,0 +1,9 @@
+[
+  { "id": 1, "front": "Is an LLM stateful or stateless?", "back": "Stateless - it retains nothing between requests. Every apparent memory is text placed into its context window by the app." },
+  { "id": 2, "front": "Context window (as memory)", "back": "Layer 1: the fixed-size whiteboard of text the model sees for one request. On the whiteboard = known; off it = nonexistent." },
+  { "id": 3, "front": "Chat history", "back": "Layer 2: the app re-sends the whole conversation with each message. The model re-reads everything, every time - memory as re-reading." },
+  { "id": 4, "front": "Saved memory", "back": "Layer 3: facts the app extracts ('user is vegetarian'), stores in a database, and re-inserts into future chats. Sticky notes on the monitor." },
+  { "id": 5, "front": "On-demand retrieval", "back": "Layer 4: large document collections stay outside the model; relevant passages are searched out and inserted just in time (the basis of RAG)." },
+  { "id": 6, "front": "Why does AI forget the start of long chats?", "back": "The conversation outgrew the context window, so the oldest messages were dropped or summarized away." },
+  { "id": 7, "front": "Why does a new chat know nothing about yesterday's chat?", "back": "Chat history belongs to one conversation. Only saved memory (extracted facts) crosses between chats." }
+]

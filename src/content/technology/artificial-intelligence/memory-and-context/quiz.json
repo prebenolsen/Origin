@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "true-false",
+    "question": "Between two requests, the LLM itself retains what you told it.",
+    "answer": false,
+    "explanation": "The model is stateless - a blank slate each request. All apparent memory is text placed into the context window by the app."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "How does a chatbot 'remember' your earlier messages within one conversation?",
+    "options": [
+      "The model stores them in its parameters",
+      "The app re-sends the whole conversation with every new message",
+      "The messages are saved to the model's hard drive",
+      "It does not - it guesses from context"
+    ],
+    "answer": 1,
+    "explanation": "The model re-reads the entire conversation fresh each time. Memory within a chat is really re-reading, like re-reading a stack of letters before replying."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "Why does an assistant start forgetting the beginning of a very long conversation?",
+    "options": [
+      "The early messages no longer fit in the context window",
+      "The model gets tired",
+      "Old messages are automatically deleted for privacy",
+      "Temperature increases over time"
+    ],
+    "answer": 0,
+    "explanation": "When the conversation outgrows the window, the oldest parts are dropped or summarized - the beginning is literally no longer in front of the model."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each behavior to the memory layer that explains it.",
+    "pairs": [
+      { "left": "Remembers you are vegetarian across chats", "right": "Saved memory (stored facts, re-inserted)" },
+      { "left": "Forgot the start of this marathon chat", "right": "Context window overflow" },
+      { "left": "Fresh chat knows nothing of yesterday's chat", "right": "Chat history belongs to one conversation" },
+      { "left": "Knows your company handbook", "right": "Documents fetched on demand" }
+    ],
+    "explanation": "Four layers - context window, chat history, saved memory, on-demand retrieval - each produce a different behavior."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "What is the 'memory' feature that some AI apps let you view and edit?",
+    "options": [
+      "The model's parameters",
+      "The raw context window",
+      "A database of extracted facts the app inserts into future chats",
+      "The training data"
+    ],
+    "answer": 2,
+    "explanation": "Saved memory is app-level: notable facts are extracted, stored, and quietly pasted into the context window of later conversations - like sticky notes on a monitor."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "Finding the right document passage for a question is hard because the question and the answer often share no exact words.",
+    "answer": true,
+    "explanation": "'Can I bring my dog?' must match a 'Workplace animal policy' document. Searching by meaning rather than exact words is what embeddings solve - the next module."
+  }
+]

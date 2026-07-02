@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "timeline": "The core trick",
+    "title": "Autocomplete on an enormous scale",
+    "content": "Your phone keyboard suggests the next word as you type. A large language model - an LLM - is that same idea taken to an extreme: given some text, predict what comes next. That is the entire trick. Everything an LLM does - answering questions, writing code, translating - emerges from predicting the next piece of text, over and over.",
+    "next": "But what exactly is a 'piece' of text?"
+  },
+  {
+    "id": 2,
+    "timeline": "The core trick",
+    "title": "Tokens: the LEGO bricks of language",
+    "content": "LLMs do not see letters or whole words. Text is chopped into tokens - common chunks like 'the', 'ing', or 'walk'. A token is roughly three-quarters of a word, so 100 tokens is about 75 words. Each token is converted to a number, because underneath it all, the model is pure math working on numbers.",
+    "next": "So how does one token become a whole answer?"
+  },
+  {
+    "id": 3,
+    "timeline": "The core trick",
+    "title": "One token at a time",
+    "content": "The model reads your prompt and predicts a single next token. That token is stuck onto the text, and the whole thing is fed back in to predict the next one. Then again, and again, dozens of times per second. Like building a sentence one fridge magnet at a time - except the choice of each magnet takes into account everything placed before it.",
+    "next": "How does it know which token is likely? That took some serious schooling."
+  },
+  {
+    "id": 4,
+    "timeline": "Training",
+    "title": "Training: billions of flashcards",
+    "content": "During training, the model reads mountains of text - books, articles, websites, code - and plays the same game endlessly: guess the next token, check the real answer, adjust slightly when wrong. Repeat billions upon billions of times. It is like a student grinding through an impossibly large deck of flashcards until the guesses become uncannily good.",
+    "next": "Where do all those adjustments actually get stored?"
+  },
+  {
+    "id": 5,
+    "timeline": "Training",
+    "title": "Parameters: billions of tiny knobs",
+    "content": "A model's knowledge lives in its parameters - numbers that get nudged up and down during training, like billions of tiny knobs on a gigantic mixing desk. Modern LLMs have hundreds of billions of them. When people say a model is 'bigger', they usually mean it has more parameters - more knobs, more capacity to capture subtle patterns.",
+    "next": "Training builds the model. Using it is a different phase entirely."
+  },
+  {
+    "id": 6,
+    "timeline": "Training",
+    "title": "Training vs inference",
+    "content": "Training happens once, costs enormous amounts of money and computing power, and takes months. Inference is what happens every time you chat: the finished model runs your prompt through its parameters to produce tokens. Think cooking school versus cooking dinner - years of expensive schooling, then fast daily use of what was learned.",
+    "next": "When you chat, how much can the model actually keep in mind?"
+  },
+  {
+    "id": 7,
+    "timeline": "Using the model",
+    "title": "The context window: a desk of fixed size",
+    "content": "The context window is how much text the model can consider at once - prompt plus answer, measured in tokens. Picture a desk of fixed size: you can lay out this many pages, no more. If the conversation outgrows the desk, the oldest pages fall off. Bigger context windows are one of the main ways models have improved.",
+    "next": "There is also a dial that controls how adventurous the answers get."
+  },
+  {
+    "id": 8,
+    "timeline": "Using the model",
+    "title": "Temperature: the adventurousness dial",
+    "content": "For each token, the model does not just have one candidate - it has a ranked list with probabilities. Temperature controls how it picks. Low temperature: always take the safest choice, giving consistent, predictable answers. High temperature: gamble on less likely tokens, giving creative but erratic output. It is a spice level for text.",
+    "next": "This probability game explains AI's most famous flaw."
+  },
+  {
+    "id": 9,
+    "timeline": "Using the model",
+    "title": "Hallucination: confident guessing",
+    "content": "An LLM predicts plausible text, not verified truth. When it does not know something, it does not go silent - it produces the most plausible-sounding continuation, complete with confident tone and made-up details. This is called hallucination. It is not lying; it is a probability machine doing exactly what it was built to do, on a question it cannot actually answer.",
+    "next": "Newer models fight this with a surprisingly human strategy."
+  },
+  {
+    "id": 10,
+    "timeline": "Getting smarter",
+    "title": "Reasoning models: showing their work",
+    "content": "Reasoning models generate a long stretch of 'thinking' tokens before writing the final answer - working through the problem step by step, like a student doing the math in the margin before writing the result. This costs time and tokens but dramatically improves performance on hard problems in math, logic, and code.",
+    "next": "And what if you need a model tuned for your specific field?"
+  },
+  {
+    "id": 11,
+    "timeline": "Getting smarter",
+    "title": "Fine-tuning: from generalist to specialist",
+    "content": "Fine-tuning takes a fully trained model and gives it extra training on a focused dataset - medical texts, legal contracts, a company's support tickets. Like a doctor completing a specialization after medical school. The model keeps its general abilities but gets sharper in the chosen domain.",
+    "next": "So if this is the engine - what is ChatGPT, then?"
+  },
+  {
+    "id": 12,
+    "timeline": "Getting smarter",
+    "title": "The model is not the product",
+    "content": "Everything in this module - tokens, parameters, context, temperature - describes the raw model. But nobody chats with a raw model. Claude and ChatGPT are applications wrapped around LLMs, adding memory, history, tools, and a friendly interface. That wrapper is the next piece of the puzzle.",
+    "next": "Next: why ChatGPT is not GPT, and why the difference matters."
+  }
+]

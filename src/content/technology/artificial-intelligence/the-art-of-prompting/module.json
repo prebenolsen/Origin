@@ -1,0 +1,28 @@
+{
+  "title": "Prompting: Talking to AI",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "The same model can give you a brilliant answer or a useless one - the difference is the prompt. Learn system prompts, few-shot examples, chain of thought, and why prompt engineering became a skill.",
+  "accent": "#a855f7",
+  "context": {
+    "type": "schematic",
+    "headline": "What the model sees is all it knows",
+    "description": "A model's answer is shaped by three inputs: the hidden system prompt setting the rules, your user prompt making the request, and whatever context is included alongside. Learning to shape these inputs is the single highest-leverage AI skill for a normal user.",
+    "when": "The one layer of AI you fully control",
+    "map": {
+      "markers": [
+        { "id": "system", "label": "System prompt", "x": 14, "y": 20, "role": "secondary" },
+        { "id": "user", "label": "Your prompt", "x": 12, "y": 50, "role": "primary" },
+        { "id": "context", "label": "Context (docs, history)", "x": 14, "y": 80, "role": "secondary" },
+        { "id": "llm", "label": "LLM", "x": 55, "y": 50, "role": "primary" },
+        { "id": "answer", "label": "Answer", "x": 86, "y": 50, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "system", "to": "llm", "label": "sets the rules" },
+        { "from": "user", "to": "llm" },
+        { "from": "context", "to": "llm" },
+        { "from": "llm", "to": "answer" }
+      ]
+    }
+  }
+}

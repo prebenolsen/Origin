@@ -1,0 +1,6 @@
+[
+  { "year": "Why prompts matter", "title": "Same model, wildly different results" },
+  { "year": "The inputs", "title": "System prompt, user prompt, and context" },
+  { "year": "Writing better prompts", "title": "Be specific, show examples, ask for step-by-step thinking" },
+  { "year": "The discipline", "title": "Prompt engineering, injection attacks, and guardrails" }
+]

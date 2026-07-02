@@ -1,0 +1,8 @@
+[
+  { "id": 1, "front": "MCP (Model Context Protocol)", "back": "An open standard for connecting AI applications to external tools and data - 'USB-C for AI'. Introduced by Anthropic in late 2024, now industry-wide." },
+  { "id": 2, "front": "The 'N x M' integration problem", "back": "N AI apps and M tools need N x M custom integrations without a standard. MCP reduces it to N apps + M connectors." },
+  { "id": 3, "front": "MCP server", "back": "A small program on the tool side that announces capabilities ('list pull requests', 'create issue') and executes them when called." },
+  { "id": 4, "front": "Does MCP replace tool calling?", "back": "No - the model still uses the normal tool loop. MCP standardizes how tools are discovered and connected: the plumbing, not the engine." },
+  { "id": 5, "front": "Name five things AI connects to via MCP", "back": "GitHub, Slack, databases, calendars, file systems (plus browsers, design tools, and thousands more)." },
+  { "id": 6, "front": "Why do standards like MCP reduce lock-in?", "back": "Connectors work across AI apps, so you can switch providers and keep your integrations - like keeping chargers when you change phones." }
+]

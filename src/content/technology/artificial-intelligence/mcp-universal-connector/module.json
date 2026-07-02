@@ -1,0 +1,30 @@
+{
+  "title": "MCP: A USB-C Port for AI",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "Every AI app used to need its own custom plug for every tool. The Model Context Protocol replaces that mess with one standard connector - build once, plug in anywhere.",
+  "accent": "#d946ef",
+  "context": {
+    "type": "schematic",
+    "headline": "One port, any tool",
+    "description": "Before USB, every device had its own cable. Before MCP, every AI app needed a custom integration for every tool. The Model Context Protocol is an open standard that lets any AI app talk to any tool through one shared connector - and it is fast becoming how AI plugs into the world.",
+    "when": "The emerging standard for connecting AI to everything",
+    "map": {
+      "markers": [
+        { "id": "llm", "label": "AI app / LLM", "x": 14, "y": 50, "role": "primary" },
+        { "id": "mcp", "label": "MCP", "x": 45, "y": 50, "role": "primary" },
+        { "id": "github", "label": "GitHub", "x": 78, "y": 14, "role": "secondary" },
+        { "id": "slack", "label": "Slack", "x": 86, "y": 38, "role": "secondary" },
+        { "id": "database", "label": "Database", "x": 86, "y": 62, "role": "secondary" },
+        { "id": "calendar", "label": "Calendar", "x": 78, "y": 86, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "llm", "to": "mcp", "label": "one standard plug" },
+        { "from": "mcp", "to": "github" },
+        { "from": "mcp", "to": "slack" },
+        { "from": "mcp", "to": "database" },
+        { "from": "mcp", "to": "calendar" }
+      ]
+    }
+  }
+}

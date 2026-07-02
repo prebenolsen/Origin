@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "timeline": "The limitation",
+    "title": "A brilliant brain in a jar",
+    "content": "Left alone, an LLM cannot browse the web, check your calendar, run code, or send an email. It cannot even reliably multiply large numbers - it predicts plausible text, and plausible arithmetic is often wrong. Everything it knows was frozen at training time. It is a brilliant brain in a jar: all thought, no hands.",
+    "next": "So how do today's chatbots search the web and read your files?"
+  },
+  {
+    "id": 2,
+    "timeline": "The idea",
+    "title": "Let the model ask for help",
+    "content": "The solution is elegant: since the model is good at producing text, let it produce a special kind of text - a structured request like 'call the calculator with 847 x 23'. The app watches for these requests, actually performs the action, and pastes the result back into the conversation. The model never touches anything; it asks, and the app does.",
+    "next": "That exchange forms a loop worth memorizing."
+  },
+  {
+    "id": 3,
+    "timeline": "The idea",
+    "title": "The tool loop",
+    "content": "The pattern is: LLM decides it needs help, calls a tool, the tool runs and returns a result, and the result goes back to the LLM, which continues with real data in hand. Like a chef who tastes the sauce, sends an assistant to fetch cream, and keeps cooking when it arrives. One question from you can trigger several trips around this loop.",
+    "next": "Developers have a specific name for this mechanism."
+  },
+  {
+    "id": 4,
+    "timeline": "The idea",
+    "title": "Function calling: the same thing, formalized",
+    "content": "Developers register functions with the model - 'get_weather(city)', 'search_web(query)' - each with a description of what it does. The model reads the descriptions and outputs a call with the right arguments when needed. 'Tool calling' and 'function calling' mean the same thing; you will hear both constantly.",
+    "next": "Here is what it looks like on a real question."
+  },
+  {
+    "id": 5,
+    "timeline": "In action",
+    "title": "Example: the weather question",
+    "content": "You ask: 'Do I need an umbrella in Bergen tomorrow?' The model knows its training data cannot contain tomorrow's weather, so it calls get_weather('Bergen'). The app queries a weather service and returns 'rain, 9 degrees'. The model then answers in plain language: 'Yes - it is expected to rain.' You never saw the machinery, just a chatbot that mysteriously knows the forecast.",
+    "next": "Weather is just one tool in the toolbox."
+  },
+  {
+    "id": 6,
+    "timeline": "In action",
+    "title": "The common toolbox",
+    "content": "The usual suspects: web search for fresh information, a code interpreter for math and data analysis (the model writes Python and runs it - fixing its arithmetic weakness), file readers, email and calendar access, and image generation. Each tool patches a specific hole in what a text predictor can do.",
+    "next": "Who decides when a tool gets used?"
+  },
+  {
+    "id": 7,
+    "timeline": "In action",
+    "title": "The model decides",
+    "content": "You do not press a 'search' button - the model itself judges whether it can answer from knowledge or should reach for a tool. Ask for the capital of France, and it just answers. Ask about this morning's news, and it searches. That judgment call, made fluidly in the middle of a conversation, is a large part of what makes modern assistants feel capable.",
+    "next": "Handing over that judgment also creates risk."
+  },
+  {
+    "id": 8,
+    "timeline": "Power and limits",
+    "title": "Power needs permissions",
+    "content": "A model that can send email can send a wrong email. So tools come with guardrails: limited permissions, confirmation steps for risky actions, sandboxes for running code. Think of a new employee: you give them the tools for the job, not the master key on day one - and you check their work before it goes out.",
+    "next": "Tools solve knowledge and action. One puzzle remains."
+  },
+  {
+    "id": 9,
+    "timeline": "Power and limits",
+    "title": "From advisor to assistant",
+    "content": "Tools mark the shift from AI that gives advice to AI that does work: it can look things up, compute answers, and take actions. Yet this capable assistant still greets you like a stranger in every new chat - it remembers your name one day and forgets your project the next. Why?",
+    "next": "Next: memory and context - why AI remembers some things and forgets others."
+  }
+]

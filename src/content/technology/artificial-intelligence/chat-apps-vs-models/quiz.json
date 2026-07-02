@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What is the relationship between GPT and ChatGPT?",
+    "options": [
+      "They are two names for the same thing",
+      "ChatGPT is the model; GPT is the app",
+      "GPT is the model; ChatGPT is the app built around it",
+      "GPT is a company; ChatGPT is its product"
+    ],
+    "answer": 2,
+    "explanation": "GPT is the engine (the LLM). ChatGPT is the car built around it - the app with history, tools, and an interface. OpenAI is the company that builds both."
+  },
+  {
+    "id": 2,
+    "type": "matching",
+    "question": "Match each company to its model and app pattern.",
+    "pairs": [
+      { "left": "Anthropic", "right": "Claude models, Claude app" },
+      { "left": "OpenAI", "right": "GPT models, ChatGPT app" },
+      { "left": "Google", "right": "Gemini models, Gemini app" }
+    ],
+    "explanation": "The chain is always the same: a company builds a model family and ships an app around it."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "A raw LLM, on its own, remembers your previous messages between requests.",
+    "answer": false,
+    "explanation": "A raw model is text in, text out - once. The app creates the illusion of memory by re-sending the chat history with every message."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "Which of these is provided by the APP layer, not the model itself?",
+    "options": [
+      "Predicting the next token",
+      "Chat history, file uploads, and voice",
+      "The parameters learned during training",
+      "The context window size"
+    ],
+    "answer": 1,
+    "explanation": "History, memory, uploads, voice, tools, and the interface are all app features wrapped around the raw text-in, text-out model."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "A chatbot suddenly behaves differently, but the model version is unchanged. What is a likely explanation?",
+    "options": [
+      "The app layer changed - a new system prompt, memory behavior, or tool",
+      "The model retrained itself overnight",
+      "The context window physically shrank",
+      "Models naturally decay over time"
+    ],
+    "answer": 0,
+    "explanation": "The experience is model plus app. The wrapper can change how the product feels even when the engine is identical."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "One and the same model can power many different products at once.",
+    "answer": true,
+    "explanation": "Same engine, many cars: one model can drive a chat app, a coding tool, and thousands of third-party products via an API."
+  }
+]

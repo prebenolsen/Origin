@@ -1,0 +1,28 @@
+{
+  "title": "Why AI Remembers and Forgets",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "AI recalls your name from last month but forgets what you said an hour ago. It is not random - it is four different memory layers, and once you see them the weirdness makes sense.",
+  "accent": "#7e22ce",
+  "context": {
+    "type": "schematic",
+    "headline": "Four layers of remembering",
+    "description": "The model itself remembers nothing between requests. Everything that feels like memory is built around it: the context window it sees right now, the chat history the app re-sends, the saved facts the app stores, and documents fetched on demand. Each layer explains a different quirk of AI memory.",
+    "when": "Why your chatbot has such a strange memory",
+    "map": {
+      "markers": [
+        { "id": "model", "label": "The model (remembers nothing)", "x": 50, "y": 16, "role": "primary" },
+        { "id": "window", "label": "Context window", "x": 50, "y": 46, "role": "primary" },
+        { "id": "history", "label": "Chat history", "x": 16, "y": 74, "role": "secondary" },
+        { "id": "memory", "label": "Saved memory", "x": 50, "y": 84, "role": "secondary" },
+        { "id": "docs", "label": "Documents on demand", "x": 84, "y": 74, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "window", "to": "model", "label": "all it ever sees" },
+        { "from": "history", "to": "window", "label": "re-sent each turn" },
+        { "from": "memory", "to": "window", "label": "inserted" },
+        { "from": "docs", "to": "window", "label": "retrieved" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+[
+  { "id": 1, "front": "Embedding", "back": "A list of numbers (a vector) representing the meaning of text. Similar meanings get nearby vectors - coordinates on a map of meaning." },
+  { "id": 2, "front": "Vector", "back": "The list of numbers itself, e.g. [0.14, -0.88, ...]. Meaningless to humans alone; the distances between vectors carry the meaning." },
+  { "id": 3, "front": "Semantic search", "back": "Search by meaning instead of exact words: embed the query, find the nearest stored vectors." },
+  { "id": 4, "front": "Vector database", "back": "A database built to store millions of embeddings and answer 'which points are closest to this one?' extremely fast." },
+  { "id": 5, "front": "RAG (Retrieval-Augmented Generation)", "back": "Retrieve relevant passages, paste them into the prompt, and let the LLM answer from them. An open-book exam instead of memorization." },
+  { "id": 6, "front": "Why does RAG beat training on your documents?", "back": "No retraining cost, updates instantly when documents change, and answers can cite their sources." },
+  { "id": 7, "front": "RAG's Achilles heel", "back": "Retrieval quality. If the wrong passages are found, the model builds its answer on the wrong foundation." },
+  { "id": 8, "front": "Name three products built on RAG", "back": "Customer-support chatbots, documentation assistants, and internal company knowledge bots (plus search engines that answer in sentences)." }
+]

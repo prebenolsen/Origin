@@ -1,0 +1,9 @@
+[
+  { "id": 1, "front": "Name the five main model families by what they produce", "back": "LLMs (text), vision models (understand images), speech models (transcribe/speak), image generators, video generators." },
+  { "id": 2, "front": "Multimodal model", "back": "One model handling several formats - e.g. reads a photo and answers in text. Like a colleague who can read, look, and listen." },
+  { "id": 3, "front": "The six major model providers", "back": "OpenAI (GPT), Anthropic (Claude), Google DeepMind (Gemini), Meta (Llama), Mistral AI, xAI (Grok)." },
+  { "id": 4, "front": "Open weights vs closed model", "back": "Open weights: parameters published, anyone can download and run (Llama). Closed: reachable only via the provider's API (GPT, Claude)." },
+  { "id": 5, "front": "The model-choice triangle", "back": "Capability vs speed vs cost. Bigger = smarter, slower, pricier. Match the model size to the task." },
+  { "id": 6, "front": "Benchmark", "back": "A standardized test for comparing models. Useful for shortlisting, but gameable - always try models on your own task." },
+  { "id": 7, "front": "The full AI stack in one line", "back": "Model -> prompts & context -> tools -> RAG -> memory -> APIs -> workflows & agents -> MCP connecting it all." }
+]

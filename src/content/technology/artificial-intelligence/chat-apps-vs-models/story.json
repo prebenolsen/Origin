@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "timeline": "The confusion",
+    "title": "Two names, two different things",
+    "content": "People say 'ChatGPT' when they mean the model, and 'GPT' when they mean the app. But they are different things. GPT is a large language model - the engine. ChatGPT is an application built around that engine. The same split exists everywhere in AI, and untangling it is the key to understanding the product landscape.",
+    "next": "An engine and a car - that analogy carries surprisingly far."
+  },
+  {
+    "id": 2,
+    "timeline": "The confusion",
+    "title": "The engine and the car",
+    "content": "A car engine is powerful but useless on its own - you cannot sit on it or steer it. The car adds seats, a wheel, pedals, and a dashboard to make that power usable. An LLM is the engine: raw capability. The chat app is the car: everything that makes the capability usable by a normal person.",
+    "next": "So who builds what, exactly?"
+  },
+  {
+    "id": 3,
+    "timeline": "The chain",
+    "title": "Company, then model, then app",
+    "content": "The chain has three links. OpenAI (the company) builds GPT-5 (the model), and ships ChatGPT (the app). Anthropic (the company) builds Claude Opus (the model), and ships the Claude app (the product). Google builds Gemini models and ships the Gemini app. Same pattern, every time.",
+    "next": "What would it even be like to use the raw model?"
+  },
+  {
+    "id": 4,
+    "timeline": "The chain",
+    "title": "The raw model is just text in, text out",
+    "content": "A raw LLM has no chat bubbles, no history, no login. You send it text, it returns text - once. It does not remember your previous message unless that message is sent again. It cannot open a file or speak out loud. Everything you associate with 'chatting with AI' beyond pure text completion comes from somewhere else.",
+    "next": "That somewhere else is the app layer - and it adds a lot."
+  },
+  {
+    "id": 5,
+    "timeline": "The app layer",
+    "title": "What the app adds",
+    "content": "The app wraps the model with chat history (your conversations, saved and re-sent), memory (facts it keeps about you), file uploads (turning documents into text the model can read), voice (speech-to-text in, text-to-speech out), tools (web search, code execution), and a friendly interface. None of that is the model - all of it shapes your experience.",
+    "next": "This split explains a complaint you have probably heard."
+  },
+  {
+    "id": 6,
+    "timeline": "The app layer",
+    "title": "'Did the AI get worse?'",
+    "content": "When people say a chatbot suddenly got better or worse, the model may not have changed at all - the app around it might have. A new system prompt, different memory behavior, or a changed tool can transform the experience while the engine stays identical. Knowing the layers tells you where to look.",
+    "next": "And one engine rarely powers just one car."
+  },
+  {
+    "id": 7,
+    "timeline": "The app layer",
+    "title": "Same engine, many cars",
+    "content": "The same Claude model powers the Claude chat app, the Claude Code programming tool, and thousands of third-party products built through an API. Same engine, different vehicles: a sedan, a truck, a race car. When you see an unfamiliar AI product, ask: which model is under the hood?",
+    "next": "The names on those engines follow a pattern too."
+  },
+  {
+    "id": 8,
+    "timeline": "Reading the names",
+    "title": "Families and versions",
+    "content": "Model names work like car model years. GPT-4, GPT-5: same family, newer generations. Claude Opus, Sonnet, and Haiku: one family with large, mid-size, and small variants - more capable versus faster and cheaper. Once you read names this way, AI headlines stop being alphabet soup.",
+    "next": "But the biggest influence on your results is not the app or even the model."
+  },
+  {
+    "id": 9,
+    "timeline": "Reading the names",
+    "title": "The layer you control",
+    "content": "You do not choose how the model was trained, and you barely control the app. But you fully control one layer: what you type. The same model with a sharper prompt can produce dramatically better results. That layer - prompting - is where your leverage lives.",
+    "next": "Next: how to actually talk to these things."
+  }
+]

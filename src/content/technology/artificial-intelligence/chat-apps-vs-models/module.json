@@ -1,0 +1,29 @@
+{
+  "title": "ChatGPT Is Not GPT",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "The model and the app are two different things. Learn the chain from company to model to product - and what the app layer adds on top of the raw engine.",
+  "accent": "#6d28d9",
+  "context": {
+    "type": "schematic",
+    "headline": "Company, model, app - three layers",
+    "description": "OpenAI builds GPT; ChatGPT is the app around it. Anthropic builds Claude models; the Claude app is the product you chat with. Mixing up these layers causes endless confusion. Once you separate the engine from the car, AI news and product names finally make sense.",
+    "when": "The product layer of modern AI",
+    "map": {
+      "markers": [
+        { "id": "anthropic", "label": "Anthropic", "x": 25, "y": 14, "role": "secondary" },
+        { "id": "claude-model", "label": "Claude Opus (model)", "x": 25, "y": 48, "role": "primary" },
+        { "id": "claude-app", "label": "Claude app", "x": 25, "y": 82, "role": "secondary" },
+        { "id": "openai", "label": "OpenAI", "x": 75, "y": 14, "role": "secondary" },
+        { "id": "gpt", "label": "GPT-5 (model)", "x": 75, "y": 48, "role": "primary" },
+        { "id": "chatgpt", "label": "ChatGPT app", "x": 75, "y": 82, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "anthropic", "to": "claude-model", "label": "builds" },
+        { "from": "claude-model", "to": "claude-app", "label": "powers" },
+        { "from": "openai", "to": "gpt", "label": "builds" },
+        { "from": "gpt", "to": "chatgpt", "label": "powers" }
+      ]
+    }
+  }
+}

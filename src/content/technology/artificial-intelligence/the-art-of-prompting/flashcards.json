@@ -1,0 +1,10 @@
+[
+  { "id": 1, "front": "System prompt", "back": "Hidden standing instructions inserted by the app before your message - the model's job description and much of its personality." },
+  { "id": 2, "front": "User prompt", "back": "The message you actually write - your request to the model." },
+  { "id": 3, "front": "Context (in prompting)", "back": "Everything else the model can see: earlier messages, pasted documents, tool results. What the model sees is all it knows." },
+  { "id": 4, "front": "Few-shot prompting", "back": "Including a few examples of the desired output in your prompt so the model copies the pattern. Show, don't tell." },
+  { "id": 5, "front": "Chain of thought", "back": "Prompting the model to reason step by step before answering. Puts the working-out on the page and boosts accuracy on hard problems." },
+  { "id": 6, "front": "Prompt engineering", "back": "The craft of designing, testing, and refining prompts systematically - technical writing for a very literal reader." },
+  { "id": 7, "front": "Prompt injection", "back": "An attack where malicious text (e.g. hidden in a webpage) tricks the model into ignoring its instructions." },
+  { "id": 8, "front": "Guardrails", "back": "Filters and rules around a model that constrain what it can say or be talked into - a defense against misuse and injection." }
+]

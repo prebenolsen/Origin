@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What problem does MCP solve?",
+    "options": [
+      "Models hallucinating facts",
+      "Context windows being too small",
+      "Every AI app needing a custom integration for every tool",
+      "AI models being too slow"
+    ],
+    "answer": 2,
+    "explanation": "Without a standard, N apps and M tools require N x M custom integrations. MCP collapses that into one shared protocol."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "Why is MCP nicknamed 'USB-C for AI'?",
+    "options": [
+      "It physically connects AI chips to computers",
+      "It was invented by the USB consortium",
+      "It only works over USB cables",
+      "One standard connector lets any AI app use any tool, like one port fits all devices"
+    ],
+    "answer": 3,
+    "explanation": "Build one MCP connector for your tool and every MCP-capable app can use it - just as one USB-C port handles charging, screens, and cameras."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "MCP is an open standard that anyone can implement, not locked to one company's models.",
+    "answer": true,
+    "explanation": "Introduced by Anthropic in late 2024, MCP is open - which is why it spread across the industry and works with many AI apps and providers."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What does an MCP server do?",
+    "options": [
+      "Trains language models on tool data",
+      "Announces a tool's capabilities and executes calls to them",
+      "Stores embeddings for semantic search",
+      "Hosts the LLM itself"
+    ],
+    "answer": 1,
+    "explanation": "An MCP server is a small program on the tool side: it publishes a menu of capabilities (like 'create issue') and carries them out when the AI app calls."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "MCP replaces tool calling with a completely different mechanism.",
+    "answer": false,
+    "explanation": "MCP standardizes how tools are discovered and connected - the model still uses the same tool-calling loop. It is plumbing, not a new engine."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "How does MCP reduce vendor lock-in?",
+    "options": [
+      "Standard connectors work across AI apps, so switching providers keeps your integrations",
+      "It forces all companies to use the same model",
+      "It makes AI apps free",
+      "It stores all data with a neutral third party"
+    ],
+    "answer": 0,
+    "explanation": "Like keeping your chargers when you change phones: connectors built to a standard are not welded to one AI vendor."
+  }
+]

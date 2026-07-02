@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "What is an embedding?",
+    "options": [
+      "A compressed copy of a document",
+      "A list of numbers representing the meaning of a piece of text",
+      "A keyword index of a document",
+      "A type of neural network layer"
+    ],
+    "answer": 1,
+    "explanation": "An embedding is a vector - coordinates on a 'map of meaning'. Texts with similar meaning get vectors that sit close together."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "question": "'I cannot log in' and 'How do I reset my password?' can match in a vector search even though they share almost no words.",
+    "answer": true,
+    "explanation": "That is the whole point of embeddings: similar meaning lands at nearby points, so search works by meaning instead of exact words."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What does a vector database do?",
+    "options": [
+      "Trains embedding models",
+      "Stores chat history for AI apps",
+      "Stores millions of embeddings and finds the nearest ones to a query fast",
+      "Converts text into tokens"
+    ],
+    "answer": 2,
+    "explanation": "A vector database is built for one job: nearest-neighbor search over embeddings - like a library where books shelve themselves by topic."
+  },
+  {
+    "id": 4,
+    "type": "ordering",
+    "question": "Put the RAG pipeline in the correct order.",
+    "items": [
+      "Paste the best passages into the prompt",
+      "The LLM answers grounded in the retrieved text",
+      "Embed the user's question",
+      "Search the vector database for similar passages"
+    ],
+    "correctOrder": [2, 3, 0, 1],
+    "explanation": "Embed the question, retrieve the nearest passages, add them to the prompt, and let the model answer from what is in front of it."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "Why use RAG instead of training the model on your company documents?",
+    "options": [
+      "RAG makes the model permanently smarter",
+      "Training is cheap but RAG is more fashionable",
+      "RAG works without a language model",
+      "Training is expensive, slow, and stale; retrieval is instant and always current"
+    ],
+    "answer": 3,
+    "explanation": "RAG is the open-book exam: no retraining needed, documents can change daily, and the model looks up what it needs at answer time."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "If the retrieval step surfaces the wrong passages, the LLM will usually still produce a correct answer.",
+    "answer": false,
+    "explanation": "RAG is only as good as its retrieval - the model faithfully builds on whatever text it is given. Garbage retrieved, garbage answered."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "How does RAG reduce hallucination?",
+    "options": [
+      "The model answers with the source text in front of it, so it can quote instead of guess",
+      "It lowers the model's temperature",
+      "It removes the context window limit",
+      "It blocks all questions the model cannot answer"
+    ],
+    "answer": 0,
+    "explanation": "Grounding answers in retrieved text means the model reads rather than invents - not foolproof, but dramatically more reliable."
+  }
+]

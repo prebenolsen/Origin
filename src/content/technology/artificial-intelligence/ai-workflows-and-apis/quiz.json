@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "How does a small startup ship an AI product without training a model?",
+    "options": [
+      "By copying an open model's training data",
+      "By hiring the model's original researchers",
+      "By waiting for models to become free",
+      "By calling a provider's model through an API, paying per token"
+    ],
+    "answer": 3,
+    "explanation": "APIs are the electricity grid of AI: send a prompt over the internet, get a response, pay for what you use. No power plant required."
+  },
+  {
+    "id": 2,
+    "type": "ordering",
+    "question": "Order the chain of an API call.",
+    "items": [
+      "The model generates a response",
+      "The developer's app sends a prompt to the provider's API",
+      "The app uses the returned text",
+      "The API runs the prompt through the model"
+    ],
+    "correctOrder": [1, 3, 0, 2],
+    "explanation": "Developer -> API -> model -> response -> back to the app. This is how nearly every third-party AI product works."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What defines a workflow, as opposed to an agent?",
+    "options": [
+      "It uses smaller models",
+      "The steps are fixed in advance; the model never chooses what happens next",
+      "It cannot use an LLM",
+      "It always involves email"
+    ],
+    "answer": 1,
+    "explanation": "A workflow is a recipe: a predetermined pipeline where the LLM does its station's job. An agent is a chef who improvises the steps."
+  },
+  {
+    "id": 4,
+    "type": "true-false",
+    "question": "In the invoice pipeline example, the LLM decides which step to perform next.",
+    "answer": false,
+    "explanation": "The pipeline order is fixed: email -> extract -> save -> reply -> notify. The LLM only performs the extraction step. No agent needed."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "Why do companies often prefer workflows over agents in production?",
+    "options": [
+      "Workflows are predictable, testable, cheaper, and easier to debug",
+      "Agents are illegal in most industries",
+      "Workflows do not require any code",
+      "Agents cannot use APIs"
+    ],
+    "answer": 0,
+    "explanation": "Same input, same path; each station testable; one or two model calls instead of dozens; failures point at a single step."
+  },
+  {
+    "id": 6,
+    "type": "matching",
+    "question": "Match each situation to the better pattern.",
+    "pairs": [
+      { "left": "Processing every incoming invoice the same way", "right": "Workflow (the path is known)" },
+      { "left": "Investigate why sales dropped in one region", "right": "Agent (the path cannot be scripted)" },
+      { "left": "Routing support tickets by topic", "right": "Workflow (fixed, repeatable steps)" }
+    ],
+    "explanation": "Known path -> recipe (workflow). Open-ended problem -> chef (agent). Most business AI is the recipe."
+  }
+]

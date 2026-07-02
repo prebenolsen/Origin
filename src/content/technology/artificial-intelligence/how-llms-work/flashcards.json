@@ -1,0 +1,12 @@
+[
+  { "id": 1, "front": "LLM (Large Language Model)", "back": "A model trained on massive text that generates answers by predicting the next token, over and over." },
+  { "id": 2, "front": "Token", "back": "A chunk of text (about 3/4 of a word) that the model reads and writes. Text is chopped into tokens and handled as numbers." },
+  { "id": 3, "front": "Context window", "back": "The maximum amount of text (in tokens) a model can consider at once - prompt plus answer. Like a desk of fixed size." },
+  { "id": 4, "front": "Parameters", "back": "The billions of adjustable numbers inside a model where its learned knowledge lives. More parameters = a bigger model." },
+  { "id": 5, "front": "Training", "back": "The one-time learning phase: guess the next token on mountains of text, adjust when wrong, repeat billions of times." },
+  { "id": 6, "front": "Inference", "back": "Using the trained model - what happens every time you send a prompt and it generates tokens." },
+  { "id": 7, "front": "Temperature", "back": "A dial controlling randomness in token choice. Low = safe and consistent; high = creative but erratic." },
+  { "id": 8, "front": "Hallucination", "back": "When a model confidently produces plausible-sounding but false information. Probability, not truth - it guesses instead of going silent." },
+  { "id": 9, "front": "Reasoning model", "back": "An LLM that generates step-by-step 'thinking' tokens before its final answer. Slower, but far better at hard problems." },
+  { "id": 10, "front": "Fine-tuning", "back": "Extra training of a finished model on a focused dataset to make it a specialist - like a doctor doing a specialization." }
+]

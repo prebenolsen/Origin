@@ -139,6 +139,17 @@
 | Technology | Data Engineering | The Lakehouse Idea | Combining the flexibility of data lakes with the reliability of warehouses | DONE |
 | Technology | Data Engineering | Delta Lake Solves Reliability Problems | ACID transactions and trustworthy tables on top of the data lake | DONE |
 | Technology | Data Engineering | How Companies Use Databricks Today | Ingestion, pipelines, jobs, streaming, batch, and AI in production | DONE |                                  | Era/Context                 | Status |
+| Technology | Artificial Intelligence | What Is AI, Really? | AI vs machine learning vs deep learning, and what "intelligence" means | DONE |
+| Technology | Artificial Intelligence | How LLMs Actually Work | Tokens, next-token prediction, training, parameters, temperature, reasoning | DONE |
+| Technology | Artificial Intelligence | ChatGPT Is Not GPT | Company vs model vs app, and what the app layer adds | DONE |
+| Technology | Artificial Intelligence | Prompting: Talking to AI | System prompts, few-shot, chain of thought, prompt injection | DONE |
+| Technology | Artificial Intelligence | Tools: Giving AI Hands | Tool/function calling and the LLM-tool-result loop | DONE |
+| Technology | Artificial Intelligence | Why AI Remembers and Forgets | Context window, chat history, saved memory, retrieval | DONE |
+| Technology | Artificial Intelligence | Embeddings & RAG: Searching by Meaning | Vectors, vector databases, and the RAG pipeline | DONE |
+| Technology | Artificial Intelligence | Agents: AI That Gets Things Done | The plan-act-observe loop, compounding errors, humans in the loop | DONE |
+| Technology | Artificial Intelligence | MCP: A USB-C Port for AI | The Model Context Protocol and the integration explosion it solves | DONE |
+| Technology | Artificial Intelligence | APIs & Workflows: How AI Apps Are Built | Renting intelligence per token; workflows vs agents | DONE |
+| Technology | Artificial Intelligence | The Model Landscape | Model families, major providers, open vs closed weights, benchmarks | DONE |
 | Science  | Universe    | The Big Bang and the origin of the universe | ~13.8 billion BCE – present | ------ |
 | Science  | Universe    | Stars, galaxies, and black holes            | ~13 billion BCE – present   | DONE |
 | Science  | Universe    | The Solar System and planets                | ~4.6 billion BCE – present  | ------ |

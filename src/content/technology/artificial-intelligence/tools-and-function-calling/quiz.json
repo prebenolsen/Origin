@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Which of these can a raw LLM do WITHOUT tools?",
+    "options": [
+      "Browse today's news",
+      "Send an email",
+      "Write a poem about the sea",
+      "Check your calendar"
+    ],
+    "answer": 2,
+    "explanation": "A raw model can only produce text from its training. Anything involving the outside world - fresh information, your accounts, running code - requires tools."
+  },
+  {
+    "id": 2,
+    "type": "ordering",
+    "question": "Put the tool loop in the correct order.",
+    "items": [
+      "The tool runs and produces a result",
+      "The model continues its answer using the result",
+      "The model outputs a structured tool request",
+      "The result is fed back to the model"
+    ],
+    "correctOrder": [2, 0, 3, 1],
+    "explanation": "LLM requests, the app runs the tool, the result flows back, and the model continues with real data in hand."
+  },
+  {
+    "id": 3,
+    "type": "true-false",
+    "question": "The LLM itself directly executes tools like web search and code.",
+    "answer": false,
+    "explanation": "The model only produces a structured request. The app around it performs the actual action and pastes the result back - the model asks, the app does."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "What is the relationship between 'tool calling' and 'function calling'?",
+    "options": [
+      "Function calling is only for math",
+      "They are two names for the same mechanism",
+      "Tool calling is a security flaw; function calling is the fix",
+      "Tool calling happens during training"
+    ],
+    "answer": 1,
+    "explanation": "Both describe the model outputting a structured call to a registered function or tool. Developers use the terms interchangeably."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "Why does a code interpreter tool fix an LLM's arithmetic weakness?",
+    "options": [
+      "It increases the model's parameter count",
+      "It retrains the model on math problems",
+      "It makes the context window larger",
+      "The model writes real code that computes the exact answer instead of predicting plausible digits"
+    ],
+    "answer": 3,
+    "explanation": "Predicting plausible text gives plausible - often wrong - arithmetic. Running actual Python gives exact answers."
+  },
+  {
+    "id": 6,
+    "type": "true-false",
+    "question": "The user must manually choose which tool the model uses for each question.",
+    "answer": false,
+    "explanation": "The model itself decides when a tool is needed - answering from knowledge when it can, reaching for search or code when it should."
+  }
+]

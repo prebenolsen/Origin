@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "At its core, what single operation does an LLM perform?",
+    "options": [
+      "Searching a database of stored answers",
+      "Translating text into other languages",
+      "Predicting the next token given the text so far",
+      "Checking facts against the internet"
+    ],
+    "answer": 2,
+    "explanation": "Everything an LLM does emerges from one trick: predicting the most likely next token, adding it, and repeating."
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "question": "What is a token?",
+    "options": [
+      "A chunk of text - roughly three-quarters of a word - converted to a number",
+      "A password used to access an AI model",
+      "One full sentence of text",
+      "A unit of computing power"
+    ],
+    "answer": 0,
+    "explanation": "Text is chopped into common chunks called tokens. The model works on these as numbers - it never sees letters directly."
+  },
+  {
+    "id": 3,
+    "type": "ordering",
+    "question": "Put the steps of generating a response in order.",
+    "items": [
+      "The new token is added and everything is fed back in",
+      "The model reads the prompt",
+      "Repeat until the answer is complete",
+      "The model predicts one next token"
+    ],
+    "correctOrder": [1, 3, 0, 2],
+    "explanation": "Read the text, predict one token, append it, feed it all back in - and loop. The answer grows one token at a time."
+  },
+  {
+    "id": 4,
+    "type": "matching",
+    "question": "Match each term to its analogy.",
+    "pairs": [
+      { "left": "Parameters", "right": "Billions of knobs on a mixing desk" },
+      { "left": "Context window", "right": "A desk that fits a fixed number of pages" },
+      { "left": "Temperature", "right": "A spice level for text" },
+      { "left": "Training", "right": "Grinding through billions of flashcards" }
+    ],
+    "explanation": "Parameters store what was learned, the context window limits what fits in one go, temperature controls how adventurous token choices are, and training is endless guess-and-adjust practice."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "question": "When an LLM hallucinates, it is deliberately lying to the user.",
+    "answer": false,
+    "explanation": "Hallucination is confident guessing: the model produces the most plausible-sounding text even when it has no real answer. It predicts plausibility, not truth."
+  },
+  {
+    "id": 6,
+    "type": "multiple-choice",
+    "question": "What is the difference between training and inference?",
+    "options": [
+      "Training is done by users; inference is done by developers",
+      "Training builds the model once (slow, expensive); inference is using it for each chat (fast)",
+      "Inference only happens on reasoning models",
+      "They are two words for the same thing"
+    ],
+    "answer": 1,
+    "explanation": "Training is the months-long, costly learning phase. Inference is every individual use of the finished model - like cooking school versus cooking dinner."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "What makes a reasoning model different from a standard LLM?",
+    "options": [
+      "It has a bigger context window",
+      "It searches the web before answering",
+      "It never hallucinates",
+      "It generates step-by-step 'thinking' tokens before the final answer"
+    ],
+    "answer": 3,
+    "explanation": "Reasoning models work through the problem in the margin first - slower and more expensive, but much better on hard math, logic, and code."
+  }
+]

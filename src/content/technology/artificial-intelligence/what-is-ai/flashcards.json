@@ -1,0 +1,10 @@
+[
+  { "id": 1, "front": "Artificial Intelligence (AI)", "back": "Software that performs tasks that normally require human intelligence. An umbrella term covering many techniques." },
+  { "id": 2, "front": "Machine Learning (ML)", "back": "A subset of AI where systems learn patterns from examples instead of following hand-written rules." },
+  { "id": 3, "front": "Deep Learning", "back": "Machine learning using large, layered neural networks. Excels at messy data like images, speech, and language." },
+  { "id": 4, "front": "Neural network", "back": "Software loosely inspired by how brain cells connect. Layers build up from simple patterns (edges) to complex ones (faces)." },
+  { "id": 5, "front": "Generative AI", "back": "AI that creates new content - text, images, code, music - instead of just classifying or predicting." },
+  { "id": 6, "front": "Narrow AI", "back": "AI that is excellent at one specific task and helpless outside it. All AI you can use today is narrow." },
+  { "id": 7, "front": "What three ingredients enabled generative AI?", "back": "Huge amounts of data (the internet), huge computing power (modern chips), and a better learning recipe (the transformer, 2017)." },
+  { "id": 8, "front": "Is AI conscious or 'understanding' like a human?", "back": "No. It is an extraordinarily good pattern machine - like a calculator, but for language and images instead of arithmetic." }
+]

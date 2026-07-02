@@ -1,0 +1,29 @@
+{
+  "title": "Embeddings & RAG: Searching by Meaning",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "How does a chatbot answer questions about YOUR documents? Not by training on them - by turning meaning into coordinates and letting the model take an open-book exam.",
+  "accent": "#a21caf",
+  "context": {
+    "type": "schematic",
+    "headline": "An open-book exam for AI",
+    "description": "RAG - retrieval-augmented generation - is how AI answers from documents it was never trained on. The question is converted into a point in 'meaning space', the nearest passages are found in a vector database, and the model answers with those passages in front of it. It powers nearly every company chatbot you meet.",
+    "when": "Behind almost every 'chat with your documents' product",
+    "map": {
+      "markers": [
+        { "id": "question", "label": "Your question", "x": 12, "y": 30, "role": "secondary" },
+        { "id": "vectordb", "label": "Vector search", "x": 38, "y": 55, "role": "primary" },
+        { "id": "docs", "label": "Your documents", "x": 32, "y": 86, "role": "secondary" },
+        { "id": "llm", "label": "LLM", "x": 68, "y": 38, "role": "primary" },
+        { "id": "answer", "label": "Grounded answer", "x": 88, "y": 65, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "question", "to": "vectordb", "label": "embedded" },
+        { "from": "docs", "to": "vectordb", "label": "indexed" },
+        { "from": "vectordb", "to": "llm", "label": "best passages" },
+        { "from": "question", "to": "llm" },
+        { "from": "llm", "to": "answer" }
+      ]
+    }
+  }
+}

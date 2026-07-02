@@ -1,0 +1,9 @@
+[
+  { "id": 1, "front": "AI API", "back": "A service letting any developer send prompts to a provider's model over the internet and get responses back, paid per token. How most AI products are built." },
+  { "id": 2, "front": "The API chain", "back": "Developer's app -> provider's API -> model -> response -> back to the app, which displays, stores, or acts on it." },
+  { "id": 3, "front": "AI workflow", "back": "A fixed pipeline of steps where an LLM handles one or a few stations. The model never chooses the next step." },
+  { "id": 4, "front": "Workflow vs agent", "back": "Workflow = recipe (fixed steps, predictable). Agent = chef (given a goal, improvises the steps). Known path -> workflow; open-ended -> agent." },
+  { "id": 5, "front": "The invoice pipeline example", "back": "Email -> LLM extracts invoice -> save to database -> reply -> notify Slack. Five steps, one of them AI, no agent needed." },
+  { "id": 6, "front": "Why workflows dominate production AI", "back": "Predictable, testable per step, cheaper (fewer model calls), and easy to debug. Most corporate 'AI' is a workflow." },
+  { "id": 7, "front": "The full AI assembly kit", "back": "Model (via API) + prompts + tools + RAG + memory, arranged as either a workflow or an agent loop. Every AI product is some arrangement of these." }
+]

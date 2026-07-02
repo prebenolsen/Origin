@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "timeline": "The search problem",
+    "title": "When keywords fail",
+    "content": "Search for 'car' and you miss every document that says 'automobile'. Ask 'can I bring my dog to work?' and the answer hides in a file called 'Workplace animal policy'. Keyword search matches letters, not meaning - and meaning is what you actually want. For decades, this was one of computing's stubborn problems.",
+    "next": "The solution sounds almost too strange to work: turn meaning into numbers."
+  },
+  {
+    "id": 2,
+    "timeline": "Embeddings",
+    "title": "Embeddings: meaning as coordinates",
+    "content": "An embedding model converts any text into a long list of numbers - a vector, like [0.14, -0.88, ...]. Think of it as coordinates on a map of meaning: 'dog' lands near 'puppy' and 'labrador', and far from 'spreadsheet'. The numbers themselves mean nothing to humans; the distances between them mean everything.",
+    "next": "Because distance is where the magic happens."
+  },
+  {
+    "id": 3,
+    "timeline": "Embeddings",
+    "title": "Similar meaning, nearby points",
+    "content": "'How do I reset my password?' and 'I cannot log in to my account' share almost no words - but their embeddings land close together, because they mean nearly the same thing. Suddenly, finding relevant text becomes geometry: embed the question, and look for whatever sits nearby on the meaning map.",
+    "next": "Now you need somewhere to keep millions of those points."
+  },
+  {
+    "id": 4,
+    "timeline": "Embeddings",
+    "title": "The vector database",
+    "content": "A vector database stores millions of embeddings and answers one question extremely fast: which stored points are closest to this new one? It is a library where books shelve themselves by topic - and nearest-neighbor search is how you walk straight to the right shelf. Embed your documents once, and search by meaning forever.",
+    "next": "This machinery sets up one of the most useful patterns in all of AI."
+  },
+  {
+    "id": 5,
+    "timeline": "RAG",
+    "title": "The problem RAG solves",
+    "content": "An LLM knows nothing about your company's handbook, your product docs, or last week's meeting notes. Training it on them would cost a fortune, take weeks, and be stale the moment a document changes. You need the model to use knowledge it was never trained on - fresh, private, and specific.",
+    "next": "The trick: stop making the model memorize, and hand it the book."
+  },
+  {
+    "id": 6,
+    "timeline": "RAG",
+    "title": "The open-book exam",
+    "content": "RAG - retrieval-augmented generation - is an open-book exam. Instead of memorizing everything (training), the model gets to look things up at answer time. Question comes in, the relevant pages are found and placed in front of the model, and it answers from what is on the page. No retraining, always current.",
+    "next": "Here is the full pipeline, step by step."
+  },
+  {
+    "id": 7,
+    "timeline": "RAG",
+    "title": "The RAG pipeline",
+    "content": "One: embed the user's question. Two: search the vector database for the most similar document passages. Three: paste those passages into the prompt alongside the question. Four: the LLM writes an answer grounded in the retrieved text. Every 'chat with your PDF' and company knowledge bot runs some version of these four steps.",
+    "next": "This design has a lovely side effect."
+  },
+  {
+    "id": 8,
+    "timeline": "Why it matters",
+    "title": "Grounding reduces hallucination",
+    "content": "A model answering from memory guesses when memory runs dry - that is hallucination. A model answering with the source text in front of it can quote instead of guessing, and even cite where the answer came from. RAG does not make hallucination impossible, but grounding answers in real retrieved text cuts it dramatically.",
+    "next": "Which is why RAG quietly took over the business world."
+  },
+  {
+    "id": 9,
+    "timeline": "Why it matters",
+    "title": "RAG is everywhere",
+    "content": "Customer-support bots answering from help articles. Documentation assistants for developers. Internal chatbots that know company policy. Search engines that answer in sentences. Under nearly every one: embeddings, a vector database, and the four-step pipeline. It is arguably the most deployed AI pattern in existence.",
+    "next": "It has an Achilles heel, though."
+  },
+  {
+    "id": 10,
+    "timeline": "Why it matters",
+    "title": "Garbage retrieved, garbage answered",
+    "content": "RAG is only as good as its retrieval. If the search step surfaces the wrong passages - outdated pages, near-duplicates, the wrong policy version - the model will faithfully build its answer on the wrong foundation. Teams spend most of their RAG effort not on the model, but on getting the right text into the window.",
+    "next": "So far, AI answers when asked. What if it could pursue a goal on its own?"
+  }
+]

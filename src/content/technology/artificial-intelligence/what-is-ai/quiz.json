@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Which statement best defines artificial intelligence?",
+    "options": [
+      "Robots with human-like bodies",
+      "Software that performs tasks that normally require human intelligence",
+      "Any program that runs in the cloud",
+      "A single technology invented in 2022"
+    ],
+    "answer": 1,
+    "explanation": "AI is an umbrella term for software doing 'human' tasks - recognizing, translating, predicting, creating. It covers many techniques and is decades old."
+  },
+  {
+    "id": 2,
+    "type": "ordering",
+    "question": "Order these from the broadest term to the most specific.",
+    "items": [
+      "Deep learning",
+      "Artificial intelligence",
+      "Machine learning"
+    ],
+    "correctOrder": [1, 2, 0],
+    "explanation": "AI is the umbrella. Machine learning is the subset that learns from examples. Deep learning is the subset of machine learning that uses layered neural networks."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "What is the key difference between rule-based AI and machine learning?",
+    "options": [
+      "Machine learning learns patterns from examples instead of following hand-written rules",
+      "Rule-based AI is newer than machine learning",
+      "Machine learning only works on images",
+      "Rule-based AI requires more data"
+    ],
+    "answer": 0,
+    "explanation": "Instead of programmers writing every rule (and every exception), machine learning systems work out the patterns themselves from thousands of examples."
+  },
+  {
+    "id": 4,
+    "type": "true-false",
+    "question": "Generative AI creates new content, while most older AI classified or predicted things.",
+    "answer": true,
+    "explanation": "Classic AI answered narrow questions like 'is this spam?'. Generative AI produces new text, images, and code - the leap from sorting to creating."
+  },
+  {
+    "id": 5,
+    "type": "multiple-choice",
+    "question": "When people say today's AI is 'intelligent', what is the most accurate interpretation?",
+    "options": [
+      "It is conscious and has its own goals",
+      "It understands the world the way humans do",
+      "It secretly hides its true abilities",
+      "It is extremely good at finding and reproducing patterns"
+    ],
+    "answer": 3,
+    "explanation": "AI systems are powerful pattern machines - like a calculator for language and images. They do not understand or want things the way people do."
+  },
+  {
+    "id": 6,
+    "type": "matching",
+    "question": "Match each everyday feature to what it shows about AI.",
+    "pairs": [
+      { "left": "Face unlock on your phone", "right": "AI has run quietly in the background for years" },
+      { "left": "A chess engine that cannot drive", "right": "Today's AI is narrow, not general" },
+      { "left": "A chatbot writing an essay", "right": "Generative AI creates new content" }
+    ],
+    "explanation": "AI is already woven into daily life, each system is narrow, and the new generative wave is the first AI most people talk to directly."
+  }
+]

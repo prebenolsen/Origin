@@ -1,0 +1,30 @@
+{
+  "title": "The Model Landscape",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "summary": "Text, vision, speech, image, video - and half a dozen major providers. Learn the model families, who builds what, and how to choose between capability, speed, and cost.",
+  "accent": "#701a75",
+  "context": {
+    "type": "schematic",
+    "headline": "A zoo of models, a map to read it",
+    "description": "There is no single 'AI' - there are families of models specialized for text, images, speech, and video, built by a handful of major providers. This closing module maps the landscape and gives you the vocabulary to place any AI headline in context.",
+    "when": "The players and the trade-offs, as of today",
+    "map": {
+      "markers": [
+        { "id": "models", "label": "AI models", "x": 50, "y": 45, "role": "primary" },
+        { "id": "text", "label": "Text (LLMs)", "x": 18, "y": 18, "role": "primary" },
+        { "id": "vision", "label": "Vision & image", "x": 82, "y": 18, "role": "secondary" },
+        { "id": "speech", "label": "Speech", "x": 14, "y": 72, "role": "secondary" },
+        { "id": "video", "label": "Video", "x": 86, "y": 72, "role": "secondary" },
+        { "id": "multimodal", "label": "Multimodal", "x": 50, "y": 88, "role": "secondary" }
+      ],
+      "connections": [
+        { "from": "models", "to": "text" },
+        { "from": "models", "to": "vision" },
+        { "from": "models", "to": "speech" },
+        { "from": "models", "to": "video" },
+        { "from": "models", "to": "multimodal", "label": "converging" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[
+  { "year": "The core trick", "title": "Predict the next token, over and over" },
+  { "year": "Training", "title": "Billions of guesses tune billions of parameters" },
+  { "year": "Using the model", "title": "Context windows, temperature, and hallucination" },
+  { "year": "Getting smarter", "title": "Reasoning models and fine-tuned specialists" }
+]
