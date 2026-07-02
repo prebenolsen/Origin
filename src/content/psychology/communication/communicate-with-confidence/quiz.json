@@ -2,84 +2,84 @@
     {
         "id": 1,
         "type": "multiple-choice",
-        "question": "What is the core benefit of using a communication framework under pressure?",
+        "question": "Why does putting an argument in threes ('compelling, convincing, credible') feel so persuasive?",
         "options": [
-            "It guarantees people will agree with you",
-            "It gives your brain a structure so you do not ramble",
-            "It helps you avoid all difficult conversations",
-            "It lets you talk longer without preparation"
+            "It provides scientific proof for the claim",
+            "Three is the smallest pattern that feels complete, so the brain accepts it as whole",
+            "It makes the speech longer and more thorough",
+            "It forces the audience to memorize three separate facts"
         ],
         "answer": 1,
-        "explanation": "Frameworks reduce overload by giving you a clear path, which improves clarity and confidence."
+        "explanation": "The rule of three (tricolon) works because three items form the smallest satisfying pattern, so the statement reads as complete and true, not because it adds evidence."
     },
     {
         "id": 2,
         "type": "true-false",
-        "question": "Confident communication usually means saying more words.",
-        "answer": false,
-        "explanation": "The module emphasizes that more words are not better. Confidence often comes from concise, direct speech."
+        "question": "Adding a picture to spoken information can raise recall from about 10 percent to around 60 percent three days later.",
+        "answer": true,
+        "explanation": "The brain encodes images through several channels at once, so visuals dramatically improve memory compared with words heard alone."
     },
     {
         "id": 3,
         "type": "multiple-choice",
-        "question": "Why is 'breath as the first word' useful?",
+        "question": "The HAIL model names the foundation of communication people receive well. Which of these is NOT one of its four cornerstones?",
         "options": [
-            "It helps you fill silence quickly",
-            "It increases speaking speed",
-            "It calms delivery and signals intentional response",
-            "It prevents any disagreement"
+            "Honesty",
+            "Integrity",
+            "Authority",
+            "Love"
         ],
         "answer": 2,
-        "explanation": "A short pause and breath slows nervous speech and makes your response sound grounded and deliberate."
+        "explanation": "HAIL stands for Honesty, Authenticity, Integrity, and Love. Authority is not part of it; the point is trust and goodwill, not dominance."
     },
     {
         "id": 4,
         "type": "ordering",
-        "question": "Put these steps in the best order for a difficult conversation.",
+        "question": "Put the module's four-part path to confident communication in order.",
         "items": [
-            "Set the conversation frame and desired outcome",
-            "Take a breath and slow your pace",
-            "Deliver the core message directly",
-            "Use curiosity questions to clarify understanding"
+            "Carry the message with voice and body",
+            "Build character that earns trust (HAIL)",
+            "Make one idea stick so people remember it",
+            "Choose words and rhetoric that persuade"
         ],
-        "correctOrder": [1, 0, 2, 3],
-        "explanation": "Regulate first, frame second, say the point clearly, then clarify through curiosity rather than defensiveness."
+        "correctOrder": [1, 3, 0, 2],
+        "explanation": "Trust comes first, then the words you choose, then the delivery that carries them, and finally making the one idea memorable."
     },
     {
         "id": 5,
         "type": "matching",
-        "question": "Match each strategy to its purpose.",
+        "question": "Match each rhetorical device to an example of it.",
         "pairs": [
             {
-                "left": "3-2-1 framework",
-                "right": "Creates quick structure for off-the-cuff speaking"
+                "left": "Rule of three (tricolon)",
+                "right": "'Government of the people, by the people, for the people'"
             },
             {
-                "left": "What did you hear?",
-                "right": "Checks interpretation when conflict appears"
+                "left": "Repetition (anaphora)",
+                "right": "'We shall fight on the beaches, we shall fight on the landing grounds'"
             },
             {
-                "left": "Separate person from problem",
-                "right": "Reduces defensiveness and invites collaboration"
+                "left": "Balance (antithesis)",
+                "right": "'Ask not what your country can do for you...'"
             },
             {
-                "left": "Neutral boundary statement",
-                "right": "Responds to disrespect without escalation"
+                "left": "Metaphor",
+                "right": "Calling political unrest an 'Arab Spring'"
             }
         ],
-        "explanation": "These tools target different moments: pressure, misunderstanding, teamwork, and boundary protection."
+        "explanation": "Each device shapes the listener differently: threes feel complete, repetition signals passion, balance implies balanced thinking, and metaphor frames how we feel about a thing."
     },
     {
         "id": 6,
         "type": "multiple-choice",
-        "question": "Which opening is most aligned with confident and respectful directness?",
+        "question": "What do the examples of hugely successful people who dreaded public speaking teach us?",
         "options": [
-            "So, um, maybe this is not a big deal but...",
-            "This is not going to be easy, and I am sharing it because I know you can handle it.",
-            "You always do this and I am tired of it.",
-            "Never mind, it is probably not worth discussing."
+            "Great speakers are simply born without fear",
+            "Public speaking skill cannot really be trained",
+            "Only natural talent separates good speakers from bad ones",
+            "Fear of speaking is normal, and it is beaten through practice, not avoided"
         ],
-        "answer": 1,
-        "explanation": "It is direct about difficulty, respectful in tone, and signals belief in the other person's capacity."
+        "answer": 3,
+        "explanation": "Even famously successful people were once terrified of speaking and faced it through practice. Repetition rewires the brain, so practice, not inborn talent, builds confidence."
     }
 ]

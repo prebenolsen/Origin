@@ -4,6 +4,42 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.8.0] - 2026-07-02
+
+### Content - "Communicate with Confidence": removed author/attribution name-drops
+
+Stripped all named people and idea attributions from the module so the techniques stand on
+their own (removed Simon Lancaster, Julian Treasure, Aristotle, Churchill, Amy Cuddy, Maya
+Angelou, Bryan Stevenson, Richard Branson, Warren Buffett, Dale Carnegie, and "the Romans
+called it..."). Quotes and examples are kept but presented without crediting a person.
+Edited `story.json`, `quiz.json`, and `flashcards.json`.
+
+## [9.7.0] - 2026-07-02
+
+### Content - Rebuilt module: Psychology -> Communication -> "Communicate with Confidence"
+
+Reset and re-authored the entire module from a new source (three public-speaking talks:
+Simon Lancaster's "Speak like a leader," Julian Treasure's "How to speak so people will
+listen," and a "Talk like TED" summary). The old version was about an unrelated "3-2-1
+framework" for pressure moments; the module now teaches confident public speaking as a
+learnable craft with four pillars - character (HAIL), rhetoric (rule of three, repetition,
+balance, metaphor, exaggeration, rhyme), delivery (the voice toolbox and body language),
+and beating stage fright through practice. Rewrote `module.json` (new schematic map),
+`story.json` (18 cards), `timeline.json`, `quiz.json`, and `flashcards.json`.
+
+## [9.6.0] - 2026-07-02
+
+### Content - Book insight deck: "How to Win Friends and Influence People"
+
+Added a story-only book deck (`book-how-to-win-friends-and-influence-people.json`) under
+Psychology -> Communication -> Persuasion and Influence, following the same format as the
+Atomic Habits deck (no quiz/flashcards). Dale Carnegie's 1936 classic is rebuilt into a
+16-card learning journey rather than a chapter-by-chapter summary: it opens on the core
+insight (people are driven by emotion and a craving to feel important), then walks the
+book's four parts - handling people, making people like you, winning people to your way of
+thinking, and leadership - and closes on the sincerity-vs-manipulation limitation. Story
+cards only; the surrounding module remains a scaffold.
+
 ## [9.5.0] - 2026-07-02
 
 ### Content - New Technology subcategory "Artificial Intelligence" (11 modules)

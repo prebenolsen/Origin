@@ -128,7 +128,7 @@
 | Psychology | Communication | Becoming a Better Conversationalist           | Curiosity, active listening, and better questions                 | DONE |
 | Psychology | Communication | Helping People Through Difficult Situations   | Emotional support, validation, and guided problem-solving         | ------ |
 | Psychology | Communication | Handling Conflict and Difficult Conversations | Conflict resolution, boundaries, and calm dialogue                | ------ |
-| Psychology | Communication | Persuasion and Influence                      | Trust, credibility, storytelling, negotiation, and ethics         | ------ |
+| Psychology | Communication | Persuasion and Influence                      | Trust, credibility, storytelling, negotiation, and ethics         | Book deck: How to Win Friends and Influence People |
 | Psychology | Communication | Dealing with Difficult People                 | Workplace and interpersonal conflict management | DONE |
 | Psychology | Communication | Communicate with Confidence                   | Speaking clearly and assertively under pressure | DONE |
 | Technology | Data Engineering | The Data Problem | Why modern companies are drowning in data and what makes it hard to use | DONE |

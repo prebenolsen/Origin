@@ -2,84 +2,84 @@
     "title": "Communicate with Confidence",
     "category": "psychology",
     "subcategory": "communication",
-    "summary": "Build confident communication under pressure by using frameworks, speaking with intention, and choosing words that match the person you want to be.",
+    "summary": "Speaking so people actually listen is a craft, not a gift. Learn the rhetoric of leaders, the voice techniques of great speakers, the storytelling behind the best talks, and how to beat the fear that freezes almost everyone.",
     "accent": "#2f6d8a",
     "context": {
         "type": "schematic",
-        "headline": "Confidence is a repeatable communication process",
-        "description": "People often freeze, ramble, or overexplain when they feel pressure. Confidence grows when you use simple frameworks, pause before speaking, and align words with clear goals and values. This module turns communication confidence into practical steps you can apply in your very next conversation.",
-        "when": "Live Q and A, difficult conversations, meetings, networking, and family communication",
+        "headline": "Confident speaking is a craft you can learn",
+        "description": "Powerful communication is not a gift a lucky few are born with. It is built from four things you can practice: the character that earns trust, the words and rhetoric that persuade, the voice and body that carry the message, and the courage to keep speaking despite fear. This module rebuilds those skills from the techniques used by professional speechwriters, world-class speakers, and the best TED talks.",
+        "when": "Public speaking, presentations, meetings, pitches, interviews, and everyday conversations",
         "map": {
             "backdrop": "region",
             "markers": [
                 {
-                    "id": "pressure",
-                    "label": "Pressure moment",
-                    "x": 12,
-                    "y": 36,
+                    "id": "character",
+                    "label": "Character: HAIL",
+                    "x": 18,
+                    "y": 30,
+                    "role": "primary"
+                },
+                {
+                    "id": "words",
+                    "label": "What you say",
+                    "x": 42,
+                    "y": 20,
+                    "role": "primary"
+                },
+                {
+                    "id": "voice",
+                    "label": "How you say it",
+                    "x": 66,
+                    "y": 30,
+                    "role": "primary"
+                },
+                {
+                    "id": "memorable",
+                    "label": "Make it stick",
+                    "x": 78,
+                    "y": 58,
+                    "role": "primary"
+                },
+                {
+                    "id": "fear",
+                    "label": "Conquer the fear",
+                    "x": 26,
+                    "y": 62,
                     "role": "secondary"
                 },
                 {
-                    "id": "framework",
-                    "label": "3-2-1 framework",
-                    "x": 30,
-                    "y": 24,
-                    "role": "primary"
-                },
-                {
-                    "id": "pause",
-                    "label": "Breath before words",
-                    "x": 47,
-                    "y": 42,
-                    "role": "primary"
-                },
-                {
-                    "id": "clarity",
-                    "label": "Direct and concise speech",
-                    "x": 64,
-                    "y": 28,
-                    "role": "primary"
-                },
-                {
-                    "id": "values",
-                    "label": "Goals and values",
-                    "x": 76,
-                    "y": 52,
-                    "role": "primary"
-                },
-                {
-                    "id": "impact",
-                    "label": "Reputation and trust",
-                    "x": 56,
-                    "y": 72,
+                    "id": "listen",
+                    "label": "People listen",
+                    "x": 54,
+                    "y": 74,
                     "role": "secondary"
                 }
             ],
             "connections": [
                 {
-                    "from": "pressure",
-                    "to": "framework",
-                    "label": "avoid panic"
+                    "from": "character",
+                    "to": "words",
+                    "label": "earns trust"
                 },
                 {
-                    "from": "framework",
-                    "to": "pause",
-                    "label": "slow down"
+                    "from": "words",
+                    "to": "voice",
+                    "label": "carried by delivery"
                 },
                 {
-                    "from": "pause",
-                    "to": "clarity",
-                    "label": "say the real point"
+                    "from": "voice",
+                    "to": "memorable",
+                    "label": "lands the idea"
                 },
                 {
-                    "from": "clarity",
-                    "to": "values",
-                    "label": "speak with intention"
+                    "from": "memorable",
+                    "to": "listen",
+                    "label": "sticks"
                 },
                 {
-                    "from": "values",
-                    "to": "impact",
-                    "label": "shape how people experience you"
+                    "from": "fear",
+                    "to": "listen",
+                    "label": "practice beats fear"
                 }
             ]
         }

@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "timeline": "Book Context",
+        "title": "A 1936 Book That Still Runs the Room",
+        "content": "Dale Carnegie published How to Win Friends and Influence People in 1936, yet it remains one of the best-selling books ever written. Its staying power comes from a single insight about human nature: people are not creatures of logic, they are creatures of emotion, driven by pride and ego. You cannot argue, pressure, or out-reason someone into liking you or agreeing with you. The book is a practical system for working with that emotional reality instead of against it.",
+        "concept": "People Are Driven by Emotion",
+        "next": "If logic doesn't move people, what does?"
+    },
+    {
+        "id": 2,
+        "timeline": "Core Principle",
+        "title": "Everyone Is Starving to Feel Important",
+        "content": "Beneath almost every human action is a craving to feel important and appreciated. It is what makes people climb mountains, build companies, and write novels. Carnegie argues this hunger for recognition is so powerful that feeding it is the master key to influence. Criticism starves it and creates enemies; sincere appreciation feeds it and creates allies. Nearly every technique in the book is a different way of making another person feel genuinely valued.",
+        "concept": "The Desire for Importance",
+        "next": "So what is the fastest way to make an enemy?"
+    },
+    {
+        "id": 3,
+        "timeline": "Part 1: Handling People",
+        "title": "Criticism Is a Spark That Starts Fires",
+        "content": "Criticism rarely changes behavior, because it forces people to defend their pride rather than examine their fault. Test pilot Bob Hoover once nearly crashed because a mechanic filled his plane with the wrong fuel. Instead of exploding at the terrified young man, Hoover asked him to service his plane the next day. He understood what the psychologist B.F. Skinner had shown: behavior that is rewarded gets repeated, behavior that is punished breeds resentment. Any fool can condemn; it takes character to understand and forgive.",
+        "concept": "Criticism Backfires",
+        "next": "If not criticism, what actually motivates people?"
+    },
+    {
+        "id": 4,
+        "timeline": "Part 1: Handling People",
+        "title": "Sincere Appreciation, Never Flattery",
+        "content": "The strongest way to motivate someone is to make them feel genuinely appreciated. But there is a knife-edge difference between appreciation and flattery: appreciation is sincere and specific, flattery is selfish and hollow, and people see through it instantly. The practice is simple but hard. Stop thinking about yourself for a moment, look for the real good in the person in front of you, and say it out loud. Small sincere sparks of 'thank you' scattered through a day change how people respond to you.",
+        "concept": "Sincere Appreciation",
+        "next": "How do you get someone to actually want what you are offering?"
+    },
+    {
+        "id": 5,
+        "timeline": "Part 1: Handling People",
+        "title": "Bait the Hook for the Fish, Not Yourself",
+        "content": "You may love cheesecake, but when you fish you use a worm, because you bait the hook with what the fish wants. People are the same. You are absorbed in what you want, and so is everyone else. The only reliable way to influence anyone is to talk about what they want and show them how to get it. Before you speak, pause and ask what the other person gets out of this. The rare person who genuinely serves others' wants has an enormous advantage in a world full of takers.",
+        "concept": "Arouse an Eager Want",
+        "next": "Once you think this way, how do you actually make people like you?"
+    },
+    {
+        "id": 6,
+        "timeline": "Part 2: Making People Like You",
+        "title": "Be Interested, and Let It Show",
+        "content": "Why is a dog universally loved? Because it is thrilled to see you and asks nothing in return. You make more friends in two months by becoming genuinely interested in other people than in two years trying to make them interested in you. The simplest signal of that interest is a smile, which silently says 'I am glad to see you.' A New York stockbroker who forced himself to smile at everyone for two months reported more happiness, warmer clients, and more income than in the entire year before.",
+        "concept": "Genuine Interest and Warmth",
+        "next": "What is the single word people most want to hear?"
+    },
+    {
+        "id": 7,
+        "timeline": "Part 2: Making People Like You",
+        "title": "A Person's Name Is the Sweetest Sound",
+        "content": "To each of us, our own name is the sweetest and most important sound in any language. Using it is a small, welcome compliment; forgetting it or misspelling it quietly signals you did not care enough. When Andrew Carnegie wanted to merge with a rival, he offered to name the combined company after his competitor, Pullman, who instantly grew eager to deal. To remember a name, catch it the first time, repeat it back during the conversation, and link it to something memorable.",
+        "concept": "The Power of a Name",
+        "next": "If talking wins people over, why does listening matter more?"
+    },
+    {
+        "id": 8,
+        "timeline": "Part 2: Making People Like You",
+        "title": "The Good Listener Wins the Room",
+        "content": "A person's own toothache means more to them than a famine killing millions elsewhere, so let them talk about what they care about. Carnegie once spent an evening barely speaking, simply listening to a botanist with rapt attention, and was later praised as a brilliant conversationalist. Most people do not listen; they wait for their turn to talk. Give someone your full attention, steer the conversation to their interests, and make them feel important, and you become unforgettable while barely saying a word.",
+        "concept": "The Art of Listening",
+        "next": "All of this is easy when you agree. What happens when you do not?"
+    },
+    {
+        "id": 9,
+        "timeline": "Part 3: Winning People Over",
+        "title": "You Can't Win an Argument",
+        "content": "If you lose an argument, you lose; if you win it, you still lose, because your opponent leaves resentful and more convinced than before. So the surest way to get the best of an argument is to avoid it. Never bluntly tell someone they are wrong, which just says 'I am smarter than you' and invites retaliation. Instead begin in a friendly way, show respect for their opinion, and look for the points where you already agree. A drop of honey catches more flies than a gallon of gall.",
+        "concept": "Avoid the Argument",
+        "next": "But what if you are the one who is actually wrong?"
+    },
+    {
+        "id": 10,
+        "timeline": "Part 3: Winning People Over",
+        "title": "When You're Wrong, Admit It Fast and Loud",
+        "content": "Carnegie was repeatedly caught walking his dog without a leash. The second time, before the officer could speak, Carnegie loudly condemned himself and apologized. Disarmed, the officer ended up defending the dog and let them go. The mechanism is subtle: when you err, others feel important by criticizing you, but the instant you criticize yourself first, the only way left for them to feel important is to be generous and forgive. Admitting a fault quickly and emphatically beats defending it every time.",
+        "concept": "Admit Faults Fast",
+        "next": "How do you handle someone who is convinced they are right?"
+    },
+    {
+        "id": 11,
+        "timeline": "Part 3: Winning People Over",
+        "title": "Talk Less, See More, Sympathize",
+        "content": "Someone straining to express their own view cannot hear yours, so let them do most of the talking. Picture an empty bottle that fills as they speak; every interruption empties it and makes them feel unheard. Then go further and honestly try to see the situation through their eyes, because with their body, history, and experiences you would think exactly as they do. People are hungry for sympathy. Recognize what they feel, and they become far more willing to consider what you think.",
+        "concept": "Perspective and Empathy",
+        "next": "Once someone feels heard, how do you guide them toward your view?"
+    },
+    {
+        "id": 12,
+        "timeline": "Part 3: Winning People Over",
+        "title": "Lead People to Their Own Yes",
+        "content": "Start with questions that earn a 'yes,' not a 'no,' because a single 'no' locks a person into defending their position. Guide them with honest questions until the conclusion feels like their own idea, which they will defend far more eagerly than yours. And appeal to their better self: assume the person is honest and high-minded, and most will rise to meet the reputation you have handed them. People rarely change their mind because you pushed; they change because they feel they chose.",
+        "concept": "Lead, Don't Push",
+        "next": "Even a true point can fall flat. How do you make it land?"
+    },
+    {
+        "id": 13,
+        "timeline": "Part 3: Winning People Over",
+        "title": "Make the Truth Impossible to Ignore",
+        "content": "Attention is scarce, and merely stating a fact is not enough; the truth has to be made vivid. Steve Jobs did not sell '5 gigabytes,' he sold '1,000 songs in your pocket.' A salesman showing a store its losses threw pennies on the floor with each customer who was ignored. Translate the stakes into something people can see, such as 'this problem costs you one Mercedes a day.' And when logic fails, throw down a challenge, because the desire to compete and excel drives people when nothing else will.",
+        "concept": "Dramatize and Challenge",
+        "next": "Leading people is one thing. How do you change them without making enemies?"
+    },
+    {
+        "id": 14,
+        "timeline": "Part 4: Leadership",
+        "title": "Correct Without Wounding",
+        "content": "It is far easier to hear criticism after honest praise, so begin there, then join the correction with 'and,' never 'but,' which erases everything before it. Say 'great work, and if you add a checklist your accuracy will climb,' not 'great work, but you were careless.' Point out mistakes indirectly, since people usually already know them. Best of all, talk about your own failures first: admitting you once made the same blunder makes the other person's mistake feel human and easy to face.",
+        "concept": "Lead With Praise",
+        "next": "Praise softens the blow, but how do you make the change actually stick?"
+    },
+    {
+        "id": 15,
+        "timeline": "Part 4: Leadership",
+        "title": "Give People a Self Worth Living Up To",
+        "content": "Ask questions instead of giving orders, so people reach the conclusion themselves and own it. When someone slips, let them save face rather than crushing their pride. Praise every small improvement, specifically and sincerely, because recognition makes people hungry to earn more. Hand someone a fine reputation to live up to, and they will strain to protect it. And make the fault seem easy to fix, telling them the talent is already there and only practice is missing, so hope and effort survive.",
+        "concept": "The Leader's Toolkit",
+        "next": "With this much influence, what keeps it from becoming manipulation?"
+    },
+    {
+        "id": 16,
+        "timeline": "Limitations",
+        "title": "Sincerity Is the Whole Game",
+        "content": "These techniques curdle into manipulation the moment they are faked, and people eventually sense insincerity and resent it more than bluntness. Carnegie's own guardrail is that the appreciation, interest, and praise must be genuine, not a tactic to extract something. The framework also assumes relationships you want to preserve; some situations call for firm boundaries or honest confrontation, not endless accommodation. Used sincerely it builds trust for a lifetime; used cynically it is a short con that collapses on contact.",
+        "concept": "Sincerity vs Manipulation",
+        "next": "So the real skill is not winning people, it is genuinely valuing them."
+    }
+]

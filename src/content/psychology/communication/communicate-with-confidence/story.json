@@ -1,100 +1,128 @@
 [
     {
         "id": 1,
-        "timeline": "Stage 1: Under pressure",
-        "title": "Why confidence collapses on the spot",
-        "content": "When you get an unexpected question, your brain can shift into panic mode. Thoughts scatter, you try to search for everything at once, and speaking becomes rambling. The problem is rarely intelligence; it is cognitive overload.",
-        "next": "How do you reduce overload in real time?"
+        "timeline": "The problem",
+        "title": "The most powerful instrument you own",
+        "content": "The human voice is the one instrument we all play. It is the only sound that can start a war or say 'I love you.' Yet many people feel that when they speak, nobody really listens. Confident, powerful communication is not a personality trait you are born with; it is a craft made of learnable parts. This module takes it apart piece by piece.",
+        "next": "So why do people tune out in the first place?"
     },
     {
         "id": 2,
-        "timeline": "Stage 1: Under pressure",
-        "title": "Frameworks beat panic",
-        "content": "If you do not have structure, you often default to word chaos. A simple framework gives your brain a path to follow while under pressure. Structure creates speed and calm at the same time.",
-        "next": "What framework can you use immediately?"
+        "timeline": "The problem",
+        "title": "The seven deadly sins of speaking",
+        "content": "Seven habits reliably push listeners away: gossip, judging, negativity, complaining, making excuses, exaggeration, and dogmatism (treating your opinions as facts). Each one quietly signals that you are not worth listening to. Complaining in particular is just 'viral misery.' Before you can speak powerfully, you have to stop leaking these habits.",
+        "next": "If those repel people, what should you stand on instead?"
     },
     {
         "id": 3,
-        "timeline": "Stage 2: Fast structure",
-        "title": "Use the 3-2-1 response model",
-        "content": "The 3-2-1 model gives you options: share three steps, two types, or one key point. You do not need to use all three every time. Pick one format quickly and start speaking from that frame.",
-        "next": "Why does this make you sound more confident so quickly?"
+        "timeline": "Foundation",
+        "title": "Stand on HAIL",
+        "content": "The antidote spells a word: HAIL. Honesty, being clear and straight. Authenticity, standing in your own truth. Integrity, being your word so people can trust you. And Love, wishing your listeners well. These four are the foundation, because a technically perfect speech collapses if the audience senses you are dishonest, fake, or do not care about them.",
+        "next": "Once you have that trust, how do the words themselves gain power?"
     },
     {
         "id": 4,
-        "timeline": "Stage 2: Fast structure",
-        "title": "Confidence rises when you know where to land",
-        "content": "People lose confidence when they start talking without a destination. A framework gives you a landing point before takeoff. That clarity changes body language, tone, and perceived authority.",
-        "next": "Besides frameworks, what is the fastest way to regain control?"
+        "timeline": "What you say",
+        "title": "The secret language of leadership",
+        "content": "There is an ancient toolkit that leaders still use: rhetoric. In Ancient Rome it was a core subject; for centuries it was taught to everyone, then narrowed to a privileged few. Its devices work by hitting three levels at once - ethos, pathos, and logos, the instinctive, emotional, and logical minds. Here are the moves.",
+        "next": "What is rhetoric's magic number?"
     },
     {
         "id": 5,
-        "timeline": "Stage 3: Delivery control",
-        "title": "Let your breath be your first word",
-        "content": "A brief pause and breath slows your nervous system and your speech pace. It also signals that you heard the question and are answering intentionally. Fast talking often sounds uncertain, even when the ideas are good.",
-        "next": "What should you cut from your speech when nervous?"
+        "timeline": "What you say",
+        "title": "The rule of three",
+        "content": "Put an argument in threes and it suddenly sounds more compelling, more convincing, more credible; this is called tricolon. 'Government of the people, by the people, for the people.' 'Veni, vidi, vici.' 'Eat well, laugh often, love much.' Three is the smallest number that feels like a complete pattern, so the brain accepts it as whole and true.",
+        "next": "How do you make words sound like real passion?"
     },
     {
         "id": 6,
-        "timeline": "Stage 3: Delivery control",
-        "title": "Remove verbal clutter",
-        "content": "Overexplaining, apologizing before your point, and filler phrases dilute your message. Say the core sentence directly and stop. Clear speech is not more words; it is stronger words.",
-        "next": "How does this connect to your identity and reputation?"
+        "timeline": "What you say",
+        "title": "Repetition is the sound of passion",
+        "content": "When we feel strongly, our perspective narrows and we repeat ourselves. One of history's most famous wartime speeches used this deliberately: 'We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets.' It could have been said faster, but repeating the opening clause is the authentic sound of emotion, and it sweeps listeners from one point to the next.",
+        "next": "Why does a balanced sentence feel true?"
     },
     {
         "id": 7,
-        "timeline": "Stage 4: Identity in language",
-        "title": "What you say is who people experience",
-        "content": "Most people know you mainly through your words. Kind words build a kind reputation, and disrespectful speech does the opposite. Communication is how your character becomes visible in real time.",
-        "next": "What causes many arguments to escalate unnecessarily?"
+        "timeline": "What you say",
+        "title": "Balance and contrast",
+        "content": "'Ask not what your country can do for you, ask what you can do for your country.' When a sentence sounds balanced, our brains assume the thinking behind it is balanced too, so we are drawn to it, even when the balance is only an illusion. Pair opposites: looking to the future, not the past; working together, not against one another. The symmetry does the persuading.",
+        "next": "What is the most powerful device almost nobody talks about?"
     },
     {
         "id": 8,
-        "timeline": "Stage 4: Identity in language",
-        "title": "Stop trying to win arguments",
-        "content": "A better model is to unravel the knot, not defeat the person. Miscommunication often happens because what was said is not what was heard. Questions like 'What did you hear?' reopen understanding.",
-        "next": "Which wording choices reduce defensiveness in conflict?"
+        "timeline": "What you say",
+        "title": "Metaphor quietly shapes reality",
+        "content": "We reach for a metaphor roughly every sixteen words, and each one steers people toward something or makes them recoil. Research shows that changing only the metaphor in a text can flip people's decisions about crime, investment, even war. Calling unrest an 'Arab Spring' promises rebirth; a refugee camp called a 'jungle' paints people as animals. Metaphors are powerful, and dangerous.",
+        "next": "What two quick tricks round out the toolkit?"
     },
     {
         "id": 9,
-        "timeline": "Stage 5: Difficult conversations",
-        "title": "Use what-questions and direct framing",
-        "content": "Starting with why can sound accusatory and trigger defense. Starting with what sounds curious and collaborative. In hard conversations, state the topic directly and set how you want the conversation to end.",
-        "next": "How can you be direct without becoming harsh?"
+        "timeline": "What you say",
+        "title": "Exaggeration and rhyme",
+        "content": "Emotion distorts perspective, so passionate people naturally go over the top ('I've waited my whole life for this'), and a little exaggeration reads as sincerity. Rhyme is stranger: people are more likely to believe a claim if it rhymes, because rhymes are easy to process. 'If it doesn't fit, you must acquit.' Useful tools, but the same fluency can dress up a falsehood as truth.",
+        "next": "Techniques aside, what actually reaches people's hearts?"
     },
     {
         "id": 10,
-        "timeline": "Stage 5: Difficult conversations",
-        "title": "Truth and kindness can coexist",
-        "content": "Soft-pedaling hard truth often creates confusion and mistrust. You can be clear and still respectful by affirming the other person's strength: 'I am telling you this because I know you can handle it.' Directness with care builds trust.",
-        "next": "What if someone is rude, belittling, or disrespectful?"
+        "timeline": "Reach the heart",
+        "title": "Tell stories, not just facts",
+        "content": "Most people cram presentations with facts and numbers, but data reaches the head, not the heart. Stories do both, engaging the brain and building connection. The speaker who earned the longest standing ovation in TED history spent about 65 percent of that talk simply telling stories. If you are bored by your material, your audience will be too; passion is contagious.",
+        "next": "So is it all emotion, then?"
     },
     {
         "id": 11,
-        "timeline": "Stage 6: Boundaries and self-respect",
-        "title": "Neutral strength beats emotional reacting",
-        "content": "With belittling comments, ask the person to repeat what they said or ask about intent. With disrespect, use silence and a calm boundary statement. You take power away from provocation by refusing to perform the reaction they wanted.",
-        "next": "How do you reduce defensiveness in family and team discussions?"
+        "timeline": "Reach the heart",
+        "title": "Head and heart together",
+        "content": "Classical rhetoric splits persuasion into ethos (credibility), logos (logic and evidence), and pathos (emotion). The best communicators use all three: they back feeling with data, and they make the data land by giving it context a person can picture. A statistic does not have to be dry; framed the right way, a single number can be jaw-dropping and memorable.",
+        "next": "It is not only what you say. What about how you say it?"
     },
     {
         "id": 12,
-        "timeline": "Stage 6: Boundaries and self-respect",
-        "title": "Separate person from problem",
-        "content": "Blaming people creates opposition; naming the issue creates teamwork. Replace 'you are the problem' with 'this is the problem, how do we solve it together?' This shift preserves dignity while keeping accountability.",
-        "next": "What long-term habits make confidence reliable, not occasional?"
+        "timeline": "How you say it",
+        "title": "Your voice is a toolbox",
+        "content": "Your voice is a toolbox most people never open. Register: speaking from the chest rather than the nose or throat conveys weight, which is why we tend to trust and vote for lower voices. Timbre: we prefer voices that are rich, smooth, and warm, and you can train that with a coach. And like any instrument, the voice works best warmed up before it matters.",
+        "next": "How do you keep a voice from being boring?"
     },
     {
         "id": 13,
-        "timeline": "Stage 7: Intentional communication",
-        "title": "Set conversational goals and values",
-        "content": "Before speaking, decide your destination and the values you will protect on the way there. Goals guide what you say; values guide how you say it. This turns communication from reaction into leadership.",
-        "next": "How can shy or anxious people apply this in social settings?"
+        "timeline": "How you say it",
+        "title": "Prosody, pace, and silence",
+        "content": "Prosody is the sing-song melody that carries meaning; speak on one flat note and you are monotonous and hard to follow. Vary your pace to build excitement or emphasis, and do not fear silence, which is far more powerful than filling gaps with 'um.' Pitch and volume are emphasis dials too, and getting quiet can command more attention than getting loud.",
+        "next": "Does the body matter as much as the voice?"
     },
     {
         "id": 14,
-        "timeline": "Stage 7: Intentional communication",
-        "title": "Practice depth, not performance",
-        "content": "In groups, focus on one quality conversation instead of trying to impress everyone. Ask future-oriented questions like 'What are you excited about?' to create better energy. Confidence grows from intentional reps, one conversation at a time.",
-        "next": "Your next words can change your relationships, your reputation, and your opportunities."
+        "timeline": "How you say it",
+        "title": "Your body speaks first",
+        "content": "Gestures give an audience confidence in the speaker, so use your hands naturally at key points and let your story guide your moves rather than imitating anyone. Research on body language shows it also shapes how we see ourselves: act confident and your chances improve even before you feel it. The twist on the old cliche is 'don't fake it till you make it; fake it till you become it.'",
+        "next": "How do you make an idea unforgettable?"
+    },
+    {
+        "id": 15,
+        "timeline": "Make it stick",
+        "title": "One idea, simply told",
+        "content": "The brain resists information overload, so great talks protect one big idea. Aim for the 18-minute rule, and if you cannot explain your idea simply, you do not yet understand it well enough. A reliable structure: a headline short enough to fit in a tweet, three key messages, and a story behind each. Cutting everything else is what makes the one idea survive.",
+        "next": "What makes that one idea actually stay in memory?"
+    },
+    {
+        "id": 16,
+        "timeline": "Make it stick",
+        "title": "Pictures and feelings last longest",
+        "content": "Hear a piece of information and you may recall about 10 percent of it three days later; add a picture and recall jumps toward 60 percent, because the brain encodes images through many channels at once. And people forget what you said and what you did, but never how you made them feel. Design for the picture and the feeling, not just the words.",
+        "next": "But what about the fear that freezes so many people?"
+    },
+    {
+        "id": 17,
+        "timeline": "Conquer the fear",
+        "title": "Even the greats started terrified",
+        "content": "Fear of public speaking is almost universal, and it does not spare the successful. Some of the world's most admired business leaders have gone blank at the microphone, mumbled, and left the stage red-faced. Others were so terrified they arranged their schedules to avoid speaking, and even dropped a public-speaking course before it began. The difference is not fearlessness; it is what they did next.",
+        "next": "So what did they do about it?"
+    },
+    {
+        "id": 18,
+        "timeline": "Conquer the fear",
+        "title": "Practice until it feels like conversation",
+        "content": "The ones who improved faced the fear head-on, some by taking a structured speaking course, and later called communication the single best skill they ever built. There is biology behind this: repetition builds stronger neural pathways, so the more you speak in public, the easier it gets. Rehearse until your material feels like casual conversation. Reviving this craft is how everyone gets a voice, and that is what democracy needs.",
+        "next": "Your next words can change how people see you, trust you, and follow you."
     }
 ]

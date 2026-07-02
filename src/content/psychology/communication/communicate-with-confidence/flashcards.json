@@ -1,42 +1,62 @@
 [
     {
         "id": 1,
-        "front": "3-2-1 framework",
-        "back": "A quick response structure: share three steps, two types, or one key point when speaking off the cuff."
+        "front": "Seven deadly sins of speaking",
+        "back": "Habits that make people stop listening: gossip, judging, negativity, complaining, excuses, exaggeration, and dogmatism."
     },
     {
         "id": 2,
-        "front": "Breath-first delivery",
-        "back": "Take a short breath before speaking to calm pace and sound intentional under pressure."
+        "front": "HAIL",
+        "back": "The foundation of speech people welcome: Honesty, Authenticity, Integrity, and Love (wishing listeners well)."
     },
     {
         "id": 3,
-        "front": "Verbal clutter",
-        "back": "Filler, over-apology, and overexplaining that dilute your message and reduce perceived confidence."
+        "front": "Rule of three (tricolon)",
+        "back": "Grouping ideas in threes makes them sound more compelling and credible, e.g. 'Veni, vidi, vici.'"
     },
     {
         "id": 4,
-        "front": "What you say is who you are",
-        "back": "People mainly experience your character through your words, tone, and communication choices."
+        "front": "Repetition (anaphora)",
+        "back": "Repeating an opening clause ('We shall fight...') is the authentic sound of passion and sweeps listeners along."
     },
     {
         "id": 5,
-        "front": "What vs why in conflict",
-        "back": "What-questions usually invite curiosity; why-questions often trigger defensiveness."
+        "front": "Balance (antithesis)",
+        "back": "A balanced sentence makes the thinking behind it seem balanced, so we trust it - even when the balance is an illusion."
     },
     {
         "id": 6,
-        "front": "Conversation frame",
-        "back": "State the topic and desired ending so both people know what the conversation is for."
+        "front": "Metaphor",
+        "back": "Used about once every 16 words; changing only the metaphor can change how people decide. Powerful and easy to abuse."
     },
     {
         "id": 7,
-        "front": "Separate person from problem",
-        "back": "Focus on the issue, not identity, to turn opposition into problem-solving teamwork."
+        "front": "Ethos, pathos, logos",
+        "back": "Classical rhetoric's three levers of persuasion: credibility, emotion, and logic. The best speakers use all three together."
     },
     {
         "id": 8,
-        "front": "Conversational values",
-        "back": "Personal principles that guide how you speak, especially when emotions are high."
+        "front": "The voice toolbox",
+        "back": "Register (speak from the chest for weight), timbre (warm and rich), prosody, pace, silence, pitch, and volume."
+    },
+    {
+        "id": 9,
+        "front": "Fake it till you become it",
+        "back": "The finding that confident body language shapes how others see you and how you feel - acting confident builds real confidence."
+    },
+    {
+        "id": 10,
+        "front": "18-minute rule",
+        "back": "Protect one big idea, kept short and simple: a tweet-length headline, three messages, and a story behind each."
+    },
+    {
+        "id": 11,
+        "front": "Pictures and feeling",
+        "back": "Visuals push recall from ~10% to ~60% after three days, and people never forget how you made them feel."
+    },
+    {
+        "id": 12,
+        "front": "Practice rewires fear",
+        "back": "Even highly successful people were terrified; repetition builds stronger neural pathways, so speaking gets easier the more you do it."
     }
 ]
