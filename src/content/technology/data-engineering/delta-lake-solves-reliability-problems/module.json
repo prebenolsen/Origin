@@ -2,12 +2,12 @@
   "title": "Delta Lake Solves Reliability Problems",
   "category": "technology",
   "subcategory": "data-engineering",
-  "summary": "Plain lake files offer no safety net. Delta Lake adds a transaction log on top of open Parquet files, bringing database-grade reliability — ACID transactions, time travel, and schema enforcement — to cheap storage.",
+  "summary": "Plain lake files offer no built-in safety net. Delta Lake adds a transaction log on top of open Parquet files, bringing database-style reliability, time travel, and schema enforcement to low-cost storage.",
   "accent": "#059669",
   "context": {
     "type": "schematic",
     "headline": "Loose files become trustworthy tables",
-    "description": "A data lake is just files, with no transactions and no guarantees. Delta Lake fixes this by adding a transaction log on top of open Parquet files. A change only counts once it is recorded in the log, which delivers ACID reliability, the ability to query past versions (time travel), schema enforcement, and one table that serves both batch and streaming.",
+    "description": "A plain data lake is mainly a collection of files, with limited transactional guarantees. Delta Lake adds a transaction log on top of open Parquet files. A change only becomes visible once it is recorded in that log, which enables ACID-style reliability, time travel, schema enforcement, and a table format that can support both batch and streaming workloads.",
     "when": "From unreliable lake files to the foundation of the lakehouse",
     "map": {
       "backdrop": "region",

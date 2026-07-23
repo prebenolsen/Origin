@@ -2,12 +2,12 @@
   "title": "Tools: Giving AI Hands",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "An LLM alone can only produce text - it cannot browse, calculate, or send an email. Tool calling is the loop that lets it act on the world, and it is where AI becomes genuinely useful.",
+  "summary": "An LLM alone mainly produces text - it cannot browse, calculate reliably, or send an email by itself. Tool calling is the loop that lets it interact with external systems and become more practically useful.",
   "accent": "#9333ea",
   "context": {
     "type": "schematic",
     "headline": "A brilliant brain gets hands",
-    "description": "On its own, a language model is a brain in a jar: it can only talk. Tool calling closes the gap - the model requests an action, the app performs it, and the result flows back into the conversation. This simple loop turns a text predictor into something that can actually do things.",
+    "description": "On its own, a language model can only generate text. Tool calling closes that gap: the model requests an action, the surrounding app performs it, and the result flows back into the conversation. This loop lets a text model interact with search, code, files, and other systems.",
     "when": "The step from talking to doing",
     "map": {
       "markers": [

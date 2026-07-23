@@ -3,14 +3,14 @@
     "id": 1,
     "timeline": "The search problem",
     "title": "When keywords fail",
-    "content": "Search for 'car' and you miss every document that says 'automobile'. Ask 'can I bring my dog to work?' and the answer hides in a file called 'Workplace animal policy'. Keyword search matches letters, not meaning - and meaning is what you actually want. For decades, this was one of computing's stubborn problems.",
+    "content": "Search for 'car' and you may miss documents that say 'automobile'. Ask 'can I bring my dog to work?' and the answer may sit in a file called 'Workplace animal policy'. Keyword search matches words, not meaning, and meaning is often what users actually want. This gap has been a major problem in information retrieval for a long time.",
     "next": "The solution sounds almost too strange to work: turn meaning into numbers."
   },
   {
     "id": 2,
     "timeline": "Embeddings",
     "title": "Embeddings: meaning as coordinates",
-    "content": "An embedding model converts any text into a long list of numbers - a vector, like [0.14, -0.88, ...]. Think of it as coordinates on a map of meaning: 'dog' lands near 'puppy' and 'labrador', and far from 'spreadsheet'. The numbers themselves mean nothing to humans; the distances between them mean everything.",
+    "content": "An embedding model converts text into a long list of numbers called a vector. You can think of that vector as coordinates in a space of meaning: 'dog' lands near 'puppy' and 'labrador', and far from 'spreadsheet'. The individual numbers are not meaningful to humans, but the distance between vectors helps represent semantic similarity.",
     "next": "Because distance is where the magic happens."
   },
   {
@@ -38,7 +38,7 @@
     "id": 6,
     "timeline": "RAG",
     "title": "The open-book exam",
-    "content": "RAG - retrieval-augmented generation - is an open-book exam. Instead of memorizing everything (training), the model gets to look things up at answer time. Question comes in, the relevant pages are found and placed in front of the model, and it answers from what is on the page. No retraining, always current.",
+    "content": "RAG - retrieval-augmented generation - works like an open-book exam. Instead of memorizing everything during training, the model looks up relevant text at answer time. A question comes in, relevant passages are retrieved and placed in the prompt, and the model answers from that material. This avoids retraining whenever documents change.",
     "next": "Here is the full pipeline, step by step."
   },
   {
@@ -52,14 +52,14 @@
     "id": 8,
     "timeline": "Why it matters",
     "title": "Grounding reduces hallucination",
-    "content": "A model answering from memory guesses when memory runs dry - that is hallucination. A model answering with the source text in front of it can quote instead of guessing, and even cite where the answer came from. RAG does not make hallucination impossible, but grounding answers in real retrieved text cuts it dramatically.",
+    "content": "A model answering from internal memory is more likely to guess when it lacks reliable knowledge. A model answering with source text in front of it can quote or summarize retrieved material instead. RAG does not remove hallucination completely, but grounding the answer in retrieved text often reduces it significantly.",
     "next": "Which is why RAG quietly took over the business world."
   },
   {
     "id": 9,
     "timeline": "Why it matters",
     "title": "RAG is everywhere",
-    "content": "Customer-support bots answering from help articles. Documentation assistants for developers. Internal chatbots that know company policy. Search engines that answer in sentences. Under nearly every one: embeddings, a vector database, and the four-step pipeline. It is arguably the most deployed AI pattern in existence.",
+    "content": "RAG is only as good as its retrieval step. If search surfaces the wrong passages - outdated pages, near-duplicates, or the wrong policy version - the model may build a polished answer on the wrong foundation. In many production systems, much of the effort goes into improving retrieval quality rather than changing the model itself.",
     "next": "It has an Achilles heel, though."
   },
   {

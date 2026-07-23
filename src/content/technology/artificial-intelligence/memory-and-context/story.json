@@ -3,14 +3,14 @@
     "id": 1,
     "timeline": "The mystery",
     "title": "The goldfish that quotes last month",
-    "content": "AI memory seems bizarre. The assistant remembers you are vegetarian from weeks ago, yet forgets the file you discussed an hour ago in the same conversation. It looks random - but it is not. There are four distinct memory layers, each with its own rules, and every 'weird' behavior comes from one of them.",
+    "content": "AI memory can seem bizarre. The assistant remembers you are vegetarian from weeks ago, yet forgets the file you discussed an hour ago in the same conversation. It looks random, but it usually is not. There are distinct memory layers with different rules, and most strange behavior can be traced back to one of them.",
     "next": "Start with the strangest fact of all: the model itself."
   },
   {
     "id": 2,
     "timeline": "The blank slate",
     "title": "The model remembers nothing",
-    "content": "Between requests, an LLM retains nothing. Each request is a blank slate: it reads whatever text it is given, produces an answer, and forgets everything instantly. Like an actor with no memory who plays each scene brilliantly from the script in hand - and remembers none of it when the curtain falls. All 'memory' must therefore be written into the script.",
+    "content": "Between requests, an LLM retains no direct internal memory of the conversation. Each request is effectively a fresh start: it reads the text it is given, produces an answer, and does not carry that interaction forward by itself. This is why all useful 'memory' has to be supplied again through context.",
     "next": "The script has a name you already know."
   },
   {
@@ -24,7 +24,7 @@
     "id": 4,
     "timeline": "The illusion",
     "title": "Layer 2: chat history, the memory illusion",
-    "content": "When you send message five, the app quietly re-sends messages one through four along with it. The model reads the whole conversation fresh, every single time. That is the illusion of memory: not remembering, but re-reading. Like answering a pen pal by first re-reading the entire stack of previous letters.",
+    "content": "When you send message five, the app often re-sends messages one through four along with it. The model reads the whole conversation again from scratch on each turn. That is the core memory illusion: not remembering, but re-reading. The experience feels continuous even though the model is just seeing old text again.",
     "next": "Re-reading works - until the stack gets too tall."
   },
   {
@@ -38,7 +38,7 @@
     "id": 6,
     "timeline": "Real memory",
     "title": "Layer 3: saved memory",
-    "content": "Some apps maintain actual notes: when you mention you are vegetarian or that you have two kids, the app extracts the fact and stores it in a database. In future chats it quietly pastes these notes into the context window. Sticky notes on the monitor - short, durable, and always in view. This is what apps mean by the 'memory' feature you can view and edit.",
+    "content": "Some apps maintain actual notes. When you mention that you are vegetarian or that you have two kids, the app may extract that fact and store it in a database. In future chats it can insert those notes back into the context window. This is often what apps mean by a visible 'memory' feature.",
     "next": "One layer remains: knowledge too big for sticky notes."
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "timeline": "It all makes sense",
     "title": "Every quirk, explained",
-    "content": "Remembers you are vegetarian: saved memory. Forgot the start of this long chat: fell out of the context window. A fresh chat knows nothing about yesterday: history belongs to each conversation. Knows your company handbook: fetched on demand. Four layers, four behaviors - nothing random about it.",
+    "content": "Remembers you are vegetarian: saved memory. Forgot the start of a long chat: it fell out of the context window. A fresh chat knows nothing about yesterday: history belongs to each conversation unless the app carries it over. Knows your company handbook: it was fetched on demand. Once you separate the layers, the behavior becomes much easier to explain.",
     "next": "That fourth layer - finding the right document at the right moment - hides a beautiful idea."
   },
   {

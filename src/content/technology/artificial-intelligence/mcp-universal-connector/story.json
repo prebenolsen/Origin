@@ -3,14 +3,14 @@
     "id": 1,
     "timeline": "The plug problem",
     "title": "A drawer full of cables",
-    "content": "Remember when every gadget had its own charger, and a drawer at home held a tangle of incompatible cables? Early AI tooling was exactly that. Every AI app that wanted to reach Slack, GitHub, or a database had to build its own custom connection to each one - and every tool had to be re-integrated for every app.",
+    "content": "Early AI tooling often looked like a drawer full of incompatible cables. Every AI app that wanted to reach Slack, GitHub, or a database often needed its own custom connection to each one, and every tool had to be re-integrated for every app. This created repeated engineering work on both sides.",
     "next": "Multiply apps by tools and you see how bad it gets."
   },
   {
     "id": 2,
     "timeline": "The plug problem",
     "title": "The multiplication trap",
-    "content": "Ten AI apps and twenty tools means two hundred custom integrations - each built, tested, and maintained separately. Every new app starts from zero; every tool update breaks things in ten places. This 'N times M' explosion is the classic sign that an industry needs a standard.",
+    "content": "Ten AI apps and twenty tools can mean two hundred custom integrations, each built, tested, and maintained separately. Every new app starts from zero, and every tool update can break several connections. This kind of N-times-M growth is a strong sign that a standard is needed.",
     "next": "The hardware world already showed the way out."
   },
   {
@@ -24,14 +24,14 @@
     "id": 4,
     "timeline": "The standard",
     "title": "USB-C for AI",
-    "content": "USB-C means one port charges your laptop, connects your screen, and reads your camera - device makers build one plug and trust it fits everywhere. MCP does this for AI: build one MCP connector for your tool, and every MCP-capable AI app can use it. Two hundred custom integrations collapse into ten apps plus twenty connectors.",
+    "content": "USB-C is a useful analogy because it shows what a standard can do: one connector works across many devices and uses. MCP aims to do something similar for AI tooling. Build one MCP connector for a tool, and many MCP-capable AI apps can use it. Instead of maintaining every app-to-tool link separately, the work shifts toward reusable connectors.",
     "next": "So what does one of these connectors actually look like?"
   },
   {
     "id": 5,
     "timeline": "How it works",
     "title": "Servers offer, apps discover",
-    "content": "The tool side runs an MCP server - a small program that announces: here are my capabilities, here is how to call them. A GitHub server might offer 'list pull requests' and 'create issue'. The AI app connects, reads the menu of capabilities, and hands it to the model - which then uses them through the same tool-calling loop you already know.",
+    "content": "On the tool side, an MCP server exposes capabilities and explains how to call them. A GitHub server might offer actions such as 'list pull requests' or 'create issue'. The AI app connects, reads that capability list, and makes it available to the model through the same tool-calling loop used elsewhere. The main difference is standardized discovery and connection.",
     "next": "Nothing new for the model to learn - just new hands to use."
   },
   {
@@ -45,14 +45,14 @@
     "id": 7,
     "timeline": "Why it matters",
     "title": "An ecosystem of ready-made connectors",
-    "content": "Because anyone can publish an MCP server, thousands now exist: GitHub, Slack, databases, calendars, file systems, browsers, design tools. Setting up an AI assistant for your tools increasingly means picking connectors off a shelf rather than hiring developers to build integrations - the app-store moment for AI tooling.",
+    "content": "Because anyone can publish an MCP server, a growing ecosystem of connectors now exists for GitHub, Slack, databases, calendars, file systems, browsers, and more. This means setting up an AI assistant increasingly looks like choosing from reusable integrations instead of building each one from scratch. Standardization helps the ecosystem scale faster.",
     "next": "There is a quiet strategic benefit too."
   },
   {
     "id": 8,
     "timeline": "Why it matters",
     "title": "Less lock-in, more choice",
-    "content": "When connectors follow a standard, they are not welded to one AI vendor. Switch your assistant from one provider to another, and your MCP connectors come along. Like changing phones without repurchasing your chargers - standards shift power from vendors to users.",
+    "content": "When connectors follow a standard, they are less tightly tied to one AI vendor. If you switch assistants or providers, the same connector can often remain useful. Standards do not remove every migration cost, but they usually reduce lock-in and improve user choice.",
     "next": "You now have every building block. Time to see how real products assemble them."
   }
 ]

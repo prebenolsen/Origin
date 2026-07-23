@@ -2,12 +2,12 @@
   "title": "The Lakehouse Idea",
   "category": "technology",
   "subcategory": "data-engineering",
-  "summary": "Why choose between a cheap, flexible data lake and a reliable, structured warehouse? The lakehouse merges both into one system — a single, governed home for all your data, for both BI and AI.",
+  "summary": "Why choose between a cheap, flexible data lake and a reliable, structured warehouse? The lakehouse combines both into one governed system for analytics, BI, and AI.",
   "accent": "#0d9488",
   "context": {
     "type": "schematic",
     "headline": "Lake plus warehouse, in one",
-    "description": "For years, companies juggled two systems: cheap, flexible data lakes and reliable, structured warehouses. The lakehouse fuses them. Data sits in cheap, open cloud storage, but gains warehouse-grade reliability and structure on top. Organized as bronze, silver, and gold layers and governed by Unity Catalog, it becomes a single source of truth for everyone.",
+    "description": "For years, companies juggled two systems: cheap, flexible data lakes and reliable, structured warehouses. The lakehouse combines them. Data stays in cheap, open cloud storage, but gains stronger reliability and structure on top. Organized through bronze, silver, and gold layers and governed by tools like Unity Catalog, it becomes a shared foundation for many teams.",
     "when": "From two separate systems to one unified architecture",
     "map": {
       "backdrop": "region",

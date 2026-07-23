@@ -2,12 +2,12 @@
   "title": "ChatGPT Is Not GPT",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "The model and the app are two different things. Learn the chain from company to model to product - and what the app layer adds on top of the raw engine.",
+  "summary": "The model and the app are two different things. Learn the chain from company to model to product, and what the app layer adds on top of the raw engine.",
   "accent": "#6d28d9",
   "context": {
     "type": "schematic",
     "headline": "Company, model, app - three layers",
-    "description": "OpenAI builds GPT; ChatGPT is the app around it. Anthropic builds Claude models; the Claude app is the product you chat with. Mixing up these layers causes endless confusion. Once you separate the engine from the car, AI news and product names finally make sense.",
+    "description": "OpenAI builds GPT models; ChatGPT is an app built around them. Anthropic builds Claude models; the Claude app is the product users interact with. Separating company, model, and application makes product names and AI news much easier to understand.",
     "when": "The product layer of modern AI",
     "map": {
       "markers": [

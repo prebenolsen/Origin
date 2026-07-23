@@ -2,12 +2,12 @@
   "title": "Agents: AI That Gets Things Done",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "A chatbot answers a question. An agent takes a goal and works toward it - planning, using tools, checking results, and trying again - until the job is done.",
+  "summary": "A chatbot answers a question. An agent takes a goal and works toward it by planning, using tools, checking results, and trying again until the job is done.",
   "accent": "#c026d3",
   "context": {
     "type": "schematic",
     "headline": "From one answer to a working loop",
-    "description": "An agent is an LLM put in charge of a loop: it plans, acts through tools, looks at what happened, and decides the next step - repeating until the goal is reached. This loop is what powers coding assistants and research agents, and it is the buzzword most worth understanding precisely.",
+    "description": "An agent is an LLM placed inside a loop: it plans, acts through tools, looks at what happened, and decides the next step, repeating until the goal is reached. This loop powers many coding assistants and research tools, and it is worth understanding precisely because the term is often used loosely.",
     "when": "Today's biggest AI buzzword, made concrete",
     "map": {
       "markers": [

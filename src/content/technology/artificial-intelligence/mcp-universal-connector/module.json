@@ -2,12 +2,12 @@
   "title": "MCP: A USB-C Port for AI",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "Every AI app used to need its own custom plug for every tool. The Model Context Protocol replaces that mess with one standard connector - build once, plug in anywhere.",
+  "summary": "AI apps used to need custom integrations for every tool. The Model Context Protocol replaces much of that complexity with a shared standard connector.",
   "accent": "#d946ef",
   "context": {
     "type": "schematic",
     "headline": "One port, any tool",
-    "description": "Before USB, every device had its own cable. Before MCP, every AI app needed a custom integration for every tool. The Model Context Protocol is an open standard that lets any AI app talk to any tool through one shared connector - and it is fast becoming how AI plugs into the world.",
+    "description": "Before MCP, every AI app often needed a custom integration for every tool. The Model Context Protocol is an open standard that lets AI applications talk to tools through a shared connector pattern. It reduces repeated integration work and makes tool ecosystems easier to build and reuse.",
     "when": "The emerging standard for connecting AI to everything",
     "map": {
       "markers": [

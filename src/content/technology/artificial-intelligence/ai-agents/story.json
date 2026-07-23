@@ -3,7 +3,7 @@
     "id": 1,
     "timeline": "The shift",
     "title": "From answers to outcomes",
-    "content": "Ask a chatbot 'how do I plan a trip to Rome?' and it explains. Give an agent 'plan my trip to Rome for next month' and it searches flights, compares hotels, checks the weather, and comes back with an itinerary. The shift is from answering a question to accomplishing a goal - and it changes what AI is for.",
+    "content": "Ask a chatbot 'how do I plan a trip to Rome?' and it explains. Give an agent 'plan my trip to Rome for next month' and it may search flights, compare hotels, check weather, and return an itinerary. The shift is from answering a question to working toward a goal.",
     "next": "What turns a talking model into a working one?"
   },
   {
@@ -17,7 +17,7 @@
     "id": 3,
     "timeline": "The loop",
     "title": "What makes it an agent",
-    "content": "In a normal chat, the model takes one turn and stops - you drive every step. In an agent, the model decides the next step itself, again and again, steering its own multi-step process. Autonomy over multiple steps is the defining trait. A useful mental picture: a capable new intern with a checklist, working through it and adapting as they go.",
+    "content": "In a normal chat, the model takes one turn and stops, while the user drives the next step. In an agent, the model chooses the next action repeatedly inside a multi-step process. Limited autonomy across multiple steps is the defining trait. A useful picture is a capable new intern working through a checklist and adapting along the way.",
     "next": "The recipe has exactly four ingredients."
   },
   {
@@ -45,7 +45,7 @@
     "id": 7,
     "timeline": "The catch",
     "title": "Errors compound",
-    "content": "A chatbot's wrong answer costs one bad reply. An agent's wrong step becomes the foundation for every step after it - a misread file in step 3 quietly poisons step 10. If each step is 95 percent reliable, twenty chained steps succeed only about a third of the time. Long chains demand near-perfect links.",
+    "content": "A chatbot's wrong answer costs one bad reply. An agent's wrong step can become the foundation for every step after it - a misread file in step 3 can quietly affect step 10. This is why multi-step systems are fragile: even small per-step error rates compound across long chains.",
     "next": "Which is why well-built agents keep a human nearby."
   },
   {
@@ -59,7 +59,7 @@
     "id": 9,
     "timeline": "The catch",
     "title": "Buzzword check",
-    "content": "Marketing now calls almost anything an 'agent'. Your filter: does the model decide its own next steps and act through tools, in a loop, toward a goal? If it is a single prompt with a fancy interface, it is a feature, not an agent. Asking this question will instantly make you the clearest thinker in the meeting.",
+    "content": "Marketing now calls many things an 'agent'. A useful filter is this: does the model decide its own next steps and act through tools in a loop toward a goal? If it is a single prompt with a polished interface, it is probably a feature rather than an agent. This distinction helps keep the term precise.",
     "next": "Every agent needs tools to act - and connecting tools used to be a mess. Next: MCP."
   }
 ]

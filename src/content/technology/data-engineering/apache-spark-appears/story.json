@@ -3,21 +3,21 @@
     "id": 1,
     "timeline": "A faster engine",
     "title": "A spark in Berkeley",
-    "content": "In 2009, a research project at UC Berkeley's AMPLab set out to fix MapReduce. It was called Spark, and its goal was simple: make big data processing dramatically faster and far easier to use.",
+    "content": "In 2009, a research project at UC Berkeley's AMPLab set out to improve on MapReduce. It was called Spark, and its goal was practical: make big data processing faster and easier to use for more kinds of work.",
     "next": "What was its secret to going so much faster?"
   },
   {
     "id": 2,
     "timeline": "A faster engine",
     "title": "Keep it in memory",
-    "content": "MapReduce slowed itself down by writing results to disk after every step. Spark's key trick was to keep data in memory (RAM) between steps instead. For workloads that repeat over the same data, this made Spark up to a hundred times faster.",
+    "content": "MapReduce often wrote intermediate results to disk after each step, which added a lot of waiting. Spark's key improvement was to keep data in memory (RAM) between steps when possible. For workloads that repeat over the same data, this often produced very large speedups.",
     "next": "How does Spark spread work across many machines?"
   },
   {
     "id": 3,
     "timeline": "Driver & workers",
     "title": "A driver and its workers",
-    "content": "A Spark cluster has two roles. The driver is the brain: it plans the work. The executors are the workers: each one processes a chunk of the data in parallel. Together they act as a single, powerful machine.",
+    "content": "A Spark cluster has two main roles. The driver plans the work and coordinates the job. The executors do the actual processing, each handling part of the data in parallel. Together, they let many machines behave like one larger system.",
     "next": "How does the driver actually divide up a job?"
   },
   {
@@ -38,7 +38,7 @@
     "id": 6,
     "timeline": "Easy to use",
     "title": "The DataFrame",
-    "content": "Spark's friendly abstraction is the DataFrame: a table of rows and columns, spread across the cluster, that you shape with simple commands like filter, join, and group. It feels like a spreadsheet — but one that can span thousands of machines.",
+    "content": "Spark's main high-level abstraction is the DataFrame: a table of rows and columns spread across the cluster. You shape it with operations like filter, join, and group. It feels familiar to people who know tables, but it runs on many machines instead of one laptop.",
     "next": "When you type a command, does Spark run it right away?"
   },
   {
@@ -52,14 +52,14 @@
     "id": 8,
     "timeline": "Lazy & smart",
     "title": "Look before you leap",
-    "content": "Because Spark waits, it can see the entire plan before running it — and optimize. It reorders steps, skips wasted work, and reads only the data it truly needs. Laziness lets Spark be clever instead of just fast.",
+    "content": "Because Spark waits, it can see the broader plan before running it and then optimize that plan. It may reorder steps, skip unnecessary work, or read less data. This is why lazy evaluation improves more than speed alone; it improves execution quality.",
     "next": "Could one engine handle more than just batch jobs?"
   },
   {
     "id": 9,
     "timeline": "One engine",
     "title": "One engine for everything",
-    "content": "Spark unified workloads that used to need separate tools: batch ETL, SQL analytics, real-time streaming, and machine learning all run on the same engine. One skill set, one system, many jobs.",
+    "content": "Spark unified workloads that previously often needed separate tools: batch ETL, SQL analytics, streaming, and machine learning could all run on the same engine. This reduced context switching and made data platforms simpler to standardize.",
     "next": "Where does Spark keep the data it works on?"
   },
   {
@@ -80,7 +80,7 @@
     "id": 12,
     "timeline": "Standard, but hard",
     "title": "Powerful, but hard to run",
-    "content": "Using Spark still meant setting up clusters, tuning them, managing servers, and wrangling infrastructure. The engine was brilliant; operating it was a chore. Spark's own creators saw this gap — and set out to close it.",
+    "content": "Using Spark still meant setting up clusters, tuning performance, managing servers, and handling infrastructure failures. The engine itself was powerful, but operating it required significant effort. Spark's creators saw that operational gap and set out to reduce it.",
     "next": "To close that gap, they founded a company: Databricks."
   }
 ]

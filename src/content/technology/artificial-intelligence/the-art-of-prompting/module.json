@@ -2,12 +2,12 @@
   "title": "Prompting: Talking to AI",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "The same model can give you a brilliant answer or a useless one - the difference is the prompt. Learn system prompts, few-shot examples, chain of thought, and why prompt engineering became a skill.",
+  "summary": "The same model can give you a strong answer or a weak one depending on the prompt. Learn system prompts, examples, context, and why prompt engineering became a practical skill.",
   "accent": "#a855f7",
   "context": {
     "type": "schematic",
     "headline": "What the model sees is all it knows",
-    "description": "A model's answer is shaped by three inputs: the hidden system prompt setting the rules, your user prompt making the request, and whatever context is included alongside. Learning to shape these inputs is the single highest-leverage AI skill for a normal user.",
+    "description": "A model's answer is shaped by three inputs: the hidden system prompt that sets rules, your user prompt that makes the request, and the context included alongside it. Learning to shape these inputs is one of the highest-leverage AI skills for an ordinary user.",
     "when": "The one layer of AI you fully control",
     "map": {
       "markers": [

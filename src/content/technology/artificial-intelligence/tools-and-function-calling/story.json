@@ -3,14 +3,14 @@
     "id": 1,
     "timeline": "The limitation",
     "title": "A brilliant brain in a jar",
-    "content": "Left alone, an LLM cannot browse the web, check your calendar, run code, or send an email. It cannot even reliably multiply large numbers - it predicts plausible text, and plausible arithmetic is often wrong. Everything it knows was frozen at training time. It is a brilliant brain in a jar: all thought, no hands.",
+    "content": "Left alone, an LLM cannot browse the web, check your calendar, run code, or send an email. It also cannot reliably do every calculation from internal memory, because it predicts plausible text rather than verified computation. Its built-in knowledge is limited to what was available at training time. On its own, it can talk, but it cannot directly act.",
     "next": "So how do today's chatbots search the web and read your files?"
   },
   {
     "id": 2,
     "timeline": "The idea",
     "title": "Let the model ask for help",
-    "content": "The solution is elegant: since the model is good at producing text, let it produce a special kind of text - a structured request like 'call the calculator with 847 x 23'. The app watches for these requests, actually performs the action, and pastes the result back into the conversation. The model never touches anything; it asks, and the app does.",
+    "content": "The solution is to let the model produce a special kind of text: a structured request such as 'call the calculator with 847 x 23'. The surrounding app watches for these requests, performs the action, and inserts the result back into the conversation. The model does not directly operate the tool; it requests, and the app executes.",
     "next": "That exchange forms a loop worth memorizing."
   },
   {
@@ -24,7 +24,7 @@
     "id": 4,
     "timeline": "The idea",
     "title": "Function calling: the same thing, formalized",
-    "content": "Developers register functions with the model - 'get_weather(city)', 'search_web(query)' - each with a description of what it does. The model reads the descriptions and outputs a call with the right arguments when needed. 'Tool calling' and 'function calling' mean the same thing; you will hear both constantly.",
+    "content": "Developers register functions with the model - for example 'get_weather(city)' or 'search_web(query)' - together with descriptions of what they do. The model reads those descriptions and can output a call with the right arguments when needed. 'Tool calling' and 'function calling' are closely related terms; in practice, people often use them interchangeably.",
     "next": "Here is what it looks like on a real question."
   },
   {
@@ -45,14 +45,14 @@
     "id": 7,
     "timeline": "In action",
     "title": "The model decides",
-    "content": "You do not press a 'search' button - the model itself judges whether it can answer from knowledge or should reach for a tool. Ask for the capital of France, and it just answers. Ask about this morning's news, and it searches. That judgment call, made fluidly in the middle of a conversation, is a large part of what makes modern assistants feel capable.",
+    "content": "In many systems, you do not press a separate 'search' button. The model decides whether it can answer from its built-in knowledge or whether it should request a tool. Ask for the capital of France, and it may answer directly. Ask about breaking news, and it may search. That decision process is part of what makes modern assistants feel more capable.",
     "next": "Handing over that judgment also creates risk."
   },
   {
     "id": 8,
     "timeline": "Power and limits",
     "title": "Power needs permissions",
-    "content": "A model that can send email can send a wrong email. So tools come with guardrails: limited permissions, confirmation steps for risky actions, sandboxes for running code. Think of a new employee: you give them the tools for the job, not the master key on day one - and you check their work before it goes out.",
+    "content": "A model that can send email can also send the wrong email. This is why tool systems usually include guardrails: limited permissions, confirmation steps for risky actions, and sandboxes for running code. The goal is not to remove capability, but to make capability safer and easier to supervise.",
     "next": "Tools solve knowledge and action. One puzzle remains."
   },
   {

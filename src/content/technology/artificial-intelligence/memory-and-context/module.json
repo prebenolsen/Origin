@@ -2,12 +2,12 @@
   "title": "Why AI Remembers and Forgets",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "AI recalls your name from last month but forgets what you said an hour ago. It is not random - it is four different memory layers, and once you see them the weirdness makes sense.",
+  "summary": "AI may recall your name from last month but forget what you said an hour ago. It is not random - different memory layers create different behavior, and once you see them the strange pattern makes more sense.",
   "accent": "#7e22ce",
   "context": {
     "type": "schematic",
     "headline": "Four layers of remembering",
-    "description": "The model itself remembers nothing between requests. Everything that feels like memory is built around it: the context window it sees right now, the chat history the app re-sends, the saved facts the app stores, and documents fetched on demand. Each layer explains a different quirk of AI memory.",
+    "description": "The model itself remembers nothing between requests. What feels like memory is built around it: the current context window, the chat history the app re-sends, saved facts the app stores, and documents fetched on demand. Each layer explains a different pattern in AI memory behavior.",
     "when": "Why your chatbot has such a strange memory",
     "map": {
       "markers": [

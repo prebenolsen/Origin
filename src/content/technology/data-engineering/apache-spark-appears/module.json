@@ -2,12 +2,12 @@
   "title": "Apache Spark Appears",
   "category": "technology",
   "subcategory": "data-engineering",
-  "summary": "Born in a Berkeley lab, Apache Spark made big data fast and approachable: process data in memory across a cluster, using simple commands in Python, SQL, Scala, or R.",
+  "summary": "Born in a Berkeley lab, Apache Spark made big data faster and easier to use by processing data in memory across a cluster, using familiar languages like Python, SQL, Scala, or R.",
   "accent": "#ea580c",
   "context": {
     "type": "schematic",
     "headline": "One brain, many workers, all in memory",
-    "description": "Apache Spark fixed what made early big data painful. It keeps data in memory for speed, spreads work across a cluster of machines coordinated by a driver, and lets you write in friendly languages instead of low-level code. One engine handles batch, SQL, streaming, and machine learning.",
+    "description": "Apache Spark addressed several problems that made early big data systems hard to use. It keeps data in memory for speed, spreads work across a cluster of machines coordinated by a driver, and lets you write in familiar languages instead of low-level code. The same engine can support batch processing, SQL analytics, streaming, and machine learning workloads.",
     "when": "From the AMPLab research project to the industry-standard engine",
     "map": {
       "backdrop": "region",

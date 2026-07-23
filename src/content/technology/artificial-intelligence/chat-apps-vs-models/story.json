@@ -3,7 +3,7 @@
     "id": 1,
     "timeline": "The confusion",
     "title": "Two names, two different things",
-    "content": "People say 'ChatGPT' when they mean the model, and 'GPT' when they mean the app. But they are different things. GPT is a large language model - the engine. ChatGPT is an application built around that engine. The same split exists everywhere in AI, and untangling it is the key to understanding the product landscape.",
+    "content": "People often say 'ChatGPT' when they mean the model, and 'GPT' when they mean the app. But they are different things. GPT is a model - the engine. ChatGPT is an application built around that engine. The same split appears across many AI products, and understanding it makes the landscape much clearer.",
     "next": "An engine and a car - that analogy carries surprisingly far."
   },
   {
@@ -31,14 +31,14 @@
     "id": 5,
     "timeline": "The app layer",
     "title": "What the app adds",
-    "content": "The app wraps the model with chat history (your conversations, saved and re-sent), memory (facts it keeps about you), file uploads (turning documents into text the model can read), voice (speech-to-text in, text-to-speech out), tools (web search, code execution), and a friendly interface. None of that is the model - all of it shapes your experience.",
+    "content": "The app wraps the model with other features: chat history, memory, file uploads, voice interfaces, tools such as web search or code execution, and a user interface. None of these features is the raw model itself, but all of them shape the user experience and strongly affect results.",
     "next": "This split explains a complaint you have probably heard."
   },
   {
     "id": 6,
     "timeline": "The app layer",
     "title": "'Did the AI get worse?'",
-    "content": "When people say a chatbot suddenly got better or worse, the model may not have changed at all - the app around it might have. A new system prompt, different memory behavior, or a changed tool can transform the experience while the engine stays identical. Knowing the layers tells you where to look.",
+    "content": "When people say a chatbot suddenly got better or worse, the model may not have changed at all - the surrounding app may have changed instead. A new system prompt, different memory behavior, or a changed tool can alter the experience even if the core model stays the same. Knowing the layers helps you diagnose where the change probably happened.",
     "next": "And one engine rarely powers just one car."
   },
   {

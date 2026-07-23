@@ -3,14 +3,14 @@
     "id": 1,
     "timeline": "Lake + warehouse",
     "title": "It's right there in the name",
-    "content": "Lake plus warehouse equals lakehouse. The idea is to keep the cheap, open, flexible storage of a data lake, but add the reliability, structure, and fast querying that made warehouses so valuable. The best of both worlds, in one system.",
+    "content": "Lake plus warehouse equals lakehouse. The idea is to keep the cheap, open, flexible storage of a data lake, while adding the reliability, structure, and query performance associated with warehouses. The goal is one system that reduces the need to choose between flexibility and trust.",
     "next": "Why not just keep running both systems side by side?"
   },
   {
     "id": 2,
     "timeline": "Why merge",
     "title": "Two systems, endless friction",
-    "content": "Running a lake and a warehouse separately means constantly copying data between them. Copies drift out of sync, costs double, and teams end up in silos. Merging them into one system removes all that friction at the source.",
+    "content": "Running a lake and a warehouse separately usually means copying data back and forth between them. Copies drift out of sync, storage and compute costs increase, and teams often build separate workflows around different systems. A unified architecture reduces that friction at the source.",
     "next": "How can cheap storage act like a reliable warehouse?"
   },
   {
@@ -24,14 +24,14 @@
     "id": 4,
     "timeline": "One home",
     "title": "One copy, many uses",
-    "content": "Because everything lives in one place, the same data serves business dashboards and machine learning, analysts and data scientists alike. The old split between the 'BI world' and the 'data science world' disappears.",
+    "content": "Because everything lives in one place, the same data can serve business dashboards, machine learning, analysts, and data scientists alike. The old split between separate BI and data science storage layers becomes smaller. This improves consistency and reduces repeated copying.",
     "next": "What does that mean for trust in the numbers?"
   },
   {
     "id": 5,
     "timeline": "One home",
     "title": "Finally, a single source of truth",
-    "content": "When everyone reads the same governed data, the reports finally agree. The single source of truth that organizations always wanted — but separate copies always broke — becomes real in the lakehouse.",
+    "content": "When many teams read from the same governed data, reports are more likely to agree. This brings organizations closer to the long-promised single source of truth. In practice, governance and modeling still matter, but the architecture makes consistency much easier.",
     "next": "How do you keep one giant store of data organized?"
   },
   {
@@ -66,7 +66,7 @@
     "id": 10,
     "timeline": "Governance",
     "title": "One place to govern it all",
-    "content": "A single store of data needs strong governance. Unity Catalog provides it: one place to control who can access what, track where data came from (its lineage), and help people discover the data they need — across the entire lakehouse.",
+    "content": "A single store of data needs strong governance. Unity Catalog provides a central place to control access, track lineage, and help people discover the data they need across the lakehouse. Governance is what keeps one shared platform from turning into a larger version of the old data swamp problem.",
     "next": "So what's the missing piece that makes it reliable?"
   },
   {

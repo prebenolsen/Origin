@@ -10,7 +10,7 @@
     "id": 2,
     "timeline": "Ingestion",
     "title": "Step one: get the data in",
-    "content": "It starts with ingestion — bringing data into the lakehouse. Tools like Auto Loader and ready-made connectors automatically pull data from apps, databases, files, and event streams, landing it as raw bronze tables without constant manual work.",
+    "content": "It starts with ingestion - bringing data into the lakehouse. Tools like Auto Loader and ready-made connectors pull data from apps, databases, files, and event streams, landing it as raw bronze tables with less manual work. The goal is to make intake reliable and repeatable.",
     "next": "Does it arrive all at once, or continuously?"
   },
   {
@@ -24,14 +24,14 @@
     "id": 4,
     "timeline": "Pipelines",
     "title": "Step two: shape the data",
-    "content": "Pipelines transform raw data into refined data, walking it through bronze, silver, and gold. With declarative pipelines, you describe the result you want and the platform figures out the steps, runs them in the right order, and checks data quality along the way.",
+    "content": "Pipelines transform raw data into refined data by moving it through bronze, silver, and gold layers. With declarative pipelines, you describe the result you want and the platform plans much of the execution, runs steps in order, and checks data quality along the way. This reduces manual orchestration work.",
     "next": "How do all these steps run reliably, day after day?"
   },
   {
     "id": 5,
     "timeline": "Orchestration",
     "title": "Step three: put it on autopilot",
-    "content": "Jobs orchestrate the whole flow: ingest, then transform, then train a model, then refresh a report — in order, on a schedule, with automatic retries and alerts. The entire pipeline runs by itself, reliably, without someone pressing buttons each morning.",
+    "content": "Jobs orchestrate the whole flow: ingest, then transform, then train a model, then refresh a report - in order, on a schedule, with retries and alerts. This turns many manual steps into a repeatable process. Reliable automation is one of the main differences between a demo pipeline and a production one.",
     "next": "Now that the data is clean and flowing, what gets built on it?"
   },
   {
@@ -52,14 +52,14 @@
     "id": 8,
     "timeline": "Insight & AI",
     "title": "Generative AI, grounded in your data",
-    "content": "Companies build chatbots and AI agents that answer from their own documents and data, using vector search and a technique called RAG (retrieval-augmented generation). Foundation models are served right on the platform, so AI stays close to the governed data it relies on.",
+    "content": "Companies build chatbots and AI agents that answer from their own documents and data, using vector search and a technique called RAG (retrieval-augmented generation). Foundation models can be served on the platform, which helps keep AI workflows close to the governed data they rely on. The main benefit is better control over context and data access.",
     "next": "Can this data also power the live product itself?"
   },
   {
     "id": 9,
     "timeline": "Insight & AI",
     "title": "Serving live applications",
-    "content": "Lakebase, a managed database built into the platform, serves fresh data to live applications at low latency. This closes the loop: insights and predictions flow back out of the lakehouse and into the products customers actually use.",
+    "content": "Lakebase, a managed database built into the platform, serves fresh data to live applications at low latency. This helps close the loop: insights and predictions can move from the lakehouse back into the products customers actually use. In other words, data systems stop being only reporting tools and start powering application behavior directly.",
     "next": "Who is doing all of this in the real world?"
   },
   {
@@ -73,14 +73,14 @@
     "id": 11,
     "timeline": "In the real world",
     "title": "Why one platform wins",
-    "content": "Because ingestion, transformation, analytics, AI, and apps all run on one governed lakehouse, every team works from a single copy of the data. They move faster, avoid drifting copies, and can finally trust that their numbers — and their models — agree.",
+    "content": "Because ingestion, transformation, analytics, AI, and apps can run on one governed lakehouse, teams work from a more consistent copy of the data. That helps them move faster, avoid drifting duplicates, and improve agreement between reports, models, and applications. The benefit is less fragmentation across the stack.",
     "next": "So where does that leave the story we started with?"
   },
   {
     "id": 12,
     "timeline": "In the real world",
     "title": "The full journey",
-    "content": "We began with companies drowning in raw data. We end with a single platform that ingests it, cleans it, governs it, analyzes it, and powers AI from it. That arc — from messy flood to trusted intelligence — is the whole point of modern data engineering.",
+    "content": "We began with companies overwhelmed by raw data. We end with a platform that ingests it, cleans it, governs it, analyzes it, and uses it to power AI and applications. That arc - from messy inputs to trusted, usable intelligence - is one of the main goals of modern data engineering.",
     "next": "From raw flood to real intelligence: that is the work, and Databricks is one of its engines."
   }
 ]

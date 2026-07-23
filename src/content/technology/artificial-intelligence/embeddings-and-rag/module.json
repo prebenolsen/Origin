@@ -2,12 +2,12 @@
   "title": "Embeddings & RAG: Searching by Meaning",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "How does a chatbot answer questions about YOUR documents? Not by training on them - by turning meaning into coordinates and letting the model take an open-book exam.",
+  "summary": "How does a chatbot answer questions about your documents? Usually not by training on them, but by turning meaning into vectors and letting the model answer with retrieved text in front of it.",
   "accent": "#a21caf",
   "context": {
     "type": "schematic",
     "headline": "An open-book exam for AI",
-    "description": "RAG - retrieval-augmented generation - is how AI answers from documents it was never trained on. The question is converted into a point in 'meaning space', the nearest passages are found in a vector database, and the model answers with those passages in front of it. It powers nearly every company chatbot you meet.",
+    "description": "RAG - retrieval-augmented generation - is a common way AI answers from documents it was never trained on. The question is converted into a vector, similar passages are found in a vector database, and the model answers with those passages in front of it. This pattern is widely used in company knowledge bots and document assistants.",
     "when": "Behind almost every 'chat with your documents' product",
     "map": {
       "markers": [

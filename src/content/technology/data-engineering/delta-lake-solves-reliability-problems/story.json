@@ -3,7 +3,7 @@
     "id": 1,
     "timeline": "The reliability gap",
     "title": "Files with no safety net",
-    "content": "Plain files in a data lake have no guarantees. If a job crashes halfway through writing, you're left with half-written, corrupted data — and someone reading at that moment sees a broken mess. For serious work, that's unacceptable.",
+    "content": "Plain files in a data lake have limited safety guarantees. If a job crashes halfway through writing, you can end up with incomplete or inconsistent output. If someone reads at the wrong moment, they may see broken data. For serious analytical and production work, that is a major problem.",
     "next": "How do you make loose files behave like a real database?"
   },
   {
@@ -17,21 +17,21 @@
     "id": 3,
     "timeline": "The transaction log",
     "title": "The log is the hero",
-    "content": "The transaction log is an ordered record of every change ever made to the table. A change only 'counts' once it's written to the log. A half-finished write never makes it into the log — so readers simply never see it. Corruption is designed out.",
+    "content": "The transaction log is an ordered record of changes made to the table. A change only becomes part of the official table state once it is written to the log. A half-finished write does not become visible as a valid version, so readers avoid seeing incomplete results. This is the main mechanism that improves reliability.",
     "next": "What guarantees does that give you?"
   },
   {
     "id": 4,
     "timeline": "The transaction log",
     "title": "ACID comes to the lake",
-    "content": "The log delivers ACID — the reliability standard databases always had. Atomicity: a change fully happens or not at all. Consistency and Isolation: simultaneous readers and writers never corrupt each other. Durability: once committed, it stays committed.",
+    "content": "The log enables ACID-style guarantees, the reliability model long associated with databases. Atomicity means a change fully happens or not at all. Consistency and isolation reduce conflicts between readers and writers. Durability means committed changes remain recorded. Together, these rules make data operations safer and more predictable.",
     "next": "What does this feel like in practice?"
   },
   {
     "id": 5,
     "timeline": "The transaction log",
     "title": "Trust, restored",
-    "content": "With ACID, the lake finally behaves like a real database. No more half-written files. No more wondering whether a number is even right. The same cheap storage is now genuinely trustworthy — the missing piece the lakehouse needed.",
+    "content": "With these guarantees in place, lake storage behaves more like a database table and less like a loose file folder. Readers are less likely to encounter half-written data, and teams can trust table state more consistently. This reliability was one of the missing pieces the lakehouse model needed.",
     "next": "Can the log do more than just prevent corruption?"
   },
   {
@@ -45,7 +45,7 @@
     "id": 7,
     "timeline": "Time travel & schema",
     "title": "A bouncer at the door",
-    "content": "Delta enforces the table's schema: incoming data is checked against the expected columns and types, and data that doesn't fit is rejected. A wrong type can't silently poison the table. When you do mean to change the shape, schema evolution lets you do it safely.",
+    "content": "Delta enforces the table's schema: incoming data is checked against expected columns and types, and incompatible data can be rejected. This lowers the risk that a bad type or missing field silently damages downstream work. When a real schema change is intended, schema evolution supports that change in a more controlled way.",
     "next": "What about fixing or updating records that are already there?"
   },
   {
@@ -59,7 +59,7 @@
     "id": 9,
     "timeline": "Updates & streaming",
     "title": "One table for batch and streaming",
-    "content": "The same Delta table can be fed by a nightly batch job and a real-time stream at the same time, reliably. This unification — one table, both speeds — removes a whole category of complexity from data systems.",
+    "content": "The same Delta table can support both scheduled batch updates and streaming-style ingestion. This unification reduces the need for separate storage patterns for different speeds of data arrival. In practice, it removes a significant amount of system complexity.",
     "next": "Do you have to opt in to all of this?"
   },
   {

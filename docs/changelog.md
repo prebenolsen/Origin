@@ -4,6 +4,75 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.15.0] - 2026-07-24
+
+### Content - Quality pass on remaining authored technology AI modules
+
+Finished the non-placeholder quality pass for the remaining authored modules under
+`technology/artificial-intelligence`, continuing the same goals used across the earlier
+content rewrites: clearer mechanisms, cleaner wording, and neutral educational tone.
+
+Updated modules:
+- `src/content/technology/artificial-intelligence/tools-and-function-calling`
+- `src/content/technology/artificial-intelligence/memory-and-context`
+- `src/content/technology/artificial-intelligence/embeddings-and-rag`
+- `src/content/technology/artificial-intelligence/ai-agents`
+- `src/content/technology/artificial-intelligence/ai-workflows-and-apis`
+- `src/content/technology/artificial-intelligence/mcp-universal-connector`
+- `src/content/technology/artificial-intelligence/the-model-landscape`
+
+What improved:
+- Calmer and more precise explanations of tool calling, memory layers, embeddings, RAG,
+  agents, AI workflows, MCP, and model-provider trade-offs.
+- Reduced metaphor-heavy phrasing where it obscured the mechanism.
+- Clearer distinction between what models do internally and what surrounding systems do.
+- More careful wording around standards, lock-in, benchmarks, and agent autonomy.
+- Maintained readability while keeping the technical concepts intact.
+
+## [9.14.0] - 2026-07-24
+
+### Content - Quality pass on first authored technology AI modules
+
+Started the same non-placeholder quality pass for authored modules under
+`technology/artificial-intelligence`, focusing on clearer mechanism explanations,
+cleaner wording, and a more neutral educational tone.
+
+Updated modules:
+- `src/content/technology/artificial-intelligence/what-is-ai`
+- `src/content/technology/artificial-intelligence/how-llms-work`
+- `src/content/technology/artificial-intelligence/chat-apps-vs-models`
+- `src/content/technology/artificial-intelligence/the-art-of-prompting`
+
+What improved:
+- More precise wording around what AI, ML, deep learning, and generative AI mean.
+- Clearer explanations of tokens, parameters, training, temperature, and prompting.
+- Reduced hype-like or overly absolute phrasing in AI descriptions.
+- Better distinction between models, apps, and surrounding product layers.
+- More careful explanation of security concepts such as prompt injection.
+
+## [9.13.0] - 2026-07-24
+
+### Content - Quality pass on additional authored technology data-engineering modules
+
+Continued the non-placeholder quality pass in `technology/data-engineering` with the same
+goals used in politics and psychology: clearer explanation, more explicit mechanisms,
+cleaner phrasing, and a more neutral educational tone.
+
+Updated modules:
+- `src/content/technology/data-engineering/apache-spark-appears`
+- `src/content/technology/data-engineering/databricks-makes-spark-easier`
+- `src/content/technology/data-engineering/delta-lake-solves-reliability-problems`
+- `src/content/technology/data-engineering/the-lakehouse-idea`
+- `src/content/technology/data-engineering/how-companies-use-databricks-today`
+
+What improved:
+- Softer and more precise wording where claims were previously too absolute.
+- Clearer explanations of core mechanisms such as in-memory execution, cluster roles,
+  transaction logs, ACID guarantees, autoscaling, and unified lakehouse architecture.
+- Better cause-and-effect between platform features and the problems they solve.
+- More consistent readability for learners who want conceptual clarity without losing
+  technical meaning.
+
 ## [9.12.0] - 2026-07-24
 
 ### Content - Quality pass on authored technology data-engineering modules (non-placeholder only)

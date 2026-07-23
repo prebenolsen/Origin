@@ -3,14 +3,14 @@
     "id": 1,
     "timeline": "The core trick",
     "title": "Autocomplete on an enormous scale",
-    "content": "Your phone keyboard suggests the next word as you type. A large language model - an LLM - is that same idea taken to an extreme: given some text, predict what comes next. That is the entire trick. Everything an LLM does - answering questions, writing code, translating - emerges from predicting the next piece of text, over and over.",
+    "content": "Your phone keyboard suggests the next word as you type. A large language model - an LLM - uses a similar basic idea at far larger scale: given some text, predict what comes next. Much of what an LLM does - answering questions, writing code, translating - emerges from repeating that prediction step over and over.",
     "next": "But what exactly is a 'piece' of text?"
   },
   {
     "id": 2,
     "timeline": "The core trick",
     "title": "Tokens: the LEGO bricks of language",
-    "content": "LLMs do not see letters or whole words. Text is chopped into tokens - common chunks like 'the', 'ing', or 'walk'. A token is roughly three-quarters of a word, so 100 tokens is about 75 words. Each token is converted to a number, because underneath it all, the model is pure math working on numbers.",
+    "content": "LLMs do not work directly on letters or full words. Text is split into tokens - common chunks such as 'the', 'ing', or 'walk'. A token is often smaller than a full word, though the exact size varies. Each token is converted into numbers, because the model ultimately works through mathematical operations on numeric representations.",
     "next": "So how does one token become a whole answer?"
   },
   {
@@ -24,14 +24,14 @@
     "id": 4,
     "timeline": "Training",
     "title": "Training: billions of flashcards",
-    "content": "During training, the model reads mountains of text - books, articles, websites, code - and plays the same game endlessly: guess the next token, check the real answer, adjust slightly when wrong. Repeat billions upon billions of times. It is like a student grinding through an impossibly large deck of flashcards until the guesses become uncannily good.",
+    "content": "During training, the model processes very large amounts of text - books, articles, websites, and code - and repeats the same task constantly: guess the next token, compare with the real next token, and adjust when wrong. Repeating this at huge scale is how the model learns statistical patterns in language.",
     "next": "Where do all those adjustments actually get stored?"
   },
   {
     "id": 5,
     "timeline": "Training",
     "title": "Parameters: billions of tiny knobs",
-    "content": "A model's knowledge lives in its parameters - numbers that get nudged up and down during training, like billions of tiny knobs on a gigantic mixing desk. Modern LLMs have hundreds of billions of them. When people say a model is 'bigger', they usually mean it has more parameters - more knobs, more capacity to capture subtle patterns.",
+    "content": "A model's learned behavior is stored in its parameters - numbers adjusted during training, like billions of tiny knobs on a huge control board. Modern LLMs can have billions or even hundreds of billions of parameters. When people say a model is 'bigger', they often mean it has more parameters and therefore more capacity to capture subtle patterns.",
     "next": "Training builds the model. Using it is a different phase entirely."
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "timeline": "Using the model",
     "title": "Temperature: the adventurousness dial",
-    "content": "For each token, the model does not just have one candidate - it has a ranked list with probabilities. Temperature controls how it picks. Low temperature: always take the safest choice, giving consistent, predictable answers. High temperature: gamble on less likely tokens, giving creative but erratic output. It is a spice level for text.",
+    "content": "For each token, the model has many candidates with different probabilities. Temperature affects how strongly it prefers the most likely option. Low temperature usually gives more predictable answers. High temperature allows less likely tokens more often, which can make output more creative but also less stable. It is a useful control for variation.",
     "next": "This probability game explains AI's most famous flaw."
   },
   {
@@ -66,7 +66,7 @@
     "id": 10,
     "timeline": "Getting smarter",
     "title": "Reasoning models: showing their work",
-    "content": "Reasoning models generate a long stretch of 'thinking' tokens before writing the final answer - working through the problem step by step, like a student doing the math in the margin before writing the result. This costs time and tokens but dramatically improves performance on hard problems in math, logic, and code.",
+    "content": "Reasoning-oriented models often spend more computation on intermediate steps before producing a final answer. This can look like working through a problem in stages instead of answering immediately. The extra work costs time and tokens, but it can improve performance on harder problems in math, logic, and code.",
     "next": "And what if you need a model tuned for your specific field?"
   },
   {

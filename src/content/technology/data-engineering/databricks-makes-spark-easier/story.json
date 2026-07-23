@@ -3,21 +3,21 @@
     "id": 1,
     "timeline": "A company is born",
     "title": "The creators start a company",
-    "content": "In 2013, the team behind Spark founded Databricks. Their mission was to remove Spark's biggest pain: the infrastructure. The idea was a managed cloud service where you bring your data and ideas, and the platform runs the machines for you.",
+    "content": "In 2013, the team behind Spark founded Databricks. Their goal was to reduce Spark's biggest pain point: infrastructure management. The idea was a managed cloud service where users focus on data work while the platform handles most of the machine setup and operations.",
     "next": "What was the first thing they made easy?"
   },
   {
     "id": 2,
     "timeline": "Managed clusters",
     "title": "Clusters with a click",
-    "content": "Setting up a Spark cluster used to take experts and patience. On Databricks, you create one with a few clicks. The platform provisions the machines, installs and configures Spark, and keeps them healthy — so you can start working in minutes.",
+    "content": "Setting up a Spark cluster used to take specialist knowledge and time. On Databricks, you create one with a few clicks. The platform provisions the machines, configures Spark, and manages much of the operational setup so you can start working faster.",
     "next": "What stops those machines from wasting money?"
   },
   {
     "id": 3,
     "timeline": "Managed clusters",
     "title": "It scales itself",
-    "content": "Databricks clusters autoscale: they add machines when the work is heavy and remove them when it's light. They also auto-terminate when idle, so you're not paying for computers doing nothing. Cost control happens automatically.",
+    "content": "Databricks clusters can autoscale: they add machines when workload rises and remove them when demand drops. They can also terminate when idle, which reduces wasted spend. This does not eliminate cost decisions, but it makes resource control easier.",
     "next": "Where do people actually write their code?"
   },
   {
@@ -31,14 +31,14 @@
     "id": 5,
     "timeline": "The workspace",
     "title": "A better Spark, the Databricks Runtime",
-    "content": "Underneath runs the Databricks Runtime: an optimized version of Spark with performance, reliability, and security improvements built in. It even includes Photon, a high-speed query engine. You get a faster Spark without tuning anything yourself.",
+    "content": "Underneath runs the Databricks Runtime: an optimized version of Spark with performance, reliability, and security improvements built in. It also includes components such as Photon for faster query execution in some workloads. This gives teams a stronger default setup with less manual tuning.",
     "next": "Could they make compute even simpler than 'one click'?"
   },
   {
     "id": 6,
     "timeline": "Serverless",
     "title": "Serverless: forget the cluster",
-    "content": "Serverless compute goes one step further: you stop thinking about clusters entirely. Databricks instantly supplies the compute, scales it to your workload, and charges only for what you use. The infrastructure simply disappears into the background.",
+    "content": "Serverless compute goes one step further: users think less about cluster setup and more about the actual workload. Databricks supplies the compute, scales it to demand, and charges based on usage. The infrastructure does not disappear completely, but much more of it moves into the background.",
     "next": "How do you run this work automatically, every day?"
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "timeline": "Automation",
     "title": "Your data project, as code",
-    "content": "With asset bundles, you describe your jobs and pipelines in simple YAML configuration files. That means your whole data project can be version-controlled, reviewed, and deployed reliably — bringing software engineering's CI/CD discipline to data.",
+    "content": "With asset bundles, you describe jobs and pipelines in YAML configuration files. That means data projects can be version-controlled, reviewed, and deployed more reliably. It brings software engineering practices such as CI/CD closer to data work.",
     "next": "Where does all of this actually run?"
   },
   {
@@ -66,7 +66,7 @@
     "id": 10,
     "timeline": "One platform",
     "title": "Everyone in one workspace",
-    "content": "Data engineers, analysts, and data scientists all work in the same platform, on the same data. Instead of stitching together separate, disconnected tools, teams collaborate in one place — the original promise of a unified platform.",
+    "content": "Data engineers, analysts, and data scientists can work in the same platform on the same underlying data. Instead of stitching together many separate tools, teams collaborate in one environment. This is one of the main reasons unified platforms appeal to organizations.",
     "next": "So is the data problem finally solved?"
   },
   {

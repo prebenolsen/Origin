@@ -2,12 +2,12 @@
   "title": "How Companies Use Databricks Today",
   "category": "technology",
   "subcategory": "data-engineering",
-  "summary": "Put it all together: companies ingest data, refine it through pipelines, orchestrate everything with jobs, then power dashboards, machine learning, generative AI, and live apps — all on one governed lakehouse.",
+  "summary": "Put it all together: companies ingest data, refine it through pipelines, orchestrate everything with jobs, then power dashboards, machine learning, generative AI, and live apps on one governed lakehouse.",
   "accent": "#7c3aed",
   "context": {
     "type": "schematic",
     "headline": "From raw sources to real intelligence",
-    "description": "With reliable storage, an easy platform, and a governed lakehouse in place, companies run the full data lifecycle in one system. Data is ingested (batch and streaming), refined through pipelines into bronze, silver, and gold tables, orchestrated by jobs, and then serves dashboards, machine learning, generative AI, and live applications.",
+    "description": "With reliable storage, a managed platform, and a governed lakehouse in place, companies can run the full data lifecycle in one system. Data is ingested in batch or streaming form, refined through pipelines into bronze, silver, and gold tables, orchestrated by jobs, and then used for dashboards, machine learning, generative AI, and live applications.",
     "when": "The modern data stack, as used in production today",
     "map": {
       "backdrop": "region",

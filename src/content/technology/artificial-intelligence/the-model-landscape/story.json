@@ -3,42 +3,42 @@
     "id": 1,
     "timeline": "The families",
     "title": "Not one AI - a zoo",
-    "content": "The word 'AI' hides a whole zoo of different model types, sorted by what they take in and what they produce. LLMs read and write text. Vision models understand images. Speech models transcribe and speak. Image and video generators create pictures and film from descriptions. Different species, different jobs.",
+    "content": "The word 'AI' hides many different model types, which can be grouped by what they take in and what they produce. LLMs read and write text. Vision models work with images. Speech models transcribe or generate audio. Image and video generators create media from prompts. Different model families are built for different tasks.",
     "next": "The newest species can do several of these at once."
   },
   {
     "id": 2,
     "timeline": "The families",
     "title": "Multimodal: one model, many senses",
-    "content": "A multimodal model handles several formats in one brain: show it a photo of your fridge and ask, in text, what to cook - it reads the image and writes the recipe. Like a colleague who can read, look, and listen instead of one who only answers email. Frontier models from the major labs are increasingly multimodal by default.",
+    "content": "A multimodal model handles several formats in one system. You can show it a photo of a fridge and ask in text what to cook, and it can combine image understanding with text generation. Major frontier models are increasingly multimodal, which makes them more flexible across tasks.",
     "next": "So who actually builds these things?"
   },
   {
     "id": 3,
     "timeline": "The players",
     "title": "The major providers",
-    "content": "Six names cover most of the news. OpenAI builds the GPT models behind ChatGPT. Anthropic builds Claude. Google DeepMind builds Gemini. Meta builds Llama. Mistral AI is Europe's flagship lab. xAI builds Grok. Know these six and the model names attached to them, and most AI headlines instantly make sense.",
+    "content": "A small group of companies dominates much of the current AI news. OpenAI builds GPT models. Anthropic builds Claude. Google DeepMind builds Gemini. Meta builds Llama. Mistral AI is an important European lab. xAI builds Grok. Knowing these provider-model pairings makes current AI headlines easier to interpret.",
     "next": "One dividing line splits this list in a really important way."
   },
   {
     "id": 4,
     "timeline": "The players",
     "title": "Open weights vs closed",
-    "content": "Some models are closed: you can only reach them through the provider's API, and the internals stay secret - GPT and Claude work this way. Others publish their weights (the trained parameters) for anyone to download and run on their own machines - Meta's Llama is the famous example. Roughly: a secret family recipe you can order at the restaurant, versus a recipe printed for anyone to cook at home.",
+    "content": "Some models are closed: you can only access them through the provider's API, and the internal weights are not released. GPT and Claude are common examples. Others publish their weights so people can download and run them on their own hardware - Meta's Llama is a well-known example. This distinction matters for control, cost, deployment flexibility, and openness.",
     "next": "With all these options - how does anyone choose?"
   },
   {
     "id": 5,
     "timeline": "Choosing",
     "title": "The triangle: capability, speed, cost",
-    "content": "Every model choice trades off three things. Bigger models are more capable but slower and pricier per token; smaller ones are fast and cheap but less brilliant. That is why providers ship families in sizes - like Claude's Opus, Sonnet, and Haiku. You would not book a moving truck to deliver a letter: routine tasks get small models, hard reasoning gets big ones.",
+    "content": "Every model choice involves trade-offs. Larger models are often more capable, but also slower and more expensive per token. Smaller models are faster and cheaper, but usually less capable on hard tasks. This is why providers ship model families in different sizes: one size does not fit every use case.",
     "next": "But how do you know which model is 'best' at something?"
   },
   {
     "id": 6,
     "timeline": "Choosing",
     "title": "Benchmarks: useful, gameable",
-    "content": "Benchmarks are standardized tests - math problems, coding tasks, exam questions - used to compare models, and leaderboards rank the results. They are genuinely useful but easy to over-trust: models can be tuned toward popular tests, like judging chefs solely by one signature dish. The scores narrow your shortlist; trying a model on your own task picks the winner.",
+    "content": "Benchmarks are standardized tests - math problems, coding tasks, exam questions - used to compare models, and leaderboards rank the results. They are useful, but easy to over-trust. Models can be tuned toward popular tests, and strong benchmark scores do not guarantee the best fit for your actual use case. Benchmarks help narrow the shortlist; real testing on your own task should decide the final choice.",
     "next": "One warning before you memorize any of these names."
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "timeline": "The long view",
     "title": "You now speak AI",
-    "content": "The full stack, top to bottom: a model predicts tokens; prompts and context steer it; tools give it hands; RAG gives it your knowledge; memory layers make it personal; APIs make it rentable; workflows and agents put it to work; MCP plugs it all together. Next time someone drops a buzzword - hallucination, fine-tuning, vector database, agent - you know exactly which shelf it sits on.",
+    "content": "The full stack, top to bottom, now fits together: a model predicts tokens; prompts and context steer it; tools let it act; RAG supplies external knowledge; memory layers personalize behavior; APIs make access easy; workflows and agents put it to work; MCP helps connect tools through a standard. With that map, common AI buzzwords become easier to place and understand.",
     "next": "That is the whole landscape. The hype will keep changing - your map will not."
   }
 ]

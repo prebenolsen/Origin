@@ -2,12 +2,12 @@
   "title": "How LLMs Actually Work",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "Under the hood, a large language model does exactly one thing: predict the next word-piece. Learn how that single trick, repeated fast enough, produces essays, answers, and code.",
+  "summary": "Under the hood, a large language model mainly does one thing: predict the next token. Learn how that loop, repeated quickly, produces essays, answers, and code.",
   "accent": "#7c3aed",
   "context": {
     "type": "schematic",
     "headline": "One trick, repeated a thousand times",
-    "description": "Every chatbot answer is built the same way: your prompt goes in, the model predicts the most likely next token, adds it to the text, and repeats. Understanding this loop - and the handful of terms around it - demystifies almost everything about modern AI.",
+    "description": "Every chatbot answer is built through the same core loop: your prompt goes in, the model predicts a likely next token, adds it to the text, and repeats. Understanding this loop and the terms around it explains much of how modern language models behave.",
     "when": "The engine behind every modern chatbot",
     "map": {
       "markers": [

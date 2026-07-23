@@ -2,12 +2,12 @@
   "title": "The Model Landscape",
   "category": "technology",
   "subcategory": "artificial-intelligence",
-  "summary": "Text, vision, speech, image, video - and half a dozen major providers. Learn the model families, who builds what, and how to choose between capability, speed, and cost.",
+  "summary": "Text, vision, speech, image, video - and several major providers. Learn the model families, who builds what, and how to think about capability, speed, and cost.",
   "accent": "#701a75",
   "context": {
     "type": "schematic",
     "headline": "A zoo of models, a map to read it",
-    "description": "There is no single 'AI' - there are families of models specialized for text, images, speech, and video, built by a handful of major providers. This closing module maps the landscape and gives you the vocabulary to place any AI headline in context.",
+    "description": "There is no single 'AI' - there are families of models specialized for text, images, speech, and video, built by a handful of major providers. This closing module maps that landscape and gives you vocabulary for placing products, providers, and headlines in context.",
     "when": "The players and the trade-offs, as of today",
     "map": {
       "markers": [
