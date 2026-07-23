@@ -7,7 +7,7 @@
   "context": {
     "type": "schematic",
     "headline": "Great for tidy tables, strained by everything else",
-    "description": "For decades, companies relied on relational databases for transactions and data warehouses for analytics. These tools worked very well for structured data and repeatable reporting. But they required schema decisions up front, scaled expensively on single large machines, often relied on proprietary formats, and struggled with rapidly growing semi-structured and unstructured data.",
+    "description": "For decades, companies relied on relational databases for transactions and data warehouses for analytics. These tools worked very well for structured data and repeatable reporting. But they required schema decisions up front, scaled expensively on single large machines, often relied on proprietary formats, and struggled with fast-growing semi-structured and unstructured data.",
     "when": "From the invention of the relational model to the strain of the internet era",
     "map": {
       "backdrop": "region",

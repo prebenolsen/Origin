@@ -4,6 +4,27 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.12.0] - 2026-07-24
+
+### Content - Quality pass on authored technology data-engineering modules (non-placeholder only)
+
+Applied the same improvement procedure used in politics and psychology to authored
+technology modules under `technology/data-engineering`, while explicitly skipping any
+placeholder replacement.
+
+Updated modules:
+- `src/content/technology/data-engineering/the-data-problem`
+- `src/content/technology/data-engineering/the-rise-of-big-data`
+- `src/content/technology/data-engineering/why-traditional-databases-struggled`
+
+What improved:
+- Clearer mechanism explanations for pipelines, schema choices, distributed computing, and
+  scaling limits.
+- Simpler wording without removing technical meaning.
+- More neutral phrasing where earlier text sounded too dramatic or absolute.
+- Stronger cause-and-effect between old system limits and the next generation of tools.
+- Better readability for readers who know English well but benefit from cleaner explanation.
+
 ## [9.11.0] - 2026-07-23
 
 ### Content - Quality pass on authored psychology communication modules (non-placeholder only)

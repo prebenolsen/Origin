@@ -7,7 +7,7 @@
   "context": {
     "type": "schematic",
     "headline": "Too big for one machine — so use a thousand",
-    "description": "As data grew in volume, velocity, and variety, vertical scaling on a single machine reached economic and technical limits. The breakthrough was distributed computing: spread storage and processing across many machines. Combined with low-cost cloud object storage, this enabled data lakes - store raw data first, then apply structure when needed.",
+    "description": "As data grew in volume, velocity, and variety, scaling up one machine reached economic and technical limits. The breakthrough was distributed computing: spread storage and processing across many machines. Combined with low-cost cloud object storage, this enabled data lakes - systems that store raw data first and apply structure later when needed.",
     "when": "From Google's landmark papers to the cloud data lake",
     "map": {
       "backdrop": "region",

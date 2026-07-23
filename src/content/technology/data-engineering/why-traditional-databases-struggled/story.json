@@ -3,7 +3,7 @@
     "id": 1,
     "timeline": "The database",
     "title": "The first great tool: the database",
-    "content": "In 1970, the relational database introduced a beautifully simple idea: store data as tables of rows and columns, and ask questions with a language called SQL. It was reliable, organized, and became the backbone of business computing.",
+    "content": "In 1970, the relational database introduced a powerful idea: store data as tables of rows and columns, and query it with a language called SQL. This model was reliable, organized, and well suited to business records. It became a core foundation of business computing.",
     "next": "What were these databases actually built to do?"
   },
   {
@@ -24,35 +24,35 @@
     "id": 4,
     "timeline": "The data warehouse",
     "title": "Enter the data warehouse",
-    "content": "The answer was the data warehouse: a separate system devoted to analysis, or OLAP. Data was copied in from many sources, organized for reporting, and queried for business intelligence. For thirty years, warehouses powered the dashboards executives relied on.",
+    "content": "The answer was the data warehouse: a separate system devoted to analysis, often called OLAP. Data was copied in from many sources, organized for reporting, and queried for business intelligence. For decades, warehouses powered the dashboards and reporting systems that businesses relied on.",
     "next": "What did you have to do before you could load data in?"
   },
   {
     "id": 5,
     "timeline": "The data warehouse",
     "title": "Structure first, data later",
-    "content": "Warehouses use schema-on-write: you must define the exact columns and types before loading anything. This keeps data tidy, but it's rigid. If your data doesn't fit the predefined shape, it can't come in until someone redesigns the schema.",
+    "content": "Warehouses use schema-on-write: you define the exact columns and types before loading the data. This keeps data tidy and consistent, but it also makes change slower. If new data does not fit the predefined shape, it often cannot be loaded until someone redesigns the schema.",
     "next": "Why did that rigidity become a real problem?"
   },
   {
     "id": 6,
     "timeline": "Cracks appear",
     "title": "The world stopped fitting in tables",
-    "content": "The internet produced data that didn't fit neat rows: web logs, free text, images, video, JSON from apps, clickstreams. This messy, semi-structured, and unstructured data was most of the new data being created — and warehouses had no comfortable home for it.",
+    "content": "The internet produced data that did not fit neat rows: web logs, free text, images, video, JSON from apps, and clickstreams. Much of the new data being created was semi-structured or unstructured, and warehouses were not designed to absorb that kind of input easily.",
     "next": "Couldn't they just buy a bigger machine?"
   },
   {
     "id": 7,
     "timeline": "Cracks appear",
     "title": "Scaling up hits a wall",
-    "content": "Traditional systems scaled 'up' — you replaced your server with a bigger, more powerful one. But bigger machines get expensive fast and eventually you hit a physical ceiling. There's only so large a single computer can get.",
+    "content": "Traditional systems mostly scaled up: you replaced your server with a bigger, more powerful one. But bigger machines become expensive quickly and eventually hit practical limits. There is only so far a single computer can scale before cost and hardware constraints become serious problems.",
     "next": "Was the data at least easy to move and reuse?"
   },
   {
     "id": 8,
     "timeline": "Cracks appear",
     "title": "Locked in closed formats",
-    "content": "Warehouse data often lived in proprietary formats inside one vendor's system. Your data was effectively trapped: hard to access with other tools, and expensive to move. You didn't fully control your own data.",
+    "content": "Warehouse data often lived in proprietary formats inside one vendor's system. That made it harder to access with other tools and expensive to move elsewhere. In practice, companies had less flexibility than they wanted over their own data.",
     "next": "What did this mean for the rising field of machine learning?"
   },
   {
@@ -66,14 +66,14 @@
     "id": 10,
     "timeline": "Left behind",
     "title": "Two worlds, no bridge",
-    "content": "Companies were forced into a split: warehouses for clean business reporting, and... nothing good for everything else. Maintaining separate, disconnected systems was costly, slow, and meant the same data was copied and re-copied, drifting out of sync.",
+    "content": "Companies were pushed into a split: warehouses for clean business reporting, and weaker solutions for everything else. Maintaining separate, disconnected systems was costly and slow. It also meant the same data was copied again and again, which increased the risk of drift and contradiction.",
     "next": "If the data won't fit the warehouse, what's the alternative?"
   },
   {
     "id": 11,
     "timeline": "Left behind",
     "title": "A radical new question",
-    "content": "Engineers asked a different question: instead of forcing all data into an expensive, rigid structure first, what if we just stored everything cheaply, in its raw form, and worried about structure later? That idea would launch the big data era.",
+    "content": "Engineers asked a different question: instead of forcing all data into an expensive, rigid structure first, what if we stored it cheaply in raw form and worried about structure later? That idea helped launch the big data era.",
     "next": "That cheap, store-everything idea became known as 'big data'."
   }
 ]

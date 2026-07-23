@@ -3,14 +3,14 @@
     "id": 1,
     "timeline": "Data explodes",
     "title": "The big data era arrives",
-      "content": "In the 2000s, data growth accelerated across many industries. A common model described this with three Vs: volume (how much), velocity (how fast it arrives), and variety (how many forms it takes). Together, these pressures exposed limits in traditional tools.",
+      "content": "In the 2000s, data growth accelerated across many industries. A common model described this with three Vs: volume (how much data), velocity (how fast it arrives), and variety (how many forms it takes). Together, these pressures exposed the limits of traditional single-system tools.",
     "next": "If one machine can't keep up, what can?"
   },
   {
     "id": 2,
     "timeline": "Distributed computing",
     "title": "Many hands make light work",
-    "content": "The breakthrough was distributed computing: instead of one powerful, expensive machine, use many cheap, ordinary ones working together as a team. Split the data and the work across them, and the group can handle far more than any single computer ever could.",
+    "content": "The breakthrough was distributed computing: instead of one powerful, expensive machine, use many cheaper machines working together as a cluster. Split both the data and the work across them, and the group can process far more than a single computer could handle alone. The key mechanism is parallelism.",
     "next": "Who first showed this could work at massive scale?"
   },
   {
@@ -31,7 +31,7 @@
     "id": 5,
     "timeline": "The data lake",
     "title": "The data lake idea",
-    "content": "Instead of forcing data into a rigid warehouse, why not pour all of it — raw, in any format — into one big, cheap repository? That's a data lake. You store first and decide on structure later, when you actually read the data.",
+    "content": "Instead of forcing data into a rigid warehouse first, why not store it in raw form in one large, cheap repository? That is the core data lake idea. You store first and decide on structure later, when you actually read or process the data. This makes ingestion easier, especially for messy or changing data sources.",
     "next": "What made storing 'everything' suddenly affordable?"
   },
   {
@@ -45,7 +45,7 @@
     "id": 7,
     "timeline": "The data lake",
     "title": "Schema-on-read flips the rules",
-    "content": "Warehouses demanded structure before loading. Data lakes flipped this to schema-on-read: dump the data in now, and apply structure only when you read it. This flexibility was a gift for data scientists and for new, messy data types.",
+    "content": "Warehouses demanded structure before loading. Data lakes flipped this to schema-on-read: store the data now, and apply structure only when you read it. This flexibility was especially useful for data scientists, logs, documents, and new data types that changed faster than warehouse schemas could keep up.",
     "next": "So was big data the happy ending?"
   },
   {
@@ -59,14 +59,14 @@
     "id": 9,
     "timeline": "The catch",
     "title": "Lakes turned into swamps",
-    "content": "Data lakes had no built-in rules or reliability. Anything could be dumped in, with no guarantees about quality or consistency. Many lakes decayed into 'data swamps': vast, messy, and so untrustworthy that nobody wanted to use them.",
+    "content": "Early data lakes had few built-in rules for reliability or governance. Anything could be dumped in, with weak guarantees about quality, ownership, or consistency. Many lakes became 'data swamps': large, messy collections that were hard to search, trust, or reuse.",
     "next": "So what did companies gain, and what did they lose?"
   },
   {
     "id": 10,
     "timeline": "The catch",
     "title": "A trade-off, not a triumph",
-      "content": "Data lakes offered lower-cost storage and high flexibility, but early lake patterns often lacked strong governance and reliability controls. Many companies ended up managing two imperfect worlds: structured but rigid warehouses, and flexible but harder-to-govern lakes.",
+      "content": "Data lakes offered lower-cost storage and high flexibility, but early lake patterns often lacked strong governance and reliability controls. Many companies ended up managing two imperfect worlds: warehouses that were structured but rigid, and lakes that were flexible but harder to govern. The industry still needed a better bridge between those two models.",
     "next": "What the era really needed was a faster, friendlier engine."
   },
   {
