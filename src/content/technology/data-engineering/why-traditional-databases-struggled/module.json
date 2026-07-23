@@ -2,12 +2,12 @@
   "title": "Why Traditional Databases Struggled",
   "category": "technology",
   "subcategory": "data-engineering",
-  "summary": "Relational databases and data warehouses powered business for decades — but rigid structure, costly scaling, and closed formats left them struggling with the modern flood of data.",
+  "summary": "Relational databases and data warehouses powered business for decades, but rigid schemas, expensive vertical scaling, and closed formats made modern data growth harder to manage.",
   "accent": "#0e7490",
   "context": {
     "type": "schematic",
     "headline": "Great for tidy tables, strained by everything else",
-    "description": "For decades, companies relied on relational databases to record transactions and on data warehouses to analyze them. These tools were powerful for clean, structured data — but they demanded rigid structure up front, scaled expensively, locked data in closed formats, and had no good answer for the explosion of new data types.",
+    "description": "For decades, companies relied on relational databases for transactions and data warehouses for analytics. These tools worked very well for structured data and repeatable reporting. But they required schema decisions up front, scaled expensively on single large machines, often relied on proprietary formats, and struggled with rapidly growing semi-structured and unstructured data.",
     "when": "From the invention of the relational model to the strain of the internet era",
     "map": {
       "backdrop": "region",

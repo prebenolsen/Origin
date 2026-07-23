@@ -3,84 +3,84 @@
     "id": 1,
     "timeline": "Foundations",
     "title": "Why ideologies matter",
-    "content": "Political ideologies are frameworks for answering big questions: what is freedom, what is fairness, and what should government do. Learning them helps you compare arguments by principles, not just slogans.",
+    "content": "Political ideologies are systems of ideas. They help people answer big political questions: What is freedom? What is fairness? How much power should the state have? Without ideology, debates become random reactions to headlines. With ideology, you can compare positions by principles. For example, when two parties disagree about tax levels, welfare rules, or speech laws, ideology helps explain why they disagree, not just that they disagree.",
     "next": "What tensions appear in almost every political debate?"
   },
   {
     "id": 2,
     "timeline": "Core tensions",
     "title": "Three tensions that organize politics",
-    "content": "Most ideologies prioritize values differently across three recurring tensions: freedom versus equality, tradition versus reform, and limited state versus strong state. These trade-offs explain why reasonable people can support different systems.",
+    "content": "Most ideologies can be understood through three recurring tensions. First: freedom versus equality. How much inequality is acceptable if people are free to choose differently? Second: tradition versus reform. Should institutions change slowly to protect stability, or quickly to fix injustice? Third: limited state versus strong state. Should government do only core tasks, or also shape the economy and social outcomes? These tensions create real trade-offs, and reasonable people can rank them differently.",
     "next": "Which ideology puts tradition and stability first?"
   },
   {
     "id": 3,
     "timeline": "Conservatism",
     "title": "Conservatism: preserve and reform carefully",
-    "content": "Conservatism emphasizes continuity, social order, and respect for established institutions. It favors gradual change over abrupt transformation, arguing that sudden redesign can produce instability and unintended harm.",
+    "content": "Conservatism emphasizes continuity, social order, and trust in established institutions such as parliament, courts, family structures, and civic traditions. Conservatives usually support reform, but prefer incremental reform instead of rapid systemic redesign. Their argument is practical: sudden change can break systems people depend on, especially when social effects are hard to predict. In policy, this can mean cautious welfare reform, strict attention to law and order, and skepticism toward large top-down experiments.",
     "next": "What if your first priority is individual rights?"
   },
   {
     "id": 4,
     "timeline": "Liberalism",
     "title": "Liberalism: rights and constrained power",
-    "content": "Liberalism centers individual rights, legal equality, and limits on arbitrary authority. Classical liberalism stressed civil liberties and markets; modern liberalism also emphasizes social protections that expand real opportunity.",
+    "content": "Liberalism centers individual rights, legal equality, and limits on arbitrary authority. Arbitrary authority means power used without clear rules, equal treatment, or due process. Examples include police stopping people without legal basis, a government censoring criticism because it dislikes the speaker, or officials giving jobs and permits based on personal loyalty instead of fair law. Classical liberalism strongly emphasized civil liberties, property rights, and markets. Modern liberalism keeps those ideas, but often adds social protections such as public education, healthcare access, and anti-discrimination rules, arguing that formal rights are not enough if people lack real opportunity.",
     "next": "How does socialism redefine fairness?"
   },
   {
     "id": 5,
     "timeline": "Socialism",
     "title": "Socialism: equality and shared control",
-    "content": "Socialism argues that concentrated ownership creates unfair outcomes and power imbalances. It supports broader social or collective control over key resources so prosperity is distributed more evenly across society.",
+    "content": "Socialism argues that when ownership of major resources is highly concentrated, economic and political power also becomes concentrated. This can produce unfair outcomes even when legal rights are equal on paper. Socialists therefore support broader social or collective control over key sectors, or stronger redistribution through tax and welfare systems. The central claim is that fairness is not only about equal legal rights, but also about reducing structural inequality in income, wealth, and bargaining power.",
     "next": "How is communism related but more radical?"
   },
   {
     "id": 6,
     "timeline": "Communism",
     "title": "Communism: classless ideal, difficult transitions",
-    "content": "Communism is often described as a classless system with common ownership and no exploitation. The historical challenge has been implementation: many self-described communist states became highly centralized, creating tension between ideal theory and political reality.",
+    "content": "Communism is often described as a classless system with common ownership, where exploitation disappears and distribution is based on need. In theory, it is a stateless end-goal after class conflict is resolved. In practice, historical communist regimes usually relied on highly centralized one-party states during transition, often with strict political control. This created a major gap between ideal theory and real outcomes. Understanding communism requires separating the philosophical ideal from how it was implemented historically.",
     "next": "What happens when nationalism and authoritarianism merge?"
   },
   {
     "id": 7,
     "timeline": "Fascism",
     "title": "Fascism: authoritarian ultranationalism",
-    "content": "Fascism elevates nation and leader above pluralism, dissent, and individual rights. It rejects liberal democracy and often uses propaganda, repression, and exclusionary identity politics to enforce unity.",
+    "content": "Fascism elevates nation, leader, and unity above pluralism, dissent, and individual rights. It rejects liberal democracy, especially open opposition, independent media, and minority protections. Fascist systems often use propaganda, surveillance, violence, and exclusionary identity politics to enforce conformity. Historically, fascist rule has been linked to militarism, persecution, and mass repression. In short, fascism treats disagreement as disloyalty and political diversity as a threat.",
     "next": "Are all anti-state ideas authoritarian in a different way?"
   },
   {
     "id": 8,
     "timeline": "Anarchism",
     "title": "Anarchism: no coercive hierarchy",
-    "content": "Anarchism rejects coercive authority structures, especially state domination. It proposes voluntary cooperation, mutual aid, and self-management, though anarchist schools disagree on markets and property.",
+    "content": "Anarchism rejects coercive hierarchy, especially rule by institutions that people cannot meaningfully consent to or challenge. It proposes voluntary cooperation, mutual aid, and local self-management instead of centralized state authority. Different anarchist traditions disagree about markets, property, and economic coordination, but they share a core principle: concentrated coercive power is dangerous and should be minimized or abolished.",
     "next": "Which ideology also seeks minimal government but keeps markets central?"
   },
   {
     "id": 9,
     "timeline": "Libertarianism",
     "title": "Libertarianism: maximize individual choice",
-    "content": "Libertarianism prioritizes personal liberty, private property, and limited government intervention. Supporters argue this protects autonomy and innovation, while critics argue it can weaken social safety nets and public goods.",
+    "content": "Libertarianism prioritizes personal liberty, private property, and minimal state intervention. Supporters argue that free individuals and voluntary exchange create innovation, efficiency, and personal responsibility. Critics argue that very limited government can weaken social safety nets and underfund public goods such as infrastructure, health systems, and basic social protection. In policy terms, libertarian positions often favor lower taxes, deregulation, and stronger limits on state authority.",
     "next": "How do nationalism and populism shape modern political energy?"
   },
   {
     "id": 10,
     "timeline": "Nationalism and Populism",
     "title": "Identity, sovereignty, and anti-elite politics",
-    "content": "Nationalism prioritizes national identity and self-rule; it can be civic and inclusive, or exclusionary and ethnic. Populism frames politics as ordinary people versus entrenched elites and can appear on both left and right.",
+    "content": "Nationalism prioritizes national identity, sovereignty, and self-rule. Civic nationalism defines belonging through shared laws and citizenship. Ethnic nationalism defines belonging through ancestry, language, or culture, and can become exclusionary. Populism is different: it is mainly a political style that frames conflict as ordinary people versus corrupt elites. Because this frame can attach to many policy packages, populism can appear on both left and right.",
     "next": "What changed when movements centered gender and climate?"
   },
   {
     "id": 11,
     "timeline": "Contemporary expansions",
     "title": "Feminism and environmentalism broaden the agenda",
-    "content": "Feminism analyzes and challenges systems that reproduce gender inequality in law, culture, and economics. Environmentalism treats ecological limits and climate risk as central political responsibilities, reshaping policy across ideological camps.",
+    "content": "Feminism analyzes and challenges systems that reproduce gender inequality in law, culture, labor markets, and family life. It asks who has power, who carries unpaid care work, and how institutions can produce unequal outcomes even without explicit discrimination. Environmentalism puts ecological limits and climate risk at the center of politics. It forces all ideologies to answer hard questions about energy, consumption, long-term risk, and responsibility to future generations.",
     "next": "How should beginners use the left-right-center spectrum?"
   },
   {
     "id": 12,
     "timeline": "Political spectrum",
     "title": "Use labels as tools, not cages",
-    "content": "Left-right-center is a useful orientation map, but real parties and voters mix ideas from multiple traditions. The deeper skill is identifying each ideology's priorities, trade-offs, and likely social outcomes.",
+    "content": "Left-right-center is a useful map, but it is only a map. Real parties and voters often mix ideas from several traditions at the same time. A party can be economically interventionist, culturally conservative, and institutionally liberal, for example. The deeper skill is to identify each ideology's priorities, trade-offs, and likely social outcomes, then evaluate whether those outcomes match your values and practical goals.",
     "next": "Test your foundations before moving to historical case studies."
   }
 ]

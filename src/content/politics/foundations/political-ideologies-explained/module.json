@@ -2,12 +2,12 @@
     "title": "Political Ideologies Explained",
     "category": "politics",
     "subcategory": "foundations",
-    "summary": "A beginner-friendly foundation for understanding major ideologies, what they prioritize, and how they shape modern political debate.",
+    "summary": "A practical guide to major ideologies, with clear examples of what each one values and how those values shape real policy choices.",
     "accent": "#3f6e8f",
     "context": {
         "type": "schematic",
-        "headline": "Competing answers to the same political questions",
-        "description": "Political ideologies are frameworks for deciding what a good society looks like. This module compares major ideologies by how they answer core questions: freedom vs equality, tradition vs reform, and individual choice vs state authority.",
+        "headline": "Different ideologies, same core questions",
+        "description": "Political ideologies are structured ways of thinking about society, power, rights, and fairness. This module compares major ideologies through concrete tensions that appear in real life: freedom versus equality, tradition versus reform, and individual choice versus state authority. You will also see practical examples, such as taxation, welfare, regulation, policing, education, and free speech, so abstract concepts become easier to understand.",
         "when": "Enlightenment to present",
         "map": {
             "backdrop": "region",

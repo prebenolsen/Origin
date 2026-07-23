@@ -1,41 +1,77 @@
 {
-    "title":  "PLACEHOLDER: States and Governments",
-    "category":  "politics",
-    "subcategory":  "foundations",
-    "summary":  "PLACEHOLDER: Replace with authored summary from source material.",
-    "accent":  "#9a9a9a",
-    "context":  {
-                    "type":  "map",
-                    "headline":  "PLACEHOLDER: Context headline",
-                    "description":  "PLACEHOLDER: Replace with context introduction that explains where, when, who, and why this module matters.",
-                    "when":  "What makes a country, how governments function, and how authority is organized",
-                    "map":  {
-                                "backdrop":  "world",
-                                "markers":  [
-                                                {
-                                                    "id":  "placeholder-a",
-                                                    "label":  "PLACEHOLDER A",
-                                                    "x":  30,
-                                                    "y":  30,
-                                                    "role":  "primary"
-                                                },
-                                                {
-                                                    "id":  "placeholder-b",
-                                                    "label":  "PLACEHOLDER B",
-                                                    "x":  65,
-                                                    "y":  55,
-                                                    "role":  "secondary"
-                                                }
-                                            ],
-                                "connections":  [
-                                                    {
-                                                        "from":  "placeholder-a",
-                                                        "to":  "placeholder-b",
-                                                        "label":  "PLACEHOLDER LINK"
-                                                    }
-                                                ]
-                            }
+    "title": "States and Governments",
+    "category": "politics",
+    "subcategory": "foundations",
+    "summary": "Learn what makes a state, how governments are organized, and why legitimacy and institutions shape stability, rights, and daily governance.",
+    "accent": "#4f6f7e",
+    "context": {
+        "type": "schematic",
+        "headline": "State is the framework, government is the operator",
+        "description": "This module explains the mechanics of political organization: sovereignty, territory, population, law, institutions, and legitimacy. You will see the difference between state and government, and how institutional design affects real outcomes such as service delivery, accountability, crisis response, and peaceful transfer of power.",
+        "when": "From the Peace of Westphalia (1648) to modern governance",
+        "map": {
+            "backdrop": "region",
+            "markers": [
+                {
+                    "id": "state",
+                    "label": "State",
+                    "x": 28,
+                    "y": 42,
+                    "role": "primary"
+                },
+                {
+                    "id": "government",
+                    "label": "Government",
+                    "x": 72,
+                    "y": 42,
+                    "role": "primary"
+                },
+                {
+                    "id": "institutions",
+                    "label": "Institutions",
+                    "x": 50,
+                    "y": 25,
+                    "role": "secondary"
+                },
+                {
+                    "id": "legitimacy",
+                    "label": "Legitimacy",
+                    "x": 50,
+                    "y": 68,
+                    "role": "secondary"
+                },
+                {
+                    "id": "citizens",
+                    "label": "Citizens and Rights",
+                    "x": 50,
+                    "y": 85,
+                    "role": "secondary"
                 }
+            ],
+            "connections": [
+                {
+                    "from": "state",
+                    "to": "government",
+                    "label": "authority in action"
+                },
+                {
+                    "from": "institutions",
+                    "to": "government",
+                    "label": "rules and roles"
+                },
+                {
+                    "from": "government",
+                    "to": "legitimacy",
+                    "label": "performance and trust"
+                },
+                {
+                    "from": "legitimacy",
+                    "to": "citizens",
+                    "label": "consent and compliance"
+                }
+            ]
+        }
+    }
 }
 
 

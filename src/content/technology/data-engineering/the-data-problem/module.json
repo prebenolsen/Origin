@@ -2,12 +2,12 @@
   "title": "The Data Problem",
   "category": "technology",
   "subcategory": "data-engineering",
-  "summary": "Every company now collects oceans of data — clicks, sales, sensors. The real challenge is no longer storing it, but turning raw information into something useful.",
+  "summary": "Modern companies collect huge amounts of data from clicks, sales, sensors, and support systems. The core challenge is not only storage, but turning raw data into reliable insight.",
   "accent": "#64748b",
   "context": {
     "type": "schematic",
     "headline": "Drowning in data, thirsty for insight",
-    "description": "Modern companies collect enormous amounts of data from every direction. Storing it has become cheap and easy. The hard part is turning that messy flood of raw information into something clean, trustworthy, and useful. That problem is what the whole field of data engineering exists to solve.",
+    "description": "Modern companies collect enormous amounts of data from many sources. Storage is often cheaper and easier than before, but usable insight still requires hard work. Raw data is messy, inconsistent, and fragmented across systems. Data engineering exists to build pipelines that clean, organize, and deliver trustworthy data for reporting, applications, and machine learning.",
     "when": "From the first business databases to today's data-driven companies",
     "map": {
       "backdrop": "region",

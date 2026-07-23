@@ -3,14 +3,14 @@
         "id": 1,
         "timeline": "Starting Point",
         "title": "Why conversations get stuck",
-        "content": "Many conversations stall because both people stay in surface-level information exchange. You trade facts, but nothing emotionally meaningful happens. Without emotional engagement, the interaction feels flat and forgettable.",
+        "content": "Many conversations stall because both people stay at surface-level information exchange. You trade facts, but little emotional meaning appears. Without emotional engagement, the interaction often feels flat and forgettable.",
         "next": "If small talk is useful, why does it feel so boring after a while?"
     },
     {
         "id": 2,
         "timeline": "Small Talk Function",
         "title": "Small talk calms, but does not connect deeply",
-        "content": "Small talk has a purpose: it lowers social risk and helps people settle in. The problem is staying there too long. To become interesting, a conversation needs emotionally resonant material, not just safe facts.",
+        "content": "Small talk has a purpose: it lowers social risk and helps people settle in. The problem is staying there too long. To become meaningful, a conversation needs emotionally relevant material, not only safe facts.",
         "next": "How do you move deeper without making it awkward?"
     },
     {
@@ -52,7 +52,7 @@
         "id": 8,
         "timeline": "Conversation Flow",
         "title": "Let topics move and branch",
-        "content": "Great conversations usually jump between related ideas instead of finishing one checklist perfectly. If a new idea sparks energy, follow it. Treat the exchange like a joy ride, not a form to complete.",
+        "content": "Great conversations often move between related ideas instead of completing one checklist in order. If a new idea creates clear engagement, follow it. Think of the exchange as guided exploration, not a form to complete.",
         "next": "How do you know which branch is worth following?"
     },
     {
@@ -66,7 +66,7 @@
         "id": 10,
         "timeline": "Story Mode",
         "title": "Stories create shared experience",
-        "content": "People connect strongly when recounting meaningful memories or future hopes. Stories are concrete and sensory, so both people can mentally live the moment together. This creates stronger emotional overlap than abstract summaries.",
+        "content": "People connect strongly when recounting meaningful memories or future hopes. Stories are concrete and sensory, so both people can mentally simulate the moment together. This usually creates stronger emotional overlap than abstract summaries.",
         "next": "What can ruin this connection even when the story is good?"
     },
     {

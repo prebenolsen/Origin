@@ -10,14 +10,14 @@
       "A personality type for political leaders"
     ],
     "answer": 1,
-    "explanation": "Ideologies are broad frameworks that guide how people interpret justice, authority, freedom, and policy choices."
+    "explanation": "A political ideology is not just one opinion. It is a full framework for understanding society, power, and fairness. That framework then influences practical positions on topics such as taxes, welfare, education, policing, and rights."
   },
   {
     "id": 2,
     "type": "true-false",
     "question": "Conservatism typically prefers incremental reform over abrupt, revolutionary change.",
     "answer": true,
-    "explanation": "A core conservative argument is that stability and continuity reduce the risk of social breakdown."
+    "explanation": "Conservatives usually argue that social systems are complex and fragile. Slow reform gives institutions time to adapt and lowers the risk of unintended damage. This is why conservative politics often supports continuity, legal order, and caution about radical redesign."
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
       "They are identical in all policy areas"
     ],
     "answer": 2,
-    "explanation": "Both value liberty, but modern liberal approaches often place greater emphasis on social programs and equal opportunity."
+    "explanation": "Both classical and modern liberalism value freedom and rights. The key difference is how they view the state's role in creating fair opportunity. Classical liberalism tends to favor smaller government and market solutions, while modern liberalism more often accepts social programs when they reduce inequality of opportunity."
   },
   {
     "id": 4,
@@ -43,7 +43,7 @@
       "Concentrated ownership and inequality"
     ],
     "answer": 3,
-    "explanation": "Socialist thought often argues that concentrated ownership generates structural inequality and weakens democratic fairness."
+    "explanation": "A central socialist critique is that concentrated ownership creates concentrated power. Even if everyone has formal rights, large wealth gaps can produce unequal influence over work conditions, media, and political decisions. The concern is structural inequality, not only individual poverty."
   },
   {
     "id": 5,
@@ -56,7 +56,7 @@
       "Recognize recurring tensions in political debate"
     ],
     "correctOrder": [1, 3, 0, 2],
-    "explanation": "Start with definition, then tensions, then specific priorities, then higher-level comparison of consequences."
+    "explanation": "Good political analysis is layered. First define ideology clearly. Then identify recurring tensions, such as freedom vs equality. Then map each ideology's priorities. Last, compare likely outcomes and trade-offs. This order helps you reason, instead of memorizing labels."
   },
   {
     "id": 6,
@@ -80,7 +80,7 @@
         "right": "Maximum personal liberty and minimal state"
       }
     ],
-    "explanation": "Each ideology prioritizes a different political value set, which drives distinct policy preferences."
+    "explanation": "Each ideology starts from a different value priority. That priority affects policy: conservatives often stress order and continuity, liberals stress rights and legal equality, socialists stress economic fairness, and libertarians stress personal freedom and limited state power."
   },
   {
     "id": 7,
@@ -93,13 +93,13 @@
       "Because it has no voters"
     ],
     "answer": 2,
-    "explanation": "Populism's defining feature is anti-elite framing, which can be combined with very different policy agendas."
+    "explanation": "Populism mainly defines who is in conflict: ordinary people versus elites. It does not, by itself, fully answer every policy question. That is why populism can be combined with both left-wing and right-wing economic and social programs."
   },
   {
     "id": 8,
     "type": "true-false",
     "question": "The left-right spectrum is useful, but it cannot fully explain every real-world political movement.",
     "answer": true,
-    "explanation": "Political actors often mix ideas from multiple traditions, so labels are helpful guides, not complete explanations."
+    "explanation": "Left-right labels are helpful for orientation, but real parties are often mixed. A party can support market reforms in one area, welfare expansion in another area, and conservative cultural policy at the same time. So labels are useful tools, not complete descriptions."
   }
 ]

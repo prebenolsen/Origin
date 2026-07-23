@@ -3,7 +3,7 @@
     "id": 1,
     "timeline": "The data deluge",
     "title": "Companies are drowning in data",
-    "content": "Every company collects enormous amounts of data: clicks, purchases, sensor readings, and customer interactions. The challenge is no longer storing data — it is turning massive amounts of raw information into something useful.",
+    "content": "Most companies now collect enormous amounts of data: clicks, purchases, sensor readings, and customer interactions. The challenge is often less about collecting data and more about turning raw information into something reliable and useful.",
     "next": "Where does all of this data even come from?"
   },
   {
@@ -17,7 +17,7 @@
     "id": 3,
     "timeline": "Storage solved",
     "title": "Storage stopped being the problem",
-    "content": "Twenty years ago, keeping all this data was expensive. Today, cloud storage is so cheap that companies can afford to keep almost everything. The bottleneck moved: the question is no longer 'can we store it?' but 'can we make sense of it?'",
+    "content": "Twenty years ago, keeping large datasets was expensive for many companies. Today, cloud storage is much cheaper, so organizations can keep far more historical data. The bottleneck shifted: the harder question is often not 'can we store it?' but 'can we trust it and make sense of it?'",
     "next": "So what makes raw data so hard to use?"
   },
   {
@@ -38,21 +38,21 @@
     "id": 6,
     "timeline": "Messy & untrusted",
     "title": "Copies create chaos",
-    "content": "When each team makes its own copy of the data, the copies drift apart. Two reports show different sales totals, and nobody knows which is right. Organizations crave a single source of truth: one trusted version everyone can rely on.",
+    "content": "When each team keeps its own copy of data, the copies drift apart over time. Two reports can show different sales totals, and teams lose confidence in both. Organizations therefore aim for a single source of truth: a governed data layer everyone can rely on.",
     "next": "How does data become trustworthy in the first place?"
   },
   {
     "id": 7,
     "timeline": "The data journey",
     "title": "Data takes a journey",
-    "content": "Useful data is the end of a pipeline. Raw information is collected, stored, cleaned, organized, and finally served to the people and systems that need it. Each step adds quality and trust. Most of the real work in data happens along this path.",
+    "content": "Useful data is the result of a pipeline. Raw information is collected, stored, validated, cleaned, modeled, and then served to people and systems that need it. Each step adds quality, lineage, and trust. Most of the value in data work is created along this path.",
     "next": "Why can't a normal database just handle all of this?"
   },
   {
     "id": 8,
     "timeline": "The data journey",
     "title": "Scale changes everything",
-    "content": "A spreadsheet works fine for a thousand rows. At a billion rows it collapses. Tools that handle small data gracefully can grind to a halt — or fall over completely — when the volume explodes. Big problems need fundamentally different tools.",
+    "content": "A spreadsheet works well for small datasets. At very large scale, tools designed for local files become slow or unstable. Systems that handle small data gracefully can fail when volume and concurrency rise together. Large-scale problems require distributed tools and different design choices.",
     "next": "And what about questions that can't wait?"
   },
   {
@@ -66,7 +66,7 @@
     "id": 10,
     "timeline": "Data engineering",
     "title": "This work is data engineering",
-    "content": "Data engineering is the craft of building the systems that turn raw, messy data into clean, reliable, ready-to-use data — at scale and at speed. It is the plumbing beneath every dashboard, every AI model, and every data-driven decision.",
+    "content": "Data engineering is the discipline of building systems that turn raw, messy data into clean, reliable, ready-to-use datasets at scale. It supports dashboards, analytics, applications, and AI models by making data dependable and accessible.",
     "next": "Why was this so hard with the tools companies used first?"
   },
   {

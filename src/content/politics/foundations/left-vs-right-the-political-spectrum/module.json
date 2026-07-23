@@ -2,12 +2,12 @@
     "title": "Political Spectrum: Left, Right, Libertarian, and Authoritarian",
     "category": "politics",
     "subcategory": "foundations",
-    "summary": "How left and right labels began, what they usually mean today, and why a second axis is needed to understand real political positions.",
+    "summary": "How left and right labels began, what they usually mean today, and why a second axis helps explain real political positions more accurately.",
     "accent": "#7d5f3b",
     "context": {
         "type": "schematic",
         "headline": "One spectrum is useful, two dimensions are better",
-        "description": "The left-right spectrum compares views on equality, markets, and social change. But many disagreements are really about state power too, so the libertarian-authoritarian axis is needed to map modern politics more accurately.",
+        "description": "The left-right spectrum compares views on equality, markets, and social change. But many disagreements are also about how much control the state should have over daily life. This is why the libertarian-authoritarian axis is useful: it shows that two parties can look similar on economics but very different on civil liberties, policing, censorship, or personal autonomy.",
         "when": "French Revolution to present",
         "map": {
             "backdrop": "region",

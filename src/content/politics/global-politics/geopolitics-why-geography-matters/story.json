@@ -3,98 +3,98 @@
         "id": 1,
         "timeline": "1815: Balance after Napoleon",
         "title": "What geopolitics asks",
-        "content": "Geopolitics studies how place shapes strategy. Mountains, seas, resources, demographics, and transport routes do not decide everything, but they strongly shape what states can and cannot do. It helps explain why alliances form and rivalries persist.",
+        "content": "Geopolitics studies how geography shapes strategy. Mountains, seas, resources, demographics, and transport routes do not decide everything, but they set strong constraints. States still make choices, yet they choose inside a geographic frame. This helps explain why some alliances keep returning and why some rivalries persist for generations.",
         "next": "How did this idea become central to imperial strategy?"
     },
     {
         "id": 2,
         "timeline": "1815: Balance after Napoleon",
         "title": "Europe resets the map",
-        "content": "After Napoleon's defeat in 1815, the Congress of Vienna aimed to prevent one power from dominating Europe again. Britain and Russia emerged as leading empires: one anchored in sea power, the other in vast continental depth. Their rivalry shaped the next century.",
+        "content": "After Napoleon's defeat in 1815, the Congress of Vienna aimed to prevent one power from dominating Europe again. Britain and Russia emerged as leading empires, but with different strategic strengths: Britain relied heavily on sea power, while Russia had vast continental depth. This difference in geography pushed them into long-term rivalry.",
         "next": "Why did India become a central strategic concern?"
     },
     {
         "id": 3,
         "timeline": "1815-1907: The Great Game",
         "title": "The Great Game begins",
-        "content": "Britain feared that Russian expansion through Central Asia could threaten India, the core of British imperial wealth. Russia expanded southward through the Caucasus and into Persian and Central Asian influence zones. Geography turned Eurasia into a long strategic contest.",
+        "content": "Britain feared that Russian expansion through Central Asia could threaten India, which was central to British imperial wealth and trade routes. Russia expanded southward through the Caucasus and deeper into Central Asian influence zones. Geography turned this into a long strategic contest: one side protecting route security, the other side seeking strategic depth and access.",
         "next": "Which conflicts revealed this rivalry most clearly?"
     },
     {
         "id": 4,
         "timeline": "1815-1907: The Great Game",
         "title": "Buffer zones and costly campaigns",
-        "content": "Afghanistan became a buffer state between competing empires, and British intervention there in 1839 showed the limits of imperial control. The Crimean War later reflected wider fear of Russian access to Mediterranean routes. Sea lanes and land corridors were both decisive.",
+        "content": "Afghanistan became a buffer state between competing empires. British intervention there in 1839 showed a key limit of imperial power: controlling terrain is harder than winning one campaign. The Crimean War later reflected wider fear of Russian access to Mediterranean routes. Together, these cases show how both land corridors and sea lanes shape strategic planning.",
         "next": "How did theorists convert these events into strategic models?"
     },
     {
         "id": 5,
         "timeline": "1904: Heartland theory",
         "title": "Mackinder's Heartland idea",
-        "content": "In 1904, Halford Mackinder argued that control of Eastern Europe could unlock the Eurasian Heartland, and control of the Heartland could shape global power. His theory reflected fear that rail-connected land empires might outmatch sea empires. It became one of geopolitics' most famous models.",
+        "content": "In 1904, Halford Mackinder argued that control of Eastern Europe could open access to the Eurasian Heartland, and that control of the Heartland could shift global power. His concern was strategic technology: railways made large land empires more mobile and potentially harder for sea powers to contain. The theory became one of the most influential models in geopolitics.",
         "next": "Did history fully confirm this thesis?"
     },
     {
         "id": 6,
         "timeline": "1904: Heartland theory",
         "title": "A useful model, not a law",
-        "content": "The Heartland thesis highlighted geography, but it did not predict everything. Technology, ideology, economics, and political legitimacy also shape outcomes. Geopolitics works best as a framework for constraints, not a deterministic formula.",
+        "content": "The Heartland thesis highlighted geography, but it did not predict every outcome. Technology, ideology, economics, institutions, and political legitimacy also matter. Geopolitics is strongest when used as a constraint model: it helps identify likely pressure points, but it does not act like a fixed prediction formula.",
         "next": "How was the model revised during the Cold War?"
     },
     {
         "id": 7,
         "timeline": "1947-1991: Containment era",
         "title": "From Heartland to Rimland",
-        "content": "U.S. strategist Nicholas Spykman argued that the Eurasian rimland, not just the interior Heartland, was central to global balance. During the Cold War, U.S. strategy focused on containing Soviet influence along maritime and continental edges. In effect, the U.S. inherited Britain's sea-power role.",
+        "content": "U.S. strategist Nicholas Spykman argued that the Eurasian rimland, not only the interior Heartland, was central to global balance. During the Cold War, U.S. strategy focused on containing Soviet influence along maritime and continental edges through alliances and forward positioning. In strategic terms, the U.S. took on a role similar to Britain's earlier sea-power balancing logic.",
         "next": "Where did this strategy appear in practice?"
     },
     {
         "id": 8,
         "timeline": "1947-1991: Containment era",
         "title": "Containment in practice",
-        "content": "Strategic thinking in Washington treated Eurasia as a chessboard of alliances, chokepoints, and escalation risks. Thinkers like George Kennan, Henry Kissinger, and Zbigniew Brzezinski adapted older European balance ideas to a nuclear bipolar world. Geography remained central, but now under ideological competition.",
+        "content": "Strategic thinking in Washington treated Eurasia as a network of alliances, chokepoints, and escalation risks. Thinkers like George Kennan, Henry Kissinger, and Zbigniew Brzezinski adapted older balance-of-power logic to a nuclear bipolar world. Geography remained central, but now every move also had ideological and nuclear signaling consequences.",
         "next": "What changed when the Soviet Union collapsed?"
     },
     {
         "id": 9,
         "timeline": "1991: Post-Soviet unipolar moment",
         "title": "A short unipolar phase",
-        "content": "After 1991, the U.S. became the sole superpower and Russian influence declined. Many expected geopolitical rivalry to weaken, but competition shifted rather than disappeared. Regions along the rimland remained unstable and strategically contested.",
+        "content": "After 1991, the U.S. became the sole superpower and Russian influence declined sharply. Many expected major-power rivalry to fade, but rivalry mostly changed form rather than disappearing. Strategic competition continued in regions where transport routes, security commitments, and weak local institutions overlapped.",
         "next": "How did China re-enter the center of strategy?"
     },
     {
         "id": 10,
         "timeline": "1971-2001: Strategic realignments",
         "title": "Opening to China and triangular balance",
-        "content": "In the 1970s, U.S.-China rapprochement aimed partly to pressure the Soviet Union through triangular diplomacy. This showed a core geopolitical principle: states often align pragmatically against larger threats. Geography, power distribution, and timing all matter.",
+        "content": "In the 1970s, U.S.-China rapprochement aimed partly to pressure the Soviet Union through triangular diplomacy. This showed a core geopolitical mechanism: states often align pragmatically against larger threats, even when values differ. Geography, relative power, and timing shape these alignments.",
         "next": "What happened after U.S. focus shifted to the Middle East?"
     },
     {
         "id": 11,
         "timeline": "2001-present: Renewed great-power rivalry",
         "title": "The game reopens in Eurasia",
-        "content": "With U.S. attention absorbed by Middle East wars after 2001, China expanded economic and strategic influence westward through infrastructure and trade corridors. Russia also sought regional reassertion. Great-power competition returned in updated form.",
+        "content": "With U.S. attention heavily focused on Middle East wars after 2001, China expanded economic and strategic influence westward through infrastructure and trade corridors. Russia also sought regional reassertion through military and political pressure. Great-power competition returned in updated form, combining military, economic, technological, and narrative tools.",
         "next": "Which places now matter most in geopolitical risk?"
     },
     {
         "id": 12,
         "timeline": "2001-present: Renewed great-power rivalry",
         "title": "Why hotspot maps cluster on the rimland",
-        "content": "Many high-risk zones lie where land and sea power meet: Ukraine, the Levant, the Gulf region, Afghanistan, Kashmir, the Korean Peninsula, and the South China Sea. These regions combine military chokepoints, alliance tensions, and contested legitimacy. Geography amplifies political conflict.",
+        "content": "Many high-risk zones lie where land and sea power meet: Ukraine, the Levant, the Gulf region, Afghanistan, Kashmir, the Korean Peninsula, and the South China Sea. These places combine chokepoints, alliance obligations, and competing sovereignty claims. Geography does not create conflict by itself, but it can amplify conflict and raise escalation risk.",
         "next": "Can geopolitics explain every conflict?"
     },
     {
         "id": 13,
         "timeline": "Present: Limits and misconceptions",
         "title": "What geopolitics can and cannot do",
-        "content": "Geopolitics is powerful for identifying constraints, interests, and likely pressure points. But it cannot replace domestic politics, economics, culture, leadership choices, or chance events. Good analysis combines maps with institutions, ideas, and human agency.",
+        "content": "Geopolitics is strong at identifying constraints, strategic interests, and likely pressure points. But it cannot replace domestic politics, economic structure, institutional quality, leadership choices, or chance events. Good analysis combines maps with institutions, incentives, and human agency.",
         "next": "So what is the practical takeaway for understanding today's world?"
     },
     {
         "id": 14,
         "timeline": "Present: Limits and misconceptions",
         "title": "Read borders as systems, not lines",
-        "content": "Modern geopolitics is not just about who owns territory, but who controls routes, standards, finance, technology, and narrative legitimacy. Borders on a map are starting points, not full explanations. To understand world affairs, ask how geography and strategy interact over time.",
+        "content": "Modern geopolitics is not only about who owns territory. It is also about control of routes, standards, finance networks, technology chains, and legitimacy narratives. Borders on a map are starting points, not full explanations. To understand world affairs, track how geography and strategy interact over time.",
         "next": "The map never acts alone, but it always shapes the game."
     }
 ]

@@ -1,7 +1,72 @@
-{
-    "id":  1,
-    "timeline":  "PLACEHOLDER",
-    "title":  "PLACEHOLDER: Story card title",
-    "content":  "PLACEHOLDER: Replace with 2-5 sentences that teach one central idea from the source content.",
-    "next":  "PLACEHOLDER: Curiosity hook for the next card."
-}
+[
+    {
+        "id": 1,
+        "timeline": "Foundations",
+        "title": "State and government are not the same thing",
+        "content": "A state is the long-term political framework: territory, population, legal order, and sovereign authority. A government is the group of people and institutions currently running that state. Governments can change through elections, coalition shifts, or resignation, while the state can continue. This distinction explains why leadership can change without rewriting the country's legal identity.",
+        "next": "What must exist before we can call something a state?"
+    },
+    {
+        "id": 2,
+        "timeline": "Foundations",
+        "title": "Four core elements of a state",
+        "content": "In political theory, a state usually needs four elements: defined territory, a population, governing institutions, and sovereignty. If one element is weak, authority becomes contested. For example, a government can claim legal authority but fail to enforce law outside major cities. When this happens, non-state actors may fill the gap. In practice, state capacity and public legitimacy often rise and fall together.",
+        "next": "What does sovereignty mean in practice?"
+    },
+    {
+        "id": 3,
+        "timeline": "Sovereignty",
+        "title": "Internal and external sovereignty",
+        "content": "Internal sovereignty means the state is the highest legal authority inside its own borders. External sovereignty means other states recognize it as independent and treat it as a legitimate actor. A country can be strong in one dimension and weak in the other. Many conflicts involve this gap, especially when recognition is disputed or central authority is fragmented.",
+        "next": "How did this model spread historically?"
+    },
+    {
+        "id": 4,
+        "timeline": "Historical grounding",
+        "title": "From dynastic rule to modern state systems",
+        "content": "The Peace of Westphalia in 1648 is often used as a reference point for the modern state system in Europe. Territorial sovereignty and non-interference became stronger organizing principles. The model later spread through colonial expansion, anti-colonial independence movements, and international law. Real practice has never fully matched the theory, but the framework still shapes diplomacy, recognition, and treaty relations today.",
+        "next": "If state is the framework, how is government organized inside it?"
+    },
+    {
+        "id": 5,
+        "timeline": "Institutions",
+        "title": "Branches, ministries, and bureaucracy",
+        "content": "Most governments divide authority across branches and agencies to reduce concentration of power. Legislatures make laws, executives implement policy, and courts interpret law. Ministries and civil servants handle daily administration. These structures are not only technical charts. They decide who can make decisions, how fast decisions move, and how leaders can be reviewed, corrected, or removed.",
+        "next": "Why do some states centralize power while others share it?"
+    },
+    {
+        "id": 6,
+        "timeline": "Institutional design",
+        "title": "Unitary vs federal organization",
+        "content": "In unitary systems, most legal authority is concentrated in the central government, even if local powers are delegated. In federal systems, constitutional authority is shared between national and regional levels. Neither model is automatically better. The choice usually reflects history, geography, identity diversity, and administrative practicality.",
+        "next": "What gives governments the right to rule?"
+    },
+    {
+        "id": 7,
+        "timeline": "Legitimacy",
+        "title": "Power, authority, and legitimacy",
+        "content": "Power means the ability to make others comply. Authority means that this power is seen as rightful, not just imposed. Legitimacy is wider public belief that institutions deserve obedience, even when some decisions are unpopular. Governments can force compliance through coercion, but long-term stability usually depends on lawfulness, performance, representation, and trust.",
+        "next": "How does state capacity affect daily life?"
+    },
+    {
+        "id": 8,
+        "timeline": "State capacity",
+        "title": "Capacity: can the state actually deliver?",
+        "content": "State capacity is practical ability: collecting taxes, enforcing law, providing services, and managing crises. Low capacity often means corruption, insecurity, poor infrastructure, and weak service delivery, even if legal rules look strong on paper. High capacity can improve welfare and trust. But without legal constraints and oversight, high capacity can also increase abuse. Capacity and accountability need to develop together.",
+        "next": "What happens when governments fail but the state remains?"
+    },
+    {
+        "id": 9,
+        "timeline": "Instability",
+        "title": "Government crises are not always state collapse",
+        "content": "Cabinets can fall, coalitions can break, and leaders can resign without destroying the state itself. Institutions such as constitutions, courts, and election systems are designed to absorb these shocks. The deeper danger starts when these institutions lose legitimacy and citizens no longer trust legal transfer of power. At that point, normal political conflict can become constitutional conflict.",
+        "next": "How should beginners evaluate a political system?"
+    },
+    {
+        "id": 10,
+        "timeline": "Practical framework",
+        "title": "A simple checklist for analysis",
+        "content": "To compare countries, ask five practical questions: Who has authority? How is authority limited? How is power transferred? Can institutions deliver services? Why do citizens accept or resist rule? This checklist keeps analysis concrete and helps you move beyond personality politics to institutional mechanics.",
+        "next": "Test your understanding of states and governments."
+    }
+]

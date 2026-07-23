@@ -2,12 +2,12 @@
   "title": "The Rise of Big Data",
   "category": "technology",
   "subcategory": "data-engineering",
-  "summary": "When data outgrew any single machine, a new idea took over: spread it across many cheap computers and store everything raw and cheap. The big data era — and the data lake — was born.",
+  "summary": "When data outgrew single-machine systems, distributed computing became practical: spread storage and processing across many machines. This shift helped launch the big-data era and the data lake model.",
   "accent": "#2563eb",
   "context": {
     "type": "schematic",
     "headline": "Too big for one machine — so use a thousand",
-    "description": "As data exploded in volume, velocity, and variety, the old approach of one bigger machine ran out of road. The breakthrough was distributed computing: spread storage and processing across many cheap machines. Paired with cheap cloud storage, this gave rise to the data lake — store everything raw now, make sense of it later.",
+    "description": "As data grew in volume, velocity, and variety, vertical scaling on a single machine reached economic and technical limits. The breakthrough was distributed computing: spread storage and processing across many machines. Combined with low-cost cloud object storage, this enabled data lakes - store raw data first, then apply structure when needed.",
     "when": "From Google's landmark papers to the cloud data lake",
     "map": {
       "backdrop": "region",

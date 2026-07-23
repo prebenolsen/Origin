@@ -2,51 +2,51 @@
   {
     "id": 1,
     "front": "Political ideology",
-    "back": "A framework of ideas about power, rights, justice, and how society should be organized."
+    "back": "A structured framework of ideas about power, rights, justice, and how society should be organized. It helps explain why people take specific positions on practical issues like taxes, welfare, regulation, and civil liberties."
   },
   {
     "id": 2,
     "front": "Conservatism",
-    "back": "Prioritizes stability, tradition, and cautious reform over rapid systemic change."
+    "back": "Prioritizes stability, tradition, and cautious reform over rapid systemic change. Typical conservative arguments are that institutions carry social memory and that sudden reform can create disorder and unintended harm."
   },
   {
     "id": 3,
     "front": "Liberalism",
-    "back": "Centers individual rights, legal equality, and limits on arbitrary authority."
+    "back": "Centers individual rights, legal equality, and limits on arbitrary authority. Arbitrary authority means power used without fair rules or due process, such as censorship based on political dislike, unequal policing, or officials giving benefits to allies instead of applying the law equally."
   },
   {
     "id": 4,
     "front": "Socialism",
-    "back": "Argues for greater economic equality through broader social or collective control of key resources."
+    "back": "Argues for greater economic equality through broader social or collective control of key resources, or through stronger redistribution. The core concern is that concentrated ownership can produce concentrated power and unfair outcomes."
   },
   {
     "id": 5,
     "front": "Communism",
-    "back": "A classless, commonly owned ideal; in practice, implementation has often produced centralized states."
+    "back": "A classless, commonly owned ideal in which exploitation ends and distribution is based on need. In practice, implementation has often produced centralized one-party states, which created a gap between theory and historical outcomes."
   },
   {
     "id": 6,
     "front": "Fascism",
-    "back": "Authoritarian ultranationalism that suppresses pluralism, dissent, and individual rights."
+    "back": "Authoritarian ultranationalism that suppresses pluralism, dissent, and individual rights. It typically rejects liberal democracy and relies on propaganda, repression, and exclusion to enforce unity."
   },
   {
     "id": 7,
     "front": "Anarchism",
-    "back": "Rejects coercive hierarchies and favors voluntary cooperation and self-management."
+    "back": "Rejects coercive hierarchies and favors voluntary cooperation, mutual aid, and self-management. Different schools disagree on markets and property, but all share skepticism toward concentrated coercive power."
   },
   {
     "id": 8,
     "front": "Libertarianism",
-    "back": "Emphasizes personal liberty, private property, and minimal state intervention."
+    "back": "Emphasizes personal liberty, private property, and minimal state intervention. Supporters see this as best for autonomy and innovation, while critics argue it can underprovide social safety nets and other public goods."
   },
   {
     "id": 9,
     "front": "Populism",
-    "back": "A people-versus-elite political style that can appear in both left and right movements."
+    "back": "A people-versus-elite political style that can appear in both left and right movements. It is often called a style because it defines political conflict, not a complete program for all policy areas."
   },
   {
     "id": 10,
     "front": "Why left-right-center is limited",
-    "back": "It is a useful map, but real political movements often combine ideas from multiple ideologies."
+    "back": "It is a useful map, but real political movements often combine ideas from multiple ideologies. A party can be left on economic policy, right on cultural policy, and centrist on institutions, so labels should guide analysis, not replace it."
   }
 ]

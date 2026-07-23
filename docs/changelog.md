@@ -4,6 +4,74 @@ All notable changes to **Origin** are documented here.
 Versioning follows the rules in [`CLAUDE.md`](CLAUDE.md): `MAJOR.MINOR.PATCH` where
 MAJOR = big features, MINOR = content, PATCH = UX/UI.
 
+## [9.11.0] - 2026-07-23
+
+### Content - Quality pass on authored psychology communication modules (non-placeholder only)
+
+Applied the same improvement procedure used in politics to authored modules under
+`psychology/communication`, while explicitly skipping placeholder modules.
+
+Updated modules:
+- `src/content/psychology/communication/communicate-with-confidence`
+- `src/content/psychology/communication/becoming-a-better-conversationalist`
+- `src/content/psychology/communication/dealing-with-difficult-people`
+- `src/content/psychology/communication/understanding-other-people`
+
+What improved:
+- Simpler and more neutral wording in module summaries and context descriptions.
+- Clearer mechanism explanations in story cards (how and why effects happen).
+- Softer phrasing for claims that were too absolute, while preserving teaching value.
+- Better historical/scientific caution language where evidence is suggestive rather than
+  deterministic.
+- Maintained practical, memorable framing without hype or moralizing.
+
+## [9.10.0] - 2026-07-23
+
+### Content - Quality pass on authored politics modules (non-placeholder only)
+
+Applied a targeted clarity and accuracy pass across already-authored politics modules,
+with explicit instruction to skip placeholder module replacement. The rewrite focus was:
+accuracy, simpler wording, memorability, mechanism explanation, historical grounding,
+and neutral educational tone.
+
+Updated modules:
+- `src/content/politics/foundations/left-vs-right-the-political-spectrum`
+- `src/content/politics/foundations/states-and-governments`
+- `src/content/politics/global-politics/geopolitics-why-geography-matters`
+
+What improved:
+- Stronger cause-and-effect phrasing in story cards.
+- More concrete policy and institutional examples where abstraction was too high.
+- Clearer distinction between labels and mechanisms (for example left-right vs
+  authoritarian-libertarian dimensions).
+- More explicit constraints-based framing in geopolitics (what geography explains and what
+  it does not).
+- Improved readability while preserving conceptual precision.
+
+## [9.9.0] - 2026-07-23
+
+### Content - Expanded explanations in "Political Ideologies Explained"
+
+Rewrote the module to improve understanding by adding more explicit explanations,
+clearer cause-and-effect language, and concrete examples in places where the text was
+previously abstract. The goal was not shorter text, but better comprehension for readers
+with strong second-language English who need conceptual clarity.
+
+Key improvements:
+- Clarified abstract terms (for example, "arbitrary authority") with practical examples.
+- Expanded all story cards so each concept explains both definition and implications.
+- Strengthened quiz explanations so each answer teaches, not only verifies.
+- Expanded flashcards with contextual meaning and policy-level examples.
+- Rewrote raw source notes into clear, sectioned reference text.
+
+Updated files:
+- `src/content/politics/foundations/political-ideologies-explained/module.json`
+- `src/content/politics/foundations/political-ideologies-explained/story.json`
+- `src/content/politics/foundations/political-ideologies-explained/timeline.json`
+- `src/content/politics/foundations/political-ideologies-explained/quiz.json`
+- `src/content/politics/foundations/political-ideologies-explained/flashcards.json`
+- `src/content/politics/foundations/political-ideologies-explained/raw.md`
+
 ## [9.8.0] - 2026-07-02
 
 ### Content - "Communicate with Confidence": removed author/attribution name-drops

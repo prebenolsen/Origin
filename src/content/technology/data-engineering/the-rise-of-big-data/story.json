@@ -3,7 +3,7 @@
     "id": 1,
     "timeline": "Data explodes",
     "title": "The big data era arrives",
-    "content": "In the 2000s, data grew faster than anyone expected. Experts described it with three words: volume (how much), velocity (how fast it arrives), and variety (how many forms it takes). These 'three Vs' overwhelmed traditional tools.",
+      "content": "In the 2000s, data growth accelerated across many industries. A common model described this with three Vs: volume (how much), velocity (how fast it arrives), and variety (how many forms it takes). Together, these pressures exposed limits in traditional tools.",
     "next": "If one machine can't keep up, what can?"
   },
   {
@@ -17,14 +17,14 @@
     "id": 3,
     "timeline": "Distributed computing",
     "title": "Google shows the way",
-    "content": "Google was already wrestling with the entire web. In 2003 and 2004 it published two landmark papers describing how it stored data across thousands of machines and processed it in parallel with a technique called MapReduce. These papers became the blueprint for big data.",
+      "content": "Google was already operating at web scale. In 2003 and 2004 it published influential papers describing distributed storage and parallel processing with MapReduce. These designs helped shape the architecture of early big-data systems.",
     "next": "How did everyone else get to use these ideas?"
   },
   {
     "id": 4,
     "timeline": "Distributed computing",
     "title": "Hadoop opens the door",
-    "content": "In 2006, an open-source project called Hadoop turned Google's ideas into free software anyone could run. It combined distributed storage (HDFS) with distributed processing (MapReduce). Suddenly, ordinary companies could crunch enormous datasets on clusters of cheap machines.",
+      "content": "In 2006, the open-source Hadoop ecosystem translated these ideas into widely available software. It combined distributed storage (HDFS) with distributed processing (MapReduce). This made large-scale data processing accessible to many organizations using clusters of commodity machines.",
     "next": "But where do you put all that raw data?"
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "timeline": "The catch",
     "title": "MapReduce was painful",
-    "content": "The early engine had real downsides. MapReduce was slow — it wrote constantly to disk between steps — and you had to express even simple tasks as long, low-level Java programs. Powerful, but clumsy and hard to use.",
+      "content": "MapReduce had important limitations. It often wrote intermediate results to disk between steps, which increased latency for iterative workloads. It also required relatively low-level programming patterns, which made many tasks slower to develop and maintain.",
     "next": "And what about the lake itself — did it stay clean?"
   },
   {
@@ -66,7 +66,7 @@
     "id": 10,
     "timeline": "The catch",
     "title": "A trade-off, not a triumph",
-    "content": "The lake won cheap storage and flexibility but lost the reliability, structure, and easy querying of the warehouse. Companies were left juggling two imperfect worlds: trustworthy-but-rigid warehouses, and flexible-but-messy lakes.",
+      "content": "Data lakes offered lower-cost storage and high flexibility, but early lake patterns often lacked strong governance and reliability controls. Many companies ended up managing two imperfect worlds: structured but rigid warehouses, and flexible but harder-to-govern lakes.",
     "next": "What the era really needed was a faster, friendlier engine."
   },
   {
